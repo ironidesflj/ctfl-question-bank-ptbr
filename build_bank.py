@@ -16,7 +16,7 @@ DOMAIN_NAMES = {
     "fer": "Ferramentas de Apoio ao Teste",
 }
 # Distribuição-alvo (proporcional ao exame: 8/5/5/11/9/2 x3 = 120)
-TARGET = {1: 24, 2: 15, 3: 15, 4: 33, 5: 27, 6: 6}
+TARGET = {1: 40, 2: 25, 3: 25, 4: 55, 5: 45, 6: 10}
 
 # Cada questão: (capitulo, k_level, enunciado, [opcoes], indice_correto, explicacao)
 Q = []
@@ -123,6 +123,121 @@ add(1,2,"Sobre independência do teste, qual afirmação é correta?",
     "Algum grau de independência reduz o viés cognitivo do autor, mas independência total pode afastar o testador do contexto e da comunicação.")
 
 # ============================================================
+# CAPÍTULO 1 — FUNDAMENTOS (continuação, +16)
+# ============================================================
+add(1,2,"Qual habilidade cognitiva é considerada fundamental para um bom testador?",
+    ["Velocidade de digitação",
+     "Pensamento analítico e crítico para questionar suposições e identificar problemas",
+     "Conhecimento exclusivo de linguagens de programação",
+     "Capacidade de escrever código de produção"],1,
+    "O pensamento analítico/crítico permite ao testador questionar suposições, identificar inconsistências e encontrar defeitos não óbvios.")
+
+add(1,2,"A 'abordagem de equipe completa' (whole-team approach) no teste ágil implica que:",
+    ["Somente os testadores são responsáveis pela qualidade",
+     "Toda a equipe compartilha a responsabilidade pela qualidade, com testadores colaborando com devs e stakeholders",
+     "O gerente de testes toma todas as decisões",
+     "Desenvolvedores não participam das atividades de teste"],1,
+    "Na whole-team approach, qualidade é responsabilidade coletiva; testadores, devs e negócio colaboram desde o início.")
+
+add(1,1,"Qual é o benefício principal de ter testadores com diferentes graus de independência?",
+    ["Aumentar o custo do projeto",
+     "Combinar o conhecimento do autor com a perspectiva imparcial de quem não escreveu o artefato",
+     "Garantir que todos os testes sejam automatizados",
+     "Eliminar a necessidade de revisões"],1,
+    "Diferentes graus de independência equilibram conhecimento contextual e imparcialidade, melhorando a eficácia da detecção.")
+
+add(1,2,"Um testador que revisa os próprios requisitos que escreveu terá dificuldade de encontrar defeitos porque:",
+    ["Não tem tempo suficiente",
+     "O viés do autor dificulta ver os próprios erros — o testador tende a confirmar o que escreveu",
+     "Requisitos não podem ter defeitos",
+     "Revisões não são parte do teste"],1,
+    "O viés cognitivo do autor faz com que ele leia o que pretendia escrever, não o que realmente está escrito.")
+
+add(1,1,"Em qual grau de independência o testador é externo à organização do desenvolvedor?",
+    ["Testador que é o próprio autor",
+     "Testador de outra equipe da mesma organização",
+     "Testador de empresa especializada externa",
+     "Testador da equipe de desenvolvimento"],2,
+    "O grau mais alto de independência é representado por testadores de organizações externas — consultores ou laboratórios independentes.")
+
+add(1,2,"A rastreabilidade bidirecional entre requisitos e casos de teste permite:",
+    ["Executar testes automaticamente",
+     "Verificar cobertura dos requisitos e analisar o impacto de mudanças nos testes",
+     "Eliminar a necessidade de plano de teste",
+     "Reduzir o número de defeitos automaticamente"],1,
+    "Com rastreabilidade bidirecional, é possível saber quais testes cobrem cada requisito e quais testes serão afetados por mudanças.")
+
+add(1,2,"Qual é o papel principal do gerente de testes (test manager) em um projeto?",
+    ["Executar casos de teste manualmente",
+     "Planejar, monitorar, controlar e liderar as atividades de teste e a equipe",
+     "Desenvolver o código de produção",
+     "Escrever requisitos de negócio"],1,
+    "O gerente de testes é responsável pelo planejamento, monitoramento e controle do processo de teste e pela liderança da equipe.")
+
+add(1,1,"O que é a 'base de teste' (test basis)?",
+    ["O ambiente onde os testes são executados",
+     "O conjunto de artefatos dos quais os testes são derivados (requisitos, código, modelos, etc.)",
+     "O resultado dos testes executados",
+     "O banco de dados de defeitos"],1,
+    "A base de teste são os artefatos — requisitos, especificações, código, modelos — a partir dos quais condições e casos de teste são derivados.")
+
+add(1,2,"Qual a diferença entre verificação e validação no contexto do teste?",
+    ["São sinônimos",
+     "Verificação: 'estamos construindo certo?' (conforme especificação); validação: 'estamos construindo a coisa certa?' (atende ao usuário)",
+     "Verificação é dinâmica; validação é estática",
+     "Validação só ocorre em produção"],1,
+    "Verificação checa conformidade com a especificação; validação checa se o produto atende às necessidades reais do usuário.")
+
+add(1,2,"A mentalidade do testador difere da do desenvolvedor porque o testador:",
+    ["Foca em construir funcionalidades rapidamente",
+     "Adota uma perspectiva crítica, buscando ativamente falhas e questionando suposições",
+     "Evita questionar decisões de design",
+     "Apenas confirma que o software funciona conforme esperado pelo dev"],1,
+    "Testadores adotam mentalidade de questionamento e ceticismo construtivo para encontrar o que pode falhar, não para confirmar que funciona.")
+
+add(1,1,"O que é um 'objeto de teste' (test object)?",
+    ["A ferramenta usada para testar",
+     "O item de trabalho (componente, sistema, requisito) que está sendo testado",
+     "O caso de teste em si",
+     "O ambiente de execução"],1,
+    "O objeto de teste é o artefato que está sendo avaliado: um componente, sistema, requisito, modelo ou documento.")
+
+add(1,2,"Como a comunicação eficaz de defeitos pelo testador contribui para o projeto?",
+    ["Cria atrito desnecessário com o time de desenvolvimento",
+     "Permite que defeitos sejam compreendidos, priorizados e corrigidos de forma eficiente",
+     "Substitui a necessidade de cases de teste",
+     "Aumenta o número de defeitos encontrados"],1,
+    "Relatórios claros, objetivos e factuais facilitam a compreensão, reprodução e correção dos defeitos, além de preservar a colaboração.")
+
+add(1,2,"Qual característica do teste antecipado (shift-left) o diferencia do teste tradicional?",
+    ["Testa-se apenas em produção",
+     "As atividades de teste (inclusive revisões estáticas) iniciam desde os requisitos, não só após o código",
+     "Elimina o teste de sistema",
+     "Só aplica-se a projetos ágeis"],1,
+    "Shift-left significa começar a testar — inclusive com revisões de requisitos — nas fases iniciais, antes mesmo de qualquer código.")
+
+add(1,2,"A 'análise de causa-raiz' (root cause analysis) de defeitos recorrentes beneficia o processo porque:",
+    ["Apenas documenta os defeitos",
+     "Identifica a origem dos problemas, permitindo melhorias de processo que previnam defeitos similares no futuro",
+     "Substitui a execução de testes",
+     "É necessária só em projetos críticos"],1,
+    "Identificar a causa-raiz permite implementar melhorias de processo que evitam a reincidência de classes de defeitos semelhantes.")
+
+add(1,2,"Um artefato de teste como um 'caso de teste' deve conter no mínimo:",
+    ["Apenas o nome do testador",
+     "Pré-condições, passos de execução, resultado esperado e pós-condições",
+     "Somente o resultado esperado",
+     "A data de criação e a versão do sistema"],1,
+    "Um caso de teste completo define pré-condições, entradas, passos, resultado esperado e pós-condições, garantindo repetibilidade.")
+
+add(1,2,"Qual o impacto de defeitos encontrados em produção comparado a defeitos encontrados em requisitos?",
+    ["O custo é o mesmo",
+     "Defeitos em produção são muito mais caros de corrigir — o custo cresce a cada fase que passa",
+     "Defeitos em produção são mais fáceis de corrigir",
+     "O impacto é irrelevante para o projeto"],1,
+    "O custo de correção aumenta exponencialmente com a fase: defeitos em requisitos custam muito menos que em produção.")
+
+# ============================================================
 # CAPÍTULO 2 — TESTE AO LONGO DO CICLO (15)
 # ============================================================
 add(2,2,"Como o modelo de ciclo de desenvolvimento influencia o teste?",
@@ -187,6 +302,79 @@ add(2,2,"O que normalmente dispara o teste de manutenção?",
     "Gatilhos típicos: correções/melhorias (modificações), migração de ambiente, atualizações e descontinuação (aposentadoria).")
 
 # ============================================================
+# CAPÍTULO 2 — TESTE AO LONGO DO CICLO (continuação, +10)
+# ============================================================
+add(2,2,"No BDD (Behaviour-Driven Development), os cenários são escritos no formato:",
+    ["Pseudo-código técnico",
+     "Given/When/Then, descrevendo comportamento em linguagem próxima ao negócio",
+     "XML de configuração",
+     "Diagrama de estados"],1,
+    "BDD usa Given/When/Then (ou equivalente) para descrever comportamentos em linguagem compreensível por negócio e técnicos.")
+
+add(2,2,"Qual diferença essencial existe entre TDD e ATDD?",
+    ["São idênticos",
+     "TDD é guiado por testes unitários do desenvolvedor; ATDD usa testes de aceitação definidos com negócio",
+     "ATDD só usa ferramentas de UI",
+     "TDD só se aplica a projetos ágeis"],1,
+    "TDD: dev escreve teste unitário antes do código. ATDD: equipe define testes de aceitação com stakeholders antes de implementar.")
+
+add(2,2,"Em projetos ágeis com iterações curtas, qual nível de teste é mais desafiador de executar dentro do sprint?",
+    ["Teste de componente (unitário)",
+     "Teste de sistema e de aceitação completos, por exigirem integração e tempo maiores",
+     "Revisões de código",
+     "Testes de regressão unitários"],1,
+    "Testes de sistema e aceitação requerem integração e cenários end-to-end, o que pode ser difícil de concluir dentro de um sprint curto.")
+
+add(2,1,"O que é um 'stub' no contexto de teste de componente?",
+    ["Uma ferramenta de automação",
+     "Um componente substituto que simula a dependência do componente sob teste (chamado pelo componente)",
+     "Um tipo de defeito",
+     "Um relatório de teste"],1,
+    "Stubs simulam dependências chamadas pelo componente testado (chamada descendente), permitindo isolamento do componente.")
+
+add(2,2,"O teste de integração de sistemas avalia principalmente:",
+    ["A lógica interna de cada módulo",
+     "As interfaces e interações entre sistemas distintos, incluindo sistemas de terceiros e APIs externas",
+     "A interface gráfica do usuário",
+     "O desempenho de banco de dados"],1,
+    "Testa as interfaces entre sistemas distintos — APIs, serviços externos, integrações — não a lógica interna de cada um.")
+
+add(2,2,"Qual evento tipicamente NÃO é um gatilho de teste de manutenção?",
+    ["Correção de um defeito crítico em produção",
+     "Criação do planejamento inicial do projeto",
+     "Migração de banco de dados para nova versão",
+     "Aposentadoria/descontinuação de um sistema legado"],1,
+    "Planejamento inicial é feito antes do sistema existir; os gatilhos de manutenção envolvem modificação, migração ou descontinuação.")
+
+add(2,2,"O teste operacional (aceitação operacional) verifica aspectos como:",
+    ["A lógica de negócio das funcionalidades",
+     "Backup e recuperação, instalação, segurança operacional e procedimentos administrativos",
+     "O código-fonte",
+     "Os requisitos funcionais apenas"],1,
+    "Aceitação operacional foca em aspectos de operação/suporte: backup, restore, instalação, configuração e segurança operacional.")
+
+add(2,2,"Qual abordagem de integração combina componentes de baixo nível primeiro e vai adicionando componentes de nível mais alto?",
+    ["Big-bang",
+     "Bottom-up",
+     "Top-down",
+     "Sanduíche (sandwich)"],1,
+    "Bottom-up integra de baixo para cima: começa pelos componentes de nível mais baixo, eliminando a necessidade de stubs mas exigindo drivers.")
+
+add(2,2,"No contexto do teste de sistema, 'caso de uso' (use case) serve como:",
+    ["Uma especificação de banco de dados",
+     "Base para projetar cenários de teste que cobrem fluxos de interação ator-sistema",
+     "Uma ferramenta de automação",
+     "Um tipo de defeito"],1,
+    "Casos de uso descrevem fluxos de interação, servindo de base para cenários de teste de sistema fim-a-fim.")
+
+add(2,2,"A automação de testes de regressão em integração contínua (CI) tem como principal benefício:",
+    ["Eliminar testes manuais para sempre",
+     "Detectar rapidamente regressões introduzidas por novas mudanças, fornecendo feedback rápido à equipe",
+     "Reduzir o número de requisitos",
+     "Substituir o teste de aceitação"],1,
+    "Em CI, a automação de regressão executa a cada integração, dando feedback imediato sobre o impacto das mudanças no código existente.")
+
+# ============================================================
 # CAPÍTULO 3 — TESTE ESTÁTICO (15)
 # ============================================================
 add(3,1,"O que caracteriza o teste estático?",
@@ -248,6 +436,76 @@ add(3,2,"Qual é um fator de sucesso para revisões?",
     ["Usar a revisão para avaliar o desempenho das pessoas","Focar no artefato (não na pessoa) e manter clima construtivo",
      "Não definir objetivos","Revisar tudo na maior formalidade possível"],1,
     "Revisões bem-sucedidas focam o produto, têm objetivos claros, escopo adequado e ambiente sem julgamento pessoal.")
+
+# ============================================================
+# CAPÍTULO 3 — TESTE ESTÁTICO (continuação, +10)
+# ============================================================
+add(3,2,"Qual é um tipo de defeito que o teste estático encontra mas o dinâmico dificilmente detecta?",
+    ["Falha de desempenho em carga",
+     "Requisito ambíguo ou contraditório antes de qualquer implementação",
+     "Erro de runtime em módulo executado",
+     "Falha de interface de usuário"],1,
+    "Revisões estáticas encontram defeitos em requisitos (ambiguidades, omissões) antes que o código seja escrito.")
+
+add(3,1,"Qual ferramenta apoia o teste estático por meio de análise automatizada do código-fonte?",
+    ["Ferramenta de execução de testes de desempenho",
+     "Ferramenta de análise estática (linter/analisador de código)",
+     "Ferramenta de gravação e reprodução de UI",
+     "Gerenciador de configuração"],1,
+    "Ferramentas de análise estática examinam o código sem executá-lo, detectando padrões suspeitos, violações e vulnerabilidades.")
+
+add(3,2,"O que é um critério de entrada (entry criterion) para uma revisão formal?",
+    ["O número de participantes",
+     "Uma condição que deve ser satisfeita antes de iniciar a revisão (ex.: artefato completo e disponível)",
+     "A duração máxima da reunião",
+     "O título do documento"],1,
+    "Critérios de entrada garantem que a revisão só começa quando o artefato e os pré-requisitos estão prontos, evitando desperdício.")
+
+add(3,2,"Um anti-padrão comum em revisões é:",
+    ["Focar em defeitos do artefato",
+     "Usar a revisão para avaliar o desempenho ou criticar o autor como pessoa",
+     "Preparar-se individualmente antes da reunião",
+     "Registrar as anomalias encontradas"],1,
+    "Revisar a pessoa em vez do produto cria clima negativo, inibe participação e desvia do objetivo de melhorar o artefato.")
+
+add(3,2,"Qual é o critério de saída típico de uma inspeção formal?",
+    ["Todos os participantes concordarem com tudo",
+     "Taxa de defeitos abaixo de um limite definido ou todos os defeitos abertos tratados",
+     "Tempo de reunião encerrado",
+     "Autor aprovar os comentários"],1,
+    "Critérios de saída de inspeção incluem limites de densidade de defeitos e resolução de todos os problemas abertos identificados.")
+
+add(3,1,"Qual papel na revisão é responsável por garantir que o processo seja seguido e o ambiente seja produtivo?",
+    ["Autor","Moderador (facilitador)","Revisor","Gerente de testes"],1,
+    "O moderador facilita a reunião, mantém o foco no artefato, garante o seguimento do processo e gerencia conflitos.")
+
+add(3,2,"A 'revisão baseada em checklist' usa listas para:",
+    ["Avaliar o desempenho dos revisores",
+     "Guiar os revisores na busca de tipos específicos de defeitos conhecidos",
+     "Medir cobertura de código",
+     "Automatizar o processo de revisão"],1,
+    "Checklists de revisão direcionam a atenção para defeitos típicos (clareza, consistência, completude), aumentando a eficácia.")
+
+add(3,2,"A análise estática por ferramenta pode detectar automaticamente:",
+    ["Falhas de usabilidade subjetivas",
+     "Variáveis não inicializadas, código morto e violações de padrões de codificação",
+     "Bugs que só aparecem sob carga",
+     "Erros de lógica de negócio complexos"],1,
+    "Ferramentas de análise estática detectam padrões problemáticos como variáveis não usadas, referências nulas potenciais e violações de estilo.")
+
+add(3,2,"Qual é a principal diferença entre uma revisão técnica e uma inspeção?",
+    ["A inspeção é menos formal que a revisão técnica",
+     "A inspeção tem processo mais rígido com papéis definidos, métricas, entrada/saída e acompanhamento; a revisão técnica é menos formal",
+     "A revisão técnica usa checklists; a inspeção não",
+     "São equivalentes"],1,
+    "A inspeção é a forma mais formal, com papéis, métricas, critérios de entrada/saída e follow-up rigoroso; a revisão técnica é menos rígida.")
+
+add(3,2,"Por que é importante limitar o tamanho do artefato revisado em uma reunião de revisão?",
+    ["Para reduzir o número de participantes",
+     "Revisões longas causam fadiga, reduzindo a atenção e a taxa de detecção de defeitos",
+     "O tamanho não influencia a qualidade",
+     "Para economizar papel"],1,
+    "Um artefato muito longo leva à fadiga dos revisores, diminuindo a concentração e a eficácia na detecção de defeitos.")
 
 # ============================================================
 # CAPÍTULO 4 — TÉCNICAS DE TESTE (33)
@@ -379,6 +637,148 @@ add(4,2,"A cobertura, em técnicas de teste, mede:",
     "Cobertura expressa quanto dos itens de cobertura (partições, decisões, transições) os testes exercitaram.")
 
 # ============================================================
+# CAPÍTULO 4 — TÉCNICAS DE TESTE (continuação, +22)
+# ============================================================
+add(4,3,"Um campo de temperatura aceita de -10 a 50°C. Pela BVA de 2 valores, quais são os 4 valores de fronteira a testar?",
+    ["-10 e 50",
+     "-11, -10, 50, 51",
+     "-10, 0, 50, 100",
+     "-9, -10, 49, 50"],1,
+    "BVA de 2 valores testa o valor da fronteira e o imediatamente adjacente do lado inválido: -11/-10 (limite inferior) e 50/51 (limite superior).")
+
+add(4,3,"Uma tabela de decisão tem 3 condições binárias. Quantas regras a tabela completa (sem colapso) possui?",
+    ["3","6","8","9"],2,
+    "Três condições binárias geram 2³ = 8 combinações (regras) na tabela de decisão completa.")
+
+add(4,3,"Um sistema de desconto aplica desconto se: (cliente premium = Sim) OU (valor do pedido > R$500). Quantas regras distintas existem com 2 condições binárias?",
+    ["2","4","6","8"],1,
+    "Duas condições binárias geram 2² = 4 regras; a tabela completa tem 4 colunas independentemente do operador lógico.")
+
+add(4,3,"Numa máquina de estados de conta bancária: estados = {Ativa, Bloqueada, Encerrada}. Quantas transições inválidas existem se há apenas 4 transições válidas definidas?",
+    ["4","5","8","6"],2,
+    "Com 3 estados, há 3×3 = 9 células na matriz (incluindo auto-transições); com 4 válidas, há 9-4 = 5 transições inválidas a verificar.")
+
+add(4,3,"Um trecho de código tem 20 instruções executáveis. Um conjunto de testes executou 15. Qual é a cobertura de instruções?",
+    ["75%","15%","85%","20%"],0,
+    "Cobertura de instruções = executadas ÷ total = 15 ÷ 20 = 75%.")
+
+add(4,3,"Um método tem 4 decisões (if/else). Para 100% de cobertura de decisões, quantos resultados de decisão precisam ser exercitados no mínimo?",
+    ["4","8","2","16"],1,
+    "Cada decisão tem 2 resultados (V/F); 4 decisões × 2 resultados = 8 resultados mínimos a exercitar para 100% de cobertura de decisões.")
+
+add(4,3,"Um campo aceita idades de 0 a 120 anos (inteiros). Pela BVA de 3 valores, quais valores testar no limite inferior (0)?",
+    ["0 e 1",
+     "-1, 0 e 1",
+     "0, 1 e 2",
+     "-2, -1 e 0"],1,
+    "BVA de 3 valores testa o limite e seus dois vizinhos: para o limite inferior 0, testam-se -1, 0 e 1.")
+
+add(4,3,"Um formulário tem campo 'quantidade' que aceita apenas 1, 2 ou 3. Pela EP, qual partição inválida existe acima do limite?",
+    ["Não existe partição inválida superior",
+     "Valores ≥ 4",
+     "Valores = 0",
+     "Valores negativos"],1,
+    "A partição inválida superior inclui todos os valores ≥ 4 (acima do máximo 3); valores ≤ 0 formam a partição inválida inferior.")
+
+add(4,2,"Em uma máquina de estados com cobertura de todas as transições (0-switch), qual cenário de login é mais adequado?",
+    ["Testar apenas o login com sucesso",
+     "Testar cada transição possível ao menos uma vez: login com sucesso, senha errada, bloqueio de conta, logout",
+     "Testar somente o estado inicial",
+     "Testar apenas transições inválidas"],1,
+    "Cobertura 0-switch exige exercitar cada transição válida individualmente, cobrindo todos os arcos do diagrama de estados.")
+
+add(4,2,"Ao testar um sistema de controle de semáforo (Verde → Amarelo → Vermelho → Verde), qual técnica é mais indicada?",
+    ["Particionamento de equivalência",
+     "Teste de transição de estados, pois o comportamento depende do estado atual",
+     "Análise de valor-fronteira",
+     "Tabela de decisão"],1,
+    "Semáforos têm estados bem definidos e transições sequenciais — a técnica de transição de estados modela esse comportamento com precisão.")
+
+add(4,3,"Em EP, ao testar um campo de nota de 0 a 10 (números inteiros), um testador usa apenas o valor 5. Qual é o problema dessa abordagem?",
+    ["O valor 5 está correto; a abordagem é adequada",
+     "Testa apenas a partição válida; as partições inválidas (< 0 e > 10) não são cobertas",
+     "O EP exige testar todos os valores de 0 a 10",
+     "O EP não se aplica a números inteiros"],1,
+    "EP exige ao menos um representante de cada partição — válidas e inválidas; usar só valor 5 ignora as partições inválidas abaixo de 0 e acima de 10.")
+
+add(4,3,"Um programa contém o trecho: if (x > 0) { y = x * 2; } z = y + 1; Com apenas um caso de teste onde x=5, qual cobertura é atingida?",
+    ["100% de instruções e 100% de decisões",
+     "100% de instruções executadas no caminho, mas não 100% de decisões (ramo falso não testado)",
+     "0% de cobertura",
+     "100% de decisões"],1,
+    "Com x=5 (condição verdadeira), y=x*2 e z=y+1 são executados. O ramo falso (x≤0) não é testado, então cobertura de decisões < 100%.")
+
+add(4,2,"O erro guessing (suposição de erro) é mais eficaz quando o testador:",
+    ["Nunca viu o sistema antes",
+     "Tem experiência com o domínio, conhece defeitos passados e entende erros comuns de implementação",
+     "Usa apenas técnicas formais",
+     "Não conhece o código"],1,
+    "A eficácia do error guessing cresce com a experiência do testador: conhecimento de domínio e histórico de defeitos orientam a intuição.")
+
+add(4,2,"O teste exploratório em sessões cronometradas (session-based testing) usa 'test charters' para:",
+    ["Documentar todos os passos antes de executar",
+     "Definir a missão da sessão: escopo, objetivo e área a explorar, sem detalhar cada passo",
+     "Substituir o planejamento de teste",
+     "Medir cobertura de código"],1,
+    "Charters definem o foco da sessão exploratória (o que explorar e por quê) sem pré-determinar os passos exatos de execução.")
+
+add(4,2,"Quando se usa uma checklist de teste em vez de casos de teste detalhados?",
+    ["Quando há muito tempo disponível",
+     "Quando se quer agilidade e experiência do testador para decidir como verificar cada item, sem scripts rígidos",
+     "Somente em sistemas críticos",
+     "Quando a automação não é possível"],1,
+    "Checklists oferecem flexibilidade: o testador decide como verificar cada item, usando seu julgamento — adequado quando scripts detalhados seriam excessivos.")
+
+add(4,2,"No ATDD, quem define os critérios de aceitação antes da implementação?",
+    ["Apenas o testador",
+     "Equipe de desenvolvimento, representantes de negócio e testadores colaborativamente",
+     "Apenas o product owner",
+     "O gerente de projetos"],1,
+    "ATDD é colaborativo: negócio, dev e teste definem juntos os critérios/testes de aceitação antes de implementar a funcionalidade.")
+
+add(4,3,"Qual técnica de caixa-preta seria mais indicada para testar regras de elegibilidade de empréstimo que combinam renda, histórico de crédito e tempo de emprego?",
+    ["Análise de valor-fronteira",
+     "Tabela de decisão, pois há múltiplas condições combinadas que levam a decisões diferentes",
+     "Teste de transição de estados",
+     "Cobertura de instruções"],1,
+    "Quando o resultado depende de combinações de múltiplas condições (regras de negócio), a tabela de decisão é a técnica mais indicada.")
+
+add(4,3,"Um campo aceita valores de R$1,00 a R$9.999,99. Na BVA de 2 valores, quais são os valores de teste para o limite inferior?",
+    ["R$1,00 e R$9.999,99",
+     "R$0,99 e R$1,00",
+     "R$1,00 e R$1,01",
+     "R$0,00 e R$1,00"],1,
+    "No limite inferior R$1,00, a BVA de 2 valores testa o valor abaixo do limite (R$0,99, inválido) e o próprio limite (R$1,00, válido).")
+
+add(4,2,"Em um diagrama de estados, o que a cobertura de 'switch-1' (transição de pares) garante além da cobertura 0-switch?",
+    ["Nada de adicional",
+     "Que pares de transições consecutivas (sequências de 2) são exercitados, aumentando a profundidade da cobertura",
+     "Cobertura de todas as condições",
+     "Cobertura de todas as instruções"],1,
+    "Switch-1 cobre sequências de 2 transições (pares), detectando erros que só aparecem em combinações de transições, e é mais forte que 0-switch.")
+
+add(4,2,"A combinação de EP e BVA é mais eficaz que usar cada técnica isoladamente porque:",
+    ["EP e BVA são equivalentes",
+     "EP reduz o espaço de teste; BVA complementa testando os pontos mais propensos a defeitos (fronteiras)",
+     "BVA substitui completamente o EP",
+     "EP testa apenas valores válidos; BVA apenas inválidos"],1,
+    "EP define as partições, reduzindo o espaço; BVA aprofunda nos limites dessas partições, onde defeitos são mais frequentes.")
+
+add(4,2,"Por que a cobertura de 100% de instruções não é suficiente como único critério de qualidade?",
+    ["Porque é impossível de atingir",
+     "Porque não garante que todos os ramos de decisão foram testados, podendo deixar caminhos sem teste",
+     "Porque é muito cara de atingir",
+     "Porque não é aceita pelo syllabus"],1,
+    "100% de instruções pode ser atingido sem testar o ramo falso de um if sem else; a cobertura de decisões é mais forte e mais reveladora.")
+
+add(4,2,"Qual é o objetivo principal do teste baseado em experiência (experience-based testing)?",
+    ["Substituir técnicas formais em todos os casos",
+     "Aproveitar o conhecimento e a intuição do testador para encontrar defeitos que técnicas formais podem perder",
+     "Gerar casos de teste aleatórios",
+     "Medir a cobertura de código"],1,
+    "Técnicas baseadas em experiência complementam as formais, explorando o conhecimento do testador sobre defeitos comuns e comportamentos inesperados.")
+
+# ============================================================
 # CAPÍTULO 5 — GERENCIAMENTO (27)
 # ============================================================
 add(5,1,"O plano de teste tem como propósito principal:",
@@ -491,6 +891,129 @@ add(5,2,"Qual a diferença entre severidade e prioridade de um defeito?",
     "Severidade = impacto no sistema; prioridade = urgência de corrigir; podem ser independentes entre si.")
 
 # ============================================================
+# CAPÍTULO 5 — GERENCIAMENTO (continuação, +18)
+# ============================================================
+add(5,3,"Um risco tem probabilidade de ocorrência de 30% e impacto avaliado em 4 (escala 1–5). Qual é o nível de risco?",
+    ["0,3","1,2","4,3","7"],1,
+    "Nível de risco = probabilidade × impacto = 0,30 × 4 = 1,2 (em escala numérica).")
+
+add(5,3,"Dois riscos: Risco A (probabilidade 20%, impacto 5) e Risco B (probabilidade 50%, impacto 2). Qual deve ser priorizado?",
+    ["Risco A, nível 1,0 < Risco B 1,0 — empate; prioriza o que for mais barato de mitigar",
+     "Risco A (nível 1,0) e Risco B (nível 1,0) têm o mesmo nível; outros fatores decidem",
+     "Risco B por ter maior probabilidade",
+     "Risco A por ter maior impacto"],1,
+    "Nível A = 0,20×5 = 1,0; Nível B = 0,50×2 = 1,0 — empate em nível de risco; critérios secundários (custo de mitigação, visibilidade) decidem.")
+
+add(5,2,"A técnica de estimativa de teste por 'Planning Poker' é uma variante de:",
+    ["Estimativa baseada em ratios",
+     "Estimativa baseada em especialistas (Wideband Delphi), usando consenso do time",
+     "Estimativa por extrapolação de métricas",
+     "Análise de pontos de função"],1,
+    "Planning Poker é uma variação do Wideband Delphi: cada membro vota secretamente e o time discute até convergir, aproveitando a expertise coletiva.")
+
+add(5,2,"Uma estimativa de esforço de teste baseada em ratios usa a proporção histórica de que o teste consome 30% do esforço total. Se o desenvolvimento está estimado em 1000h, o esforço de teste estimado é:",
+    ["300h","700h","30h","1300h"],0,
+    "Ratio de 30%: esforço de teste = 30% × 1000h = 300h.")
+
+add(5,2,"A pirâmide de testes coloca testes de contrato/API no nível intermediário porque:",
+    ["São mais lentos que testes de UI",
+     "São mais rápidos e estáveis que testes E2E/UI, mas validam mais integração que testes unitários",
+     "Apenas verificam a interface gráfica",
+     "São equivalentes a testes unitários"],1,
+    "Testes de API/integração são intermediários: mais rápidos e menos frágeis que E2E, mas com maior abrangência que unitários.")
+
+add(5,2,"Os quadrantes de teste Q1 (que apoiam o time, orientados à tecnologia) incluem principalmente:",
+    ["Testes de usabilidade e exploratórios",
+     "Testes unitários e de componente automatizados que guiam o desenvolvimento",
+     "Testes de aceitação de usuário",
+     "Testes de carga e desempenho"],1,
+    "Q1 (technology-facing, team-support): testes unitários e de componente automatizados que apoiam o desenvolvimento (TDD).")
+
+add(5,2,"Os quadrantes de teste Q4 (que criticam o produto, orientados à tecnologia) incluem:",
+    ["Testes de aceitação do usuário",
+     "Testes de desempenho, segurança, confiabilidade e outros atributos de qualidade não funcionais",
+     "Testes unitários",
+     "Testes exploratórios de negócio"],1,
+    "Q4 (technology-facing, product-critique): testes não funcionais como desempenho, segurança e confiabilidade, geralmente automatizados.")
+
+add(5,2,"Qual é a diferença entre severidade e prioridade de um defeito em um cenário prático?",
+    ["São sempre iguais",
+     "Um bug cosmético (baixa severidade) pode ter alta prioridade se está na tela de marketing de um lançamento iminente",
+     "Alta severidade implica sempre alta prioridade",
+     "A prioridade é definida pelo testador; a severidade pelo cliente"],1,
+    "Severidade e prioridade são independentes: um bug cosmético pode ser urgente (alta prioridade) por razões de negócio, mesmo com baixo impacto técnico.")
+
+add(5,2,"Na gestão de configuração, um 'baseline' (linha de base) é:",
+    ["Um erro no sistema de controle de versão",
+     "Uma versão aprovada e fixada de um ou mais itens de configuração, usada como referência",
+     "O ambiente de produção",
+     "O plano de teste aprovado"],1,
+    "Uma baseline é uma referência estável e formalmente aprovada de itens de configuração, usada para controlar mudanças subsequentes.")
+
+add(5,1,"Qual das seguintes é uma métrica de progresso de teste útil para monitoramento diário?",
+    ["Número de linhas de código por desenvolvedor",
+     "Percentual de casos de teste executados e taxa de aprovação/reprovação",
+     "Horas de reunião por semana",
+     "Número de funcionalidades solicitadas"],1,
+    "Métricas de execução (% executados, aprovados, reprovados) fornecem visibilidade direta do progresso real versus o planejado.")
+
+add(5,2,"O 'relatório de defeito' (bug report) de qualidade deve evitar:",
+    ["Incluir passos para reproduzir",
+     "Linguagem subjetiva, culpa pessoal ou título vago como 'sistema não funciona'",
+     "Registrar a severidade",
+     "Mencionar o ambiente de teste"],1,
+    "Bons relatórios são objetivos, descritivos e factuais; linguagem acusatória e títulos vagos prejudicam a triagem e a correção eficiente.")
+
+add(5,2,"Qual é o propósito do relatório de conclusão de teste (test completion report)?",
+    ["Listar apenas os defeitos abertos",
+     "Resumir os resultados do ciclo de teste, comunicar a qualidade atingida e registrar lições aprendidas",
+     "Substituir o plano de teste para o próximo ciclo",
+     "Aprovar o lançamento do produto"],1,
+    "O relatório de conclusão consolida resultados, cobertura, defeitos, desvios do plano e lições, servindo de referência para ciclos futuros.")
+
+add(5,3,"A abordagem de teste baseada em risco (risk-based testing) afeta o planejamento ao:",
+    ["Ignorar funcionalidades de baixo risco",
+     "Alocar mais esforço, profundidade e antecipação aos itens de maior risco de produto",
+     "Eliminar testes de regressão",
+     "Reduzir o número total de casos de teste sempre"],1,
+    "O risco orienta onde investir mais (técnicas mais rigorosas, início antecipado) e permite reduzir esforço em áreas de baixo risco.")
+
+add(5,3,"Quando critérios de saída não são atingidos mas o prazo chegou ao fim, qual ação é mais adequada?",
+    ["Ignorar os critérios e encerrar o teste",
+     "Relatar o status, os riscos residuais e deixar a decisão de encerrar ou continuar para os stakeholders",
+     "Continuar o teste indefinidamente",
+     "Reprovar formalmente o sistema"],1,
+    "O gerente de testes reporta riscos residuais e status; a decisão de encerrar ou não é de negócio, tomada pelos stakeholders com informação completa.")
+
+add(5,2,"Qual técnica de priorização é mais indicada quando o tempo é muito curto e é necessário garantir que o mais crítico seja testado primeiro?",
+    ["Priorização aleatória",
+     "Priorização baseada em risco: testa primeiro o que tem maior nível de risco",
+     "Priorização por ordem alfabética de módulo",
+     "Testar primeiro os casos mais curtos"],1,
+    "Com tempo limitado, a priorização por risco garante que o esforço disponível cubra o que causaria maior impacto caso falhasse.")
+
+add(5,2,"A 'análise de impacto' (impact analysis) em teste de manutenção serve para:",
+    ["Estimar o custo do projeto",
+     "Identificar quais partes do sistema e quais testes são afetados por uma mudança",
+     "Selecionar a ferramenta de automação",
+     "Planejar treinamentos da equipe"],1,
+    "A análise de impacto determina o escopo da regressão: quais áreas foram afetadas pela mudança e quais testes devem ser executados.")
+
+add(5,2,"Em projetos ágeis, o 'Definition of Ready' (DoR) para uma história de usuário significa que:",
+    ["A história já foi implementada",
+     "A história atende aos critérios mínimos para entrar no sprint (critérios de aceitação definidos, estimada, sem dependências bloqueantes)",
+     "Todos os testes da história foram escritos",
+     "O código foi revisado"],1,
+    "DoR define quando uma história está suficientemente preparada para ser trabalhada no sprint, incluindo critérios de aceitação claros para o teste.")
+
+add(5,2,"Em gestão de configuração, o que é um 'item de configuração' (configuration item)?",
+    ["Um caso de teste individual",
+     "Qualquer artefato (componente, documento, ambiente) identificado e gerenciado como unidade no sistema de controle de configuração",
+     "Uma linha de código",
+     "Um relatório de defeito"],1,
+    "Itens de configuração são artefatos identificados unicamente e gerenciados sob controle de configuração: código, documentos, ambientes, ferramentas.")
+
+# ============================================================
 # CAPÍTULO 6 — FERRAMENTAS (6)
 # ============================================================
 add(6,1,"Ferramentas de teste podem apoiar:",
@@ -517,6 +1040,37 @@ add(6,2,"Antes de implantar amplamente uma nova ferramenta, recomenda-se:",
     ["Comprar a licença para toda a empresa","Conduzir um projeto piloto para avaliar ajuste, definir uso e medir benefícios",
      "Treinar depois da implantação total","Dispensar métricas"],1,
     "Um piloto permite avaliar o ajuste à organização, definir diretrizes de uso e estimar custos/benefícios antes da escala.")
+
+# ============================================================
+# CAPÍTULO 6 — FERRAMENTAS (continuação, +4)
+# ============================================================
+add(6,2,"Um projeto deseja automatizar testes de regressão de API. Que categoria de ferramenta é mais adequada?",
+    ["Ferramenta de gestão de requisitos",
+     "Ferramenta de execução de testes de API (ex.: cliente REST com asserções automatizadas)",
+     "Ferramenta de análise estática",
+     "Ferramenta de revisão de código"],1,
+    "Ferramentas de teste de API (como frameworks REST com asserções) são a categoria adequada para automatizar regressão de serviços.")
+
+add(6,2,"O ROI (retorno sobre investimento) da automação de testes tende a ser maior quando:",
+    ["Os testes são executados poucas vezes",
+     "Os testes são estáveis, executados frequentemente e o custo de manutenção é menor que o de execução manual repetida",
+     "O sistema muda a cada sprint sem compatibilidade retroativa",
+     "A equipe ainda não conhece a ferramenta"],1,
+    "ROI positivo ocorre quando testes estáveis e frequentes amortizam o custo inicial de automação e de manutenção ao longo do tempo.")
+
+add(6,2,"Qual é o risco de 'scripts frágeis' (brittle scripts) na automação de testes de UI?",
+    ["Scripts rodam muito rápido",
+     "Pequenas mudanças na interface quebram os scripts, gerando alto custo de manutenção",
+     "Os scripts cobrem muitos cenários",
+     "A automação detecta mais defeitos"],1,
+    "Scripts de UI que dependem de seletores frágeis (coordenadas, textos literais) se quebram com qualquer mudança de layout, aumentando manutenção.")
+
+add(6,2,"Ao avaliar uma ferramenta de automação de testes, qual critério é mais importante segundo boas práticas?",
+    ["A quantidade de funcionalidades da ferramenta",
+     "O ajuste ao contexto da organização: tecnologia do sistema, habilidades da equipe, integração com o processo",
+     "O número de usuários da ferramenta no mercado",
+     "A data de lançamento da ferramenta"],1,
+    "A adequação ao contexto (tecnologia do produto, maturidade da equipe, integração ao processo) determina o sucesso da adoção mais que qualquer ranking.")
 
 # ============================================================
 # Montagem + validações
@@ -575,6 +1129,6 @@ bank = {
     "questions": questions
 }
 
-with open("/home/claude/ctfl-questions-ptbr.json", "w", encoding="utf-8") as f:
+with open("ctfl-questions-ptbr.json", "w", encoding="utf-8") as f:
     json.dump(bank, f, ensure_ascii=False, indent=2)
 print("\nArquivo gerado: ctfl-questions-ptbr.json")
