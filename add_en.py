@@ -1495,6 +1495,461 @@ EN = {
     ],
     "exp": "An order moving through defined states (New → Confirmed → Shipped → Delivered/Cancelled) is a classic state machine — the ideal target for state transition testing."
 },
+# CHAPTER 5 — TEST MANAGEMENT (45 questions) — BLOCK 1/2 (ch5-01 to ch5-23)
+
+"ch5-01": {
+    "q": "What is the primary purpose of a test plan?",
+    "options": [
+        "To list every defect found during the testing phase of the project",
+        "To document objectives, scope, approach, resources, schedule, and criteria for the test effort",
+        "To replace test cases by providing sufficient guidance for ad hoc execution",
+        "To formally approve the system for release to the production environment"
+    ],
+    "exp": "The test plan communicates objectives, scope, approach, resources, schedule, risks, and entry/exit criteria to all stakeholders."
+},
+"ch5-02": {
+    "q": "What is the difference between a test strategy and a test approach?",
+    "options": [
+        "They are synonyms; both terms describe the same planning artifact",
+        "A test strategy is a general organizational description; a test approach is its adaptation to a specific project",
+        "A test approach is broader than a test strategy and supersedes it at the project level",
+        "A test strategy applies only to agile projects; a test approach applies to waterfall projects"
+    ],
+    "exp": "The strategy describes the general organizational testing direction; the approach adapts the strategy to the context of a specific project."
+},
+"ch5-03": {
+    "q": "Entry criteria define:",
+    "options": [
+        "The conditions that must be met before a test activity can begin",
+        "The conditions under which a completed test activity can be declared finished",
+        "The list of defects that must be resolved before testing can proceed",
+        "The acceptance thresholds the final product must satisfy before user release"
+    ],
+    "exp": "Entry criteria are pre-conditions for starting a test activity, such as environment readiness, test cases approved, and test data available."
+},
+"ch5-04": {
+    "q": "Exit criteria serve to:",
+    "options": [
+        "Authorize the commencement of the next test level or activity",
+        "Determine when a test activity or level can be considered sufficiently complete",
+        "Specify the defects that are acceptable to leave open at product release",
+        "Define the skills required for testers assigned to the project"
+    ],
+    "exp": "Exit criteria define when to stop testing: coverage achieved, open defects below threshold, schedule met, or other agreed conditions."
+},
+"ch5-05": {
+    "q": "In agile methods, the 'Definition of Done' (DoD) functions as:",
+    "options": [
+        "Entry criteria that must be satisfied before a sprint can begin",
+        "A set of exit criteria defining when a work item is truly complete",
+        "A formal test plan that replaces the need for traditional test documentation",
+        "A defect report template used to track unresolved issues in the backlog"
+    ],
+    "exp": "The DoD is a set of exit criteria agreed by the team that defines when a work item (story, sprint, release) is genuinely complete."
+},
+"ch5-06": {
+    "q": "The ratio-based estimation technique uses:",
+    "options": [
+        "Expert judgment from team members familiar with similar past projects",
+        "Historical proportions (e.g., the ratio of test effort to development effort) to project the current estimate",
+        "Function point analysis to derive test effort from system complexity metrics",
+        "Monte Carlo simulation to generate probabilistic effort distributions"
+    ],
+    "exp": "Ratio-based estimation applies historical proportions from past projects (e.g., test effort = 30% of dev effort) to estimate the current project."
+},
+"ch5-07": {
+    "q": "Metrics-based estimation (extrapolation) relies on:",
+    "options": [
+        "Intuitive judgment from the most experienced tester on the team",
+        "Data and measurements from previous iterations or projects, extrapolated to the current work",
+        "The project budget as the primary constraint for determining test scope",
+        "Vendor-supplied benchmarks for the testing tools used on the project"
+    ],
+    "exp": "Metrics-based estimation uses historical data (velocity, defect rates, effort per test case) to extrapolate effort estimates for the current project."
+},
+"ch5-08": {
+    "q": "Expert-based estimation is characterized by:",
+    "options": [
+        "Ignoring past experience in favor of objective measurement and data analysis",
+        "Relying on the judgment of those experienced with the tasks, e.g., Planning Poker or Wideband Delphi",
+        "Using only mathematical formulas derived from project size metrics",
+        "Delegating estimation entirely to project managers rather than testers"
+    ],
+    "exp": "Expert-based estimation leverages the knowledge of experienced practitioners, using consensus techniques like Planning Poker or Wideband Delphi."
+},
+"ch5-09": {
+    "q": "In risk-based prioritization, tests are executed first for:",
+    "options": [
+        "The shortest test cases to maximize the number of tests completed early",
+        "The items with the highest risk level (highest probability × impact)",
+        "The oldest test cases that have not been executed in recent cycles",
+        "The test cases chosen randomly to avoid systematic bias in selection"
+    ],
+    "exp": "Risk-based prioritization executes tests covering the highest-risk items first, ensuring maximum risk reduction early in the test cycle."
+},
+"ch5-10": {
+    "q": "Coverage-based prioritization orders test cases by:",
+    "options": [
+        "The estimated execution time, starting with the fastest cases",
+        "The incremental coverage each test adds to what has not yet been covered",
+        "Alphabetical order of the test case identifiers in the test management tool",
+        "The severity of the defects each test case has found in previous cycles"
+    ],
+    "exp": "Coverage-based prioritization orders tests to maximize new coverage as quickly as possible, executing cases that cover uncovered items first."
+},
+"ch5-11": {
+    "q": "The test pyramid suggests that a well-structured test suite should have:",
+    "options": [
+        "More end-to-end UI tests than unit tests, to maximize business-visible coverage",
+        "Many unit tests at the base and few slow, fragile UI/E2E tests at the top",
+        "An equal number of tests at every level to ensure balanced coverage",
+        "Only automated tests; manual tests have no place in a mature test pyramid"
+    ],
+    "exp": "The pyramid recommends many fast, cheap unit tests at the base and few slow, expensive UI/E2E tests at the top for optimal ROI."
+},
+"ch5-12": {
+    "q": "The testing quadrants help to:",
+    "options": [
+        "Calculate the exact number of test cases required for a given system",
+        "Classify test types by whether they support the team or critique the product, and by technology vs. business focus",
+        "Determine the sequence in which test levels should be executed",
+        "Select the appropriate test automation tool for each test level"
+    ],
+    "exp": "The quadrants organize tests (supporting team vs. critiquing product; technology-facing vs. business-facing) to ensure balanced test planning coverage."
+},
+"ch5-13": {
+    "q": "In test management, 'risk' is defined as:",
+    "options": [
+        "A defect that has been found but not yet fixed by the development team",
+        "A potential future event with a negative consequence for the project or product",
+        "A failed test case that blocks the continuation of the test cycle",
+        "A test case that has been excluded from the scope of the current test plan"
+    ],
+    "exp": "Risk is the possibility of a future event with negative consequences; it combines the probability of occurrence with the magnitude of impact."
+},
+"ch5-14": {
+    "q": "How is the risk level determined?",
+    "options": [
+        "Cost of fixing the defect multiplied by the remaining project timeline",
+        "The likelihood of occurrence combined with the impact of the potential harm",
+        "The severity rating multiplied by the priority assigned in the defect tracker",
+        "The number of test cases that cover the area divided by total test cases"
+    ],
+    "exp": "Risk level = probability of occurrence × impact (magnitude of harm). This combination guides test prioritization."
+},
+"ch5-15": {
+    "q": "What is the difference between product risk and project risk?",
+    "options": [
+        "They are the same; both refer to risks that affect software quality",
+        "Product risk affects the quality of the product; project risk affects achieving project objectives",
+        "Project risk is always technical; product risk is always business-related",
+        "Product risk only applies to customer-facing features; project risk applies to internal processes"
+    ],
+    "exp": "Product risk affects the quality/fitness of the product; project risk (schedule, budget, resources, suppliers) affects the ability to achieve project goals."
+},
+"ch5-16": {
+    "q": "Which of the following is an example of a PROJECT risk?",
+    "options": [
+        "An incorrect financial calculation in the billing module",
+        "Key test personnel leaving the project mid-cycle, causing schedule delays",
+        "A security vulnerability in the authentication component",
+        "Poor performance of the search feature under concurrent user load"
+    ],
+    "exp": "Loss of key personnel causing delays is a project risk (affects project execution); the others are product risks (affect product quality)."
+},
+"ch5-17": {
+    "q": "Which of the following is an example of a PRODUCT risk?",
+    "options": [
+        "The test environment not being available on the planned start date",
+        "A data breach caused by a security defect in the user authentication module",
+        "The project budget being exceeded due to unplanned scope additions",
+        "A third-party supplier delivering a component later than contractually agreed"
+    ],
+    "exp": "A security defect causing a data breach directly affects product quality and user safety — a product risk. The others are project risks."
+},
+"ch5-18": {
+    "q": "Risk-based testing uses the risk assessment to:",
+    "options": [
+        "Eliminate all identified risks before testing begins",
+        "Decide what to test, how much to test, and in what order, allocating effort proportional to risk",
+        "Determine the salary budget for the testing team",
+        "Choose the programming language used to develop the system under test"
+    ],
+    "exp": "Risk-based testing uses risk levels to prioritize what to test first, how deeply to test, and where to concentrate the most experienced testers."
+},
+"ch5-19": {
+    "q": "Risk assessment comprises:",
+    "options": [
+        "Only fixing the defects found during the risk identification workshop",
+        "Identifying risks and analyzing them by estimating their probability and impact",
+        "Executing test cases to verify that identified risks have been mitigated",
+        "Approving the test plan after all risks have been reviewed by management"
+    ],
+    "exp": "Risk assessment includes risk identification followed by risk analysis (estimating probability and impact) to determine risk levels for prioritization."
+},
+"ch5-20": {
+    "q": "How does risk level influence the depth of testing applied?",
+    "options": [
+        "Higher risk items receive less testing to preserve budget for lower-risk areas",
+        "Higher risk items receive more rigorous testing, earlier execution, and more experienced testers",
+        "Risk level has no influence on test depth; all items are tested equally",
+        "Only items with risk level 'critical' are tested; lower-risk items are excluded"
+    ],
+    "exp": "Items with higher risk receive more thorough techniques, earlier testing, and more experienced testers to maximize risk reduction."
+},
+"ch5-21": {
+    "q": "The purpose of test monitoring is:",
+    "options": [
+        "To write test cases that will be executed in the next test cycle",
+        "To provide visibility of progress by comparing actual results against the test plan",
+        "To fix defects found during the execution phase of testing",
+        "To select the test tools that will be used throughout the project"
+    ],
+    "exp": "Monitoring collects information about test progress to compare against the plan and support informed control decisions."
+},
+"ch5-22": {
+    "q": "Which of the following is a typical test metric?",
+    "options": [
+        "The color theme selected for the test management tool dashboard",
+        "The percentage of test cases executed and the pass/fail ratio",
+        "The team's preferred programming language for test automation",
+        "The number of meetings held during the test planning phase"
+    ],
+    "exp": "Common metrics include: test cases planned/executed/passed/failed, defect density, coverage achieved, and defect trend over time."
+},
+"ch5-23": {
+    "q": "A test progress report is primarily intended to:",
+    "options": [
+        "Replace the test plan when the project scope changes significantly",
+        "Inform stakeholders about test status and support decisions during the test effort",
+        "Document the final quality assessment at the end of the project",
+        "List all requirements that have not yet been covered by any test case"
+    ],
+    "exp": "Progress reports communicate current status, risks, and results to stakeholders to support ongoing decisions during the test cycle."
+},
+# CHAPTER 5 — BLOCK 2/2 (ch5-24 to ch5-45)
+
+"ch5-24": {
+    "q": "A test completion report is produced:",
+    "options": [
+        "Before testing begins to communicate the planned approach to stakeholders",
+        "At the end of a test level or milestone, summarizing results and lessons learned",
+        "Daily during test execution to track the number of defects found each day",
+        "Immediately after each individual test case is executed and evaluated"
+    ],
+    "exp": "The completion report summarizes results, coverage achieved, quality assessment, and lessons learned at the end of a test level or major milestone."
+},
+"ch5-25": {
+    "q": "Configuration management supports testing by:",
+    "options": [
+        "Automatically generating test cases from configuration files",
+        "Ensuring consistent identification and versioning of test items and testware with full traceability",
+        "Replacing the test plan with version-controlled configuration documents",
+        "Eliminating the need for defect reports by tracking changes to the codebase"
+    ],
+    "exp": "Configuration management maintains integrity and traceability of items under test and testware (versions, baselines) throughout the project."
+},
+"ch5-26": {
+    "q": "What should a good defect report contain?",
+    "options": [
+        "Only the title and severity rating to keep reporting lightweight and efficient",
+        "Identifier, description, steps to reproduce, expected vs actual result, severity, and priority",
+        "Only the name of the developer responsible for the defective code",
+        "A list of all test cases executed in the same session as the defect was found"
+    ],
+    "exp": "Effective defect reports include: ID, description, reproduction steps, expected vs. actual result, environment, severity, and priority."
+},
+"ch5-27": {
+    "q": "What is the difference between defect severity and priority?",
+    "options": [
+        "They are the same; both measure how urgently a defect must be fixed",
+        "Severity measures the technical impact on the system; priority measures the urgency of fixing from a business perspective",
+        "Priority is determined by the development team; severity is determined by the business owner",
+        "Severity only applies to critical defects; priority applies to all defect types"
+    ],
+    "exp": "Severity = technical impact on the system; priority = business urgency to fix. They can be independent: a cosmetic defect on the homepage may have low severity but high priority."
+},
+"ch5-28": {
+    "q": "Which scenario best illustrates a defect with HIGH severity but LOW priority?",
+    "options": [
+        "A spelling mistake on the company homepage that is visible to all visitors",
+        "A crash in a rarely used legacy report module that only two users access monthly",
+        "A data loss bug in the primary checkout flow affecting all customers",
+        "An incorrect currency symbol displayed on all invoices sent to customers"
+    ],
+    "exp": "A crash (high severity) in a rarely used module (low business impact = low priority) is the classic high-severity/low-priority scenario."
+},
+"ch5-29": {
+    "q": "Which scenario best illustrates a defect with LOW severity but HIGH priority?",
+    "options": [
+        "A crash in the batch processing system that runs nightly for financial reconciliation",
+        "A misspelling of the CEO's name on the company's public-facing homepage",
+        "A calculation error in an internal report used only by the finance team quarterly",
+        "A performance degradation affecting only users in a non-production test environment"
+    ],
+    "exp": "A misspelling (low technical severity) on the public homepage is highly visible and embarrassing, making it high priority for the business."
+},
+"ch5-30": {
+    "q": "What is the purpose of test control in the test management process?",
+    "options": [
+        "To write and review test cases before execution begins",
+        "To take corrective actions when monitoring reveals deviations from the test plan",
+        "To approve the final product for release to the production environment",
+        "To select testing tools and configure the test execution environment"
+    ],
+    "exp": "Test control acts on monitoring data by taking corrective measures (replanning, reallocating resources) when progress deviates from the plan."
+},
+"ch5-31": {
+    "q": "Traceability between test cases and requirements supports:",
+    "options": [
+        "Automatic generation of production code from the test cases",
+        "Coverage analysis, impact assessment of changes, and audit compliance",
+        "Elimination of the need for a separate defect tracking system",
+        "Automatic prioritization of test cases without tester involvement"
+    ],
+    "exp": "Traceability links requirements to test conditions and cases, enabling coverage assessment, change impact analysis, and regulatory audit trails."
+},
+"ch5-32": {
+    "q": "When a change is made to a requirement after testing has begun, which test management activity is most immediately needed?",
+    "options": [
+        "Immediately halting all testing until the change is fully implemented",
+        "Impact analysis to determine which test cases are affected and need updating",
+        "Closing all open defects related to the changed requirement without resolution",
+        "Discarding the existing test plan and starting the planning process from scratch"
+    ],
+    "exp": "Impact analysis identifies which existing tests are affected by the change, allowing targeted updates rather than a complete restart."
+},
+"ch5-33": {
+    "q": "In agile projects, how is test planning typically different from traditional projects?",
+    "options": [
+        "Test planning is eliminated entirely; agile teams rely solely on exploratory testing",
+        "Planning is continuous and lightweight, occurring at multiple levels (release, iteration, daily) rather than as a single upfront document",
+        "Test planning in agile produces a more detailed document than in waterfall projects",
+        "Only the Scrum Master performs test planning; testers focus exclusively on execution"
+    ],
+    "exp": "Agile test planning is continuous and multi-level (release, sprint, daily), adapting frequently rather than being defined once upfront."
+},
+"ch5-34": {
+    "q": "What is the primary purpose of a risk register in test management?",
+    "options": [
+        "To track defects found during testing and their current resolution status",
+        "To document identified risks, their probability, impact, level, and mitigation actions",
+        "To list all test cases that have failed and require investigation",
+        "To record the skills and availability of each tester assigned to the project"
+    ],
+    "exp": "A risk register documents identified risks with their probability, impact, risk level, owner, and planned mitigation or contingency actions."
+},
+"ch5-35": {
+    "q": "A test manager notices that the defect detection rate has dropped significantly in the last three days despite continued testing. The most likely explanation is:",
+    "options": [
+        "The system has become completely defect-free due to effective testing",
+        "The tests being run are repetitive and no longer finding new defects (pesticide paradox)",
+        "The testers have become more efficient and are executing test cases faster",
+        "The defect tracking tool is malfunctioning and not recording new defects"
+    ],
+    "exp": "A declining defect detection rate in stable testing conditions typically indicates the pesticide paradox: tests need to be diversified to find new defects."
+},
+"ch5-36": {
+    "q": "Which estimation technique is most appropriate when detailed historical data from similar projects is available?",
+    "options": [
+        "Expert-based estimation using Planning Poker with the current team",
+        "Metrics-based estimation (extrapolation) using historical project data",
+        "Ratio-based estimation using industry-standard test-to-development effort ratios",
+        "Three-point estimation using optimistic, most likely, and pessimistic scenarios"
+    ],
+    "exp": "When detailed historical data exists, metrics-based estimation provides the most objective and data-driven projections."
+},
+"ch5-37": {
+    "q": "Test effort estimation should consider:",
+    "options": [
+        "Only the number of requirements, since each requirement maps to exactly one test case",
+        "Product risk, system complexity, required coverage, team experience, and tool support",
+        "Only the project deadline, working backward from the release date",
+        "Exclusively the number of defects found in the previous project release"
+    ],
+    "exp": "Estimation considers multiple factors: risk levels, complexity, coverage targets, team skills, tool availability, environment stability, and process maturity."
+},
+"ch5-38": {
+    "q": "What does 'risk mitigation' mean in the context of risk-based testing?",
+    "options": [
+        "Accepting the risk and proceeding without any testing of the affected area",
+        "Taking actions to reduce the probability of a risk occurring or its impact if it does",
+        "Transferring the risk entirely to the customer through contractual agreement",
+        "Documenting the risk in the register and taking no further action"
+    ],
+    "exp": "Risk mitigation involves actions (more testing, earlier testing, design reviews) that reduce either the probability of the risk occurring or its impact."
+},
+"ch5-39": {
+    "q": "A test manager is informed that two key testers will be unavailable for the next sprint. Which test management activity should be performed first?",
+    "options": [
+        "Cancel all testing planned for the sprint and reschedule for the following sprint",
+        "Replan the test scope and priorities to account for the reduced capacity",
+        "Replace both testers immediately with contractors regardless of cost",
+        "Continue with the original plan and accept the resulting quality risk"
+    ],
+    "exp": "Test control responds to changed circumstances by replanning: adjusting scope, priorities, and assignments to match available capacity."
+},
+"ch5-40": {
+    "q": "Which of the following best describes 'test basis' in the context of test planning?",
+    "options": [
+        "The team of testers assigned to execute the test cases in the plan",
+        "Any documentation or knowledge used to derive test conditions and cases",
+        "The baseline version of the software against which all tests are executed",
+        "The test environment configuration documented in the test plan"
+    ],
+    "exp": "The test basis is any artifact (requirements, design, code, risk register) from which test conditions can be identified and test cases derived."
+},
+"ch5-41": {
+    "q": "In risk-based testing, what happens to residual risk after testing is complete?",
+    "options": [
+        "It is automatically eliminated because all planned tests have been executed",
+        "It is communicated to stakeholders so they can make an informed release decision",
+        "It is transferred to the development team for resolution before release",
+        "It is ignored because testing has already addressed the highest-priority risks"
+    ],
+    "exp": "Residual risk (untested or partially tested areas) must be communicated to stakeholders so they can make an informed go/no-go decision."
+},
+"ch5-42": {
+    "q": "Which metric best indicates whether the test execution phase is on track?",
+    "options": [
+        "The total lines of code written by the development team per sprint",
+        "The percentage of planned test cases executed versus the schedule to date",
+        "The number of test team meetings held during the execution phase",
+        "The total size of the test plan document in pages"
+    ],
+    "exp": "Comparing the percentage of test cases executed against the planned schedule is the most direct indicator of execution phase progress."
+},
+"ch5-43": {
+    "q": "What is the relationship between test monitoring and test control?",
+    "options": [
+        "They are the same activity performed by different team members",
+        "Monitoring collects progress data; control uses that data to take corrective actions",
+        "Control precedes monitoring; actions are taken first, then progress is measured",
+        "Monitoring is performed only at the end of testing; control occurs throughout"
+    ],
+    "exp": "Monitoring gathers and analyzes progress data; control acts on that data by adjusting plans, resources, or scope when deviations occur."
+},
+"ch5-44": {
+    "q": "A product has been tested and 15 defects remain open at release. The test manager communicates this to stakeholders. This is an example of:",
+    "options": [
+        "Poor test management, because no defects should remain open at release",
+        "Transparent risk communication, enabling stakeholders to make an informed release decision",
+        "Test failure, because exit criteria require zero open defects before release",
+        "Scope reduction, because untested features were excluded from the release"
+    ],
+    "exp": "Communicating known residual risk (open defects) is good practice; it gives stakeholders the information needed to make an informed release decision."
+},
+"ch5-45": {
+    "q": "Which of the following best describes the role of a test manager versus a tester?",
+    "options": [
+        "Test managers write test cases; testers execute them and report results",
+        "Test managers handle planning, monitoring, and stakeholder communication; testers handle analysis, design, and execution",
+        "Test managers are responsible for automation; testers are responsible for manual testing",
+        "Test managers work only in waterfall; testers work only in agile projects"
+    ],
+    "exp": "The test manager owns planning, monitoring, control, and stakeholder reporting; the tester owns test analysis, design, implementation, and execution."
+},
+
 }  # fim do dicionário EN
 
 # ============================================================
