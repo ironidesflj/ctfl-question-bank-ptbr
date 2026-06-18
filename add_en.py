@@ -939,6 +939,562 @@ EN = {
     ],
     "exp": "Turning a review into personal criticism of the author destroys psychological safety, reduces participation quality, and undermines the review's effectiveness."
 },
+# ============================================================
+# CHAPTER 4 — TEST TECHNIQUES (55 questions) — BLOCK 1/2 (ch4-01 to ch4-28)
+# ============================================================
+
+"ch4-01": {
+    "q": "Test techniques are primarily classified into:",
+    "options": [
+        "Manual and automated techniques based on execution method",
+        "Black-box, white-box, and experience-based techniques",
+        "Functional and non-functional techniques based on quality characteristic",
+        "Static and dynamic techniques based on whether code is executed"
+    ],
+    "exp": "The CTFL syllabus defines three technique categories: black-box (specification-based), white-box (structure-based), and experience-based."
+},
+"ch4-02": {
+    "q": "Equivalence partitioning (EP) is based on the idea that:",
+    "options": [
+        "Every possible input value must be tested to ensure complete coverage",
+        "Values within the same partition are treated equivalently by the system, so one representative suffices",
+        "Only boundary values between partitions require testing for adequate coverage",
+        "Invalid partitions do not need to be tested because the system should reject them automatically"
+    ],
+    "exp": "In EP, all values within a partition produce equivalent behavior; testing one representative value per partition is sufficient."
+},
+"ch4-03": {
+    "q": "A field accepts integers from 1 to 100. Which equivalence partitions exist, including invalid ones?",
+    "options": [
+        "Only one valid partition: 1–100",
+        "Three partitions: ≤0 (invalid), 1–100 (valid), ≥101 (invalid)",
+        "Two partitions: 1–50 and 51–100",
+        "Four partitions: negative, zero, 1–100, and above 100"
+    ],
+    "exp": "There are three partitions: below 1 (invalid), 1–100 (valid), and above 100 (invalid). Zero and negatives are part of the ≤0 invalid partition."
+},
+"ch4-04": {
+    "q": "Why should invalid partitions also be tested in equivalence partitioning?",
+    "options": [
+        "To increase the total count of test cases and demonstrate thoroughness",
+        "To verify that the system correctly handles out-of-range inputs with appropriate rejection or error messages",
+        "Because invalid partitions are always more likely to contain defects than valid ones",
+        "To satisfy regulatory requirements that mandate testing of all possible input combinations"
+    ],
+    "exp": "Invalid partitions verify that the system handles unexpected inputs correctly, such as displaying error messages or rejecting the input gracefully."
+},
+"ch4-05": {
+    "q": "Boundary value analysis (BVA) is effective because:",
+    "options": [
+        "It guarantees 100% statement coverage of the source code under test",
+        "Defects tend to cluster at the boundaries between partitions",
+        "It eliminates the need for equivalence partitioning by subsumingg that technique",
+        "Boundary values are always the easiest inputs for developers to implement correctly"
+    ],
+    "exp": "Defects frequently occur at partition boundaries; BVA complements EP by specifically targeting these error-prone boundary values."
+},
+"ch4-06": {
+    "q": "A field accepts ages from 18 to 65. Which values are tested using 2-value BVA?",
+    "options": [
+        "18 and 65 only",
+        "17, 18, 65, and 66",
+        "17 and 66 only",
+        "0, 18, 65, and 100"
+    ],
+    "exp": "2-value BVA tests each boundary and its adjacent invalid value: 17/18 at the lower boundary and 65/66 at the upper boundary."
+},
+"ch4-07": {
+    "q": "Using 3-value BVA for the upper boundary of 65, which values are tested?",
+    "options": [
+        "65 only",
+        "64, 65, and 66",
+        "63, 64, and 65",
+        "65, 66, and 67"
+    ],
+    "exp": "3-value BVA tests the boundary itself and both adjacent values: 64 (just below), 65 (the boundary), and 66 (just above)."
+},
+"ch4-08": {
+    "q": "Passwords must be between 8 and 16 characters. Using 2-value BVA, which lengths are tested at the lower boundary?",
+    "options": [
+        "8 and 9",
+        "7 and 8",
+        "6, 7, and 8",
+        "8 and 16"
+    ],
+    "exp": "At the lower boundary (8), 2-value BVA tests 7 (invalid, just below) and 8 (valid, the boundary itself)."
+},
+"ch4-09": {
+    "q": "A decision table is most appropriate when:",
+    "options": [
+        "The system behavior depends on a sequence of states triggered by specific events",
+        "There are combinations of conditions that lead to different actions (business rules)",
+        "The focus is on measuring how thoroughly the source code has been exercised",
+        "The tester needs to evaluate system performance under varying load conditions"
+    ],
+    "exp": "Decision tables model business rules with combinations of conditions and their resulting actions, making them ideal for complex logical rules."
+},
+"ch4-10": {
+    "q": "A rule grants free shipping if (subscriber = Yes) AND (purchase > $100). With 2 binary conditions, how many rules does the full decision table contain?",
+    "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+    ],
+    "exp": "Two binary conditions produce 2² = 4 possible combinations (rules) in the complete decision table."
+},
+"ch4-11": {
+    "q": "In a decision table, conditions and actions represent respectively:",
+    "options": [
+        "Outputs and inputs of the system under test",
+        "The causes (inputs/conditions) and effects (resulting actions) for each rule",
+        "States and transitions in the system's behavioral model",
+        "Test cases and their associated expected test data values"
+    ],
+    "exp": "Conditions are the causes (inputs); actions are the effects (expected results) for each combination of conditions."
+},
+"ch4-12": {
+    "q": "A discount is granted only when both 'VIP customer = Yes' AND 'valid coupon = Yes'. For the combination VIP=Yes, coupon=No, the expected action is:",
+    "options": [
+        "Grant the discount because the customer is VIP",
+        "Do not grant the discount because not all conditions are satisfied",
+        "Generate a system error requiring manual intervention",
+        "Grant a partial discount proportional to the conditions satisfied"
+    ],
+    "exp": "The action (discount) only occurs when all required conditions are true; with coupon=No, the discount is not granted."
+},
+"ch4-13": {
+    "q": "State transition testing is appropriate for systems that:",
+    "options": [
+        "Process purely numerical calculations without any dependency on previous inputs",
+        "Change their behavior based on the current state and the events received",
+        "Only have one possible state and respond identically to all inputs",
+        "Are stateless REST APIs that process each request independently"
+    ],
+    "exp": "State transition testing models states, events, transitions, and actions — ideal for sessions, protocols, workflows, and any stateful system."
+},
+"ch4-14": {
+    "q": "In a state diagram, an 'invalid transition' is:",
+    "options": [
+        "A transition that is permitted and should be exercised at least once",
+        "An event that should not cause a state change from the current state",
+        "The initial transition from the start state to the first operational state",
+        "An exit action that executes when leaving a particular state"
+    ],
+    "exp": "Invalid transitions are state/event pairs for which no transition is defined; testing them verifies the system's robustness against unexpected events."
+},
+"ch4-15": {
+    "q": "An ATM requires a card to be inserted before accepting a PIN. Attempting to enter a PIN without a card tests:",
+    "options": [
+        "A valid transition from the idle state",
+        "An invalid transition (unexpected event for the current state)",
+        "The terminal state of the ATM workflow",
+        "An entry action for the PIN entry state"
+    ],
+    "exp": "Entering a PIN in the 'awaiting card' state is an event not defined for that state — an invalid transition testing system robustness."
+},
+"ch4-16": {
+    "q": "0-switch coverage (valid transitions coverage) requires:",
+    "options": [
+        "Covering every pair of consecutive valid transitions at least once",
+        "Exercising each individual valid transition at least once",
+        "Covering all invalid transitions to verify system robustness",
+        "Visiting every state at least twice during the test sequence"
+    ],
+    "exp": "0-switch (single transition) coverage requires each valid transition to be exercised at least once."
+},
+"ch4-17": {
+    "q": "When choosing between EP, BVA, decision tables, and state transitions, the primary criterion is:",
+    "options": [
+        "The automation tool available to the test team",
+        "The nature of the problem: ranges, rule combinations, or state-dependent behavior",
+        "The personal preference and experience of the individual tester",
+        "The size of the development team and the project deadline"
+    ],
+    "exp": "Technique selection depends on the problem structure: ranges (EP/BVA), combined rules (decision table), state-dependent behavior (state transition)."
+},
+"ch4-18": {
+    "q": "White-box test techniques derive tests from:",
+    "options": [
+        "External requirements and user stories defined by the product owner",
+        "The internal structure: code, control flow, and system architecture",
+        "The tester's experience and intuition about likely failure modes",
+        "Acceptance criteria agreed between the development team and stakeholders"
+    ],
+    "exp": "White-box techniques use the internal structure (statements, decisions, paths, architecture) as the basis for designing and measuring tests."
+},
+"ch4-19": {
+    "q": "Statement coverage measures:",
+    "options": [
+        "The percentage of decision outcomes exercised by the test suite",
+        "The percentage of executable statements that have been executed",
+        "The total number of independent paths through the code",
+        "The number of conditions that independently affect decision outcomes"
+    ],
+    "exp": "Statement coverage = executed executable statements ÷ total executable statements, expressed as a percentage."
+},
+"ch4-20": {
+    "q": "A code segment has 10 executable statements; a test suite executed 7 of them. The statement coverage is:",
+    "options": [
+        "100%",
+        "70%",
+        "7%",
+        "30%"
+    ],
+    "exp": "7 out of 10 executable statements executed = 70% statement coverage."
+},
+"ch4-21": {
+    "q": "Decision coverage (branch coverage) requires:",
+    "options": [
+        "Executing every executable statement at least once",
+        "Exercising each decision as both true and false at least once",
+        "Covering every possible combination of condition values",
+        "Testing all independent paths through the code under test"
+    ],
+    "exp": "Decision coverage requires each decision (e.g., if-statement) to evaluate to both true and false at least once."
+},
+"ch4-22": {
+    "q": "For an 'if' statement without an 'else' branch, which coverage criterion ensures the false path is also tested?",
+    "options": [
+        "Statement coverage, because all statements must be executed",
+        "Decision coverage, because each decision must evaluate to both true and false",
+        "No standard coverage criterion requires testing the false path of an if without else",
+        "Condition coverage, because each individual condition must be evaluated"
+    ],
+    "exp": "Without an else branch, 100% statement coverage can be achieved without testing the false path; decision coverage forces both true and false outcomes."
+},
+"ch4-23": {
+    "q": "Which statement about the relative strength of coverage criteria is correct?",
+    "options": [
+        "Statement coverage is stronger than decision coverage",
+        "100% decision coverage implies 100% statement coverage, but not vice versa",
+        "Statement coverage and decision coverage are equally strong criteria",
+        "Decision coverage does not subsume statement coverage in any circumstance"
+    ],
+    "exp": "Decision coverage is stronger: achieving 100% decision coverage guarantees 100% statement coverage, but the reverse does not hold."
+},
+"ch4-24": {
+    "q": "What is the value of white-box testing?",
+    "options": [
+        "It completely replaces black-box testing by providing superior defect detection",
+        "It reveals untested code segments and measures the thoroughness of the test suite",
+        "It eliminates the need for requirements-based testing by focusing on implementation",
+        "It guarantees that all defects will be found once 100% statement coverage is achieved"
+    ],
+    "exp": "White-box testing shows what the code actually exercises, revealing gaps that specification-based techniques alone cannot detect."
+},
+"ch4-25": {
+    "q": "Error guessing consists of:",
+    "options": [
+        "Randomly selecting input values without any systematic approach or heuristic",
+        "Anticipating likely defects based on experience, past defects, and knowledge of failure modes",
+        "Generating test cases automatically using AI tools trained on historical defect data",
+        "Measuring code coverage to identify gaps in the existing test suite"
+    ],
+    "exp": "Error guessing uses experience and knowledge of common failures to create tests likely to expose defects that formal techniques might miss."
+},
+"ch4-26": {
+    "q": "In exploratory testing, the tester:",
+    "options": [
+        "Follows pre-defined test scripts step by step without deviation",
+        "Simultaneously learns about the system, designs tests, and executes them",
+        "Only measures performance metrics without evaluating functional behavior",
+        "Documents all test cases in advance before executing any of them"
+    ],
+    "exp": "Exploratory testing combines learning, designing, and executing in real time, often guided by test charters and time-boxed sessions."
+},
+"ch4-27": {
+    "q": "Checklist-based testing relies on:",
+    "options": [
+        "State diagrams showing all valid and invalid system transitions",
+        "A list of items or conditions to verify, derived from experience and heuristics",
+        "Code coverage metrics generated by automated instrumentation tools",
+        "Decision tables enumerating all combinations of business rule conditions"
+    ],
+    "exp": "Checklists compile items to verify (heuristics, lessons learned), guiding testing without detailed scripts."
+},
+"ch4-28": {
+    "q": "When are experience-based techniques most valuable?",
+    "options": [
+        "When a complete and stable specification is available for systematic technique application",
+        "When documentation is scarce, time is short, or to complement formal techniques",
+        "Only in safety-critical systems where formal techniques are mandatory by regulation",
+        "Exclusively when automated testing tools are unavailable to the test team"
+    ],
+    "exp": "Experience-based techniques are valuable with limited documentation or tight timelines, and as complements to formal techniques to catch defects that escape them."
+},
+# CHAPTER 4 — BLOCK 2/2 (ch4-29 to ch4-55)
+
+"ch4-29": {
+    "q": "The '3 C's' of collaborative user story writing are:",
+    "options": [
+        "Code, Compile, and Commit — the three steps of test-driven development",
+        "Card, Conversation, and Confirmation — the three elements of a well-formed user story",
+        "Cost, Customer, and Contract — the three constraints of agile project management",
+        "Create, Check, and Close — the three phases of the defect lifecycle"
+    ],
+    "exp": "The 3 C's: Card (brief summary), Conversation (detailed discussion), and Confirmation (acceptance criteria that define done)."
+},
+"ch4-30": {
+    "q": "Acceptance criteria for a user story serve to:",
+    "options": [
+        "Estimate the development effort required to implement the story in story points",
+        "Define the conditions the story must satisfy to be considered complete and accepted",
+        "Measure the code coverage achieved by the automated tests for that story",
+        "Replace the need for test cases by providing sufficient implementation guidance"
+    ],
+    "exp": "Acceptance criteria describe what makes a story 'done/accepted', providing the basis for deriving test cases."
+},
+"ch4-31": {
+    "q": "In ATDD (Acceptance Test-Driven Development), acceptance tests are:",
+    "options": [
+        "Written after delivery to validate that the implemented feature works correctly",
+        "Defined collaboratively before implementation, derived from acceptance criteria",
+        "Only automated end-to-end UI tests executed by the continuous integration pipeline",
+        "Optional artifacts that supplement but never replace traditional test planning"
+    ],
+    "exp": "In ATDD, the team (business, dev, test) collaboratively defines acceptance tests before coding, guiding implementation and confirming completion."
+},
+"ch4-32": {
+    "q": "A requirement describes both value ranges and multi-field combination rules. The best test strategy is:",
+    "options": [
+        "Apply only BVA because it is the most comprehensive black-box technique available",
+        "Combine techniques: EP/BVA for the ranges and decision tables for the combinations",
+        "Apply only state transition testing because the system has multiple operational modes",
+        "Use exploratory testing exclusively since the requirement is too complex for formal techniques"
+    ],
+    "exp": "Mixed problems need combined techniques: EP/BVA for ranges and decision tables for combined rules."
+},
+"ch4-33": {
+    "q": "Coverage in test techniques measures:",
+    "options": [
+        "The total number of defects found by the test suite during execution",
+        "The degree to which defined coverage items have been exercised by the tests",
+        "The elapsed time taken to execute all test cases in the test suite",
+        "The number of testers assigned to the project relative to its complexity"
+    ],
+    "exp": "Coverage expresses how much of the defined coverage items (partitions, decisions, transitions) the tests have exercised."
+},
+"ch4-34": {
+    "q": "Which statement about black-box techniques is correct?",
+    "options": [
+        "Black-box techniques require full access to the source code to derive test cases",
+        "Black-box techniques derive tests from specifications without knowledge of internal implementation",
+        "Black-box techniques are less rigorous than white-box techniques in all circumstances",
+        "Black-box techniques can only be applied at the system test level"
+    ],
+    "exp": "Black-box techniques (EP, BVA, decision tables, state transitions) derive tests from external specifications without examining the code."
+},
+"ch4-35": {
+    "q": "Which of the following is an experience-based technique?",
+    "options": [
+        "Equivalence partitioning, because it requires experience to identify valid partitions",
+        "Error guessing, because it relies on the tester's knowledge of likely failure modes",
+        "Decision coverage, because testers use experience to select which paths to cover",
+        "Boundary value analysis, because experienced testers know where defects cluster"
+    ],
+    "exp": "Error guessing, exploratory testing, and checklist-based testing are experience-based; the others are formal specification or structure-based techniques."
+},
+"ch4-36": {
+    "q": "A system grants admin access if (role = admin) AND (MFA = enabled) AND (IP = whitelisted). With 3 binary conditions, how many rules does the full decision table contain?",
+    "options": [
+        "3",
+        "6",
+        "8",
+        "16"
+    ],
+    "exp": "Three binary conditions produce 2³ = 8 possible combinations (rules) in the complete decision table."
+},
+"ch4-37": {
+    "q": "Modified Condition/Decision Coverage (MC/DC) requires, beyond decision coverage, that:",
+    "options": [
+        "Every executable statement is covered at least once by the test suite",
+        "Each condition independently demonstrates the ability to affect the decision outcome",
+        "All possible combinations of condition values are tested exhaustively",
+        "Only the true and false outcomes of each complete decision are exercised"
+    ],
+    "exp": "MC/DC requires each condition to independently affect the decision outcome, demonstrating that each condition matters individually."
+},
+"ch4-38": {
+    "q": "MC/DC is required in which domain due to safety-critical certification standards?",
+    "options": [
+        "E-commerce platforms requiring high availability under peak shopping load",
+        "Aviation software under DO-178C, where it is mandated for the highest criticality levels",
+        "Social media applications requiring rapid feature deployment and A/B testing",
+        "Database management systems requiring high transactional throughput"
+    ],
+    "exp": "MC/DC is required by DO-178C for Level A (catastrophic failure) aviation software and similar safety-critical standards like ISO 26262 in automotive."
+},
+"ch4-39": {
+    "q": "A tester uses their knowledge of past defects to create tests targeting off-by-one errors and null pointer exceptions. This is an example of:",
+    "options": [
+        "Equivalence partitioning applied to boundary conditions",
+        "Error guessing based on experience with common defect types",
+        "White-box testing using statement coverage criteria",
+        "Exploratory testing guided by a formal test charter"
+    ],
+    "exp": "Using past defect knowledge to target likely failure modes is the defining characteristic of error guessing."
+},
+"ch4-40": {
+    "q": "A test charter in exploratory testing defines:",
+    "options": [
+        "The exact steps a tester must follow in a scripted test procedure",
+        "The mission or focus area for a time-boxed exploratory test session",
+        "The code coverage target that must be achieved before releasing the product",
+        "The formal entry and exit criteria for a test level"
+    ],
+    "exp": "A test charter provides a mission or focus (what to explore, what to look for) for a time-boxed exploratory session without prescribing exact steps."
+},
+"ch4-41": {
+    "q": "Which coverage criterion is achieved when both the true and false outcomes of every decision in the code have been exercised?",
+    "options": [
+        "Statement coverage",
+        "Decision coverage",
+        "Condition coverage",
+        "Path coverage"
+    ],
+    "exp": "Decision coverage (branch coverage) is achieved when every decision evaluates to both true and false at least once."
+},
+"ch4-42": {
+    "q": "For a valid partition of integers 1–100, which value is the LEAST appropriate representative to select?",
+    "options": [
+        "50, because it is in the middle of the partition",
+        "1, because it is the lower boundary of the partition",
+        "0, because it is outside the valid partition",
+        "75, because it is in the upper quarter of the partition"
+    ],
+    "exp": "0 is outside the valid partition (≤0 is the invalid partition); selecting it as a representative of the valid partition violates EP principles."
+},
+"ch4-43": {
+    "q": "State transition testing with 1-switch coverage requires:",
+    "options": [
+        "Every individual valid transition to be exercised at least once",
+        "Every sequence of two consecutive valid transitions to be exercised at least once",
+        "Every state to be visited at least once during the test sequence",
+        "All invalid transitions to be exercised to verify system robustness"
+    ],
+    "exp": "1-switch (transition pair) coverage requires every valid sequence of two consecutive transitions to be exercised at least once — stronger than 0-switch."
+},
+"ch4-44": {
+    "q": "A tester identifies that a module handles three independent discount types that can be combined. The most appropriate technique is:",
+    "options": [
+        "Boundary value analysis, because discounts involve numerical threshold values",
+        "Decision table testing, because multiple conditions combine to determine the discount",
+        "State transition testing, because discounts represent different system states",
+        "Statement coverage, because the discount logic is implemented in code"
+    ],
+    "exp": "When multiple conditions combine to produce different outcomes (discount combinations), decision tables are the most systematic technique."
+},
+"ch4-45": {
+    "q": "Which statement correctly describes the relationship between EP and BVA?",
+    "options": [
+        "BVA replaces EP entirely; there is no need to apply EP when BVA is used",
+        "EP identifies partitions; BVA extends EP by specifically testing the boundaries between those partitions",
+        "EP is only applicable to valid inputs; BVA handles both valid and invalid inputs",
+        "BVA is a white-box technique; EP is a black-box technique"
+    ],
+    "exp": "EP defines the partitions; BVA complements EP by focusing test effort on the boundaries between partitions where defects commonly occur."
+},
+"ch4-46": {
+    "q": "In black-box testing, test cases are derived from:",
+    "options": [
+        "The internal code structure, including loops, conditions, and data flows",
+        "The specification, requirements, or expected behavior of the system",
+        "The tester's intuition and experience with similar systems",
+        "The code coverage report generated by the previous test execution"
+    ],
+    "exp": "Black-box techniques derive test cases from external specifications (requirements, user stories, models) without access to the internal implementation."
+},
+"ch4-47": {
+    "q": "A login system has three states: Logged Out, Logged In, and Locked. From Logged Out, entering a correct password transitions to Logged In; three failed attempts transition to Locked. Entering a correct password while Locked should:",
+    "options": [
+        "Transition to Logged In, because the password is correct",
+        "Remain in Locked state, because Locked → Logged In is an invalid transition",
+        "Transition to Logged Out, because all locks expire automatically",
+        "Generate a system crash, indicating a critical defect in the state machine"
+    ],
+    "exp": "If no transition from Locked to Logged In is defined, entering a correct password in the Locked state is an invalid transition; the system should stay Locked."
+},
+"ch4-48": {
+    "q": "Which test technique is most appropriate for a system that processes insurance claims based on multiple eligibility conditions?",
+    "options": [
+        "Boundary value analysis, because insurance amounts have numerical thresholds",
+        "Decision table testing, because multiple conditions combine to determine claim eligibility",
+        "State transition testing, because claims move through different processing stages",
+        "Statement coverage, because all code paths in the claims engine must be exercised"
+    ],
+    "exp": "Multiple eligibility conditions combining to determine an outcome is the ideal use case for decision table testing."
+},
+"ch4-49": {
+    "q": "A code module has 5 decisions, each with a true and false branch. What is the minimum number of test cases required to achieve 100% decision coverage?",
+    "options": [
+        "2, because you need only one test for true and one for false across all decisions",
+        "5, because each decision requires at least one test case",
+        "2, provided the test cases collectively exercise every true and false outcome",
+        "10, because each of the 5 decisions requires a separate true and false test case"
+    ],
+    "exp": "100% decision coverage requires every decision to evaluate true and false; with careful design, 2 test cases can cover all 5 decisions if paths are shared."
+},
+"ch4-50": {
+    "q": "Which of the following best describes a 'coverage item' in the context of test techniques?",
+    "options": [
+        "A defect found during test execution that reduces overall product quality",
+        "An attribute derived from a test condition that is used to measure test coverage",
+        "A test case that has been executed and produced a definitive pass or fail result",
+        "A requirement that has been traced to at least one executed test case"
+    ],
+    "exp": "A coverage item is a specific attribute (e.g., a partition, boundary value, decision outcome, transition) derived from conditions to measure how thoroughly testing covers the basis."
+},
+"ch4-51": {
+    "q": "Collaborative user story testing (the 3 C's) helps testers by:",
+    "options": [
+        "Automating the generation of test cases directly from the user story card",
+        "Involving testers early in story definition to identify testability issues and ambiguities",
+        "Replacing formal test planning with informal conversations between developers",
+        "Ensuring that user stories are always small enough to complete within one sprint"
+    ],
+    "exp": "Early tester involvement in story definition (Conversation + Confirmation) surfaces testability issues and ambiguities before implementation begins."
+},
+"ch4-52": {
+    "q": "Which statement about applying multiple test techniques is correct?",
+    "options": [
+        "Only one technique should be applied per test level to avoid redundancy",
+        "Combining techniques provides more thorough coverage than any single technique alone",
+        "Experience-based techniques should never be combined with formal techniques",
+        "White-box and black-box techniques are mutually exclusive and cannot be combined"
+    ],
+    "exp": "Combining techniques (e.g., EP + BVA + error guessing) provides broader and more thorough coverage than any single technique in isolation."
+},
+"ch4-53": {
+    "q": "A field accepts a two-character country code (exactly 2 alphabetic characters). Which partitions should be defined?",
+    "options": [
+        "One valid partition only: all two-character alphabetic strings",
+        "Valid: exactly 2 alpha chars; invalid: fewer than 2 chars, more than 2 chars, non-alpha chars",
+        "Two partitions: uppercase codes and lowercase codes",
+        "Four partitions based on the first and second character independently"
+    ],
+    "exp": "Correct partitioning includes the valid partition and multiple invalid partitions: too short, too long, and non-alphabetic characters."
+},
+"ch4-54": {
+    "q": "Exploratory testing is most effectively structured using:",
+    "options": [
+        "Detailed step-by-step test scripts that define every action and verification point",
+        "Time-boxed sessions with test charters that define the mission and scope",
+        "Code coverage targets that guide which parts of the application to explore",
+        "Decision tables that enumerate all conditions to investigate during the session"
+    ],
+    "exp": "Session-based exploratory testing uses time-boxed sessions guided by charters, balancing freedom with accountability."
+},
+"ch4-55": {
+    "q": "Which of the following scenarios is BEST suited for state transition testing?",
+    "options": [
+        "A calculation engine that computes tax based on income brackets and filing status",
+        "An order management system where orders move through states: New, Confirmed, Shipped, Delivered, Cancelled",
+        "A search function that filters results based on multiple user-selected criteria",
+        "A password field that enforces complexity rules on the characters entered"
+    ],
+    "exp": "An order moving through defined states (New → Confirmed → Shipped → Delivered/Cancelled) is a classic state machine — the ideal target for state transition testing."
+},
 }  # fim do dicionário EN
 
 # ============================================================
