@@ -431,7 +431,260 @@ EN = {
     ],
     "exp": "A passing test increases confidence but does not prove correctness; other defects may exist in untested paths."
 },
+# ============================================================
+# CHAPTER 2 — TESTING THROUGHOUT THE SDLC (25 questions)
+# ============================================================
 
+"ch2-01": {
+    "q": "How does the software development lifecycle model influence testing?",
+    "options": [
+        "It has no influence; testing is always performed the same way regardless of the model",
+        "It influences the scope, timing, approach, and level of detail of testing activities",
+        "It only affects the choice of test automation tool",
+        "It determines the number of testers required but not the testing approach"
+    ],
+    "exp": "The SDLC model shapes when, how, and how deeply testing is performed; sequential models tend to test by phase, while iterative/agile models integrate testing continuously."
+},
+"ch2-02": {
+    "q": "What does 'shift-left' mean in the context of software testing?",
+    "options": [
+        "Moving test execution to a later phase to allow more development time",
+        "Anticipating testing activities to earlier stages of the development lifecycle",
+        "Shifting the testing team to the left side of the office floor plan",
+        "Reducing the number of test levels by merging them into one phase"
+    ],
+    "exp": "Shift-left moves testing earlier in the lifecycle, enabling earlier defect detection and reducing the cost of fixing them."
+},
+"ch2-03": {
+    "q": "TDD, ATDD, and BDD are examples of:",
+    "options": [
+        "Automated UI testing frameworks used in regression suites",
+        "Test-first approaches where tests or acceptance criteria guide development",
+        "Configuration management strategies for test environments",
+        "Performance testing methodologies applied in load testing scenarios"
+    ],
+    "exp": "TDD, ATDD, and BDD are test-first approaches: tests or acceptance criteria are defined before or alongside the code, guiding implementation."
+},
+"ch2-04": {
+    "q": "What is the primary benefit of retrospectives for the test process?",
+    "options": [
+        "They replace the need for test planning in agile projects",
+        "They promote continuous process improvement based on lessons learned",
+        "They provide a mechanism for assigning blame for defects found in production",
+        "They eliminate the need for defect reports by resolving issues verbally"
+    ],
+    "exp": "Retrospectives identify what to improve (process, tools, collaboration), supporting continuous improvement across iterations."
+},
+"ch2-05": {
+    "q": "Component testing (unit testing) focuses on:",
+    "options": [
+        "Verifying interactions between separately developed systems across organizational boundaries",
+        "Testing individual components in isolation, typically performed by developers",
+        "Validating the complete system against user acceptance criteria",
+        "Evaluating system behavior under concurrent load from multiple users"
+    ],
+    "exp": "Component testing verifies individual modules/units in isolation, often using stubs and drivers, and is typically performed by developers."
+},
+"ch2-06": {
+    "q": "What is the difference between component integration testing and system integration testing?",
+    "options": [
+        "They are identical; the terms are interchangeable in modern testing practice",
+        "Component integration tests interactions within a system; system integration tests interactions between distinct systems",
+        "System integration testing is always performed before component integration testing",
+        "Only component integration testing uses interfaces; system integration testing uses only APIs"
+    ],
+    "exp": "Component integration focuses on internal interfaces between components of one system; system integration focuses on interfaces between different systems or organizations."
+},
+"ch2-07": {
+    "q": "System testing evaluates:",
+    "options": [
+        "Individual components in isolation using drivers and stubs to simulate dependencies",
+        "The behavior and capabilities of the complete integrated system as a whole",
+        "Only the user interface layer of the application under test",
+        "Contractual acceptance criteria defined between the customer and the supplier"
+    ],
+    "exp": "System testing evaluates the fully integrated system end-to-end, covering both functional and non-functional behavior."
+},
+"ch2-08": {
+    "q": "Which are common forms of acceptance testing?",
+    "options": [
+        "Unit testing and integration testing performed by developers before handover",
+        "User acceptance (UAT), operational, contractual, and regulatory acceptance testing",
+        "White-box and black-box testing combined into a single acceptance phase",
+        "Static and dynamic testing merged into a unified acceptance review process"
+    ],
+    "exp": "Acceptance testing includes UAT, operational acceptance (backup, security), contractual acceptance, and regulatory acceptance."
+},
+"ch2-09": {
+    "q": "What is the difference between alpha and beta testing?",
+    "options": [
+        "Alpha testing is performed in production; beta testing is performed by the development team",
+        "Alpha testing occurs at the developer's site; beta testing is performed by real users in their own environment",
+        "Beta testing always precedes alpha testing in the release lifecycle",
+        "Alpha and beta testing are synonyms for system and acceptance testing respectively"
+    ],
+    "exp": "Alpha is conducted at the developer's premises (by users or the team); beta is performed by users in their own environment."
+},
+"ch2-10": {
+    "q": "Functional testing evaluates:",
+    "options": [
+        "How the system behaves under stress, including performance and resource consumption",
+        "What the system does, based on its specified functional requirements and behavior",
+        "The internal structure of the code, including statement and branch coverage",
+        "The degree to which the system satisfies operational and regulatory constraints"
+    ],
+    "exp": "Functional testing verifies the functions and behavior of the system (what it does) against its functional requirements."
+},
+"ch2-11": {
+    "q": "Which is an example of non-functional testing?",
+    "options": [
+        "Verifying that a discount calculation produces the correct monetary result",
+        "Evaluating system response time under one thousand simultaneous users",
+        "Confirming that the login workflow navigates to the correct dashboard",
+        "Validating that a business rule correctly rejects an invalid date format"
+    ],
+    "exp": "Non-functional testing evaluates quality attributes such as performance, usability, security, and reliability — the 'how well' dimension."
+},
+"ch2-12": {
+    "q": "White-box testing derives tests from:",
+    "options": [
+        "External specifications and user stories defined by the product owner",
+        "The internal structure of the code, control flow, or system architecture",
+        "The tester's experience and intuition about likely failure areas",
+        "Acceptance criteria agreed between the development team and the customer"
+    ],
+    "exp": "White-box (structural) testing uses the internal structure (code, control flow, architecture) as the basis for designing and measuring tests."
+},
+"ch2-13": {
+    "q": "Confirmation testing (re-testing) occurs when:",
+    "options": [
+        "A new feature is developed and needs to be validated against acceptance criteria",
+        "A defect fix is verified to confirm the original failure no longer occurs",
+        "The test environment is migrated to a new infrastructure platform",
+        "The project reaches the end of an iteration and all stories are reviewed"
+    ],
+    "exp": "After a defect is fixed, the failing test case is re-executed to confirm the defect has been successfully resolved."
+},
+"ch2-14": {
+    "q": "What is the objective of regression testing?",
+    "options": [
+        "To confirm that a specific defect fix has resolved the originally reported failure",
+        "To detect unintended side effects: changes that have broken previously working functionality",
+        "To evaluate system performance under gradually increasing load conditions",
+        "To test new functionality that has never been tested in a previous iteration"
+    ],
+    "exp": "Regression testing verifies that changes have not introduced defects into previously working parts of the system."
+},
+"ch2-15": {
+    "q": "What typically triggers maintenance testing?",
+    "options": [
+        "Only the initial system release after development is complete",
+        "Modifications, migrations, upgrades, or retirement of an existing system",
+        "Exclusively the addition of new functional requirements to the backlog",
+        "The creation of test cases during the planning phase of a new project"
+    ],
+    "exp": "Maintenance testing is triggered by changes (fixes, enhancements), migrations to new environments, upgrades, and system retirement."
+},
+"ch2-16": {
+    "q": "In a test-driven development (TDD) workflow, which sequence is correct?",
+    "options": [
+        "Write production code → run tests → write failing test → refactor",
+        "Write a failing test → write minimal code to pass → refactor",
+        "Write all tests upfront → implement the full feature → run tests once",
+        "Deploy to production → monitor failures → write tests to reproduce them"
+    ],
+    "exp": "TDD follows the Red-Green-Refactor cycle: write a failing test, write just enough code to pass it, then refactor."
+},
+"ch2-17": {
+    "q": "Which statement best describes the role of testing in DevOps?",
+    "options": [
+        "Testing is performed only at the end of the pipeline before production release",
+        "Testing is integrated throughout the pipeline to provide fast feedback at every stage",
+        "Testing in DevOps is fully automated and eliminates the need for manual testing entirely",
+        "Testing responsibility shifts exclusively to operations engineers in a DevOps model"
+    ],
+    "exp": "In DevOps, testing is continuous and integrated at every pipeline stage to provide rapid feedback and support frequent safe deployments."
+},
+"ch2-18": {
+    "q": "What distinguishes test levels from test types?",
+    "options": [
+        "Test levels and test types are synonyms used interchangeably in the CTFL syllabus",
+        "Test levels relate to the degree of development completeness; test types relate to a specific quality characteristic being evaluated",
+        "Test types are performed before test levels in every software development lifecycle",
+        "Test levels apply only to waterfall projects; test types apply only to agile projects"
+    ],
+    "exp": "Test levels (component, integration, system, acceptance) relate to development completeness; test types (functional, non-functional, structural, change-related) relate to quality characteristics."
+},
+"ch2-19": {
+    "q": "Which test type is most directly associated with evaluating security vulnerabilities?",
+    "options": [
+        "Functional testing, because security rules are part of the functional specification",
+        "Non-functional testing, because security is a quality characteristic of the system",
+        "White-box testing, because security flaws are always visible in the source code",
+        "Confirmation testing, because security patches must be re-tested after each fix"
+    ],
+    "exp": "Security testing evaluates a quality attribute (resistance to unauthorized access), making it a non-functional test type."
+},
+"ch2-20": {
+    "q": "In agile development, testing activities are:",
+    "options": [
+        "Deferred to a dedicated hardening sprint at the end of each release cycle",
+        "Integrated into each iteration alongside development, with the whole team sharing quality responsibility",
+        "Performed exclusively by a separate independent QA team after each sprint",
+        "Limited to automated regression suites; exploratory testing is prohibited in agile"
+    ],
+    "exp": "In agile, testing is continuous within each iteration; the whole team shares quality responsibility rather than delegating it to a separate QA phase."
+},
+"ch2-21": {
+    "q": "What is the primary purpose of a test environment?",
+    "options": [
+        "To store the final production build before it is released to end users",
+        "To provide the infrastructure, tools, and configurations needed to execute tests",
+        "To host the defect tracking system used by the development team",
+        "To archive completed test cases for future audits and compliance reviews"
+    ],
+    "exp": "A test environment provides the hardware, software, network, and configurations necessary to execute test cases reliably."
+},
+"ch2-22": {
+    "q": "Impact analysis in maintenance testing is used to:",
+    "options": [
+        "Determine the total cost of the maintenance project before work begins",
+        "Identify which parts of the system may be affected by a change and need regression testing",
+        "Assign severity ratings to all defects found during the maintenance phase",
+        "Decide whether to retire the system or continue maintenance investment"
+    ],
+    "exp": "Impact analysis determines the scope of change and identifies areas requiring regression testing to prevent unintended side effects."
+},
+"ch2-23": {
+    "q": "Which factor most directly determines the appropriate test level at which a defect should be detected?",
+    "options": [
+        "The personal preference of the test manager assigned to the project",
+        "The origin of the defect: defects in components are best caught at component level; integration defects at integration level",
+        "The severity of the defect, with high-severity defects always caught at system level",
+        "The availability of automated tools at each level of the test hierarchy"
+    ],
+    "exp": "The appropriate test level aligns with the origin of the defect; catching defects at the level closest to their origin is most cost-effective."
+},
+"ch2-24": {
+    "q": "A system passes all functional tests but fails to meet the response time SLA under peak load. This is a failure in:",
+    "options": [
+        "Functional testing, because SLAs are part of the functional specification",
+        "Non-functional testing, because response time is a performance quality characteristic",
+        "White-box testing, because performance bottlenecks are found by analyzing the code",
+        "Acceptance testing only, because SLAs are contractual obligations"
+    ],
+    "exp": "Response time under load is a performance (non-functional) quality characteristic; its failure is detected through non-functional testing."
+},
+"ch2-25": {
+    "q": "In the context of the CTFL v4.0 syllabus, which statement about the relationship between test activities and the SDLC is correct?",
+    "options": [
+        "Test activities are fixed and independent of the chosen development lifecycle model",
+        "For every development activity there should be a corresponding test activity",
+        "Test activities only begin after all development activities in a phase are complete",
+        "Test planning is the only activity that occurs in parallel with development activities"
+    ],
+    "exp": "The CTFL v4.0 principle states that for every development activity there should be a corresponding test activity, ensuring testing is integrated throughout."
+},
 }  # fim do dicionário EN
 
 # ============================================================
