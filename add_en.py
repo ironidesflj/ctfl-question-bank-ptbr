@@ -685,6 +685,260 @@ EN = {
     ],
     "exp": "The CTFL v4.0 principle states that for every development activity there should be a corresponding test activity, ensuring testing is integrated throughout."
 },
+# ============================================================
+# CHAPTER 3 — STATIC TESTING (25 questions)
+# ============================================================
+
+"ch3-01": {
+    "q": "What characterizes static testing?",
+    "options": [
+        "Executing the software with controlled inputs to observe runtime behavior",
+        "Examining work products without executing the software",
+        "Measuring system response time and resource consumption under load",
+        "Validating the user interface against approved design mockups"
+    ],
+    "exp": "Static testing evaluates artifacts (code, requirements, design) without executing them, through reviews and static analysis tools."
+},
+"ch3-02": {
+    "q": "Which of the following can be a target of static testing?",
+    "options": [
+        "Only executable source code files that can be compiled",
+        "Requirements, specifications, code, models, contracts, and user stories",
+        "Only binary artifacts produced after the build process",
+        "Exclusively test cases and test plans created by the testing team"
+    ],
+    "exp": "Almost any structured artifact can be reviewed: requirements, design documents, code, user stories, contracts, and test plans."
+},
+"ch3-03": {
+    "q": "Which is a benefit of static testing?",
+    "options": [
+        "It measures system performance under simulated production load conditions",
+        "It detects defects early, including in requirements, before any execution occurs",
+        "It completely replaces dynamic testing by finding all possible defects",
+        "It guarantees that the system will pass all subsequent dynamic tests"
+    ],
+    "exp": "By acting early, static testing finds defects (ambiguities, omissions) before execution, significantly reducing the cost of correction."
+},
+"ch3-04": {
+    "q": "What is the key difference between static and dynamic testing?",
+    "options": [
+        "Static testing executes the code; dynamic testing examines artifacts without execution",
+        "Dynamic testing executes the software; static testing examines artifacts without executing them",
+        "Static and dynamic testing are equivalent approaches that find the same defect types",
+        "Static testing applies only to source code; dynamic testing applies only to requirements"
+    ],
+    "exp": "Dynamic testing requires execution and reveals failures; static testing examines artifacts directly and finds defects without execution."
+},
+"ch3-05": {
+    "q": "Why is early and frequent feedback from static testing valuable?",
+    "options": [
+        "It increases the total number of defects found by generating more test cases",
+        "It enables early correction, preventing misunderstandings from propagating and becoming expensive",
+        "It delays dynamic testing until the codebase is completely stable and reviewed",
+        "It eliminates the need for regression testing by catching all defects before coding"
+    ],
+    "exp": "Early feedback prevents costly rework and keeps development aligned with real needs by catching misunderstandings at the source."
+},
+"ch3-06": {
+    "q": "What is the general sequence of activities in a formal review?",
+    "options": [
+        "Execution → planning → individual review → report",
+        "Planning → initiation → individual review → communication and analysis → fixing and follow-up",
+        "Analysis → design → execution → completion report",
+        "Initiation → execution → defect logging → planning"
+    ],
+    "exp": "Formal review activities: planning, kick-off/initiation, individual review, review meeting (communication and analysis), fixing and follow-up."
+},
+"ch3-07": {
+    "q": "Which role leads and facilitates a formal review?",
+    "options": [
+        "The author of the work product under review",
+        "The moderator (facilitator)",
+        "The scribe who records the findings",
+        "The development manager who commissioned the work"
+    ],
+    "exp": "The moderator/facilitator leads the meeting, ensures the process is followed, and maintains objectivity."
+},
+"ch3-08": {
+    "q": "What is the responsibility of the author in a review?",
+    "options": [
+        "To moderate the review meeting and enforce the agenda",
+        "To create the work product and be responsible for fixing the defects found",
+        "To record all anomalies and decisions made during the review session",
+        "To decide which review type is most appropriate for the artifact"
+    ],
+    "exp": "The author owns the artifact under review and is typically responsible for making the corrections identified during the review."
+},
+"ch3-09": {
+    "q": "What is the role of the scribe (recorder) in a review?",
+    "options": [
+        "To lead the discussion and keep the review meeting on track",
+        "To document anomalies, decisions, and new issues raised during the review",
+        "To correct the work product based on review findings",
+        "To approve the artifact for release after all defects are resolved"
+    ],
+    "exp": "The scribe records anomalies, decisions, and action items during the review to ensure nothing is lost."
+},
+"ch3-10": {
+    "q": "An informal review is characterized by:",
+    "options": [
+        "A documented process with defined entry and exit criteria and mandatory metrics",
+        "No formal process, low overhead, and results not formally documented",
+        "Mandatory individual preparation before the review meeting takes place",
+        "Strictly defined roles including moderator, author, scribe, and reviewers"
+    ],
+    "exp": "Informal reviews have no defined process and produce no formal documentation; they are fast, low-cost, and flexible."
+},
+"ch3-11": {
+    "q": "The primary objective of a walkthrough is typically to:",
+    "options": [
+        "Audit the artifact for compliance against regulatory and contractual standards",
+        "Allow the author to guide participants through the artifact to gain shared understanding and feedback",
+        "Measure code coverage achieved by the existing automated test suite",
+        "Formally approve the work product for entry into the next development phase"
+    ],
+    "exp": "In a walkthrough the author guides participants through the document seeking shared understanding, learning, and feedback."
+},
+"ch3-12": {
+    "q": "A technical review is primarily conducted to:",
+    "options": [
+        "Train junior team members in the coding standards of the organization",
+        "Achieve technical consensus and make decisions, led by technically qualified peers",
+        "Produce formal documentation of all defects for the defect tracking system",
+        "Replace dynamic testing for technically complex modules with high cyclomatic complexity"
+    ],
+    "exp": "A technical review brings technically qualified peers together to assess quality and reach consensus or decisions on technical matters."
+},
+"ch3-13": {
+    "q": "How does an inspection differ from other review types?",
+    "options": [
+        "It is the most informal review type, with no defined roles or preparation required",
+        "It is the most formal review type: defined roles, metrics, entry/exit criteria, and mandatory preparation",
+        "It is conducted by the author alone without the involvement of other team members",
+        "It focuses exclusively on code and cannot be applied to requirements or design artifacts"
+    ],
+    "exp": "Inspection is the most formal review: rigorous process, defined roles, individual preparation, metrics, and entry/exit criteria."
+},
+"ch3-14": {
+    "q": "When selecting the review type, the primary determining factor should be:",
+    "options": [
+        "The personal preference of the author who created the work product",
+        "The objective of the review and the risk or criticality of the artifact",
+        "The size of the development team and the project timeline",
+        "The availability of automated static analysis tools for the artifact type"
+    ],
+    "exp": "The review type is chosen based on the objective (consensus, compliance, learning) and the criticality/risk of the artifact."
+},
+"ch3-15": {
+    "q": "Which is a success factor for reviews?",
+    "options": [
+        "Using reviews as a mechanism to formally evaluate individual developer performance",
+        "Focusing on the artifact rather than the person, maintaining a constructive atmosphere",
+        "Avoiding the definition of objectives to keep the review open-ended and flexible",
+        "Always applying the most formal review type regardless of artifact criticality"
+    ],
+    "exp": "Successful reviews focus on the product, have clear objectives, appropriate scope, and maintain a blame-free, constructive environment."
+},
+"ch3-16": {
+    "q": "Which defect type is most effectively found by static testing but is difficult to detect through dynamic testing?",
+    "options": [
+        "Race conditions that only manifest under specific concurrent execution timing",
+        "Deviations from coding standards and unreachable (dead) code in the codebase",
+        "Performance bottlenecks that only appear under high production load conditions",
+        "Integration failures that occur only when two specific modules interact at runtime"
+    ],
+    "exp": "Static testing uniquely finds standard violations, dead code, and inconsistencies in requirements that may never cause a runtime failure."
+},
+"ch3-17": {
+    "q": "Static analysis tools are most useful for:",
+    "options": [
+        "Executing test cases automatically and recording pass/fail results",
+        "Detecting code defects such as security vulnerabilities, dead code, and standard violations without execution",
+        "Generating realistic test data for use in performance and load testing scenarios",
+        "Managing test case repositories and tracking defect resolution progress"
+    ],
+    "exp": "Static analysis tools examine code without executing it, finding issues like security flaws, unreachable code, and coding standard violations."
+},
+"ch3-18": {
+    "q": "Which statement about the cost-effectiveness of static testing is correct?",
+    "options": [
+        "Static testing is always more expensive than dynamic testing due to the effort required for reviews",
+        "Defects found through static testing are generally cheaper to fix than those found through dynamic testing",
+        "Static testing has no impact on overall project cost because it duplicates dynamic testing effort",
+        "Static testing is only cost-effective for safety-critical systems where defect cost is extremely high"
+    ],
+    "exp": "Defects found early through static testing cost significantly less to fix than those discovered later through dynamic testing or in production."
+},
+"ch3-19": {
+    "q": "Which artifact would benefit most from static testing early in the project?",
+    "options": [
+        "Compiled binary files ready for deployment to the production environment",
+        "Requirements specifications containing ambiguities, contradictions, or missing information",
+        "Performance test results from the most recent load testing execution run",
+        "Automated regression test scripts that have already been validated and baselined"
+    ],
+    "exp": "Reviewing requirements early catches ambiguities, contradictions, and omissions before they propagate into design and code."
+},
+"ch3-20": {
+    "q": "In a review meeting, an issue is raised that is outside the scope of the current review. What should the moderator do?",
+    "options": [
+        "Stop the review immediately and reschedule once the scope issue is resolved",
+        "Log it as a parking lot item and continue the review without derailing the agenda",
+        "Assign it immediately to the author for correction before continuing",
+        "Dismiss it entirely since out-of-scope items are not valid review findings"
+    ],
+    "exp": "The moderator manages scope; out-of-scope items are logged for later follow-up (parking lot) without derailing the current review."
+},
+"ch3-21": {
+    "q": "Which metric is most useful for evaluating the effectiveness of an inspection?",
+    "options": [
+        "The number of lines of code reviewed per hour during the inspection session",
+        "The defect density found (defects per page or per function point) compared to historical data",
+        "The number of attendees present at the inspection meeting",
+        "The total elapsed calendar time from inspection planning to final sign-off"
+    ],
+    "exp": "Defect density compared to historical baselines indicates whether the inspection found the expected number of issues and assesses artifact quality."
+},
+"ch3-22": {
+    "q": "Entry criteria for a formal review typically include:",
+    "options": [
+        "Conditions that define when the review can be declared complete and closed",
+        "Pre-conditions that must be satisfied before the review can begin, such as the artifact being stable",
+        "The list of defects that must be fixed before the artifact is submitted for review",
+        "The acceptance criteria that the final product must satisfy before release to users"
+    ],
+    "exp": "Entry criteria are pre-conditions for starting a review, e.g., the artifact is stable, reviewers have time allocated, and materials are distributed."
+},
+"ch3-23": {
+    "q": "Which statement about checklist-based reviewing is correct?",
+    "options": [
+        "Checklists must be replaced entirely after each review to avoid the pesticide paradox",
+        "Checklists help reviewers focus on common defect types and ensure consistent coverage",
+        "Checklists are only appropriate for informal reviews and cannot be used in inspections",
+        "Using a checklist guarantees that all defects in the artifact will be found"
+    ],
+    "exp": "Checklists provide structured guidance, helping reviewers focus on historically common defect types and ensuring consistent review coverage."
+},
+"ch3-24": {
+    "q": "Perspective-based reading in reviews means that:",
+    "options": [
+        "Each reviewer reads the entire artifact from start to finish without any assigned focus",
+        "Different reviewers adopt different stakeholder viewpoints to increase defect detection coverage",
+        "The author reads the artifact aloud while other participants listen and take notes",
+        "Reviewers focus exclusively on their own area of expertise and ignore other aspects"
+    ],
+    "exp": "Perspective-based reading assigns different stakeholder viewpoints (user, maintainer, tester) to different reviewers, increasing the variety of defects found."
+},
+"ch3-25": {
+    "q": "Which of the following is an anti-pattern that reduces review effectiveness?",
+    "options": [
+        "Defining clear objectives and communicating them to all participants before the review",
+        "Allowing the review to become a public critique of the author's skills and effort",
+        "Limiting the review scope to a manageable artifact size within the session time",
+        "Providing the artifact to reviewers in advance to allow adequate individual preparation"
+    ],
+    "exp": "Turning a review into personal criticism of the author destroys psychological safety, reduces participation quality, and undermines the review's effectiveness."
+},
 }  # fim do dicionário EN
 
 # ============================================================
