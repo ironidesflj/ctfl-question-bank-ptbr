@@ -4,8 +4,8 @@ Banco de questões para preparação ao exame ISTQB CTFL v4.0.
 
 ## Estado atual
 - 200 questões PT-BR
-- 40 questões EN (Capítulo 1)
-- Schema i18n-ready: `locales.pt` e `locales.en` por questão
+- 200 questões EN (banco 100% bilíngue, todos os 6 capítulos)
+- Schema i18n-ready: `locales.pt` e `locales.en` em todas as questões
 
 ## Formato do exame
 | Item | Valor |
@@ -55,6 +55,13 @@ python3 add_en.py          # injeta traduções EN
 ```
 
 ## Changelog
+### v2.1.0
+- Banco EN completo: Capítulos 2, 3, 4, 5 e 6 adicionados via add_en.py
+  (Capítulo 1 já estava feito na v2.0.0)
+- Total: 200/200 questões com locales.en
+- Questões EN criadas diretamente do syllabus oficial em inglês, não traduzidas
+  do PT-BR, para maior fidelidade terminológica
+
 ### v2.0.0
 - Fix: rebalanceamento de posições (era 96% pos.1, agora 25%/25%/25%/25%)
 - Fix: 399 distratores expandidos (133 questões K2/K3)
