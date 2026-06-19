@@ -1949,7 +1949,108 @@ EN = {
     ],
     "exp": "The test manager owns planning, monitoring, control, and stakeholder reporting; the tester owns test analysis, design, implementation, and execution."
 },
+# CHAPTER 6 — TEST TOOLS (10 questions) — FINAL BLOCK
 
+"ch6-01": {
+    "q": "Test tools can support:",
+    "options": [
+        "Only test execution and result logging activities",
+        "Multiple activities: management, static analysis, design, execution, performance, and more",
+        "Exclusively automated UI testing and visual regression checks",
+        "Only the generation of final test completion reports"
+    ],
+    "exp": "Tool categories exist for test management, static analysis, test design, execution, test data, performance testing, and monitoring."
+},
+"ch6-02": {
+    "q": "Test automation typically provides the greatest return on investment for:",
+    "options": [
+        "One-off exploratory testing sessions on new, unstable features",
+        "Repetitive, extensive regression testing executed across many cycles",
+        "Usability evaluation requiring subjective human judgment",
+        "Initial requirements review and static analysis of specifications"
+    ],
+    "exp": "Repetitive regression testing is the classic case for strong ROI: stable tests executed many times benefit most from automation."
+},
+"ch6-03": {
+    "q": "What is a genuine risk when adopting test automation tools?",
+    "options": [
+        "Automation always reduces costs immediately upon implementation",
+        "Underestimating the implementation effort and, especially, the ongoing maintenance cost of scripts",
+        "Automation completely eliminates the need for any manual testing",
+        "Automated tests always achieve higher coverage than manual tests"
+    ],
+    "exp": "Risks include unrealistic expectations, script maintenance costs, tool dependency, and brittle scripts that break with minor UI changes."
+},
+"ch6-04": {
+    "q": "A general benefit of test tools is:",
+    "options": [
+        "Guaranteeing the complete absence of defects in the tested system",
+        "Reducing repetitive manual work and increasing consistency and repeatability",
+        "Completely replacing human judgment in all testing decisions",
+        "Eliminating the need for test planning and risk assessment activities"
+    ],
+    "exp": "Tools reduce repetitive manual tasks, increase consistency and repeatability, and provide access to information such as coverage metrics."
+},
+"ch6-05": {
+    "q": "When selecting a test tool, the organization should primarily consider:",
+    "options": [
+        "Only the purchase price compared to competing vendor offerings",
+        "Organizational maturity, fit with context/process, and evaluation through a proof of concept",
+        "The popularity of the tool on social media and developer forums",
+        "Exclusively the visual appearance and user interface design of the tool"
+    ],
+    "exp": "Tool selection evaluates context, maturity, constraints, integration needs, and typically includes an evaluation or proof of concept (PoC) before full adoption."
+},
+"ch6-06": {
+    "q": "Before broadly deploying a new tool across the organization, it is recommended to:",
+    "options": [
+        "Purchase enterprise licenses for the entire company immediately to lock in pricing",
+        "Conduct a pilot project to evaluate fit, define usage guidelines, and measure benefits",
+        "Train all staff on the tool after the full rollout has already been completed",
+        "Skip evaluation entirely since most modern tools work well out of the box"
+    ],
+    "exp": "A pilot project allows evaluation of organizational fit, defines usage guidelines, and estimates costs/benefits before scaling to full adoption."
+},
+"ch6-07": {
+    "q": "Which category of tool would be used to identify unreachable (dead) code without executing the program?",
+    "options": [
+        "Test execution tools",
+        "Static analysis tools",
+        "Performance testing tools",
+        "Test data preparation tools"
+    ],
+    "exp": "Static analysis tools examine code structure without execution, identifying issues such as dead code, complexity violations, and standard deviations."
+},
+"ch6-08": {
+    "q": "A test management tool primarily supports:",
+    "options": [
+        "Generating production code automatically from test case specifications",
+        "Managing test cases, plans, execution tracking, and traceability to requirements",
+        "Executing automated browser-based UI tests without any scripting",
+        "Measuring system performance under simulated production load"
+    ],
+    "exp": "Test management tools (e.g., Jira+Xray, TestRail, qTest) manage test cases, plans, execution, defects, traceability, and reporting."
+},
+"ch6-09": {
+    "q": "Which statement about tool-supported testing benefits and risks is correct?",
+    "options": [
+        "Tools provide only benefits; there are no significant risks to consider when adopting them",
+        "Tools provide real benefits but also carry risks that must be managed, such as unrealistic expectations and maintenance overhead",
+        "The risks of test tools always outweigh their benefits, so manual testing is always preferable",
+        "Risks only apply to open-source tools; commercial tools carry no implementation risk"
+    ],
+    "exp": "Tool adoption brings genuine benefits (efficiency, consistency) alongside real risks (cost, maintenance, unrealistic expectations) that require careful management."
+},
+"ch6-10": {
+    "q": "Which factor is MOST important when evaluating whether to introduce a new tool into an existing test process?",
+    "options": [
+        "Whether the tool vendor offers the lowest price in the current market",
+        "Whether the tool integrates well with existing tools, processes, and team skills",
+        "Whether the tool has the largest number of features compared to competitors",
+        "Whether the tool was recently released, ensuring access to the latest technology"
+    ],
+    "exp": "Successful tool adoption depends heavily on integration with the existing toolchain, process compatibility, and the team's ability to use it effectively."
+},
 }  # fim do dicionário EN
 
 # ============================================================
