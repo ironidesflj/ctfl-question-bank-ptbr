@@ -55,6 +55,15 @@ python3 add_en.py          # injeta traduções EN
 ```
 
 ## Changelog
+### v2.2.0
+- fix: corrige desalinhamento PT/EN em 77 questões (38% do banco). A
+  v2.1.0 criou o EN diretamente do syllabus oficial em vez de traduzir o
+  PT existente; isso fez com que, em todos os 6 capítulos, as questões do
+  bloco de expansão (120→200) ficassem com EN tratando de um tópico
+  diferente do PT, embora compartilhando o mesmo `answer` index. Reescrito
+  com tradução fiel do PT real para as 77 questões afetadas
+  (ch1-25..40, ch2-16..25, ch3-18..25, ch4-34..55, ch5-28..45, ch6-07..09).
+
 ### v2.1.0
 - Banco EN completo: Capítulos 2, 3, 4, 5 e 6 adicionados via add_en.py
   (Capítulo 1 já estava feito na v2.0.0)

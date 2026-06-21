@@ -272,164 +272,164 @@ EN = {
 
 # Cap.1 questions added in the 200-question expansion (ch1-25 to ch1-40)
 "ch1-25": {
-    "q": "Which of the following best describes a 'test basis'?",
+    "q": "Which cognitive skill is considered fundamental for a good tester?",
     "options": [
-        "The test environment configuration",
-        "Any artifact from which test conditions can be derived",
-        "The set of all executed test cases",
-        "The defect tracking system"
+        "Typing speed and mastery of keyboard shortcuts",
+        "Ability to write production code in any language",
+        "Exclusive, advanced knowledge of multiple programming languages",
+        "Analytical and critical thinking to question assumptions and identify problems"
     ],
-    "exp": "The test basis is any artifact (requirements, design, code, risk list) used to identify what needs to be tested."
+    "exp": "Analytical/critical thinking allows the tester to question assumptions, identify inconsistencies, and find non-obvious defects."
 },
 "ch1-26": {
-    "q": "What does 'testability' refer to?",
+    "q": "The 'whole-team approach' in agile testing implies that:",
     "options": [
-        "The number of test cases written",
-        "The degree to which a work product facilitates testing",
-        "The speed of test execution",
-        "The coverage achieved"
+        "Only testers are responsible for quality, never developers",
+        "Developers never participate in the project's testing activities",
+        "The test manager makes all decisions alone, without consulting the team",
+        "The whole team shares responsibility for quality, with testers collaborating with devs and stakeholders"
     ],
-    "exp": "Testability is a quality characteristic of a work product that indicates how easily it can be tested."
+    "exp": "In the whole-team approach, quality is a collective responsibility; testers, devs, and business collaborate from the start."
 },
 "ch1-27": {
-    "q": "A tester finds that a critical module has never been tested. Which principle is most relevant?",
+    "q": "What is the main benefit of having testers with different degrees of independence?",
     "options": [
-        "Pesticide paradox",
-        "Early testing saves time and money",
-        "Defect clustering",
-        "Exhaustive testing is impossible"
+        "Increasing project cost",
+        "Eliminating the need for reviews",
+        "Ensuring all tests are automated",
+        "Combining the author's knowledge with the impartial perspective of someone who didn't write the artifact"
     ],
-    "exp": "Starting testing early — including identifying untested areas — reduces cost and risk of late defect discovery."
+    "exp": "Different degrees of independence balance contextual knowledge and impartiality, improving detection effectiveness."
 },
 "ch1-28": {
-    "q": "Which is an example of a failure?",
+    "q": "A tester who reviews the requirements they themselves wrote will have difficulty finding defects because:",
     "options": [
-        "A developer misreads a requirement",
-        "An incorrect line of code",
-        "An application crash observed by the user during execution",
-        "A missing test case"
+        "There isn't enough time available in the project schedule",
+        "Requirements reviews aren't considered part of testing",
+        "Well-written requirements can never contain any kind of defect",
+        "Author bias makes it hard to see one's own mistakes — the tester tends to confirm what they wrote"
     ],
-    "exp": "A failure is the observable incorrect behavior of a system during execution, caused by a defect in the code."
+    "exp": "The author's cognitive bias causes them to read what they intended to write, not what is actually written."
 },
 "ch1-29": {
-    "q": "Which is an example of a defect?",
+    "q": "At which degree of independence is the tester external to the developer's organization?",
     "options": [
-        "A developer misunderstands a specification",
-        "An incorrect statement in the source code",
-        "An application returning a wrong result at runtime",
-        "A missing test environment"
+        "A tester who is the author themselves",
+        "A tester from another team in the same organization",
+        "A tester from a specialized external company",
+        "A tester from the development team"
     ],
-    "exp": "A defect is the manifestation of an error in an artifact (e.g., incorrect code statement) that may cause a failure."
+    "exp": "The highest degree of independence is represented by testers from external organizations — consultants or independent labs."
 },
 "ch1-30": {
-    "q": "Testing contributes to quality by:",
+    "q": "Bidirectional traceability between requirements and test cases enables:",
     "options": [
-        "Replacing good development practices",
-        "Providing information about quality and helping stakeholders make informed decisions",
-        "Guaranteeing that all defects are found",
-        "Eliminating the need for requirements"
+        "Automatically executing tests without any human intervention",
+        "Automatically reducing the total number of system defects",
+        "Completely eliminating the need for a formal test plan",
+        "Verifying requirements coverage and analyzing the impact of changes on tests"
     ],
-    "exp": "Testing is an information-gathering activity; it provides data about quality to support decisions, not guarantee perfection."
+    "exp": "With bidirectional traceability, you can know which tests cover each requirement and which tests will be affected by changes."
 },
 "ch1-31": {
-    "q": "Which statement best describes the relationship between testing and quality assurance?",
+    "q": "What is the main role of the test manager in a project?",
     "options": [
-        "Testing and QA are the same thing",
-        "Testing is a form of quality control and provides feedback that supports QA",
-        "QA subsumes testing entirely",
-        "Testing replaces QA in agile projects"
+        "Personally executing all test cases manually",
+        "Writing business requirements together with stakeholders",
+        "Directly developing the system's production code",
+        "Planning, monitoring, controlling, and leading test activities and the team"
     ],
-    "exp": "Testing (QC) provides product-level feedback on defects; QA uses that feedback alongside process improvements to build quality confidence."
+    "exp": "The test manager is responsible for planning, monitoring, and controlling the test process and leading the team."
 },
 "ch1-32": {
-    "q": "A developer introduces an off-by-one error in a loop. This is an example of:",
+    "q": "What is the 'test basis'?",
     "options": [
-        "A failure",
-        "An error",
-        "A defect",
-        "A test condition"
+        "The environment where tests are executed",
+        "The defect database",
+        "The result of executed tests",
+        "The set of artifacts from which tests are derived (requirements, code, models, etc.)"
     ],
-    "exp": "The developer's mistake is an error; the resulting incorrect code is the defect. The failure occurs only when the defective code is executed."
+    "exp": "The test basis is the artifacts — requirements, specifications, code, models — from which test conditions and cases are derived."
 },
 "ch1-33": {
-    "q": "Which activity does NOT belong to the test process?",
+    "q": "What is the difference between verification and validation in the context of testing?",
     "options": [
-        "Test analysis",
-        "Test design",
-        "Code compilation",
-        "Test completion"
+        "Verification and validation are synonymous and interchangeable terms",
+        "System validation can only occur after release to production",
+        "Verification is always dynamic; validation is always a static process",
+        "Verification: 'are we building it right?' (per specification); validation: 'are we building the right thing?' (meets the user)"
     ],
-    "exp": "Code compilation is a development activity. The test process activities are: planning, monitoring/control, analysis, design, implementation, execution, completion."
+    "exp": "Verification checks compliance with the specification; validation checks whether the product meets real user needs."
 },
 "ch1-34": {
-    "q": "What is the purpose of a test completion report?",
+    "q": "The tester's mindset differs from the developer's because the tester:",
     "options": [
-        "To authorize the start of testing",
-        "To summarize testing results, coverage, and lessons learned at the end of a test level or milestone",
-        "To list all open defects only",
-        "To replace the test plan"
+        "Focuses on building features quickly",
+        "Only confirms that the software works as the dev expects",
+        "Avoids questioning design decisions",
+        "Adopts a critical perspective, actively seeking failures and questioning assumptions"
     ],
-    "exp": "The test completion report consolidates what was achieved, coverage attained, quality assessment, and lessons learned."
+    "exp": "Testers adopt a questioning mindset and constructive skepticism to find what might fail, not to confirm that it works."
 },
 "ch1-35": {
-    "q": "Which factor most directly influences the degree of test independence chosen for a project?",
+    "q": "What is a 'test object'?",
     "options": [
-        "The color scheme of the test management tool",
-        "The level of risk and the need to reduce author cognitive bias",
-        "The number of developers on the team",
-        "The programming language used"
+        "The tool used for testing",
+        "The execution environment",
+        "The test case itself",
+        "The work item (component, system, requirement) being tested"
     ],
-    "exp": "Independence level is chosen based on risk and the need to counteract author bias; higher risk typically warrants more independence."
+    "exp": "The test object is the artifact being evaluated: a component, system, requirement, model, or document."
 },
 "ch1-36": {
-    "q": "In the context of testing, what is a 'test oracle'?",
+    "q": "How does effective defect communication by the tester contribute to the project?",
     "options": [
-        "An automated test generation tool",
-        "A mechanism for determining whether a test has passed or failed",
-        "A test case repository",
-        "A type of specification-based technique"
+        "It creates unnecessary friction with the development team",
+        "It increases the number of defects found",
+        "It replaces the need for test cases",
+        "It allows defects to be understood, prioritized, and fixed efficiently"
     ],
-    "exp": "A test oracle provides the expected result against which actual results are compared to determine pass or fail."
+    "exp": "Clear, objective, and factual reports facilitate understanding, reproduction, and correction of defects, while preserving collaboration."
 },
 "ch1-37": {
-    "q": "Which of the following is a generic skill expected of a tester?",
+    "q": "Which characteristic of early testing (shift-left) differentiates it from traditional testing?",
     "options": [
-        "Expertise in network hardware",
-        "Analytical thinking and attention to detail",
-        "Ability to write production code only",
-        "Sales and marketing experience"
+        "Testing is only carried out after the system is in production",
+        "Shift-left can only be applied in fully agile projects",
+        "Shift-left completely eliminates the need for system testing",
+        "Test activities (including static reviews) start from requirements, not just after coding"
     ],
-    "exp": "Testers need analytical thinking, attention to detail, communication, and a systematic mindset among other generic skills."
+    "exp": "Shift-left means starting to test — including requirements reviews — in early phases, even before any code exists."
 },
 "ch1-38": {
-    "q": "The 'whole-team approach' to quality means:",
+    "q": "Root cause analysis of recurring defects benefits the process because it:",
     "options": [
-        "Only testers are responsible for quality",
-        "Every team member shares responsibility for quality",
-        "Developers never test",
-        "Quality is only the concern of the QA manager"
+        "Only documents the defects found, without investigating the cause",
+        "Is only necessary in safety- or health-critical projects",
+        "Completely replaces the need to run dynamic tests",
+        "Identifies the origin of problems, enabling process improvements that prevent similar defects in the future"
     ],
-    "exp": "In the whole-team approach, quality is a shared responsibility; everyone contributes, not just dedicated testers."
+    "exp": "Identifying the root cause enables process improvements that prevent the recurrence of similar classes of defects."
 },
 "ch1-39": {
-    "q": "Continuous testing in DevOps pipelines is most closely associated with which testing principle?",
+    "q": "A test artifact such as a 'test case' must contain at minimum:",
     "options": [
-        "Exhaustive testing is impossible",
-        "Early testing saves time and money",
-        "Absence-of-errors fallacy",
-        "Pesticide paradox"
+        "Only the name of the tester responsible for execution",
+        "Only the creation date and current system version",
+        "Only the expected result, with no execution steps",
+        "Preconditions, execution steps, expected result, and postconditions"
     ],
-    "exp": "Continuous testing embodies early and frequent testing throughout the pipeline, directly aligning with the early testing principle."
+    "exp": "A complete test case defines preconditions, inputs, steps, expected result, and postconditions, ensuring repeatability."
 },
 "ch1-40": {
-    "q": "When a test case is executed and the actual result matches the expected result, the test:",
+    "q": "What is the impact of defects found in production compared to defects found in requirements?",
     "options": [
-        "Has proven the software is correct",
-        "Has passed, but this does not prove the absence of other defects",
-        "Has found a defect",
-        "Should be removed from the test suite"
+        "The cost of fixing is exactly the same at any phase",
+        "The financial impact is irrelevant to project success",
+        "Defects found in production are always easier to fix",
+        "Defects in production are much more expensive to fix — the cost grows with each phase that passes"
     ],
-    "exp": "A passing test increases confidence but does not prove correctness; other defects may exist in untested paths."
+    "exp": "The cost of fixing increases exponentially by phase: defects in requirements cost much less than in production."
 },
 # ============================================================
 # CHAPTER 2 — TESTING THROUGHOUT THE SDLC (25 questions)
@@ -586,104 +586,104 @@ EN = {
     "exp": "Maintenance testing is triggered by changes (fixes, enhancements), migrations to new environments, upgrades, and system retirement."
 },
 "ch2-16": {
-    "q": "In a test-driven development (TDD) workflow, which sequence is correct?",
+    "q": "In BDD (Behaviour-Driven Development), scenarios are written in the format:",
     "options": [
-        "Write production code → run tests → write failing test → refactor",
-        "Write a failing test → write minimal code to pass → refactor",
-        "Write all tests upfront → implement the full feature → run tests once",
-        "Deploy to production → monitor failures → write tests to reproduce them"
+        "Technical pseudo-code aimed exclusively at developers",
+        "Given/When/Then, describing behavior in language close to the business",
+        "XML configuration files for the test environment",
+        "A state diagram representing the system flow"
     ],
-    "exp": "TDD follows the Red-Green-Refactor cycle: write a failing test, write just enough code to pass it, then refactor."
+    "exp": "BDD uses Given/When/Then (or equivalent) to describe behaviors in language understandable by both business and technical people."
 },
 "ch2-17": {
-    "q": "Which statement best describes the role of testing in DevOps?",
+    "q": "What is the essential difference between TDD and ATDD?",
     "options": [
-        "Testing is performed only at the end of the pipeline before production release",
-        "Testing is integrated throughout the pipeline to provide fast feedback at every stage",
-        "Testing in DevOps is fully automated and eliminates the need for manual testing entirely",
-        "Testing responsibility shifts exclusively to operations engineers in a DevOps model"
+        "TDD and ATDD are identical and interchangeable approaches",
+        "TDD is driven by the developer's unit tests; ATDD uses acceptance tests defined with business",
+        "ATDD can only be applied using UI automation tools",
+        "TDD can only be applied in fully agile projects"
     ],
-    "exp": "In DevOps, testing is continuous and integrated at every pipeline stage to provide rapid feedback and support frequent safe deployments."
+    "exp": "TDD: the dev writes a unit test before the code. ATDD: the team defines acceptance tests with stakeholders before implementing."
 },
 "ch2-18": {
-    "q": "What distinguishes test levels from test types?",
+    "q": "In agile projects with short iterations, which test level is most challenging to execute within the sprint?",
     "options": [
-        "Test levels and test types are synonyms used interchangeably in the CTFL syllabus",
-        "Test levels relate to the degree of development completeness; test types relate to a specific quality characteristic being evaluated",
-        "Test types are performed before test levels in every software development lifecycle",
-        "Test levels apply only to waterfall projects; test types apply only to agile projects"
+        "Component (unit) testing, as it is the simplest of all",
+        "Complete system and acceptance testing, as they require more integration and time",
+        "Code reviews carried out by the developers themselves",
+        "Automated unit regression tests run in CI"
     ],
-    "exp": "Test levels (component, integration, system, acceptance) relate to development completeness; test types (functional, non-functional, structural, change-related) relate to quality characteristics."
+    "exp": "System and acceptance tests require integration and end-to-end scenarios, which can be hard to complete within a short sprint."
 },
 "ch2-19": {
-    "q": "Which test type is most directly associated with evaluating security vulnerabilities?",
+    "q": "What is a 'stub' in the context of component testing?",
     "options": [
-        "Functional testing, because security rules are part of the functional specification",
-        "Non-functional testing, because security is a quality characteristic of the system",
-        "White-box testing, because security flaws are always visible in the source code",
-        "Confirmation testing, because security patches must be re-tested after each fix"
+        "An automation tool",
+        "A substitute component that simulates a dependency of the component under test (called by the component)",
+        "A type of defect",
+        "A test report"
     ],
-    "exp": "Security testing evaluates a quality attribute (resistance to unauthorized access), making it a non-functional test type."
+    "exp": "Stubs simulate dependencies called by the tested component (downward call), allowing isolation of the component."
 },
 "ch2-20": {
-    "q": "In agile development, testing activities are:",
+    "q": "System integration testing mainly evaluates:",
     "options": [
-        "Deferred to a dedicated hardening sprint at the end of each release cycle",
-        "Integrated into each iteration alongside development, with the whole team sharing quality responsibility",
-        "Performed exclusively by a separate independent QA team after each sprint",
-        "Limited to automated regression suites; exploratory testing is prohibited in agile"
+        "Only the internal logic of each module in isolation",
+        "The interfaces and interactions between distinct systems, including third-party systems and external APIs",
+        "Only the graphical interface aimed at the end user",
+        "Exclusively the performance of the database used"
     ],
-    "exp": "In agile, testing is continuous within each iteration; the whole team shares quality responsibility rather than delegating it to a separate QA phase."
+    "exp": "It tests interfaces between distinct systems — APIs, external services, integrations — not the internal logic of each one."
 },
 "ch2-21": {
-    "q": "What is the primary purpose of a test environment?",
+    "q": "Which event is typically NOT a trigger for maintenance testing?",
     "options": [
-        "To store the final production build before it is released to end users",
-        "To provide the infrastructure, tools, and configurations needed to execute tests",
-        "To host the defect tracking system used by the development team",
-        "To archive completed test cases for future audits and compliance reviews"
+        "Fixing a critical defect in production",
+        "Creating the project's initial planning",
+        "Migrating a database to a new version",
+        "Retirement/decommissioning of a legacy system"
     ],
-    "exp": "A test environment provides the hardware, software, network, and configurations necessary to execute test cases reliably."
+    "exp": "Initial planning happens before the system exists; maintenance triggers involve modification, migration, or decommissioning."
 },
 "ch2-22": {
-    "q": "Impact analysis in maintenance testing is used to:",
+    "q": "Operational testing (operational acceptance) checks aspects such as:",
     "options": [
-        "Determine the total cost of the maintenance project before work begins",
-        "Identify which parts of the system may be affected by a change and need regression testing",
-        "Assign severity ratings to all defects found during the maintenance phase",
-        "Decide whether to retire the system or continue maintenance investment"
+        "Only the business logic implemented in the features",
+        "Backup and recovery, installation, operational security, and administrative procedures",
+        "Directly the source code of the tested application",
+        "Exclusively the system's functional requirements"
     ],
-    "exp": "Impact analysis determines the scope of change and identifies areas requiring regression testing to prevent unintended side effects."
+    "exp": "Operational acceptance focuses on operation/support aspects: backup, restore, installation, configuration, and operational security."
 },
 "ch2-23": {
-    "q": "Which factor most directly determines the appropriate test level at which a defect should be detected?",
+    "q": "Which integration approach combines low-level components first and progressively adds higher-level components?",
     "options": [
-        "The personal preference of the test manager assigned to the project",
-        "The origin of the defect: defects in components are best caught at component level; integration defects at integration level",
-        "The severity of the defect, with high-severity defects always caught at system level",
-        "The availability of automated tools at each level of the test hierarchy"
+        "Big-bang",
+        "Bottom-up",
+        "Top-down",
+        "Sandwich"
     ],
-    "exp": "The appropriate test level aligns with the origin of the defect; catching defects at the level closest to their origin is most cost-effective."
+    "exp": "Bottom-up integrates from the bottom up: it starts with the lowest-level components, eliminating the need for stubs but requiring drivers."
 },
 "ch2-24": {
-    "q": "A system passes all functional tests but fails to meet the response time SLA under peak load. This is a failure in:",
+    "q": "In the context of system testing, a 'use case' serves as:",
     "options": [
-        "Functional testing, because SLAs are part of the functional specification",
-        "Non-functional testing, because response time is a performance quality characteristic",
-        "White-box testing, because performance bottlenecks are found by analyzing the code",
-        "Acceptance testing only, because SLAs are contractual obligations"
+        "A technical specification of the database schema",
+        "A basis for designing test scenarios that cover actor-system interaction flows",
+        "A regression test automation tool",
+        "A specific type of defect found in production"
     ],
-    "exp": "Response time under load is a performance (non-functional) quality characteristic; its failure is detected through non-functional testing."
+    "exp": "Use cases describe interaction flows, serving as a basis for end-to-end system test scenarios."
 },
 "ch2-25": {
-    "q": "In the context of the CTFL v4.0 syllabus, which statement about the relationship between test activities and the SDLC is correct?",
+    "q": "The main benefit of automating regression tests in continuous integration (CI) is:",
     "options": [
-        "Test activities are fixed and independent of the chosen development lifecycle model",
-        "For every development activity there should be a corresponding test activity",
-        "Test activities only begin after all development activities in a phase are complete",
-        "Test planning is the only activity that occurs in parallel with development activities"
+        "Completely eliminating the need for manual testing",
+        "Quickly detecting regressions introduced by new changes, providing fast feedback to the team",
+        "Directly reducing the number of project requirements",
+        "Completely replacing the need for acceptance testing"
     ],
-    "exp": "The CTFL v4.0 principle states that for every development activity there should be a corresponding test activity, ensuring testing is integrated throughout."
+    "exp": "In CI, regression automation runs on every integration, giving immediate feedback on the impact of changes to existing code."
 },
 # ============================================================
 # CHAPTER 3 — STATIC TESTING (25 questions)
@@ -860,84 +860,84 @@ EN = {
     "exp": "Static analysis tools examine code without executing it, finding issues like security flaws, unreachable code, and coding standard violations."
 },
 "ch3-18": {
-    "q": "Which statement about the cost-effectiveness of static testing is correct?",
+    "q": "What is an entry criterion for a formal review?",
     "options": [
-        "Static testing is always more expensive than dynamic testing due to the effort required for reviews",
-        "Defects found through static testing are generally cheaper to fix than those found through dynamic testing",
-        "Static testing has no impact on overall project cost because it duplicates dynamic testing effort",
-        "Static testing is only cost-effective for safety-critical systems where defect cost is extremely high"
+        "Only the minimum number of participants required for the meeting",
+        "A condition that must be satisfied before starting the review (e.g., artifact complete and available)",
+        "Only the maximum duration allowed for the meeting",
+        "Exclusively the formal title of the document submitted for review"
     ],
-    "exp": "Defects found early through static testing cost significantly less to fix than those discovered later through dynamic testing or in production."
+    "exp": "Entry criteria ensure the review only starts when the artifact and prerequisites are ready, avoiding wasted effort."
 },
 "ch3-19": {
-    "q": "Which artifact would benefit most from static testing early in the project?",
+    "q": "A common anti-pattern in reviews is:",
     "options": [
-        "Compiled binary files ready for deployment to the production environment",
-        "Requirements specifications containing ambiguities, contradictions, or missing information",
-        "Performance test results from the most recent load testing execution run",
-        "Automated regression test scripts that have already been validated and baselined"
+        "Focusing exclusively on the defects found in the artifact",
+        "Using the review to evaluate performance or criticize the author as a person",
+        "Preparing individually and carefully before the meeting",
+        "Carefully recording all anomalies found"
     ],
-    "exp": "Reviewing requirements early catches ambiguities, contradictions, and omissions before they propagate into design and code."
+    "exp": "Reviewing the person instead of the product creates a negative climate, inhibits participation, and diverts from the goal of improving the artifact."
 },
 "ch3-20": {
-    "q": "In a review meeting, an issue is raised that is outside the scope of the current review. What should the moderator do?",
+    "q": "What is a typical exit criterion for a formal inspection?",
     "options": [
-        "Stop the review immediately and reschedule once the scope issue is resolved",
-        "Log it as a parking lot item and continue the review without derailing the agenda",
-        "Assign it immediately to the author for correction before continuing",
-        "Dismiss it entirely since out-of-scope items are not valid review findings"
+        "All participants fully agreeing on everything discussed",
+        "Defect rate below a defined threshold or all open defects addressed",
+        "The time scheduled for the meeting having ended",
+        "The author personally approving all comments"
     ],
-    "exp": "The moderator manages scope; out-of-scope items are logged for later follow-up (parking lot) without derailing the current review."
+    "exp": "Inspection exit criteria include defect density thresholds and resolution of all identified open issues."
 },
 "ch3-21": {
-    "q": "Which metric is most useful for evaluating the effectiveness of an inspection?",
+    "q": "Which role in a review is responsible for ensuring the process is followed and the environment is productive?",
     "options": [
-        "The number of lines of code reviewed per hour during the inspection session",
-        "The defect density found (defects per page or per function point) compared to historical data",
-        "The number of attendees present at the inspection meeting",
-        "The total elapsed calendar time from inspection planning to final sign-off"
+        "Author",
+        "Moderator (facilitator)",
+        "Reviewer",
+        "Test manager"
     ],
-    "exp": "Defect density compared to historical baselines indicates whether the inspection found the expected number of issues and assesses artifact quality."
+    "exp": "The moderator facilitates the meeting, keeps the focus on the artifact, ensures the process is followed, and manages conflicts."
 },
 "ch3-22": {
-    "q": "Entry criteria for a formal review typically include:",
+    "q": "'Checklist-based reviewing' uses lists to:",
     "options": [
-        "Conditions that define when the review can be declared complete and closed",
-        "Pre-conditions that must be satisfied before the review can begin, such as the artifact being stable",
-        "The list of defects that must be fixed before the artifact is submitted for review",
-        "The acceptance criteria that the final product must satisfy before release to users"
+        "Formally evaluate the individual performance of reviewers",
+        "Guide reviewers in searching for specific known types of defects",
+        "Precisely measure the code coverage of the tests",
+        "Completely automate the review process"
     ],
-    "exp": "Entry criteria are pre-conditions for starting a review, e.g., the artifact is stable, reviewers have time allocated, and materials are distributed."
+    "exp": "Review checklists direct attention to typical defects (clarity, consistency, completeness), increasing effectiveness."
 },
 "ch3-23": {
-    "q": "Which statement about checklist-based reviewing is correct?",
+    "q": "Tool-supported static analysis can automatically detect:",
     "options": [
-        "Checklists must be replaced entirely after each review to avoid the pesticide paradox",
-        "Checklists help reviewers focus on common defect types and ensure consistent coverage",
-        "Checklists are only appropriate for informal reviews and cannot be used in inspections",
-        "Using a checklist guarantees that all defects in the artifact will be found"
+        "Usability flaws perceived subjectively by the user",
+        "Uninitialized variables, dead code, and coding standard violations",
+        "Bugs that only appear under intense user load",
+        "Complex, domain-specific business logic errors"
     ],
-    "exp": "Checklists provide structured guidance, helping reviewers focus on historically common defect types and ensuring consistent review coverage."
+    "exp": "Static analysis tools detect problematic patterns such as unused variables, potential null references, and style violations."
 },
 "ch3-24": {
-    "q": "Perspective-based reading in reviews means that:",
+    "q": "What is the main difference between a technical review and an inspection?",
     "options": [
-        "Each reviewer reads the entire artifact from start to finish without any assigned focus",
-        "Different reviewers adopt different stakeholder viewpoints to increase defect detection coverage",
-        "The author reads the artifact aloud while other participants listen and take notes",
-        "Reviewers focus exclusively on their own area of expertise and ignore other aspects"
+        "Inspection is always much less formal and rigorous than a technical review",
+        "Inspection has a more rigid process with defined roles, metrics, entry/exit criteria, and follow-up; technical review is less formal",
+        "Only the technical review uses formal checklists; inspection never does",
+        "Inspection and technical review are completely equivalent in practice"
     ],
-    "exp": "Perspective-based reading assigns different stakeholder viewpoints (user, maintainer, tester) to different reviewers, increasing the variety of defects found."
+    "exp": "Inspection is the most formal form, with roles, metrics, entry/exit criteria, and rigorous follow-up; technical review is less rigid."
 },
 "ch3-25": {
-    "q": "Which of the following is an anti-pattern that reduces review effectiveness?",
+    "q": "Why is it important to limit the size of the artifact reviewed in a review meeting?",
     "options": [
-        "Defining clear objectives and communicating them to all participants before the review",
-        "Allowing the review to become a public critique of the author's skills and effort",
-        "Limiting the review scope to a manageable artifact size within the session time",
-        "Providing the artifact to reviewers in advance to allow adequate individual preparation"
+        "Only to reduce the number of participants invited",
+        "Long reviews cause fatigue, reducing attention and defect detection rate",
+        "Artifact size never influences review quality",
+        "Only to save paper and printing resources"
     ],
-    "exp": "Turning a review into personal criticism of the author destroys psychological safety, reduces participation quality, and undermines the review's effectiveness."
+    "exp": "An artifact that is too long leads to reviewer fatigue, decreasing concentration and effectiveness in defect detection."
 },
 # ============================================================
 # CHAPTER 4 — TEST TECHNIQUES (55 questions) — BLOCK 1/2 (ch4-01 to ch4-28)
@@ -1276,224 +1276,224 @@ EN = {
     "exp": "Coverage expresses how much of the defined coverage items (partitions, decisions, transitions) the tests have exercised."
 },
 "ch4-34": {
-    "q": "Which statement about black-box techniques is correct?",
+    "q": "A temperature field accepts -10 to 50°C. Using 2-value BVA, what are the 4 boundary values to test?",
     "options": [
-        "Black-box techniques require full access to the source code to derive test cases",
-        "Black-box techniques derive tests from specifications without knowledge of internal implementation",
-        "Black-box techniques are less rigorous than white-box techniques in all circumstances",
-        "Black-box techniques can only be applied at the system test level"
+        "-11, -10, 50, 51",
+        "-10 and 50",
+        "-10, 0, 50, 100",
+        "-9, -10, 49, 50"
     ],
-    "exp": "Black-box techniques (EP, BVA, decision tables, state transitions) derive tests from external specifications without examining the code."
+    "exp": "2-value BVA tests the boundary value and the one immediately adjacent on the invalid side: -11/-10 (lower boundary) and 50/51 (upper boundary)."
 },
 "ch4-35": {
-    "q": "Which of the following is an experience-based technique?",
-    "options": [
-        "Equivalence partitioning, because it requires experience to identify valid partitions",
-        "Error guessing, because it relies on the tester's knowledge of likely failure modes",
-        "Decision coverage, because testers use experience to select which paths to cover",
-        "Boundary value analysis, because experienced testers know where defects cluster"
-    ],
-    "exp": "Error guessing, exploratory testing, and checklist-based testing are experience-based; the others are formal specification or structure-based techniques."
-},
-"ch4-36": {
-    "q": "A system grants admin access if (role = admin) AND (MFA = enabled) AND (IP = whitelisted). With 3 binary conditions, how many rules does the full decision table contain?",
+    "q": "A decision table has 3 binary conditions. How many rules does the complete table (without collapsing) have?",
     "options": [
         "3",
         "6",
         "8",
-        "16"
+        "9"
     ],
-    "exp": "Three binary conditions produce 2³ = 8 possible combinations (rules) in the complete decision table."
+    "exp": "Three binary conditions generate 2³ = 8 combinations (rules) in the complete decision table."
+},
+"ch4-36": {
+    "q": "A discount system applies a discount if: (premium customer = Yes) OR (order value > $500). How many distinct rules exist with 2 binary conditions?",
+    "options": [
+        "4",
+        "2",
+        "6",
+        "8"
+    ],
+    "exp": "Two binary conditions generate 2² = 4 rules; the complete table has 4 columns regardless of the logical operator."
 },
 "ch4-37": {
-    "q": "Modified Condition/Decision Coverage (MC/DC) requires, beyond decision coverage, that:",
+    "q": "In a bank account state machine: states = {Active, Blocked, Closed}. How many invalid transitions exist if only 4 valid transitions are defined?",
     "options": [
-        "Every executable statement is covered at least once by the test suite",
-        "Each condition independently demonstrates the ability to affect the decision outcome",
-        "All possible combinations of condition values are tested exhaustively",
-        "Only the true and false outcomes of each complete decision are exercised"
+        "4",
+        "5",
+        "8",
+        "6"
     ],
-    "exp": "MC/DC requires each condition to independently affect the decision outcome, demonstrating that each condition matters individually."
+    "exp": "With 3 states, there are 3×3 = 9 cells in the matrix (including self-transitions); with 4 valid ones, there are 9-4 = 5 invalid transitions to check."
 },
 "ch4-38": {
-    "q": "MC/DC is required in which domain due to safety-critical certification standards?",
+    "q": "A code segment has 20 executable statements. A test suite executed 15. What is the statement coverage?",
     "options": [
-        "E-commerce platforms requiring high availability under peak shopping load",
-        "Aviation software under DO-178C, where it is mandated for the highest criticality levels",
-        "Social media applications requiring rapid feature deployment and A/B testing",
-        "Database management systems requiring high transactional throughput"
+        "75%",
+        "15%",
+        "85%",
+        "20%"
     ],
-    "exp": "MC/DC is required by DO-178C for Level A (catastrophic failure) aviation software and similar safety-critical standards like ISO 26262 in automotive."
+    "exp": "Statement coverage = executed ÷ total = 15 ÷ 20 = 75%."
 },
 "ch4-39": {
-    "q": "A tester uses their knowledge of past defects to create tests targeting off-by-one errors and null pointer exceptions. This is an example of:",
+    "q": "A method has 4 decisions (if/else). For 100% decision coverage, how many decision outcomes must be exercised at minimum?",
     "options": [
-        "Equivalence partitioning applied to boundary conditions",
-        "Error guessing based on experience with common defect types",
-        "White-box testing using statement coverage criteria",
-        "Exploratory testing guided by a formal test charter"
+        "8",
+        "4",
+        "2",
+        "16"
     ],
-    "exp": "Using past defect knowledge to target likely failure modes is the defining characteristic of error guessing."
+    "exp": "Each decision has 2 outcomes (T/F); 4 decisions × 2 outcomes = 8 minimum outcomes to exercise for 100% decision coverage."
 },
 "ch4-40": {
-    "q": "A test charter in exploratory testing defines:",
+    "q": "A field accepts ages from 0 to 120 years (integers). Using 3-value BVA, which values should be tested at the lower boundary (0)?",
     "options": [
-        "The exact steps a tester must follow in a scripted test procedure",
-        "The mission or focus area for a time-boxed exploratory test session",
-        "The code coverage target that must be achieved before releasing the product",
-        "The formal entry and exit criteria for a test level"
+        "-1, 0, and 1",
+        "0 and 1",
+        "0, 1, and 2",
+        "-2, -1, and 0"
     ],
-    "exp": "A test charter provides a mission or focus (what to explore, what to look for) for a time-boxed exploratory session without prescribing exact steps."
+    "exp": "3-value BVA tests the boundary and its two neighbors: for the lower boundary 0, the values -1, 0, and 1 are tested."
 },
 "ch4-41": {
-    "q": "Which coverage criterion is achieved when both the true and false outcomes of every decision in the code have been exercised?",
+    "q": "A form has a 'quantity' field that only accepts 1, 2, or 3. Using EP, which invalid partition exists above the limit?",
     "options": [
-        "Statement coverage",
-        "Decision coverage",
-        "Condition coverage",
-        "Path coverage"
+        "Values ≥ 4",
+        "There is no upper invalid partition",
+        "Values = 0",
+        "Negative values"
     ],
-    "exp": "Decision coverage (branch coverage) is achieved when every decision evaluates to both true and false at least once."
+    "exp": "The upper invalid partition includes all values ≥ 4 (above the maximum of 3); values ≤ 0 form the lower invalid partition."
 },
 "ch4-42": {
-    "q": "For a valid partition of integers 1–100, which value is the LEAST appropriate representative to select?",
+    "q": "In a state machine with full transition coverage (0-switch), which login scenario is most appropriate?",
     "options": [
-        "50, because it is in the middle of the partition",
-        "1, because it is the lower boundary of the partition",
-        "0, because it is outside the valid partition",
-        "75, because it is in the upper quarter of the partition"
+        "Testing every possible transition at least once: successful login, wrong password, account lockout, logout",
+        "Testing only the successful login scenario, ignoring the others",
+        "Testing only the initial state of the login system, without considering transitions",
+        "Testing only the invalid transitions between states, ignoring the valid ones"
     ],
-    "exp": "0 is outside the valid partition (≤0 is the invalid partition); selecting it as a representative of the valid partition violates EP principles."
+    "exp": "0-switch coverage requires exercising each valid transition individually, covering every arc of the state diagram."
 },
 "ch4-43": {
-    "q": "State transition testing with 1-switch coverage requires:",
+    "q": "When testing a traffic light control system (Green → Yellow → Red → Green), which technique is most suitable?",
     "options": [
-        "Every individual valid transition to be exercised at least once",
-        "Every sequence of two consecutive valid transitions to be exercised at least once",
-        "Every state to be visited at least once during the test sequence",
-        "All invalid transitions to be exercised to verify system robustness"
+        "State transition testing, since behavior depends on the current state",
+        "Equivalence partitioning of the traffic light colors",
+        "Boundary value analysis of the timing of each phase",
+        "Decision table combining the traffic light colors"
     ],
-    "exp": "1-switch (transition pair) coverage requires every valid sequence of two consecutive transitions to be exercised at least once — stronger than 0-switch."
+    "exp": "Traffic lights have well-defined states and sequential transitions — state transition testing models this behavior precisely."
 },
 "ch4-44": {
-    "q": "A tester identifies that a module handles three independent discount types that can be combined. The most appropriate technique is:",
+    "q": "Using EP to test a grade field from 0 to 10 (integers), a tester uses only the value 5. What is the problem with this approach?",
     "options": [
-        "Boundary value analysis, because discounts involve numerical threshold values",
-        "Decision table testing, because multiple conditions combine to determine the discount",
-        "State transition testing, because discounts represent different system states",
-        "Statement coverage, because the discount logic is implemented in code"
+        "It only tests the valid partition; the invalid partitions (< 0 and > 10) are not covered",
+        "The value 5 is correct; the approach is adequate",
+        "EP requires testing all values from 0 to 10",
+        "EP does not apply to integers"
     ],
-    "exp": "When multiple conditions combine to produce different outcomes (discount combinations), decision tables are the most systematic technique."
+    "exp": "EP requires at least one representative from each partition — valid and invalid; using only value 5 ignores the invalid partitions below 0 and above 10."
 },
 "ch4-45": {
-    "q": "Which statement correctly describes the relationship between EP and BVA?",
+    "q": "A program contains the snippet: if (x > 0) { y = x * 2; } z = y + 1; With only one test case where x=5, which coverage is achieved?",
     "options": [
-        "BVA replaces EP entirely; there is no need to apply EP when BVA is used",
-        "EP identifies partitions; BVA extends EP by specifically testing the boundaries between those partitions",
-        "EP is only applicable to valid inputs; BVA handles both valid and invalid inputs",
-        "BVA is a white-box technique; EP is a black-box technique"
+        "100% of statements executed on the path, but not 100% of decisions (false branch not tested)",
+        "100% statement coverage and also 100% decision coverage",
+        "No statement or decision coverage is achieved",
+        "100% decision coverage, but not statement coverage"
     ],
-    "exp": "EP defines the partitions; BVA complements EP by focusing test effort on the boundaries between partitions where defects commonly occur."
+    "exp": "With x=5 (true condition), y=x*2 and z=y+1 are executed. The false branch (x≤0) is not tested, so decision coverage < 100%."
 },
 "ch4-46": {
-    "q": "In black-box testing, test cases are derived from:",
+    "q": "Error guessing is most effective when the tester:",
     "options": [
-        "The internal code structure, including loops, conditions, and data flows",
-        "The specification, requirements, or expected behavior of the system",
-        "The tester's intuition and experience with similar systems",
-        "The code coverage report generated by the previous test execution"
+        "Has experience with the domain, knows past defects, and understands common implementation errors",
+        "Has never seen the system before and doesn't know the domain",
+        "Only uses formal techniques, with no intuition at all",
+        "Doesn't know the code or the system's architecture"
     ],
-    "exp": "Black-box techniques derive test cases from external specifications (requirements, user stories, models) without access to the internal implementation."
+    "exp": "The effectiveness of error guessing grows with the tester's experience: domain knowledge and defect history guide intuition."
 },
 "ch4-47": {
-    "q": "A login system has three states: Logged Out, Logged In, and Locked. From Logged Out, entering a correct password transitions to Logged In; three failed attempts transition to Locked. Entering a correct password while Locked should:",
+    "q": "Exploratory testing in time-boxed sessions (session-based testing) uses 'test charters' to:",
     "options": [
-        "Transition to Logged In, because the password is correct",
-        "Remain in Locked state, because Locked → Logged In is an invalid transition",
-        "Transition to Logged Out, because all locks expire automatically",
-        "Generate a system crash, indicating a critical defect in the state machine"
+        "Define the mission of the session: scope, objective, and area to explore, without detailing each step",
+        "Document in detail every step before execution",
+        "Completely replace formal test planning",
+        "Exclusively measure the code coverage achieved"
     ],
-    "exp": "If no transition from Locked to Logged In is defined, entering a correct password in the Locked state is an invalid transition; the system should stay Locked."
+    "exp": "Charters define the focus of the exploratory session (what to explore and why) without pre-determining the exact execution steps."
 },
 "ch4-48": {
-    "q": "Which test technique is most appropriate for a system that processes insurance claims based on multiple eligibility conditions?",
+    "q": "When is a test checklist used instead of detailed test cases?",
     "options": [
-        "Boundary value analysis, because insurance amounts have numerical thresholds",
-        "Decision table testing, because multiple conditions combine to determine claim eligibility",
-        "State transition testing, because claims move through different processing stages",
-        "Statement coverage, because all code paths in the claims engine must be exercised"
+        "When agility and the tester's experience are wanted to decide how to verify each item, without rigid scripts",
+        "Only when there is a lot of time available in the test project schedule",
+        "Only when the system is extremely critical and requires heavy documentation",
+        "Only when full automation of the tests is not technically possible"
     ],
-    "exp": "Multiple eligibility conditions combining to determine an outcome is the ideal use case for decision table testing."
+    "exp": "Checklists offer flexibility: the tester decides how to verify each item using their judgment — suitable when detailed scripts would be excessive."
 },
 "ch4-49": {
-    "q": "A code module has 5 decisions, each with a true and false branch. What is the minimum number of test cases required to achieve 100% decision coverage?",
+    "q": "In ATDD, who defines the acceptance criteria before implementation?",
     "options": [
-        "2, because you need only one test for true and one for false across all decisions",
-        "5, because each decision requires at least one test case",
-        "2, provided the test cases collectively exercise every true and false outcome",
-        "10, because each of the 5 decisions requires a separate true and false test case"
+        "Development team, business representatives, and testers, collaboratively",
+        "Only the tester, with no one else involved",
+        "Only the product owner, in isolation, without the team",
+        "Exclusively the project manager, alone"
     ],
-    "exp": "100% decision coverage requires every decision to evaluate true and false; with careful design, 2 test cases can cover all 5 decisions if paths are shared."
+    "exp": "ATDD is collaborative: business, dev, and test together define the acceptance criteria/tests before implementing the feature."
 },
 "ch4-50": {
-    "q": "Which of the following best describes a 'coverage item' in the context of test techniques?",
+    "q": "Which black-box technique would be most suitable for testing loan eligibility rules that combine income, credit history, and length of employment?",
     "options": [
-        "A defect found during test execution that reduces overall product quality",
-        "An attribute derived from a test condition that is used to measure test coverage",
-        "A test case that has been executed and produced a definitive pass or fail result",
-        "A requirement that has been traced to at least one executed test case"
+        "Decision table, since there are multiple combined conditions leading to different decisions",
+        "Boundary value analysis of the income range only",
+        "State transition testing of the approval process",
+        "Statement coverage of the credit approval system"
     ],
-    "exp": "A coverage item is a specific attribute (e.g., a partition, boundary value, decision outcome, transition) derived from conditions to measure how thoroughly testing covers the basis."
+    "exp": "When the result depends on combinations of multiple conditions (business rules), the decision table is the most suitable technique."
 },
 "ch4-51": {
-    "q": "Collaborative user story testing (the 3 C's) helps testers by:",
+    "q": "A field accepts values from $1.00 to $9,999.99. Using 2-value BVA, what are the test values for the lower boundary?",
     "options": [
-        "Automating the generation of test cases directly from the user story card",
-        "Involving testers early in story definition to identify testability issues and ambiguities",
-        "Replacing formal test planning with informal conversations between developers",
-        "Ensuring that user stories are always small enough to complete within one sprint"
+        "$0.99 and $1.00",
+        "$1.00 and $9,999.99",
+        "$1.00 and $1.01",
+        "$0.00 and $1.00"
     ],
-    "exp": "Early tester involvement in story definition (Conversation + Confirmation) surfaces testability issues and ambiguities before implementation begins."
+    "exp": "At the lower boundary $1.00, 2-value BVA tests the value below the boundary ($0.99, invalid) and the boundary itself ($1.00, valid)."
 },
 "ch4-52": {
-    "q": "Which statement about applying multiple test techniques is correct?",
+    "q": "In a state diagram, what does 'switch-1' coverage (transition pairs) guarantee beyond 0-switch coverage?",
     "options": [
-        "Only one technique should be applied per test level to avoid redundancy",
-        "Combining techniques provides more thorough coverage than any single technique alone",
-        "Experience-based techniques should never be combined with formal techniques",
-        "White-box and black-box techniques are mutually exclusive and cannot be combined"
+        "That consecutive pairs of transitions (sequences of 2) are exercised, increasing the depth of coverage",
+        "Nothing additional beyond what basic 0-switch coverage already guarantees alone",
+        "Complete coverage of all isolated conditions, without considering combinations",
+        "Complete coverage of all executable statements present in the code"
     ],
-    "exp": "Combining techniques (e.g., EP + BVA + error guessing) provides broader and more thorough coverage than any single technique in isolation."
+    "exp": "Switch-1 covers sequences of 2 transitions (pairs), detecting errors that only appear in combinations of transitions, and is stronger than 0-switch."
 },
 "ch4-53": {
-    "q": "A field accepts a two-character country code (exactly 2 alphabetic characters). Which partitions should be defined?",
+    "q": "Combining EP and BVA is more effective than using each technique in isolation because:",
     "options": [
-        "One valid partition only: all two-character alphabetic strings",
-        "Valid: exactly 2 alpha chars; invalid: fewer than 2 chars, more than 2 chars, non-alpha chars",
-        "Two partitions: uppercase codes and lowercase codes",
-        "Four partitions based on the first and second character independently"
+        "EP and BVA are technically equivalent and interchangeable",
+        "BVA completely replaces the need for EP",
+        "EP reduces the test space; BVA complements it by testing the points most prone to defects (boundaries)",
+        "EP only tests valid values; BVA only tests invalid values"
     ],
-    "exp": "Correct partitioning includes the valid partition and multiple invalid partitions: too short, too long, and non-alphabetic characters."
+    "exp": "EP defines the partitions, reducing the space; BVA digs deeper into the boundaries of those partitions, where defects are more frequent."
 },
 "ch4-54": {
-    "q": "Exploratory testing is most effectively structured using:",
+    "q": "Why isn't 100% statement coverage sufficient as the sole quality criterion?",
     "options": [
-        "Detailed step-by-step test scripts that define every action and verification point",
-        "Time-boxed sessions with test charters that define the mission and scope",
-        "Code coverage targets that guide which parts of the application to explore",
-        "Decision tables that enumerate all conditions to investigate during the session"
+        "Because it is practically impossible to achieve in practice",
+        "Because it is very expensive and time-consuming to achieve",
+        "Because it does not guarantee that all decision branches were tested, potentially leaving paths untested",
+        "Because this metric is not accepted by the official syllabus"
     ],
-    "exp": "Session-based exploratory testing uses time-boxed sessions guided by charters, balancing freedom with accountability."
+    "exp": "100% statement coverage can be achieved without testing the false branch of an if without else; decision coverage is stronger and more revealing."
 },
 "ch4-55": {
-    "q": "Which of the following scenarios is BEST suited for state transition testing?",
+    "q": "What is the main objective of experience-based testing?",
     "options": [
-        "A calculation engine that computes tax based on income brackets and filing status",
-        "An order management system where orders move through states: New, Confirmed, Shipped, Delivered, Cancelled",
-        "A search function that filters results based on multiple user-selected criteria",
-        "A password field that enforces complexity rules on the characters entered"
+        "Completely replacing formal techniques in all cases",
+        "Generating completely random test cases with no criteria",
+        "Leveraging the tester's knowledge and intuition to find defects that formal techniques might miss",
+        "Exclusively measuring the system's code coverage"
     ],
-    "exp": "An order moving through defined states (New → Confirmed → Shipped → Delivered/Cancelled) is a classic state machine — the ideal target for state transition testing."
+    "exp": "Experience-based techniques complement formal ones, exploring the tester's knowledge of common defects and unexpected behaviors."
 },
 # CHAPTER 5 — TEST MANAGEMENT (45 questions) — BLOCK 1/2 (ch5-01 to ch5-23)
 
@@ -1770,184 +1770,184 @@ EN = {
     "exp": "Severity = technical impact on the system; priority = business urgency to fix. They can be independent: a cosmetic defect on the homepage may have low severity but high priority."
 },
 "ch5-28": {
-    "q": "Which scenario best illustrates a defect with HIGH severity but LOW priority?",
+    "q": "A risk has a 30% probability of occurrence and an impact rated 4 (scale 1-5). What is the risk level?",
     "options": [
-        "A spelling mistake on the company homepage that is visible to all visitors",
-        "A crash in a rarely used legacy report module that only two users access monthly",
-        "A data loss bug in the primary checkout flow affecting all customers",
-        "An incorrect currency symbol displayed on all invoices sent to customers"
+        "0.3",
+        "4.3",
+        "1.2",
+        "7"
     ],
-    "exp": "A crash (high severity) in a rarely used module (low business impact = low priority) is the classic high-severity/low-priority scenario."
+    "exp": "Risk level = probability × impact = 0.30 × 4 = 1.2 (on the numeric scale)."
 },
 "ch5-29": {
-    "q": "Which scenario best illustrates a defect with LOW severity but HIGH priority?",
+    "q": "Two risks: Risk A (20% probability, impact 5) and Risk B (50% probability, impact 2). Which should be prioritized?",
     "options": [
-        "A crash in the batch processing system that runs nightly for financial reconciliation",
-        "A misspelling of the CEO's name on the company's public-facing homepage",
-        "A calculation error in an internal report used only by the finance team quarterly",
-        "A performance degradation affecting only users in a non-production test environment"
+        "Risk A, level 1.0 < Risk B 1.0 — tie; prioritize whichever is cheaper to mitigate",
+        "Risk B due to higher probability",
+        "Risk A (level 1.0) and Risk B (level 1.0) have the same level; other factors decide",
+        "Risk A due to higher impact"
     ],
-    "exp": "A misspelling (low technical severity) on the public homepage is highly visible and embarrassing, making it high priority for the business."
+    "exp": "Level A = 0.20×5 = 1.0; Level B = 0.50×2 = 1.0 — tie in risk level; secondary criteria (mitigation cost, visibility) decide."
 },
 "ch5-30": {
-    "q": "What is the purpose of test control in the test management process?",
+    "q": "The 'Planning Poker' test estimation technique is a variant of:",
     "options": [
-        "To write and review test cases before execution begins",
-        "To take corrective actions when monitoring reveals deviations from the test plan",
-        "To approve the final product for release to the production environment",
-        "To select testing tools and configure the test execution environment"
+        "A variant of ratio-based historical estimation",
+        "A variant of metrics-based extrapolation estimation",
+        "Expert-based estimation (Wideband Delphi), using team consensus",
+        "A formal function point analysis technique"
     ],
-    "exp": "Test control acts on monitoring data by taking corrective measures (replanning, reallocating resources) when progress deviates from the plan."
+    "exp": "Planning Poker is a variation of Wideband Delphi: each member votes secretly and the team discusses until convergence, leveraging collective expertise."
 },
 "ch5-31": {
-    "q": "Traceability between test cases and requirements supports:",
+    "q": "A ratio-based test effort estimate uses the historical proportion that testing consumes 30% of total effort. If development is estimated at 1000h, the estimated test effort is:",
     "options": [
-        "Automatic generation of production code from the test cases",
-        "Coverage analysis, impact assessment of changes, and audit compliance",
-        "Elimination of the need for a separate defect tracking system",
-        "Automatic prioritization of test cases without tester involvement"
+        "300h",
+        "700h",
+        "30h",
+        "1300h"
     ],
-    "exp": "Traceability links requirements to test conditions and cases, enabling coverage assessment, change impact analysis, and regulatory audit trails."
+    "exp": "30% ratio: test effort = 30% × 1000h = 300h."
 },
 "ch5-32": {
-    "q": "When a change is made to a requirement after testing has begun, which test management activity is most immediately needed?",
+    "q": "The test pyramid places contract/API tests at the intermediate level because they:",
     "options": [
-        "Immediately halting all testing until the change is fully implemented",
-        "Impact analysis to determine which test cases are affected and need updating",
-        "Closing all open defects related to the changed requirement without resolution",
-        "Discarding the existing test plan and starting the planning process from scratch"
+        "Are always slower than full UI tests",
+        "Only visually check the system's graphical interface",
+        "Are faster and more stable than E2E/UI tests, but validate more integration than unit tests",
+        "Are completely equivalent to unit tests"
     ],
-    "exp": "Impact analysis identifies which existing tests are affected by the change, allowing targeted updates rather than a complete restart."
+    "exp": "API/integration tests are intermediate: faster and less brittle than E2E, but with broader scope than unit tests."
 },
 "ch5-33": {
-    "q": "In agile projects, how is test planning typically different from traditional projects?",
+    "q": "Testing quadrant Q1 (team-supporting, technology-facing) mainly includes:",
     "options": [
-        "Test planning is eliminated entirely; agile teams rely solely on exploratory testing",
-        "Planning is continuous and lightweight, occurring at multiple levels (release, iteration, daily) rather than as a single upfront document",
-        "Test planning in agile produces a more detailed document than in waterfall projects",
-        "Only the Scrum Master performs test planning; testers focus exclusively on execution"
+        "Usability testing and manual exploratory testing",
+        "Acceptance testing carried out by the end user",
+        "Automated unit and component tests that guide development",
+        "Load and performance testing of the system"
     ],
-    "exp": "Agile test planning is continuous and multi-level (release, sprint, daily), adapting frequently rather than being defined once upfront."
+    "exp": "Q1 (technology-facing, team-support): automated unit and component tests that support development (TDD)."
 },
 "ch5-34": {
-    "q": "What is the primary purpose of a risk register in test management?",
+    "q": "Testing quadrant Q4 (product-critiquing, technology-facing) includes:",
     "options": [
-        "To track defects found during testing and their current resolution status",
-        "To document identified risks, their probability, impact, level, and mitigation actions",
-        "To list all test cases that have failed and require investigation",
-        "To record the skills and availability of each tester assigned to the project"
+        "Acceptance testing carried out directly by the user",
+        "Automated unit tests for each component",
+        "Performance, security, reliability, and other non-functional quality attribute testing",
+        "Exploratory testing focused on business rules"
     ],
-    "exp": "A risk register documents identified risks with their probability, impact, risk level, owner, and planned mitigation or contingency actions."
+    "exp": "Q4 (technology-facing, product-critique): non-functional tests such as performance, security, and reliability, usually automated."
 },
 "ch5-35": {
-    "q": "A test manager notices that the defect detection rate has dropped significantly in the last three days despite continued testing. The most likely explanation is:",
+    "q": "What is the difference between severity and priority of a defect in a practical scenario?",
     "options": [
-        "The system has become completely defect-free due to effective testing",
-        "The tests being run are repetitive and no longer finding new defects (pesticide paradox)",
-        "The testers have become more efficient and are executing test cases faster",
-        "The defect tracking tool is malfunctioning and not recording new defects"
+        "Severity and priority are always exactly equal",
+        "High severity always automatically implies high priority",
+        "A cosmetic bug (low severity) can have high priority if it's on the marketing page of an upcoming launch",
+        "Priority is always defined by the tester; severity, by the end customer"
     ],
-    "exp": "A declining defect detection rate in stable testing conditions typically indicates the pesticide paradox: tests need to be diversified to find new defects."
+    "exp": "Severity and priority are independent: a cosmetic bug can be urgent (high priority) for business reasons, even with low technical impact."
 },
 "ch5-36": {
-    "q": "Which estimation technique is most appropriate when detailed historical data from similar projects is available?",
+    "q": "In configuration management, a 'baseline' is:",
     "options": [
-        "Expert-based estimation using Planning Poker with the current team",
-        "Metrics-based estimation (extrapolation) using historical project data",
-        "Ratio-based estimation using industry-standard test-to-development effort ratios",
-        "Three-point estimation using optimistic, most likely, and pessimistic scenarios"
+        "A common error in the version control system",
+        "The production environment where the system runs",
+        "An approved and fixed version of one or more configuration items, used as a reference",
+        "The test plan already approved by stakeholders"
     ],
-    "exp": "When detailed historical data exists, metrics-based estimation provides the most objective and data-driven projections."
+    "exp": "A baseline is a stable, formally approved reference of configuration items, used to control subsequent changes."
 },
 "ch5-37": {
-    "q": "Test effort estimation should consider:",
+    "q": "Which of the following is a useful test progress metric for daily monitoring?",
     "options": [
-        "Only the number of requirements, since each requirement maps to exactly one test case",
-        "Product risk, system complexity, required coverage, team experience, and tool support",
-        "Only the project deadline, working backward from the release date",
-        "Exclusively the number of defects found in the previous project release"
+        "Lines of code per developer",
+        "Meeting hours per week",
+        "Percentage of test cases executed and pass/fail rate",
+        "Number of features requested"
     ],
-    "exp": "Estimation considers multiple factors: risk levels, complexity, coverage targets, team skills, tool availability, environment stability, and process maturity."
+    "exp": "Execution metrics (% executed, passed, failed) provide direct visibility of actual progress versus what was planned."
 },
 "ch5-38": {
-    "q": "What does 'risk mitigation' mean in the context of risk-based testing?",
+    "q": "A quality defect report should avoid:",
     "options": [
-        "Accepting the risk and proceeding without any testing of the affected area",
-        "Taking actions to reduce the probability of a risk occurring or its impact if it does",
-        "Transferring the risk entirely to the customer through contractual agreement",
-        "Documenting the risk in the register and taking no further action"
+        "Including detailed steps to reproduce the defect",
+        "Correctly recording the severity of the defect found",
+        "Subjective language, personal blame, or a vague title like 'system doesn't work'",
+        "Clearly mentioning the environment where the test occurred"
     ],
-    "exp": "Risk mitigation involves actions (more testing, earlier testing, design reviews) that reduce either the probability of the risk occurring or its impact."
+    "exp": "Good reports are objective, descriptive, and factual; accusatory language and vague titles hinder efficient triage and correction."
 },
 "ch5-39": {
-    "q": "A test manager is informed that two key testers will be unavailable for the next sprint. Which test management activity should be performed first?",
+    "q": "What is the purpose of the test completion report?",
     "options": [
-        "Cancel all testing planned for the sprint and reschedule for the following sprint",
-        "Replan the test scope and priorities to account for the reduced capacity",
-        "Replace both testers immediately with contractors regardless of cost",
-        "Continue with the original plan and accept the resulting quality risk"
+        "Listing only the defects that are still open",
+        "Completely replacing the test plan for the next cycle",
+        "Summarizing the test cycle results, communicating the quality achieved, and recording lessons learned",
+        "Formally approving the final product's release"
     ],
-    "exp": "Test control responds to changed circumstances by replanning: adjusting scope, priorities, and assignments to match available capacity."
+    "exp": "The completion report consolidates results, coverage, defects, deviations from the plan, and lessons, serving as a reference for future cycles."
 },
 "ch5-40": {
-    "q": "Which of the following best describes 'test basis' in the context of test planning?",
+    "q": "Risk-based testing affects planning by:",
     "options": [
-        "The team of testers assigned to execute the test cases in the plan",
-        "Any documentation or knowledge used to derive test conditions and cases",
-        "The baseline version of the software against which all tests are executed",
-        "The test environment configuration documented in the test plan"
+        "Completely ignoring low-risk features",
+        "Completely eliminating regression tests from the plan",
+        "Allocating more effort, depth, and anticipation to the items of highest product risk",
+        "Always reducing the total number of planned test cases"
     ],
-    "exp": "The test basis is any artifact (requirements, design, code, risk register) from which test conditions can be identified and test cases derived."
+    "exp": "Risk guides where to invest more (more rigorous techniques, earlier start) and allows reducing effort in low-risk areas."
 },
 "ch5-41": {
-    "q": "In risk-based testing, what happens to residual risk after testing is complete?",
+    "q": "When exit criteria are not met but the deadline has arrived, what is the most appropriate action?",
     "options": [
-        "It is automatically eliminated because all planned tests have been executed",
-        "It is communicated to stakeholders so they can make an informed release decision",
-        "It is transferred to the development team for resolution before release",
-        "It is ignored because testing has already addressed the highest-priority risks"
+        "Ignore the defined criteria and end testing anyway",
+        "Continue testing indefinitely, with no stopping criteria at all",
+        "Report the status, the residual risks, and leave the decision to stop or continue to the stakeholders",
+        "Formally fail the system without consulting anyone"
     ],
-    "exp": "Residual risk (untested or partially tested areas) must be communicated to stakeholders so they can make an informed go/no-go decision."
+    "exp": "The test manager reports residual risks and status; the decision to stop or not is a business decision, made by stakeholders with full information."
 },
 "ch5-42": {
-    "q": "Which metric best indicates whether the test execution phase is on track?",
+    "q": "Which prioritization technique is most suitable when time is very short and it's necessary to ensure the most critical items are tested first?",
     "options": [
-        "The total lines of code written by the development team per sprint",
-        "The percentage of planned test cases executed versus the schedule to date",
-        "The number of test team meetings held during the execution phase",
-        "The total size of the test plan document in pages"
+        "Completely random prioritization of test cases",
+        "Simple prioritization by alphabetical order of the module name",
+        "Risk-based prioritization: test the highest risk level items first",
+        "Testing only the shortest and fastest cases first"
     ],
-    "exp": "Comparing the percentage of test cases executed against the planned schedule is the most direct indicator of execution phase progress."
+    "exp": "With limited time, risk-based prioritization ensures the available effort covers what would cause the greatest impact if it failed."
 },
 "ch5-43": {
-    "q": "What is the relationship between test monitoring and test control?",
+    "q": "'Impact analysis' in maintenance testing serves to:",
     "options": [
-        "They are the same activity performed by different team members",
-        "Monitoring collects progress data; control uses that data to take corrective actions",
-        "Control precedes monitoring; actions are taken first, then progress is measured",
-        "Monitoring is performed only at the end of testing; control occurs throughout"
+        "Exclusively estimate the total project cost",
+        "Directly select the automation tool used",
+        "Identify which parts of the system and which tests are affected by a change",
+        "Plan the training needed for the team"
     ],
-    "exp": "Monitoring gathers and analyzes progress data; control acts on that data by adjusting plans, resources, or scope when deviations occur."
+    "exp": "Impact analysis determines the scope of regression: which areas were affected by the change and which tests should be executed."
 },
 "ch5-44": {
-    "q": "A product has been tested and 15 defects remain open at release. The test manager communicates this to stakeholders. This is an example of:",
+    "q": "In agile projects, 'Definition of Ready' (DoR) for a user story means that:",
     "options": [
-        "Poor test management, because no defects should remain open at release",
-        "Transparent risk communication, enabling stakeholders to make an informed release decision",
-        "Test failure, because exit criteria require zero open defects before release",
-        "Scope reduction, because untested features were excluded from the release"
+        "The story has already been fully implemented, tested, and is ready for delivery to the customer",
+        "All automated and manual tests for the story have already been written and successfully executed",
+        "The story meets the minimum criteria to enter the sprint (acceptance criteria defined, estimated, no blocking dependencies)",
+        "The story's complete code has already been formally reviewed and approved by technical peers"
     ],
-    "exp": "Communicating known residual risk (open defects) is good practice; it gives stakeholders the information needed to make an informed release decision."
+    "exp": "DoR defines when a story is sufficiently prepared to be worked on in the sprint, including clear acceptance criteria for testing."
 },
 "ch5-45": {
-    "q": "Which of the following best describes the role of a test manager versus a tester?",
+    "q": "In configuration management, what is a 'configuration item'?",
     "options": [
-        "Test managers write test cases; testers execute them and report results",
-        "Test managers handle planning, monitoring, and stakeholder communication; testers handle analysis, design, and execution",
-        "Test managers are responsible for automation; testers are responsible for manual testing",
-        "Test managers work only in waterfall; testers work only in agile projects"
+        "Only an individual test case stored separately in the test repository",
+        "Only a defect report manually logged in the tracking system",
+        "Only a single line of source code present in the compiled program",
+        "Any artifact (component, document, environment) identified and managed as a unit in the configuration control system"
     ],
-    "exp": "The test manager owns planning, monitoring, control, and stakeholder reporting; the tester owns test analysis, design, implementation, and execution."
+    "exp": "Configuration items are uniquely identified artifacts managed under configuration control: code, documents, environments, tools."
 },
 # CHAPTER 6 — TEST TOOLS (10 questions) — FINAL BLOCK
 
@@ -2012,34 +2012,34 @@ EN = {
     "exp": "A pilot project allows evaluation of organizational fit, defines usage guidelines, and estimates costs/benefits before scaling to full adoption."
 },
 "ch6-07": {
-    "q": "Which category of tool would be used to identify unreachable (dead) code without executing the program?",
+    "q": "A project wants to automate API regression tests. Which tool category is most suitable?",
     "options": [
-        "Test execution tools",
-        "Static analysis tools",
-        "Performance testing tools",
-        "Test data preparation tools"
+        "A requirements management and tracking tool",
+        "An API test execution tool (e.g., a REST client with automated assertions)",
+        "A static source code analysis tool",
+        "A tool to support manual code review"
     ],
-    "exp": "Static analysis tools examine code structure without execution, identifying issues such as dead code, complexity violations, and standard deviations."
+    "exp": "API testing tools (such as REST frameworks with assertions) are the appropriate category for automating service regression."
 },
 "ch6-08": {
-    "q": "A test management tool primarily supports:",
+    "q": "The ROI (return on investment) of test automation tends to be higher when:",
     "options": [
-        "Generating production code automatically from test case specifications",
-        "Managing test cases, plans, execution tracking, and traceability to requirements",
-        "Executing automated browser-based UI tests without any scripting",
-        "Measuring system performance under simulated production load"
+        "The automated tests are run very few times throughout the project",
+        "The tests are stable, run frequently, and the maintenance cost is lower than that of repeated manual execution",
+        "The system changes completely every sprint, with no backward compatibility at all",
+        "The responsible team doesn't yet know the chosen tool well"
     ],
-    "exp": "Test management tools (e.g., Jira+Xray, TestRail, qTest) manage test cases, plans, execution, defects, traceability, and reporting."
+    "exp": "Positive ROI occurs when stable, frequent tests amortize the initial automation cost and maintenance cost over time."
 },
 "ch6-09": {
-    "q": "Which statement about tool-supported testing benefits and risks is correct?",
+    "q": "What is the risk of 'brittle scripts' in UI test automation?",
     "options": [
-        "Tools provide only benefits; there are no significant risks to consider when adopting them",
-        "Tools provide real benefits but also carry risks that must be managed, such as unrealistic expectations and maintenance overhead",
-        "The risks of test tools always outweigh their benefits, so manual testing is always preferable",
-        "Risks only apply to open-source tools; commercial tools carry no implementation risk"
+        "The automation scripts run very fast",
+        "Small interface changes break the scripts, generating high maintenance cost",
+        "The automated scripts cover many test scenarios",
+        "The automation starts detecting many more defects"
     ],
-    "exp": "Tool adoption brings genuine benefits (efficiency, consistency) alongside real risks (cost, maintenance, unrealistic expectations) that require careful management."
+    "exp": "UI scripts that depend on brittle selectors (coordinates, literal text) break with any layout change, increasing maintenance."
 },
 "ch6-10": {
     "q": "Which factor is MOST important when evaluating whether to introduce a new tool into an existing test process?",
