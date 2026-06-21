@@ -655,7 +655,7 @@ add(4,3,"Um sistema de desconto aplica desconto se: (cliente premium = Sim) OU (
     "Duas condições binárias geram 2² = 4 regras; a tabela completa tem 4 colunas independentemente do operador lógico.")
 
 add(4,3,"Numa máquina de estados de conta bancária: estados = {Ativa, Bloqueada, Encerrada}. Quantas transições inválidas existem se há apenas 4 transições válidas definidas?",
-    ["4","5","8","6"],2,
+    ["4","5","8","6"],1,
     "Com 3 estados, há 3×3 = 9 células na matriz (incluindo auto-transições); com 4 válidas, há 9-4 = 5 transições inválidas a verificar.")
 
 add(4,3,"Um trecho de código tem 20 instruções executáveis. Um conjunto de testes executou 15. Qual é a cobertura de instruções?",
