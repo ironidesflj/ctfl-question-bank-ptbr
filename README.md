@@ -35,6 +35,12 @@ K-levels: K1=~28%, K2=~58%, K3=~14%
 ## Como usar
 
 ```bash
+python3 build_all.py    # gera + injeta EN + valida alinhamento, em um passo
+```
+
+**Uso avançado / scripts individuais** (rodar `build_bank.py` isolado apaga `locales.en` — só use se souber o que está fazendo):
+
+```bash
 python3 build_bank.py        # gera ctfl-questions-ptbr.json (sem EN)
 python3 add_en.py            # injeta traduções EN
 python3 check_alignment.py   # verifica alinhamento PT/EN (heurística, não corrige nada)
