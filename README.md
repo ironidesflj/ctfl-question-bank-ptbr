@@ -28,15 +28,19 @@ Banco de questões para preparação ao exame ISTQB CTFL v4.0.
 K-levels: K1=~28%, K2=~58%, K3=~14%
 
 ## Scripts
-- `build_bank.py` — gera e valida o JSON PT-BR
-- `add_en.py` — injeta `locales.en` nas questões existentes por ID
+- `build_bank.py` — gera e valida o JSON PT-BR (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`)
+- `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente)
+- `check_alignment.py` — heurística de verificação permanente de alinhamento PT/EN (rodada no CI a cada push). Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente. Veja a docstring do arquivo para detalhes sobre a baseline de falsos positivos conhecidos.
 
 ## Como usar
 
 ```bash
-python3 build_bank.py      # gera ctfl-questions-ptbr.json
-python3 add_en.py          # injeta traduções EN
+python3 build_bank.py        # gera ctfl-questions-ptbr.json (sem EN)
+python3 add_en.py            # injeta traduções EN
+python3 check_alignment.py   # verifica alinhamento PT/EN (heurística, não corrige nada)
 ```
+
+**Ao expandir o banco** (novas questões/capítulos): depois de escrever o PT em `build_bank.py` e o EN em `add_en.py`, rode `check_alignment.py` antes de comitar. Se aparecerem suspeitas novas, leia PT e EN par a par para cada id sinalizado — não confie no índice "sugerido" pela heurística sem confirmar manualmente (ela já errou a sugestão em vários casos confirmados nesta sessão).
 
 ## Schema
 
@@ -55,6 +59,23 @@ python3 add_en.py          # injeta traduções EN
 ```
 
 ## Changelog
+### v2.3.0
+- fix: corrige 87 questões com índice de resposta EN incorreto (bug de
+  ordenação anterior ao desalinhamento de tema da v2.2.0). Nestas, o
+  tema da pergunta EN já estava certo, mas a ordem das opções EN não
+  espelhava a ordem PT (que tinha sido rebalanceada na v2.0.0 antes do
+  EN existir) — então `answer` apontava para a opção errada em inglês.
+  Afeta Cap.1 (21/24 originais), Cap.2 (10/15), Cap.4 (29/33, incl. o
+  par ch4-11/ch4-12 que tinha o bloco EN inteiro trocado entre si) e a
+  totalidade do Cap.5 original (27/27).
+- feat: `check_alignment.py` — heurística permanente de verificação
+  PT/EN, com baseline de falsos positivos conhecidos
+  (`check_alignment_baseline.json`) e workflow de CI
+  (`.github/workflows/check-alignment.yml`) que falha o build se
+  aparecerem suspeitas NOVAS de desalinhamento em qualquer expansão
+  futura do banco. Não corrige nada automaticamente — só alerta para
+  revisão manual.
+
 ### v2.2.0
 - fix: corrige desalinhamento PT/EN em 77 questões (38% do banco). A
   v2.1.0 criou o EN diretamente do syllabus oficial em vez de traduzir o

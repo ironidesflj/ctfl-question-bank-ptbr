@@ -1,0 +1,28 @@
+name: Check PT/EN alignment
+
+on:
+  push:
+    paths:
+      - "ctfl-questions-ptbr.json"
+      - "build_bank.py"
+      - "add_en.py"
+      - "check_alignment.py"
+      - "check_alignment_baseline.json"
+  pull_request:
+    paths:
+      - "ctfl-questions-ptbr.json"
+      - "build_bank.py"
+      - "add_en.py"
+      - "check_alignment.py"
+      - "check_alignment_baseline.json"
+
+jobs:
+  check-alignment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run PT/EN alignment heuristic
+        run: python3 check_alignment.py
