@@ -1,0 +1,40 @@
+name: Sync question bank to ctfl-app
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ctfl-questions-ptbr.json"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout bank repo
+        uses: actions/checkout@v4
+        with:
+          path: bank
+
+      - name: Checkout ctfl-app repo
+        uses: actions/checkout@v4
+        with:
+          repository: ironidesflj/ctfl-app
+          token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
+          path: app
+
+      - name: Copy updated bank JSON into ctfl-app
+        run: cp bank/ctfl-questions-ptbr.json app/src/data/ctfl-questions-ptbr.json
+
+      - name: Open PR in ctfl-app
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
+          path: app
+          branch: sync/bank-update-${{ github.sha }}
+          title: "sync: atualiza banco de questões (origem: ctfl-question-bank-ptbr@${{ github.sha }})"
+          body: |
+            PR automático gerado por push em `ctfl-questions-ptbr.json` no repo do banco.
+            Commit de origem: ${{ github.event.head_commit.message }}
+
+            Revisar e mergear manualmente — não há auto-merge configurado.
+          commit-message: "sync: atualiza ctfl-questions-ptbr.json a partir do banco"
