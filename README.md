@@ -48,6 +48,15 @@ python3 check_alignment.py   # verifica alinhamento PT/EN (heurística, não cor
 
 **Ao expandir o banco** (novas questões/capítulos): depois de escrever o PT em `build_bank.py` e o EN em `add_en.py`, rode `check_alignment.py` antes de comitar. Se aparecerem suspeitas novas, leia PT e EN par a par para cada id sinalizado — não confie no índice "sugerido" pela heurística sem confirmar manualmente (ela já errou a sugestão em vários casos confirmados nesta sessão).
 
+## Sincronização com ctfl-app
+
+Push em `ctfl-questions-ptbr.json` na branch `main` deste repositório dispara a GitHub
+Action `sync-app.yml`, que abre automaticamente um Pull Request no repositório
+[`ctfl-app`](https://github.com/ironidesflj/ctfl-app) atualizando
+`src/data/ctfl-questions-ptbr.json`. Não copie o arquivo manualmente — revise e faça o
+merge do PR gerado. Requer o secret `CTFL_APP_SYNC_TOKEN` configurado neste repositório
+(token fine-grained com escrita em `ctfl-app`).
+
 ## Schema
 
 ```jsonc
