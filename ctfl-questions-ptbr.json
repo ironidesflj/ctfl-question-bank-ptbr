@@ -2,7 +2,7 @@
   "meta": {
     "title": "Banco de Questões CTFL v4.0",
     "syllabus": "ISTQB Certified Tester Foundation Level v4.0",
-    "version": "1.0.0",
+    "version": "2.3.0",
     "defaultLanguage": "pt",
     "availableLanguages": [
       "pt",
@@ -2400,14 +2400,14 @@
           "exp": "Ferramentas de análise estática examinam o código sem executá-lo, detectando padrões suspeitos, violações e vulnerabilidades."
         },
         "en": {
-          "q": "Static analysis tools are most useful for:",
+          "q": "Which tool supports static testing through automated source code analysis?",
           "options": [
-            "Executing test cases automatically and recording pass/fail results",
-            "Detecting code defects such as security vulnerabilities, dead code, and standard violations without execution",
-            "Generating realistic test data for use in performance and load testing scenarios",
-            "Managing test case repositories and tracking defect resolution progress"
+            "Performance test execution tool",
+            "Static analysis tool (linter/code analyzer)",
+            "UI record-and-playback tool",
+            "Configuration management tool"
           ],
-          "exp": "Static analysis tools examine code without executing it, finding issues like security flaws, unreachable code, and coding standard violations."
+          "exp": "Static analysis tools examine code without executing it, detecting suspicious patterns, violations, and vulnerabilities."
         }
       }
     },

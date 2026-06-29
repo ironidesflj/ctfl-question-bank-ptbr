@@ -850,14 +850,14 @@ EN = {
     "exp": "Static testing uniquely finds standard violations, dead code, and inconsistencies in requirements that may never cause a runtime failure."
 },
 "ch3-17": {
-    "q": "Static analysis tools are most useful for:",
+    "q": "Which tool supports static testing through automated source code analysis?",
     "options": [
-        "Executing test cases automatically and recording pass/fail results",
-        "Detecting code defects such as security vulnerabilities, dead code, and standard violations without execution",
-        "Generating realistic test data for use in performance and load testing scenarios",
-        "Managing test case repositories and tracking defect resolution progress"
+        "Performance test execution tool",
+        "Static analysis tool (linter/code analyzer)",
+        "UI record-and-playback tool",
+        "Configuration management tool"
     ],
-    "exp": "Static analysis tools examine code without executing it, finding issues like security flaws, unreachable code, and coding standard violations."
+    "exp": "Static analysis tools examine code without executing it, detecting suspicious patterns, violations, and vulnerabilities."
 },
 "ch3-18": {
     "q": "What is an entry criterion for a formal review?",
