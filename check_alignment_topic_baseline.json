@@ -1,0 +1,16 @@
+{
+  "_comentario": "Falsos positivos conhecidos da heuristica de desalinhamento de TEMA PT/EN, confirmados manualmente. Gerado por check_alignment.py --update-topic-baseline.",
+  "ids": [
+    "ch2-12",
+    "ch3-02",
+    "ch3-07",
+    "ch4-15",
+    "ch4-16",
+    "ch4-51",
+    "ch5-01",
+    "ch5-11",
+    "ch6-01",
+    "ch6-02",
+    "ch6-10"
+  ]
+}
