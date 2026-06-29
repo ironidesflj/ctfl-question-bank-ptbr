@@ -30,7 +30,7 @@ K-levels: K1=~28%, K2=~58%, K3=~14%
 ## Scripts
 - `build_bank.py` — gera e valida o JSON PT-BR (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`)
 - `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente)
-- `check_alignment.py` — heurística de verificação permanente de alinhamento PT/EN (rodada no CI a cada push). Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente. Veja a docstring do arquivo para detalhes sobre a baseline de falsos positivos conhecidos.
+- `check_alignment.py` — duas guardas de alinhamento PT/EN (rodadas no CI a cada push): (1) verifica se a opção correta tem maior similaridade à explicação EN do que as outras — guarda histórica com baseline em `check_alignment_baseline.json`; (2) verifica desalinhamento de **tema** comparando `pt.q` com `en.q` via z-score adaptativo (limiar = média − 1,5 × desvio da distribuição do banco) — baseline em `check_alignment_topic_baseline.json`. Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente.
 
 ## Como usar
 

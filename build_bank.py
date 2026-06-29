@@ -1118,7 +1118,7 @@ bank = {
     "meta": {
         "title": "Banco de Questões CTFL v4.0",
         "syllabus": "ISTQB Certified Tester Foundation Level v4.0",
-        "version": "1.0.0",
+        "version": "2.3.0",  # bumpar junto com o changelog do README a cada release
         "defaultLanguage": "pt",
         "availableLanguages": ["pt"],
         "examFormat": {"questions": 40, "passMark": 26, "timeMinutes": 60, "timeMinutesNonNative": 75},

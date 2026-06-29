@@ -36,6 +36,7 @@ Saída:
 """
 
 import json
+import math
 import sys
 import argparse
 from difflib import SequenceMatcher
@@ -43,6 +44,7 @@ from pathlib import Path
 
 BANK_FILE = Path(__file__).parent / "ctfl-questions-ptbr.json"
 BASELINE_FILE = Path(__file__).parent / "check_alignment_baseline.json"
+TOPIC_BASELINE_FILE = Path(__file__).parent / "check_alignment_topic_baseline.json"
 DEFAULT_THRESHOLD = 0  # qualquer suspeita NOVA (fora da baseline) já merece revisão
 
 
@@ -74,6 +76,42 @@ def check(bank_path: Path = BANK_FILE):
     return suspects
 
 
+def check_topic(bank_path: Path = BANK_FILE):
+    """Detecta desalinhamento de TEMA entre pt.q e en.q usando z-score da similaridade.
+
+    Marca como suspeita qualquer questão com similaridade(pt.q, en.q) abaixo de
+    (média - 1.5 × desvio_padrão) do banco. Limiar adaptativo: não usa número fixo,
+    reflete a distribuição real do banco.
+    """
+    with open(bank_path, encoding="utf-8") as f:
+        bank = json.load(f)
+
+    pairs = []
+    for q in bank["questions"]:
+        en = q["locales"].get("en")
+        if not en:
+            continue
+        pt = q["locales"].get("pt", {})
+        score = similarity(pt.get("q", ""), en.get("q", ""))
+        pairs.append({"id": q["id"], "score": score})
+
+    if not pairs:
+        return []
+
+    scores = [p["score"] for p in pairs]
+    mean = sum(scores) / len(scores)
+    variance = sum((s - mean) ** 2 for s in scores) / len(scores)
+    std = math.sqrt(variance)
+    threshold = mean - 1.5 * std
+
+    suspects = [
+        {"id": p["id"], "score": round(p["score"], 4), "media_banco": round(mean, 4)}
+        for p in pairs
+        if p["score"] < threshold
+    ]
+    return suspects, round(mean, 4), round(std, 4), round(threshold, 4), len(pairs)
+
+
 def load_baseline():
     if not BASELINE_FILE.exists():
         return set()
@@ -91,24 +129,44 @@ def save_baseline(suspects):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def load_topic_baseline():
+    if not TOPIC_BASELINE_FILE.exists():
+        return set()
+    with open(TOPIC_BASELINE_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    return set(data.get("ids", []))
+
+
+def save_topic_baseline(suspects):
+    data = {
+        "_comentario": "Falsos positivos conhecidos da heuristica de desalinhamento de TEMA PT/EN, confirmados manualmente. Gerado por check_alignment.py --update-topic-baseline.",
+        "ids": sorted(s["id"] for s in suspects),
+    }
+    with open(TOPIC_BASELINE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--threshold", type=int, default=DEFAULT_THRESHOLD,
                          help=f"número de suspeitas NOVAS (fora da baseline) tolerado sem falhar (default: {DEFAULT_THRESHOLD})")
     parser.add_argument("--update-baseline", action="store_true",
-                         help="aceita o estado atual como nova baseline (use só após revisão manual confirmando que são falsos positivos)")
+                         help="aceita o estado atual como nova baseline para a guarda opção/explicação (use só após revisão manual)")
+    parser.add_argument("--update-topic-baseline", action="store_true",
+                         help="aceita o estado atual como nova baseline para a guarda de TEMA PT/EN (use só após revisão manual)")
     args = parser.parse_args()
 
+    # --- Guarda 1: opção vs. explicação (check original) ---
     suspects = check()
     baseline_ids = load_baseline()
     new_suspects = [s for s in suspects if s["id"] not in baseline_ids]
 
     if args.update_baseline:
         save_baseline(suspects)
-        print(f"Baseline atualizada com {len(suspects)} id(s) em {BASELINE_FILE}")
+        print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {BASELINE_FILE}")
         sys.exit(0)
 
-    print(f"{len(suspects)} suspeita(s) no total | {len(baseline_ids)} na baseline | "
+    print(f"[Guarda opção/exp] {len(suspects)} suspeita(s) no total | {len(baseline_ids)} na baseline | "
           f"{len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
 
     if new_suspects:
@@ -117,12 +175,34 @@ def main():
             print(f"  {s['id']}: answer={s['answer']} -> {s['opcao_atual_en']!r}")
             print(f"    sugestão (não confirmada): índice {s['indice_sugerido']} -> {s['opcao_sugerida_en']!r}")
 
-    if len(new_suspects) > args.threshold:
-        print(f"\nFALHA: {len(new_suspects)} suspeita(s) NOVA(S) excede o threshold de {args.threshold}.")
-        print("Revise manualmente. Se forem falsos positivos confirmados, rode com --update-baseline.")
+    # --- Guarda 2: desalinhamento de TEMA (pt.q vs en.q) ---
+    topic_result = check_topic()
+    topic_suspects, mean, std, threshold_val, total = topic_result
+    topic_baseline_ids = load_topic_baseline()
+    new_topic_suspects = [s for s in topic_suspects if s["id"] not in topic_baseline_ids]
+
+    if args.update_topic_baseline:
+        save_topic_baseline(topic_suspects)
+        print(f"Baseline (tema) atualizada com {len(topic_suspects)} id(s) em {TOPIC_BASELINE_FILE}")
+        sys.exit(0)
+
+    print(f"\n[Guarda tema] {total} questões bilíngues | média={mean} desvio={std} limiar={threshold_val}")
+    print(f"  {len(topic_suspects)} suspeita(s) no total | {len(topic_baseline_ids)} na baseline | "
+          f"{len(new_topic_suspects)} NOVA(S)\n")
+
+    if new_topic_suspects:
+        print("Suspeitas de desalinhamento de TEMA:\n")
+        for s in new_topic_suspects:
+            print(f"  {s['id']}: similaridade={s['score']} (média banco={s['media_banco']})")
+
+    # --- Resultado final ---
+    total_new = len(new_suspects) + len(new_topic_suspects)
+    if total_new > args.threshold:
+        print(f"\nFALHA: {total_new} suspeita(s) NOVA(S) no total excedem o threshold de {args.threshold}.")
+        print("Revise manualmente. Se forem falsos positivos confirmados, rode --update-baseline e/ou --update-topic-baseline.")
         sys.exit(1)
 
-    print(f"\nOK: {len(new_suspects)} suspeita(s) nova(s), dentro do threshold de {args.threshold}.")
+    print(f"\nOK: {total_new} suspeita(s) nova(s) no total, dentro do threshold de {args.threshold}.")
     sys.exit(0)
 
 
