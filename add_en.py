@@ -1558,14 +1558,14 @@ EN = {
     "exp": "Ratio-based estimation applies historical proportions from past projects (e.g., test effort = 30% of dev effort) to estimate the current project."
 },
 "ch5-07": {
-    "q": "Metrics-based estimation (extrapolation) relies on:",
+    "q": "Metrics-based (extrapolation) estimation is based on:",
     "options": [
-        "Intuitive judgment from the most experienced tester on the team",
-        "The project budget as the primary constraint for determining test scope",
-        "Data and measurements from previous iterations or projects, extrapolated to the current work",
-        "Vendor-supplied benchmarks for the testing tools used on the project"
+        "Pure intuition and guesswork, ignoring any objective measurement",
+        "Only on the budget available for the current project",
+        "Data/measurements from previous iterations or projects, extrapolated to the current one",
+        "Exclusively on the number of testers available"
     ],
-    "exp": "Metrics-based estimation uses historical data (velocity, defect rates, effort per test case) to extrapolate effort estimates for the current project."
+    "exp": "The metrics-based approach uses historical data to extrapolate the expected effort."
 },
 "ch5-08": {
     "q": "Expert-based estimation is characterized by:",
