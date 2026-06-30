@@ -164,7 +164,8 @@ def main():
     if args.update_baseline:
         save_baseline(suspects)
         print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {BASELINE_FILE}")
-        sys.exit(0)
+        if not args.update_topic_baseline:
+            sys.exit(0)
 
     print(f"[Guarda opção/exp] {len(suspects)} suspeita(s) no total | {len(baseline_ids)} na baseline | "
           f"{len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
