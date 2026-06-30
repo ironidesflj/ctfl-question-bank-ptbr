@@ -842,10 +842,10 @@ EN = {
 "ch3-16": {
     "q": "Which defect type is most effectively found by static testing but is difficult to detect through dynamic testing?",
     "options": [
-        "Race conditions that only manifest under specific concurrent execution timing",
-        "Deviations from coding standards and unreachable (dead) code in the codebase",
-        "Performance bottlenecks that only appear under high production load conditions",
-        "Integration failures that occur only when two specific modules interact at runtime"
+        "A performance failure detected under real load",
+        "An ambiguous or contradictory requirement, before any implementation exists",
+        "A runtime error detected in a module that has already been executed",
+        "A visual failure in the graphical user interface"
     ],
     "exp": "Static testing uniquely finds standard violations, dead code, and inconsistencies in requirements that may never cause a runtime failure."
 },
@@ -1159,7 +1159,7 @@ EN = {
         "Decision coverage, because each decision must evaluate to both true and false",
         "Statement coverage, because all statements must be executed",
         "No standard coverage criterion requires testing the false path of an if without else",
-        "Condition coverage, because each individual condition must be evaluated"
+        "Function coverage"
     ],
     "exp": "Without an else branch, 100% statement coverage can be achieved without testing the false path; decision coverage forces both true and false outcomes."
 },
@@ -1520,10 +1520,10 @@ EN = {
 "ch5-03": {
     "q": "Entry criteria define:",
     "options": [
-        "The list of defects that must be resolved before testing can proceed",
-        "The conditions under which a completed test activity can be declared finished",
+        "When to stop testing",
+        "The acceptable number of defects",
         "The conditions that must be met before a test activity can begin",
-        "The acceptance thresholds the final product must satisfy before user release"
+        "The final coverage achieved"
     ],
     "exp": "Entry criteria are pre-conditions for starting a test activity, such as environment readiness, test cases approved, and test data available."
 },
@@ -1621,9 +1621,9 @@ EN = {
     "q": "In test management, 'risk' is defined as:",
     "options": [
         "A defect that has been found but not yet fixed by the development team",
-        "A failed test case that blocks the continuation of the test cycle",
+        "A failure in production",
         "A potential future event with a negative consequence for the project or product",
-        "A test case that has been excluded from the scope of the current test plan"
+        "A failed test case"
     ],
     "exp": "Risk is the possibility of a future event with negative consequences; it combines the probability of occurrence with the magnitude of impact."
 },
@@ -1711,7 +1711,7 @@ EN = {
     "q": "Which of the following is a typical test metric?",
     "options": [
         "The color theme selected for the test management tool dashboard",
-        "The team's preferred programming language for test automation",
+        "The team's salary",
         "The percentage of test cases executed and the pass/fail ratio",
         "The number of meetings held during the test planning phase"
     ],
@@ -1735,7 +1735,7 @@ EN = {
         "Before testing begins to communicate the planned approach to stakeholders",
         "Daily during test execution to track the number of defects found each day",
         "At the end of a test level or milestone, summarizing results and lessons learned",
-        "Immediately after each individual test case is executed and evaluated"
+        "After each defect"
     ],
     "exp": "The completion report summarizes results, coverage achieved, quality assessment, and lessons learned at the end of a test level or major milestone."
 },
@@ -1752,10 +1752,10 @@ EN = {
 "ch5-26": {
     "q": "What should a good defect report contain?",
     "options": [
-        "Only the title and severity rating to keep reporting lightweight and efficient",
-        "Only the name of the developer responsible for the defective code",
+        "Only the title",
+        "Only the severity",
         "Identifier, description, steps to reproduce, expected vs actual result, severity, and priority",
-        "A list of all test cases executed in the same session as the defect was found"
+        "The name of the developer at fault"
     ],
     "exp": "Effective defect reports include: ID, description, reproduction steps, expected vs. actual result, environment, severity, and priority."
 },
@@ -1782,7 +1782,7 @@ EN = {
 "ch5-29": {
     "q": "Two risks: Risk A (20% probability, impact 5) and Risk B (50% probability, impact 2). Which should be prioritized?",
     "options": [
-        "Risk A, level 1.0 < Risk B 1.0 — tie; prioritize whichever is cheaper to mitigate",
+        "Risk A, because its risk level (1.0) is higher than Risk B's (0.50 × 2 = 0.5, miscalculated)",
         "Risk B due to higher probability",
         "Risk A (level 1.0) and Risk B (level 1.0) have the same level; other factors decide",
         "Risk A due to higher impact"
@@ -1800,7 +1800,7 @@ EN = {
     "exp": "Planning Poker is a variation of Wideband Delphi: each member votes secretly and the team discusses until convergence, leveraging collective expertise."
 },
 "ch5-31": {
-    "q": "A ratio-based test effort estimate uses the historical proportion that testing consumes 30% of total effort. If development is estimated at 1000h, the estimated test effort is:",
+    "q": "A ratio-based test effort estimate uses the historical proportion that testing consumes 30% of development effort. If development is estimated at 1000h, the estimated test effort is:",
     "options": [
         "300h",
         "700h",

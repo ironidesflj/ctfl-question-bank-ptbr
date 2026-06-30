@@ -898,7 +898,7 @@ add(5,3,"Um risco tem probabilidade de ocorrência de 30% e impacto avaliado em 
     "Nível de risco = probabilidade × impacto = 0,30 × 4 = 1,2 (em escala numérica).")
 
 add(5,3,"Dois riscos: Risco A (probabilidade 20%, impacto 5) e Risco B (probabilidade 50%, impacto 2). Qual deve ser priorizado?",
-    ["Risco A, nível 1,0 < Risco B 1,0 — empate; prioriza o que for mais barato de mitigar",
+    ["Risco A, pois seu nível de risco (1,0) é maior que o de Risco B (0,50 × 2 = 0,5, calculado incorretamente)",
      "Risco B por ter maior probabilidade",
      "Risco A (nível 1,0) e Risco B (nível 1,0) têm o mesmo nível; outros fatores decidem",
      "Risco A por ter maior impacto"],2,
@@ -911,7 +911,7 @@ add(5,2,"A técnica de estimativa de teste por 'Planning Poker' é uma variante 
      "Uma técnica de análise formal de pontos de função"],2,
     "Planning Poker é uma variação do Wideband Delphi: cada membro vota secretamente e o time discute até convergir, aproveitando a expertise coletiva.")
 
-add(5,2,"Uma estimativa de esforço de teste baseada em ratios usa a proporção histórica de que o teste consome 30% do esforço total. Se o desenvolvimento está estimado em 1000h, o esforço de teste estimado é:",
+add(5,2,"Uma estimativa de esforço de teste baseada em ratios usa a proporção histórica de que o teste consome 30% do esforço de desenvolvimento. Se o desenvolvimento está estimado em 1000h, o esforço de teste estimado é:",
     ["300h","700h","30h","1300h"],0,
     "Ratio de 30%: esforço de teste = 30% × 1000h = 300h.")
 
