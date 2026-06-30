@@ -1,36 +1,47 @@
-# Banco de Questões — CTFL v4.0 (PT-BR + EN em progresso)
+# Synapse — Banco de Questões Multi-Certificação ISTQB (PT-BR + EN)
 
-Banco de questões para preparação ao exame ISTQB CTFL v4.0.
+Banco de questões bilíngue para preparação a certificações ISTQB. Dois arquivos:
+- `ctfl-questions-ptbr.json` — só CTFL v4.0 (300 questões), consumido pelo [`ctfl-app`](https://github.com/ironidesflj/ctfl-app)
+- `synapse-question-bank.json` — todas as 5 certificações (1100 questões)
 
 ## Estado atual
-- 200 questões PT-BR
-- 200 questões EN (banco 100% bilíngue, todos os 6 capítulos)
+- 1100 questões bilíngues (`locales.pt` + `locales.en`) em 5 certificações ISTQB
+- CTFL v4.0: 300 questões (200 originais + 100 da expansão Fase 4)
+- 4 certificações novas: CTFL-AT, CTAL-TA, CTAL-TM, CT-AI (200 questões cada)
 - Schema i18n-ready: `locales.pt` e `locales.en` em todas as questões
 
-## Formato do exame
+## Formato do exame (CTFL v4.0)
 | Item | Valor |
 |------|-------|
 | Questões | 40 |
 | Nota de corte | 26/40 (65%) |
 | Tempo | 60 min (75 min não-nativos) |
 
-## Distribuição
+## Distribuição — CTFL v4.0 (300 questões)
 | Cap. | Domínio | Questões |
 |------|---------|----------|
-| 1 | Fundamentos | 40 |
-| 2 | Teste no Ciclo | 25 |
-| 3 | Teste Estático | 25 |
-| 4 | Técnicas de Teste | 55 |
-| 5 | Gerenciamento | 45 |
-| 6 | Ferramentas | 10 |
-| | **Total** | **200** |
+| 1 | Fundamentos | 60 |
+| 2 | Teste no Ciclo | 38 |
+| 3 | Teste Estático | 38 |
+| 4 | Técnicas de Teste | 82 |
+| 5 | Gerenciamento | 67 |
+| 6 | Ferramentas | 15 |
+| | **Total** | **300** |
 
-K-levels: K1=~28%, K2=~58%, K3=~14%
+K-levels: K1=78 (26%), K2=180 (60%), K3=42 (14%)
+
+## Distribuição — outras certificações (`synapse-question-bank.json`)
+| Cert | Questões | Syllabus |
+|------|----------|----------|
+| CTFL-AT | 200 | Agile Tester Extension v2014 |
+| CTAL-TA | 200 | Advanced Level Test Analyst v4.0 |
+| CTAL-TM | 200 | Advanced Level Test Manager v3.0 |
+| CT-AI | 200 | Certified Tester AI Testing v2.0 |
 
 ## Scripts
-- `build_bank.py` — gera e valida o JSON PT-BR (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`)
-- `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente)
-- `check_alignment.py` — duas guardas de alinhamento PT/EN (rodadas no CI a cada push): (1) verifica se a opção correta tem maior similaridade à explicação EN do que as outras — guarda histórica com baseline em `check_alignment_baseline.json`; (2) verifica desalinhamento de **tema** comparando `pt.q` com `en.q` via z-score adaptativo (limiar = média − 1,5 × desvio da distribuição do banco) — baseline em `check_alignment_topic_baseline.json`. Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente.
+- `build_bank.py` — gera e valida **só o bloco legado CTFL/200** a partir de `add()` no próprio script (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`). **Não gera as 100 questões novas nem o multi-cert** — desde a Fase 4, `ctfl-questions-ptbr.json` (300) e `synapse-question-bank.json` (1100) são editados/gerados fora deste pipeline e versionados diretamente. Migração de `build_bank.py` para uma fonte única (YAML) que cubra os 1100 é item pendente, ainda não construído.
+- `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente); cobre só o bloco legado de 200, mesma limitação acima.
+- `check_alignment.py` — duas guardas de alinhamento PT/EN (rodadas no CI a cada push, sobre `ctfl-questions-ptbr.json`): (1) verifica se a opção correta tem maior similaridade à explicação EN do que as outras — guarda histórica com baseline em `check_alignment_baseline.json`; (2) verifica desalinhamento de **tema** comparando `pt.q` com `en.q` via z-score adaptativo (limiar = média − 1,5 × desvio da distribuição do banco) — baseline em `check_alignment_topic_baseline.json`. Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente. As 100 questões novas da Fase 4 ainda não têm baseline própria — rodar com `--update-baseline --update-topic-baseline` após revisão manual dos alertas é trabalho pendente.
 
 ## Como usar
 
@@ -74,6 +85,24 @@ merge do PR gerado. Requer o secret `CTFL_APP_SYNC_TOKEN` configurado neste repo
 ```
 
 ## Changelog
+### v4.0.0 / synapse v1.1.0 (Fase 4 — multi-certificação)
+- feat: expansão multi-certificação ISTQB. `synapse-question-bank.json` (novo
+  arquivo, 1100 questões): CTFL (300) + 4 certificações novas — CTFL-AT (200),
+  CTAL-TA (200), CTAL-TM (200), CT-AI (200).
+- feat: CTFL 200 → 300 questões (`ctfl-questions-ptbr.json`, capítulo 1
+  expandido); as 200 originais preservadas intactas (validado byte-a-byte
+  contra a v2.3.0).
+- fix: 113 correções aplicadas às 800 questões novas das 4 certificações após
+  auditoria cega (GLM 5.2, 5 bancos, 132 achados) + verificação cruzada manual
+  — detalhamento completo em `FASE4_FIX_LEDGER.md`.
+- fix: 9 questões com distratores EN conceitualmente divergentes do PT
+  corrigidas antes da expansão (ch3-16, ch4-22, ch5-03, ch5-13, ch5-22,
+  ch5-24, ch5-26, ch5-29, ch5-31).
+- débito conhecido: `build_bank.py`/`add_en.py` ainda só cobrem o bloco legado
+  de 200 questões CTFL — não geram as 100 novas nem o multi-cert (ver seção
+  Scripts). As 100 questões novas do CTFL ainda não têm baseline própria em
+  `check_alignment.py`.
+
 ### v2.3.0
 - fix: corrige 87 questões com índice de resposta EN incorreto (bug de
   ordenação anterior ao desalinhamento de tema da v2.2.0). Nestas, o
