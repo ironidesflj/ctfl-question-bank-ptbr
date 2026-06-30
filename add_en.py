@@ -143,9 +143,9 @@ EN = {
     "q": "The principle 'testing is context-dependent' means that:",
     "options": [
         "All software is tested the same way",
-        "The way of testing varies according to domain, risk, and context",
+        "Only critical systems need testing",
         "Context does not matter",
-        "Only critical systems need testing"
+        "The way of testing varies according to domain, risk, and context"
     ],
     "exp": "Different systems (e.g., e-commerce vs. medical software) require different approaches, techniques, and rigor."
 },
@@ -263,9 +263,9 @@ EN = {
     "q": "Regarding test independence, which statement is correct?",
     "options": [
         "Greater independence always finds more defects",
-        "Independence can reduce author bias, but extreme degrees have disadvantages such as less context knowledge",
+        "Independence does not influence testing",
         "The author is always the best tester of their own code",
-        "Independence does not influence testing"
+        "Independence can reduce author bias, but extreme degrees have disadvantages such as less context knowledge"
     ],
     "exp": "Some degree of independence reduces the author's cognitive bias, but full independence can distance the tester from context and communication."
 },
@@ -996,8 +996,8 @@ EN = {
 "ch4-06": {
     "q": "A field accepts ages from 18 to 65. Which values are tested using 2-value BVA?",
     "options": [
-        "18 and 65 only",
         "17, 18, 65, and 66",
+        "18 and 65 only",
         "17 and 66 only",
         "0, 18, 65, and 100"
     ],
@@ -1136,8 +1136,8 @@ EN = {
 "ch4-20": {
     "q": "A code segment has 10 executable statements; a test suite executed 7 of them. The statement coverage is:",
     "options": [
-        "100%",
         "70%",
+        "100%",
         "7%",
         "30%"
     ],
@@ -1176,8 +1176,8 @@ EN = {
 "ch4-24": {
     "q": "What is the value of white-box testing?",
     "options": [
-        "It completely replaces black-box testing by providing superior defect detection",
         "It reveals untested code segments and measures the thoroughness of the test suite",
+        "It completely replaces black-box testing by providing superior defect detection",
         "It eliminates the need for requirements-based testing by focusing on implementation",
         "It guarantees that all defects will be found once 100% statement coverage is achieved"
     ],
