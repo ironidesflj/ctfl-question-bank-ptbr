@@ -5,9 +5,9 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 - `synapse-question-bank.json` — todas as 5 certificações (1100 questões)
 
 ## Estado atual
-- 1100 questões bilíngues (`locales.pt` + `locales.en`) em 5 certificações ISTQB
-- CTFL v4.0: 300 questões (200 originais + 100 da expansão Fase 4)
-- 4 certificações novas: CTFL-AT, CTAL-TA, CTAL-TM, CT-AI (200 questões cada)
+- Total do projeto (5 certificações): 1.100 questões bilíngues (`locales.pt` + `locales.en`)
+- CTFL (300) e CTFL-AT (200) já publicadas = 500 questões publicadas
+- As outras três certificações (CTAL-TA, CTAL-TM, CT-AI) somam 600 questões (200 cada), geradas e no repositório, aguardando lançamento na Fase 5
 - Schema i18n-ready: `locales.pt` e `locales.en` em todas as questões
 
 ## Formato do exame (CTFL v4.0)
