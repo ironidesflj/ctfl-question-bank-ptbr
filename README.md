@@ -5,9 +5,19 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 - `synapse-question-bank.json` — todas as 5 certificações (1100 questões)
 
 ## Estado atual
-- Total do projeto (5 certificações): 1.100 questões bilíngues (`locales.pt` + `locales.en`)
-- CTFL (300) e CTFL-AT (200) já publicadas = 500 questões publicadas
-- As outras três certificações (CTAL-TA, CTAL-TM, CT-AI) somam 600 questões (200 cada), geradas e no repositório, aguardando lançamento na Fase 5
+O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (total de 1.100 questões).
+
+**Conteúdo no Ar (Lançado):**
+- **CTFL v4.0:** 300 questões
+- **CTAL-TA v4.0:** 200 itens
+
+**Roadmap de Lançamentos Futuros (Em Breve):**
+- **CTAL-TM v3.0:** 200 itens (em breve)
+- **CT-AI v2.0:** 200 itens (em breve)
+- **CTAL-AT v2.0:** 200 itens (em breve - syllabus totalmente novo, a ser gerado)
+
+**Conteúdo Legado:**
+- **CTFL-AT (Agile Tester v2014):** 200 itens (adormecido/sunset pela ISTQB, substituído pelo CTAL-AT v2.0. O conteúdo é mantido por razões de arquivo e não está listado nos próximos lançamentos da UI).
 - Schema i18n-ready: `locales.pt` e `locales.en` em todas as questões
 
 ## Formato do exame (CTFL v4.0)
@@ -31,16 +41,16 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 K-levels: K1=78 (26%), K2=180 (60%), K3=42 (14%)
 
 ## Distribuição — outras certificações (`synapse-question-bank.json`)
-| Cert | Questões | Syllabus |
-|------|----------|----------|
-| CTFL-AT | 200 | Agile Tester Extension v2014 |
-| CTAL-TA | 200 | Advanced Level Test Analyst v4.0 |
-| CTAL-TM | 200 | Advanced Level Test Manager v3.0 |
-| CT-AI | 200 | Certified Tester AI Testing v2.0 |
+| Cert | Questões | Syllabus | Status |
+|------|----------|----------|--------|
+| CTAL-TA | 200 | Advanced Level Test Analyst v4.0 | **No ar** |
+| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Em breve |
+| CT-AI | 200 | Certified Tester AI Testing v2.0 | Em breve |
+| CTFL-AT | 200 | Agile Tester Extension v2014 | Legado / Adormecido |
 
 ## Scripts
-- `build_bank.py` — gera e valida **só o bloco legado CTFL/200** a partir de `add()` no próprio script (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`). **Não gera as 100 questões novas nem o multi-cert** — desde a Fase 4, `ctfl-questions-ptbr.json` (300) e `synapse-question-bank.json` (1100) são editados/gerados fora deste pipeline e versionados diretamente. Migração de `build_bank.py` para uma fonte única (YAML) que cubra os 1100 é item pendente, ainda não construído.
-- `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente); cobre só o bloco legado de 200, mesma limitação acima.
+- `build_bank.py` — gera e valida **só o bloco legado CTFL/300** a partir de `add()` no próprio script (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`). **Não gera as questões novas do multi-cert** — desde a Fase 4, `ctfl-questions-ptbr.json` (300) e `synapse-question-bank.json` (1100) são editados/gerados fora deste pipeline e versionados diretamente. Migração de `build_bank.py` para uma fonte única (YAML) que cubra os 1100 é item pendente, ainda não construído.
+- `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente); cobre só o bloco legado de 300, mesma limitação acima.
 - `check_alignment.py` — duas guardas de alinhamento PT/EN (rodadas no CI a cada push, sobre `ctfl-questions-ptbr.json`): (1) verifica se a opção correta tem maior similaridade à explicação EN do que as outras — guarda histórica com baseline em `check_alignment_baseline.json`; (2) verifica desalinhamento de **tema** comparando `pt.q` com `en.q` via z-score adaptativo (limiar = média − 1,5 × desvio da distribuição do banco) — baseline em `check_alignment_topic_baseline.json`. Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente. As 100 questões novas da Fase 4 ainda não têm baseline própria — rodar com `--update-baseline --update-topic-baseline` após revisão manual dos alertas é trabalho pendente.
 
 ## Como usar
