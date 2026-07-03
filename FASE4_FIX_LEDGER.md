@@ -57,3 +57,15 @@ todas as 4 opções em detalhe; verificado manualmente, gabarito já correto.
 Fonte: verificação cruzada em sessão de handoff (a explicação contradizia o
 gabarito nas duas). Não apareciam na auditoria cega dos 132 achados.
 CT-AI (2): aitest-13→2, aitest-22→1
+
+## Auditoria P2.1 (418 suspeitas do banco multi-cert, pós-P2)
+Metodologia: heurística (check_alignment.py, 2 guardas) → auditoria às cegas
+por guarda (GLM em guarda_tema, Claude Code em guarda_opcao_exp — votação por
+5 papéis) → verificação cruzada manual contra o dado bruto.
+418 suspeitas processadas: 415 falso-positivo, 2 inconclusivo (não corrigidos,
+ficam visíveis para revisão futura), 1 bug real.
+CTAL-TM (1): ctaltm-136→0 (contradição direta com a explicação, SMART Time-bound;
+confirmado FALSO_POSITIVO na guarda de tema — tradução correta, só o índice errado)
+Inconclusivos não corrigidos, excluídos da baseline de propósito:
+ctalta-106 (guarda_opcao_exp — falha de redação no enunciado, sem alternativa
+defensável); ctalta-120 (guarda_tema — ambiguidade de matriz de risco)
