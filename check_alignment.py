@@ -42,17 +42,11 @@ import argparse
 from difflib import SequenceMatcher
 from pathlib import Path
 
-BANK_FILE = Path(__file__).parent / "ctfl-questions-ptbr.json"
-BASELINE_FILE = Path(__file__).parent / "check_alignment_baseline.json"
-TOPIC_BASELINE_FILE = Path(__file__).parent / "check_alignment_topic_baseline.json"
-DEFAULT_THRESHOLD = 0  # qualquer suspeita NOVA (fora da baseline) já merece revisão
-
-
 def similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
 
-def check(bank_path: Path = BANK_FILE):
+def check(bank_path: Path):
     with open(bank_path, encoding="utf-8") as f:
         bank = json.load(f)
 
@@ -76,7 +70,7 @@ def check(bank_path: Path = BANK_FILE):
     return suspects
 
 
-def check_topic(bank_path: Path = BANK_FILE):
+def check_topic(bank_path: Path):
     """Detecta desalinhamento de TEMA entre pt.q e en.q usando z-score da similaridade.
 
     Marca como suspeita qualquer questão com similaridade(pt.q, en.q) abaixo de
@@ -112,98 +106,133 @@ def check_topic(bank_path: Path = BANK_FILE):
     return suspects, round(mean, 4), round(std, 4), round(threshold, 4), len(pairs)
 
 
-def load_baseline():
-    if not BASELINE_FILE.exists():
+def check_duplicate_ids(bank_path: Path) -> list[str]:
+    with open(bank_path, encoding="utf-8") as f:
+        bank = json.load(f)
+    from collections import Counter
+    ids = [q.get("id") for q in bank["questions"]]
+    counts = Counter(ids)
+    return sorted(str(k) for k, v in counts.items() if v > 1)
+
+
+def check_invalid_answers(bank_path: Path) -> list[dict]:
+    with open(bank_path, encoding="utf-8") as f:
+        bank = json.load(f)
+    bad = []
+    for q in bank["questions"]:
+        qid = q.get("id", "<sem id>")
+        ans = q.get("answer")
+        opts = q.get("locales", {}).get("pt", {}).get("options")
+        if not isinstance(opts, list):
+            bad.append({"id": qid, "problema": "locales.pt.options ausente ou não é lista"})
+            continue
+        if not isinstance(ans, int) or not (0 <= ans < len(opts)):
+            bad.append({"id": qid, "answer": ans, "n_options": len(opts)})
+    return bad
+
+
+def load_baseline(baseline_file: Path):
+    if not baseline_file.exists():
         return set()
-    with open(BASELINE_FILE, encoding="utf-8") as f:
+    with open(baseline_file, encoding="utf-8") as f:
         data = json.load(f)
     return set(data.get("ids", []))
 
 
-def save_baseline(suspects):
+def save_baseline(suspects, baseline_file: Path):
     data = {
         "_comentario": "Falsos positivos conhecidos da heuristica de similaridade, confirmados manualmente como CORRETOS (PT/EN alinhados). Gerado por check_alignment.py --update-baseline.",
         "ids": sorted(s["id"] for s in suspects),
     }
-    with open(BASELINE_FILE, "w", encoding="utf-8") as f:
+    with open(baseline_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def load_topic_baseline():
-    if not TOPIC_BASELINE_FILE.exists():
+def load_topic_baseline(topic_baseline_file: Path):
+    if not topic_baseline_file.exists():
         return set()
-    with open(TOPIC_BASELINE_FILE, encoding="utf-8") as f:
+    with open(topic_baseline_file, encoding="utf-8") as f:
         data = json.load(f)
     return set(data.get("ids", []))
 
 
-def save_topic_baseline(suspects):
+def save_topic_baseline(suspects, topic_baseline_file: Path):
     data = {
         "_comentario": "Falsos positivos conhecidos da heuristica de desalinhamento de TEMA PT/EN, confirmados manualmente. Gerado por check_alignment.py --update-topic-baseline.",
         "ids": sorted(s["id"] for s in suspects),
     }
-    with open(TOPIC_BASELINE_FILE, "w", encoding="utf-8") as f:
+    with open(topic_baseline_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--threshold", type=int, default=DEFAULT_THRESHOLD,
-                         help=f"número de suspeitas NOVAS (fora da baseline) tolerado sem falhar (default: {DEFAULT_THRESHOLD})")
-    parser.add_argument("--update-baseline", action="store_true",
-                         help="aceita o estado atual como nova baseline para a guarda opção/explicação (use só após revisão manual)")
-    parser.add_argument("--update-topic-baseline", action="store_true",
-                         help="aceita o estado atual como nova baseline para a guarda de TEMA PT/EN (use só após revisão manual)")
+    parser.add_argument("--bank-file", type=str, default="ctfl-questions-ptbr.json",
+                         help="arquivo de banco a analisar")
+    parser.add_argument("--threshold", type=int, default=0,
+                         help="número de suspeitas NOVAS toleradas (default: 0)")
+    parser.add_argument("--update-baseline", action="store_true")
+    parser.add_argument("--update-topic-baseline", action="store_true")
     args = parser.parse_args()
 
-    # --- Guarda 1: opção vs. explicação (check original) ---
-    suspects = check()
-    baseline_ids = load_baseline()
+    bank_path = Path(__file__).parent / args.bank_file
+    bank_stem = args.bank_file.replace(".json", "")
+    baseline_file = Path(__file__).parent / f"check_alignment_baseline.{bank_stem}.json"
+    topic_baseline_file = Path(__file__).parent / f"check_alignment_topic_baseline.{bank_stem}.json"
+
+    # --- Guarda 0: estrutural, determinística, ZERO tolerância, roda antes de tudo ---
+    dup_ids = check_duplicate_ids(bank_path)
+    if dup_ids:
+        print(f"FALHA: {len(dup_ids)} ID(s) duplicado(s): {dup_ids}")
+        sys.exit(1)
+
+    bad_answers = check_invalid_answers(bank_path)
+    if bad_answers:
+        print(f"FALHA: {len(bad_answers)} questão(ões) com answer/schema inválido: {bad_answers}")
+        sys.exit(1)
+
+    # --- Guarda 1: opção vs. explicação (heurística, com baseline) ---
+    suspects = check(bank_path)
+    baseline_ids = load_baseline(baseline_file)
     new_suspects = [s for s in suspects if s["id"] not in baseline_ids]
 
     if args.update_baseline:
-        save_baseline(suspects)
-        print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {BASELINE_FILE}")
+        save_baseline(suspects, baseline_file)
+        print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {baseline_file}")
         if not args.update_topic_baseline:
             sys.exit(0)
 
-    print(f"[Guarda opção/exp] {len(suspects)} suspeita(s) no total | {len(baseline_ids)} na baseline | "
-          f"{len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
-
+    print(f"[Guarda opção/exp | {args.bank_file}] {len(suspects)} suspeita(s) total | "
+          f"{len(baseline_ids)} na baseline | {len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
     if new_suspects:
         print("ATENÇÃO: heurística de alerta, NÃO prova de bug. Leia PT/EN par a par antes de corrigir.\n")
         for s in new_suspects:
             print(f"  {s['id']}: answer={s['answer']} -> {s['opcao_atual_en']!r}")
             print(f"    sugestão (não confirmada): índice {s['indice_sugerido']} -> {s['opcao_sugerida_en']!r}")
 
-    # --- Guarda 2: desalinhamento de TEMA (pt.q vs en.q) ---
-    topic_result = check_topic()
-    topic_suspects, mean, std, threshold_val, total = topic_result
-    topic_baseline_ids = load_topic_baseline()
+    # --- Guarda 2: tema PT/EN (heurística, com baseline) ---
+    topic_suspects, mean, std, threshold_val, total = check_topic(bank_path)
+    topic_baseline_ids = load_topic_baseline(topic_baseline_file)
     new_topic_suspects = [s for s in topic_suspects if s["id"] not in topic_baseline_ids]
 
     if args.update_topic_baseline:
-        save_topic_baseline(topic_suspects)
-        print(f"Baseline (tema) atualizada com {len(topic_suspects)} id(s) em {TOPIC_BASELINE_FILE}")
+        save_topic_baseline(topic_suspects, topic_baseline_file)
+        print(f"Baseline (tema) atualizada com {len(topic_suspects)} id(s) em {topic_baseline_file}")
         sys.exit(0)
 
-    print(f"\n[Guarda tema] {total} questões bilíngues | média={mean} desvio={std} limiar={threshold_val}")
-    print(f"  {len(topic_suspects)} suspeita(s) no total | {len(topic_baseline_ids)} na baseline | "
+    print(f"\n[Guarda tema | {args.bank_file}] {total} questões bilíngues | média={mean} desvio={std} limiar={threshold_val}")
+    print(f"  {len(topic_suspects)} suspeita(s) total | {len(topic_baseline_ids)} na baseline | "
           f"{len(new_topic_suspects)} NOVA(S)\n")
-
     if new_topic_suspects:
         print("Suspeitas de desalinhamento de TEMA:\n")
         for s in new_topic_suspects:
             print(f"  {s['id']}: similaridade={s['score']} (média banco={s['media_banco']})")
 
-    # --- Resultado final ---
     total_new = len(new_suspects) + len(new_topic_suspects)
     if total_new > args.threshold:
-        print(f"\nFALHA: {total_new} suspeita(s) NOVA(S) no total excedem o threshold de {args.threshold}.")
-        print("Revise manualmente. Se forem falsos positivos confirmados, rode --update-baseline e/ou --update-topic-baseline.")
+        print(f"\nFALHA: {total_new} suspeita(s) NOVA(S) excedem o threshold de {args.threshold}.")
         sys.exit(1)
-
-    print(f"\nOK: {total_new} suspeita(s) nova(s) no total, dentro do threshold de {args.threshold}.")
+    print(f"\nOK: {total_new} suspeita(s) nova(s), dentro do threshold de {args.threshold}.")
     sys.exit(0)
 
 

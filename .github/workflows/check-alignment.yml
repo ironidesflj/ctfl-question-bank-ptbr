@@ -4,17 +4,19 @@ on:
   push:
     paths:
       - "ctfl-questions-ptbr.json"
+      - "synapse-question-bank.json"
       - "build_bank.py"
       - "add_en.py"
       - "check_alignment.py"
-      - "check_alignment_baseline.json"
+      - "check_alignment_baseline.*.json"
   pull_request:
     paths:
       - "ctfl-questions-ptbr.json"
+      - "synapse-question-bank.json"
       - "build_bank.py"
       - "add_en.py"
       - "check_alignment.py"
-      - "check_alignment_baseline.json"
+      - "check_alignment_baseline.*.json"
 
 jobs:
   check-alignment:
@@ -24,5 +26,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run PT/EN alignment heuristic
-        run: python3 check_alignment.py
+      - name: Check ctfl-questions-ptbr.json (threshold 0, baseline madura)
+        run: python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
+      - name: Check synapse-question-bank.json (threshold alto — TEMPORÁRIO, ver P2.1)
+        run: python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 999
