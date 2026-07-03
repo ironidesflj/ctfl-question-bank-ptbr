@@ -52,3 +52,8 @@ todas as 4 opções em detalhe; verificado manualmente, gabarito já correto.
   (nenhum problema encontrado nelas em amostragem nem na auditoria cega).
 - Blocos CTFL-AT / CTAL-TA / CTAL-TM / CT-AI (800): conteúdo original do zip
   com os 113 fixes acima aplicados.
+
+## Passada de verificação pós-Fase-4 (achados novos, fora dos 113)
+Fonte: verificação cruzada em sessão de handoff (a explicação contradizia o
+gabarito nas duas). Não apareciam na auditoria cega dos 132 achados.
+CT-AI (2): aitest-13→2, aitest-22→1

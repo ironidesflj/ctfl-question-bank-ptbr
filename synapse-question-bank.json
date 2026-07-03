@@ -28281,7 +28281,7 @@
       "chapter": 1,
       "domain": "ai",
       "kLevel": 2,
-      "answer": 0,
+      "answer": 2,
       "lo": "AI-1.1.3",
       "locales": {
         "en": {
@@ -28560,7 +28560,7 @@
       "chapter": 3,
       "domain": "ai",
       "kLevel": 2,
-      "answer": 0,
+      "answer": 1,
       "lo": "AI-3.1.1",
       "locales": {
         "en": {
