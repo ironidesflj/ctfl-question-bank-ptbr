@@ -40,6 +40,22 @@ O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (tot
 
 K-levels: K1=78 (26%), K2=180 (60%), K3=42 (14%)
 
+## Formato do exame (CTAL-TA v4.0)
+| Item | Valor |
+|------|-------|
+| Questões | 45 |
+| Nota de corte | 29/45 (65%, 1 questão = 1 ponto) |
+| Tempo | 120 min (150 min não-nativos) |
+
+Nota: o exame oficial ISTQB pondera pontos por K-level (78 pontos, corte
+51/78). O app pontua 1 questão = 1 ponto, sem peso por K-level — `passMark`
+aqui reflete o modelo do app (`round(0.65*45)`), não o blueprint oficial de
+pontos. Distribuição por capítulo segue a contagem oficial de questões
+(Exam Structure Tables v1.18): cap.1=8, cap.2=3, cap.3=22, cap.4=4, cap.5=8.
+
+`meta.chapterWeights`/`meta.examFormat` (v1.2.0) trazem esses números
+prontos pro app, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
+
 ## Distribuição — outras certificações (`synapse-question-bank.json`)
 | Cert | Questões | Syllabus | Status |
 |------|----------|----------|--------|
@@ -95,6 +111,19 @@ merge do PR gerado. Requer o secret `CTFL_APP_SYNC_TOKEN` configurado neste repo
 ```
 
 ## Changelog
+### synapse v1.2.0 (P3 — multi-cert de verdade no app)
+- feat: `meta.chapterWeights`/`meta.examFormat` adicionados ao
+  `synapse-question-bank.json`, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
+  Sem isso o app quebrava (`TypeError`) ao montar o simulado multi-cert —
+  o refactor `getBank()` do app já lia esse formato, só faltava o dado.
+- fix: `passMark` do CTAL-TA calculado como `round(0.65*questions)` (29),
+  não o 51/78 pontos ponderados do blueprint oficial ISTQB — o app pontua
+  1 questão = 1 ponto, sem peso por K-level.
+- nota: `synapse-question-bank.json` não tem sync automático pro `ctfl-app`
+  (só `ctfl-questions-ptbr.json` tem, via `sync-app.yml`) — cópia manual
+  necessária a cada mudança até virar padrão repetido o bastante pra
+  automatizar.
+
 ### v4.0.0 / synapse v1.1.0 (Fase 4 — multi-certificação)
 - feat: expansão multi-certificação ISTQB. `synapse-question-bank.json` (novo
   arquivo, 1100 questões): CTFL (300) + 4 certificações novas — CTFL-AT (200),
