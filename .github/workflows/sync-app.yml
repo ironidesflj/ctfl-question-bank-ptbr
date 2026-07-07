@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "ctfl-questions-ptbr.json"
+      - "synapse-question-bank.json"
 
 jobs:
   sync:
@@ -22,10 +23,42 @@ jobs:
           token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
           path: app
 
-      - name: Copy updated bank JSON into ctfl-app
+      - name: Detect which bank files changed
+        id: changed
+        run: |
+          cd bank
+          # Diff the pushed commit against its parent to see which bank files changed
+          CHANGED_LEGACY=""
+          CHANGED_SYNAPSE=""
+          if git diff --name-only HEAD^ HEAD -- ctfl-questions-ptbr.json | grep -q .; then
+            CHANGED_LEGACY="1"
+          fi
+          if git diff --name-only HEAD^ HEAD -- synapse-question-bank.json | grep -q .; then
+            CHANGED_SYNAPSE="1"
+          fi
+          echo "legacy_changed=$CHANGED_LEGACY" >> $GITHUB_OUTPUT
+          echo "synapse_changed=$CHANGED_SYNAPSE" >> $GITHUB_OUTPUT
+          echo "Legacy file changed: ${CHANGED_LEGACY:-no}"
+          echo "Synapse file changed: ${CHANGED_SYNAPSE:-no}"
+
+      - name: Copy legacy bank JSON (if changed)
+        if: steps.changed.outputs.legacy_changed == '1'
         run: cp bank/ctfl-questions-ptbr.json app/src/data/ctfl-questions-ptbr.json
 
+      - name: Copy synapse multi-cert bank JSON (if changed)
+        if: steps.changed.outputs.synapse_changed == '1'
+        run: cp bank/synapse-question-bank.json app/src/data/synapse-question-bank.json
+
+      - name: Verify checksums match source-of-truth
+        if: steps.changed.outputs.legacy_changed == '1' || steps.changed.outputs.synapse_changed == '1'
+        run: |
+          echo "=== Source (bank repo) checksums ==="
+          sha256sum bank/ctfl-questions-ptbr.json bank/synapse-question-bank.json 2>/dev/null || true
+          echo "=== Destination (app repo) checksums ==="
+          sha256sum app/src/data/ctfl-questions-ptbr.json app/src/data/synapse-question-bank.json 2>/dev/null || true
+
       - name: Open PR in ctfl-app
+        if: steps.changed.outputs.legacy_changed == '1' || steps.changed.outputs.synapse_changed == '1'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
@@ -33,8 +66,21 @@ jobs:
           branch: sync/bank-update-${{ github.sha }}
           title: "sync: atualiza banco de questões (origem: ctfl-question-bank-ptbr@${{ github.sha }})"
           body: |
-            PR automático gerado por push em `ctfl-questions-ptbr.json` no repo do banco.
+            PR automático gerado por push no repo do banco.
+
+            **Arquivos atualizados:**
+            - `ctfl-questions-ptbr.json`: ${{ steps.changed.outputs.legacy_changed == '1' && '✅ alterado' || '— sem mudança' }}
+            - `synapse-question-bank.json`: ${{ steps.changed.outputs.synapse_changed == '1' && '✅ alterado' || '— sem mudança' }}
+
             Commit de origem: ${{ github.event.head_commit.message }}
 
-            Revisar e mergear manualmente — não há auto-merge configurado.
-          commit-message: "sync: atualiza ctfl-questions-ptbr.json a partir do banco"
+            **Checklist de revisão:**
+            - [ ] Verificar que `bun run test` passa no app repo
+            - [ ] Verificar que `python check_alignment.py` passa no bank repo (incluindo os novos guards de viés)
+            - [ ] Confirmar que o pick-longest exploit caiu para ≤ 35% em CTFL e CTAL-TA
+            - [ ] Mergear manualmente — não há auto-merge configurado
+          commit-message: "sync: atualiza banco de questões a partir do banco (legacy + synapse)"
+
+      - name: No changes detected
+        if: steps.changed.outputs.legacy_changed != '1' && steps.changed.outputs.synapse_changed != '1'
+        run: echo "Nenhum arquivo de banco alterado neste push — nada a sincronizar."
