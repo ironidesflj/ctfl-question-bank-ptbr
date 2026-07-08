@@ -16,11 +16,25 @@
     },
     "chapterWeights": {
       "1": 40,
-      "2": 25,
-      "3": 25,
+      "2": 30,
+      "3": 20,
       "4": 55,
       "5": 45,
       "6": 10
+    },
+    "examBlueprint": {
+      "source": "ISTQB Exam Structures & Rules tables",
+      "sourceVersion": "v1.18, 2026-05-27",
+      "totalQuestions": 40,
+      "passMarkPct": 65,
+      "chapters": {
+        "1": { "questions": 8,  "kLevels": { "K1": 2, "K2": 6, "K3": 0, "K4": 0 } },
+        "2": { "questions": 6,  "kLevels": { "K1": 2, "K2": 4, "K3": 0, "K4": 0 } },
+        "3": { "questions": 4,  "kLevels": { "K1": 2, "K2": 2, "K3": 0, "K4": 0 } },
+        "4": { "questions": 11, "kLevels": { "K1": 0, "K2": 6, "K3": 5, "K4": 0 } },
+        "5": { "questions": 9,  "kLevels": { "K1": 1, "K2": 5, "K3": 3, "K4": 0 } },
+        "6": { "questions": 2,  "kLevels": { "K1": 1, "K2": 1, "K3": 0, "K4": 0 } }
+      }
     },
     "domainNames": {
       "fund": "Fundamentos do Teste",
