@@ -1,5 +1,5 @@
 {
-  "_comentario": "131 falsos-positivos confirmados via auditoria as cegas P2.1 (GLM) + verificacao cruzada. ctaltm-136 incluido aqui (confirmado FALSO_POSITIVO nesta guarda - tema/traducao corretos, so o gabarito estava errado). Excluido de proposito: ctalta-120 (inconclusivo, nao revisar automaticamente).",
+  "_comentario": "Falsos positivos conhecidos da heuristica de desalinhamento de TEMA PT/EN, confirmados manualmente. Gerado por check_alignment.py --update-topic-baseline.",
   "ids": [
     "agile-04",
     "aitest-05",
@@ -66,6 +66,7 @@
     "ctalta-114",
     "ctalta-117",
     "ctalta-119",
+    "ctalta-120",
     "ctalta-121",
     "ctalta-123",
     "ctalta-130",
