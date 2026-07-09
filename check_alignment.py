@@ -98,6 +98,7 @@ NEW_GUARD_REGISTRY = [
     ("answer_index_chi2",   "ANSWER_INDEX_CHI2",   13),
     ("runs_test",           "RUNS_TEST",           14),
     ("blueprint_match",     "BLUEPRINT_MATCH",     15),
+    ("letter_pattern",      "LETTER_PATTERN",      16),
 ]
 
 
@@ -752,6 +753,41 @@ def guard_blueprint_match(bank_path: Path) -> tuple:
     return (True, lines)
 
 
+_LETTER_PATTERN_RE = re.compile(r'(op[cç][aã]o|alternativa)s?\s+[A-D]\b', re.IGNORECASE)
+
+
+def guard_letter_pattern(bank_path: Path) -> tuple:
+    """Guard 16 — exp cita letra fixa (opção/alternativa A-D).
+    Options embaralham por render (shuffleOptions, sem seed, bank.js).
+    Baseline-based, igual à Guarda 1: só suspeita NOVA bloqueia.
+    """
+    with open(bank_path, encoding="utf-8") as f:
+        bank = json.load(f)
+    suspects = []
+    for q in bank["questions"]:
+        pt_exp = q.get("locales", {}).get("pt", {}).get("exp", "")
+        en_exp = q.get("locales", {}).get("en", {}).get("exp", "")
+        if _LETTER_PATTERN_RE.search(pt_exp) or _LETTER_PATTERN_RE.search(en_exp):
+            suspects.append(q["id"])
+    baseline_file = bank_path.parent / ("check_alignment_letter_baseline." + bank_path.name)
+    baseline_ids = set()
+    if baseline_file.exists():
+        with open(baseline_file, encoding="utf-8") as f:
+            baseline_ids = set(json.load(f).get("ids", []))
+    new_suspects = sorted(set(suspects) - baseline_ids)
+    lines = ["[Guarda 16] LETTER_PATTERN — exp cita letra A-D fixa (shuffle não-seedado em bank.js)"]
+    lines.append("  %d suspeita(s) total | %d na baseline | %d NOVA(S)" % (
+        len(suspects), len(baseline_ids), len(new_suspects)))
+    if new_suspects:
+        lines.append("  NOVOS candidatos (fora da baseline), revisar antes de aceitar:")
+        for sid in new_suspects:
+            lines.append("      " + sid)
+        lines.append("  → [FAIL] %d suspeita(s) NOVA(S) fora da baseline." % len(new_suspects))
+        return (False, lines)
+    lines.append("  → [PASS] nenhuma suspeita nova fora da baseline.")
+    return (True, lines)
+
+
 # Registry mapping CLI name → (guard function, display name)
 _GUARD_FUNCS = {
     "length_bias": guard_length_bias,
@@ -760,6 +796,7 @@ _GUARD_FUNCS = {
     "answer_index_chi2": guard_answer_index_chi2,
     "runs_test": guard_runs_test,
     "blueprint_match": guard_blueprint_match,
+    "letter_pattern": guard_letter_pattern,
 }
 
 

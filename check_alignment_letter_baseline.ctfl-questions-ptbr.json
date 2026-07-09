@@ -1,0 +1,26 @@
+{
+  "_comentario": "Falsos positivos autocorretivos da Guarda 16 (letter_pattern), confirmados na auditoria cega adaptada da Spec 3 (menção de letra acompanhada do tema, suficiente pra não confundir mesmo com shuffle). Gerado manualmente a partir de letter-misalignment-audit-v2.json.",
+  "ids": [
+    "ch1-57",
+    "ch3-32",
+    "ch3-33",
+    "ch3-36",
+    "ch3-37",
+    "ch3-38",
+    "ch4-66",
+    "ch4-68",
+    "ch4-71",
+    "ch4-72",
+    "ch4-73",
+    "ch4-76",
+    "ch4-77",
+    "ch4-79",
+    "ch4-80",
+    "ch5-46",
+    "ch5-52",
+    "ch5-66",
+    "ch6-12",
+    "ch6-13",
+    "ch6-14"
+  ]
+}

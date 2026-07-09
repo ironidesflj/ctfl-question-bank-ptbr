@@ -1,0 +1,898 @@
+[
+  {
+    "id": "ch1-48",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, C e D são citadas sem nomear o tema ao lado; leitor que rastreia só a letra é levado a erro ao item errado. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O teste e o debugging são atividades complementares mas distintas. O teste visa identificar falhas (desvios observáveis do comportamento esperado) causadas por defeitos. O debugging é a atividade do desenvolvedor que localiza a causa raiz daquelas falhas (os defeitos) e os corrige. A opção sobre testadores independentes em fases tardias está incorreta porque o teste pode ser realizado por diversas pessoas (incluindo desenvolvedores), não se restringindo a testadores independentes. A opção sobre teste e debugging como mesma atividade em estágios diferentes está incorreta porque as duas são atividades diferentes, não a mesma atividade em estágios diferentes. A opção sobre teste prevenindo a introdução de defeitos está incorreta porque o teste não previne defeitos diretamente — esse é o papel das revisões, padrões de codificação e outras práticas de qualidade.",
+    "exp_en_novo": "Testing and debugging are complementary but distinct activities. Testing aims to identify failures (observable deviations from expected behavior) caused by defects. Debugging is the developer activity that locates the root cause of those failures (the defects) and fixes them. The option about independent testers in late phases is incorrect because testing can be performed by various people (including developers), not solely by independent testers. The option about testing and debugging as the same activity at different stages is incorrect because the two are different activities, not the same activity at different stages. The option about testing preventing defect introduction is incorrect because testing does not directly prevent defects — that is the role of reviews, coding standards, and other quality practices."
+  },
+  {
+    "id": "ch1-49",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C, D citadas sem nomear o conteúdo ao lado; leitor que rastreia só a letra é levado a erro. Reescrita por tema preserva as etiquetas (a)/(b)/(c)/(d) internas e a cadeia de eliminação.",
+    "exp_pt_novo": "As atividades de teste incluem executar testes e escrever casos de teste (atividades (a) e (d)). As atividades de debugging incluem reproduzir o problema com um depurador (b) e modificar o código-fonte para corrigir defeitos (c). A opção que agrupa (a) e (d) agrupa corretamente as duas atividades de teste. A opção que agrupa (b) e (c) agrupa duas atividades de debugging. A opção que agrupa (a) e (c) mistura uma atividade de teste com uma de debugging. A opção que agrupa (b) e (d) mistura uma atividade de debugging com uma de teste.",
+    "exp_en_novo": "Testing activities include running tests and writing test cases (activities (a) and (d)). Debugging activities include reproducing the issue with a debugger (b) and modifying source code to correct defects (c). The option grouping (a) and (d) correctly groups the two testing activities. The option grouping (b) and (c) groups two debugging activities. The option grouping (a) and (c) mixes one testing and one debugging activity. The option grouping (b) and (d) mixes one debugging and one testing activity."
+  },
+  {
+    "id": "ch1-50",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A frase 'As três primeiras opções' depende da ordem de exibição e 'A opção D' não nomeia o tema ao lado da letra; leitor que rastreia só a letra é levado a erro. Reescrita por tema remove a dependência de ordem.",
+    "exp_pt_novo": "As três opções sobre avaliar produtos de trabalho, causar falhas e encontrar defeitos, e verificar a implementação de requisitos são objetivos reconhecidos do teste no syllabus do ISTQB. A opção sobre garantir software livre de todos os defeitos antes do release NÃO é um objetivo de teste porque é impossível de alcançar — o teste pode mostrar a presença de defeitos mas não pode provar a sua ausência (Princípio #1). Nenhuma quantidade de teste pode garantir que um sistema está livre de todos os defeitos, então isso não pode ser um objetivo típico do teste.",
+    "exp_en_novo": "The three options about evaluating work products, causing failures and finding defects, and verifying requirements implementation are all recognized testing objectives in the ISTQB syllabus. The option about guaranteeing the software is free of all defects before release is NOT a testing objective because it is impossible to achieve — testing can show the presence of defects but cannot prove their absence (Principle #1). No amount of testing can guarantee that a system is free of all defects, so this cannot be a typical objective of testing."
+  },
+  {
+    "id": "ch1-56",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, C, D citadas sem nomear o tema ao lado da letra; leitor que rastreia só a letra é levado a erro. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O processo de teste deve se adaptar ao contexto do projeto, incluindo risco, criticidade, complexidade e restrições. O Projeto A (suporte de vida) requer teste mais rigoroso, técnicas formais, maior independência de teste e documentação mais abrangente devido ao potencial de dano ao paciente. O Projeto B (ferramenta interna de baixo impacto) pode usar um processo de teste mais leve porque defeitos têm consequências menores. A opção sobre uniformidade obrigatória do processo de teste impõe uniformidade erroneamente; a opção sobre priorizar o Projeto B pelo número de usuários internos prioriza erroneamente o número de usuários sobre a criticidade; a opção sobre o processo depender principalmente da metodologia de desenvolvimento (Agile vs Waterfall) reduz erroneamente o contexto principalmente à metodologia.",
+    "exp_en_novo": "The test process should adapt to the project context, including risk, criticality, complexity, and constraints. Project A (life-critical) requires more rigorous testing, formal techniques, greater test independence, and more comprehensive documentation due to the potential for patient harm. Project B (low-impact internal tool) can use a lighter test process because defects have minor consequences. The option about mandatorily uniform test process wrongly enforces uniformity; the option about prioritizing Project B based on internal user count wrongly prioritizes user count over criticality; the option about the test process depending primarily on development methodology (Agile vs Waterfall) wrongly reduces context primarily to methodology."
+  },
+  {
+    "id": "ch1-57",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência de opção (A, B, D) tem o tema entre parêntesis imediatamente após a letra (e.g., 'opção A (especificação de design de teste)'). Mesmo com ordem embaralhada, o leitor consegue autocorrigir pelo tema nomeado.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch1-58",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C citadas sem nomear o tema ao lado; a referência cruzada ch2-27 deve ser preservada. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Atividades de manutenção influenciam o processo de teste ao disparar análise de impacto para determinar quais partes do sistema podem ser afetadas pela mudança. A equipe de teste deve então realizar teste de regressão direcionado àquelas áreas afetadas, mais teste de confirmação na correção específica. A opção sobre re-executar toda a suíte original de teste de sistema está incorreta porque regressão completa nem sempre é necessária — a análise de impacto determina o escopo. A opção sobre testar apenas o patch do banco de dados está incorreta porque testar o patch em si perde funcionalidade dependente que pode ter sido quebrada pela mudança. A opção sobre pular o teste de regressão está incorreta porque pular a regressão ignora o risco de efeitos colaterais não intencionais. Esta questão endereça a resposta do PROCESSO (análise de impacto + regressão direcionada + confirmação), distinta da questão de qual TIPO de teste se aplica (teste de manutenção, coberto em ch2-27).",
+    "exp_en_novo": "Maintenance activities influence the test process by triggering impact analysis to determine which parts of the system may be affected by the change. The test team should then perform targeted regression testing on those affected areas, plus confirmation testing on the specific fix. The option about re-executing the entire original system test suite is incorrect because full regression is not always required — impact analysis determines scope. The option about testing only the database patch itself is incorrect because testing the patch itself misses dependent functionality that may have been broken by the change. The option about simply skipping regression testing is incorrect because skipping regression ignores the risk of unintended side effects. This question addresses the PROCESS response (impact analysis + targeted regression + confirmation), distinct from the question of which TYPE of testing applies (maintenance testing, covered in ch2-27)."
+  },
+  {
+    "id": "ch1-59",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras B, C, D citadas com categorias julgadoras (escolha técnica/ferramenta, métrica quantitativa, característica técnica) e não com o tema específico; leitor que rastreia só a letra é levado a erro. Reescrita por tema nomeia o conteúdo específico de cada opção.",
+    "exp_pt_novo": "A qualidade da comunicação e o nível de confiança entre testadores e desenvolvedores é um fator psicológico reconhecido que influencia o sucesso do teste. O syllabus do ISTQB (§1.5) identifica explicitamente comunicação, a relação testador-desenvolvedor e confiança como fatores psicológicos que afetam como resultados de teste e relatórios de defeito são recebidos e tratados. As outras opções não são fatores psicológicos: a opção sobre ferramenta de gerenciamento de teste é uma escolha técnica/ferramenta, a opção sobre número de casos de teste na suíte de regressão é uma métrica quantitativa, e a opção sobre linguagem de programação usada pela equipe é uma característica técnica da implementação.",
+    "exp_en_novo": "The quality of communication and the level of trust between testers and developers is a recognized psychological factor that influences testing success. The ISTQB syllabus (§1.5) explicitly identifies communication, the tester-developer relationship, and trust as psychological factors that affect how test results and defect reports are received and acted upon. The other options are not psychological factors: the option about test management tool is a tool/technical choice, the option about number of test cases in the regression suite is a quantitative metric, and the option about programming language used by the development team is a technical characteristic of the implementation."
+  },
+  {
+    "id": "ch1-60",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, C, D citadas sem nomear o tema ao lado; leitor que rastreia só a letra é levado a erro. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O syllabus do ISTQB (§1.5) explica que o mindset usado enquanto testa e revisa é diferente do mindset usado enquanto analisa e desenvolve. O mindset construtivo do desenvolvedor, focado em construir o código para funcionar como pretendido, torna mais difícil desafiar criticamente o código e encontrar onde ele pode falhar. Este é o principal desafio de mindset. A opção sobre falta de habilidades técnicas do desenvolvedor está incorreta porque desenvolvedores têm as habilidades técnicas; a questão é mindset, não habilidade. A opção sobre o ISTQB proibir auto-teste está incorreta porque o ISTQB não proíbe auto-teste; ele nota o desafio. A opção sobre mindsets idênticos entre desenvolvedor e testador está incorreta porque os mindsets diferem, exigindo um ajuste ativo.",
+    "exp_en_novo": "The ISTQB syllabus (§1.5) explains that the mindset used while testing and reviewing is different from the mindset used while analyzing and developing. A developer's constructive mindset, focused on building the code to work as intended, makes it harder to critically challenge the code and find where it might fail. This is the main mindset challenge. The option about the developer lacking technical skills is incorrect because developers have the technical skills; the issue is mindset, not skill. The option about ISTQB prohibiting self-testing is incorrect because ISTQB does not forbid self-testing; it notes the challenge. The option about identical mindsets between developer and tester is incorrect because the mindsets differ, requiring an active adjustment."
+  },
+  {
+    "id": "ch3-27",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, C, D citadas sem nomear o tema ao lado; além disso, a exp original está internamente desalinhada em relação à ordem raw (diz 'A e C' para capacidades dinâmicas, mas em ordem raw é 'A e B'). Reescrita por tema corrige a desalinhamento e independe da ordem de exibição.",
+    "exp_pt_novo": "O teste estático examina produtos de trabalho sem executar o código. Isso significa que pode encontrar defeitos em documentos (requisitos, designs) e no código-fonte antes de qualquer executável existir — mais cedo no ciclo de vida do que o teste dinâmico, que requer código executável. As opções sobre teste estático detectando defeitos em tempo de execução e teste estático medindo características não-funcionais descrevem capacidades do teste dinâmico (comportamento em tempo de execução e medição não-funcional). A opção sobre teste estático provando que um produto de trabalho está livre de defeitos contradiz o princípio de teste de que o teste não pode provar a ausência de defeitos.",
+    "exp_en_novo": "Static testing examines work products without executing the code. This means it can find defects in documents (requirements, designs) and in source code before any executable exists — earlier in the lifecycle than dynamic testing, which requires runnable code. The options about static testing detecting runtime defects and static testing measuring non-functional characteristics describe capabilities of dynamic testing (runtime behavior and non-functional measurement). The option about static testing proving that a work product is free of defects contradicts the testing principle that testing cannot prove the absence of defects."
+  },
+  {
+    "id": "ch3-30",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, D citadas sem nomear o tema ao lado; leitor que rastreia só a letra é levado a erro. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Feedback cedo das partes interessadas permite que elas confirmem que os requisitos e decisões de design correspondem às suas expectativas antes que esforço substancial de implementação seja investido, evitando retrabalho custoso mais tarde. A opção sobre garantia de ausência de defeitos em produção é falsa (nenhum feedback pode garantir ausência de defeitos — isso contradiz o princípio de teste de que teste não pode provar ausência de defeitos). A opção sobre eliminação da necessidade de teste é falsa (feedback complementa mas não substitui o teste). A opção sobre redução do custo a praticamente zero é falsa (mesmo que reduza retrabalho, o custo não pode ser reduzido a praticamente zero — sempre há custos fixos e variáveis no projeto).",
+    "exp_en_novo": "Early stakeholder feedback allows stakeholders to confirm that requirements and design decisions match their expectations before substantial implementation effort is invested, avoiding costly rework later. The option about guaranteeing the system has no defects in production is false (no feedback can guarantee zero defects — this contradicts the testing principle that testing cannot prove absence of defects). The option about eliminating the need for testing is false (feedback complements but does not replace testing). The option about reducing total project cost to nearly zero is false (even though it may reduce rework, cost cannot be reduced to nearly zero — projects always have fixed and variable costs)."
+  },
+  {
+    "id": "ch3-31",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C citadas sem nomear o tema ao lado; leitor que rastreia só a letra é levado a erro. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Feedback frequente fornece oportunidades regulares de correção de rumo: mal-entendidos e mudanças de prioridade são detectados em pequenos incrementos em vez de se acumularem em grande retrabalho no final do ciclo. Este é um benefício primário do feedback frequente (vs. apenas no final do ciclo). A opção sobre pular completamente o teste estático é falsa (feedback não elimina o teste estático, que encontra tipos diferentes de defeitos). A opção sobre remover a necessidade de um gerente de teste é falsa (feedback não remove a necessidade de gerenciamento de teste). A opção sobre garantia de conclusão antes do cronograma é falsa (feedback melhora o alinhamento e reduz o risco, mas não garante — nem mesmo tende a garantir de forma confiável — aceleração do cronograma).",
+    "exp_en_novo": "Frequent feedback provides regular course-correction opportunities: misunderstandings and changing priorities are detected in small increments rather than accumulating into large late-cycle rework. This is a primary benefit of frequent (vs. only end-of-cycle) feedback. The option about completely skipping static testing is false (feedback does not eliminate static testing, which finds different defect types). The option about removing the need for a test manager is false (feedback does not remove the need for test management). The option about guaranteeing the project completes ahead of schedule is false (feedback improves alignment and reduces risk, but does not guarantee — nor even tend to reliably guarantee — schedule acceleration)."
+  },
+  {
+    "id": "ch3-32",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (B, C, D) nomeia o tema como sujeito de 'descreve' (e.g., 'A opção B descreve o papel do gerente'), com descrição entre parêntesis. Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch3-33",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (A, C, D) nomeia o tema como sujeito de 'descreve' (e.g., 'A opção A descreve o papel do relator'). Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch3-35",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C citadas com o tema apenas parafraseado na crítica (não nomeado positivamente ao lado da letra); leitor que rastreia só a letra é levado a erro. Reescrita por tema nomeia o conteúdo de cada opção.",
+    "exp_pt_novo": "O teste estático e o teste dinâmico são complementares. O teste estático examina produtos de trabalho sem executá-los (encontrando defeitos como requisitos ausentes, violações de padrões de codificação, ambiguidades). O teste dinâmico executa o código (encontrando defeitos de tempo de execução como problemas de desempenho, bugs de concorrência, cálculos incorretos). A opção sobre teste estático e dinâmico encontrando os mesmos tipos de defeitos é falsa — eles encontram tipos diferentes de defeitos, então ambos são necessários. A opção sobre teste estático encontrando defeitos de tempo de execução é falsa — o teste estático não pode encontrar defeitos de execução em tempo de execução; esse é o domínio do teste dinâmico. A opção sobre teste dinâmico aplicado diretamente a documentos é falsa — o teste dinâmico requer execução, então não pode ser aplicado a documentos.",
+    "exp_en_novo": "Static and dynamic testing are complementary. Static testing examines work products without executing them (finding defects like missing requirements, coding standard violations, ambiguities). Dynamic testing executes the code (finding runtime defects like performance issues, concurrency bugs, incorrect calculations). The option about static and dynamic testing finding the same types of defects is false — they find different defect types, so both are needed. The option about static testing finding runtime defects is false — static testing cannot find runtime execution defects; that is dynamic testing's domain. The option about dynamic testing applied directly to documents is false — dynamic testing requires execution, so it cannot be applied to documents."
+  },
+  {
+    "id": "ch3-36",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (B, C, D) nomeia o tema como sujeito de 'descreve' (e.g., 'A opção B descreve atividades de desenvolvimento/construção de software'). Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch3-37",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "A e C têm tema entre parêntesis; D tem tema nomeado positivamente como sujeito de 'descreve' ('A opção D descreve características de uma inspeção ou revisão técnica formal'). Todas nomeiam o tema ao lado da letra.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch3-38",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (A, B, D) tem tema entre parêntesis imediatamente após a letra (e.g., 'opção A (inspeção)'). Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-56",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Apenas a opção A tem tema entre parêntesis; B, C e D são citadas sem tema ao lado da letra. Reescrita por tema (valores) preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O particionamento por equivalência identifica três partições para este campo: válida (inteiros de 0 a 50), inválida baixa (abaixo de 0) e inválida alta (acima de 50). A cobertura mínima requer um representante de cada partição (3 valores no total). A opção com os valores (-1, 25, 51) cobre as três partições com o menor número de valores: -1 representa a partição inválida baixa, 25 representa a partição válida, e 51 representa a partição inválida alta. A opção com os valores (0, 50) cobre apenas a partição válida. As opções com os valores (0, 25, 50, -1, 51) e (0, 1, 49, 50, -1, 51) incluem valores extras da partição válida (0 e 50 ainda estão dentro da partição válida, não são partições separadas em EP) e não representam cobertura mínima.",
+    "exp_en_novo": "Equivalence partitioning identifies three partitions for this field: valid (integers 0-50), invalid low (below 0), and invalid high (above 50). Minimum coverage requires one representative from each partition (3 values total). The option with the values (-1, 25, 51) covers all three partitions with the fewest values: -1 represents the invalid-low partition, 25 represents the valid partition, and 51 represents the invalid-high partition. The option with the values (0, 50) covers only the valid partition. The options with the values (0, 25, 50, -1, 51) and (0, 1, 49, 50, -1, 51) include extra values from the valid partition (0 and 50 are still within the valid partition, not separate partitions in EP) and do not represent minimum coverage."
+  },
+  {
+    "id": "ch4-57",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C, D citadas sem tema entre parêntesis; leitor que rastreia só a letra é levado a erro. Reescrita por tema (valores) preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O limite entre as duas partições (frete grátis para >=10 itens, frete pago para <10 itens) está entre 9 e 10. A técnica de BVA de 2 valores seleciona os valores imediatamente em cada lado do limite: 9 (o valor mais alto na partição 'paga') e 10 (o valor mais baixo na partição 'grátis'). A opção com os valores (9 e 10) usa corretamente esses dois valores. A opção com os valores (10 e 11) testa apenas valores no limite ou acima dele, perdendo o lado 'abaixo'. A opção com os valores (9, 10 e 11) usa três valores, o que corresponde à técnica de BVA de 3 valores, não de 2. A opção com os valores (0, 9, 10 e 100) inclui valores extremos irrelevantes e não segue BVA.",
+    "exp_en_novo": "The boundary between the two partitions (free shipping for >=10 items, paid shipping for <10 items) lies between 9 and 10. The 2-value BVA technique selects the values immediately on either side of the boundary: 9 (the highest value in the 'paid' partition) and 10 (the lowest value in the 'free' partition). The option with the values (9 and 10) correctly uses these two values. The option with the values (10 and 11) tests only values at or above the boundary, missing the 'below' side. The option with the values (9, 10, and 11) uses three values, which corresponds to the 3-value BVA technique, not 2-value. The option with the values (0, 9, 10, and 100) includes irrelevant extreme values and does not follow BVA."
+  },
+  {
+    "id": "ch4-61",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A e B agrupadas com temas em parêntesis para o grupo (não individualmente pareadas com cada letra); C tem tema nomeado. Padrão FP estrito não satisfeito. Reescrita por tema nomeia o conteúdo de cada opção individualmente.",
+    "exp_pt_novo": "Técnicas caixa-preta derivam casos de teste da especificação do comportamento externo do sistema (requisitos, use cases, regras de negócio), sem examinar a estrutura interna. A opção sobre estrutura interna do componente e a opção sobre grafo de fluxo de controle do código-fonte descrevem características de técnicas caixa-branca. A opção sobre experiência pessoal do testador com sistemas similares descreve a categoria baseada em experiência.",
+    "exp_en_novo": "Black-box techniques derive test cases from the specification of the system's external behavior (requirements, use cases, business rules), without examining internal structure. The option about the internal structure of the component and the option about the control flow graph of the source code describe characteristics of white-box techniques. The option about the tester's personal experience with similar systems describes the experience-based category."
+  },
+  {
+    "id": "ch4-62",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Apenas a opção A tem tema entre parêntesis; B, C e D citadas sem tema ao lado. Reescrita por tema (valores) preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O particionamento por equivalência identifica três partições: válida (inteiros 1-6), inválida baixa (≤0) e inválida alta (≥7). A cobertura mínima requer um representante de cada partição (3 valores no total). A opção com os valores (0, 3, 7) cobre as três partições: 0 representa a inválida baixa, 3 representa a válida, e 7 representa a inválida alta. A opção com os valores (1, 6) cobre apenas a partição válida. A opção com os valores (0, 1, 6, 7) inclui valores extras (1 e 6 ainda estão dentro da partição válida, não são partições separadas em EP puro). A opção com os valores (1, 3, 6) cobre apenas a partição válida com múltiplos representantes.",
+    "exp_en_novo": "Equivalence partitioning identifies three partitions: valid (integers 1-6), invalid low (≤0), and invalid high (≥7). Minimum coverage requires one representative from each partition (3 values total). The option with the values (0, 3, 7) covers all three partitions: 0 represents the invalid-low partition, 3 represents the valid partition, and 7 represents the invalid-high partition. The option with the values (1, 6) covers only the valid partition. The option with the values (0, 1, 6, 7) includes extra values (1 and 6 are still within the valid partition, not separate partitions in pure EP). The option with the values (1, 3, 6) covers only the valid partition with multiple representatives."
+  },
+  {
+    "id": "ch4-63",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Apenas a opção B tem tema entre parêntesis; A, C e D citadas sem tema ao lado. Reescrita por tema (valores) preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O particionamento por equivalência identifica três partições: válida (18-65), inválida baixa (<18) e inválida alta (>65). A cobertura mínima requer um representante de cada partição (3 valores). A opção com os valores (17, 41, 66) cobre as três partições: 17 representa a inválida baixa, 41 representa a válida, e 66 representa a inválida alta. A opção com os valores (18, 41, 65) usa três valores da partição válida, sem cobrir as inválidas. A opção com os valores (17, 18, 65, 66) mistura EP com BVA (adiciona valores de borda) e não representa cobertura mínima. A opção com os valores (18, 65) cobre apenas a partição válida.",
+    "exp_en_novo": "Equivalence partitioning identifies three partitions: valid (18-65), invalid low (<18), and invalid high (>65). Minimum coverage requires one representative from each partition (3 values). The option with the values (17, 41, 66) covers all three partitions: 17 represents the invalid-low partition, 41 represents the valid partition, and 66 represents the invalid-high partition. The option with the values (18, 41, 65) uses three values from the valid partition without covering the invalid ones. The option with the values (17, 18, 65, 66) mixes EP with BVA (adds boundary values) and is not minimum coverage. The option with the values (18, 65) covers only the valid partition."
+  },
+  {
+    "id": "ch4-64",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A, B, D têm tema entre parêntesis, mas a conclusão 'Apenas a opção C' não nomeia o tema — mesmo padrão do exemplo ch5-47. Reescrita por tema (valores) preserva a cadeia de eliminação e a conclusão.",
+    "exp_pt_novo": "A BVA de 3 valores testa o valor no limite, o valor imediatamente abaixo e o valor imediatamente acima. Para o limite superior 5000, os três valores são 4999 (abaixo), 5000 (no limite) e 5001 (acima). A opção com os valores (4999, 5000, 5002) usa o valor no limite e o abaixo, mas pula o valor imediatamente acima (5001), usando 5002 em seu lugar. A opção com os valores (5000, 5001, 5002) testa apenas o limite e valores acima, omitindo o lado abaixo. A opção com os valores (4998, 4999, 5000) testa valores abaixo do limite e o próprio limite, mas omite o valor imediatamente acima. Apenas a opção com os valores (4999, 5000, 5001) aplica corretamente a BVA de 3 valores no limite superior.",
+    "exp_en_novo": "The 3-value BVA technique tests the value at the boundary, the value immediately below it, and the value immediately above it. For the upper boundary 5000, the three values are 4999 (below), 5000 (at boundary), and 5001 (above). The option with the values (4999, 5000, 5002) uses the value at the boundary and the one below, but skips the value immediately above (5001), using 5002 instead. The option with the values (5000, 5001, 5002) tests only the boundary and values above, omitting the below side. The option with the values (4998, 4999, 5000) tests values below the boundary and the boundary itself, but omits the value immediately above. Only the option with the values (4999, 5000, 5001) correctly applies 3-value BVA at the upper boundary."
+  },
+  {
+    "id": "ch4-65",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Nenhuma letra tem tema entre parêntesis; temas apenas parafraseados na crítica. Reescrita por tema (valores) preserva a cadeia de eliminação e a conclusão.",
+    "exp_pt_novo": "Há dois limites na faixa válida: o inferior (5) e o superior (50). A BVA de 2 valores seleciona o valor no limite e o adjacente do lado testado em cada limite. No limite inferior: 4 (abaixo) e 5 (no limite). No limite superior: 50 (no limite) e 51 (acima). O conjunto completo é {4, 5, 50, 51}. A opção com os valores (5, 50) testa apenas os pontos de limite, não os adjacentes. A opção com os valores (4, 5, 6, 49, 50, 51) usa BVA de 3 valores. A opção com os valores (5, 25, 50) testa valores médios, não limites. Apenas a opção com os valores (4, 5, 50, 51) aplica corretamente a BVA de 2 valores em ambos os limites.",
+    "exp_en_novo": "There are two boundaries in the valid range: the lower (5) and the upper (50). The 2-value BVA technique selects the value at the boundary and the adjacent value on the tested side at each boundary. At the lower boundary: 4 (below) and 5 (at boundary). At the upper boundary: 50 (at boundary) and 51 (above). The complete set is {4, 5, 50, 51}. The option with the values (5, 50) tests only the boundary points, not the adjacent ones. The option with the values (4, 5, 6, 49, 50, 51) uses 3-value BVA. The option with the values (5, 25, 50) tests mid-range values, not boundaries. Only the option with the values (4, 5, 50, 51) correctly applies 2-value BVA at both boundaries."
+  },
+  {
+    "id": "ch4-66",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (A, B, C, D) tem o valor entre parêntesis imediatamente após a letra, inclusive na conclusão 'Apenas a opção A (12) está correta'. Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-68",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência de letra (A, B, D) tem o valor entre parêntesis; a opção correta C está implícita pelo 'Total = 5 transições válidas'. Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-69",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A, B, C citadas sem tema ao lado; crítica para B e C apenas opõe o conteúdo sem nomeá-lo. Reescrita por tema (estado resultante) preserva a cadeia de eliminação.",
+    "exp_pt_novo": "A transição 'Pausado + Pressionar Parar → Parado' está explicitamente listada como válida. Portanto, quando o usuário pressiona Parar no estado Pausado, o sistema transita para o estado Parado. A opção sobre o resultado 'Tocando' está incorreta — Play (não Parar) causaria a transição Pausado → Tocando. A opção sobre o resultado 'Pausado (nenhuma transição ocorre)' está incorreta — a transição existe, então algo ocorre. A opção sobre o resultado 'Erro — a transição é inválida' está incorreta — a transição é válida, não inválida.",
+    "exp_en_novo": "The transition 'Paused + Press Stop → Stopped' is explicitly listed as valid. Therefore, when the user presses Stop in the Paused state, the system transitions to the Stopped state. The option about the result 'Playing' is incorrect — Play (not Stop) would cause the Paused → Playing transition. The option about the result 'Paused (no transition occurs)' is incorrect — the transition exists, so something does occur. The option about the result 'Error — the transition is invalid' is incorrect — the transition is valid, not invalid."
+  },
+  {
+    "id": "ch4-71",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência de letra (A, C, D) tem o percentual entre parêntesis; a opção correta B está implícita pelo 'Total de instruções executadas: 3 de 4 = 75%'. Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-72",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência de letra (A, B, D) tem o número entre parêntesis; a opção correta C está implícita pelo 'precisamos de no mínimo 2 casos de teste'. Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-73",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Toda referência (A, B, C, D) nomeia o tema positivamente como sujeito de 'descreve'/'captura' (e.g., 'A opção A descreve teste scriptado', 'Apenas a opção D captura a natureza concorrente e adaptativa'). Autocorretivo.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-74",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras B, C, D citadas sem tema ao lado; crítica apenas opõe o conteúdo sem nomeá-lo positivamente. Reescrita por tema nomeia o conteúdo de cada opção.",
+    "exp_pt_novo": "Checklists são, por natureza, listas finitas de itens de teste ou condições previamente compiladas. Sua principal limitação é que defeitos de tipos não antecipados na checklist podem não ser encontrados, porque o testador tende a focar nos itens listados. A opção sobre exigência de código-fonte disponível está incorreta — checklists são técnicas caixa-preta e não exigem código-fonte. A opção sobre restrição ao nível de teste de unidade está incorreta — checklists podem ser aplicados em qualquer nível. A opção sobre não reutilização entre projetos ou releases está incorreta — checklists são frequentemente reutilizáveis entre releases e até projetos similares.",
+    "exp_en_novo": "Checklists are, by nature, finite lists of previously compiled test items or conditions. Their main limitation is that defects of types not anticipated in the checklist may not be found, because the tester tends to focus on the listed items. The option about requiring source code to be available is incorrect — checklists are black-box techniques and do not require source code. The option about restriction to the unit test level is incorrect — checklists can be applied at any level. The option about not being reusable across projects or releases is incorrect — checklists are often reusable across releases and even similar projects."
+  },
+  {
+    "id": "ch4-75",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Letras A e D agrupadas com temas em parêntesis para o grupo (não individualmente pareadas); C tem tema nomeado; B na conclusão tem tema nomeado. Padrão FP estrito não satisfeito para A e D. Reescrita por tema nomeia o conteúdo de cada opção individualmente.",
+    "exp_pt_novo": "Técnicas caixa-branca derivam testes da estrutura interna do sistema (código-fonte, design detalhado, grafo de fluxo de controle). A opção sobre especificação do comportamento externo descreve técnicas caixa-preta. A opção sobre diagramas formais de casos de uso também descreve técnicas caixa-preta. A opção sobre experiência pessoal do testador descreve a categoria baseada em experiência. Apenas a opção sobre estrutura interna do sistema descreve corretamente uma característica caixa-branca.",
+    "exp_en_novo": "White-box techniques derive tests from the internal structure of the system (source code, detailed design, control flow graph). The option about specification of external behavior describes black-box techniques. The option about formal use case diagrams also describes black-box techniques. The option about the tester's personal experience describes the experience-based category. Only the option about internal structure of the system correctly describes a white-box characteristic."
+  },
+  {
+    "id": "ch4-76",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Cada referência de opção nomeia o tema como predicado imediato à letra (caixa-branca, BVA, transição de estados, categoria baseada em experiência), permitindo autocorreção mesmo com ordem embaralhada.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-77",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as três referências (A/B/C) trazem o tema entre parênteses imediatamente após a letra; o setup já nomeia a resposta correta (tabela de decisão).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-78",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "As referências a B, C e D criticam por oposição sem nomear positivamente o conteúdo distintivo de cada opção; reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "A distinção central é que o teste exploratório é concorrente e adaptativo (aprendizado, design e execução ao mesmo tempo, guiados pelo raciocínio em tempo real), enquanto o teste baseado em checklist usa uma lista predefinida de itens ou condições de teste que os testadores verificam sistematicamente. A opção sobre teste exploratório totalmente scriptado inverte a característica do exploratório. A opção sobre ambas as técnicas serem idênticas e intercambiáveis é falsa — não são idênticas. A opção sobre checklist como subtipo estrito do exploratório é falsa — checklist não é subtipo de exploratório.",
+    "exp_en_novo": "The central distinction is that exploratory testing is concurrent and adaptive (learning, design, and execution happening at the same time, guided by real-time reasoning), while checklist-based testing uses a predefined list of test items or conditions that testers systematically verify. The option about exploratory testing being fully scripted reverses the exploratory characteristic. The option about both techniques being identical and interchangeable is false — they are not identical. The option about checklist-based testing being a strict subtype of exploratory testing is false — checklist is not a subtype of exploratory."
+  },
+  {
+    "id": "ch4-79",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as três referências (A/C/D) trazem o tema entre parênteses imediatamente após a letra; o setup já nomeia a resposta correta (tabela de decisão).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-80",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as três referências (A/B/D) trazem o tema entre parênteses imediatamente após a letra; o setup já nomeia a resposta correta (transição de estados).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch4-82",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência agrupada 'As opções A e D (bordas e tabelas de decisão)' coloca os temas em um único parêntese combinado; o padrão estrito FP exige tema pareado com cada letra individualmente. Reescrita por tema.",
+    "exp_pt_novo": "A cobertura de instruções (statement coverage) é uma métrica caixa-branca que mede a porcentagem de instruções executáveis do código-fonte exercitadas por um conjunto de testes. A opção sobre cobertura de bordas contra partições de entrada descreve uma métrica caixa-preta. A opção sobre cobertura de tabela de decisão contra regras de negócio também descreve uma métrica caixa-preta. A opção sobre cobertura de casos de uso contra user stories é uma métrica de teste funcional/caixa-preta baseada em artefatos de requisitos. Apenas a opção sobre cobertura de instruções contra o código-fonte é uma métrica caixa-branca que depende da estrutura interna do código.",
+    "exp_en_novo": "Statement coverage is a white-box metric that measures the percentage of executable statements in the source code exercised by a test suite. The option about boundary coverage against input partitions describes a black-box metric. The option about decision table coverage against business rules also describes a black-box metric. The option about use case coverage against user stories is a functional/black-box metric based on requirements artifacts. Only the option about statement coverage against the source code is a white-box metric that depends on the internal structure of the code."
+  },
+  {
+    "id": "ch5-46",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as três referências (A/B/D) trazem o tema entre parênteses imediatamente após a letra; o setup identifica implicitamente a resposta correta (passos/dados/ambiente).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch5-47",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção A' não nomeia o tema; segue exatamente o padrão do exemplo do spec. Reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Um plano de teste tipicamente inclui a estratégia de teste, escopo dos testes, cronograma, necessidades de recursos, requisitos de ambiente e critérios de entrada/saída. A opção sobre binários compilados é um artefato de build, não um elemento de planejamento. A opção sobre ordem de compra e termos de pagamento é um artefato contratual/comercial, não um elemento de plano de teste. A opção sobre listagens de código-fonte é um artefato de desenvolvimento. Apenas a opção sobre estratégia de teste, escopo, cronograma e critérios de entrada/saída descreve elementos tipicamente encontrados em um plano de teste.",
+    "exp_en_novo": "A test plan typically includes the test strategy, scope of testing, schedule, resource needs, environment requirements, and entry/exit criteria. The option about compiled binaries is a build artifact, not a planning element. The option about purchase order and payment terms is a contractual/commercial artifact, not a test plan element. The option about source code listings is a development artifact. Only the option about test strategy, scope, schedule, and entry/exit criteria describes elements typically found in a test plan."
+  },
+  {
+    "id": "ch5-48",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção B' não nomeia o conteúdo distintivo da opção correta; reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Um plano de teste mestre cobre o esforço de teste inteiro de um projeto, tipicamente abrangendo múltiplos níveis de teste (ex.: componente, integração, sistema, aceitação). Ele coordena a abordagem geral de teste entre os níveis. A opção sobre teste de componente/unidade corresponderia a um plano de fase. A opção sobre plano de marketing não está relacionada a teste. A opção sobre acordo contratual formal é um documento comercial. Apenas a opção sobre o esforço de teste inteiro, abrangendo múltiplos níveis de teste, descreve corretamente o escopo de um plano de teste mestre.",
+    "exp_en_novo": "A master test plan covers the entire testing effort for a project, typically spanning multiple test levels (e.g., component, integration, system, acceptance). It coordinates the overall test approach across levels. The option about component/unit testing would correspond to a phase test plan. The option about the marketing plan is unrelated to testing. The option about the formal contractual agreement is a commercial document. Only the option about the entire testing effort, spanning multiple test levels, correctly describes the scope of a master test plan."
+  },
+  {
+    "id": "ch5-49",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção C' não nomeia o conteúdo distintivo da opção correta; reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Um risco de projeto é um risco que afeta a capacidade do projeto de entregar — incluindo cronograma, orçamento, recursos, escopo e equipe. A opção sobre testadores qualificados insuficientes é um risco de equipe/recurso que afeta a capacidade do projeto de concluir os testes, sendo portanto um risco de projeto. As opções sobre performance, cálculos incorretos e vulnerabilidade de segurança descrevem potenciais falhas do produto de software em si, que são riscos de produto. Apenas a opção sobre testadores qualificados insuficientes é um risco de projeto.",
+    "exp_en_novo": "A project risk is a risk that affects the project's ability to deliver — including schedule, budget, resources, scope, and staffing. The option about insufficient skilled testers is a staffing/resource risk that affects the project's capacity to complete testing, making it a project risk. The options about performance, incorrect calculations, and security vulnerability all describe potential failures of the software product itself, which are product risks. Only the option about insufficient skilled testers is a project risk."
+  },
+  {
+    "id": "ch5-50",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção D' não nomeia o conteúdo distintivo da opção correta; reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "Um risco de produto é um risco que pode afetar negativamente a qualidade do produto de software entregue — incluindo correção, confiabilidade, performance, segurança e usabilidade. A opção sobre resultados incorretos de certas entradas diz respeito direto ao comportamento do software, sendo um risco de produto. As opções sobre atraso de cronograma por hardware atrasado, testadores saindo e discordância de escopo entre stakeholders dizem respeito à capacidade do projeto de entregar, que são riscos de projeto. Apenas a opção sobre resultados incorretos de certas entradas é um risco de produto.",
+    "exp_en_novo": "A product risk is a risk that may negatively affect the quality of the software deliverable — including correctness, reliability, performance, security, and usability. The option about incorrect results from certain inputs directly concerns the software's behavior, making it a product risk. The options about schedule slip from delayed hardware, testers leaving, and stakeholder scope disagreement all concern the project's ability to deliver, which are project risks. Only the option about incorrect results from certain inputs is a product risk."
+  },
+  {
+    "id": "ch5-51",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "As referências a B e D são pura oposição sem nomear o conteúdo distintivo; a conclusão 'Apenas a opção A' é letra nua. Reescrita por tema.",
+    "exp_pt_novo": "Um risco de projeto é aquele que afeta a capacidade do projeto de entregar, incluindo a capacidade de executar atividades de teste planejadas. A indisponibilidade do gateway de pagamento de terceiros durante a janela de teste bloqueia cenários de teste críticos — isso afeta a execução do projeto de teste, não a qualidade do software sendo testado. A opção sobre classificar como risco de produto está incorreta porque a disponibilidade do gateway durante o teste é uma preocupação de projeto, não de comportamento do produto. A opção sobre classificar como risco de qualidade usa um termo informal (\"risco de qualidade\") que é tipicamente sinônimo de risco de produto no ISTQB. A opção sobre nenhum risco relevante está incorreta porque dependências externas SÃO riscos de projeto se afetam o projeto. Apenas a opção sobre classificar como risco de projeto (porque afeta a capacidade da equipe de teste de executar os testes planejados) está correta.",
+    "exp_en_novo": "A project risk is one that affects the project's ability to deliver, including the ability to execute planned test activities. The unavailability of the third-party payment gateway during the test window blocks critical test scenarios — this affects the test project's execution, not the quality of the software being tested. The option about classifying as a product risk is incorrect because the gateway's availability during testing is a project concern, not a product behavior concern. The option about classifying as a quality risk uses an informal term (\"quality risk\") that is typically a synonym for product risk in ISTQB. The option about no relevant risk is incorrect because external dependencies ARE project risks if they affect the project. Only the option about classifying as a project risk (because it affects the test team's ability to execute planned tests) is correct."
+  },
+  {
+    "id": "ch5-52",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "As três referências (A/B/D) trazem o tema entre parênteses e a conclusão nomeia positivamente o conteúdo da opção C ('define corretamente uma métrica de teste como uma medida quantitativa').",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch5-53",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção D descreve conteúdo tipicamente encontrado em um relatório de resumo de teste' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Um relatório de resumo de teste tipicamente inclui um resumo das atividades de teste realizadas, resultados dos testes, desvios do plano e uma avaliação da qualidade do objeto de teste. A opção sobre código-fonte é um artefato de desenvolvimento. A opção sobre obrigações contratuais é um artefato comercial/legal. A opção sobre opiniões pessoais é subjetiva e não apropriada para um relatório formal. Apenas a opção sobre resumo das atividades de teste, resultados e desvios do plano descreve conteúdo tipicamente encontrado em um relatório de resumo de teste.",
+    "exp_en_novo": "A test summary report typically includes a summary of testing activities performed, test results, deviations from the plan, and an evaluation of the test object's quality. The option about source code is a development artifact. The option about contractual obligations is a commercial/legal artifact. The option about personal opinions is subjective and not appropriate for a formal report. Only the option about the summary of testing activities performed, results, and deviations from the plan describes content that is typically found in a test summary report."
+  },
+  {
+    "id": "ch5-54",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "As referências a A, C e D criticam por oposição sem nomear positivamente o conteúdo distintivo; a conclusão 'Apenas a opção B' é metadescrição. Reescrita por tema.",
+    "exp_pt_novo": "O gerenciamento de configuração (CM) fornece o valor de identificar de forma única, controlar por versão e rastrear itens de teste (e outros produtos de trabalho) ao longo do processo de teste. Isso garante que a versão correta de um objeto de teste esteja sendo testada e que os resultados de teste possam ser associados à configuração correta. A opção sobre garantir correção de defeitos sem regressões está incorreta porque CM não garante correção de defeitos — isso é uma decisão de desenvolvimento/gerenciamento. A opção sobre pular o planejamento de teste está incorreta porque CM não substitui o planejamento. A opção sobre eliminar a execução manual está incorreta porque CM não elimina a necessidade de execução. Apenas a opção sobre identificar, versionar e rastrear itens de teste descreve um valor genuíno do CM.",
+    "exp_en_novo": "Configuration management (CM) provides the value of uniquely identifying, version-controlling, and tracing test items (and other work products) throughout the test process. This ensures that the right version of a test object is being tested and that test results can be associated with the correct configuration. The option about guaranteeing defect correction without regressions is incorrect because CM does not guarantee defect correction — that is a development/management decision. The option about skipping test planning is incorrect because CM does not replace planning. The option about eliminating manual execution is incorrect because CM does not eliminate the need for execution. Only the option about uniquely identifying, version-controlling, and tracing test items describes a genuine value of CM."
+  },
+  {
+    "id": "ch5-55",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'A opção C descreve uma responsabilidade típica do gerente de teste' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Um gerente de teste é responsável por planejar e supervisionar o projeto de teste — incluindo planejamento de teste, alocação de recursos, comunicação com stakeholders, monitoramento de progresso e relatórios. A opção sobre escrever e revisar código-fonte é responsabilidade do desenvolvedor. A opção sobre realizar pessoalmente os testes manuais é impraticável e é o papel de testadores individuais, não do gerente. A opção sobre aprovar release sem consulta contradiz a boa prática de gerenciamento de teste, que envolve comunicação com stakeholders. A opção sobre planejar e supervisionar o projeto de teste descreve uma responsabilidade típica do gerente de teste.",
+    "exp_en_novo": "A test manager is responsible for planning and overseeing the test project — including test planning, resource allocation, stakeholder communication, progress monitoring, and reporting. The option about writing and reviewing source code is a developer responsibility. The option about performing manual testing personally is impractical and is the role of individual testers, not the manager. The option about approving release without consultation contradicts good test management practice, which involves stakeholder communication. The option about planning and overseeing the test project describes a typical test manager responsibility."
+  },
+  {
+    "id": "ch5-56",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência à opção B é por oposição sem nomear positivamente o conteúdo distintivo; a conclusão 'Apenas a opção D' é metadescrição. Reescrita por tema.",
+    "exp_pt_novo": "Critérios de entrada definem as condições que devem ser atendidas antes que as atividades de teste possam começar (ex.: ambiente de teste pronto, casos de teste escritos). Critérios de saída definem as condições que devem ser atendidas para que o teste seja considerado concluído (ex.: todos os testes planejados executados, taxa de defeitos abaixo do limite). A opção sobre determinar salário dos testadores não está relacionada a critérios de entrada/saída. A opção sobre substituir a estratégia de teste por uma lista de verificação está incorreta porque critérios de entrada/saída não substituem a estratégia de teste. A opção sobre identificar linguagem de programação é uma decisão de desenvolvimento. Apenas a opção sobre definir quando as atividades de teste podem começar e ser consideradas concluídas descreve o propósito principal dos critérios de entrada/saída.",
+    "exp_en_novo": "Entry criteria define the conditions that must be met before testing activities can begin (e.g., test environment ready, test cases written). Exit criteria define the conditions that must be met for testing to be considered complete (e.g., all planned tests executed, defect rate below threshold). The option about determining tester salary is unrelated to entry/exit criteria. The option about replacing the test strategy with a checklist is incorrect because entry/exit criteria do not replace the test strategy. The option about identifying the programming language is a development decision. Only the option about defining when testing activities may start and be considered complete describes the primary purpose of entry/exit criteria."
+  },
+  {
+    "id": "ch5-57",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção A caracteriza corretamente esta abordagem' não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Uma estratégia de teste metódica depende de um conjunto predefinido e ordenado de condições de teste ou checklists que os testadores seguem de forma consistente. O cenário descreve testadores seguindo uma ordem prescrita (itens de menu de cima para baixo, depois formulários da esquerda para a direita), o que é característico de uma estratégia metódica. A opção sobre estratégia analítica está incorreta porque estratégias analíticas são baseadas em análise de fatores como requisitos ou risco. A opção sobre estratégia baseada em modelo está incorreta porque estratégias baseadas em modelo derivam testes de um modelo do sistema. A opção sobre estratégia reativa está incorreta porque estratégias reativas reagem a defeitos observados durante o teste. Apenas a opção sobre estratégia metódica caracteriza corretamente esta abordagem.",
+    "exp_en_novo": "A methodical test strategy relies on a predefined, ordered set of test conditions or checklists that testers follow consistently. The scenario describes testers following a prescribed order (menu items top-to-bottom, then forms left-to-right), which is characteristic of a methodical strategy. The option about analytical strategy is incorrect because analytical strategies are based on analysis of factors such as requirements or risk. The option about model-based strategy is incorrect because model-based strategies derive tests from a model of the system. The option about reactive strategy is incorrect because reactive strategies react to defects observed during testing. Only the option about methodical strategy correctly characterizes this approach."
+  },
+  {
+    "id": "ch5-58",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência à opção C é pura oposição ('não deve ser aceito') sem nomear o conteúdo distintivo (risco = 5, baixa prioridade, pode ser aceito). Reescrita por tema.",
+    "exp_pt_novo": "O nível de risco é calculado como probabilidade × impacto: 1 × 5 = 5. A observação-chave é que mesmo com probabilidade baixa, o impacto catastrófico (5) significa que o risco merece atenção — o produto é moderado (5 em uma escala onde 25 é o máximo). A opção sobre nível de risco = 1 está incorreta porque confunde nível de risco com probabilidade (1 × 5 = 5, não 1). A opção sobre nível de risco = 6 está incorreta porque 1 × 5 = 5, não 6. A opção sobre nível de risco = 5 classificado como baixa prioridade está incorreta porque um risco com impacto catastrófico não deve ser aceito sem consideração, mesmo se a probabilidade for baixa. A opção sobre nível de risco = 5 classificado como risco moderado declara corretamente tanto o cálculo (5) quanto a interpretação (moderado, merece atenção devido ao impacto catastrófico).",
+    "exp_en_novo": "Risk level is calculated as likelihood × impact: 1 × 5 = 5. The key insight is that even though the likelihood is low, the catastrophic impact (5) means the risk warrants attention — the product is moderate (5 on a scale where 25 is maximum). The option about risk level = 1 is incorrect because it confuses risk level with likelihood (1 × 5 = 5, not 1). The option about risk level = 6 is incorrect because 1 × 5 = 5, not 6. The option about risk level = 5 classified as low priority is incorrect because a risk with catastrophic impact should not be accepted without consideration, even if likelihood is low. The option about risk level = 5 classified as moderate risk correctly states both the calculation (5) and the interpretation (moderate, warrants attention due to catastrophic impact)."
+  },
+  {
+    "id": "ch5-59",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção B é um exemplo de controle de teste' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Monitoramento de teste é a observação e medição contínua das atividades de teste (ex.: gerar relatórios, medir densidade de defeitos, acompanhar progresso). Controle de teste, em contraste, envolve tomar ação com base nos dados de monitoramento para guiar e ajustar os testes — como repriorizar testes, mudar o cronograma ou realocar recursos. As opções sobre relatório semanal, medir densidade de defeitos e acompanhar porcentagem executada são todas atividades de monitoramento — observam e medem. A opção sobre repriorizar casos de teste é uma ação de controle porque ajusta o plano de teste com base em informação observada. Apenas a opção sobre repriorizar casos de teste é um exemplo de controle de teste.",
+    "exp_en_novo": "Test monitoring is the ongoing observation and measurement of test activities (e.g., generating reports, measuring defect density, tracking progress). Test control, in contrast, involves taking action based on monitoring data to guide and adjust the testing — such as re-prioritizing tests, changing the schedule, or reallocating resources. The options about weekly report, measuring defect density, and tracking percentage executed are all monitoring activities — they observe and measure. The option about re-prioritizing test cases is a control action because it adjusts the test plan based on observed information. Only the option about re-prioritizing test cases is an example of test control."
+  },
+  {
+    "id": "ch5-60",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "As referências a A e B são pura oposição sem nomear o conteúdo distintivo; a conclusão 'Apenas a opção C' é letra nua. Reescrita por tema.",
+    "exp_pt_novo": "Status do defeito e prioridade do defeito são atributos distintos. Status acompanha o estágio do fluxo de trabalho do defeito (ex.: novo, aberto, em progresso, corrigido, retestado, fechado, adiado). Prioridade indica a ordem em que o defeito deve ser tratado (ex.: urgente, alta, média, baixa), tipicamente determinada pela urgência de negócio. A opção sobre status e prioridade como sinônimos está incorreta porque status e prioridade são atributos diferentes. A opção sobre status como severidade e prioridade como estágio de workflow está incorreta porque confunde status com severidade — severidade é um atributo separado que mede impacto. A opção sobre status por desenvolvedores e prioridade por testadores está incorreta porque afirma que os dois significam a mesma coisa e caracteriza erroneamente quem define cada um. Apenas a opção sobre status como estágio de workflow e prioridade como quando corrigir distingue corretamente os dois atributos.",
+    "exp_en_novo": "Defect status and defect priority are distinct attributes. Status tracks the workflow stage of the defect (e.g., new, open, in-progress, fixed, retested, closed, deferred). Priority indicates the order in which the defect should be addressed (e.g., urgent, high, medium, low), typically determined by business urgency. The option about status and priority as synonyms is incorrect because status and priority are different attributes. The option about status as severity and priority as workflow stage is incorrect because it confuses status with severity — severity is a separate attribute measuring impact. The option about status set by developers and priority by testers is incorrect because it claims the two mean the same thing and mischaracterizes who sets each. Only the option about status as workflow stage and priority as when to fix correctly distinguishes the two attributes."
+  },
+  {
+    "id": "ch5-61",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção D descreve corretamente a diferença' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Uma métrica é uma medida quantitativa de algum atributo do processo ou produto de teste. Um KPI (Indicador-Chave de Performance) é uma métrica específica escolhida porque indica progresso em direção a uma meta ou objetivo definido — nem todas as métricas são KPIs, mas todos os KPIs são métricas. A opção sobre métrica financeira e KPI sobre execução está incorreta porque métricas não precisam ser financeiras, e KPIs não precisam ser sobre execução. A opção sobre métrica qualitativa e KPI quantitativo está incorreta porque métricas são quantitativas, não qualitativas. A opção sobre termos intercambiáveis está incorreta porque os termos não são intercambiáveis — um KPI é um subconjunto selecionado de métricas. Apenas a opção sobre métrica quantitativa e KPI como subconjunto selecionado descreve corretamente a diferença.",
+    "exp_en_novo": "A metric is a quantitative measure of some attribute of the test process or product. A KPI (Key Performance Indicator) is a specific metric chosen because it indicates progress toward a defined goal or target — not all metrics are KPIs, but all KPIs are metrics. The option about metric as financial and KPI as about execution is incorrect because metrics need not be financial, and KPIs need not be about execution. The option about metric as qualitative and KPI as quantitative is incorrect because metrics are quantitative, not qualitative. The option about interchangeable terms is incorrect because the terms are not interchangeable — a KPI is a selected subset of metrics. Only the option about metric as quantitative and KPI as selected subset correctly describes the difference."
+  },
+  {
+    "id": "ch5-62",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "As referências a B, C e D são pura oposição sem nomear positivamente o conteúdo distintivo; a conclusão 'Apenas a opção A' é metadescrição. Reescrita por tema.",
+    "exp_pt_novo": "Planos de teste específicos por fase (um por nível de teste) abordam as preocupações únicas de cada nível — como ambiente de teste, dados de teste, ferramentas, técnicas e critérios de entrada/saída adaptados aos objetivos daquele nível. O plano de teste mestre fornece coordenação geral; os planos de fase o complementam com detalhe específico do nível. A opção sobre substituir o plano mestre está incorreta porque planos de fase não substituem o plano mestre — ambos são necessários. A opção sobre pular critérios do plano mestre está incorreta porque planos de fase não permitem pular critérios do plano mestre; eles os refinam. A opção sobre exclusividade de cascata está incorreta porque planos de fase podem ser usados em diferentes ciclos de vida e não são uma exigência exclusiva de projetos em cascata. Apenas a opção sobre planos de fase que abordam preocupações específicas do nível descreve corretamente o valor dos planos específicos por fase.",
+    "exp_en_novo": "Phase-specific test plans (one per test level) address the unique concerns of each level — such as test environment, test data, tools, techniques, and entry/exit criteria that are tailored to that level's objectives. The master test plan provides overall coordination; phase plans complement it with level-specific detail. The option about replacing the master plan is incorrect because phase plans do not replace the master plan — both are needed. The option about skipping master plan criteria is incorrect because phase plans do not allow skipping master plan criteria; they refine them. The option about waterfall exclusivity is incorrect because phase plans can be used in different lifecycles and are not an exclusive requirement of waterfall projects. Only the option about phase plans addressing level-specific concerns correctly describes the value of phase-specific plans."
+  },
+  {
+    "id": "ch5-63",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção B fornece a informação necessária para confirmar e localizar a regressão' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Para um defeito de regressão, a informação mais importante é o build/versão onde a funcionalidade funcionou corretamente pela última vez (a baseline 'conhecida como boa'), o build onde ela agora falha (a versão 'conhecida como ruim'), e os passos para reproduzir a falha. Isso permite que os desenvolvedores comparem os dois builds, identifiquem as mudanças de código entre eles e isolem a causa da regressão. A opção sobre opinião de cancelar release é subjetiva e não acionável para investigação. A opção sobre lista de defeitos já encontrados é ruído irrelevante. A opção sobre data de release de marketing é uma preocupação comercial, não técnica. Apenas a opção sobre builds conhecidos como bom/ruim e passos para reproduzir fornece a informação necessária para confirmar e localizar a regressão.",
+    "exp_en_novo": "For a regression defect, the most important information is the build/version where the feature last worked correctly (the 'known-good' baseline), the build where it now fails (the 'known-bad' version), and the steps to reproduce the failure. This allows developers to compare the two builds, identify the code changes between them, and isolate the cause of the regression. The option about opinion on cancelling release is subjective and not actionable for investigation. The option about list of defects ever found is irrelevant noise. The option about marketing release date is a commercial concern, not a technical one. Only the option about known-good/known-bad builds and steps to reproduce provides the information needed to confirm and locate the regression."
+  },
+  {
+    "id": "ch5-64",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção C fornece os dados técnicos necessários para investigar um defeito de performance' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Para um defeito de performance, a informação mais crítica é aquela que permite aos desenvolvedores reproduzir e diagnosticar: as especificações do ambiente de teste (hardware, software, rede), o perfil de carga (número de usuários concorrentes, padrão de requisições), o tempo de resposta medido, e o requisito de performance relevante que foi violado. Esses dados objetivos permitem que os desenvolvedores reproduzam as condições e investiguem a causa. A opção sobre opinião de arquitetura é subjetiva. A opção sobre índice de banco de dados sugerido é uma decisão de desenvolvimento — a sugestão do testador pode estar incorreta e não é sua responsabilidade. A opção sobre nomes de usuários é irrelevante para o diagnóstico. Apenas a opção sobre especificações de ambiente, perfil de carga, tempo de resposta e requisito fornece os dados técnicos necessários para investigar um defeito de performance.",
+    "exp_en_novo": "For a performance defect, the most critical information is what allows developers to reproduce and diagnose: the test environment specifications (hardware, software, network), the load profile (number of concurrent users, request pattern), the measured response time, and the relevant performance requirement that was violated. This objective data enables developers to reproduce the conditions and investigate the cause. The option about architecture opinion is subjective. The option about suggested database index is a development decision — the tester's suggestion may be incorrect and is not the tester's responsibility. The option about user names is irrelevant to diagnosis. Only the option about environment specifications, load profile, measured response time, and requirement provides the technical data needed to investigate a performance defect."
+  },
+  {
+    "id": "ch5-65",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção A fornece a informação apropriada para investigação' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Para um defeito de segurança como injeção de SQL, o relatório de defeito deve incluir a string exata de entrada maliciosa usada (para que a equipe possa reproduzir), o comportamento esperado (entrada deve ser rejeitada ou sanitizada), o comportamento observado (dados do banco foram retornados), e o impacto potencial (vazamento de dados, acesso não autorizado). Essa informação objetiva permite que a equipe de segurança confirme, investigue e corrija. A opção sobre recomendação para demitir o desenvolvedor é anti-profissional e não faz parte de um relatório de defeito. A opção sobre reescrita do módulo em pseudocódigo é responsabilidade do desenvolvedor, não do testador. A opção sobre lista de clientes com dados pessoais seria em si uma violação de privacidade e não é apropriada em um relatório de defeito. Apenas a opção sobre string maliciosa, comportamentos esperado/observado e impacto potencial fornece a informação apropriada para investigação.",
+    "exp_en_novo": "For a security defect such as SQL injection, the defect report should include the exact malicious input string used (so the team can reproduce), the expected behavior (input should be rejected or sanitized), the observed behavior (database data was returned), and the potential impact (data breach, unauthorized access). This objective information allows the security team to confirm, investigate, and remediate. The option about recommendation to fire the developer is unprofessional and not part of a defect report. The option about rewriting the module in pseudocode is the developer's responsibility, not the tester's. The option about list of customers with personal data would itself be a privacy violation and is not appropriate in a defect report. Only the option about malicious input string, expected/observed behaviors, and potential impact provides the appropriate investigation information."
+  },
+  {
+    "id": "ch5-66",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Cada uma das quatro referências nomeia o conteúdo distintivo (status word) da respectiva opção — 'Reaberto', 'Adiado', 'Novo' e 'Fechado' — permitindo autocorreção mesmo com ordem embaralhada.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch5-67",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção C identifica o conteúdo técnico que está genuinamente faltando' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "O relatório enviado carece da informação técnica necessária para investigação: o resultado esperado (o que deve acontecer quando se clica em login), o resultado real (precisamente o que aconteceu — mensagem de erro, página em branco, travamento, etc.), o ambiente (navegador, sistema operacional, versão) e passos detalhados para reproduzir. Sem estes, os desenvolvedores não podem reproduzir ou diagnosticar o problema. A opção sobre ID e título do defeito é tipicamente adicionada pela ferramenta de rastreamento de defeitos e não é o elemento crítico mais importante que falta. A opção sobre nome do desenvolvedor é uma decisão de atribuição, não conteúdo de investigação. A opção sobre data do relatório é tipicamente auto-estampada pela ferramenta. Apenas a opção sobre resultado esperado, real, ambiente e passos para reproduzir identifica o conteúdo técnico que está genuinamente faltando e torna o relatório inadequado.",
+    "exp_en_novo": "The submitted report lacks the technical information needed to investigate: the expected result (what should happen when login is clicked), the actual result (precisely what happened — error message, blank page, hang, etc.), the environment (browser, OS, version), and detailed steps to reproduce. Without these, developers cannot reproduce or diagnose the issue. The option about defect ID and title is typically added by the defect tracking tool and is not the most critical missing element. The option about developer name is an assignment decision, not investigation content. The option about report date is typically auto-stamped by the tool. Only the option about expected result, actual result, environment, and steps to reproduce identifies the technical content that is genuinely missing and makes the report inadequate."
+  },
+  {
+    "id": "ch6-11",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A conclusão 'Apenas a opção A descreve as funções principais do gerenciamento de teste' é metadescrição e não nomeia o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "Uma ferramenta de gerenciamento de teste apoia o planejamento, acompanhamento e gerenciamento das atividades de teste, incluindo gerenciar casos de teste, agendar a execução de teste e manter a rastreabilidade entre requisitos e testes. A opção sobre execução de scripts automatizados descreve uma ferramenta de execução de teste. A opção sobre análise de cobertura (white-box) descreve uma ferramenta de análise de cobertura. A opção sobre simulação de usuários concorrentes descreve uma ferramenta de teste de performance/carga. Apenas a opção sobre gerenciamento de casos de teste, cronogramas e rastreabilidade descreve as funções principais do gerenciamento de teste.",
+    "exp_en_novo": "A test management tool supports the planning, tracking, and management of testing activities, including managing test cases, scheduling test execution, and maintaining traceability between requirements and tests. The option about executing automated scripts describes a test execution tool. The option about coverage analysis (white-box) describes a coverage analysis tool. The option about simulating concurrent users describes a performance/load testing tool. Only the option about managing test cases, schedules, and traceability describes the core functions of test management."
+  },
+  {
+    "id": "ch6-12",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "As três referências (B/C/D) nomeiam positivamente o conteúdo distintivo de cada opção (esforço de introdução inicial, manutenção dos ativos, negligência do projeto de teste); o setup já nomeia a resposta correta (excesso de confiança na ferramenta).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch6-13",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "As três referências (A/C/D) nomeiam positivamente o conteúdo distintivo (análise estática, preparação de dados de teste, gerenciamento de teste); o setup já nomeia a resposta correta (ferramenta de execução de teste).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch6-14",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "As três referências (A/B/D) nomeiam positivamente o conteúdo distintivo (teste de performance, execução de teste, medição de cobertura); o setup já nomeia a resposta correta (análise estática).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ch6-15",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência 'opção A' no final da primeira oração não traz o tema em proximidade imediata à letra (a atividade está em oração anterior); reescrita por tema preserva a cadeia de eliminação.",
+    "exp_pt_novo": "O time já confirmou que ambas as ferramentas atendem aos seus requisitos funcionais e técnicos, então já não está mais executando a opção sobre avaliação da ferramenta contra requisitos. Também não está executando a opção sobre análise de custo-benefício nem a opção sobre compreensão da tecnologia usada pela ferramenta. O foco do time em atributos específicos do fornecedor — estabilidade financeira, qualidade do suporte ao cliente, reputação e histórico de investimento — é a definição clássica de avaliação do fornecedor, que é um dos fatores de seleção de ferramenta identificados no syllabus do CTFL.",
+    "exp_en_novo": "The team has already confirmed that both tools meet their functional and technical requirements, so they are no longer performing the option about evaluation of the tool against requirements. They are also not performing the option about cost-benefit analysis nor the option about understanding of the technology used by the tool. The team's focus on vendor-specific attributes — financial stability, customer support quality, reputation, and the vendor's investment history — is the textbook definition of vendor evaluation, which is one of the tool selection factors identified in the CTFL syllabus."
+  },
+  {
+    "id": "agile-119",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'Apenas a opção C' é meta-descrição (segue essa estrutura) sem nomear o conteúdo distintivo da opção correta; reescrita por tema.",
+    "exp_pt_novo": "O formato padrão de user story é 'Como um <papel>, quero <capacidade> para que <valor>.' Apenas a opção sobre a user story começando com 'Como usuário esquecido, quero receber link de redefinição de senha...' segue essa estrutura com papel, capacidade e valor claramente expressos.",
+    "exp_en_novo": "The standard user-story format is 'As a <role>, I want <capability> so that <value>.' Only the option about the user story beginning with 'As a forgetful user, I want to receive a password reset link...' follows that structure with role, capability, and value clearly expressed."
+  },
+  {
+    "id": "agile-120",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'Apenas a opção D' é meta-descrição sem nomear o conteúdo distintivo; reescrita por tema.",
+    "exp_pt_novo": "O formato padrão é 'Como um <papel>, quero <capacidade> para que <valor>.' Apenas a opção sobre a user story começando com 'Como comprador, quero meu carrinho salvo entre sessões...' corresponde a essa estrutura com papel, capacidade e valor claramente declarados.",
+    "exp_en_novo": "The standard format is 'As a <role>, I want <capability> so that <value>.' Only the option about the user story beginning with 'As a shopper, I want my cart saved between sessions...' matches this structure with role, capability, and value clearly stated."
+  },
+  {
+    "id": "ctalta-20",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência agrupada 'B e D são fatores de projeto/marketing' combina os temas em um único predicado sem parear cada letra com seu tema específico; reescrita por tema.",
+    "exp_pt_novo": "Conforme o syllabus §2.1, o TA contribui para determinar o nível de risco estimando vários fatores: 'frequência de uso e criticidade das funcionalidades afetadas; criticidade dos objetivos de negócio afetados; dano financeiro, ambiental e reputacional; qualidade da base de teste; necessidades legais ou de segurança.' A opção sobre a lista completa do syllabus reproduz essa lista. A opção sobre probabilidade e impacto é a visão simplificada do CTFL; a opção sobre produtividade da equipe e orçamento do projeto e a opção sobre cronograma de marketing e orçamento publicitário não estão na lista do syllabus.",
+    "exp_en_novo": "Per syllabus §2.1, the TA contributes to determining the risk level by estimating several factors: 'frequency of use and criticality of the affected features; criticality of the affected business objectives; financial, environmental, and reputational damage; quality of the test basis; legal or safety needs.' The option about the complete syllabus list reproduces this list. The option about probability and impact is the simplified CTFL view; the option about team productivity and project budget and the option about marketing schedule and advertising budget are not in the syllabus list."
+  },
+  {
+    "id": "ctalta-106",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as referências (A, B, C, D) nomeiam positivamente o tema como predicado ('A é metadado administrativo', 'C são artefatos de pós-execução', 'D salta para automação/cobertura', 'A opção B lista exatamente esses'); padrão FP por precedente (ch4-73/ch4-76).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctalta-116",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as referências nomeiam positivamente o tema: D com tema em parênteses (EnterMemberID, SubmitEligibilityCheck, VerifyEligibilityStatus); A, B e C com tema como predicado. Padrão FP por precedente.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctalta-127",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "A referência agrupada 'A/B/D declaram incorretamente a relação' é pura negação sem nomear o conteúdo distintivo de cada uma; reescrita por tema.",
+    "exp_pt_novo": "Para bordas abertas (>, <), o valor de borda em si está fora do domínio, então o ponto ON é fora do domínio (um ponto OFF) e o ponto dentro logo a seguir é o alvo de teste. Para bordas fechadas (>=, <=), o valor de borda está dentro do domínio (ponto ON). A opção sobre (x>0) ter x=0 como OFF e (x>=0) ter x=0 como ON descreve corretamente isso. As opções sobre ON/OFF idênticos, bordas abertas sem ON, ou bordas abertas com dobro de casos declaram incorretamente a relação.",
+    "exp_en_novo": "For open borders (>, <), the boundary value itself is outside the domain, so the ON point is OFF-domain (an OFF point) and the in-point just inside is the test target. For closed borders (>=, <=), the boundary value is inside the domain (ON point). The option about (x>0) having x=0 as OFF and (x>=0) having x=0 as ON correctly describes this. The options about identical ON/OFF points, open borders without ON points, or open borders needing twice as many cases misstate the relationship."
+  },
+  {
+    "id": "ctalta-140",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'Apenas D está correto' é meta sem nomear conteúdo distintivo, e referência agrupada 'A/B/C são caminhos de ida' combina temas; reescrita por tema.",
+    "exp_pt_novo": "A cobertura round-trip exige caminhos que saiam de um estado e retornem a ele (ou a um estado relacionado) antes de continuar. A opção sobre o caminho Vazio→Com Itens→Checkout→Com Itens→Checkout→Pago mostra um round-trip. As opções sobre os caminhos Vazio→Com Itens→Checkout, Vazio→Com Itens, ou Vazio→Com Itens→Checkout→Pago são caminhos de ida sem retorno. Apenas a opção sobre o round-trip por Checkout está correta.",
+    "exp_en_novo": "Round-trip coverage requires paths that leave a state and return to it (or a related state) before continuing. The option about the path Empty→Has Items→Checkout→Has Items→Checkout→Paid shows a round-trip. The options about the paths Empty→Has Items→Checkout, Empty→Has Items, or Empty→Has Items→Checkout→Paid are one-way paths without return. Only the option about the round-trip through Checkout is correct."
+  },
+  {
+    "id": "ctalta-175",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as referências nomeiam positivamente o tema como predicado ('A opção B rotula... como completude', 'C rotula como corretude', 'D afirma... que nada é afetado'); resposta correta nomeada no setup e na conclusão. Padrão FP por precedente.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctalta-183",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as referências nomeiam positivamente o tema: A, B e D com tema em parênteses; C com tema como predicado ('é um defeito de instalabilidade'). Padrão FP por precedente.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctaltm-07",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Todas as referências usam o padrão 'A opção X descreve [tema]' (desenvolvedores, testadores/líderes/gerentes, operações); resposta correta nomeada no setup via citação do syllabus. Padrão FP por precedente (ch4-73).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctaltm-15",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e D estão erradas (contagem e intercambialidade)' combina temas em único parêntese; conclusão 'A opção C alinha corretamente' é meta. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, diferentes níveis de teste têm diferentes objetivos que orientam diferentes atividades de gerenciamento: teste de componente tem como alvo unidades individuais, teste de integração tem como alvo interações entre componentes, teste de sistema tem como alvo comportamento de ponta a ponta contra requisitos e teste de aceite valida a adequação ao uso com envolvimento de stakeholders. A opção sobre o alinhamento correto (componente→unidades, sistema→ponta-a-ponta, aceite→adequação ao uso) está correta. A opção sobre todos os níveis preocupados apenas com contagem está errada (contagem); a opção sobre sistema e aceite intercambiáveis está errada (intercambialidade); a opção sobre atribuição incorreta de níveis (componente→UAT, aceite→unidade) também está errada.",
+    "exp_en_novo": "Per the syllabus, different test levels have different objectives that drive different management activities: component testing targets individual units, integration testing targets interactions between components, system testing targets end-to-end behavior against requirements, and acceptance testing validates fitness for use with stakeholder involvement. The option about correct alignment (component→units, system→end-to-end, acceptance→fitness for use) is correct. The option about all levels caring only about test case count is wrong (count); the option about system and acceptance being interchangeable is wrong (interchangeability); the option about misassigned levels (component→UAT, acceptance→unit coverage) is also wrong."
+  },
+  {
+    "id": "ctaltm-17",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'as opções B e D os confundem' compartilha predicado entre duas letras sem pareamento individual; conclusão 'A opção A captura essa distinção' é meta. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus e o glossário ISTQB, o teste de confirmação (re-teste) confirma que um defeito específico foi corrigido executando novamente o teste que originalmente falhou. O teste de regressão verifica que as mudanças não introduziram defeitos em áreas não alteradas. Eles servem a propósitos diferentes e ambos são necessários após uma mudança. A opção sobre confirmação e regressão com propósitos distintos captura essa distinção corretamente; as opções sobre confirmação e regressão iguais e sobre apenas regressão necessária os confundem; a opção sobre papéis invertidos (regressão verifica a correção, confirmação verifica novos defeitos) os inverte.",
+    "exp_en_novo": "Per the syllabus and ISTQB glossary, confirmation testing (re-testing) confirms that a specific defect is fixed by re-executing the test that originally failed. Regression testing verifies that changes have not introduced defects in unchanged areas. They serve different purposes and both are needed after a change. The option about confirmation and regression with distinct purposes captures this distinction correctly; the options about confirmation and regression being identical and about regression only being needed conflate them; the option about reversed roles (regression verifies the fix, confirmation verifies new defects) reverses them."
+  },
+  {
+    "id": "ctaltm-18",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e D ignoram o SDLC iterativo' compartilha predicado; conclusão 'A opção B reflete a combinação' é meta. Reescrita por tema.",
+    "exp_pt_novo": "Analisando o contexto: farmacêutico regulado → documentação rastreável para auditoria exigida; SDLC iterativo-incremental → planejamento leve por sprint; núcleo estável com automação → reutilizar regressão automatizada; novos recursos → exploratório manual; equipe distribuída → planejamento e coordenação essenciais. A opção sobre plano leve por sprint, regressão automatizada, exploratório e documentação rastreável reflete a combinação apropriada segundo o syllabus sobre gerenciamento orientado por contexto. As opções sobre plano único antecipado e manual sem documentação e sobre apenas gerenciamento sequencial com plano antecipado ignoram o SDLC iterativo; a opção sobre pular planejamento e depender de exploratório e unit tests ignora regulação e planejamento.",
+    "exp_en_novo": "Analyzing the context: regulated pharmaceutical → audit-traceable documentation required; iterative-incremental SDLC → lightweight per-sprint planning; stable core with automation → reuse automated regression; new features → manual exploratory; distributed team → planning and coordination essential. The option about a lightweight per-sprint plan, automated regression, exploratory, and audit-traceable documentation reflects the appropriate blend per the syllabus on context-driven test management. The options about a single up-front plan with manual testing and no documentation and about only sequential management with an up-front plan ignore the iterative SDLC; the option about skipping planning and relying on exploratory and unit tests ignores regulation and planning needs."
+  },
+  {
+    "id": "ctaltm-19",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e B forçam uma abordagem' compartilha predicado; conclusão 'A opção C reflete essa análise' é meta; referência 'a opção D não tem suporte' é pura negação. Reescrita por tema.",
+    "exp_pt_novo": "O aplicativo móvel se beneficia de teste contínuo ágil e planejamento leve; o sistema de back-office se encaixa em planejamento sequencial com portões de critérios de saída; a regulação exige rastreabilidade em ambos. O syllabus apoia gerenciamento de teste orientado por contexto: em projetos híbridos, aplique cada abordagem onde se encaixa e use ferramentas compartilhadas para preocupações transversais como rastreabilidade. A opção sobre abordagem híbrida (ágil no móvel, sequencial no back-office) com rastreabilidade compartilhada reflete essa análise. As opções sobre tratar ambos identicamente com abordagem ágil e sobre tratar ambos identicamente com abordagem sequencial forçam uma abordagem em ambos; a opção sobre terceirizar todo o teste não tem suporte.",
+    "exp_en_novo": "The mobile app benefits from agile continuous testing and lightweight planning; the back-office system fits sequential planning with exit-criteria gates; regulation requires traceability across both. The syllabus supports context-driven test management: in hybrid projects, apply each approach where it fits and use shared tooling for cross-cutting concerns like traceability. The option about a hybrid approach (agile for mobile, sequential for back-office) with shared traceability reflects this analysis. The options about treating both subsystems identically with the agile approach and about treating both identically with the sequential approach force one approach on both; the option about outsourcing all testing is unsupported."
+  },
+  {
+    "id": "ctaltm-25",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Única referência 'opção C' nomeia positivamente o conteúdo distintivo (erro comum do candidato de tratar frequência de uso como fator de probabilidade) e explica a correção; resposta correta nomeada no setup. Padrão FP por precedente.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "ctaltm-27",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C aplica os três princípios' é meta (anáfora); referências 'a opção B ignora o peso do risco' e 'a opção D pula o risco mais alto' são pura negação sem nomear conteúdo distintivo. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, 'as pessoas mais qualificadas devem testar os itens de teste com os níveis de risco mais altos'; 'testes para níveis de risco mais altos devem começar mais cedo e usar técnicas de teste mais rigorosas, enquanto testes para níveis de risco mais baixos podem começar mais tarde e devem usar técnicas menos rigorosas'; depth-first é apropriado quando mitigar os riscos mais altos cedo é crítico. A opção sobre sênior no alto risco, depth-first e leve no baixo risco aplica os três princípios. A opção sobre júnior na autenticação e sênior nos relatórios atribui sênior ao baixo risco; a opção sobre ambos igualmente em todos os módulos ignora o peso do risco; a opção sobre pular autenticação pula o risco mais alto.",
+    "exp_en_novo": "Per the syllabus, 'people with the highest qualifications should test the test items with the highest risk levels'; 'tests for higher risk levels should begin earlier and use more rigorous test techniques, while tests for lower risk levels can start later and should use less rigorous techniques'; depth-first is appropriate when mitigating the highest risks early is critical. The option about senior on the high risk, depth-first, and lightweight on the low risk applies all three principles. The option about junior on authentication and senior on reports misassigns senior to low risk; the option about both testers equally on all modules ignores risk weighting; the option about skipping authentication skips the highest risk."
+  },
+  {
+    "id": "ctaltm-28",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e B servem apenas um stakeholder' compartilha predicado entre duas letras sem pareamento individual. Reescrita por tema.",
+    "exp_pt_novo": "O syllabus afirma: 'Na prática, os testes geralmente começam com a abordagem depth-first, mas, à medida que o tempo se torna mais limitado, eles mudam para a abordagem breadth-first, testando todos os itens de risco restantes pelo menos uma vez.' Isso equilibra naturalmente ambas as perspectivas: depth-first primeiro aborda a preocupação do oficial de segurança, depois breadth-first aborda o desejo do Product Owner por um snapshot geral de qualidade. As opções sobre apenas breadth-first e sobre apenas depth-first servem apenas um stakeholder; a opção sobre todos os testes em ordem arbitrária ignora priorização. A opção sobre depth-first primeiro, depois breadth-first está correta.",
+    "exp_en_novo": "The syllabus states: 'In practice, tests often start with the depth-first approach, but, as time becomes more limited, they switch to the breadth-first approach, testing all remaining risk items at least once.' This naturally balances both perspectives: depth-first first addresses the security officer's concern, then breadth-first addresses the Product Owner's wish for an overall quality snapshot. The options about breadth-first only and about depth-first only serve only one stakeholder; the option about running all tests in arbitrary order ignores prioritization. The option about depth-first first, then breadth-first is correct."
+  },
+  {
+    "id": "ctaltm-31",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A, B e D não são métricas' compartilha predicado de negação entre três letras; conclusão 'A opção C reflete diretamente' é meta. Reescrita por tema.",
+    "exp_pt_novo": "O syllabus lista perguntas de sucesso incluindo 'A maioria dos defeitos de alta prioridade foi encontrada no início da execução do teste?' e 'Os stakeholders relevantes foram envolvidos ou representados na análise de risco?' As opções sobre contar casos executados independentemente do risco, contar ferramentas compradas e contar stakeholders na reunião de abertura não são métricas de sucesso listadas no syllabus. A opção sobre verificar detecção precoce de defeitos de alta prioridade reflete diretamente a pergunta de sucesso do syllabus sobre detecção precoce de defeitos de alta prioridade.",
+    "exp_en_novo": "The syllabus lists success questions including 'Were the majority of high priority defects found early in the test execution?' and 'Were the relevant stakeholders involved or represented in the risk analysis?' The options about counting executed test cases regardless of risk, counting tools purchased, and counting stakeholders at the kickoff meeting are not syllabus-listed success metrics. The option about checking early detection of high-priority defects directly reflects the syllabus success question about early detection of high-priority defects."
+  },
+  {
+    "id": "ctaltm-34",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B integra esses fatores' é meta (anáfora); referência agrupada 'As opções A, C e D ignoram restrições de domínio' compartilha predicado de negação. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, a abordagem de teste do projeto deve ser derivada analisando: domínio (farmacêutico — normas, padrões, práticas afetam rigor e documentação), metas organizacionais, metas e tipo de projeto, recursos de teste e SDLC. O contexto farmacêutico requer testes funcionais rigorosos baseados em requisitos, rastreabilidade, UAT focado em riscos à segurança do paciente, habilidades especializadas (validação, segurança) e documentação pronta para auditoria. A opção sobre testes rigorosos baseados em requisitos, rastreabilidade, UAT focado em segurança, especialistas externos e documentação para auditoria integra esses fatores. As opções sobre apenas exploratório interno, pular teste inteiramente e terceirizar para fornecedor único sem supervisão ignoram restrições de domínio.",
+    "exp_en_novo": "Per the syllabus, the project test approach must be derived by analyzing: domain (pharmaceutical — norms, standards, practices affect rigor and documentation), organizational goals, project goals and type, test resources, and SDLC. The pharmaceutical context requires rigorous requirements-based tests, traceability, UAT focused on patient-safety risks, specialized skills (validation, security), and audit-ready documentation. The option about rigorous requirements-based tests, traceability, UAT focused on patient-safety, external specialists, and audit-ready documentation integrates these factors. The options about pure exploratory testing in-house, skipping testing entirely, and outsourcing to a single vendor with no oversight ignore domain constraints."
+  },
+  {
+    "id": "ctaltm-36",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D é a crítica correta' é meta; referências '(opção B errada)' e 'a opção A está errada' são pura negação sem nomear conteúdo distintivo. Reescrita por tema.",
+    "exp_pt_novo": "SMART = Específico, Mensurável, Atingível, Relevante, com prazo definido. 'Melhorar a qualidade do sistema' é vago (não específico), não dá métrica (não mensurável), não tem prazo (não tem prazo definido). A opção sobre não específico, não mensurável e sem prazo é a crítica correta. Comprimento não é um critério SMART, então a opção sobre muito longo (SMART requer < 10 palavras) está errada; especificidade é necessária, então a opção sobre muito específico e deveria ser mais abstrato inverte o critério; a opção sobre totalmente SMART porque qualidade é importante está errada porque os critérios SMART não são satisfeitos.",
+    "exp_en_novo": "SMART = Specific, Measurable, Achievable, Relevant, Time-bound. 'Improve the quality of the system' is vague (not specific), gives no metric (not measurable), has no deadline (not time-bound). The option about not specific, not measurable, and not time-bound is correct. Length is not a SMART criterion, so the option about too long (SMART requires < 10 words) is wrong; specificity is required, so the option about too specific and should be more abstract reverses it; the option about fully SMART because quality is important is wrong because SMART criteria are not satisfied."
+  },
+  {
+    "id": "ctaltm-37",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A satisfaz todos os cinco critérios' é meta (anáfora); referência agrupada 'As opções B, C e D são vagas e não mensuráveis' compartilha predicado. Reescrita por tema.",
+    "exp_pt_novo": "SMART = Específico (95% das transações, limite de 2 segundos), Mensurável (menos de 2 segundos, execução de pico de 30 minutos), Atingível (limite realista), Relevante (objetivo de performance), com prazo definido (até o final da fase de teste de sistema). A opção sobre 95% das transações abaixo de 2 segundos em pico de 30 minutos até o fim do teste de sistema satisfaz todos os cinco critérios. As opções sobre performance boa para usuários felizes, todas as transações rápidas e sistema sem travar sob carga são vagas e não mensuráveis.",
+    "exp_en_novo": "SMART = Specific (95% of transactions, 2-second threshold), Measurable (under 2 seconds, 30-minute peak-load run), Achievable (realistic threshold), Relevant (performance objective), Time-bound (by end of system test phase). The option about 95% of transactions under 2 seconds in a 30-minute peak run by end of system test satisfies all five criteria. The options about performance good enough for happy users, all transactions fast, and no crash under load are vague and unmeasurable."
+  },
+  {
+    "id": "ctaltm-40",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e C não são abordagens reconhecidas' compartilha predicado de negação entre duas letras. Reescrita por tema (referência 'opção B' com tema em parênteses já é FP, mas reescrita por consistência).",
+    "exp_pt_novo": "Segundo o syllabus, a abordagem de melhoria baseada em modelos usa um modelo de referência externo (como CMMI ou TMMi) para avaliar o processo de teste atual contra as melhores práticas, identificar lacunas e definir ações de melhoria. A abordagem baseada em análise (que propõe analisar dados de defeitos e métricas) usa métricas e dados de defeitos em vez de um modelo de referência. As opções sobre depender do sentimento da equipe e sobre apenas brainstorming não estruturado não são abordagens reconhecidas.",
+    "exp_en_novo": "Per the syllabus, the model-based improvement approach uses an external reference model (such as CMMI or TMMi) to assess the current test process against best practices, identify gaps, and define improvement actions. The analysis-based approach (which proposes analyzing defect data and metrics) uses metrics and defect data rather than a reference model. The options about relying on the team's gut feeling and about only unstructured brainstorming are not recognized approaches."
+  },
+  {
+    "id": "ctaltm-43",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura essa abordagem completa' é meta (anáfora); referência agrupada 'As opções A e B deturpam a prática' compartilha predicado; 'a opção D cancela uma atividade útil' é negação. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, retrospectivas avaliam processos de teste coletando dados qualitativos e quantitativos, identificando melhorias de processo, documentando lições aprendidas e criando ações de acompanhamento. O syllabus avisa explicitamente contra sessões orientadas a culpa e contra ignorar problemas. A opção sobre coletar dados quali/quanti, identificar melhorias, documentar lições e criar ações de acompanhamento captura essa abordagem completa. As opções sobre pular coleta para atribuir culpa e sobre apenas documentar feedback positivo deturpam a prática; a opção sobre cancelar a retrospectiva cancela uma atividade útil.",
+    "exp_en_novo": "Per the syllabus, retrospectives evaluate test processes by collecting qualitative and quantitative data, identifying process improvements, documenting lessons learned, and creating follow-up actions. The syllabus explicitly warns against blame-oriented sessions and against ignoring problems. The option about collecting qualitative/quantitative data, identifying improvements, documenting lessons, and creating follow-up actions captures this. The options about skipping data collection to assign blame and only documenting positive feedback distort the practice; the option about canceling the retrospective cancels a useful activity."
+  },
+  {
+    "id": "ctaltm-45",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções B, C e D contradizem práticas... ao pular avaliação, esconder custos ou substituir humanos' lista temas em predicado combinado sem parear cada letra com seu tema. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, as práticas recomendadas para introdução de ferramentas incluem realizar um projeto piloto para avaliar a ferramenta em um contexto controlado, treinar a equipe, gerenciar expectativas e fazer uma adoção faseada. A opção sobre projeto piloto antes da adoção completa é explicitamente uma prática recomendada. A opção sobre pular avaliação e implantar em todos simultaneamente contradiz práticas ao pular avaliação; a opção sobre esconder o custo dos stakeholders contradiz práticas ao esconder custos; a opção sobre substituir testadores imediatamente contradiz práticas ao substituir humanos.",
+    "exp_en_novo": "Per the syllabus, best practices for tool introduction include performing a pilot project to evaluate the tool in a controlled context, training the team, managing expectations, and phasing the rollout. The option about a pilot project before full rollout is explicitly a best practice. The option about skipping evaluation and rolling out to all simultaneously contradicts practices by skipping evaluation; the option about hiding the tool cost from stakeholders contradicts practices by hiding costs; the option about replacing all testers immediately contradicts practices by replacing humans."
+  },
+  {
+    "id": "ctaltm-46",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B captura isso' é meta (anáfora) sem nomear conteúdo distintivo na proximidade imediata da letra; 'As outras opções' lista temas sem parear com letras. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, as práticas recomendadas para introdução de ferramentas incluem projetos piloto, treinamento, gerenciamento de expectativas e adoção faseada — exatamente as atividades que o Gerente de Teste está realizando. A opção sobre seguir práticas recomendadas para introdução (piloto, treinamento, adoção faseada) captura isso. As outras opções caracterizam incorretamente a abordagem: as opções sobre avoidance de risco (equipe com medo), perda de tempo (todas funcionam igual) e aposentadoria da ferramenta (equipe abandonando) estão incorretas.",
+    "exp_en_novo": "Per the syllabus, best practices for tool introduction include pilot projects, training, expectation management, and phased rollout — exactly the activities the Test Manager is performing. The option about following best practices for tool introduction (pilot, training, phased rollout) captures this. The other options mischaracterize the approach: the options about risk-avoidance (team afraid), waste of time (all tools the same), and tool retirement (team abandoning) are incorrect."
+  },
+  {
+    "id": "ctaltm-49",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A captura tudo isso' é meta (anáfora); referência agrupada 'As opções B, C e D reduzem o plano' compartilha predicado. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, um plano de seleção de ferramentas deve cobrir necessidades e restrições, critérios de avaliação técnicos e de negócio, ferramentas candidatas, avaliação piloto, análise de ROI/custo-benefício e riscos associados à seleção e adoção. A opção sobre necessidades, critérios técnicos/de negócio, candidatos, piloto, ROI e riscos captura tudo isso. As opções sobre apenas o preço da mais barata, apenas nomes de três fornecedores sem critério e apenas ordem de compra sem avaliação reduzem o plano a uma única dimensão e ignoram os requisitos abrangentes do syllabus.",
+    "exp_en_novo": "Per the syllabus, a tool selection plan should cover needs and constraints, technical and business evaluation criteria, candidate tools, a pilot evaluation, ROI/cost-benefit analysis, and risks associated with the selection and rollout. The option about needs, technical/business criteria, candidates, pilot, ROI, and risks captures all of these. The options about only the price of the cheapest tool, only the names of three vendors without any criteria, and only a purchase order with no evaluation reduce the plan to a single dimension and ignore the syllabus' comprehensive requirements."
+  },
+  {
+    "id": "ctaltm-53",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A é um exemplo claro' é meta; referência agrupada 'As opções B, C e D não são métricas' compartilha predicado de negação. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, exemplos de coletar e avaliar métricas usando ferramentas incluem progresso da execução do teste, densidade de defeitos por módulo, tendências de cobertura de automação e medições quantitativas semelhantes obtidas por meio da ferramenta de gerenciamento de teste ou automação. A opção sobre ferramenta de gerenciamento para rastrear execução, densidade de defeitos por módulo e tendência de cobertura de automação é um exemplo claro. As opções sobre contar o número de testadores, medir o tamanho do escritório e rastrear a marca dos laptops não são métricas de teste que o syllabus associa à coleta baseada em ferramentas.",
+    "exp_en_novo": "Per the syllabus, examples of collecting and evaluating metrics using tools include test execution progress, defect density by module, automation coverage trends, and similar quantitative measurements obtained through the test management or test automation tool. The option about using a test management tool to track execution, defect density by module, and automation coverage trend is a clear example. The options about counting the number of testers, measuring the size of the office, and tracking the brand of laptops are not test metrics that the syllabus associates with tool-based collection."
+  },
+  {
+    "id": "ctaltm-59",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura isso' é meta (anáfora); referência agrupada 'As opções A e B ignoram ou reagem excessivamente' compartilha predicado. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, ações de controle acionadas por métricas incluem análise de causa-raiz, replanejamento, repriorização, ajustes de recursos, ajustes de cronograma e relato aos stakeholders. A opção sobre análise de causa-raiz, replanejamento, ajustes de recursos/cronograma e relato aos stakeholders captura isso. As opções sobre ignorar as métricas e continuar e sobre parar teste e lançar o produto ignoram ou reagem excessivamente às métricas; a opção sobre demitir a equipe de teste é uma ação extrema de pessoal não justificada por métricas.",
+    "exp_en_novo": "Per the syllabus, control actions triggered by metrics include root cause analysis, replanning, reprioritization, resource adjustments, schedule adjustments, and stakeholder reporting. The option about root cause analysis, replanning, resource/schedule adjustments, and stakeholder reporting captures this. The options about ignoring metrics and continuing and about stopping testing and releasing ignore or overreact; the option about firing the test team is an extreme personnel action unjustified by metrics."
+  },
+  {
+    "id": "ctaltm-60",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D fornece o quadro completo' é meta (anáfora); referência agrupada 'As opções A, B e C escondem informações' compartilha predicado. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, relatórios de teste que permitem decisões dos stakeholders devem incluir resultados relevantes do teste, informações de risco residual, defeitos abertos com severidade e uma recomendação clara. A opção sobre progresso, detalhamento, defeitos de alta severidade, risco residual e decisão recomendada fornece o quadro completo. As opções sobre apenas 90% de aprovação omitindo falhas, apenas número de testes executados sem cobertura de risco e 'tudo bem porque mais da metade passou' escondem informações críticas e enganariam os stakeholders.",
+    "exp_en_novo": "Per the syllabus, test reports that enable stakeholder decisions must include relevant test results, residual risk information, open defects with severity, and a clear recommendation. The option about progress, breakdown, remaining high-severity defects, residual risk, and a recommended decision provides the complete picture. The options about only a 90% pass rate omitting failures, only test count without risk coverage, and 'fine because more than half passed' hide critical information and would mislead stakeholders."
+  },
+  {
+    "id": "ctaltm-61",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada '(opções B, C)' compartilha predicado ('relatórios de tamanho único') entre duas letras sem pareamento individual; resposta correta (A) nomeada no setup. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, relatórios de teste devem ser adaptados às necessidades dos stakeholders para permitir a tomada de decisão. Executivos precisam de informações resumidas e orientadas a decisões; desenvolvedores precisam de informações detalhadas e acionáveis de defeitos. Adaptar relatórios garante que cada grupo possa agir com base nas informações. A opção sobre adaptar relatórios (resumo executivo para executivos, detalhado para desenvolvedores) atende às necessidades dos stakeholders. As opções sobre enviar o mesmo log detalhado para ambos e sobre enviar apenas o resumo executivo para ambos não atendem às necessidades dos stakeholders; a opção sobre não enviar relatório nenhum também não atende.",
+    "exp_en_novo": "Per the syllabus, test reports must be tailored to stakeholder needs to enable decision-making. Executives need summarized, decision-oriented information; developers need detailed, actionable defect information. Tailoring reports ensures each group can act on the information. The option about tailoring reports (executive summary for executives, detailed for developers) serves stakeholder needs. The options about sending the same detailed defect log to both groups and about sending only the executive summary to both do not serve them; the option about sending no report at all also fails."
+  },
+  {
+    "id": "ctaltm-67",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C combina essas adequadamente' é meta (anáfora); referência agrupada 'As opções A, B e D ou pulam estimativa, recusam-se a estimar ou usam dados irrelevantes' compartilha predicado listando três temas sem parear com letras. Reescrita por tema.",
+    "exp_pt_novo": "Segundo o syllabus, a técnica de estimativa mais apropriada depende do contexto: sem dados históricos, técnicas baseadas em especialistas (ex.: Delphi) funcionam; com requisitos bem definidos, estimativa bottom-up baseada em tarefas funciona; com equipes internas experientes, sessões de especialistas são críveis; com restrições de preço fixo, priorização baseada em risco garante que o escopo caiba no orçamento. A opção sobre combinar especialistas (Delphi), bottom-up e priorização baseada em risco combina essas adequadamente. A opção sobre sentimento de um único especialista sem documentação pula estimativa; a opção sobre recusar-se a estimar por falta de dados históricos recusa-se a estimar; a opção sobre usar apenas métricas de automação de outro projeto usa dados irrelevantes.",
+    "exp_en_novo": "Per the syllabus, the most appropriate estimation technique depends on context: with no historical data, expert-based techniques (e.g., Delphi) work; with well-defined requirements, task-based bottom-up estimation works; with experienced in-house teams, expert sessions are credible; with fixed-price constraints, risk-based prioritization ensures scope fits budget. The option about combining experts (Delphi), bottom-up, and risk-based prioritization combines these appropriately. The option about a single expert's gut feeling with no documentation skips estimation; the option about refusing to estimate because there is no historical data refuses to estimate; the option about using only test automation metrics from a different project uses irrelevant data."
+  },
+  {
+    "id": "ctaltm-68",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D combina ambos' é meta-predicado sem nomear o conteúdo distintivo de D; referência agrupada 'As opções A, B e C' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, quando dados históricos são abundantes, estimativa baseada em métricas é apropriada; a equipe experiente pode calibrar as estimativas com julgamento. A opção sobre estimativa baseada em métricas calibrada por julgamento especializado combina ambos. As opções sobre recusar-se a estimar porque dados são enganosos, usar apenas um palpite não informado e usar apenas métricas ignorando a expertise da equipe ignoram dados, equipe ou ambos.",
+    "exp_en_novo": "Per the syllabus, when historical data is abundant, metric-based estimation is appropriate; the experienced team can calibrate estimates with expert judgment. The option about metric-based estimation calibrated by expert judgment combines both. The options about refusing to estimate because data is misleading, using only an uninformed guess, and using only metrics ignoring the team's expertise ignore data, team, or both."
+  },
+  {
+    "id": "ctaltm-69",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A captura esse fluxo' é meta-predicado com anáfora ao setup; referência agrupada 'As opções B, C e D' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, um fluxo de trabalho típico de defeitos inclui estados como Novo, Atribuído, Aberto, Corrigido, Verificado, Fechado, com transições para Reaberto (quando a verificação falha), Rejeitado (inválido) e Adiado (postergado). A opção sobre o fluxo Novo → Atribuído → Aberto → Corrigido → Verificado → Fechado (com Reaberto/Rejeitado/Adiado) captura esse fluxo. As opções sobre os fluxos Novo → Fechado, Fechado → Novo → Corrigido e Corrigido → Verificado → Novo ou colapsam ou invertem o fluxo incorretamente.",
+    "exp_en_novo": "Per the syllabus, a typical defect workflow includes states such as New, Assigned, Open, Fixed, Verified, Closed, with transitions for Reopened (when verification fails), Rejected (invalid), and Deferred (postponed). The option about the flow New → Assigned → Open → Fixed → Verified → Closed (with Reopened/Rejected/Deferred) captures this workflow. The options about the flows New → Closed, Closed → New → Fixed, and Fixed → Verified → New either collapse or reverse the workflow incorrectly."
+  },
+  {
+    "id": "ctaltm-70",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B captura tudo isso' é meta-predicado com anáfora ao setup; referência agrupada 'As opções A, C e D' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, gerenciamento eficaz de defeitos requer ferramenta centralizada, workflow, campos obrigatórios, regras de propriedade, trilhas de auditoria e integração com teste/controle de versão. A opção sobre ferramenta centralizada com workflow, campos, propriedade, trilhas e integração captura tudo isso. As opções sobre rastrear em notas de papel, enviar apenas por e-mail e rastrear verbalmente em stand-ups não fornecem rastreabilidade ou confiabilidade.",
+    "exp_en_novo": "Per the syllabus, effective defect management requires a centralized tool, workflow, mandatory fields, ownership rules, audit trails, and integration with test/version control. The option about a centralized tool with workflow, fields, ownership, audit trails, and integration captures all of these. The options about tracking on paper notes, sending reports only by email, and tracking verbally during stand-ups do not provide traceability or reliability."
+  },
+  {
+    "id": "ctaltm-71",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura isso' é meta-predicado com anáfora ao setup; referência agrupada 'as opções A, B e D' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, o gerenciamento eficaz de defeitos requer participação multifuncional: testadores relatam e verificam, desenvolvedores corrigem, product owners/business analysts priorizam, suporte/operações fornecem informações de campo e rastreamento pós-lançamento. A opção sobre participantes multifuncionais (testadores, desenvolvedores, POs/BA, suporte/operações) com papéis definidos captura isso; as opções sobre apenas testadores, apenas desenvolvedores e apenas o patrocinador do projeto excluem participantes-chave e tornariam o gerenciamento de defeitos ineficaz.",
+    "exp_en_novo": "Per the syllabus, effective defect management requires cross-functional participation: testers report and verify, developers fix, product owners/business analysts prioritize, support/operations provide field information and post-release tracking. The option about cross-functional participants (testers, developers, POs/BAs, support/operations) with defined roles captures this; the options about only testers, only developers, and only the project sponsor exclude key participants and would make defect management ineffective."
+  },
+  {
+    "id": "ctaltm-72",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D aplica o princípio multifuncional' é meta-predicado que nomeia o princípio do syllabus, não o conteúdo distintivo de D; referência agrupada 'As opções A, B e C' combina três letras em predicado único de negação.",
+    "exp_pt_novo": "Segundo o syllabus, o gerenciamento eficaz de defeitos é multifuncional e requer todos os grupos de stakeholders relevantes. Operações é um desses grupos, especialmente para defeitos encontrados em produção. A opção sobre incluir representantes de operações na triagem de defeitos aplica o princípio multifuncional. As opções sobre ignorar a equipe de operações, continuar como está e fechar todos os defeitos de operações como inválidos contradizem o syllabus.",
+    "exp_en_novo": "Per the syllabus, effective defect management is cross-functional and requires all relevant stakeholder groups. Operations is one such group, especially for production-found defects. The option about including operations representatives in defect triage applies the cross-functional principle. The options about ignoring the operations team, continuing as-is, and closing all operations-reported defects as invalid contradict the syllabus."
+  },
+  {
+    "id": "ctaltm-74",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e C (...)' combina duas letras em predicado único sem parear cada tema à sua letra; referência 'a opção D contradiz a necessidade de rastreamento' é negação pura sem nomear o conteúdo distintivo de D (Nunca rastrear).",
+    "exp_pt_novo": "Segundo o syllabus, o gerenciamento ágil de defeitos envolve priorização pelo Product Owner e equilíbrio entre resolução de defeitos e objetivos do sprint. Defeitos críticos podem ser abordados no sprint atual se viável; caso contrário, vão para o backlog do produto com prioridade apropriada. As opções sobre adiar incondicionalmente o defeito e corrigir incondicionalmente todo defeito são absolutas ('sempre'/'nunca'); a opção sobre nunca rastrear o defeito contradiz a necessidade de rastreamento.",
+    "exp_en_novo": "Per the syllabus, agile defect management involves Product Owner prioritization and balancing defect resolution with sprint goals. Critical defects may be addressed in the current sprint if feasible; otherwise, they go to the product backlog with appropriate priority. The options about unconditionally deferring the defect and unconditionally fixing every defect are absolute ('always'/'never'); the option about never tracking the defect contradicts the need for tracking."
+  },
+  {
+    "id": "ctaltm-75",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura o desafio típico' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de C; precedentes ch6-11/ctaltm-46.",
+    "exp_pt_novo": "Segundo o syllabus, o gerenciamento de defeitos em desenvolvimento híbrido enfrenta desafios de coordenação: diferentes equipes usam diferentes SDLCs, ritmos, ferramentas e definições; defeitos entre equipes podem ser atrasados, duplicados ou atribuídos incorretamente. A opção sobre dificuldade de coordenação entre equipes híbridas captura o desafio típico. As outras opções negam a existência ou a importância desses desafios.",
+    "exp_en_novo": "Per the syllabus, defect management in hybrid development faces coordination challenges: different teams use different SDLCs, paces, tools, and definitions; cross-team defects may be delayed, duplicated, or wrongly assigned. The option about difficult coordination across hybrid teams captures the typical challenge. The other options deny the existence or importance of these challenges."
+  },
+  {
+    "id": "ctaltm-76",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D captura isso' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de D; precedentes ch6-11/ctaltm-46.",
+    "exp_pt_novo": "Segundo o syllabus, os desafios do gerenciamento híbrido de defeitos são abordados com rastreamento compartilhado ou integrado, definições comuns, triagem entre equipes e regras claras de propriedade para defeitos transversais. A opção sobre rastreamento compartilhado e definições comuns captura isso. As outras opções ou abandonam o híbrido, isolam sistemas ou forçam tamanho único.",
+    "exp_en_novo": "Per the syllabus, hybrid defect management challenges are addressed with shared or integrated tracking, common definitions, cross-team triage, and clear ownership rules for cross-cutting defects. The option about shared tracking and common definitions captures this. The other options either abandon hybrid, isolate systems, or force one-size-fits-all."
+  },
+  {
+    "id": "ctaltm-77",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A captura tudo isso' é meta-predicado com anáfora ao setup; referência agrupada 'As opções B, C e D' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, relatórios de defeito devem capturar: ID, resumo, descrição, passos de reprodução, resultados esperados vs. reais, severidade, prioridade, ambiente, relator, data, status e (após correção) informações da correção e resultado da verificação. A opção sobre o conjunto completo de campos captura tudo isso. As opções sobre apenas o resumo do defeito, apenas o nome do relator e apenas a data omitem campos essenciais.",
+    "exp_en_novo": "Per the syllabus, defect reports should capture: ID, summary, description, reproduction steps, expected vs. actual results, severity, priority, environment, reporter, date, status, and (after fix) fix information and verification result. The option about the complete set of fields captures all of these. The options about only the defect summary, only the reporter's name, and only the date omit essential fields."
+  },
+  {
+    "id": "ctaltm-79",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções A e B são punitivas e contraproducentes' combina duas letras em predicado único sem parear tema a cada letra; precedentes batch-1 ch4-61/75 e batch-2 ch4-82.",
+    "exp_pt_novo": "Segundo o syllabus, as estatísticas de relatórios de defeitos podem ser usadas para avaliar contenção de fases (onde os defeitos são introduzidos vs. detectados), identificar fases que mais introduzem defeitos e direcionar melhorias em prevenção e detecção. As opções sobre culpar e punir o desenvolvedor e reduzir a equipe de teste são punitivas e contraproducentes; a opção sobre ignorar os dados negligencia dados úteis.",
+    "exp_en_novo": "Per the syllabus, defect report statistics can be used to evaluate phase containment (where defects are introduced vs. detected), identify phases introducing the most defects, and target improvements in prevention and detection. The options about blaming and punishing the developer and reducing the test team are punitive and counterproductive; the option about ignoring the data neglects useful data."
+  },
+  {
+    "id": "ctaltm-80",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D reflete esse princípio' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de D; precedentes ch6-11/ctaltm-46. Referência agrupada 'As opções A, B e C' também é gatilho VP.",
+    "exp_pt_novo": "Segundo o syllabus, quando a análise de contenção de fases mostra que defeitos introduzidos cedo são detectados tarde, a ação apropriada é fortalecer atividades de QA precoces (revisões, análise estática, walkthroughs) para que os defeitos sejam capturados mais perto de onde são introduzidos — reduzindo o custo de falhas internas. A opção sobre fortalecer atividades de QA precoces reflete esse princípio. As outras três opções estão erradas: a opção sobre eliminar revisões de requisitos remove revisões úteis; a opção sobre contratar mais testadores de sistema superlota fases tardias; a opção sobre reduzir o teste reduz a qualidade geral.",
+    "exp_en_novo": "Per the syllabus, when phase containment analysis shows that defects introduced early are detected late, the appropriate action is to strengthen early QA activities (reviews, static analysis, walkthroughs) so that defects are caught closer to where they are introduced — reducing the cost of internal failures. The option about strengthening early QA activities reflects this principle. The other three options are wrong: the option about eliminating requirements reviews removes useful reviews; the option about hiring more system testers over-staffs late phases; the option about reducing testing reduces overall quality."
+  },
+  {
+    "id": "ctaltm-84",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D captura ambas' é meta-predicado com anáfora ao setup; referência agrupada 'as opções A e B' combina duas letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, analisar a base de teste e modelar casos de teste são competências Profissionais específicas de teste; configurar ambientes e usar técnicas também envolvem competência Metodológica (métodos, ferramentas, procedimentos). A opção sobre Profissional e Metodológica combinadas captura ambas. A opção sobre apenas Metodológica superestima Metodológica; as opções sobre apenas Pessoal e apenas Social identificam incorretamente a área de competência.",
+    "exp_en_novo": "Per the syllabus, analyzing the test basis and designing test cases are test-specific Professional competencies; configuring environments and using techniques also involve Methodological competency (methods, tools, procedures). The option about combined Professional and Methodological captures both. The option about only Methodological overstates Methodological; the options about only Personal and only Social misidentify the competency area."
+  },
+  {
+    "id": "ctaltm-85",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A captura tudo isso' é meta-predicado com anáfora ao setup; referência agrupada 'As opções B, C e D' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, as habilidades necessárias dependem do contexto: SDLC (ágil → CI/CD, exploratório), arquitetura (microsserviços → teste de API, segurança, performance), domínio (saúde → conhecimento de negócios), configuração da equipe (distribuída → habilidades sociais para colaboração remota) e modelo de equipe (ágil auto-organizável → competências pessoais). A opção sobre competências combinadas em API, segurança, performance, CI/CD e domínio de saúde captura tudo isso. As outras três opções ignoram o contexto.",
+    "exp_en_novo": "Per the syllabus, required skills depend on context: SDLC (agile → CI/CD, exploratory), architecture (microservices → API testing, security, performance), domain (healthcare → business knowledge), team setup (distributed → social skills for remote collaboration), and team model (agile self-organizing → personal competencies). The option about combined competencies in API, security, performance, CI/CD, and healthcare domain captures all of these. The other three options ignore context."
+  },
+  {
+    "id": "ctaltm-86",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B captura essa abordagem equilibrada' é meta-predicado com anáfora ao setup; referência agrupada 'As opções A, C e D' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, quando existem lacunas de habilidades, o Gerente de Teste deve identificá-las por meio de uma matriz de habilidades e desenvolver um plano combinando treinamento, mentoria, autoestudo, aprendizagem entre pares, treinamento no trabalho e (quando necessário) contratação ou terceiros. A opção sobre plano de desenvolvimento de habilidades combinando treinamento, mentoria e contratação direcionada captura essa abordagem equilibrada. As outras três opções são ou negligentes ou extremas.",
+    "exp_en_novo": "Per the syllabus, when skills gaps exist, the Test Manager should identify them via a skill matrix and develop a plan combining training, mentoring, self-study, peer learning, on-the-job training, and (when needed) hiring or contractors. The option about a skill development plan combining training, mentoring, and targeted hiring captures this balanced approach. The other three options are either negligent or extreme."
+  },
+  {
+    "id": "ctaltm-87",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura isso' é meta-predicado com anáfora ao setup; referência agrupada 'As opções A, B e D' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, as competências profissional e metodológica podem ser avaliadas por meio de demonstração de tarefas típicas de teste (esboçar uma estratégia, revisar a base de teste, aplicar técnicas de teste, redigir um relatório de conclusão), suplementadas por credenciais externas, certificações, experiência profissional e diplomas. A opção sobre demonstração de tarefas típicas de teste e credenciais externas captura isso. As outras três opções não são técnicas reconhecidas de avaliação.",
+    "exp_en_novo": "Per the syllabus, professional and methodological competencies can be assessed via demonstration of typical test tasks (drafting a strategy, reviewing the test basis, applying test techniques, drafting a completion report), supplemented by external credentials, certifications, professional experience, and diplomas. The option about demonstration of typical test tasks and external credentials captures this. The other three options are not recognized assessment techniques."
+  },
+  {
+    "id": "ctaltm-88",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D captura a ideia-chave' é meta-predicado com anáfora ao setup; referência agrupada 'As opções A, B e C' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, 'de acordo com Belbin, as equipes funcionam de forma eficaz quando são formadas por diferentes tipos de personalidade e funções. Esses modelos ajudam as equipes a identificarem as habilidades que possuem e as que podem estar faltando.' A opção sobre diferentes tipos de personalidade e papéis captura a ideia-chave. As outras três opções contradizem o modelo de Belbin.",
+    "exp_en_novo": "Per the syllabus, 'according to Belbin, teams function effectively when composed of different personality types and roles. These models help teams identify the skills they have and those that may be missing.' The option about different personality types and roles captures the key idea. The other three options contradict Belbin's model."
+  },
+  {
+    "id": "ctaltm-89",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'As opções B e C são muito estreitas' combina duas letras em predicado único sem parear tema a cada letra; precedentes batch-1 ch4-61/75 e batch-2 ch4-82.",
+    "exp_pt_novo": "Segundo o syllabus, as abordagens para desenvolvimento de habilidades incluem: treinamento e educação, autoestudo, aprendizagem entre pares, mentoria ou coaching e treinamento no trabalho. Diferentes abordagens se adequam a diferentes competências: autoestudo e treinamento se adequam a profissional/metodológica; coaching se adequa a social/pessoal. As opções sobre apenas treinamento formal em sala de aula e apenas autoestudo são muito estreitas; a opção sobre não fazer nada é negligência.",
+    "exp_en_novo": "Per the syllabus, approaches for developing skills include: training and education, self-study, peer learning, mentoring or coaching, and on-the-job training. Different approaches suit different competencies: self-study and training suit professional/methodological; coaching suits social/personal. The options about only formal classroom training and only self-study are too narrow; the option about doing nothing is neglect."
+  },
+  {
+    "id": "ctaltm-90",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B captura isso' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de B; precedentes ch6-11/ctaltm-46. (A outra referência 'Autoestudo (opção A)' segue o padrão FP, mas a conclusão meta força VP.)",
+    "exp_pt_novo": "Segundo o syllabus, 'para desenvolver a competência social e pessoal, recomenda-se usar abordagens como coaching e mentoria, que geralmente são mais promissoras do que o estudo autônomo. A troca social, o feedback e a reflexão estão entre os principais fatores de sucesso para desenvolver a competência social e pessoal.' A opção sobre coaching e mentoria combinados com troca social, feedback e reflexão captura isso. A opção sobre apenas autoestudo é mais adequada para competências profissionais/metodológicas.",
+    "exp_en_novo": "Per the syllabus, 'to develop social and personal competency, it is recommended to use approaches such as coaching and mentoring, which are usually more promising than self-study. Social exchange, feedback, and reflection are among the main success factors for developing social and personal competency.' The option about coaching and mentoring combined with social exchange, feedback, and reflection captures this. The option about only self-study is more suitable for professional/methodological competencies."
+  },
+  {
+    "id": "ctaltm-91",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura isso' é meta-predicado com anáfora ao setup; referência agrupada 'As opções A, B e D' combina três letras em predicado único de negação sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, gerenciar uma equipe de teste requer: competências profissional e metodológica em atividades fundamentais de gerenciamento (planejamento, monitoramento, controle de progresso, relatórios); conhecimento específico de gerenciamento de teste (abordagens, estratégias, técnicas, SDLCs); e competências sociais e pessoais (resiliência, delegação, resolução de conflitos, comunicação). A opção sobre competências profissional, metodológica, social e pessoal em gerenciamento de teste captura isso. As outras três opções excluem áreas críticas de competência.",
+    "exp_en_novo": "Per the syllabus, managing a test team requires: professional and methodological competencies in fundamental management activities (planning, monitoring, progress control, reporting); specific test management knowledge (test approaches, strategies, techniques, SDLCs); and social and personal competencies (resilience, delegation, conflict resolution, communication). The option about professional, methodological, social, and personal competencies in test management captures this. The other three options each exclude critical competency areas."
+  },
+  {
+    "id": "ctaltm-92",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D dá a ordem correta' é meta-predicado com anáfora ao setup (a sequência correta é descrita no setup) sem nomear o conteúdo distintivo de D; precedentes ch6-11/ctaltm-46.",
+    "exp_pt_novo": "Segundo o syllabus, os estágios de Tuckman são: Formação (membros se juntam), Confrontação (conflito emerge), Normatização (regras e valores são acordados), Performance (delegação e alta performance), Encerramento (membros saem). A opção com a sequência Formação, Confrontação, Normatização, Performance, Encerramento dá a ordem correta. As outras opções embaralham a sequência.",
+    "exp_en_novo": "Per the syllabus, the Tuckman stages are: Forming (team members join), Storming (conflict emerges), Norming (rules and values are agreed), Performing (delegation and high performance), Adjourning (members leave). The option with the sequence Forming, Storming, Norming, Performing, Adjourning gives the correct order. The other options scramble the sequence."
+  },
+  {
+    "id": "ctaltm-93",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência 'A opção A lista motivadores' nomeia apenas a categoria, não o conteúdo distintivo de A; referência agrupada 'as opções B, C e D listam fatores de higiene' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, motivadores incluem: reconhecimento e valorização do trabalho realizado; maior responsabilidade e autonomia; tarefas interessantes, significativas e desafiadoras; avanço e desenvolvimento profissional. Fatores de higiene incluem: remuneração adequada; estilo de gerenciamento e políticas de pessoal; condições de trabalho agradáveis; segurança; bom relacionamento interpessoal. A opção sobre reconhecimento e desenvolvimento profissional lista motivadores; as opções sobre remuneração adequada, condições de trabalho agradáveis e segurança no emprego listam fatores de higiene.",
+    "exp_en_novo": "Per the syllabus, motivators include: recognition and appreciation of work performed; increased responsibility and autonomy; interesting, meaningful, and challenging tasks; advancement and professional development. Hygiene factors include: adequate remuneration; management style and personnel policies; pleasant working conditions; security; good interpersonal relationships. The option about recognition and professional development lists motivators; the options about adequate remuneration, pleasant working conditions, and job security list hygiene factors."
+  },
+  {
+    "id": "ctaltm-94",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B captura a interpretação e ação corretas' é meta-predicado; referência 'A opção A atribui incorretamente o problema' é negação pura sem nomear o conteúdo distintivo de A (dobrar o salário); referência agrupada 'as opções C e D' combina duas letras em predicado único de negação.",
+    "exp_pt_novo": "Segundo o syllabus, fatores de higiene (salário, condições de trabalho) previnem desmotivação quando presentes, mas não motivam. Motivadores (reconhecimento, autonomia, trabalho desafiador, avanço) impulsionam a motivação real. A opção sobre salário como higiene e motivadores captura a interpretação e ação corretas. A opção sobre dobrar o salário atribui incorretamente o problema; as opções sobre ausência de solução e punir testadores desmotivados são ineficazes ou contraproducentes.",
+    "exp_en_novo": "Per the syllabus, hygiene factors (salary, working conditions) prevent demotivation when present but do not motivate. Motivators (recognition, autonomy, challenging work, advancement) drive actual motivation. The option about salary as hygiene and motivators captures the correct interpretation and action. The option about doubling the salary misattributes the problem; the options about no solution and punishing unmotivated testers are ineffective or counterproductive."
+  },
+  {
+    "id": "ctaltm-95",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C captura esses' é meta-predicado com anáfora ao setup (as quatro categorias são descritas no setup) sem nomear o conteúdo distintivo de C; precedentes ch6-11/ctaltm-46.",
+    "exp_pt_novo": "Segundo o syllabus (abordagem de Feigenbaum), as quatro categorias são: Custos de Prevenção (atividades para prevenir má qualidade), Custos de Avaliação (atividades para detectar defeitos), Custos de Falhas Internas (atividades reativas para defeitos encontrados antes do lançamento), Custos de Falhas Externas (atividades reativas sem valor agregado para defeitos encontrados após o lançamento). A opção sobre Prevenção, Avaliação, Falhas Internas e Falhas Externas captura esses. As outras opções descrevem divisões de custo não relacionadas.",
+    "exp_en_novo": "Per the syllabus (Feigenbaum approach), the four categories are: Prevention costs (activities to prevent poor quality), Appraisal costs (activities to detect defects), Internal failure costs (reactive activities for defects found before release), External failure costs (reactive, no-value-added activities for defects found after release). The option about Prevention, Appraisal, Internal failure, and External failure costs captures these. The other options describe unrelated cost breakdowns."
+  },
+  {
+    "id": "ctaltm-96",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D captura isso' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de D; precedentes ch6-11/ctaltm-46. As outras referências (A, B, C) seguem o padrão FP (tema como predicado), mas a conclusão meta força VP.",
+    "exp_pt_novo": "Segundo o syllabus, os custos de falhas internas são 'o custo de todas as atividades reativas (p. ex., correção de defeitos encontrados durante o teste, fornecimento de soluções alternativas).' A opção sobre corrigir defeitos durante o teste captura isso. A opção sobre perda de receita pós-lançamento é um custo de falha externa (defeitos encontrados após o lançamento); a opção sobre treinar desenvolvedores é um custo de prevenção; a opção sobre testes estáticos e dinâmicos é um custo de avaliação.",
+    "exp_en_novo": "Per the syllabus, internal failure costs are 'the cost of all reactive activities (e.g., fixing defects found during testing, providing workarounds).' The option about fixing defects during testing captures this. The option about post-release revenue loss is an external failure cost (defects found after release); the option about training developers is a prevention cost; the option about static and dynamic testing is an appraisal cost."
+  },
+  {
+    "id": "ctaltm-97",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção A está correta' é meta-conclusão pura sem nenhum tema nomeado perto da letra; precedentes worked example / ctaltm-46.",
+    "exp_pt_novo": "Segundo o syllabus, os custos de falhas externas são 'o custo de todas as atividades reativas e sem valor agregado (p. ex., perda de receita, ativos, saúde humana, vida humana ou meio ambiente, custos legais relacionados à correção de defeitos, testes, implantação e suporte devido à entrega de produtos defeituosos ao cliente pós-lançamento, correção de defeitos de campo relatados pelos clientes).' A opção sobre custos de falhas externas está correta.",
+    "exp_en_novo": "Per the syllabus, external failure costs are 'the cost of all reactive and no-value-added activities (e.g., loss of revenue, assets, human health, life or environment, legal costs related to correcting defects, testing, deployment and support due to delivery of defective products to the customer post-release, correction of field defects reported by customers).' The option about external failure costs is correct."
+  },
+  {
+    "id": "ctaltm-98",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção B está correta' é meta-conclusão pura sem tema nomeado perto da letra; referência 'A opção A aplica incorretamente a fórmula' é negação pura sem nomear o conteúdo distintivo de A (20.000); precedentes worked example / ctaltm-46 / batch-2 ch5-58.",
+    "exp_pt_novo": "Segundo o syllabus, um cálculo de custo-benefício estima o valor agregado pelo teste como a redução nos custos de falha menos o custo do teste. Aqui: 400.000 (falhas externas prevenidas) − 80.000 (custo do teste) = 320.000. A opção com o valor 320.000 está correta. A opção com o valor 20.000 aplica incorretamente a fórmula; a opção com o valor 80.000 é apenas o custo do teste; a opção com o valor 500.000 é o custo de falha não mitigado.",
+    "exp_en_novo": "Per the syllabus, a cost-benefit calculation estimates the value added by testing as the reduction in failure costs minus the cost of testing. Here: 400,000 (prevented external failures) − 80,000 (testing cost) = 320,000. The option with the value 320,000 is correct. The option with the value 20,000 misapplies the formula; the option with the value 80,000 is just the testing cost; the option with the value 500,000 is the unmitigated failure cost."
+  },
+  {
+    "id": "ctaltm-99",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção C está correta' é meta-conclusão pura sem tema nomeado perto da letra; referência agrupada 'As opções A, B e D' combina três letras em predicado único sem parear tema a cada letra.",
+    "exp_pt_novo": "Segundo o syllabus, custo-benefício para melhoria de teste = (economia anual × número de anos) − investimento antecipado = (300.000 × 3) − 100.000 = 900.000 − 100.000 = 800.000. O investimento vale claramente a pena. A opção com o valor 800.000 está correta. As opções com os valores 300.000, 100.000 e Zero calculam mal ou negam o valor.",
+    "exp_en_novo": "Per the syllabus, cost-benefit for testing improvement = (annual savings × number of years) − upfront investment = (300,000 × 3) − 100,000 = 900,000 − 100,000 = 800,000. The investment is clearly worth it. The option with the value 800,000 is correct. The options with the values 300,000, 100,000, and Zero miscalculate or deny the value."
+  },
+  {
+    "id": "ctaltm-100",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Conclusão 'A opção D captura esse argumento' é meta-predicado com anáfora ao setup sem nomear o conteúdo distintivo de D; referência 'a opção C não é um argumento de negócio' é negação/meta sem nomear o conteúdo distintivo de C; precedentes ch6-11/ctaltm-46 e batch-2 ch5-58.",
+    "exp_pt_novo": "Segundo o syllabus, o total de custos de avaliação e falha interna é tipicamente muito menor do que os custos de falha externa, tornando o teste muito valioso. O Gerente de Teste deve ajudar os stakeholders a entender o equilíbrio e quantificar o valor por meio de cálculos de custo-benefício. A opção sobre reduzir falhas externas e quantificar valor captura esse argumento. A opção sobre exigência do syllabus ISTQB é um apelo à autoridade; a opção sobre eliminar todos os defeitos é irrealista (o teste não elimina todos os defeitos); a opção sobre criar empregos para testadores não é um argumento de negócio.",
+    "exp_en_novo": "Per the syllabus, total appraisal and internal failure costs are typically much lower than external failure costs, making testing very valuable. The Test Manager should help stakeholders understand the balance and quantify the value via cost-benefit calculations. The option about reducing external failures and quantifying value captures this argument. The option about the ISTQB syllabus requirement is an appeal to authority; the option about eliminating all defects is unrealistic (testing does not eliminate all defects); the option about creating jobs for testers is not a business argument."
+  },
+  {
+    "id": "ctaltm-198",
+    "veredito": "VERDADEIRO_POSITIVO",
+    "justificativa": "Referência agrupada 'C e D aplicam regras incorretas (...)' combina duas letras em predicado único com temas em parêntese único combinado, sem parear cada tema à sua letra; precedentes batch-1 ch4-61/75 e batch-2 ch4-82.",
+    "exp_pt_novo": "K3 exige aplicar custo-benefício. Custo evitado = $600.000 − $300.000 = $300.000. Investimento = $200.000. Benefício líquido = $300.000 − $200.000 = $100.000, então o investimento é justificado. A opção sobre benefício líquido de $100.000 está correta. A opção sobre custo residual exceder investimento compara incorretamente o residual com o investimento; as opções sobre sempre destruir valor e exigir residual zero aplicam regras incorretas.",
+    "exp_en_novo": "K3 requires applying cost-benefit. Avoided cost = $600,000 − $300,000 = $300,000. Investment = $200,000. Net benefit = $300,000 − $200,000 = $100,000, so the investment is justified. The option about net benefit of $100,000 is correct. The option about residual cost exceeding investment incorrectly compares residual to investment; the options about always destroying value and requiring zero residual apply incorrect rules."
+  },
+  {
+    "id": "aitest-126",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Cada referência a alternativa (B/C/D) nomeia positivamente a categoria métrica da opção como predicado em proximidade imediata à letra (precisão, acurácia, especificidade); a resposta correta A é identificada pela fórmula no setup. Padrão FP #2 (tema como predicado).",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "aitest-176",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Cada referência (B/C/D, incluindo letras nuas) nomeia positivamente a categoria métrica da opção como predicado em proximidade imediata à letra (precisão, recall/sensibilidade, F1); a resposta correta A é identificada pela fórmula no setup. Padrão FP #2.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  },
+  {
+    "id": "aitest-177",
+    "veredito": "FALSO_POSITIVO_AUTOCORRETIVO",
+    "justificativa": "Cada referência (A/C/D, incluindo letras nuas) nomeia positivamente a categoria métrica da opção como predicado em proximidade imediata à letra (recall, acurácia, especificidade); a resposta correta B é identificada pela fórmula no setup. Padrão FP #2.",
+    "exp_pt_novo": null,
+    "exp_en_novo": null
+  }
+]
