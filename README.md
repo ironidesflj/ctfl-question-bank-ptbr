@@ -27,7 +27,7 @@ O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (tot
 | Nota de corte | 26/40 (65%) |
 | Tempo | 60 min (75 min não-nativos) |
 
-## Distribuição — CTFL v4.0 (300 questões)
+## Distribuição — CTFL v4.0 (300 questões no banco)
 | Cap. | Domínio | Questões |
 |------|---------|----------|
 | 1 | Fundamentos | 60 |
@@ -37,6 +37,11 @@ O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (tot
 | 5 | Gerenciamento | 67 |
 | 6 | Ferramentas | 15 |
 | | **Total** | **300** |
+
+Distribuição do **simulado** (proporcional à prova oficial, 40 questões):
+1=8, 2=6, 3=4, 4=11, 5=9, 6=2 (fonte: ISTQB Exam Structures & Rules
+tables v1.18). Corrigido nesta versão — `chapterWeights` gerava 8/5/5/11/9/2
+antes do fix.
 
 K-levels: K1=78 (26%), K2=180 (60%), K3=42 (14%)
 
