@@ -122,6 +122,17 @@ secret `CTFL_APP_SYNC_TOKEN` (token fine-grained com escrita em `ctfl-app`).
 
 ## Changelog
 
+### synapse v1.5.0-pools / app v3.12.0 — 2026-10-14
+
+- feat: partição determinística e reprodutível em pools exclusivos de estudo e
+  simulado (`partition_pools.py`, seed fixa): CTFL 220+80; CTAL-TA 110+90.
+- fix: metadados oficiais do CTAL-TA usam pontos ponderados por K-level
+  (K2=1, K3=2, K4=3), total 78 e corte 51; CTFL mantém 26/40.
+- docs: tempo nativo de prova no Brasil registrado como CTFL 60 min e CTAL-TA
+  120 min; os 25% adicionais dependem da condição/solicitação aplicável.
+- quality: conteúdo e índices das 1.100 questões permanecem inalterados; as
+  guardas existentes continuam com `threshold 0` e allowlist explícita.
+
 ### synapse v1.4.0-e2e-round2 (QA r2 — 2026-10-14)
 
 - fix: CTAL-TM rebalanceado de 124/26/25/25 para 50/50/50/50 posições de
