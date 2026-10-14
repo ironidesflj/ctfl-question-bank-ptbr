@@ -17,13 +17,14 @@ GUARDS EXISTENTES (0, 1, 2) — preservados:
   Guarda 1: opção vs. explicação (heurística SequenceMatcher, com baseline)
   Guarda 2: tema PT/EN (z-score da similaridade, com baseline)
 
-NOVOS GUARDS PSICOMÉTRICOS (10-15) — F1.3:
+NOVOS GUARDS PSICOMÉTRICOS (10-16) — F1.3 + Spec 3:
   Guarda 10  LENGTH_BIAS          — pick-longest hit rate > 0.40 por cert (PT + EN)
   Guarda 11  LENGTH_EFFECT_SIZE   — Cohen's d > 0.50 por cert (correct vs distractor lengths)
   Guarda 12  HEDGE_RATIO          — ratio (correct_hedge / distractor_hedge) < 0.5 OU > 2.0
   Guarda 13  ANSWER_INDEX_CHI2    — chi2 goodness-of-fit vs uniforme, p < 0.01 (certs com ≥50 Q)
   Guarda 14  RUNS_TEST            — Wald-Wolfowitz z-score < -5.0 (clustering)
   Guarda 15  BLUEPRINT_MATCH      — drift > 15pp vs meta.chapterWeights + validação K-levels
+  Guarda 16  LETTER_PATTERN       — explicação cita letra A-D fixa apesar do shuffle
 
 Os novos guards usam APENAS stdlib (json, math, statistics, sys, collections, re,
 unicodedata, argparse, difflib, pathlib). Não dependem de scipy/numpy — o ambiente
@@ -39,7 +40,7 @@ IMPORTANTE — limitações conhecidas dos guards existentes (não é prova de b
 
 Saída:
   - Cada guard novo imprime [PASS] ou [FAIL] com detalhes por cert.
-  - Resumo final: "X/6 new guards passed, Y failed".
+  - Resumo final: "X/N new guards passed, Y failed".
   - Exit code 0 se todos os guards passarem, 1 caso contrário.
 """
 
@@ -66,6 +67,17 @@ CERTS_CANONICAL = ["CTFL", "CTFL-AT", "CTAL-TA", "CTAL-TM", "CT-AI"]
 # scoping, the 6 new guards below would exit non-zero forever, since the 3
 # untouched certs will always fail length_bias/effect_size/chi2/runs_test.
 LIVE_CERTS = {"CTFL", "CTAL-TA"}
+
+# Casos inconclusivos decididos na auditoria P2.1. Eles permanecem visíveis na
+# saída, mas ficam fora das baselines de falsos positivos e não abrem uma
+# tolerância global para IDs desconhecidos. Chaves por arquivo + guarda evitam
+# que um ID aceito numa heurística seja silenciado em outra.
+INCONCLUSIVE_ALLOWLIST = {
+    "synapse-question-bank.json": {
+        "option_exp": {"ctalta-106"},
+        "topic": {"ctalta-120"},
+    },
+}
 
 # Guard 12 — hedge/absolute lexicon (as specified in F1.3 task).
 # These are "absolutist" qualifiers; the guard name says "hedge" but the word
@@ -850,16 +862,23 @@ def run_existing_guards(args, bank_path: Path, baseline_file: Path, topic_baseli
     # --- Guard 1: option vs. explanation (heuristic, with baseline) ---
     suspects = check(bank_path)
     baseline_ids = load_baseline(baseline_file)
-    new_suspects = [s for s in suspects if s["id"] not in baseline_ids]
+    allowed_option_ids = INCONCLUSIVE_ALLOWLIST.get(bank_path.name, {}).get("option_exp", set())
+    inconclusive_suspects = [s for s in suspects if s["id"] in allowed_option_ids]
+    new_suspects = [
+        s for s in suspects
+        if s["id"] not in baseline_ids and s["id"] not in allowed_option_ids
+    ]
 
     if args.update_baseline:
-        save_baseline(suspects, baseline_file)
-        print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {baseline_file}")
+        baseline_suspects = [s for s in suspects if s["id"] not in allowed_option_ids]
+        save_baseline(baseline_suspects, baseline_file)
+        print(f"Baseline (opção/exp) atualizada com {len(baseline_suspects)} id(s) em {baseline_file}")
         if not args.update_topic_baseline:
             sys.exit(0)
 
     print(f"[Guarda opção/exp | {args.bank_file}] {len(suspects)} suspeita(s) total | "
-          f"{len(baseline_ids)} na baseline | {len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
+          f"{len(baseline_ids)} na baseline | {len(inconclusive_suspects)} inconclusiva(s) explícita(s) | "
+          f"{len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
     if new_suspects:
         print("ATENÇÃO: heurística de alerta, NÃO prova de bug. Leia PT/EN par a par antes de corrigir.\n")
         for s in new_suspects:
@@ -873,15 +892,22 @@ def run_existing_guards(args, bank_path: Path, baseline_file: Path, topic_baseli
     else:
         topic_suspects, mean, std, threshold_val, total = topic_result
     topic_baseline_ids = load_topic_baseline(topic_baseline_file)
-    new_topic_suspects = [s for s in topic_suspects if s["id"] not in topic_baseline_ids]
+    allowed_topic_ids = INCONCLUSIVE_ALLOWLIST.get(bank_path.name, {}).get("topic", set())
+    inconclusive_topic_suspects = [s for s in topic_suspects if s["id"] in allowed_topic_ids]
+    new_topic_suspects = [
+        s for s in topic_suspects
+        if s["id"] not in topic_baseline_ids and s["id"] not in allowed_topic_ids
+    ]
 
     if args.update_topic_baseline:
-        save_topic_baseline(topic_suspects, topic_baseline_file)
-        print(f"Baseline (tema) atualizada com {len(topic_suspects)} id(s) em {topic_baseline_file}")
+        baseline_topic_suspects = [s for s in topic_suspects if s["id"] not in allowed_topic_ids]
+        save_topic_baseline(baseline_topic_suspects, topic_baseline_file)
+        print(f"Baseline (tema) atualizada com {len(baseline_topic_suspects)} id(s) em {topic_baseline_file}")
         sys.exit(0)
 
     print(f"\n[Guarda tema | {args.bank_file}] {total} questões bilíngues | média={mean} desvio={std} limiar={threshold_val}")
     print(f"  {len(topic_suspects)} suspeita(s) total | {len(topic_baseline_ids)} na baseline | "
+          f"{len(inconclusive_topic_suspects)} inconclusiva(s) explícita(s) | "
           f"{len(new_topic_suspects)} NOVA(S)\n")
     if new_topic_suspects:
         print("Suspeitas de desalinhamento de TEMA:\n")
@@ -978,7 +1004,7 @@ def main():
     existing_ok = run_existing_guards(args, bank_path, baseline_file, topic_baseline_file)
     passed, failed, failed_names = run_new_guards(bank_path, selected_guards)
     print("=" * 80)
-    print(f"RESUMO: {passed}/6 new guards passed, {failed} failed. "
+    print(f"RESUMO: {passed}/{len(selected_guards)} new guards passed, {failed} failed. "
           f"(existing guards: {'PASS' if existing_ok else 'FAIL'})")
     if failed_names:
         print("  Failed new guards: %s" % ", ".join(failed_names))

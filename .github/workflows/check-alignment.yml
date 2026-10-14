@@ -28,5 +28,5 @@ jobs:
           python-version: "3.12"
       - name: Check ctfl-questions-ptbr.json (threshold 0, baseline madura)
         run: python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
-      - name: Check synapse-question-bank.json (threshold 2 — 2 inconclusivos conhecidos, ver FASE4_FIX_LEDGER)
-        run: python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 2
+      - name: Check synapse-question-bank.json (threshold 0; inconclusivos em allowlist explícita)
+        run: python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 0

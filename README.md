@@ -72,7 +72,13 @@ prontos pro app, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
 ## Scripts
 - `build_bank.py` — gera e valida **só o bloco legado CTFL/300** a partir de `add()` no próprio script (⚠️ apaga `locales.en` se rodado sozinho — sempre seguido de `add_en.py`). **Não gera as questões novas do multi-cert** — desde a Fase 4, `ctfl-questions-ptbr.json` (300) e `synapse-question-bank.json` (1100) são editados/gerados fora deste pipeline e versionados diretamente. Migração de `build_bank.py` para uma fonte única (YAML) que cubra os 1100 é item pendente, ainda não construído.
 - `add_en.py` — injeta `locales.en` nas questões existentes por ID (nunca sobrescreve EN já existente); cobre só o bloco legado de 300, mesma limitação acima.
-- `check_alignment.py` — duas guardas de alinhamento PT/EN (rodadas no CI a cada push, sobre `ctfl-questions-ptbr.json`): (1) verifica se a opção correta tem maior similaridade à explicação EN do que as outras — guarda histórica com baseline em `check_alignment_baseline.json`; (2) verifica desalinhamento de **tema** comparando `pt.q` com `en.q` via z-score adaptativo (limiar = média − 1,5 × desvio da distribuição do banco) — baseline em `check_alignment_topic_baseline.json`. Sinaliza candidatos a revisão manual; nunca corrige nada automaticamente. As 100 questões novas da Fase 4 ainda não têm baseline própria — rodar com `--update-baseline --update-topic-baseline` após revisão manual dos alertas é trabalho pendente.
+- `check_alignment.py` — guardas estruturais, de alinhamento PT/EN e psicométricas
+  (10–16), executadas no CI nos dois bancos. Suspeitas confirmadas como falso
+  positivo ficam em baselines específicas; os dois casos inconclusivos
+  (`ctalta-106` na guarda opção/exp e `ctalta-120` na guarda de tema) ficam fora
+  das baselines e numa allowlist explícita por arquivo/guarda. Qualquer outro ID
+  novo falha o CI (`threshold 0`). A ferramenta nunca corrige conteúdo
+  automaticamente.
 
 ## Como usar
 
@@ -92,12 +98,11 @@ python3 check_alignment.py   # verifica alinhamento PT/EN (heurística, não cor
 
 ## Sincronização com ctfl-app
 
-Push em `ctfl-questions-ptbr.json` na branch `main` deste repositório dispara a GitHub
-Action `sync-app.yml`, que abre automaticamente um Pull Request no repositório
-[`ctfl-app`](https://github.com/ironidesflj/ctfl-app) atualizando
-`src/data/ctfl-questions-ptbr.json`. Não copie o arquivo manualmente — revise e faça o
-merge do PR gerado. Requer o secret `CTFL_APP_SYNC_TOKEN` configurado neste repositório
-(token fine-grained com escrita em `ctfl-app`).
+Push em `ctfl-questions-ptbr.json` ou `synapse-question-bank.json` na branch `main`
+dispara a GitHub Action `sync-app.yml`. Ela detecta qual arquivo mudou, copia somente
+os correspondentes para `ctfl-app/src/data/`, confere checksums e abre um Pull Request
+no [`ctfl-app`](https://github.com/ironidesflj/ctfl-app). O merge é manual. Requer o
+secret `CTFL_APP_SYNC_TOKEN` (token fine-grained com escrita em `ctfl-app`).
 
 ## Schema
 
@@ -124,10 +129,8 @@ merge do PR gerado. Requer o secret `CTFL_APP_SYNC_TOKEN` configurado neste repo
 - fix: `passMark` do CTAL-TA calculado como `round(0.65*questions)` (29),
   não o 51/78 pontos ponderados do blueprint oficial ISTQB — o app pontua
   1 questão = 1 ponto, sem peso por K-level.
-- nota: `synapse-question-bank.json` não tem sync automático pro `ctfl-app`
-  (só `ctfl-questions-ptbr.json` tem, via `sync-app.yml`) — cópia manual
-  necessária a cada mudança até virar padrão repetido o bastante pra
-  automatizar.
+- nota histórica: o sync inicialmente cobria apenas o arquivo legado; hoje
+  `sync-app.yml` cobre também `synapse-question-bank.json` e valida checksums.
 
 ### v4.0.0 / synapse v1.1.0 (Fase 4 — multi-certificação)
 - feat: expansão multi-certificação ISTQB. `synapse-question-bank.json` (novo
