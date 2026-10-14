@@ -121,6 +121,20 @@ secret `CTFL_APP_SYNC_TOKEN` (token fine-grained com escrita em `ctfl-app`).
 ```
 
 ## Changelog
+
+### synapse v1.4.0-e2e-round2 (QA r2 — 2026-10-14)
+
+- fix: CTAL-TM rebalanceado de 124/26/25/25 para 50/50/50/50 posições de
+  gabarito, preservando PT/EN e a ordem relativa dos distratores.
+- fix: 98 reescritas auditadas de referência por letra, 110 correções de
+  índice e cerca de 30 explicações adicionais reescritas por tema/snippet.
+- quality: `aitest-177` revisada manualmente e registrada como falso positivo
+  da heurística opção/exp: a resposta `40 / (40 + 10) = 0,80` aplica
+  corretamente `precision = TP / (TP + FP)`.
+- tooling: transformações reprodutíveis em `round2_bank_fixes.py` e
+  `round2_bank_fixes_p2.py`; CI continua em `threshold 0`, com inconclusivos
+  fora das baselines e em allowlist explícita.
+
 ### synapse v1.2.0 (P3 — multi-cert de verdade no app)
 - feat: `meta.chapterWeights`/`meta.examFormat` adicionados ao
   `synapse-question-bank.json`, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
@@ -190,6 +204,23 @@ secret `CTFL_APP_SYNC_TOKEN` (token fine-grained com escrita em `ctfl-app`).
 
 ### v1.0.0
 - 200 questões PT-BR, distribuição proporcional ao exame
+
+## Guardas de qualidade
+
+Qualquer alteração de conteúdo deve manter:
+
+- as sete guardas do `check_alignment.py` verdes nos dois bancos;
+- `threshold 0` no CI, sem absorver inconclusivos em baselines;
+- zero referência nova a opção/alternativa A–D nas explicações;
+- PT e EN alinhados em tema, opções e índice de resposta;
+- certificações live abaixo dos limites psicométricos bloqueantes.
+
+Execute antes de abrir PR:
+
+```bash
+python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
+python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 0
+```
 
 ## Aviso
 Material independente, não afiliado ao ISTQB.
