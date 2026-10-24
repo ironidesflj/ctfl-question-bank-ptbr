@@ -1,0 +1,777 @@
+{
+  "range": [109, 140],
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "reviews": [
+    {
+      "id": "ctaltm-109",
+      "status": "REVISED",
+      "section": "1.2.2",
+      "reason": "A resposta permanece alinhada ao uso de expertise e perspectivas dos stakeholders; as demais agora representam equívocos plausíveis sobre autoridade, evidência de aceitação e autoria do testware, com detalhe comparável.",
+      "answer": 0,
+      "en": [
+        "The stakeholder mix contributes domain, technical, regulatory, and operational perspectives that improve risk identification and engagement priorities",
+        "The stakeholder mix establishes a risk approval chain in which high-influence groups set priorities before technical evidence is evaluated",
+        "The representatives contribute acceptance evidence, allowing the workshops to focus on release decisions rather than risk discovery",
+        "The representatives distribute ownership of test design, making each stakeholder group accountable for test conditions in its domain"
+      ],
+      "pt": [
+        "A combinação de stakeholders contribui com perspectivas de domínio, técnicas, regulatórias e operacionais que melhoram a identificação de riscos e as prioridades de engajamento",
+        "A combinação de stakeholders estabelece uma cadeia de aprovação de riscos na qual grupos influentes definem prioridades antes da avaliação das evidências técnicas",
+        "Os representantes contribuem com evidências de aceitação, permitindo que os workshops se concentrem em decisões de liberação em vez da descoberta de riscos",
+        "Os representantes distribuem a responsabilidade pelo design de teste, tornando cada grupo de stakeholders responsável pelas condições de teste de seu domínio"
+      ],
+      "explanations": {
+        "en": "Section 1.2.2 links stakeholder expertise and diverse perspectives to useful feedback and risk management. Their influence guides engagement; it does not turn the workshop into an approval chain or assign test-design ownership to stakeholder groups.",
+        "pt": "A seção 1.2.2 relaciona a expertise e as diferentes perspectivas dos stakeholders a feedback útil e gerenciamento de riscos. A influência orienta o engajamento; ela não transforma o workshop em uma cadeia de aprovação nem atribui aos grupos a autoria do design de teste."
+      }
+    },
+    {
+      "id": "ctaltm-110",
+      "status": "REVISED",
+      "section": "1.2.2",
+      "reason": "O risco correto é a perda de perspectivas relevantes; os distratores foram convertidos em sequenciamentos e atribuições de responsabilidade verossímeis, removendo regras fictícias e absolutos.",
+      "answer": 0,
+      "en": [
+        "The plan may miss relevant risks and expectations because requirements alone do not supply the stakeholders' varied expertise, interests, and influence",
+        "The plan may become less objective because domain experts should validate risk priorities after execution data is available, rather than during planning",
+        "The plan may lose schedule precision because domain experts are the primary source for effort estimates at each planned test level",
+        "The plan may remain adequate if the project manager supplies the product-risk list and business stakeholders participate during acceptance testing"
+      ],
+      "pt": [
+        "O plano pode omitir riscos e expectativas relevantes porque os requisitos não fornecem, por si, a expertise, os interesses e a influência variados dos stakeholders",
+        "O plano pode se tornar menos objetivo porque especialistas de domínio deveriam validar as prioridades de risco após existirem dados de execução, e não durante o planejamento",
+        "O plano pode perder precisão de cronograma porque especialistas de domínio são a fonte principal de estimativas de esforço em cada nível de teste planejado",
+        "O plano pode permanecer adequado se o gerente do projeto fornecer a lista de riscos do produto e os stakeholders de negócio participarem do teste de aceitação"
+      ],
+      "explanations": {
+        "en": "Stakeholder knowledge is an input to effective test management and risk work during planning. Deferring that contribution or replacing the breadth of stakeholder analysis with one manager's list can leave important interests and insights unrepresented.",
+        "pt": "O conhecimento dos stakeholders é um insumo para o gerenciamento eficaz do teste e para o trabalho de riscos durante o planejamento. Adiar essa contribuição ou trocar a amplitude da análise por uma lista de um único gerente pode deixar interesses e insights importantes sem representação."
+      }
+    },
+    {
+      "id": "ctaltm-111",
+      "status": "REVISED",
+      "section": "1.2.3",
+      "reason": "A resposta combina adaptação local e coordenação transversal; os distratores agora são estratégias híbridas coerentes na aparência, mas subordinam indevidamente um modelo, adiam a integração ou apagam controles sequenciais.",
+      "answer": 0,
+      "en": [
+        "Tailor planning and monitoring to each component's lifecycle while coordinating shared integration risks, stakeholder input, and cross-component reporting",
+        "Use common milestone reporting and sequential entry criteria across the three components while retaining their local execution cadences",
+        "Manage each component through its local workflow and establish shared integration criteria when its build enters the common test environment",
+        "Use sprint tracking as the project cadence and represent the vendor delivery as a backlog increment governed by iterative controls"
+      ],
+      "pt": [
+        "Adaptar planejamento e monitoramento ao ciclo de vida de cada componente, coordenando riscos compartilhados de integração, participação dos stakeholders e relato entre componentes",
+        "Usar relato por marcos e critérios sequenciais de entrada comuns aos três componentes, preservando suas cadências locais de execução",
+        "Gerenciar cada componente por seu fluxo local e estabelecer critérios compartilhados de integração quando sua build entrar no ambiente comum de teste",
+        "Usar acompanhamento por sprint como cadência do projeto e representar a entrega do fornecedor como incremento do backlog regido por controles iterativos"
+      ],
+      "explanations": {
+        "en": "Hybrid management combines practices fit for each context and coordinates collaboration and testing across traditional phases and iterations. Shared integration risks and reporting need attention before builds reach the common environment, and neither lifecycle should dominate the other by default.",
+        "pt": "O gerenciamento híbrido combina práticas adequadas a cada contexto e coordena colaboração e teste entre fases tradicionais e iterações. Riscos compartilhados de integração e relato precisam de atenção antes da chegada das builds ao ambiente comum, e nenhum ciclo de vida deve dominar o outro por padrão."
+      }
+    },
+    {
+      "id": "ctaltm-112",
+      "status": "REVISED",
+      "section": "1.2.3",
+      "reason": "A alternativa correta identifica a coordenação entre ritmos; as demais apresentam mecanismos de sincronização plausíveis, porém inadequados por congelarem critérios, subordinarem o progresso ao UAT ou deixarem a reconciliação para o gate final.",
+      "answer": 0,
+      "en": [
+        "Coordinate the iterative and UAT cadences so that risk, defect, progress, and acceptance feedback remain coherent across their delivery boundaries",
+        "Synchronize the iterations to the UAT milestone by freezing acceptance criteria after each four-week business-analysis cycle",
+        "Use UAT progress as the primary project baseline and treat accepted sprint stories as supporting evidence for the final phase",
+        "Give each stream separate completion criteria and reconcile accepted work and outstanding defects at the release sign-off gate"
+      ],
+      "pt": [
+        "Coordenar as cadências iterativa e de UAT para manter coerentes riscos, defeitos, progresso e feedback de aceitação entre suas fronteiras de entrega",
+        "Sincronizar as iterações ao marco de UAT congelando os critérios de aceitação após cada ciclo de quatro semanas da análise de negócios",
+        "Usar o progresso do UAT como linha de base principal do projeto e tratar histórias aceitas nos sprints como evidência de apoio à fase final",
+        "Dar a cada fluxo critérios de conclusão separados e reconciliar trabalho aceito e defeitos pendentes no gate de aprovação da versão"
+      ],
+      "explanations": {
+        "en": "Section 1.2.3 emphasizes collaboration and coordinated management across Agile work and traditional phases. A late UAT stream should exchange risk, progress, and defect information with the iterative stream rather than become a separate final reconciliation mechanism.",
+        "pt": "A seção 1.2.3 enfatiza colaboração e gerenciamento coordenado entre trabalho ágil e fases tradicionais. Um fluxo tardio de UAT deve trocar informações de risco, progresso e defeitos com o fluxo iterativo, em vez de se tornar um mecanismo separado de reconciliação final."
+      }
+    },
+    {
+      "id": "ctaltm-113",
+      "status": "REVISED",
+      "section": "1.2.4",
+      "reason": "A resposta usa os atributos explícitos da tabela do syllabus; os distratores combinam atributos sequenciais e iterativos de modo plausível, evitando caricaturas e mantendo extensão semelhante.",
+      "answer": 0,
+      "en": [
+        "Prepare detailed estimates for each test level early, schedule testing by project phase, and report progress at milestones with traditional metrics",
+        "Estimate during story planning, center testware on acceptance criteria and the definition of done, and report through continuous dashboards",
+        "Prepare phase-level estimates early, integrate test roles around a facilitator, and use real-time dashboards for milestone decisions",
+        "Estimate through story planning, schedule execution against phase gates, and use traditional defect rates for iteration tracking"
+      ],
+      "pt": [
+        "Preparar cedo estimativas detalhadas para cada nível de teste, programar o teste por fase do projeto e relatar o progresso nos marcos com métricas tradicionais",
+        "Estimar durante o planejamento das histórias, centrar o testware nos critérios de aceitação e na definição de pronto e relatar por dashboards contínuos",
+        "Preparar cedo estimativas por fase, integrar os papéis de teste em torno de um facilitador e usar dashboards em tempo real para decisões nos marcos",
+        "Estimar pelo planejamento das histórias, programar a execução conforme gates de fase e usar taxas tradicionais de defeitos para acompanhar iterações"
+      ],
+      "explanations": {
+        "en": "The section 1.2.4 comparison associates sequential development with early detailed estimation per test level, phase-based scheduling, milestone reporting, and traditional test metrics. The other combinations mix in iterative characteristics.",
+        "pt": "A comparação da seção 1.2.4 associa desenvolvimento sequencial a estimativa detalhada antecipada por nível de teste, programação por fases, relato em marcos e métricas tradicionais. As outras combinações incorporam características iterativas."
+      }
+    },
+    {
+      "id": "ctaltm-114",
+      "status": "REVISED",
+      "section": "1.2.4",
+      "reason": "A alternativa correta reflete estimativa iterativa, DoD e automação; os distratores misturam práticas de ambos os modelos em pacotes críveis, com construção paralela e sem proibições artificiais.",
+      "answer": 0,
+      "en": [
+        "Estimate testing during story planning, focus testware on acceptance criteria and the definition of done, and support continuous reporting with automation",
+        "Estimate each test level near project start, schedule execution by phase, and report progress through milestone-based defect and execution metrics",
+        "Estimate within story planning, use phase-oriented management tools, and summarize testing through milestone reports at the end of each increment",
+        "Estimate at release level, integrate test roles into the team, and introduce regression automation after stable acceptance criteria emerge"
+      ],
+      "pt": [
+        "Estimar o teste durante o planejamento das histórias, focar o testware nos critérios de aceitação e na definição de pronto e apoiar relato contínuo com automação",
+        "Estimar cada nível de teste perto do início do projeto, programar a execução por fase e relatar o progresso por métricas de defeitos e execução nos marcos",
+        "Estimar durante o planejamento das histórias, usar ferramentas de gerenciamento orientadas a fases e resumir o teste por relatórios de marco ao fim de cada incremento",
+        "Estimar no nível da versão, integrar os papéis de teste à equipe e introduzir automação de regressão após o surgimento de critérios de aceitação estáveis"
+      ],
+      "explanations": {
+        "en": "For iterative development, the syllabus table highlights estimation within story planning, acceptance criteria and definition of done, integrated roles, automation supporting continuous testing, and continuous reporting. The distractors retain sequential elements or defer a central iterative practice.",
+        "pt": "Para desenvolvimento iterativo, a tabela destaca estimativa no planejamento das histórias, critérios de aceitação e definição de pronto, papéis integrados, automação apoiando teste contínuo e relato contínuo. Os distratores mantêm elementos sequenciais ou adiam uma prática iterativa central."
+      }
+    },
+    {
+      "id": "ctaltm-115",
+      "status": "REVISED",
+      "section": "1.2.5",
+      "reason": "A resposta compara responsabilidades gerenciais concretas entre níveis; os distratores usam simplificações plausíveis sobre critérios comuns, delegação aos desenvolvedores e derivação do UAT.",
+      "answer": 0,
+      "en": [
+        "Management emphasis changes by level: coordinate integration sequences, tailor system planning to risk and resources, and organize stakeholder acceptance activities",
+        "Management emphasis stays consistent across levels, while reporting cadence and the specialists executing each level change with the development model",
+        "Management begins at system testing because developers coordinate component and integration work against criteria supplied in the project plan",
+        "Management derives lower-level scope from acceptance criteria so that component, integration, and system testing share one traceability structure"
+      ],
+      "pt": [
+        "A ênfase gerencial muda por nível: coordenar sequências de integração, adaptar o planejamento de sistema a riscos e recursos e organizar atividades de aceitação com stakeholders",
+        "A ênfase gerencial permanece consistente entre níveis, enquanto a cadência de relato e os especialistas que executam cada nível mudam com o modelo de desenvolvimento",
+        "O gerenciamento começa no teste de sistema porque desenvolvedores coordenam componente e integração conforme critérios fornecidos no plano do projeto",
+        "O gerenciamento deriva o escopo dos níveis inferiores dos critérios de aceitação para que componente, integração e sistema compartilhem uma estrutura de rastreabilidade"
+      ],
+      "explanations": {
+        "en": "Section 1.2.5 assigns distinct management activities to component, integration, system, and acceptance testing. These include collaborative integration sequencing, risk-aligned system planning, resource and schedule choices, UAT logistics, issue resolution, and sign-off support.",
+        "pt": "A seção 1.2.5 atribui atividades gerenciais distintas aos testes de componente, integração, sistema e aceitação. Elas incluem sequência colaborativa de integração, planejamento de sistema alinhado ao risco, escolhas de recursos e cronograma, logística de UAT, resolução de problemas e apoio à aprovação."
+      }
+    },
+    {
+      "id": "ctaltm-116",
+      "status": "REVISED",
+      "section": "1.2.5",
+      "reason": "A resposta foi ancorada nas atividades de aceitação descritas no syllabus; os distratores agora confundem independência, prontidão operacional e teste de sistema com UAT, sem depender de negações absolutas.",
+      "answer": 0,
+      "en": [
+        "UAT management involves business stakeholders in reviewing acceptance criteria, planning user testing, coordinating logistics, and confirming business needs",
+        "Business-user participation primarily increases test independence, while the Test Manager derives acceptance criteria from the system requirements",
+        "Production-like data primarily demonstrates operational readiness, while business stakeholders contribute during product sign-off after execution",
+        "Business users execute scripted system tests, while the test team evaluates whether the observed results fit the intended business processes"
+      ],
+      "pt": [
+        "O gerenciamento do UAT envolve stakeholders de negócio na revisão de critérios de aceitação, no planejamento do teste de usuários, na coordenação da logística e na confirmação das necessidades de negócio",
+        "A participação dos usuários de negócio aumenta principalmente a independência do teste, enquanto o Gerente de Teste deriva critérios de aceitação dos requisitos de sistema",
+        "Dados semelhantes aos de produção demonstram principalmente prontidão operacional, enquanto os stakeholders de negócio contribuem na aprovação do produto após a execução",
+        "Usuários de negócio executam testes de sistema roteirizados, enquanto a equipe de teste avalia se os resultados observados atendem aos processos de negócio pretendidos"
+      ],
+      "explanations": {
+        "en": "Acceptance-test management includes collaboration with stakeholders, confirmation of acceptance criteria, planning and managing user testing, coordination of customer-site logistics, issue resolution, and support for sign-off. The scenario fits those activities directly.",
+        "pt": "O gerenciamento do teste de aceitação inclui colaboração com stakeholders, confirmação de critérios de aceitação, planejamento e gerenciamento do teste de usuários, coordenação da logística no cliente, resolução de problemas e apoio à aprovação. O cenário corresponde diretamente a essas atividades."
+      }
+    },
+    {
+      "id": "ctaltm-117",
+      "status": "REVISED",
+      "section": "1.2.6",
+      "reason": "A resposta distingue focos gerenciais por tipo de teste; os distratores apresentam agrupamentos operacionais plausíveis, mas subordinam indevidamente objetivos e recursos à conveniência do plano funcional.",
+      "answer": 0,
+      "en": [
+        "Each test type needs management suited to its objectives, such as functional coverage, non-functional benchmarks, user scenarios, or code-structure insight",
+        "The test types can be organized around a shared environment and benchmark set, with separate report sections accounting for their different objectives",
+        "Non-functional work can follow the functional baseline because quality-characteristic results are interpreted against confirmed functional behavior",
+        "Black-box and white-box work can sit within the functional plan, with specialist skills allocated after coverage gaps appear in execution"
+      ],
+      "pt": [
+        "Cada tipo de teste exige gerenciamento adequado aos seus objetivos, como cobertura funcional, benchmarks não funcionais, cenários de usuário ou conhecimento da estrutura do código",
+        "Os tipos de teste podem ser organizados em torno de um ambiente e conjunto de benchmarks compartilhados, com seções separadas do relatório refletindo seus objetivos diferentes",
+        "O trabalho não funcional pode suceder a linha de base funcional porque os resultados das características de qualidade são interpretados diante do comportamento funcional confirmado",
+        "O trabalho caixa-preta e caixa-branca pode integrar o plano funcional, com habilidades especializadas alocadas após surgirem lacunas de cobertura na execução"
+      ],
+      "explanations": {
+        "en": "Section 1.2.6 gives functional, non-functional, black-box, and white-box testing different management concerns. Their planning, resources, benchmarks, coverage views, feedback, and technical insight should follow the relevant objective rather than a common environment or a late coverage gap.",
+        "pt": "A seção 1.2.6 atribui preocupações gerenciais diferentes aos testes funcional, não funcional, caixa-preta e caixa-branca. Planejamento, recursos, benchmarks, visões de cobertura, feedback e conhecimento técnico devem seguir o objetivo relevante, e não um ambiente comum ou uma lacuna tardia de cobertura."
+      }
+    },
+    {
+      "id": "ctaltm-118",
+      "status": "REVISED",
+      "section": "1.2.7",
+      "reason": "A resposta integra os seis condicionantes do cenário; os distratores agora oferecem planos gerenciais coerentes, mas omitem coordenação antecipada, balanceamento de recursos ou critérios mensuráveis.",
+      "answer": 0,
+      "en": [
+        "Establish a plan covering both delivery rhythms, risk-based skill allocation, regulatory evidence, measurable release criteria, and integrated monitoring and control",
+        "Prioritize the UI integration window, use sprint definitions of done as backend exit criteria, and collect audit evidence during release closure",
+        "Center the plan on the regulatory deadline, allocate the SDET to evidence automation, and let component leads set local test priorities",
+        "Create separate backend and UI plans, reconcile residual risk at the final quality gate, and use the sponsor's statement as the release threshold"
+      ],
+      "pt": [
+        "Estabelecer um plano que cubra os dois ritmos de entrega, alocação de habilidades baseada em risco, evidências regulatórias, critérios mensuráveis de liberação e monitoramento e controle integrados",
+        "Priorizar a janela de integração da UI, usar as definições de pronto dos sprints como critérios de saída do backend e coletar evidências de auditoria no encerramento da versão",
+        "Centrar o plano no prazo regulatório, alocar o SDET à automação de evidências e deixar os líderes dos componentes definirem prioridades locais de teste",
+        "Criar planos separados para backend e UI, reconciliar o risco residual no gate final de qualidade e usar a declaração do patrocinador como limite de liberação"
+      ],
+      "explanations": {
+        "en": "The project needs scope and risk planning, resource allocation, measurable criteria, monitoring against the plan, and controls that respond to deviations. The hybrid delivery rhythms, late integration, audit needs, scarce skills, and sponsor expectation belong in one coordinated approach.",
+        "pt": "O projeto exige planejamento de escopo e riscos, alocação de recursos, critérios mensuráveis, monitoramento em relação ao plano e controles que respondam a desvios. Ritmos híbridos, integração tardia, auditoria, habilidades escassas e expectativa do patrocinador pertencem a uma abordagem coordenada."
+      }
+    },
+    {
+      "id": "ctaltm-119",
+      "status": "REVISED",
+      "section": "1.2.7",
+      "reason": "A resposta reúne replanejamento, riscos, capacidade, integração e negociação; os distratores priorizam sequências de recuperação plausíveis, mas deixam fatores críticos fora do ciclo de planejamento, monitoramento e controle.",
+      "answer": 0,
+      "en": [
+        "Rebaseline risks, plans, automation readiness, and team capability; coordinate the provider integration; negotiate regression priorities; and define criteria and monitoring",
+        "Retain the current plan, validate automation after the provider stabilizes, and use the regulatory date and feature backlog as the planning anchors",
+        "Rebuild the manual regression suite first, then reassess the API and staffing risks from the defects found while preserving feature order",
+        "Focus management on provider integration and compliance evidence, leaving regression and feature trade-offs to the sprint teams' backlog priorities"
+      ],
+      "pt": [
+        "Refazer as linhas de base de riscos, planos, prontidão da automação e capacidade da equipe; coordenar a integração do provedor; negociar prioridades de regressão; e definir critérios e monitoramento",
+        "Manter o plano atual, validar a automação após a estabilização do provedor e usar a data regulatória e o backlog de funcionalidades como âncoras de planejamento",
+        "Reconstruir primeiro a suíte de regressão manual e então reavaliar os riscos da API e da equipe pelos defeitos encontrados, preservando a ordem das funcionalidades",
+        "Concentrar o gerenciamento na integração do provedor e nas evidências de conformidade, deixando trocas entre regressão e funcionalidades às prioridades do backlog dos sprints"
+      ],
+      "explanations": {
+        "en": "The changed API, stale automation, staff turnover, deadline, and priority conflict require updated risk and resource planning, negotiated priorities, explicit integration management, measurable criteria, and ongoing monitoring and control. Tackling one issue first does not re-establish coherent management.",
+        "pt": "A API alterada, a automação desatualizada, a rotatividade, o prazo e o conflito de prioridades exigem atualização de riscos e recursos, prioridades negociadas, gerenciamento explícito da integração, critérios mensuráveis e monitoramento e controle contínuos. Tratar um problema primeiro não restabelece gerenciamento coerente."
+      }
+    },
+    {
+      "id": "ctaltm-120",
+      "status": "REVISED",
+      "section": "1.3.1",
+      "reason": "A resposta aplica início, rigor, competência, prioridade e monitoramento proporcionais; os distratores representam respostas reativas ou administrativas plausíveis, sem mandatos caricatos.",
+      "answer": 0,
+      "en": [
+        "Begin the payment testing earlier, apply greater rigor with suitable expertise, prioritize its execution, and monitor the remaining risk as results emerge",
+        "Begin with broad payment smoke coverage and deepen the techniques when defects emerge, preserving the test schedule for the surrounding modules",
+        "Assign specialist review to the payment module while retaining its existing execution priority, since severity chiefly influences defect triage",
+        "Place payment execution after stable modules to reduce environment churn, while tracking its severity and ownership in the risk register"
+      ],
+      "pt": [
+        "Iniciar mais cedo o teste de pagamentos, aplicar maior rigor com expertise adequada, priorizar sua execução e monitorar o risco remanescente à medida que surgirem resultados",
+        "Começar com ampla cobertura de fumaça em pagamentos e aprofundar as técnicas quando surgirem defeitos, preservando o cronograma de teste dos módulos adjacentes",
+        "Atribuir revisão especializada ao módulo de pagamentos e manter sua prioridade atual de execução, pois a severidade influencia principalmente a triagem de defeitos",
+        "Posicionar a execução de pagamentos após módulos estáveis para reduzir trocas de ambiente, acompanhando sua severidade e responsabilidade no registro de riscos"
+      ],
+      "explanations": {
+        "en": "Risk-based testing uses identified and assessed risks to focus testing. A high risk should influence timing, rigor, skills, execution priority, and monitoring of residual risk, rather than merely change defect triage or the risk-register entry.",
+        "pt": "O teste baseado em risco usa riscos identificados e avaliados para focar o teste. Um risco alto deve influenciar momento, rigor, habilidades, prioridade de execução e monitoramento do risco residual, e não apenas a triagem de defeitos ou o registro de riscos."
+      }
+    },
+    {
+      "id": "ctaltm-121",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.3.3",
+      "reason": "O original não fornece a regra que combina alta probabilidade e baixo impacto, portanto não determina nível nem esforço. A reparação explicita que a matriz acordada classifica a combinação como média; a aprovação dessa mudança permanece com o revisor.",
+      "answer": 0,
+      "question": {
+        "en": "A product risk has high likelihood and low impact. The project's agreed risk matrix classifies this combination as medium risk. According to the CTAL-TM v3.0 syllabus, which test response best follows that assessment?",
+        "pt": "Um risco do produto tem alta probabilidade e baixo impacto. A matriz de riscos acordada pelo projeto classifica essa combinação como risco médio. Segundo o syllabus CTAL-TM v3.0, qual resposta de teste melhor segue essa avaliação?"
+      },
+      "en": [
+        "Allocate test effort and rigor proportionate to the medium level, monitor changes in impact and likelihood, and adjust treatment when the classification changes",
+        "Treat the risk as high because frequent occurrence drives test intensity, using the matrix result chiefly as a reporting category",
+        "Treat the risk as low because limited consequences constrain useful test depth, retaining the matrix result for release communication",
+        "Schedule the risk after the high-impact items, using its medium classification to determine residual-risk reporting at the release gate"
+      ],
+      "pt": [
+        "Alocar esforço e rigor de teste proporcionais ao nível médio, monitorar mudanças no impacto e na probabilidade e ajustar o tratamento quando a classificação mudar",
+        "Tratar o risco como alto porque a ocorrência frequente orienta a intensidade do teste, usando o resultado da matriz principalmente como categoria de relato",
+        "Tratar o risco como baixo porque consequências limitadas restringem a profundidade útil do teste, mantendo o resultado da matriz para comunicação da liberação",
+        "Programar o risco após os itens de alto impacto, usando sua classificação média para determinar o relato do risco residual no gate de liberação"
+      ],
+      "explanations": {
+        "en": "Section 1.3.3 combines likelihood and impact into an aggregate level, often through an agreed matrix. Section 1.3.4 then makes time and effort proportional to that level. Monitoring can change the assessment when likelihood or impact evolves.",
+        "pt": "A seção 1.3.3 combina probabilidade e impacto em um nível agregado, frequentemente por uma matriz acordada. A seção 1.3.4 torna tempo e esforço proporcionais a esse nível. O monitoramento pode alterar a avaliação quando probabilidade ou impacto evoluem."
+      }
+    },
+    {
+      "id": "ctaltm-122",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.3.2",
+      "reason": "O original nomeia 'test basis walkthrough', técnica ausente da lista oficial. A reparação descreve explicitamente um checklist aplicado aos requisitos, tornando o gabarito compatível com uma técnica listada; a mudança não está aprovada.",
+      "answer": 0,
+      "question": {
+        "en": "A Test Manager reviews each aerospace requirement using a checklist with prompts such as 'what could fail?' and 'which quality characteristic could be affected?'. According to the CTAL-TM v3.0 syllabus, which risk-identification technique is being used?",
+        "pt": "Um Gerente de Teste revisa cada requisito aeroespacial usando um checklist com perguntas como 'o que poderia falhar?' e 'qual característica de qualidade poderia ser afetada?'. Segundo o syllabus CTAL-TM v3.0, qual técnica de identificação de riscos está sendo usada?"
+      },
+      "en": [
+        "Checklist-based identification, applying predefined risk prompts systematically to relevant parts of the test basis",
+        "Expert interviews, eliciting risk judgments separately from the specialists who authored or review the requirements",
+        "A risk workshop, bringing affected stakeholder groups together to propose and consolidate candidate quality risks",
+        "A retrospective, using experience from completed work to identify risk patterns relevant to the next planning cycle"
+      ],
+      "pt": [
+        "Identificação baseada em checklist, aplicando sistematicamente perguntas predefinidas de risco às partes relevantes da base de teste",
+        "Entrevistas com especialistas, levantando separadamente julgamentos de risco de quem elaborou ou revisa os requisitos",
+        "Um workshop de riscos, reunindo grupos de stakeholders afetados para propor e consolidar riscos de qualidade candidatos",
+        "Uma retrospectiva, usando a experiência do trabalho concluído para identificar padrões de risco relevantes ao próximo ciclo de planejamento"
+      ],
+      "explanations": {
+        "en": "Section 1.3.2 lists checklists, expert interviews, risk workshops, retrospectives, and other techniques. The repaired stem explicitly describes predefined prompts applied systematically, which distinguishes a checklist from the other listed techniques.",
+        "pt": "A seção 1.3.2 lista checklists, entrevistas com especialistas, workshops de risco, retrospectivas e outras técnicas. O enunciado reparado descreve perguntas predefinidas aplicadas sistematicamente, o que distingue o checklist das demais técnicas listadas."
+      }
+    },
+    {
+      "id": "ctaltm-123",
+      "status": "REVISED",
+      "section": "1.3.2",
+      "reason": "A fonte correta continua sendo experiência passada; os distratores agora são artefatos que poderiam informar planejamento, mas não substituem uma fonte de risco contextualizada e reconhecida pelo syllabus.",
+      "answer": 0,
+      "en": [
+        "Experience from comparable projects, captured in lessons learned, post-mortems, and the recollections of knowledgeable participants",
+        "Execution statistics from a dissimilar product, transferred into the new risk list before the project contexts are compared",
+        "A competitor's public incident report, used as a proxy for the failure modes of the project's own architecture",
+        "The release calendar and milestone plan, used to infer quality risks from the amount of time assigned to each component"
+      ],
+      "pt": [
+        "Experiência de projetos comparáveis, registrada em lições aprendidas, post-mortems e lembranças de participantes experientes",
+        "Estatísticas de execução de um produto diferente, transferidas para a nova lista de riscos antes da comparação dos contextos dos projetos",
+        "Um relatório público de incidentes de um concorrente, usado como aproximação dos modos de falha da arquitetura do próprio projeto",
+        "O calendário da versão e o plano de marcos, usados para inferir riscos de qualidade pelo tempo atribuído a cada componente"
+      ],
+      "explanations": {
+        "en": "Section 1.3.2 explicitly includes referring to past experience. That experience needs contextual relevance. Schedules, unrelated statistics, and competitor incidents can prompt questions, but they do not by themselves establish the project's quality risks.",
+        "pt": "A seção 1.3.2 inclui explicitamente a consulta à experiência passada. Essa experiência precisa ter relevância contextual. Cronogramas, estatísticas sem relação e incidentes de concorrentes podem motivar perguntas, mas não estabelecem por si os riscos de qualidade do projeto."
+      }
+    },
+    {
+      "id": "ctaltm-124",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.3.3",
+      "reason": "O original infere categoria média ou alta sem fornecer matriz ou cálculo. A reparação informa que a matriz acordada resulta em nível alto e passa a avaliar a interpretação desse resultado; a aprovação continua pendente.",
+      "answer": 0,
+      "question": {
+        "en": "For a financial trading system, a product risk has low technical likelihood because the module is mature, but very high business impact because a failure could cause major losses within minutes. The project's agreed risk matrix classifies this combination as high. According to the CTAL-TM v3.0 syllabus, how should the Test Manager interpret the result?",
+        "pt": "Em um sistema de negociação financeira, um risco do produto tem baixa probabilidade técnica porque o módulo é maduro, mas impacto de negócio muito alto porque uma falha poderia causar grandes perdas em minutos. A matriz de riscos acordada pelo projeto classifica essa combinação como alta. Segundo o syllabus CTAL-TM v3.0, como o Gerente de Teste deveria interpretar o resultado?"
+      },
+      "en": [
+        "Use the combined high level to plan proportionate early and rigorous testing, while reporting the residual risk and monitoring both factors",
+        "Reduce the result to medium because module maturity is direct evidence that the likelihood rating deserves greater weight than impact",
+        "Keep the factors separate and increase test priority when later monitoring shows the likelihood moving toward the impact rating",
+        "Move the item to project-risk management because the financial consequence concerns the business rather than product quality"
+      ],
+      "pt": [
+        "Usar o nível alto combinado para planejar teste antecipado e rigoroso proporcional, relatando o risco residual e monitorando os dois fatores",
+        "Reduzir o resultado para médio porque a maturidade do módulo evidencia que a classificação de probabilidade merece peso maior que o impacto",
+        "Manter os fatores separados e elevar a prioridade de teste quando o monitoramento posterior mostrar a probabilidade se aproximando do impacto",
+        "Mover o item para o gerenciamento de riscos do projeto porque a consequência financeira diz respeito ao negócio, e não à qualidade do produto"
+      ],
+      "explanations": {
+        "en": "Section 1.3.3 combines likelihood and impact using the selected assessment method. Once that method yields a high level, section 1.3.4 calls for proportionate earlier and more rigorous testing, with residual-risk reporting and continued monitoring.",
+        "pt": "A seção 1.3.3 combina probabilidade e impacto pelo método de avaliação selecionado. Quando esse método produz nível alto, a seção 1.3.4 orienta teste proporcionalmente mais cedo e rigoroso, com relato do risco residual e monitoramento contínuo."
+      }
+    },
+    {
+      "id": "ctaltm-125",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.3.3",
+      "reason": "O original chama de quantitativo o produto de escalas ordinais. A reparação explicita a ausência de dados estatisticamente válidos e pergunta pela interpretação adequada do escore; ela preserva o índice e segue pendente de decisão editorial.",
+      "answer": 0,
+      "question": {
+        "en": "A Test Manager rates likelihood and impact on ordinal 1-5 scales and multiplies the ratings to obtain a risk score. The project has no extensive, statistically valid risk data. According to the CTAL-TM v3.0 syllabus, how should this score be interpreted?",
+        "pt": "Um Gerente de Teste classifica probabilidade e impacto em escalas ordinais de 1 a 5 e multiplica as classificações para obter uma pontuação de risco. O projeto não possui dados de risco extensos e estatisticamente válidos. Segundo o syllabus CTAL-TM v3.0, como essa pontuação deveria ser interpretada?"
+      },
+      "en": [
+        "As a qualitative relative rating for prioritization; its numeric form does not establish a quantitative probability or loss estimate",
+        "As a quantitative estimate because multiplication converts the two ordinal judgments into an interval-scale risk measure",
+        "As an impact index that supports comparison across projects even when their rating definitions and stakeholder groups differ",
+        "As a preliminary likelihood estimate in which the impact scale calibrates variation among the assessors' probability judgments"
+      ],
+      "pt": [
+        "Como classificação qualitativa relativa para priorização; sua forma numérica não estabelece uma estimativa quantitativa de probabilidade ou perda",
+        "Como estimativa quantitativa porque a multiplicação converte os dois julgamentos ordinais em uma medida de risco em escala intervalar",
+        "Como índice de impacto que permite comparação entre projetos mesmo quando diferem as definições das escalas e os grupos de stakeholders",
+        "Como estimativa preliminar de probabilidade na qual a escala de impacto calibra a variação entre os julgamentos dos avaliadores"
+      ],
+      "explanations": {
+        "en": "The syllabus treats ordinal likelihood and impact as qualitative relative ratings, commonly combined through a matrix. Quantitative assessment is appropriate when extensive, statistically valid data support quantities such as percentages and monetary amounts.",
+        "pt": "O syllabus trata probabilidade e impacto ordinais como classificações qualitativas relativas, normalmente combinadas por uma matriz. A avaliação quantitativa é adequada quando dados extensos e estatisticamente válidos sustentam grandezas como percentuais e valores monetários."
+      }
+    },
+    {
+      "id": "ctaltm-126",
+      "status": "REVISED",
+      "section": "1.3.4",
+      "reason": "A resposta usa proporcionalidade sem inventar técnicas obrigatórias; os distratores confundem sequência, uniformidade e facilidade operacional com mitigação orientada pelo nível de risco.",
+      "answer": 0,
+      "en": [
+        "Test R1 earlier with greater rigor and qualified staff, give R2 targeted medium-depth coverage, and address R3 later with lighter coverage and visible residual risk",
+        "Use comparable test intensity for R1, R2, and R3, varying their execution order and reporting frequency according to the recorded levels",
+        "Complete the planned R1 coverage before allocating capacity to R2 and R3, then report untested items as accepted residual risk",
+        "Begin with broad checks for the three risks, then deepen R3 because its logging behavior is easier to reproduce and diagnose"
+      ],
+      "pt": [
+        "Testar R1 mais cedo e com maior rigor por equipe qualificada, dar a R2 cobertura direcionada de profundidade média e tratar R3 mais tarde com cobertura leve e risco residual visível",
+        "Usar intensidade de teste comparável para R1, R2 e R3, variando a ordem de execução e a frequência de relato conforme os níveis registrados",
+        "Concluir a cobertura planejada de R1 antes de alocar capacidade a R2 e R3 e relatar os itens não testados como risco residual aceito",
+        "Começar com verificações amplas para os três riscos e depois aprofundar R3 porque seu comportamento de logging é mais fácil de reproduzir e diagnosticar"
+      ],
+      "explanations": {
+        "en": "Section 1.3.4 makes test time and effort proportional to risk level: higher risks start earlier and receive more rigor, while lower risks may start later with less rigor. Skills, regression extent, and residual-risk communication also follow the risk context.",
+        "pt": "A seção 1.3.4 torna tempo e esforço proporcionais ao nível de risco: riscos maiores começam mais cedo e recebem maior rigor, enquanto riscos menores podem começar mais tarde com menor rigor. Habilidades, extensão da regressão e comunicação do risco residual também seguem o contexto de risco."
+      }
+    },
+    {
+      "id": "ctaltm-127",
+      "status": "REVISED",
+      "section": "1.3.4",
+      "reason": "A proposta considera simultaneamente nível de risco e adequação técnica; as alternativas concorrentes usam técnicas reais, mas as associam a características de qualidade ou comportamentos menos pertinentes.",
+      "answer": 0,
+      "en": [
+        "For R1, combine state-oriented safety checks with thermal stress testing; for R2, cover pairing states and realistic exploration; for R3, use focused display checks",
+        "For R1, derive decision tables from display requirements; for R2, load-test the wireless stack; for R3, explore firmware behavior across power cycles",
+        "For R1 and R2, use comparable exploratory charters with longer sessions for R1; for R3, use formal state-transition coverage of display values",
+        "For R1 and R2, use release-gating smoke suites; for R3, build detailed visual regression because its expected results are easier to specify"
+      ],
+      "pt": [
+        "Para R1, combinar verificações de segurança orientadas a estados com teste de estresse térmico; para R2, cobrir estados de pareamento e exploração realista; para R3, usar verificações focadas da exibição",
+        "Para R1, derivar tabelas de decisão dos requisitos da exibição; para R2, aplicar carga à pilha sem fio; para R3, explorar o firmware em ciclos de energia",
+        "Para R1 e R2, usar charters exploratórios comparáveis com sessões mais longas para R1; para R3, usar cobertura formal de transição de estados dos valores exibidos",
+        "Para R1 e R2, usar suítes de fumaça como gate da versão; para R3, criar regressão visual detalhada porque seus resultados esperados são mais fáceis de especificar"
+      ],
+      "explanations": {
+        "en": "Risk level drives timing and rigor, while the quality risk and test item determine suitable techniques. Safety control benefits from state and stress coverage, pairing from state/scenario coverage, and a low display risk from focused lighter checks.",
+        "pt": "O nível de risco orienta momento e rigor, enquanto o risco de qualidade e o item de teste determinam técnicas adequadas. O controle de segurança se beneficia de cobertura de estados e estresse, o pareamento de estados e cenários, e o risco baixo de exibição de verificações focadas mais leves."
+      }
+    },
+    {
+      "id": "ctaltm-128",
+      "status": "REVISED",
+      "section": "1.3.4",
+      "reason": "A resposta associa recursos especializados às características de qualidade e aos níveis; os distratores redistribuem os mesmos recursos de formas operacionalmente possíveis, porém conceitualmente desalinhadas.",
+      "answer": 0,
+      "en": [
+        "Assign security specialists to R1, combine rule-based functional testing with clinicians for R2, use load tools for R3, and give R4 proportionately light visual coverage",
+        "Assign security specialists across R1 and R2, use clinicians to validate search relevance for R3, and automate visual comparison for R4",
+        "Share performance tools between R1 and R3, involve clinicians in R2, and address access-control behavior through the regulatory evidence review",
+        "Use risk-scaled exploratory charters for the four items, drawing on specialists and clinicians during defect analysis rather than test design"
+      ],
+      "pt": [
+        "Atribuir especialistas de segurança a R1, combinar teste funcional baseado em regras com clínicos em R2, usar ferramentas de carga em R3 e dar a R4 cobertura visual proporcionalmente leve",
+        "Distribuir especialistas de segurança entre R1 e R2, usar clínicos para validar a relevância da busca em R3 e automatizar comparação visual em R4",
+        "Compartilhar ferramentas de desempenho entre R1 e R3, envolver clínicos em R2 e tratar o comportamento de controle de acesso na revisão de evidências regulatórias",
+        "Usar charters exploratórios dimensionados pelo risco nos quatro itens, recorrendo a especialistas e clínicos durante a análise de defeitos, e não no design de teste"
+      ],
+      "explanations": {
+        "en": "The approach should match the risk level, quality characteristic, test type, environment, and available skills. The correct allocation connects security, clinical decision rules, load behavior, and cosmetic presentation with the relevant specialists and proportional rigor.",
+        "pt": "A abordagem deve corresponder ao nível de risco, à característica de qualidade, ao tipo de teste, ao ambiente e às habilidades disponíveis. A alocação correta conecta segurança, regras de decisão clínica, comportamento sob carga e apresentação cosmética aos especialistas pertinentes e ao rigor proporcional."
+      }
+    },
+    {
+      "id": "ctaltm-129",
+      "status": "REVISED",
+      "section": "1.3.5",
+      "reason": "A distinção segue formalidade, documentação, participação, fatores e fórmulas; os distratores trocam dimensões reais entre as categorias, formando concepções erradas plausíveis.",
+      "answer": 0,
+      "en": [
+        "Heavyweight techniques use defined procedures, detailed documentation, broad stakeholder participation, detailed factors, and formulas; lightweight techniques reduce those demands",
+        "Heavyweight techniques broaden stakeholder participation while retaining ordinal impact and likelihood; lightweight techniques use smaller groups and numerical formulas",
+        "The categories chiefly reflect documentation volume, while stakeholder breadth, factor detail, and calculation method depend on the selected SDLC",
+        "Heavyweight techniques fit rapidly changing products because they stabilize ratings; lightweight techniques fit safety-critical products through narrower scope"
+      ],
+      "pt": [
+        "Técnicas heavyweight usam procedimentos definidos, documentação detalhada, participação ampla de stakeholders, fatores detalhados e fórmulas; técnicas lightweight reduzem essas exigências",
+        "Técnicas heavyweight ampliam a participação dos stakeholders mantendo impacto e probabilidade ordinais; técnicas lightweight usam grupos menores e fórmulas numéricas",
+        "As categorias refletem principalmente o volume de documentação, enquanto amplitude de stakeholders, detalhe dos fatores e cálculo dependem do SDLC selecionado",
+        "Técnicas heavyweight se ajustam a produtos de mudança rápida porque estabilizam classificações; técnicas lightweight se ajustam a produtos críticos à segurança pelo escopo mais estreito"
+      ],
+      "explanations": {
+        "en": "Section 1.3.5 describes heavyweight techniques as formal and documented, with broad stakeholder groups, detailed factors, and mathematical formulas. Lightweight techniques require less stakeholder and team effort and commonly reduce the factors to ordinal impact and likelihood.",
+        "pt": "A seção 1.3.5 descreve técnicas heavyweight como formais e documentadas, com grupos amplos de stakeholders, fatores detalhados e fórmulas matemáticas. Técnicas lightweight exigem menos esforço da equipe e dos stakeholders e normalmente reduzem os fatores a impacto e probabilidade ordinais."
+      }
+    },
+    {
+      "id": "ctaltm-130",
+      "status": "REVISED",
+      "section": "1.3.5",
+      "reason": "A justificativa correta usa proporcionalidade contextual; os distratores agora são argumentos plausíveis sobre estabilidade, coordenação e reutilização, sem absolutos ou proibições inventadas.",
+      "answer": 0,
+      "en": [
+        "The short, non-safety-critical engagement and limited time make a lower-effort stakeholder brainstorm proportionate to the project's process and product context",
+        "The short duration favors a heavyweight technique because detailed factors stabilize the risk picture before rapid prototype changes occur",
+        "The low-formality setting favors individual analysis by the Test Manager because workshop coordination would consume part of the experiment window",
+        "The proof-of-concept setting favors reuse of a prior risk list because the prototype's temporary architecture limits the value of current stakeholder input"
+      ],
+      "pt": [
+        "O trabalho curto, não crítico à segurança e com tempo limitado torna um brainstorming de menor esforço com stakeholders proporcional ao contexto de processo e produto",
+        "A curta duração favorece uma técnica heavyweight porque fatores detalhados estabilizam o quadro de riscos antes de mudanças rápidas no protótipo",
+        "O ambiente de baixa formalidade favorece análise individual pelo Gerente de Teste porque a coordenação do workshop consumiria parte da janela do experimento",
+        "O contexto de prova de conceito favorece reutilizar uma lista anterior de riscos porque a arquitetura temporária do protótipo limita o valor da participação atual dos stakeholders"
+      ],
+      "explanations": {
+        "en": "Technique suitability depends on project, process, and product considerations. Lightweight techniques still use stakeholder involvement but require less effort and formality, which is proportionate for this short non-safety-critical proof of concept.",
+        "pt": "A adequação da técnica depende de considerações do projeto, processo e produto. Técnicas lightweight ainda usam participação de stakeholders, mas exigem menos esforço e formalidade, o que é proporcional para esta prova de conceito curta e não crítica à segurança."
+      }
+    },
+    {
+      "id": "ctaltm-131",
+      "status": "REVISED",
+      "section": "1.3.6",
+      "reason": "A resposta usa indicadores citados diretamente pelo syllabus; os distratores são métricas de produtividade, participação e automação que podem parecer úteis, mas não demonstram sucesso do teste baseado em risco.",
+      "answer": 0,
+      "en": [
+        "Whether critical production incidents reveal escaped critical defects and whether high-priority defects were found early during test execution",
+        "The ratio of executed test cases to registered risk items and the average execution time for tests linked to each risk level",
+        "The growth in identified risk items between releases and the number of stakeholder groups invited to each analysis session",
+        "The percentage of the regression suite automated and the number of defects found during reviews of risk-related testware"
+      ],
+      "pt": [
+        "Se incidentes críticos em produção revelam defeitos críticos escapados e se defeitos de alta prioridade foram encontrados cedo durante a execução do teste",
+        "A razão entre casos de teste executados e itens de risco registrados e o tempo médio de execução dos testes ligados a cada nível de risco",
+        "O crescimento dos itens de risco identificados entre versões e a quantidade de grupos de stakeholders convidados para cada sessão de análise",
+        "O percentual automatizado da suíte de regressão e a quantidade de defeitos encontrados durante revisões do testware relacionado a riscos"
+      ],
+      "explanations": {
+        "en": "Section 1.3.6 asks whether critical defects escaped and whether high-priority defects were found early, alongside stakeholder involvement, risk communication, and the risk of skipped tests. Activity volume or automation coverage does not directly establish risk-based effectiveness.",
+        "pt": "A seção 1.3.6 pergunta se defeitos críticos escaparam e se defeitos de alta prioridade foram encontrados cedo, além de considerar participação dos stakeholders, comunicação de riscos e risco dos testes omitidos. Volume de atividade ou cobertura de automação não demonstra diretamente eficácia baseada em risco."
+      }
+    },
+    {
+      "id": "ctaltm-132",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.4.1",
+      "reason": "O original atribui a 1.4.1 uma taxonomia de abordagens que a v3.0 não lista. A reparação pergunta como integrar a análise de riscos à estratégia, combinando corretamente 1.3 e 1.4.1; a decisão editorial permanece pendente.",
+      "answer": 0,
+      "question": {
+        "en": "A Test Manager wants product-risk analysis to drive the project test approach. According to sections 1.3 and 1.4.1 of the CTAL-TM v3.0 syllabus, how should risk information be incorporated into the project test strategy?",
+        "pt": "Um Gerente de Teste quer que a análise de riscos do produto direcione a abordagem de teste do projeto. Segundo as seções 1.3 e 1.4.1 do syllabus CTAL-TM v3.0, como as informações de risco deveriam ser incorporadas à estratégia de teste do projeto?"
+      },
+      "en": [
+        "Use risk analysis to focus and prioritize testing, while selecting suitable test levels, test types, techniques, and practices for the project context",
+        "Use risk scores to determine execution order, while taking test levels, types, and techniques directly from the organizational strategy",
+        "Use the risk register as the project strategy, leaving resource, schedule, and responsibility choices to the operational test plan",
+        "Select levels, types, and techniques from the project context, then use risk information chiefly to explain coverage after execution"
+      ],
+      "pt": [
+        "Usar a análise de riscos para focar e priorizar o teste, selecionando níveis, tipos, técnicas e práticas adequados ao contexto do projeto",
+        "Usar pontuações de risco para determinar a ordem de execução e obter níveis, tipos e técnicas de teste diretamente da estratégia organizacional",
+        "Usar o registro de riscos como estratégia do projeto, deixando escolhas de recursos, cronograma e responsabilidades para o plano operacional de teste",
+        "Selecionar níveis, tipos e técnicas pelo contexto do projeto e então usar informações de risco principalmente para explicar a cobertura após a execução"
+      ],
+      "explanations": {
+        "en": "Risk analysis focuses and prioritizes testing. The project strategy still selects and combines suitable levels, types, techniques, and other practices based on the organizational strategy and project context. A risk register or execution order is not a complete strategy.",
+        "pt": "A análise de riscos foca e prioriza o teste. A estratégia do projeto ainda seleciona e combina níveis, tipos, técnicas e outras práticas adequadas com base na estratégia organizacional e no contexto do projeto. Um registro de riscos ou uma ordem de execução não constitui estratégia completa."
+      }
+    },
+    {
+      "id": "ctaltm-133",
+      "status": "REVISED",
+      "section": "1.4.1",
+      "reason": "A resposta evita depender do rótulo legado 'process-compliant' e descreve a ação exigida pela v3.0; os distratores tratam conformidade como evidência tardia, documentação ou desvio, equívocos plausíveis em projetos regulados.",
+      "answer": 0,
+      "en": [
+        "Build the mandated test levels, artifacts, traceability, and practices into an approach tailored to the project's aerospace risks and constraints",
+        "Treat the standard as the minimum evidence package, while selecting test levels from project risks and adding traceability after test design",
+        "Map requirements to the mandated artifacts during planning, then establish traceability when the release evidence is prepared for audit",
+        "Use the organizational project approach and document deviations from the aerospace provisions for regulatory review at the release gate"
+      ],
+      "pt": [
+        "Incorporar níveis de teste, artefatos, rastreabilidade e práticas obrigatórios a uma abordagem adaptada aos riscos e restrições aeroespaciais do projeto",
+        "Tratar a norma como pacote mínimo de evidências, selecionando níveis de teste pelos riscos do projeto e acrescentando rastreabilidade após o design de teste",
+        "Mapear requisitos aos artefatos obrigatórios durante o planejamento e estabelecer a rastreabilidade quando as evidências da versão forem preparadas para auditoria",
+        "Usar a abordagem organizacional de projeto e documentar desvios das disposições aeroespaciais para revisão regulatória no gate de liberação"
+      ],
+      "explanations": {
+        "en": "The project strategy selects levels, types, techniques, and practices for the context. Domain regulations can prescribe rigor, documentation, techniques, coverage, and traceability, so those provisions belong in the approach from planning onward.",
+        "pt": "A estratégia do projeto seleciona níveis, tipos, técnicas e práticas para o contexto. Regulamentos do domínio podem prescrever rigor, documentação, técnicas, cobertura e rastreabilidade; portanto, essas disposições pertencem à abordagem desde o planejamento."
+      }
+    },
+    {
+      "id": "ctaltm-134",
+      "status": "REVISED",
+      "section": "1.4.2",
+      "reason": "A resposta preserva as três condições expressas pela estratégia; os distratores implementam parcialmente as mesmas preocupações, mas rebaixam uma delas a evidência, triagem ou decisão posterior.",
+      "answer": 0,
+      "en": [
+        "Combine documented risk-based work, regulator-aligned practices, and automated regression, tailoring their levels, types, and techniques to the mobile product",
+        "Use risk-based testing as the main approach, representing PCI-DSS controls as product risks and selecting regression automation during system testing",
+        "Use regulator-aligned testing as the main approach, derive risk priorities from PCI-DSS controls, and schedule manual regression for each release",
+        "Use automated regression as the main approach, represent audit controls as test types, and record product risks during defect triage"
+      ],
+      "pt": [
+        "Combinar trabalho documentado baseado em risco, práticas alinhadas ao regulador e regressão automatizada, adaptando níveis, tipos e técnicas ao produto móvel",
+        "Usar teste baseado em risco como abordagem principal, representar controles PCI-DSS como riscos do produto e selecionar automação de regressão durante o teste de sistema",
+        "Usar teste alinhado ao regulador como abordagem principal, derivar prioridades de risco dos controles PCI-DSS e programar regressão manual a cada versão",
+        "Usar regressão automatizada como abordagem principal, representar controles de auditoria como tipos de teste e registrar riscos do produto durante a triagem de defeitos"
+      ],
+      "explanations": {
+        "en": "The stated organizational strategy activates three requirements for this project: documented risk-based testing, regulator-aligned practices, and automated regression for frequent releases. Section 1.4.2 requires the strategy and project context to be analyzed together.",
+        "pt": "A estratégia organizacional apresentada ativa três requisitos para este projeto: teste documentado baseado em risco, práticas alinhadas ao regulador e regressão automatizada para liberações frequentes. A seção 1.4.2 exige analisar em conjunto estratégia e contexto do projeto."
+      }
+    },
+    {
+      "id": "ctaltm-135",
+      "status": "REVISED",
+      "section": "1.4.2",
+      "reason": "A resposta aplica a regra organizacional por componente; os distratores combinam exploração e método de formas operacionais críveis, mas deixam o tipo de trabalho de cada componente de determinar a escolha.",
+      "answer": 0,
+      "en": [
+        "Use exploratory sessions for the new dashboard and predefined test conditions for the legacy patch, coordinating both within the project strategy",
+        "Use exploratory sessions for both components, adding predefined charters and regression checks for the legacy report generator",
+        "Use predefined test conditions for both components, deriving the dashboard conditions incrementally as its features become available",
+        "Choose one approach for each release, alternating exploratory and predefined-condition testing as the dashboard and patch schedules change"
+      ],
+      "pt": [
+        "Usar sessões exploratórias no novo dashboard e condições de teste predefinidas na correção legada, coordenando ambas na estratégia do projeto",
+        "Usar sessões exploratórias nos dois componentes, acrescentando charters predefinidos e verificações de regressão ao gerador de relatórios legado",
+        "Usar condições de teste predefinidas nos dois componentes, derivando incrementalmente as condições do dashboard conforme suas funcionalidades surgirem",
+        "Escolher uma abordagem para cada versão, alternando teste exploratório e por condições predefinidas conforme mudarem os cronogramas do dashboard e da correção"
+      ],
+      "explanations": {
+        "en": "The organizational strategy distinguishes new feature development from legacy maintenance, and the project contains both. The project strategy should therefore apply each prescribed practice to its matching component and coordinate the combined approach.",
+        "pt": "A estratégia organizacional distingue desenvolvimento de novas funcionalidades de manutenção legada, e o projeto contém ambos. A estratégia do projeto deve aplicar cada prática prescrita ao componente correspondente e coordenar a abordagem combinada."
+      }
+    },
+    {
+      "id": "ctaltm-136",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.4.3",
+      "reason": "O original usa 'Time-bound', enquanto a v3.0 define T como 'timely'. A reparação mantém o cenário e usa a terminologia oficial nas quatro alternativas; a alteração aguarda aprovação do revisor.",
+      "answer": 0,
+      "question": {
+        "en": "A Test Manager defines this exit criterion for a payment-system release: 'Zero critical-severity defects open at sign-off, verified in the defect tracker, with sign-off completed no later than two days before release.' According to the CTAL-TM v3.0 syllabus, which SMART element is best reflected by 'no later than two days before release'?",
+        "pt": "Um Gerente de Teste define este critério de saída para a versão de um sistema de pagamento: 'Zero defeitos de severidade crítica abertos na aprovação, verificados no rastreador de defeitos, com aprovação concluída até dois dias antes da liberação.' Segundo o syllabus CTAL-TM v3.0, qual elemento SMART é melhor refletido por 'até dois dias antes da liberação'?"
+      },
+      "en": [
+        "Timely, because the statement provides a specific timeframe and a defined deadline for completing sign-off",
+        "Specific, because the statement identifies the defect-severity category and the release decision to which it applies",
+        "Measurable, because the statement provides a defect count that can be checked in the tracking system",
+        "Achievable, because the statement links sign-off to a two-day interval that can be planned by the test team"
+      ],
+      "pt": [
+        "Temporalmente definido (Timely), porque a declaração fornece um período específico e um prazo definido para concluir a aprovação",
+        "Específico, porque a declaração identifica a categoria de severidade dos defeitos e a decisão de liberação à qual se aplica",
+        "Mensurável, porque a declaração fornece uma contagem de defeitos que pode ser verificada no sistema de acompanhamento",
+        "Atingível, porque a declaração vincula a aprovação a um intervalo de dois dias que pode ser planejado pela equipe de teste"
+      ],
+      "explanations": {
+        "en": "Section 1.4.3 defines T as timely: a specific timeframe and a defined deadline. The quoted phrase supplies that temporal bound. The criterion's defect category and count support other SMART dimensions, while achievability would require evidence about resources and capability.",
+        "pt": "A seção 1.4.3 define T como timely: um período específico e um prazo definido. A expressão citada fornece esse limite temporal. A categoria e a contagem de defeitos apoiam outras dimensões SMART, enquanto a viabilidade exigiria evidência sobre recursos e capacidade."
+      }
+    },
+    {
+      "id": "ctaltm-137",
+      "status": "REVISED",
+      "section": "1.4.3",
+      "reason": "A resposta concentra a falha objetiva em especificidade e mensuração; os distratores reinterpretam plausivelmente escopo, prazo, viabilidade e relevância sem afirmações impossíveis ou linguagem absolutista.",
+      "answer": 0,
+      "en": [
+        "It is neither specific nor measurable because 'thoroughly' defines no clear scope, target, or criterion for deciding that testing is complete",
+        "It is specific because the system defines the test scope, and measurable because reaching the release date provides an observable result",
+        "It is achievable because the objective states no resource constraint, and its relevance follows from the connection to release readiness",
+        "It is timely and relevant as written, while detailed completion measures can be established during test monitoring and control"
+      ],
+      "pt": [
+        "Ele não é específico nem mensurável porque 'exaustivamente' não define escopo, meta ou critério claro para decidir que o teste terminou",
+        "Ele é específico porque o sistema define o escopo de teste e mensurável porque alcançar a data de liberação fornece um resultado observável",
+        "Ele é atingível porque o objetivo não declara restrição de recursos e sua relevância decorre da ligação com a prontidão para liberação",
+        "Ele é temporalmente definido e relevante como está, enquanto medidas detalhadas de conclusão podem ser estabelecidas durante monitoramento e controle"
+      ],
+      "explanations": {
+        "en": "SMART calls for clear, unambiguous wording and a quantifiable way to determine whether an objective has been reached. 'Thoroughly' supplies neither a defined scope nor a completion measure. A release reference alone does not resolve those defects.",
+        "pt": "SMART exige redação clara e não ambígua e uma forma quantificável de determinar se o objetivo foi alcançado. 'Exaustivamente' não fornece escopo definido nem medida de conclusão. A referência à liberação, isoladamente, não resolve essas falhas."
+      }
+    },
+    {
+      "id": "ctaltm-138",
+      "status": "REVISED",
+      "section": "1.5.1",
+      "reason": "A resposta apresenta a sequência IDEAL; os distratores agora confundem de maneira plausível IDEAL com adaptação em projeto, PDCA e níveis de maturidade, mantendo paralelismo e detalhe.",
+      "answer": 0,
+      "en": [
+        "A process-improvement model with the phases Initiating, Diagnosing, Establishing, Acting, and Learning, applicable at organizational or tailored project level",
+        "A project-level model with Diagnosing, Establishing, Acting, and Learning, reserving Initiating for organization-wide improvement programs",
+        "A five-step form of PDCA that separates planning into Initiating and Diagnosing and treats Learning as the closing check",
+        "A maturity model whose five phases correspond to capability levels that a test organization reaches through successive assessments"
+      ],
+      "pt": [
+        "Um modelo de melhoria de processo com as fases Initiating, Diagnosing, Establishing, Acting e Learning, aplicável no nível organizacional ou adaptado ao projeto",
+        "Um modelo no nível do projeto com Diagnosing, Establishing, Acting e Learning, reservando Initiating a programas de melhoria organizacional",
+        "Uma forma de PDCA em cinco etapas que separa o planejamento em Initiating e Diagnosing e trata Learning como verificação de encerramento",
+        "Um modelo de maturidade cujas cinco fases correspondem a níveis de capacidade alcançados pela organização de teste em avaliações sucessivas"
+      ],
+      "explanations": {
+        "en": "IDEAL stands for Initiating, Diagnosing, Establishing, Acting, and Learning. It is based on ideas similar to PDCA and can be tailored to project or Agile-team level; its phases are not maturity levels, and Initiating remains present even when smaller.",
+        "pt": "IDEAL significa Initiating, Diagnosing, Establishing, Acting e Learning. Ele se baseia em ideias semelhantes ao PDCA e pode ser adaptado ao nível de projeto ou equipe ágil; suas fases não são níveis de maturidade, e Initiating permanece presente mesmo quando menor."
+      }
+    },
+    {
+      "id": "ctaltm-139",
+      "status": "INCONCLUSIVO",
+      "proposal_status": "REPAIR_PROPOSED",
+      "section": "1.5.1",
+      "reason": "O original atribui estado futuro, lacunas e recomendações à fase Diagnosing, mas a v3.0 a descreve como avaliação do processo atual para identificar melhorias. A reparação alinha enunciado e alternativas às quatro fases pertinentes; aprovação pendente.",
+      "answer": 0,
+      "question": {
+        "en": "During the Diagnosing phase of an IDEAL-based test-process improvement initiative, the team maps and assesses its current testing practices. According to the CTAL-TM v3.0 syllabus, what is the primary purpose of this work?",
+        "pt": "Durante a fase Diagnosing de uma iniciativa de melhoria do processo de teste baseada no IDEAL, a equipe mapeia e avalia suas práticas atuais de teste. Segundo o syllabus CTAL-TM v3.0, qual é o propósito principal desse trabalho?"
+      },
+      "en": [
+        "Assess the current test process to identify possible improvements, using a standard framework or project metrics according to the chosen approach",
+        "Agree improvement objectives and scope with stakeholders, establishing the mandate and boundaries for the initiative",
+        "Prioritize candidate improvements and document actions, benefits, risks, and strategy alignment in the improvement plan",
+        "Implement the improvement plan through training, piloting, and deployment of the changed practices in the project or team"
+      ],
+      "pt": [
+        "Avaliar o processo de teste atual para identificar possíveis melhorias, usando um framework padrão ou métricas do projeto conforme a abordagem escolhida",
+        "Acordar objetivos e escopo da melhoria com os stakeholders, estabelecendo o mandato e os limites da iniciativa",
+        "Priorizar melhorias candidatas e documentar ações, benefícios, riscos e alinhamento estratégico no plano de melhoria",
+        "Implementar o plano de melhoria por treinamento, piloto e implantação das práticas alteradas no projeto ou na equipe"
+      ],
+      "explanations": {
+        "en": "In section 1.5.1, Diagnosing assesses the current test process to identify possible improvements. Initiating agrees objectives and scope, Establishing creates and prioritizes the plan, and Acting implements it through training, pilots, and deployment.",
+        "pt": "Na seção 1.5.1, Diagnosing avalia o processo de teste atual para identificar possíveis melhorias. Initiating acorda objetivos e escopo, Establishing cria e prioriza o plano, e Acting o implementa por treinamento, pilotos e implantação."
+      }
+    },
+    {
+      "id": "ctaltm-140",
+      "status": "REVISED",
+      "section": "1.5.2",
+      "reason": "A resposta distingue referência externa, progressão e adaptação; os distratores misturam análise interna, aplicação organizacional direta e uso do nível de maturidade como critério de liberação.",
+      "answer": 0,
+      "en": [
+        "Use model-defined best practices to organize improvement stepwise, assessing and tailoring relevant process areas to the project's testing context",
+        "Use TMMi as a measurement catalog and derive improvement goals primarily from the project's defect and test-process data",
+        "Assess the organization-level TMMi areas and carry the resulting gaps directly into the project improvement plan",
+        "Use the target maturity level as a release exit criterion and perform the process assessment after the product release"
+      ],
+      "pt": [
+        "Usar boas práticas definidas pelo modelo para organizar a melhoria em etapas, avaliando e adaptando áreas de processo relevantes ao contexto de teste do projeto",
+        "Usar o TMMi como catálogo de medição e derivar metas de melhoria principalmente dos dados de defeitos e do processo de teste do projeto",
+        "Avaliar as áreas do TMMi no nível organizacional e levar as lacunas resultantes diretamente ao plano de melhoria do projeto",
+        "Usar o nível-alvo de maturidade como critério de saída da versão e realizar a avaliação do processo após a liberação do produto"
+      ],
+      "explanations": {
+        "en": "Model-based improvement compares testing with model-defined external best practices and organizes improvement stepwise. At project level, assessment focuses on relevant process areas such as planning and design, while organization-level practices can be omitted or tailored.",
+        "pt": "A melhoria baseada em modelo compara o teste com boas práticas externas definidas pelo modelo e organiza a melhoria em etapas. No nível do projeto, a avaliação foca áreas relevantes, como planejamento e design, enquanto práticas organizacionais podem ser omitidas ou adaptadas."
+      }
+    }
+  ]
+}

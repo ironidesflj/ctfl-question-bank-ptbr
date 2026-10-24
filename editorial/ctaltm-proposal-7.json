@@ -1,0 +1,650 @@
+{
+  "range": [173, 200],
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "reviews": [
+    {
+      "id": "ctaltm-173",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.6",
+      "reason": "O item está rotulado como TM-2.3.2, mas a evidência específica sobre defeitos reabertos aparece em 2.3.6: ela serve para avaliar a qualidade das implementações de depuração. O syllabus não prescreve critérios de aceitação para 'fixed' nem verificação unitária pelo desenvolvedor como resposta obrigatória. O índice 2 é defensável apenas após alinhar a alternativa ao uso de dados de reabertura; requer decisão humana sobre o LO do item.",
+      "answer": 2,
+      "en": [
+        "Route every reopened defect directly to project management for a new fix decision, without first examining the reopening pattern",
+        "Treat each reopening as an isolated event and retain the current workflow until the release retrospective",
+        "Analyze reopened-defect information to assess the quality of debugging implementations, identify recurring causes, and agree targeted process improvements with the relevant participants",
+        "Increase the priority of every reopened defect, regardless of its impact, cause, or relationship to other defects"
+      ],
+      "pt": [
+        "Encaminhar cada defeito reaberto diretamente à gerência do projeto para uma nova decisão de correção, sem antes examinar o padrão de reabertura",
+        "Tratar cada reabertura como evento isolado e manter o fluxo atual até a retrospectiva da versão",
+        "Analisar as informações de defeitos reabertos para avaliar a qualidade das implementações de depuração, identificar causas recorrentes e acordar melhorias de processo direcionadas com os participantes relevantes",
+        "Aumentar a prioridade de cada defeito reaberto, independentemente de impacto, causa ou relação com outros defeitos"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 explicitly recommends using information about reopened defects to assess the quality of debugging implementations. The current stem and LO also invoke cross-functional management in section 2.3.2, so the item needs human confirmation before approval.",
+        "pt": "A seção 2.3.6 recomenda explicitamente usar informações sobre defeitos reabertos para avaliar a qualidade das implementações de depuração. O enunciado e o LO atuais também evocam o gerenciamento multifuncional da seção 2.3.2; por isso, o item precisa de confirmação humana antes da aprovação."
+      }
+    },
+    {
+      "id": "ctaltm-174",
+      "status": "REVISED",
+      "section": "2.3.3",
+      "reason": "O conceito correto coincide com 2.3.3, mas a alternativa correta acumulava todas as nuances e os três distratores usavam absolutos manifestamente falsos. A proposta compara quatro políticas completas de registro e tratamento, preservando o índice 2.",
+      "answer": 2,
+      "en": [
+        "Create a formal defect report for every failure before the team discusses or attempts to resolve it within the iteration",
+        "Record only defects assigned to another team, leaving unresolved same-team defects outside both the sprint board and product backlog",
+        "Resolve defects within the iteration when feasible; create reports for cases that cannot be fixed promptly or need external coordination, and place deferred defects in the product backlog",
+        "Track defects only on the sprint board, including those deferred to later iterations or requiring work by suppliers"
+      ],
+      "pt": [
+        "Criar um relatório formal de defeito para cada falha antes que a equipe a discuta ou tente resolvê-la dentro da iteração",
+        "Registrar apenas defeitos atribuídos a outra equipe, deixando defeitos não resolvidos pela própria equipe fora do quadro do sprint e do backlog do produto",
+        "Resolver defeitos dentro da iteração quando viável; criar relatórios para casos que não possam ser corrigidos prontamente ou exijam coordenação externa e colocar defeitos adiados no backlog do produto",
+        "Rastrear defeitos apenas no quadro do sprint, inclusive os adiados para iterações posteriores ou que exijam trabalho de fornecedores"
+      ],
+      "explanations": {
+        "en": "Agile defect management may be lightweight. Section 2.3.3 identifies situations that warrant a defect report and states that defects not resolved in the same iteration are commonly added to the product backlog.",
+        "pt": "O gerenciamento de defeitos ágil pode ser leve. A seção 2.3.3 identifica situações que justificam um relatório de defeito e afirma que defeitos não resolvidos na mesma iteração são comumente adicionados ao backlog do produto."
+      }
+    },
+    {
+      "id": "ctaltm-175",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.3",
+      "reason": "A resposta atual afirma que planejamento do sprint e refinamento substituem a triagem e que reuniões ad hoc se limitam a defeitos de alta severidade. Essas regras não constam em 2.3.3. O syllabus deixa a formalidade e os gatilhos ao acordo da equipe, conforme contexto, e exige documentar a decisão. A proposta preserva o índice 2, mas altera materialmente a tese e precisa de validação humana.",
+      "answer": 2,
+      "en": [
+        "Schedule a separate triage meeting for every reported defect, using the same cadence and participants in every Agile context",
+        "Replace all defect-management discussions with sprint planning, because an Agile team does not need a documented defect approach",
+        "Let the team choose whether and how to hold triage based on factors such as distribution, team size, risk, and external obligations, and document the agreed defect-management approach",
+        "Use an informal discussion for every defect, including cases involving suppliers, blocked sprint work, or resolution in a later iteration"
+      ],
+      "pt": [
+        "Agendar uma reunião de triagem separada para cada defeito relatado, usando a mesma cadência e os mesmos participantes em todo contexto ágil",
+        "Substituir todas as discussões de gerenciamento de defeitos pelo planejamento do sprint, pois uma equipe ágil não precisa de abordagem de defeitos documentada",
+        "Permitir que a equipe decida se e como realizará triagem com base em fatores como distribuição, tamanho, risco e obrigações externas, documentando a abordagem de gerenciamento de defeitos acordada",
+        "Usar uma discussão informal para cada defeito, inclusive nos casos que envolvam fornecedores, bloqueiem trabalho do sprint ou sejam resolvidos em iteração posterior"
+      ],
+      "explanations": {
+        "en": "Section 2.3.3 does not abolish or mandate triage meetings. It makes the degree of formality and reporting triggers context-dependent and requires the Agile team's decision to be documented.",
+        "pt": "A seção 2.3.3 não elimina nem torna obrigatórias as reuniões de triagem. Ela condiciona o grau de formalidade e os gatilhos de registro ao contexto e exige documentar a decisão da equipe ágil."
+      }
+    },
+    {
+      "id": "ctaltm-176",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "A resposta está correta, porém era muito mais longa que distratores pouco plausíveis. A proposta apresenta quatro estratégias de coordenação comparáveis e ancora a correta no alinhamento de atributos e na sincronização entre ferramentas.",
+      "answer": 2,
+      "en": [
+        "Assign each cross-component defect only to the team that first observed it and let that team's local workflow determine its final state",
+        "Keep each team's defect states and severity scales independent, reconciling differences only when the project closes",
+        "Align relevant defect attributes and synchronize the two tools so cross-component defects remain traceable across teams without being lost or duplicated",
+        "Move every front-end defect into the formal back-end workflow, even when the defect affects only work managed within the Agile iteration"
+      ],
+      "pt": [
+        "Atribuir cada defeito entre componentes apenas à equipe que primeiro o observou e deixar que o fluxo local dessa equipe determine seu estado final",
+        "Manter independentes os estados de defeito e as escalas de severidade de cada equipe, conciliando diferenças apenas no encerramento do projeto",
+        "Alinhar atributos relevantes de defeito e sincronizar as duas ferramentas para que defeitos entre componentes permaneçam rastreáveis entre equipes, sem perda nem duplicação",
+        "Mover cada defeito de front-end para o fluxo formal do back-end, mesmo quando ele afeta apenas trabalho gerenciado dentro da iteração ágil"
+      ],
+      "explanations": {
+        "en": "Section 2.3.4 identifies alignment of defect attributes and synchronization between different defect-management tools as a central challenge in hybrid, multi-team delivery.",
+        "pt": "A seção 2.3.4 identifica o alinhamento de atributos de defeito e a sincronização entre diferentes ferramentas de gerenciamento como desafio central da entrega híbrida com várias equipes."
+      }
+    },
+    {
+      "id": "ctaltm-177",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "A ideia de criar uma interface entre fluxos é compatível com o syllabus, mas o exemplo de CCB e a resposta original extrapolavam detalhes operacionais. A proposta usa diretamente sincronização, planejamento conjunto e transparência, com distratores de extensão semelhante.",
+      "answer": 2,
+      "en": [
+        "Adopt the Agile team's sprint board as the sole defect tool and discontinue the sequential team's established defect workflow",
+        "Retain separate tools and priorities, exchanging summary reports only after each team has independently scheduled its fixes",
+        "Align defect attributes, synchronize the tools where practical, and involve both teams in shared planning and prioritization for defects that cross their boundaries",
+        "Route every Agile defect through the sequential team's change board before the Agile team may investigate or correct it"
+      ],
+      "pt": [
+        "Adotar o quadro do sprint da equipe ágil como única ferramenta de defeitos e descontinuar o fluxo de defeitos estabelecido pela equipe sequencial",
+        "Manter ferramentas e prioridades separadas, trocando relatórios-resumo apenas depois que cada equipe tiver agendado suas correções de forma independente",
+        "Alinhar atributos de defeito, sincronizar as ferramentas quando viável e envolver ambas as equipes no planejamento e na priorização compartilhados de defeitos que atravessem seus limites",
+        "Encaminhar cada defeito ágil ao conselho de mudanças da equipe sequencial antes que a equipe ágil possa investigá-lo ou corrigi-lo"
+      ],
+      "explanations": {
+        "en": "For hybrid development, section 2.3.4 recommends alignment of attributes and tools, synchronization where teams use different tools, and participation across teams in planning and prioritization.",
+        "pt": "Para desenvolvimento híbrido, a seção 2.3.4 recomenda alinhar atributos e ferramentas, sincronizar quando as equipes usam ferramentas diferentes e promover participação entre equipes no planejamento e na priorização."
+      }
+    },
+    {
+      "id": "ctaltm-178",
+      "status": "REVISED",
+      "section": "2.3.5",
+      "reason": "A alternativa correta citava 'defect trigger' e ODC, que não aparecem nessa seção, e concentrava muito mais detalhe que os distratores. A proposta usa apenas informações indicadas pelo syllabus para qualidade do incremento e capacidade do processo.",
+      "answer": 2,
+      "en": [
+        "Add the reporter's organizational level, preferred communication channel, and time allocated to the current test assignment",
+        "Add the developer's tool preferences, years on the product, and estimate of the effort originally spent on the affected code",
+        "Add the defect type or affected quality characteristic, the work product where it was introduced, relevant SDLC phases of introduction, detection, and removal, and root cause when available",
+        "Add the customer's contract tier, the tester's employment location, and the number of people copied on the original notification"
+      ],
+      "pt": [
+        "Adicionar o nível organizacional do relator, seu canal de comunicação preferido e o tempo alocado à atribuição de teste atual",
+        "Adicionar as preferências de ferramentas do desenvolvedor, seus anos no produto e a estimativa do esforço originalmente gasto no código afetado",
+        "Adicionar o tipo de defeito ou a característica de qualidade afetada, o produto de trabalho em que foi introduzido, as fases relevantes de introdução, detecção e remoção no ciclo de vida e a causa raiz quando disponível",
+        "Adicionar o nível de contrato do cliente, a localidade de trabalho do testador e o número de pessoas copiadas na notificação original"
+      ],
+      "explanations": {
+        "en": "Section 2.3.5 links defect type, affected quality characteristics, the work product of introduction, SDLC phases, and root cause to product-quality and process-capability assessment. Data should be collected only when useful in context.",
+        "pt": "A seção 2.3.5 relaciona tipo de defeito, características de qualidade afetadas, produto de trabalho de introdução, fases do ciclo de vida e causa raiz à avaliação da qualidade e da capacidade do processo. Os dados só devem ser coletados quando úteis no contexto."
+      }
+    },
+    {
+      "id": "ctaltm-179",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "O uso de concentração de defeitos para melhoria está correto, mas a resposta original agregava várias ações não necessariamente justificadas pelos dados e os distratores eram punitivos ou absurdos. A proposta foca análise de clusters, risco técnico e possível refatoração.",
+      "answer": 2,
+      "en": [
+        "Use the module counts to compare individual developer performance, without examining defect causes or component complexity",
+        "Distribute the next test cycle equally across all modules so the measured concentration no longer influences test priorities",
+        "Analyze the defect cluster to understand technical risks, adjust risk-based testing, and evaluate targeted prevention or refactoring for the troublesome components",
+        "Use the concentration alone to conclude that the two modules should be removed from the product at the next release"
+      ],
+      "pt": [
+        "Usar as contagens por módulo para comparar o desempenho individual dos desenvolvedores, sem examinar causas dos defeitos ou complexidade dos componentes",
+        "Distribuir o próximo ciclo de teste igualmente entre todos os módulos para que a concentração medida deixe de influenciar as prioridades de teste",
+        "Analisar o cluster de defeitos para compreender riscos técnicos, ajustar o teste baseado em risco e avaliar prevenção ou refatoração direcionada para os componentes problemáticos",
+        "Usar apenas a concentração para concluir que os dois módulos devem ser removidos do produto na próxima versão"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 recommends using defect-location information for cluster analysis to understand technical risks, support risk-based testing, and enable refactoring of troublesome components.",
+        "pt": "A seção 2.3.6 recomenda usar informações de localização de defeitos para análise de clusters, compreensão de riscos técnicos, apoio ao teste baseado em risco e possível refatoração de componentes problemáticos."
+      }
+    },
+    {
+      "id": "ctaltm-180",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "A direção da resposta é correta, mas os distratores com 'only' tornavam o gabarito evidente e a alternativa correta misturava exemplos demais. A proposta compara ações de melhoria dirigidas por fases de introdução e causa raiz.",
+      "answer": 2,
+      "en": [
+        "Expand system testing after implementation while leaving requirements activities and early review practices unchanged",
+        "Increase component-test execution because coding is the nearest development activity, despite the small share of coding-related escapes",
+        "Use introduction-phase and root-cause data to strengthen requirements reviews and earlier test involvement, targeting the process where most escaping defects originate",
+        "Replace defect classification with a total escape count and apply the same improvement action to every development phase"
+      ],
+      "pt": [
+        "Ampliar o teste de sistema após a implementação, mantendo inalteradas as atividades de requisitos e as práticas de revisão antecipada",
+        "Aumentar a execução de testes de componente porque a codificação é a atividade de desenvolvimento mais próxima, apesar da pequena parcela de escapes ligada a código",
+        "Usar dados de fase de introdução e causa raiz para fortalecer revisões de requisitos e o envolvimento antecipado do teste, visando o processo em que se origina a maioria dos defeitos que escapam",
+        "Substituir a classificação de defeitos por uma contagem total de escapes e aplicar a mesma ação de melhoria a todas as fases de desenvolvimento"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 recommends using the phase of introduction and root-cause information to target defect-prevention and process-improvement actions where defects originate.",
+        "pt": "A seção 2.3.6 recomenda usar a fase de introdução e informações de causa raiz para direcionar ações de prevenção e melhoria ao ponto em que os defeitos se originam."
+      }
+    },
+    {
+      "id": "ctaltm-181",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "A conclusão de antecipar a detecção é coerente, mas a resposta original empilhava práticas específicas enquanto os distratores eram extremos. A proposta vincula a ação à avaliação de contenção por fase e eficácia de detecção prevista no syllabus.",
+      "answer": 2,
+      "en": [
+        "Concentrate additional execution near release so the team can process the expected late peak with a larger final test cycle",
+        "Treat the late peak as a reporting artifact and retain the current timing until production failures confirm a process problem",
+        "Analyze introduction, detection, and removal phases, then improve earlier reviews and tests where phase containment is weak so defects are detected sooner at lower cost",
+        "Reduce early defect recording so the arrival-rate curve focuses on defects that remain relevant near the release decision"
+      ],
+      "pt": [
+        "Concentrar execução adicional perto da versão para que a equipe processe o pico tardio esperado com um ciclo final de teste maior",
+        "Tratar o pico tardio como artefato de relatório e manter o cronograma atual até que falhas em produção confirmem um problema de processo",
+        "Analisar as fases de introdução, detecção e remoção e então melhorar revisões e testes anteriores onde a contenção por fase seja fraca, para detectar defeitos mais cedo e com menor custo",
+        "Reduzir o registro antecipado de defeitos para que a curva de chegada se concentre nos defeitos ainda relevantes perto da decisão de liberação"
+      ],
+      "explanations": {
+        "en": "The syllabus uses phase information to assess containment and detection effectiveness and to reduce defect-related cost. A late peak should prompt evidence-based improvement of earlier detection, not merely more late execution.",
+        "pt": "O syllabus usa informações de fase para avaliar contenção e eficácia de detecção e reduzir custos relacionados a defeitos. Um pico tardio deve motivar melhoria baseada em evidências da detecção antecipada, não apenas mais execução no fim."
+      }
+    },
+    {
+      "id": "ctaltm-182",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.6",
+      "reason": "A distribuição de 80/10/10, isoladamente, não prova que testes de componente e integração estejam subutilizados; ela pode refletir contexto, tipos de defeito ou objetivos distintos. O syllabus orienta avaliar contenção e eficácia por fase antes de escolher melhoria. A proposta torna a ação condicional, mas o gabarito atual requer confirmação humana.",
+      "answer": 2,
+      "en": [
+        "Remove component and integration testing because their lower defect counts demonstrate that those levels add little value",
+        "Reduce system testing because its higher defect count demonstrates that this level is creating the project's quality problems",
+        "Investigate defect introduction, detection, and removal by level to assess phase containment; if earlier levels are missing defects they should detect, target reviews, techniques, or coverage there",
+        "Reallocate effort solely from the number of defects found at each level, without considering defect type, risk, or expected test objectives"
+      ],
+      "pt": [
+        "Remover testes de componente e integração porque suas contagens menores demonstram que esses níveis agregam pouco valor",
+        "Reduzir o teste de sistema porque sua contagem maior demonstra que esse nível está criando os problemas de qualidade do projeto",
+        "Investigar introdução, detecção e remoção de defeitos por nível para avaliar a contenção por fase; se níveis anteriores estiverem deixando passar defeitos que deveriam detectar, direcionar ali revisões, técnicas ou cobertura",
+        "Realocar esforço apenas pelo número de defeitos encontrados em cada nível, sem considerar tipo de defeito, risco ou objetivos de teste esperados"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 supports phase-containment analysis, but a raw distribution does not by itself establish the cause or the appropriate control action. Further evidence is needed before prescribing stronger lower-level testing.",
+        "pt": "A seção 2.3.6 apoia a análise de contenção por fase, mas uma distribuição bruta não estabelece sozinha a causa nem a ação de controle apropriada. São necessárias mais evidências antes de prescrever fortalecimento dos níveis inferiores."
+      }
+    },
+    {
+      "id": "ctaltm-183",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.6",
+      "reason": "O syllabus v3.0 não menciona ODC nem enumera as categorias apresentadas no enunciado. Ele sustenta genericamente taxonomias de defeitos, dados de causa raiz e análise para melhoria. A intenção do índice 2 é coerente, mas a atribuição específica a ODC não pode ser validada pela fonte oficial e exige revisão humana do enunciado.",
+      "answer": 2,
+      "en": [
+        "Use the classification to rank individual contributors, treating the assigned category as evidence of personal responsibility",
+        "Use the classification as a replacement for the defect description, reproduction information, and lifecycle history",
+        "Use consistent defect-type and root-cause data to reveal patterns in where defects are introduced and detected and to target process improvements",
+        "Use the classification to calculate test-team compensation without relating the categories to process capability or product risk"
+      ],
+      "pt": [
+        "Usar a classificação para ranquear colaboradores individuais, tratando a categoria atribuída como evidência de responsabilidade pessoal",
+        "Usar a classificação como substituta da descrição do defeito, das informações de reprodução e do histórico do ciclo de vida",
+        "Usar dados consistentes de tipo de defeito e causa raiz para revelar padrões de onde defeitos são introduzidos e detectados e direcionar melhorias de processo",
+        "Usar a classificação para calcular a remuneração da equipe de teste sem relacionar as categorias à capacidade do processo ou ao risco do produto"
+      ],
+      "explanations": {
+        "en": "Sections 2.3.5 and 2.3.6 support defect taxonomies and root-cause information for process analysis. They do not identify ODC by name, so the generic purpose is supportable but the current attribution is not.",
+        "pt": "As seções 2.3.5 e 2.3.6 apoiam taxonomias de defeitos e informações de causa raiz para análise de processo. Elas não identificam ODC pelo nome; portanto, o propósito genérico é sustentável, mas a atribuição atual não é."
+      }
+    },
+    {
+      "id": "ctaltm-184",
+      "status": "REVISED",
+      "section": "3.1.1",
+      "reason": "A resolução de conflitos e o trabalho colaborativo pertencem à competência social, mas o enunciado e a resposta misturavam atividades potencialmente classificáveis por mais de uma área. A proposta torna as quatro classificações paralelas e explicita o comportamento predominante.",
+      "answer": 2,
+      "en": [
+        "Professional competence, because the member applies specialized test techniques and domain knowledge to a test task",
+        "Methodological competence, because the member independently applies analytical and judgmental skills to a novel problem",
+        "Social competence, because the member communicates, cooperates, facilitates teamwork, and resolves interpersonal conflict",
+        "Personal competence, because the member demonstrates self-management, resilience, reliability, and openness to change"
+      ],
+      "pt": [
+        "Competência profissional, porque o membro aplica técnicas especializadas de teste e conhecimento de domínio a uma tarefa de teste",
+        "Competência metodológica, porque o membro aplica de forma independente habilidades analíticas e de julgamento a um problema novo",
+        "Competência social, porque o membro se comunica, coopera, facilita o trabalho em equipe e resolve conflitos interpessoais",
+        "Competência pessoal, porque o membro demonstra autogestão, resiliência, confiabilidade e abertura à mudança"
+      ],
+      "explanations": {
+        "en": "Section 3.1.1 defines social competence through communication, cooperation, conflict management, teamwork, adaptability, and assertiveness. Those are the predominant behaviors in the scenario.",
+        "pt": "A seção 3.1.1 define competência social por comunicação, cooperação, gestão de conflitos, trabalho em equipe, adaptabilidade e assertividade. Esses são os comportamentos predominantes no cenário."
+      }
+    },
+    {
+      "id": "ctaltm-185",
+      "status": "REVISED",
+      "section": "3.1.1",
+      "reason": "A classificação como competência pessoal está correta, mas os distratores usavam justificativas superficiais. A proposta oferece descrições reais das quatro áreas, mantendo equivalência PT/EN e o índice 2.",
+      "answer": 2,
+      "en": [
+        "Professional competence, which concerns specialized test, technology, domain, and project-management capabilities",
+        "Social competence, which concerns communication, cooperation, teamwork, adaptability, and conflict management",
+        "Personal competence, which concerns self-development, motivation, attitudes, self-management, reliability, and resilience",
+        "Methodological competence, which concerns independent analytical, conceptual, and judgmental work on complex tasks"
+      ],
+      "pt": [
+        "Competência profissional, que abrange capacidades especializadas de teste, tecnologia, domínio e gerenciamento de projetos",
+        "Competência social, que abrange comunicação, cooperação, trabalho em equipe, adaptabilidade e gestão de conflitos",
+        "Competência pessoal, que abrange autodesenvolvimento, motivação, atitudes, autogestão, confiabilidade e resiliência",
+        "Competência metodológica, que abrange trabalho analítico, conceitual e de julgamento independente em tarefas complexas"
+      ],
+      "explanations": {
+        "en": "Section 3.1.1 places willingness to develop, motivation, attitudes, self-management, reliability, and resilience in personal competence.",
+        "pt": "A seção 3.1.1 inclui disposição para se desenvolver, motivação, atitudes, autogestão, confiabilidade e resiliência na competência pessoal."
+      }
+    },
+    {
+      "id": "ctaltm-186",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.2",
+      "reason": "A alternativa atual prescreve exatamente duas contratações e classifica automação e geração de evidências como competência metodológica, embora 3.1.1 defina competência metodológica sobretudo por habilidades analíticas, conceituais e de julgamento. O cenário não torna a combinação de contratações única. A proposta preserva o índice 2 e aplica análise de lacunas sem inventar uma solução de pessoal obrigatória.",
+      "answer": 2,
+      "en": [
+        "Fill both positions with domain specialists, using business criticality as the sole criterion and deferring automation needs until execution begins",
+        "Fill both positions with junior Python developers, using current tool knowledge as the sole criterion and deferring regulatory expertise to project management",
+        "Derive required skills from algorithmic, exploratory, automation, evidence, and stakeholder needs; compare them with available skills, prioritize gaps by risk, and choose suitable training, hiring, or external expertise",
+        "Keep the current team unchanged, because individual motivation can compensate for gaps in specialized and regulatory capabilities"
+      ],
+      "pt": [
+        "Preencher as duas vagas com especialistas de domínio, usando a criticidade do negócio como único critério e adiando necessidades de automação até o início da execução",
+        "Preencher as duas vagas com desenvolvedores Python juniores, usando conhecimento atual de ferramenta como único critério e deixando a expertise regulatória para a gerência do projeto",
+        "Derivar as habilidades necessárias das demandas algorítmicas, exploratórias, de automação, evidência e stakeholders; compará-las às habilidades disponíveis, priorizar lacunas por risco e escolher treinamento, contratação ou expertise externa adequados",
+        "Manter a equipe atual sem mudanças, pois a motivação individual pode compensar lacunas em capacidades especializadas e regulatórias"
+      ],
+      "explanations": {
+        "en": "Section 3.1.2 requires the manager to identify project activities and needed skill levels, assess available skills, and determine gaps. It does not make one exact hiring combination mandatory for this scenario.",
+        "pt": "A seção 3.1.2 exige identificar atividades e níveis de habilidade necessários, avaliar habilidades disponíveis e determinar lacunas. Ela não torna obrigatória uma combinação exata de contratações para este cenário."
+      }
+    },
+    {
+      "id": "ctaltm-187",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.2",
+      "reason": "A direção de analisar lacunas e fechá-las por contratação, treinamento ou consultoria é válida, mas a alternativa atual atribui ferramentas e modelagem de ameaças à competência metodológica de modo não sustentado pela definição de 3.1.1 e pressupõe uma decomposição única. A proposta mantém o índice 2, mas requer aprovação humana por corrigir conteúdo material.",
+      "answer": 2,
+      "en": [
+        "Recruit generalist testers first and postpone analysis of cybersecurity, compliance, and supplier-collaboration needs until the first test cycle",
+        "Recruit cybersecurity specialists without assessing test, analytical, or collaboration skills, because domain expertise covers the remaining project needs",
+        "Map the project's test, cybersecurity, compliance, analytical, and supplier-collaboration needs to required skill levels; compare them with the current team and close risk-prioritized gaps through development or external expertise",
+        "Retain the existing team and reuse its standard test approach, because the required competence areas do not vary with project context"
+      ],
+      "pt": [
+        "Recrutar primeiro testadores generalistas e adiar a análise das necessidades de cibersegurança, conformidade e colaboração com fornecedores até o primeiro ciclo de teste",
+        "Recrutar especialistas em cibersegurança sem avaliar habilidades de teste, análise ou colaboração, pois a expertise de domínio cobre as demais necessidades do projeto",
+        "Mapear as necessidades de teste, cibersegurança, conformidade, análise e colaboração com fornecedores aos níveis de habilidade exigidos; compará-las à equipe atual e fechar lacunas priorizadas por risco por desenvolvimento ou expertise externa",
+        "Manter a equipe existente e reutilizar sua abordagem padrão de teste, pois as áreas de competência exigidas não variam com o contexto do projeto"
+      ],
+      "explanations": {
+        "en": "Section 3.1.2 calls for context-specific analysis of activities, required skill levels, available skills, and gaps. Section 3.1 also permits external experts where tasks exceed team capabilities.",
+        "pt": "A seção 3.1.2 exige análise contextual de atividades, níveis de habilidade requeridos, habilidades disponíveis e lacunas. A seção 3.1 também admite especialistas externos quando as tarefas excedem as capacidades da equipe."
+      }
+    },
+    {
+      "id": "ctaltm-188",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.3",
+      "reason": "Autoavaliação por questionário e validação individual pelo gerente não aparecem entre as técnicas exemplificadas em 3.1.3. A seção cita matriz de habilidades, demonstração de tarefas típicas, credenciais, experiência, formação, retrospectivas e feedback. O item não pode atribuir a técnica ao syllabus sem ressalva; a proposta descreve-a como insumo local a corroborar.",
+      "answer": 2,
+      "en": [
+        "A complete skills assessment, because a numerical self-rating establishes demonstrated competence without further evidence",
+        "A replacement for a skills matrix, because individual ratings remove the need to compare available and required skills",
+        "A project-specific assessment input that should be corroborated with evidence such as demonstrated test tasks, experience, credentials, and feedback before gaps are concluded",
+        "A test-estimation technique, because the average self-rating directly determines the effort required for the project"
+      ],
+      "pt": [
+        "Uma avaliação completa de habilidades, pois uma nota de autoavaliação estabelece competência demonstrada sem outras evidências",
+        "Uma substituição para a matriz de habilidades, pois notas individuais eliminam a necessidade de comparar habilidades disponíveis e requeridas",
+        "Um insumo de avaliação específico do projeto que deve ser corroborado por evidências como demonstração de tarefas de teste, experiência, credenciais e feedback antes de concluir lacunas",
+        "Uma técnica de estimativa de teste, pois a média das autoavaliações determina diretamente o esforço necessário para o projeto"
+      ],
+      "explanations": {
+        "en": "The syllabus does not list this questionnaire method. Section 3.1.3 supports assessment through demonstrated tasks, external credentials, certifications, work experience, degrees, retrospectives, and feedback, typically compared in a skills matrix.",
+        "pt": "O syllabus não lista esse método de questionário. A seção 3.1.3 apoia avaliação por tarefas demonstradas, credenciais externas, certificações, experiência, formação, retrospectivas e feedback, normalmente comparados em uma matriz de habilidades."
+      }
+    },
+    {
+      "id": "ctaltm-189",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.3",
+      "reason": "Feedback 360 graus não é citado em 3.1.3, e a explicação atual o apresenta como técnica típica do syllabus. Há menção genérica a retrospectivas e feedback, mas não à coleta formal de pares, gestores e stakeholders. A proposta substitui a alternativa do mesmo índice por demonstração de tarefa explicitamente prevista; a mudança material requer validação humana.",
+      "answer": 2,
+      "en": [
+        "Infer competence from time on the team, without observing relevant tasks or checking the skills required by the project",
+        "Use a generic reasoning score as the complete assessment, without evidence from test work, experience, or feedback",
+        "Ask the member to select and apply test techniques for stated objectives, discuss the result and feedback, and record the evidence against required skills",
+        "Accept an uncorroborated self-rating as the final assessment, without comparing it with demonstrated work or other evidence"
+      ],
+      "pt": [
+        "Inferir competência pelo tempo na equipe, sem observar tarefas relevantes nem verificar as habilidades exigidas pelo projeto",
+        "Usar uma nota genérica de raciocínio como avaliação completa, sem evidências de trabalho de teste, experiência ou feedback",
+        "Pedir ao membro que selecione e aplique técnicas de teste para objetivos definidos, discutir o resultado e o feedback e registrar a evidência em relação às habilidades exigidas",
+        "Aceitar uma autoavaliação não corroborada como avaliação final, sem compará-la a trabalho demonstrado ou outras evidências"
+      ],
+      "explanations": {
+        "en": "Section 3.1.3 explicitly lists determining and appropriately applying test techniques for given objectives among the typical tasks through which professional and methodological competence can be assessed.",
+        "pt": "A seção 3.1.3 lista explicitamente determinar e aplicar adequadamente técnicas de teste para objetivos definidos entre as tarefas típicas pelas quais se podem avaliar competências profissional e metodológica."
+      }
+    },
+    {
+      "id": "ctaltm-190",
+      "status": "REVISED",
+      "section": "3.1.4",
+      "reason": "A classificação como mentoria está correta, mas os distratores eram definidos por 'only' e não competiam de forma realista. A proposta usa quatro abordagens legítimas do syllabus, distinguindo-as pelos elementos do cenário.",
+      "answer": 2,
+      "en": [
+        "Training and education, in which predefined knowledge and practices are taught in a structured classroom or live learning setting",
+        "Self-study, in which the junior independently uses books, recorded material, or research resources to learn the subject",
+        "Mentoring or coaching, in which an experienced colleague provides continuing individual guidance, feedback, and assistance toward agreed goals",
+        "Peer learning, in which colleagues exchange knowledge and experience as peers without an ongoing senior-guidance relationship"
+      ],
+      "pt": [
+        "Treinamento e educação, em que conhecimentos e práticas predefinidos são ensinados em sala de aula estruturada ou ambiente de aprendizagem ao vivo",
+        "Autoestudo, em que o júnior usa de forma independente livros, material gravado ou recursos de pesquisa para aprender o assunto",
+        "Mentoria ou coaching, em que um colega experiente fornece orientação individual contínua, feedback e assistência para metas acordadas",
+        "Aprendizagem entre pares, em que colegas trocam conhecimentos e experiências como pares, sem uma relação contínua de orientação por um sênior"
+      ],
+      "explanations": {
+        "en": "Section 3.1.4 defines mentoring or coaching as individual guidance from an experienced person who remains available for advice and assistance. The structured senior-junior pairing matches that approach.",
+        "pt": "A seção 3.1.4 define mentoria ou coaching como orientação individual de uma pessoa experiente que permanece disponível para aconselhamento e assistência. O pareamento estruturado entre sênior e júnior corresponde a essa abordagem."
+      }
+    },
+    {
+      "id": "ctaltm-191",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.4",
+      "reason": "A afirmação atual de que certificação é um elemento de desenvolvimento que obrigatoriamente deve ser combinado com prática, mentoria e experiência não é formulada no syllabus. Em 3.1.3, certificação é evidência de avaliação; em 3.1.4, participar de curso é treinamento e educação. A proposta preserva o índice 2, mas muda o conceito cobrado e exige validação humana.",
+      "answer": 2,
+      "en": [
+        "Peer learning, because an external course is primarily an exchange of experience among colleagues with equal responsibility",
+        "Self-study, because sponsorship of a scheduled course means the tester learns alone rather than in a live learning setting",
+        "Training and education as a development approach; any resulting certification may also serve as one source of evidence when existing skills are assessed",
+        "Mentoring or coaching, because the course provider becomes an ongoing individual adviser for the tester's project work"
+      ],
+      "pt": [
+        "Aprendizagem entre pares, pois um curso externo é principalmente uma troca de experiências entre colegas com igual responsabilidade",
+        "Autoestudo, pois o patrocínio de um curso agendado significa que o testador aprende sozinho, e não em ambiente de aprendizagem ao vivo",
+        "Treinamento e educação como abordagem de desenvolvimento; uma certificação resultante também pode servir como uma fonte de evidência ao avaliar habilidades existentes",
+        "Mentoria ou coaching, pois o provedor do curso se torna um orientador individual contínuo para o trabalho do testador no projeto"
+      ],
+      "explanations": {
+        "en": "Section 3.1.4 classifies attendance at a training course as training and education. Section 3.1.3 separately lists certifications among evidence that may be used to assess skills.",
+        "pt": "A seção 3.1.4 classifica a participação em curso como treinamento e educação. A seção 3.1.3 lista separadamente certificações entre as evidências que podem ser usadas para avaliar habilidades."
+      }
+    },
+    {
+      "id": "ctaltm-192",
+      "status": "REVISED",
+      "section": "3.1.5",
+      "reason": "A resposta correta representa habilidades de liderança previstas, mas os três distratores usavam 'only/every' e eram facilmente elimináveis. A proposta oferece perfis gerenciais plausíveis e extensão comparável.",
+      "answer": 2,
+      "en": [
+        "Rely on deep expertise in one test technology and personally decide technical details for every task assigned to the team",
+        "Focus on individual test execution and retain the team's high-priority work rather than delegate responsibility to team members",
+        "Combine planning and control with communication, delegation, assertion of test interests, promotion of testing benefits, and conflict resolution",
+        "Exercise release authority independently of stakeholders and adapt team working conditions only after delivery problems occur"
+      ],
+      "pt": [
+        "Apoiar-se em expertise profunda numa tecnologia de teste e decidir pessoalmente os detalhes técnicos de cada tarefa atribuída à equipe",
+        "Concentrar-se na execução individual de testes e reter o trabalho de alta prioridade da equipe em vez de delegar responsabilidade aos membros",
+        "Combinar planejamento e controle com comunicação, delegação, defesa dos interesses de teste, promoção dos benefícios do teste e resolução de conflitos",
+        "Exercer autoridade de liberação independentemente dos stakeholders e adaptar as condições de trabalho da equipe apenas após problemas de entrega"
+      ],
+      "explanations": {
+        "en": "Section 3.1.5 combines fundamental management activities with social and personal competence, including delegation, assertion of test interests, communication, promotion of testing benefits, and conflict resolution.",
+        "pt": "A seção 3.1.5 combina atividades fundamentais de gerenciamento com competências social e pessoal, incluindo delegação, defesa dos interesses de teste, comunicação, promoção dos benefícios do teste e resolução de conflitos."
+      }
+    },
+    {
+      "id": "ctaltm-193",
+      "status": "REVISED",
+      "section": "3.1.5",
+      "reason": "O cenário aponta para comunicação e gestão de conflito, mas 'negotiation and stakeholder management' não é a formulação usada pela seção. A proposta ancora a resposta nas capacidades explicitamente citadas e substitui distratores caricatos por respostas gerenciais concorrentes.",
+      "answer": 2,
+      "en": [
+        "Technical leadership, by taking ownership of each defect fix and selecting the implementation approach before the release discussion",
+        "Operational test execution, by personally repeating the failed tests and withholding status until every result has been reproduced",
+        "Stakeholder communication and conflict resolution, by presenting objective status, asserting test interests, and helping the parties reach an informed release decision",
+        "Administrative control, by setting the release date from the test team's schedule without reconciling product and business concerns"
+      ],
+      "pt": [
+        "Liderança técnica, assumindo cada correção de defeito e selecionando a abordagem de implementação antes da discussão sobre a liberação",
+        "Execução operacional de teste, repetindo pessoalmente os testes que falharam e retendo o status até reproduzir cada resultado",
+        "Comunicação com stakeholders e resolução de conflitos, apresentando status objetivo, defendendo os interesses de teste e ajudando as partes a chegar a uma decisão informada de liberação",
+        "Controle administrativo, definindo a data de liberação pelo cronograma da equipe de teste sem conciliar preocupações de produto e negócio"
+      ],
+      "explanations": {
+        "en": "Section 3.1.5 requires test leaders to assert test interests, communicate with stakeholders, promote testing benefits, and resolve conflicts. Those skills are central to this release discussion.",
+        "pt": "A seção 3.1.5 exige que líderes de teste defendam interesses de teste, comuniquem-se com stakeholders, promovam os benefícios do teste e resolvam conflitos. Essas habilidades são centrais nesta discussão de liberação."
+      }
+    },
+    {
+      "id": "ctaltm-194",
+      "status": "REVISED",
+      "section": "3.1.6",
+      "reason": "A resposta está correta, mas os distratores continham justificativas absurdas e absolutas. A proposta contrasta uma lista de motivadores com três listas reais de fatores de higiene, sem pista grosseira de linguagem.",
+      "answer": 2,
+      "en": [
+        "Market-based remuneration, paid overtime, and appropriate social benefits provided consistently to the team",
+        "A suitable workplace, stable test environment, mature test objects, and unambiguous specifications",
+        "Recognition for work, increased autonomy, meaningful and attainable challenges, and opportunities for professional advancement",
+        "A safe workplace, reliable agreements, appreciative management policies, and good interpersonal relationships"
+      ],
+      "pt": [
+        "Remuneração compatível com o mercado, horas extras pagas e benefícios sociais adequados fornecidos de forma consistente à equipe",
+        "Local de trabalho adequado, ambiente de teste estável, objetos de teste maduros e especificações sem ambiguidade",
+        "Reconhecimento pelo trabalho, maior autonomia, desafios significativos e atingíveis e oportunidades de avanço profissional",
+        "Local de trabalho seguro, acordos cumpridos, políticas de gestão respeitosas e bons relacionamentos interpessoais"
+      ],
+      "explanations": {
+        "en": "Section 3.1.6 lists recognition, responsibility and autonomy, meaningful challenging work, and professional advancement as motivators. Remuneration, conditions, safety, management policy, and relationships are hygiene factors.",
+        "pt": "A seção 3.1.6 lista reconhecimento, responsabilidade e autonomia, trabalho significativo e desafiador e avanço profissional como motivadores. Remuneração, condições, segurança, política gerencial e relacionamentos são fatores de higiene."
+      }
+    },
+    {
+      "id": "ctaltm-195",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.6",
+      "reason": "Salário competitivo e boas condições cobrem apenas parte dos fatores de higiene. A insatisfação também pode decorrer de política gerencial, segurança, acordos ou relacionamentos inadequados; portanto, a ausência de motivadores não é a única causa defensável. A proposta torna o índice 3 uma conclusão cautelosa, mas o enunciado continua subespecificado e requer revisão humana.",
+      "answer": 3,
+      "en": [
+        "Increase remuneration first, because the existing salary establishes that all other hygiene and motivation factors are adequate",
+        "Reduce workplace support, because less favorable conditions create the pressure needed for lasting motivation and satisfaction",
+        "Use job-security pressure, because concern about continued employment substitutes for recognition, autonomy, and meaningful work",
+        "Investigate missing motivators such as recognition, autonomy, meaningful work, or growth, while also checking other hygiene factors not established by the scenario"
+      ],
+      "pt": [
+        "Aumentar primeiro a remuneração, pois o salário atual estabelece que todos os demais fatores de higiene e motivação são adequados",
+        "Reduzir o apoio no local de trabalho, pois condições menos favoráveis criam a pressão necessária para motivação e satisfação duradouras",
+        "Usar pressão sobre a segurança do emprego, pois a preocupação com a permanência substitui reconhecimento, autonomia e trabalho significativo",
+        "Investigar motivadores ausentes, como reconhecimento, autonomia, trabalho significativo ou crescimento, verificando também outros fatores de higiene não estabelecidos pelo cenário"
+      ],
+      "explanations": {
+        "en": "Herzberg's distinction means adequate salary and some working conditions do not automatically create satisfaction. However, the stem does not establish all hygiene factors, so both missing motivators and other demotivating conditions should be investigated.",
+        "pt": "A distinção de Herzberg significa que salário adequado e algumas condições de trabalho não criam satisfação automaticamente. Porém, o enunciado não estabelece todos os fatores de higiene; devem-se investigar tanto motivadores ausentes quanto outras condições desmotivadoras."
+      }
+    },
+    {
+      "id": "ctaltm-196",
+      "status": "REVISED",
+      "section": "3.2.1",
+      "reason": "O exemplo de falha externa está correto, mas a resposta era uma lista longa diante de distratores unitários. A proposta compara exemplos completos das quatro categorias de custo da qualidade.",
+      "answer": 3,
+      "en": [
+        "Training developers in secure coding and reviewing the test basis early to prevent defects from being introduced",
+        "Performing static and dynamic tests and reviewing work products to detect defects before release",
+        "Fixing defects found during testing and providing workarounds before the product is delivered to customers",
+        "Handling customer-reported field defects after release, including support, corrective deployment, legal exposure, and lost revenue"
+      ],
+      "pt": [
+        "Treinar desenvolvedores em codificação segura e revisar antecipadamente a base de teste para prevenir a introdução de defeitos",
+        "Executar testes estáticos e dinâmicos e revisar produtos de trabalho para detectar defeitos antes da liberação",
+        "Corrigir defeitos encontrados durante o teste e fornecer soluções alternativas antes da entrega do produto aos clientes",
+        "Tratar defeitos de campo relatados por clientes após a liberação, incluindo suporte, implantação corretiva, exposição jurídica e perda de receita"
+      ],
+      "explanations": {
+        "en": "Section 3.2.1 defines external failure costs as reactive, non-value-added costs caused by a defective product delivered to the customer, including field fixes, support, legal costs, and losses.",
+        "pt": "A seção 3.2.1 define custos de falha externa como custos reativos e sem valor agregado causados por produto defeituoso entregue ao cliente, incluindo correções em campo, suporte, custos jurídicos e perdas."
+      }
+    },
+    {
+      "id": "ctaltm-197",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "O resultado de $300.000 está matematicamente correto, mas a explicação verbal subtraía o custo residual duas vezes ao chamar $420.000 de 'defect cost avoided' e depois subtrair o residual novamente. A proposta usa quatro cálculos paralelos e corrige a definição de benefício líquido.",
+      "answer": 3,
+      "en": [
+        "$380,000, calculated as expected defect cost without testing minus test cost, omitting the residual production-defect cost",
+        "$420,000, calculated as expected defect cost without testing minus residual production-defect cost, omitting test cost",
+        "$200,000, calculated as test cost plus residual production-defect cost, without comparing that total with the no-test case",
+        "$300,000, calculated as $500,000 minus the combined $120,000 test cost and $80,000 residual production-defect cost"
+      ],
+      "pt": [
+        "$380.000, calculados como custo esperado de defeitos sem teste menos custo de teste, omitindo o custo residual de defeitos em produção",
+        "$420.000, calculados como custo esperado de defeitos sem teste menos custo residual de defeitos em produção, omitindo o custo de teste",
+        "$200.000, calculados como custo de teste mais custo residual de defeitos em produção, sem comparar esse total ao caso sem teste",
+        "$300.000, calculados como $500.000 menos a soma do custo de teste de $120.000 e do custo residual de defeitos em produção de $80.000"
+      ],
+      "explanations": {
+        "en": "Under the scenario's assumptions, net value is the no-test defect cost minus both the cost of testing and the residual defect cost: $500,000 - $120,000 - $80,000 = $300,000.",
+        "pt": "Pelas premissas do cenário, o valor líquido é o custo de defeitos sem teste menos o custo do teste e o custo residual: $500.000 - $120.000 - $80.000 = $300.000."
+      }
+    },
+    {
+      "id": "ctaltm-198",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "O cálculo correto e o índice 1 estão preservados. Foram removidos absolutos como 'always destroys value' e 'exactly zero', substituindo-os por erros de cálculo plausíveis e de extensão comparável.",
+      "answer": 1,
+      "en": [
+        "It is not justified, because the $300,000 residual defect cost is greater than the $200,000 investment, producing a $100,000 loss",
+        "It is justified, because the $300,000 avoided defect cost exceeds the $200,000 investment, producing a $100,000 net benefit",
+        "It is justified with a $300,000 net benefit, because the full avoided defect cost is counted without subtracting the investment",
+        "It is not justified, because adding the $300,000 residual cost to the $200,000 investment produces $500,000 of project cost"
+      ],
+      "pt": [
+        "Não é justificado, pois o custo residual de defeitos de $300.000 supera o investimento de $200.000, produzindo perda de $100.000",
+        "É justificado, pois o custo de defeitos evitado de $300.000 supera o investimento de $200.000, produzindo benefício líquido de $100.000",
+        "É justificado com benefício líquido de $300.000, pois se conta todo o custo de defeitos evitado sem subtrair o investimento",
+        "Não é justificado, pois somar o custo residual de $300.000 ao investimento de $200.000 produz custo de projeto de $500.000"
+      ],
+      "explanations": {
+        "en": "The avoided defect cost is $600,000 - $300,000 = $300,000. After subtracting the $200,000 investment, the net benefit is $100,000, so the investment is justified on the stated cost-benefit assumptions.",
+        "pt": "O custo de defeitos evitado é $600.000 - $300.000 = $300.000. Após subtrair o investimento de $200.000, o benefício líquido é $100.000; portanto, o investimento é justificado pelas premissas apresentadas."
+      }
+    },
+    {
+      "id": "ctaltm-199",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "O resultado marginal está correto, mas dois distratores dependiam de absolutos não plausíveis. A proposta apresenta quatro resultados derivados de operações identificáveis, preservando o índice 3.",
+      "answer": 3,
+      "en": [
+        "$200,000, using the full additional reduction in production-defect cost without subtracting the additional test cost",
+        "$300,000, adding the $200,000 reduction in production-defect cost to the $100,000 additional test cost",
+        "-$100,000, subtracting the $200,000 reduction in production-defect cost from the $100,000 additional test cost",
+        "$100,000, subtracting the $100,000 additional test cost from the $200,000 additional reduction in production-defect cost"
+      ],
+      "pt": [
+        "$200.000, usando toda a redução adicional do custo de defeitos em produção sem subtrair o custo adicional de teste",
+        "$300.000, somando a redução de $200.000 no custo de defeitos em produção ao custo adicional de teste de $100.000",
+        "-$100.000, subtraindo a redução de $200.000 no custo de defeitos em produção do custo adicional de teste de $100.000",
+        "$100.000, subtraindo o custo adicional de teste de $100.000 da redução adicional de $200.000 no custo de defeitos em produção"
+      ],
+      "explanations": {
+        "en": "The additional testing reduces expected production-defect cost by $200,000 and costs $100,000. Its marginal net value is therefore $200,000 - $100,000 = $100,000.",
+        "pt": "O teste adicional reduz o custo esperado de defeitos em produção em $200.000 e custa $100.000. Seu valor líquido marginal é, portanto, $200.000 - $100.000 = $100.000."
+      }
+    },
+    {
+      "id": "ctaltm-200",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "A resposta correta explicava a comparação adequada, mas era muito mais longa e introduzia dentro da alternativa o contrafactual de $1.500.000 ausente da pergunta inicial. A proposta oferece quatro análises numéricas paralelas; a integração deve mover explicitamente essa estimativa para o enunciado para tornar o item autocontido.",
+      "answer": 3,
+      "en": [
+        "Testing has a $200,000 net loss, calculated by subtracting the $400,000 test cost from the $200,000 residual defect cost",
+        "Testing has a $1,100,000 net value, calculated by subtracting the $400,000 test cost from the $1,500,000 no-test defect cost and omitting residual defects",
+        "Testing has a $1,300,000 net value, calculated as the avoided defect cost of $1,500,000 minus $200,000, without subtracting test cost",
+        "Testing has a $900,000 net value: $1,500,000 no-test defect cost minus $200,000 residual defect cost minus $400,000 test cost"
+      ],
+      "pt": [
+        "O teste tem perda líquida de $200.000, calculada subtraindo o custo de teste de $400.000 do custo residual de defeitos de $200.000",
+        "O teste tem valor líquido de $1.100.000, calculado subtraindo o custo de teste de $400.000 do custo sem teste de $1.500.000 e omitindo defeitos residuais",
+        "O teste tem valor líquido de $1.300.000, calculado como custo evitado de $1.500.000 menos $200.000, sem subtrair o custo de teste",
+        "O teste tem valor líquido de $900.000: custo sem teste de $1.500.000 menos custo residual de $200.000 menos custo de teste de $400.000"
+      ],
+      "explanations": {
+        "en": "The relevant comparison includes the counterfactual cost without testing. Given $1,500,000 without testing, $200,000 residual cost, and $400,000 test cost, net value is $900,000. The stem must state the $1,500,000 estimate rather than reveal it only in an option.",
+        "pt": "A comparação relevante inclui o custo contrafactual sem teste. Dados $1.500.000 sem teste, $200.000 de custo residual e $400.000 de custo de teste, o valor líquido é $900.000. O enunciado deve informar a estimativa de $1.500.000, em vez de revelá-la apenas em uma alternativa."
+      }
+    }
+  ]
+}

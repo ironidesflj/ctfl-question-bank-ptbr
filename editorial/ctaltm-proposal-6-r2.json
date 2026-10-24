@@ -1,0 +1,784 @@
+{
+  "range": [141, 172],
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "reviews": [
+    {
+      "id": "ctaltm-141",
+      "status": "REVISED",
+      "section": "1.5.2",
+      "reason": "Preserva a distinção oficial entre modelo de melhoria e dados do próprio projeto, com quatro descrições de processo comparáveis e sem negações absolutas.",
+      "answer": 0,
+      "en": [
+        "Model-based improvement compares test processes with a reference model; analytical improvement derives actions from project or team data",
+        "Model-based improvement diagnoses project data against internal goals; analytical improvement compares practices with external maturity models",
+        "Model-based improvement assesses process structure against checkpoints; analytical improvement prioritizes product fixes from defect severity",
+        "Model-based improvement establishes quantitative performance targets; analytical improvement selects process areas from external maturity levels"
+      ],
+      "pt": [
+        "A melhoria baseada em modelo compara processos de teste com um modelo de referência; a melhoria analítica deriva ações de dados do projeto ou da equipe",
+        "A melhoria baseada em modelo diagnostica dados do projeto diante de metas internas; a melhoria analítica compara práticas com modelos externos de maturidade",
+        "A melhoria baseada em modelo avalia a estrutura do processo por pontos de verificação; a melhoria analítica prioriza correções pela severidade dos defeitos",
+        "A melhoria baseada em modelo estabelece metas quantitativas de desempenho; a melhoria analítica seleciona áreas de processo por níveis externos de maturidade"
+      ],
+      "explanations": {
+        "en": "Model-based improvement uses a test improvement model and external best practices. Analytical improvement identifies problems and derives improvements from quantitative or qualitative project and team data.",
+        "pt": "A melhoria baseada em modelo usa um modelo de melhoria e práticas externas. A melhoria analítica identifica problemas e deriva melhorias de dados quantitativos ou qualitativos do projeto e da equipe."
+      }
+    },
+    {
+      "id": "ctaltm-142",
+      "status": "REVISED",
+      "section": "1.5.3",
+      "reason": "Substitui distratores absolutistas por confusões plausíveis com avaliação por modelo, retrospectiva e ROI de ferramentas.",
+      "answer": 0,
+      "en": [
+        "Analyze test-process and defect data to identify problems, define improvement goals, and evaluate the resulting changes",
+        "Benchmark the test process against maturity checkpoints to identify capability gaps and select the next process area",
+        "Facilitate a retrospective to gather team observations, identify collaboration issues, and agree on actions for the next iteration",
+        "Calculate tool return on investment from recurring costs, implementation effort, and expected automation benefits"
+      ],
+      "pt": [
+        "Analisar dados do processo de teste e de defeitos para identificar problemas, definir objetivos de melhoria e avaliar as mudanças resultantes",
+        "Comparar o processo de teste com pontos de maturidade para identificar lacunas de capacidade e selecionar a próxima área de processo",
+        "Facilitar uma retrospectiva para reunir observações da equipe, identificar problemas de colaboração e acordar ações para a próxima iteração",
+        "Calcular o retorno de uma ferramenta a partir de custos recorrentes, esforço de implementação e benefícios esperados da automação"
+      ],
+      "explanations": {
+        "en": "Analytical improvement uses test-process and defect data to identify problem areas, establish goals, and measure whether changes work. The other options describe related but different management activities.",
+        "pt": "A melhoria analítica usa dados do processo de teste e de defeitos para identificar áreas problemáticas, estabelecer objetivos e medir se as mudanças funcionam. As demais opções descrevem atividades relacionadas, mas diferentes."
+      }
+    },
+    {
+      "id": "ctaltm-143",
+      "status": "REVISED",
+      "section": "1.5.4",
+      "reason": "Equilibra o benefício correto com três resultados verossímeis de outras práticas de gestão, eliminando culpa e auditoria como caricaturas.",
+      "answer": 0,
+      "en": [
+        "Review team methods and collaboration, capture lessons, and agree on improvement actions for the next iteration",
+        "Compare test metrics with model checkpoints, identify maturity gaps, and prioritize process areas for assessment",
+        "Review compliance evidence, document control exceptions, and assign remediation items for the next audit cycle",
+        "Review progress and defect trends, revise the remaining scope, and update the forecast for the current iteration"
+      ],
+      "pt": [
+        "Revisar métodos e colaboração da equipe, registrar lições e acordar ações de melhoria para a próxima iteração",
+        "Comparar métricas de teste com pontos do modelo, identificar lacunas de maturidade e priorizar áreas de processo para avaliação",
+        "Revisar evidências de conformidade, documentar exceções de controle e atribuir itens de correção para o próximo ciclo de auditoria",
+        "Revisar progresso e tendências de defeitos, ajustar o escopo restante e atualizar a previsão da iteração atual"
+      ],
+      "explanations": {
+        "en": "A retrospective reviews methods and collaboration, records lessons, and decides changes and actions. Model assessment, compliance review, and test control have different purposes.",
+        "pt": "Uma retrospectiva revisa métodos e colaboração, registra lições e decide mudanças e ações. Avaliação por modelo, revisão de conformidade e controle de teste têm finalidades diferentes."
+      }
+    },
+    {
+      "id": "ctaltm-144",
+      "status": "REVISED",
+      "section": "1.5.4",
+      "reason": "Mantém ação documentada e revisável como gabarito e oferece alternativas com falhas concretas de responsabilidade, medição ou acompanhamento.",
+      "answer": 0,
+      "en": [
+        "Define a regression-suite action with an owner and target date, document it, and review its impact in the next retrospective",
+        "Add the regression update to the product backlog, rank it beside feature work, and assess its effect after the next release",
+        "Begin updating the regression suite during the next sprint and use the number of changed tests as the completion measure",
+        "Prepare an automation funding request, assign the action after budget approval, and revisit the escaped defects during release planning"
+      ],
+      "pt": [
+        "Definir uma ação para a suíte de regressão com responsável e prazo, documentá-la e revisar seu impacto na próxima retrospectiva",
+        "Adicionar a atualização da regressão ao backlog do produto, priorizá-la com as funcionalidades e avaliar seu efeito após a próxima versão",
+        "Começar a atualizar a suíte de regressão no próximo sprint e usar a quantidade de testes alterados como medida de conclusão",
+        "Preparar uma solicitação de verba para automação, atribuir a ação após a aprovação e retomar os defeitos escapados no planejamento da versão"
+      ],
+      "explanations": {
+        "en": "Retrospective actions should be agreed, documented, and later reviewed for their impact. A backlog item, activity count, or funding request lacks part of that implementation and feedback loop.",
+        "pt": "As ações da retrospectiva devem ser acordadas, documentadas e depois revisadas quanto ao impacto. Um item de backlog, uma contagem de atividade ou uma solicitação de verba deixa incompleto esse ciclo de implementação e feedback."
+      }
+    },
+    {
+      "id": "ctaltm-145",
+      "status": "REVISED",
+      "section": "1.6.1",
+      "reason": "Troca afirmações sobre práticas proibidas por estratégias de adoção plausíveis, mas incompletas diante de piloto, capacitação e implantação incremental.",
+      "answer": 0,
+      "en": [
+        "The rollout conflicts with piloting, user training or coaching, and incremental introduction supported by feedback from actual use",
+        "The rollout is acceptable after requirements evaluation because broad deployment provides stronger evidence than a limited pilot",
+        "The rollout should expose integration issues early, with training content created from the problems observed across the projects",
+        "The rollout can establish ownership and usage guidelines after the first release, when organization-wide usage patterns are available"
+      ],
+      "pt": [
+        "A implantação contraria piloto, treinamento ou mentoria dos usuários e introdução incremental apoiada por feedback do uso real",
+        "A implantação é aceitável após avaliar requisitos porque uma adoção ampla fornece evidências mais fortes que um piloto limitado",
+        "A implantação deve revelar cedo problemas de integração, com o treinamento criado a partir dos problemas observados nos projetos",
+        "A implantação pode definir responsabilidade e diretrizes de uso após a primeira versão, quando houver padrões de uso em toda a organização"
+      ],
+      "explanations": {
+        "en": "Section 1.6.1 recommends a pilot, user preparation, incremental rollout, ownership, guidelines, and feedback from use. A one-day rollout to twelve projects omits central safeguards.",
+        "pt": "A seção 1.6.1 recomenda piloto, preparação dos usuários, implantação incremental, responsabilidade, diretrizes e feedback do uso. Uma implantação em doze projetos no mesmo dia omite salvaguardas centrais."
+      }
+    },
+    {
+      "id": "ctaltm-146",
+      "status": "REVISED",
+      "section": "1.6.1",
+      "reason": "Apresenta quatro processos de introdução com detalhe equivalente; o gabarito é o conjunto oficial de avaliação objetiva, prova de conceito, piloto, capacitação e rollout incremental.",
+      "answer": 0,
+      "en": [
+        "Evaluate objective requirements, run a proof of concept and pilot, prepare users, and expand incrementally using adoption feedback",
+        "Shortlist by licensing and vendor support, deploy to representative projects, and define technical criteria from the deployment results",
+        "Complete a compatibility review, train project champions, and use the first operational project as the evaluation of process fit",
+        "Pilot the tool in an isolated environment, confirm its features, and standardize the existing process before checking integration needs"
+      ],
+      "pt": [
+        "Avaliar requisitos objetivos, executar prova de conceito e piloto, preparar usuários e expandir incrementalmente usando feedback da adoção",
+        "Selecionar por licenciamento e suporte do fornecedor, implantar em projetos representativos e definir critérios técnicos com os resultados da implantação",
+        "Concluir uma revisão de compatibilidade, treinar representantes dos projetos e usar o primeiro projeto operacional para avaliar aderência ao processo",
+        "Pilotar a ferramenta em ambiente isolado, confirmar funcionalidades e padronizar o processo existente antes de verificar necessidades de integração"
+      ],
+      "explanations": {
+        "en": "Good introduction practice combines objective selection criteria and proof of concept with a pilot, preparation of users, incremental rollout, and feedback. The distractors move validation after commitment or isolate it from real processes.",
+        "pt": "Uma boa introdução combina critérios objetivos e prova de conceito com piloto, preparação dos usuários, implantação incremental e feedback. Os distratores deslocam a validação para depois do compromisso ou a isolam dos processos reais."
+      }
+    },
+    {
+      "id": "ctaltm-147",
+      "status": "REVISED",
+      "section": "1.6.2",
+      "reason": "Remove a repetição de 'only/apenas' e diferencia custo do ciclo de vida de preço inicial, sustentabilidade técnica e risco de fornecedor.",
+      "answer": 1,
+      "en": [
+        "Acquisition price across the contract term, with internal maintenance effort managed through the existing operational budget",
+        "Lifecycle cost including acquisition or licensing, integration, training, maintenance, support, and expected changes over time",
+        "Technical sustainability based on language fit, update frequency, and compatibility with the organization's automation architecture",
+        "Supplier risk based on support responsiveness and release cadence, with internal effort represented as available team capacity"
+      ],
+      "pt": [
+        "Preço de aquisição durante o contrato, com o esforço interno de manutenção gerenciado pelo orçamento operacional existente",
+        "Custo do ciclo de vida incluindo aquisição ou licença, integração, treinamento, manutenção, suporte e mudanças esperadas ao longo do tempo",
+        "Sustentabilidade técnica baseada em linguagem, frequência de atualizações e compatibilidade com a arquitetura de automação da organização",
+        "Risco do fornecedor baseado em resposta do suporte e cadência de versões, com o esforço interno representado pela capacidade da equipe"
+      ],
+      "explanations": {
+        "en": "The scenario contrasts license cost with internal maintenance and vendor support. That is a lifecycle-cost decision covering initial, recurring, training, integration, support, and maintenance costs.",
+        "pt": "O cenário contrasta licença com manutenção interna e suporte do fornecedor. Trata-se de uma decisão de custo do ciclo de vida, incluindo custos iniciais, recorrentes, de treinamento, integração, suporte e manutenção."
+      }
+    },
+    {
+      "id": "ctaltm-148",
+      "status": "REVISED",
+      "section": "1.6.2",
+      "reason": "Substitui distinções absolutas entre comercial e open-source por sequências de decisão plausíveis que posicionam incorretamente os fatores técnicos.",
+      "answer": 1,
+      "en": [
+        "Treat them as deployment-planning inputs after the business case and supplier decision establish the preferred tool type",
+        "Evaluate them with financial, stakeholder, support, regulatory, and existing-tool-landscape considerations when deciding on a tool",
+        "Use them to plan integration and scaling after acquisition, while licensing and vendor support determine the selection itself",
+        "Use them as indicators of open-source suitability, while certification and service coverage guide a commercial-tool choice"
+      ],
+      "pt": [
+        "Trataria esses aspectos como entradas do plano de implantação após o business case e a decisão de fornecedor definirem o tipo de ferramenta",
+        "Avaliaria esses aspectos com finanças, stakeholders, suporte, regulamentação e cenário de ferramentas existente ao decidir sobre uma ferramenta",
+        "Usaria esses aspectos para planejar integração e escala após a aquisição, enquanto licença e suporte do fornecedor determinariam a seleção",
+        "Usaria esses aspectos como indicadores de adequação a open source, enquanto certificação e cobertura de serviço guiariam uma ferramenta comercial"
+      ],
+      "explanations": {
+        "en": "Technical compatibility, integration, scalability, and maintainability belong in the decision together with business and organizational factors; they are not deferred until after selection.",
+        "pt": "Compatibilidade técnica, integração, escalabilidade e manutenção fazem parte da decisão junto com fatores de negócio e organizacionais; não são adiadas para depois da seleção."
+      }
+    },
+    {
+      "id": "ctaltm-149",
+      "status": "REVISED",
+      "section": "1.6.3",
+      "reason": "Mantém todos os planos tecnicamente reconhecíveis e equilibra aderência, custo, integração, piloto e capacitação sem recorrer a marketing ou adiamento indefinido.",
+      "answer": 1,
+      "en": [
+        "Choose a commercial Python desktop tool for mature support, fund JavaScript training and a CI adapter, and validate it on the busiest project",
+        "Choose an open-source JavaScript web tool with GitHub Actions integration, validate reliability and maintainability in a one-sprint pilot, then train and expand",
+        "Choose an open-source JavaScript web tool with the lowest setup effort, review its documentation, and deploy it across the project portfolio in phases",
+        "Choose an open-source automation tool with broad plugin support, use the pilot to assess JavaScript and CI fit, and train the team after selection"
+      ],
+      "pt": [
+        "Escolher uma ferramenta desktop comercial em Python pelo suporte maduro, financiar treinamento em JavaScript e um adaptador de CI e validá-la no projeto mais movimentado",
+        "Escolher uma ferramenta web open-source em JavaScript integrada ao GitHub Actions, validar confiabilidade e manutenção em piloto de um sprint e então treinar e expandir",
+        "Escolher a ferramenta web open-source em JavaScript com menor esforço de configuração, revisar sua documentação e implantá-la em fases no portfólio",
+        "Escolher uma ferramenta open-source de automação com muitos plugins, usar o piloto para avaliar JavaScript e CI e treinar a equipe após a seleção"
+      ],
+      "explanations": {
+        "en": "The keyed plan best matches the web target, JavaScript skills, GitHub Actions, open-source preference, regression need, and adoption practices. The alternatives each leave a material fit or validation issue unresolved.",
+        "pt": "O plano correto corresponde melhor ao alvo web, às habilidades em JavaScript, ao GitHub Actions, à preferência por open source, à regressão e às práticas de adoção. Cada alternativa deixa uma questão material de aderência ou validação sem resolver."
+      }
+    },
+    {
+      "id": "ctaltm-150",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "1.6.4",
+      "reason": "O cenário original admite evolução ou aposentadoria: mudanças de ambiente e decisões do fornecedor podem exigir evolução, e aposentadoria depende de os benefícios da troca superarem custos e riscos. A pergunta proposta adiciona essa evidência e continua sem aprovação.",
+      "answer": 1,
+      "question": {
+        "en": "A test automation tool has been used for three years. Vendor updates have ended, the application has moved to a new technology stack, and scripts are increasingly flaky. An assessment shows that replacing the tool offers greater benefits than the migration costs and risks. Which tool-lifecycle stage should the Test Manager initiate?",
+        "pt": "Uma ferramenta de automação de teste é usada há três anos. As atualizações do fornecedor terminaram, a aplicação migrou para uma nova stack e os scripts estão cada vez mais instáveis. Uma avaliação mostra que substituir a ferramenta oferece benefícios maiores que os custos e riscos da migração. Qual estágio do ciclo de vida o Gerente de Teste deve iniciar?"
+      },
+      "en": [
+        "Acquisition, assigning an owner and defining conventions for the current tool before extending its use in the new environment",
+        "Retirement, selecting a successor and preserving or archiving the current tool's data as part of the migration",
+        "Evolution, adapting the current tool and scripts to the new stack while accepting responsibility for future maintenance",
+        "Support and maintenance, stabilizing the scripts and strengthening backup, restoration, and interoperability procedures"
+      ],
+      "pt": [
+        "Aquisição, atribuindo um responsável e definindo convenções para a ferramenta atual antes de ampliar seu uso no novo ambiente",
+        "Aposentadoria, selecionando uma sucessora e preservando ou arquivando os dados da ferramenta atual durante a migração",
+        "Evolução, adaptando a ferramenta e os scripts atuais à nova stack e assumindo a manutenção futura",
+        "Suporte e manutenção, estabilizando os scripts e reforçando procedimentos de backup, restauração e interoperabilidade"
+      ],
+      "explanations": {
+        "en": "Retirement applies when replacement benefits exceed the costs and risks and requires preserving or archiving relevant data. The added assessment distinguishes retirement from evolution.",
+        "pt": "A aposentadoria se aplica quando os benefícios da substituição superam custos e riscos e exige preservar ou arquivar dados relevantes. A avaliação acrescentada distingue aposentadoria de evolução."
+      }
+    },
+    {
+      "id": "ctaltm-151",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "1.6.4",
+      "reason": "O gabarito original lista cinco estágios divergentes dos quatro estágios oficiais. A proposta corrige pergunta e alternativas, mas permanece não aprovada.",
+      "answer": 1,
+      "question": {
+        "en": "According to the CTAL-TM v3.0 syllabus, which sequence names the four stages of the test tool lifecycle?",
+        "pt": "Segundo o syllabus CTAL-TM v3.0, qual sequência nomeia os quatro estágios do ciclo de vida de uma ferramenta de teste?"
+      },
+      "en": [
+        "Evaluation, proof of concept, pilot deployment, and organization-wide adoption",
+        "Acquisition, support and maintenance, evolution, and retirement",
+        "Selection, installation, operational use, and vendor support",
+        "Initiation, diagnosis, establishment, action, and learning"
+      ],
+      "pt": [
+        "Avaliação, prova de conceito, implantação piloto e adoção em toda a organização",
+        "Aquisição, suporte e manutenção, evolução e aposentadoria",
+        "Seleção, instalação, uso operacional e suporte do fornecedor",
+        "Iniciação, diagnóstico, estabelecimento, ação e aprendizado"
+      ],
+      "explanations": {
+        "en": "Section 1.6.4 explicitly defines acquisition, support and maintenance, evolution, and retirement. The other sequences describe introduction activities, an informal operating sequence, or IDEAL.",
+        "pt": "A seção 1.6.4 define explicitamente aquisição, suporte e manutenção, evolução e aposentadoria. As outras sequências descrevem atividades de introdução, uma sequência operacional informal ou o IDEAL."
+      }
+    },
+    {
+      "id": "ctaltm-152",
+      "status": "REVISED",
+      "section": "1.6.5",
+      "reason": "Equilibra quatro benefícios ou usos aparentes de ferramentas; somente o gabarito preserva necessidades dos stakeholders, redução de coleta e decisão humana.",
+      "answer": 1,
+      "en": [
+        "Centralize metric definitions in the tool so projects can compare a common set of measures across different test objectives",
+        "Collect useful real-time data with less manual effort, supporting management of the test effort and identification of optimization areas",
+        "Configure thresholds that interpret metric changes and trigger corrective actions directly from the dashboard",
+        "Capture a broad data set during execution so future stakeholders can select useful measures after the release"
+      ],
+      "pt": [
+        "Centralizar definições de métricas na ferramenta para que projetos comparem um conjunto comum diante de objetivos de teste diferentes",
+        "Coletar dados úteis em tempo real com menos esforço manual, apoiando a gestão do esforço de teste e a identificação de áreas de otimização",
+        "Configurar limites que interpretem mudanças nas métricas e acionem ações corretivas diretamente pelo painel",
+        "Capturar um conjunto amplo de dados durante a execução para que stakeholders futuros selecionem medidas úteis após a versão"
+      ],
+      "explanations": {
+        "en": "Tools reduce collection effort and provide timely data, but metrics are designed for stakeholder needs and still require management interpretation. Collection volume or automatic thresholds do not supply that context.",
+        "pt": "Ferramentas reduzem o esforço de coleta e fornecem dados oportunos, mas as métricas são definidas para necessidades dos stakeholders e ainda exigem interpretação gerencial. Volume de coleta ou limites automáticos não fornecem esse contexto."
+      }
+    },
+    {
+      "id": "ctaltm-153",
+      "status": "REVISED",
+      "section": "1.6.5",
+      "reason": "Mantém DDP como métrica de eficácia e cria três usos quantitativos plausíveis, sem punição, bônus ou decisões automáticas.",
+      "answer": 1,
+      "en": [
+        "Compare tester productivity across test levels by normalizing each person's reported defects against executed test volume",
+        "Evaluate test effectiveness by level and release, combine the required data, and use the trend to guide process improvement",
+        "Prioritize defect fixing toward the test levels with lower DDP because those levels contribute more residual risk",
+        "Estimate remaining execution effort from the DDP trend, current defect count, and average daily test throughput"
+      ],
+      "pt": [
+        "Comparar produtividade entre testadores por nível, normalizando os defeitos relatados por cada pessoa pelo volume de testes executados",
+        "Avaliar eficácia do teste por nível e versão, combinar os dados necessários e usar a tendência para orientar melhoria do processo",
+        "Priorizar correções nos níveis com menor DDP porque esses níveis contribuem com mais risco residual",
+        "Estimar o esforço de execução restante pela tendência de DDP, contagem atual de defeitos e produtividade diária média"
+      ],
+      "explanations": {
+        "en": "DDP is a test-effectiveness measure that can support process improvement across levels and releases. The syllabus notes that the defect tool may not provide every required input by itself.",
+        "pt": "A DDP mede eficácia do teste e pode apoiar melhoria do processo entre níveis e versões. O syllabus observa que a ferramenta de defeitos pode não fornecer sozinha todas as entradas necessárias."
+      }
+    },
+    {
+      "id": "ctaltm-154",
+      "status": "REVISED",
+      "section": "1.6.5",
+      "reason": "Remove decoração e liberação automática como distratores; as alternativas agora são quatro interpretações gerenciais críveis do mesmo painel.",
+      "answer": 1,
+      "en": [
+        "Apply the dashboard's default thresholds as release criteria so results remain consistent across products and teams",
+        "Evaluate status and trends against test objectives, manage the test effort, and identify opportunities for optimization",
+        "Compare build throughput across team members and use the trend to rebalance execution assignments",
+        "Define future test objectives around the execution, pass-rate, and coverage measures that the pipeline already supplies"
+      ],
+      "pt": [
+        "Aplicar os limites padrão do painel como critérios de liberação para manter resultados consistentes entre produtos e equipes",
+        "Avaliar status e tendências diante dos objetivos de teste, gerenciar o esforço e identificar oportunidades de otimização",
+        "Comparar produtividade de builds entre membros da equipe e usar a tendência para redistribuir atribuições de execução",
+        "Definir objetivos de teste futuros em torno das medidas de execução, aprovação e cobertura já fornecidas pelo pipeline"
+      ],
+      "explanations": {
+        "en": "Tool data supports test-effort management and optimization when interpreted against objectives and context. Tool defaults, personnel comparisons, and available fields do not define the project's objectives.",
+        "pt": "Dados de ferramentas apoiam a gestão do esforço e a otimização quando interpretados diante de objetivos e contexto. Padrões da ferramenta, comparações pessoais e campos disponíveis não definem os objetivos do projeto."
+      }
+    },
+    {
+      "id": "ctaltm-155",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "1.2.4",
+      "reason": "O syllabus não sustenta as alegações específicas sobre Kanban, limites de WIP e fluxo cumulativo. A proposta troca o cenário por modelo iterativo, conteúdo explicitamente comparado na seção, e permanece não aprovada.",
+      "answer": 1,
+      "question": {
+        "en": "A Test Manager is adapting test management from a sequential project to an iterative project using Scrum. According to the CTAL-TM v3.0 syllabus, which profile best describes the iterative context?",
+        "pt": "Um Gerente de Teste está adaptando o gerenciamento de teste de um projeto sequencial para um projeto iterativo com Scrum. Segundo o syllabus CTAL-TM v3.0, qual perfil descreve melhor o contexto iterativo?"
+      },
+      "en": [
+        "Detailed estimates by test level, phase-oriented testware, centralized test-manager decisions, and milestone reports",
+        "Estimation within iteration planning, documentation around acceptance criteria and the definition of done, integrated roles, and continuous reporting",
+        "Detailed estimates at release start, acceptance-criteria testware, centralized resource decisions, and daily milestone reports",
+        "Estimation within iteration planning, phase-based testware, a separate test-manager role, and reporting at release milestones"
+      ],
+      "pt": [
+        "Estimativas detalhadas por nível, testware orientado a fases, decisões centralizadas no gerente de teste e relatórios por marcos",
+        "Estimativa no planejamento da iteração, documentação em critérios de aceitação e definição de pronto, papéis integrados e relatórios contínuos",
+        "Estimativas detalhadas no início da versão, testware de critérios de aceitação, decisões centralizadas de recursos e relatórios diários por marcos",
+        "Estimativa no planejamento da iteração, testware baseado em fases, papel separado de gerente de teste e relatórios nos marcos da versão"
+      ],
+      "explanations": {
+        "en": "Section 1.2.4 contrasts iterative work with sequential work: estimation is part of iteration planning, documentation focuses on acceptance criteria and the definition of done, roles are integrated, and reporting is continuous.",
+        "pt": "A seção 1.2.4 contrasta trabalho iterativo e sequencial: a estimativa faz parte do planejamento da iteração, a documentação foca critérios de aceitação e definição de pronto, os papéis são integrados e os relatórios são contínuos."
+      }
+    },
+    {
+      "id": "ctaltm-156",
+      "status": "REVISED",
+      "section": "2.1.1",
+      "reason": "Quatro conjuntos de métricas agora têm granularidade equivalente; o gabarito mede diretamente defeitos críticos abertos e confirmação das correções.",
+      "answer": 1,
+      "en": [
+        "Executed tests versus plan and actual testing hours versus the effort estimate",
+        "Open critical defects and confirmation-test results for critical defects reported as fixed",
+        "Requirements coverage and automated tests implemented versus the automation plan",
+        "Resolved defects versus total defects and open defects grouped by business priority"
+      ],
+      "pt": [
+        "Testes executados versus plano e horas reais de teste versus estimativa de esforço",
+        "Defeitos críticos abertos e resultados de testes de confirmação para defeitos críticos informados como corrigidos",
+        "Cobertura de requisitos e testes automatizados implementados versus plano de automação",
+        "Defeitos resolvidos versus total de defeitos e defeitos abertos agrupados por prioridade de negócio"
+      ],
+      "explanations": {
+        "en": "The exit criterion has two parts: critical defects are fixed and their fixes are confirmed. Open critical-defect count and confirmation-test results measure those parts directly.",
+        "pt": "O critério de saída tem duas partes: defeitos críticos corrigidos e correções confirmadas. A contagem de críticos abertos e os resultados dos testes de confirmação medem diretamente essas partes."
+      }
+    },
+    {
+      "id": "ctaltm-157",
+      "status": "REVISED",
+      "section": "2.1.1",
+      "reason": "Distingue progresso de execução de produtividade de projeto, qualidade alcançada e custo, com descrições paralelas e sem distratores estranhos ao domínio.",
+      "answer": 1,
+      "en": [
+        "Assess test-design productivity by comparing implemented test cases with the planned design workload",
+        "Monitor execution progress against the plan and forecast whether the planned completion date remains achievable",
+        "Assess product quality by combining passed, failed, blocked, and skipped execution results",
+        "Monitor cost efficiency by comparing actual test hours with the effort budget for the release"
+      ],
+      "pt": [
+        "Avaliar produtividade do projeto de teste comparando casos implementados com a carga planejada de modelagem",
+        "Monitorar o progresso da execução diante do plano e prever se a data planejada continua alcançável",
+        "Avaliar a qualidade do produto combinando resultados aprovados, falhos, bloqueados e ignorados",
+        "Monitorar eficiência de custo comparando horas reais de teste com o orçamento de esforço da versão"
+      ],
+      "explanations": {
+        "en": "Executed-versus-planned tests are a progress metric. Their rate and trend support forecasting and test-control decisions; the other options use different metrics and objectives.",
+        "pt": "Testes executados versus planejados são uma métrica de progresso. Sua taxa e tendência apoiam previsão e decisões de controle; as demais opções usam métricas e objetivos diferentes."
+      }
+    },
+    {
+      "id": "ctaltm-158",
+      "status": "REVISED",
+      "section": "2.1.1",
+      "reason": "Compara cobertura de requisitos com métricas próximas de implementação, risco e produtividade, mantendo detalhe e construção equivalentes.",
+      "answer": 1,
+      "en": [
+        "Measure the proportion of implemented features exercised by the current automated regression suite",
+        "Measure the proportion of requirements covered by test cases and identify requirement-coverage gaps",
+        "Measure the proportion of identified product risks mitigated by the designed test cases",
+        "Measure the proportion of planned test cases executed during the current reporting period"
+      ],
+      "pt": [
+        "Medir a proporção de funcionalidades implementadas exercitadas pela suíte de regressão automatizada atual",
+        "Medir a proporção de requisitos cobertos por casos de teste e identificar lacunas de cobertura",
+        "Medir a proporção de riscos de produto identificados e mitigados pelos casos de teste projetados",
+        "Medir a proporção de casos de teste planejados e executados durante o período atual de relatório"
+      ],
+      "explanations": {
+        "en": "Requirements coverage is the percentage of requirements covered by test cases. Feature coverage, product-risk coverage, and execution progress answer different management questions.",
+        "pt": "Cobertura de requisitos é o percentual de requisitos cobertos por casos de teste. Cobertura de funcionalidades, cobertura de riscos e progresso de execução respondem a outras perguntas de gestão."
+      }
+    },
+    {
+      "id": "ctaltm-159",
+      "status": "REVISED",
+      "section": "2.1.2",
+      "reason": "Remove decisões automáticas e formula quatro respostas de controle plausíveis; o gabarito integra tendência, severidade e critérios de saída antes da ação.",
+      "answer": 1,
+      "en": [
+        "Continue the planned schedule and report the lower defect discovery rate as evidence of improved product quality",
+        "Investigate the defect trend and critical defects, compare the evidence with exit criteria, and adjust priorities, techniques, or schedule",
+        "Concentrate the next execution cycle on confirmation tests for critical fixes and move the remaining planned tests to completion review",
+        "Recalibrate expected defect arrival to the current release and retain the existing execution plan until another reporting period is available"
+      ],
+      "pt": [
+        "Continuar o cronograma planejado e relatar a menor taxa de descoberta de defeitos como evidência de melhor qualidade do produto",
+        "Investigar a tendência e os defeitos críticos, comparar evidências com critérios de saída e ajustar prioridades, técnicas ou cronograma",
+        "Concentrar o próximo ciclo nos testes de confirmação das correções críticas e mover os testes planejados restantes para a revisão de conclusão",
+        "Recalibrar a chegada esperada de defeitos para a versão atual e manter o plano de execução até haver outro período de relatório"
+      ],
+      "explanations": {
+        "en": "A lower defect rate can reflect better quality or weaker detection. Test control should investigate it with the critical defects and exit criteria, then select a context-appropriate corrective action.",
+        "pt": "Uma taxa menor de defeitos pode refletir melhor qualidade ou detecção mais fraca. O controle deve investigá-la com os defeitos críticos e critérios de saída e então selecionar uma ação adequada ao contexto."
+      }
+    },
+    {
+      "id": "ctaltm-160",
+      "status": "REVISED",
+      "section": "2.1.2",
+      "reason": "Troca ocultação e manipulação por respostas gerenciais plausíveis que diferem em diagnóstico, ação e comunicação da tendência.",
+      "answer": 1,
+      "en": [
+        "Rebaseline the expected rate to current throughput and extend the forecast before investigating the reason for the decline",
+        "Investigate the bottleneck, apply a corrective action suited to the cause, and update the completion forecast",
+        "Reallocate testers to currently executable cases based on an environment assumption, then assess whether throughput recovers",
+        "Report cumulative execution percentage instead of the daily rate to reduce volatility in stakeholder status reporting"
+      ],
+      "pt": [
+        "Redefinir a taxa esperada pela produtividade atual e estender a previsão antes de investigar a causa da queda",
+        "Investigar o gargalo, aplicar ação corretiva adequada à causa e atualizar a previsão de conclusão",
+        "Realocar testadores para casos executáveis com base em uma hipótese de ambiente e então avaliar a recuperação da produtividade",
+        "Relatar o percentual cumulativo de execução em vez da taxa diária para reduzir a volatilidade do status aos stakeholders"
+      ],
+      "explanations": {
+        "en": "Monitoring exposes the declining rate; control requires understanding the cause, taking suitable action, and revising the forecast. Acting on an untested assumption or changing presentation does not complete that cycle.",
+        "pt": "O monitoramento revela a queda; o controle exige compreender a causa, agir de forma adequada e revisar a previsão. Agir sobre hipótese não testada ou mudar a apresentação não completa esse ciclo."
+      }
+    },
+    {
+      "id": "ctaltm-161",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "2.1.3",
+      "reason": "O gabarito original decreta que a versão não está pronta e sugere adiar correções críticas sem critérios de saída ou autoridade de risco. A proposta pede uma análise para decisão e permanece não aprovada.",
+      "answer": 1,
+      "question": {
+        "en": "A hospital admission system has 95% tests passed, 3% failed, 2% blocked, four open critical defects, 90% execution completed, and 200 tests remaining. At 50 tests per day, the planned end date in three days leaves a forecast gap of 50 tests. Which analysis best enables an authorized stakeholder decision?",
+        "pt": "Um sistema de admissão hospitalar tem 95% dos testes aprovados, 3% falhos, 2% bloqueados, quatro defeitos críticos abertos, 90% da execução concluída e 200 testes restantes. A 50 testes por dia, a data final em três dias deixa uma lacuna prevista de 50 testes. Qual análise melhor apoia a decisão de um stakeholder autorizado?"
+      },
+      "en": [
+        "Emphasize the pass rate, document the critical defects and blocked tests as residual risk, and request release approval on the planned date",
+        "Compare critical defects, blocked tests, and the forecast gap with exit criteria and residual risk, then present remediation, scope, and schedule options",
+        "Recommend a schedule extension from the forecast gap, while treating defect disposition and blocked-test impact as separate follow-up decisions",
+        "Recommend reducing the remaining scope by 50 tests, then reassess the pass rate and critical-defect trend at the planned end date"
+      ],
+      "pt": [
+        "Enfatizar a taxa de aprovação, documentar defeitos críticos e testes bloqueados como risco residual e solicitar aprovação na data planejada",
+        "Comparar defeitos críticos, testes bloqueados e lacuna prevista com critérios de saída e risco residual e apresentar opções de correção, escopo e prazo",
+        "Recomendar extensão do prazo pela lacuna prevista, tratando a disposição dos defeitos e o impacto dos bloqueios como decisões posteriores",
+        "Recomendar reduzir o escopo restante em 50 testes e então reavaliar taxa de aprovação e tendência de defeitos críticos na data planejada"
+      ],
+      "explanations": {
+        "en": "Decision-enabling reporting combines progress, defects, blocked work, forecast, risk, and agreed exit criteria. It presents trade-offs to authorized stakeholders rather than deriving a universal release verdict from one metric.",
+        "pt": "Um relatório para decisão combina progresso, defeitos, trabalho bloqueado, previsão, risco e critérios de saída acordados. Ele apresenta trocas aos stakeholders autorizados em vez de derivar um veredito universal de uma métrica."
+      }
+    },
+    {
+      "id": "ctaltm-162",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "2.1.3",
+      "reason": "A recomendação original de liberar não é sustentada sem impacto dos três defeitos major e critérios de saída. A proposta explicita a ausência desses dados, orienta o relatório à decisão e permanece não aprovada.",
+      "answer": 1,
+      "question": {
+        "en": "A non-critical internal HR portal has completed the planned tests with an 88% pass rate, no critical defects, three major and nine minor open defects, a green regression suite, performance within target, and UAT sign-off with two minor deferrals. No agreed release criterion or impact assessment for the major defects is provided. What should the report do to enable a release decision?",
+        "pt": "Um portal interno de RH não crítico concluiu os testes planejados com 88% de aprovação, nenhum defeito crítico, três principais e nove menores abertos, regressão verde, desempenho dentro da meta e aceite do UAT com dois adiamentos menores. Não foram fornecidos critério de liberação acordado nem avaliação de impacto dos defeitos principais. O que o relatório deve fazer para apoiar a decisão?"
+      },
+      "en": [
+        "Recommend release from completed execution, green regression, and UAT sign-off, listing the open defects in the release notes",
+        "Report achievement against criteria, assess residual risk and impact of open defects and UAT deferrals, and request an authorized decision",
+        "Recommend a follow-up test cycle for the major defects, while carrying the minor defects into a planned maintenance release",
+        "Recommend postponement from the 88% pass rate, then define a new target using the results of the next regression cycle"
+      ],
+      "pt": [
+        "Recomendar liberação pela execução concluída, regressão verde e aceite do UAT, listando os defeitos abertos nas notas da versão",
+        "Relatar atendimento aos critérios, avaliar risco residual e impacto dos defeitos e adiamentos do UAT e solicitar decisão autorizada",
+        "Recomendar novo ciclo de teste para os defeitos principais e levar os defeitos menores para uma versão planejada de manutenção",
+        "Recomendar adiamento pela taxa de 88% e então definir nova meta com os resultados do próximo ciclo de regressão"
+      ],
+      "explanations": {
+        "en": "The given positive results do not establish the impact of major defects or agreed release criteria. The report should close those information gaps and expose residual risk for the authorized decision.",
+        "pt": "Os resultados positivos não estabelecem o impacto dos defeitos principais nem critérios acordados de liberação. O relatório deve fechar essas lacunas e expor o risco residual para a decisão autorizada."
+      }
+    },
+    {
+      "id": "ctaltm-163",
+      "status": "REVISED",
+      "section": "2.1.3",
+      "reason": "Substitui marketing e opinião por quatro formatos de relatório plausíveis, diferenciados por síntese, tendência, previsão e pedido de decisão.",
+      "answer": 1,
+      "en": [
+        "Provide test-case and defect exports with field definitions plus a one-page summary of current pass, fail, and blocked counts",
+        "Provide an audience-tailored summary of plan variance, risk and defect trends, environment status, forecast, and decisions needed",
+        "Provide the current pass rate and defect profile by feature, with the longer-term trends reserved for the monthly project report",
+        "Provide the Test Manager's interpretation of risks and forecast, with the detailed metrics available in a supporting appendix"
+      ],
+      "pt": [
+        "Fornecer exportações de casos e defeitos com definição dos campos e um resumo de uma página das contagens atuais de aprovação, falha e bloqueio",
+        "Fornecer resumo adaptado ao público sobre desvio do plano, tendências de riscos e defeitos, status do ambiente, previsão e decisões necessárias",
+        "Fornecer taxa atual de aprovação e perfil de defeitos por funcionalidade, reservando tendências longas para o relatório mensal do projeto",
+        "Fornecer a interpretação do Gerente de Teste sobre riscos e previsão, com as métricas detalhadas disponíveis em anexo de apoio"
+      ],
+      "explanations": {
+        "en": "A periodic status report should make progress, trends, constraints, forecast, and required decisions immediately understandable to its audience. Raw detail or a partial snapshot does not provide the same decision support.",
+        "pt": "Um relatório periódico deve tornar imediatamente compreensíveis progresso, tendências, restrições, previsão e decisões necessárias. Detalhe bruto ou retrato parcial não oferece o mesmo apoio à decisão."
+      }
+    },
+    {
+      "id": "ctaltm-164",
+      "status": "REVISED",
+      "section": "2.2.1",
+      "reason": "Remove itens sem relação com teste e compara quatro formas reais de delimitar uma estimativa; o gabarito cobre atividades, esforço, duração, custo e contexto.",
+      "answer": 1,
+      "en": [
+        "Derive execution duration from test count and run rate, then estimate analysis, design, completion, tools, and infrastructure as percentages",
+        "Identify test levels, activities, and tasks, then estimate effort, duration, and cost using relevant product, process, people, result, and context factors",
+        "Start from the latest e-commerce estimate, adjust product size and technology complexity, and preserve the previous staffing assumptions",
+        "Prepare the detailed estimate after implementation stabilizes, using observed defect arrival and rework to calculate the remaining test activities"
+      ],
+      "pt": [
+        "Derivar duração da execução pela quantidade e taxa de testes e estimar análise, projeto, conclusão, ferramentas e infraestrutura por percentuais",
+        "Identificar níveis, atividades e tarefas de teste e estimar esforço, duração e custo com fatores de produto, processo, pessoas, resultados e contexto",
+        "Partir da estimativa de e-commerce mais recente, ajustar tamanho e complexidade tecnológica e preservar as premissas anteriores de equipe",
+        "Preparar a estimativa detalhada após estabilizar a implementação, usando chegada de defeitos e retrabalho observados para calcular atividades restantes"
+      ],
+      "explanations": {
+        "en": "Estimation starts by identifying the test levels, activities, and tasks and estimates effort, elapsed time, and cost. Product, process, people, results, and context affect the values.",
+        "pt": "A estimativa começa pela identificação de níveis, atividades e tarefas e estima esforço, tempo decorrido e custo. Produto, processo, pessoas, resultados e contexto afetam os valores."
+      }
+    },
+    {
+      "id": "ctaltm-165",
+      "status": "REVISED",
+      "section": "2.2.1",
+      "reason": "Evita afirmar aumento mecânico ou prescrever spikes; trata a lacuna tecnológica como premissa de habilidade e incerteza que precisa ser atualizada por evidências.",
+      "answer": 1,
+      "en": [
+        "Base productivity on the team's domain experience and absorb technology learning within the normal execution allowance",
+        "Reflect skill and experience gaps, document learning and uncertainty assumptions, and update the estimate as evidence becomes available",
+        "Use the historical ratio from the previous stack and apply a technology-complexity multiplier during release planning",
+        "Estimate from product size and test levels, while handling technology training in the resource-development plan"
+      ],
+      "pt": [
+        "Basear produtividade na experiência de domínio da equipe e absorver o aprendizado tecnológico na margem normal de execução",
+        "Refletir lacunas de habilidade e experiência, documentar premissas de aprendizado e incerteza e atualizar a estimativa com novas evidências",
+        "Usar a proporção histórica da stack anterior e aplicar um multiplicador de complexidade tecnológica no planejamento da versão",
+        "Estimar por tamanho do produto e níveis de teste, tratando treinamento tecnológico no plano de desenvolvimento de recursos"
+      ],
+      "explanations": {
+        "en": "Skills and experience influence test effort and estimate quality. The assumptions should be visible, and the estimate should be revised when actual information about the new technology emerges.",
+        "pt": "Habilidades e experiência influenciam esforço e qualidade da estimativa. As premissas devem ser visíveis, e a estimativa deve ser revisada quando surgirem informações reais sobre a nova tecnologia."
+      }
+    },
+    {
+      "id": "ctaltm-166",
+      "status": "REVISED",
+      "section": "2.2.2",
+      "reason": "Remove o absoluto de que conformidade sempre aumenta esforço e formula o efeito como avaliação conjunta de vetores ascendentes e mitigadores.",
+      "answer": 1,
+      "en": [
+        "Use the stable basis and experienced team to select a historical estimate, then add regulatory evidence work during detailed planning",
+        "Balance risk and regulatory evidence needs against the stable basis, available environment, and experienced staff to estimate the net effect",
+        "Track regulatory evidence as project-governance work and base the test estimate on functional and non-functional test scope",
+        "Estimate from product risk and compliance obligations, while treating team experience and environment readiness as schedule inputs"
+      ],
+      "pt": [
+        "Usar a base estável e a equipe experiente para selecionar uma estimativa histórica e adicionar o trabalho de evidência no planejamento detalhado",
+        "Equilibrar risco e necessidades de evidência regulatória com base estável, ambiente disponível e equipe experiente para estimar o efeito líquido",
+        "Rastrear evidência regulatória como trabalho de governança e basear a estimativa no escopo de testes funcionais e não funcionais",
+        "Estimar por risco do produto e obrigações de conformidade, tratando experiência da equipe e prontidão do ambiente como entradas de cronograma"
+      ],
+      "explanations": {
+        "en": "Product quality needs, process and material conditions, and people factors influence effort together. The syllabus does not prescribe a fixed increase; the Test Manager estimates their combined effect.",
+        "pt": "Necessidades de qualidade, condições de processo e materiais e fatores humanos influenciam o esforço em conjunto. O syllabus não prescreve aumento fixo; o Gerente de Teste estima o efeito combinado."
+      }
+    },
+    {
+      "id": "ctaltm-167",
+      "status": "REVISED",
+      "section": "2.2.2",
+      "reason": "Mantém retrabalho e atualização como resposta, confrontando-a com três tratamentos comuns da incerteza que deixam parte do esforço fora da estimativa.",
+      "answer": 1,
+      "en": [
+        "Estimate the finalized requirements and reserve separate change capacity for architecture and API updates during each planning cycle",
+        "Include expected reanalysis, redesign, and re-execution in the assumptions and update the estimate as the test basis changes",
+        "Apply three-point estimation to the current scope and record architecture and API changes as project contingency",
+        "Provide a capacity-based budget estimate now and prepare the activity estimate after the requirements and interfaces stabilize"
+      ],
+      "pt": [
+        "Estimar os requisitos finalizados e reservar capacidade separada de mudança para atualizações de arquitetura e API em cada ciclo",
+        "Incluir reanálise, reprojeto e reexecução esperados nas premissas e atualizar a estimativa conforme a base de teste mudar",
+        "Aplicar estimativa de três pontos ao escopo atual e registrar mudanças de arquitetura e API como contingência do projeto",
+        "Fornecer agora orçamento baseado em capacidade e preparar a estimativa de atividades após estabilizar requisitos e interfaces"
+      ],
+      "explanations": {
+        "en": "Test-basis quality and rework influence effort. Estimates rely on current information, document assumptions, and should be updated as changing requirements, architecture, and interfaces create new work.",
+        "pt": "Qualidade da base e retrabalho influenciam o esforço. Estimativas usam as informações atuais, documentam premissas e devem ser atualizadas quando requisitos, arquitetura e interfaces geram novo trabalho."
+      }
+    },
+    {
+      "id": "ctaltm-168",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "2.2.2",
+      "reason": "O original presume que juniores exigem mais tempo e pareamento, mas o syllabus estabelece habilidades e experiência como fatores sem conversão fixa. A proposta pergunta como refletir o mix e permanece não aprovada.",
+      "answer": 1,
+      "question": {
+        "en": "A complex project has two experienced testers and four junior testers. The available evidence does not provide role allocation or productivity data for this team. According to the CTAL-TM v3.0 syllabus, how should the skill mix be reflected in the estimate?",
+        "pt": "Um projeto complexo tem dois testadores experientes e quatro juniores. As evidências disponíveis não fornecem alocação de papéis nem dados de produtividade dessa equipe. Segundo o syllabus CTAL-TM v3.0, como o mix de habilidades deve ser refletido na estimativa?"
+      },
+      "en": [
+        "Apply the team's average historical productivity to each member and adjust the result after the first reporting period",
+        "Use skills and experience as inputs, document allocation, support, and learning assumptions, and revise them from observed performance",
+        "Apply separate senior and junior productivity rates from the organization's resource model and retain them through the release",
+        "Estimate planned work from the experienced testers and represent junior contribution as schedule contingency until execution begins"
+      ],
+      "pt": [
+        "Aplicar a produtividade histórica média da equipe a cada membro e ajustar o resultado após o primeiro período de relatório",
+        "Usar habilidades e experiência como entradas, documentar premissas de alocação, apoio e aprendizado e revisá-las pelo desempenho observado",
+        "Aplicar taxas distintas de produtividade sênior e júnior do modelo de recursos da organização e mantê-las durante a versão",
+        "Estimar o trabalho com os testadores experientes e representar a contribuição dos juniores como contingência até começar a execução"
+      ],
+      "explanations": {
+        "en": "The syllabus identifies skills and experience as estimation factors but supplies no universal seniority-to-effort conversion. Explicit assumptions and evidence-based updates are therefore required.",
+        "pt": "O syllabus identifica habilidades e experiência como fatores de estimativa, mas não fornece conversão universal de senioridade em esforço. São necessárias premissas explícitas e atualizações por evidências."
+      }
+    },
+    {
+      "id": "ctaltm-169",
+      "status": "REVISED",
+      "section": "2.2.3",
+      "reason": "Elimina técnica 'iterativa' inventada como categoria e apresenta quatro escolhas reais diante de dados, especialistas, incerteza e aprendizado do sprint.",
+      "answer": 1,
+      "en": [
+        "Use ratio-based extrapolation from comparable domain projects, adjust for the new technology, and recalibrate after the first sprint",
+        "Use expert-based planning poker or Delphi, document assumptions and uncertainty, and update the estimate as information develops",
+        "Use three-point estimates prepared by the Test Manager, represent uncertainty in the range, and review the result at release planning",
+        "Use the first sprint to establish execution velocity, then select a metric-based technique for the remaining iterations"
+      ],
+      "pt": [
+        "Usar extrapolação por proporção de projetos comparáveis no domínio, ajustar pela nova tecnologia e recalibrar após o primeiro sprint",
+        "Usar planning poker ou Delphi com especialistas, documentar premissas e incerteza e atualizar a estimativa conforme surgirem informações",
+        "Usar estimativas de três pontos preparadas pelo Gerente de Teste, representar a incerteza no intervalo e revisar no planejamento da versão",
+        "Usar o primeiro sprint para estabelecer velocidade de execução e então selecionar técnica baseada em métricas para as iterações restantes"
+      ],
+      "explanations": {
+        "en": "Reliable historical data is unavailable, while domain experts are available and the work is iterative. Expert-based estimation fits that evidence, and estimates should be updated as information changes.",
+        "pt": "Não há dados históricos confiáveis, enquanto há especialistas no domínio e o trabalho é iterativo. A estimativa por especialistas corresponde a essas evidências e deve ser atualizada com novas informações."
+      }
+    },
+    {
+      "id": "ctaltm-170",
+      "status": "INCONCLUSIVO",
+      "proposalStatus": "REPAIR_PROPOSED",
+      "approved": false,
+      "section": "2.3.1",
+      "reason": "O gabarito original coloca Deferred depois de Closed, embora Closed seja terminal, e combina estados em sequência ambígua. A proposta usa o fluxo ramificado oficial e permanece não aprovada.",
+      "answer": 2,
+      "question": {
+        "en": "A Test Manager is designing a defect workflow for a sequential project. According to the simple workflow and good practices in the CTAL-TM v3.0 syllabus, which design is most appropriate?",
+        "pt": "Um Gerente de Teste está projetando um fluxo de defeitos para um projeto sequencial. Segundo o fluxo simples e as boas práticas do syllabus CTAL-TM v3.0, qual projeto é mais apropriado?"
+      },
+      "en": [
+        "Use Open, Analysis, Fix, and Closed, with a closure reason representing confirmation, rejection, or deferral",
+        "Use Open, In Progress, and Closed, with confirmation results recorded as attributes after development completes",
+        "Use Open, In Progress, Resolved or Ready for Retest, and Closed after confirmation, with defined Rejected, Re-opened, and Deferred branches",
+        "Use Open, Assigned, Fixed, and Archived, with the defect committee choosing the terminal state during triage"
+      ],
+      "pt": [
+        "Usar Aberto, Análise, Correção e Fechado, com motivo de encerramento representando confirmação, rejeição ou adiamento",
+        "Usar Aberto, Em andamento e Fechado, com resultados de confirmação registrados como atributos após o desenvolvimento",
+        "Usar Aberto, Em andamento, Resolvido ou Pronto para reteste e Fechado após confirmação, com ramos de Rejeitado, Reaberto e Adiado",
+        "Usar Aberto, Atribuído, Corrigido e Arquivado, com o comitê escolhendo o estado terminal durante a triagem"
+      ],
+      "explanations": {
+        "en": "The simple workflow includes Open, In Progress, Rejected, Resolved or Ready for Retest, and Closed. Re-opened and Deferred are context-dependent branches, while Closed is the recommended terminal state.",
+        "pt": "O fluxo simples inclui Aberto, Em andamento, Rejeitado, Resolvido ou Pronto para reteste e Fechado. Reaberto e Adiado são ramos dependentes do contexto, enquanto Fechado é o estado terminal recomendado."
+      }
+    },
+    {
+      "id": "ctaltm-171",
+      "status": "REVISED",
+      "section": "2.3.1",
+      "reason": "Troca 'qualquer stakeholder' e 'nunca fechar' por três modelos plausíveis de autoridade; o gabarito segue a transição feita pelo testador após confirmação.",
+      "answer": 2,
+      "en": [
+        "The developer moves the resolved report to Closed and the tester re-opens it when the confirmation test exposes the failure",
+        "The defect committee moves the report to Closed during triage after reviewing the developer's fix evidence and risk assessment",
+        "A tester performs the confirmation test and closes the report after success, following the defined branch after failure or rejection",
+        "The tool administrator closes the report when its resolution period expires and the current owner has recorded no objection"
+      ],
+      "pt": [
+        "O desenvolvedor move o relatório resolvido para Fechado e o testador o reabre quando o teste de confirmação revela a falha",
+        "O comitê move o relatório para Fechado na triagem após revisar evidências da correção e a avaliação de risco",
+        "Um testador executa o teste de confirmação e fecha o relatório após sucesso, seguindo o ramo definido após falha ou rejeição",
+        "O administrador da ferramenta fecha o relatório quando termina o prazo de resolução e o responsável atual não registra objeção"
+      ],
+      "explanations": {
+        "en": "In the syllabus's simple workflow, a tester confirms a resolved defect and transitions it to Closed after success. Failure or rejection follows the defined alternative transition.",
+        "pt": "No fluxo simples do syllabus, um testador confirma um defeito resolvido e o move para Fechado após sucesso. Falha ou rejeição segue a transição alternativa definida."
+      }
+    },
+    {
+      "id": "ctaltm-172",
+      "status": "REVISED",
+      "section": "2.3.2",
+      "reason": "Remove quatro construções 'only/apenas' e compara composições de governança plausíveis; o gabarito reproduz a responsabilidade multifuncional descrita.",
+      "answer": 2,
+      "en": [
+        "Test management and testers lead triage with project management, consulting development after disposition and priority decisions",
+        "Development and supplier representatives lead triage with the product owner, while testers provide reports and confirmation results",
+        "A cross-functional group includes test management, development, suppliers, project or product management, and relevant stakeholders",
+        "A defect manager and tool administrator lead triage with rotating representatives, centralizing disposition and priority decisions"
+      ],
+      "pt": [
+        "Gestão de teste e testadores conduzem a triagem com gestão de projeto, consultando desenvolvimento após decisões de disposição e prioridade",
+        "Desenvolvimento e fornecedores conduzem a triagem com o product owner, enquanto testadores fornecem relatórios e resultados de confirmação",
+        "Um grupo multifuncional inclui gestão de teste, desenvolvimento, fornecedores, gestão de projeto ou produto e stakeholders relevantes",
+        "Um gerente de defeitos e o administrador da ferramenta conduzem a triagem com representantes rotativos, centralizando disposição e prioridade"
+      ],
+      "explanations": {
+        "en": "Defect management is generally cross-functional. The committee may include test management, development, suppliers, project management, product management or the product owner, and other interested stakeholders.",
+        "pt": "O gerenciamento de defeitos é geralmente multifuncional. O comitê pode incluir gestão de teste, desenvolvimento, fornecedores, gestão de projeto, gestão de produto ou product owner e outros stakeholders interessados."
+      }
+    }
+  ]
+}

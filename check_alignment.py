@@ -61,12 +61,9 @@ from pathlib import Path
 CERTS_CANONICAL = ["CTFL", "CTFL-AT", "CTAL-TA", "CTAL-TM", "CT-AI"]
 
 # Certs reachable in the app today (VALID_CERTS in ctfl-app/src/certs.js).
-# CTFL-AT/CTAL-TM/CT-AI are LATENT: real data-quality debt, but not user-facing
-# until promoted to live, so their guard failures are reported (visibility)
-# but must NOT block CI for the two certs Fase 1 actually fixed. Without this
-# scoping, the 6 new guards below would exit non-zero forever, since the 3
-# untouched certs will always fail length_bias/effect_size/chi2/runs_test.
-LIVE_CERTS = {"CTFL", "CTAL-TA"}
+# CTAL-TM is reachable since app v3.17.0 and must block on quality debt.
+# Only CTFL-AT and CT-AI remain latent. Never hide a live certificate to make CI green.
+LIVE_CERTS = {"CTFL", "CTAL-TA", "CTAL-TM"}
 
 # Casos inconclusivos decididos na auditoria P2.1. Eles permanecem visíveis na
 # saída, mas ficam fora das baselines de falsos positivos e não abrem uma
@@ -978,7 +975,7 @@ def main():
         else:
             print(f"ERRO: arquivo de banco não encontrado: {bank_file_name}")
             sys.exit(2)
-    bank_stem = bank_file_name.replace(".json", "")
+    bank_stem = bank_path.stem
     baseline_file = Path(__file__).parent / f"check_alignment_baseline.{bank_stem}.json"
     topic_baseline_file = Path(__file__).parent / f"check_alignment_topic_baseline.{bank_stem}.json"
 

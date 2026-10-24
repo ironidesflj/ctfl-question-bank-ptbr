@@ -1,0 +1,707 @@
+{
+  "range": [173, 200],
+  "round": 2,
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "approval": "PARENT_REVIEW_REQUIRED",
+  "reviews": [
+    {
+      "id": "ctaltm-173",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "2.3.6",
+      "reason": "Defeitos reabertos são tratados em 2.3.6 como informação para avaliar a qualidade da depuração; os critérios de aceite e a verificação unitária prescritos no original não constam em 2.3.2.",
+      "answer": 2,
+      "question": {
+        "en": "A test team observes a recurring pattern of defects being reopened after incomplete fixes. According to the CTAL-TM v3.0 syllabus, how should this defect information support process improvement?",
+        "pt": "Uma equipe de teste observa um padrão recorrente de defeitos reabertos após correções incompletas. Segundo o syllabus CTAL-TM v3.0, como essas informações de defeitos devem apoiar a melhoria do processo?"
+      },
+      "en": [
+        "Compare the time spent in reopened state with closure targets and use the result to revise the release forecast",
+        "Raise the scheduling priority of recurrent defects and ask product management to assign them to a later maintenance package",
+        "Analyze reopen data to assess debugging quality, identify recurring causes, and define process changes that reduce recurrence",
+        "Reclassify recurrent defects by impact and use the revised severity profile to report current product quality"
+      ],
+      "pt": [
+        "Comparar o tempo no estado reaberto com as metas de encerramento e usar o resultado para revisar a previsão da versão",
+        "Elevar a prioridade de agendamento dos defeitos recorrentes e pedir à gestão de produto que os atribua a um pacote posterior de manutenção",
+        "Analisar dados de reabertura para avaliar a qualidade da depuração, identificar causas recorrentes e definir mudanças de processo que reduzam a recorrência",
+        "Reclassificar defeitos recorrentes por impacto e usar o perfil de severidade revisado para relatar a qualidade atual do produto"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 explicitly links reopened-defect information to assessment of debugging implementation quality and process improvement.",
+        "pt": "A seção 2.3.6 relaciona explicitamente informações de defeitos reabertos à avaliação da qualidade das implementações de depuração e à melhoria do processo."
+      }
+    },
+    {
+      "id": "ctaltm-174",
+      "status": "REVISED",
+      "section": "2.3.3",
+      "reason": "As quatro políticas agora têm escopo e detalhe comparáveis; a correta preserva correção na iteração, gatilhos de registro e uso do backlog, enquanto os distratores representam práticas ágeis incompletas plausíveis.",
+      "answer": 2,
+      "en": [
+        "Create a formal defect report when a failure is observed, then schedule resolution through a defect committee outside the sprint",
+        "Discuss failures within the team and record supplier-related items, while carrying deferred team defects in a separate release issue list",
+        "Resolve defects during the iteration when feasible; report blocking or externally coordinated cases and place deferred defects in the product backlog",
+        "Track in-iteration failures on the sprint board, then archive unfinished items for reassessment during release planning"
+      ],
+      "pt": [
+        "Criar um relatório formal quando uma falha for observada e depois agendar a resolução por um comitê de defeitos externo ao sprint",
+        "Discutir falhas na equipe e registrar itens ligados a fornecedores, mantendo defeitos adiados da equipe em uma lista separada da versão",
+        "Resolver defeitos durante a iteração quando viável; registrar casos bloqueadores ou com coordenação externa e colocar defeitos adiados no backlog do produto",
+        "Rastrear falhas da iteração no quadro do sprint e depois arquivar itens inacabados para reavaliação no planejamento da versão"
+      ],
+      "explanations": {
+        "en": "Section 2.3.3 permits lightweight handling, identifies cases that warrant defect reports, and places defects deferred beyond the iteration in the product backlog.",
+        "pt": "A seção 2.3.3 permite tratamento leve, identifica casos que justificam relatórios e coloca no backlog do produto os defeitos adiados além da iteração."
+      }
+    },
+    {
+      "id": "ctaltm-175",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "2.3.3",
+      "reason": "O original dizia que planejamento e refinamento substituem triagem e restringia reuniões a alta severidade; 2.3.3 condiciona formalidade e gatilhos ao contexto e exige documentar a decisão da equipe.",
+      "answer": 2,
+      "question": {
+        "en": "A Scrum team is deciding whether dedicated defect-triage meetings would help its defect management. According to the CTAL-TM v3.0 syllabus, which decision approach is most appropriate?",
+        "pt": "Uma equipe Scrum está decidindo se reuniões dedicadas de triagem ajudariam seu gerenciamento de defeitos. Segundo o syllabus CTAL-TM v3.0, qual abordagem de decisão é mais apropriada?"
+      },
+      "en": [
+        "Adopt a daily triage cadence based on the team's delivery frequency and invite the product owner to rank reported defects",
+        "Handle prioritization during sprint planning and let the developer responsible for a fix decide whether a report is needed",
+        "Choose the format and cadence from team distribution, size, maturity, product risk, and external obligations, then document the agreement",
+        "Use a separate committee for cross-iteration defects and let the team handle in-sprint defects through undocumented local practice"
+      ],
+      "pt": [
+        "Adotar uma cadência diária de triagem com base na frequência de entrega da equipe e convidar o Product Owner para ordenar os defeitos relatados",
+        "Tratar a priorização no planejamento do sprint e deixar o desenvolvedor responsável pela correção decidir se é necessário um relatório",
+        "Escolher formato e cadência conforme distribuição, tamanho, maturidade, risco do produto e obrigações externas e então documentar o acordo",
+        "Usar um comitê separado para defeitos entre iterações e tratar defeitos do sprint por uma prática local não documentada"
+      ],
+      "explanations": {
+        "en": "Section 2.3.3 makes defect-management formality and reporting triggers dependent on context and requires the Agile team's agreed approach to be documented.",
+        "pt": "A seção 2.3.3 condiciona a formalidade e os gatilhos de registro ao contexto e exige documentar a abordagem acordada pela equipe ágil."
+      }
+    },
+    {
+      "id": "ctaltm-176",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "Os distratores agora representam integrações parciais verossímeis; a correta se distingue pelo alinhamento semântico dos atributos e pela sincronização rastreável entre ferramentas.",
+      "answer": 2,
+      "en": [
+        "Map common workflow states between the tools while allowing each team to retain a different interpretation of defect severity",
+        "Synchronize identifiers and status changes while letting each team prioritize cross-component defects through its local delivery cadence",
+        "Align relevant attributes and meanings, synchronize the tools, and coordinate ownership and priority for defects that cross team boundaries",
+        "Transfer Agile defect records to the formal tracker each week and use the sprint board as the team's execution view"
+      ],
+      "pt": [
+        "Mapear estados comuns do fluxo entre as ferramentas, permitindo que cada equipe mantenha uma interpretação diferente da severidade",
+        "Sincronizar identificadores e mudanças de estado, deixando cada equipe priorizar defeitos entre componentes por sua cadência local de entrega",
+        "Alinhar atributos relevantes e seus significados, sincronizar as ferramentas e coordenar responsabilidade e prioridade de defeitos entre equipes",
+        "Transferir semanalmente os registros ágeis para o rastreador formal e usar o quadro do sprint como visão de execução da equipe"
+      ],
+      "explanations": {
+        "en": "Section 2.3.4 highlights alignment of attributes and tools, synchronization, and coordinated prioritization in hybrid multi-team delivery.",
+        "pt": "A seção 2.3.4 destaca alinhamento de atributos e ferramentas, sincronização e priorização coordenada na entrega híbrida com várias equipes."
+      }
+    },
+    {
+      "id": "ctaltm-177",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "As alternativas apresentam quatro interfaces possíveis entre os fluxos, com detalhe semelhante; a correta combina sincronização, transparência e planejamento conjunto previstos em 2.3.4.",
+      "answer": 2,
+      "en": [
+        "Make the change board authoritative for cross-team defects and let the Agile team schedule front-end defects on its sprint board",
+        "Let each team set priorities in its own tool and ask the project manager to reconcile conflicts in weekly status reporting",
+        "Define shared attributes, synchronize status across tools, and conduct joint planning for defects affecting components owned by both teams",
+        "Create matching records in both tools and reconcile ownership, priority, and closure decisions during test completion"
+      ],
+      "pt": [
+        "Tornar o conselho de mudanças responsável por defeitos entre equipes e deixar a equipe ágil agendar defeitos de front-end no quadro do sprint",
+        "Deixar cada equipe definir prioridades em sua ferramenta e pedir ao gerente do projeto que concilie conflitos no relatório semanal",
+        "Definir atributos compartilhados, sincronizar estados entre ferramentas e planejar em conjunto defeitos que afetem componentes das duas equipes",
+        "Criar registros correspondentes nas duas ferramentas e conciliar responsabilidade, prioridade e encerramento durante a conclusão do teste"
+      ],
+      "explanations": {
+        "en": "Hybrid defect management benefits from synchronized tools, aligned information, and participation across teams in planning and prioritization.",
+        "pt": "O gerenciamento híbrido de defeitos se beneficia de ferramentas sincronizadas, informações alinhadas e participação entre equipes no planejamento e na priorização."
+      }
+    },
+    {
+      "id": "ctaltm-178",
+      "status": "REVISED",
+      "section": "2.3.5",
+      "reason": "A correta não excede mais as demais em detalhe: cada opção reúne quatro grupos de dados válidos para uma finalidade distinta, e o candidato precisa reconhecer os dados voltados à análise de produto e processo.",
+      "answer": 2,
+      "en": [
+        "Affected component, current owner, estimated correction effort, and target release, supporting assignment and delivery planning",
+        "Business impact, available workaround, fixing cost, and affected requirement, supporting project-status decisions",
+        "Defect type, affected quality characteristic, work product of introduction, and introduction, detection, and removal phases, supporting improvement analysis",
+        "Current workflow state, change history, linked test case, and confirmation date, supporting lifecycle control and retesting"
+      ],
+      "pt": [
+        "Componente afetado, responsável atual, esforço estimado de correção e versão-alvo, apoiando atribuição e planejamento da entrega",
+        "Impacto no negócio, solução alternativa disponível, custo da correção e requisito afetado, apoiando decisões sobre o status do projeto",
+        "Tipo de defeito, característica de qualidade afetada, produto de trabalho de introdução e fases de introdução, detecção e remoção, apoiando análise de melhoria",
+        "Estado atual do fluxo, histórico de mudanças, caso de teste relacionado e data de confirmação, apoiando controle do ciclo e reteste"
+      ],
+      "explanations": {
+        "en": "Section 2.3.5 links defect type, affected quality characteristics, work product of introduction, and SDLC phases to product-quality and process-capability analysis.",
+        "pt": "A seção 2.3.5 relaciona tipo, característica de qualidade, produto de trabalho de introdução e fases do ciclo de vida à análise da qualidade e da capacidade do processo."
+      }
+    },
+    {
+      "id": "ctaltm-179",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "Os distratores agora usam interpretações plausíveis da concentração de defeitos; a correta aplica explicitamente análise de clusters a risco técnico, teste baseado em risco e possível refatoração.",
+      "answer": 2,
+      "en": [
+        "Compare the concentration with planned fix dates and use the relationship mainly to forecast defect closure for the release",
+        "Increase sampling in the remaining modules and postpone action on the two modules until the distribution is reproduced",
+        "Analyze the cluster to understand technical risk, adjust risk-based testing, and evaluate targeted prevention or refactoring",
+        "Treat module-level defect counts as a productivity indicator and direct coaching toward the developers assigned to those modules"
+      ],
+      "pt": [
+        "Comparar a concentração com as datas planejadas de correção e usar a relação principalmente para prever o encerramento de defeitos da versão",
+        "Aumentar a amostragem nos módulos restantes e adiar ações nos dois módulos até que a distribuição seja reproduzida",
+        "Analisar o cluster para compreender o risco técnico, ajustar o teste baseado em risco e avaliar prevenção ou refatoração direcionada",
+        "Tratar contagens de defeitos por módulo como indicador de produtividade e direcionar coaching aos desenvolvedores desses módulos"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 connects defect-location clusters with technical-risk analysis, risk-based testing, and refactoring of troublesome components.",
+        "pt": "A seção 2.3.6 conecta clusters de localização de defeitos à análise de risco técnico, ao teste baseado em risco e à refatoração de componentes problemáticos."
+      }
+    },
+    {
+      "id": "ctaltm-180",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "As alternativas incorretas propõem controles plausíveis, porém desalinhados à fase de introdução; a correta usa dados de fase e causa raiz para prevenção direcionada.",
+      "answer": 2,
+      "en": [
+        "Expand acceptance and system regression around requirements-related flows after implementation to detect more escapes before release",
+        "Strengthen component-test coverage because the small share of coding escapes may indicate limited detection at that level",
+        "Use introduction-phase and root-cause data to strengthen requirements reviews and earlier test involvement where the defects originate",
+        "Revise severity and priority guidance so requirements-related defects receive faster triage and correction during system testing"
+      ],
+      "pt": [
+        "Ampliar regressão de aceitação e sistema nos fluxos ligados a requisitos após a implementação para detectar mais escapes antes da versão",
+        "Fortalecer a cobertura de componente porque a pequena parcela de escapes de codificação pode indicar detecção limitada nesse nível",
+        "Usar dados de fase de introdução e causa raiz para fortalecer revisões de requisitos e o envolvimento antecipado do teste onde os defeitos se originam",
+        "Revisar orientações de severidade e prioridade para que defeitos de requisitos recebam triagem e correção mais rápidas no teste de sistema"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 uses phase-of-introduction and root-cause information to direct prevention improvements toward the process where defects originate.",
+        "pt": "A seção 2.3.6 usa fase de introdução e causa raiz para direcionar melhorias preventivas ao processo em que os defeitos se originam."
+      }
+    },
+    {
+      "id": "ctaltm-181",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "Os distratores deixaram de ser negações extremas e representam respostas de capacidade, medição e priorização; a correta atua sobre contenção e eficácia de detecção.",
+      "answer": 2,
+      "en": [
+        "Add system-test capacity near release so the team can process the observed late arrival peak more quickly",
+        "Shorten the reporting interval so the arrival-rate chart reveals changes in convergence with greater timing precision",
+        "Analyze introduction, detection, and removal phases and strengthen earlier activities where containment and detection are weak",
+        "Increase the priority of defects arriving near release so their average time in open states decreases"
+      ],
+      "pt": [
+        "Adicionar capacidade de teste de sistema perto da versão para processar mais rapidamente o pico tardio observado",
+        "Reduzir o intervalo de relatório para que o gráfico revele mudanças de convergência com maior precisão temporal",
+        "Analisar fases de introdução, detecção e remoção e fortalecer atividades anteriores onde contenção e detecção sejam fracas",
+        "Aumentar a prioridade de defeitos que chegam perto da versão para reduzir seu tempo médio em estados abertos"
+      ],
+      "explanations": {
+        "en": "Phase information supports assessment of containment and detection effectiveness and guides earlier improvements that reduce defect cost.",
+        "pt": "Informações de fase apoiam a avaliação da contenção e da eficácia de detecção e orientam melhorias antecipadas que reduzem o custo dos defeitos."
+      }
+    },
+    {
+      "id": "ctaltm-182",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "2.3.6",
+      "reason": "A distribuição 80/10/10 original não demonstrava contenção deficiente. O reparo acrescenta evidência de que níveis anteriores deixaram passar defeitos dentro de seus objetivos, tornando a ação do índice 2 justificável.",
+      "answer": 2,
+      "question": {
+        "en": "System testing finds 80% of the project's defects. A root-cause review shows that many were introduced in components and could have been detected by the existing component and integration test objectives. Which improvement action best follows the CTAL-TM v3.0 syllabus?",
+        "pt": "O teste de sistema encontra 80% dos defeitos do projeto. Uma análise de causa raiz mostra que muitos foram introduzidos em componentes e poderiam ter sido detectados pelos objetivos existentes de teste de componente e integração. Qual ação de melhoria melhor segue o syllabus CTAL-TM v3.0?"
+      },
+      "en": [
+        "Raise the severity threshold for system-test reports so the team can focus on failures with greater business impact",
+        "Extend system-test execution to absorb the expected arrivals while retaining the current earlier-level techniques and timing",
+        "Improve component and integration techniques, coverage, and execution timing, then monitor phase containment across later increments",
+        "Move system testers into defect triage so correction decisions occur sooner after defects are detected"
+      ],
+      "pt": [
+        "Elevar o limiar de severidade dos relatos de teste de sistema para focar falhas com maior impacto no negócio",
+        "Estender a execução do teste de sistema para absorver as chegadas esperadas, mantendo técnicas e cronograma dos níveis anteriores",
+        "Melhorar técnicas, cobertura e momento de execução em componente e integração e monitorar a contenção nas iterações seguintes",
+        "Mover testadores de sistema para a triagem para que decisões de correção ocorram mais cedo após a detecção"
+      ],
+      "explanations": {
+        "en": "The added evidence establishes weak phase containment. Section 2.3.6 supports targeted improvements to detection effectiveness in the phases where defects could have been contained.",
+        "pt": "A evidência acrescentada estabelece contenção fraca. A seção 2.3.6 apoia melhorias direcionadas à eficácia de detecção nas fases em que os defeitos poderiam ter sido contidos."
+      }
+    },
+    {
+      "id": "ctaltm-183",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "2.3.6",
+      "reason": "ODC e suas categorias não aparecem no syllabus v3.0. O reparo usa dados de classificação explicitamente previstos em 2.3.5 e pergunta seu uso para melhoria conforme 2.3.6.",
+      "answer": 2,
+      "question": {
+        "en": "A Test Manager collects defect type, work product of introduction, phases of introduction and detection, and root cause. According to the CTAL-TM v3.0 syllabus, what is the primary improvement purpose of this classification data?",
+        "pt": "Um Gerente de Teste coleta tipo de defeito, produto de trabalho de introdução, fases de introdução e detecção e causa raiz. Segundo o syllabus CTAL-TM v3.0, qual é o principal propósito desses dados de classificação para melhoria?"
+      },
+      "en": [
+        "Estimate remaining execution effort from category frequencies and use the estimate to update the test schedule",
+        "Set correction priority from defect type and use the resulting order as the input to release planning",
+        "Reveal patterns in defect introduction and detection so targeted prevention and process improvements can be defined and monitored",
+        "Assess report-author accuracy by comparing the initial classification with the category assigned after triage"
+      ],
+      "pt": [
+        "Estimar o esforço restante de execução pelas frequências das categorias e usar a estimativa para atualizar o cronograma de teste",
+        "Definir prioridade de correção pelo tipo de defeito e usar a ordem resultante como entrada para o planejamento da versão",
+        "Revelar padrões de introdução e detecção para definir e monitorar ações direcionadas de prevenção de defeitos e melhoria do processo",
+        "Avaliar a precisão do autor do relato comparando a classificação inicial com a categoria atribuída após a triagem"
+      ],
+      "explanations": {
+        "en": "Sections 2.3.5 and 2.3.6 use classification, phase, and root-cause data to assess process capability and define targeted improvements.",
+        "pt": "As seções 2.3.5 e 2.3.6 usam dados de classificação, fase e causa raiz para avaliar a capacidade do processo e definir melhorias direcionadas."
+      }
+    },
+    {
+      "id": "ctaltm-184",
+      "status": "REVISED",
+      "section": "3.1.1",
+      "reason": "Cada alternativa agora relaciona os comportamentos do cenário a uma área de competência defensável; a predominância de comunicação, cooperação e resolução de conflitos mantém o índice 2.",
+      "answer": 2,
+      "en": [
+        "Professional competence, because mentoring applies specialized test knowledge while conflict handling supports delivery of test tasks",
+        "Methodological competence, because community facilitation structures learning and conflict resolution as a repeatable team method",
+        "Social competence, because the dominant behaviors involve communication, cooperation, team development, and conflict resolution",
+        "Personal competence, because mentoring and facilitation demonstrate responsibility, resilience, and willingness to help colleagues"
+      ],
+      "pt": [
+        "Competência profissional, pois a mentoria aplica conhecimento especializado de teste e o tratamento de conflitos apoia a entrega",
+        "Competência metodológica, pois facilitar a comunidade estrutura aprendizagem e resolução de conflitos como método repetível da equipe",
+        "Competência social, pois os comportamentos predominantes envolvem comunicação, cooperação, desenvolvimento da equipe e resolução de conflitos",
+        "Competência pessoal, pois mentoria e facilitação demonstram responsabilidade, resiliência e disposição para ajudar colegas"
+      ],
+      "explanations": {
+        "en": "Section 3.1.1 associates communication, cooperation, teamwork, and conflict management with social competence.",
+        "pt": "A seção 3.1.1 associa comunicação, cooperação, trabalho em equipe e gestão de conflitos à competência social."
+      }
+    },
+    {
+      "id": "ctaltm-185",
+      "status": "REVISED",
+      "section": "3.1.1",
+      "reason": "Os distratores agora conectam aspectos reais do cenário às demais competências, em vez de justificativas circulares; autodesenvolvimento, motivação e atitude sustentam a correta.",
+      "answer": 2,
+      "en": [
+        "Professional competence, because continuous learning expands specialized capabilities that can be applied to future test assignments",
+        "Social competence, because a constructive attitude supports cooperation and communication with colleagues during difficult iterations",
+        "Personal competence, because the behavior reflects continued self-development, sustained motivation, constructive attitudes, self-management under pressure, and resilience",
+        "Methodological competence, because updated skills support independent analysis and judgment when the tester faces novel tasks"
+      ],
+      "pt": [
+        "Competência profissional, pois a aprendizagem contínua amplia capacidades especializadas aplicáveis a futuras atribuições de teste",
+        "Competência social, pois uma atitude construtiva apoia cooperação e comunicação com colegas durante iterações difíceis",
+        "Competência pessoal, pois o comportamento reflete autodesenvolvimento contínuo, motivação sustentada, atitudes construtivas, autogestão sob pressão e resiliência",
+        "Competência metodológica, pois habilidades atualizadas apoiam análise e julgamento independentes diante de tarefas novas"
+      ],
+      "explanations": {
+        "en": "Section 3.1.1 places self-development, motivation, attitudes, self-management, reliability, and resilience in personal competence.",
+        "pt": "A seção 3.1.1 inclui autodesenvolvimento, motivação, atitudes, autogestão, confiabilidade e resiliência na competência pessoal."
+      }
+    },
+    {
+      "id": "ctaltm-186",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.2",
+      "reason": "O original prescrevia uma combinação específica de contratações que o contexto não tornava única e classificava capacidades de forma discutível. O reparo testa a análise de lacunas exigida pelo LO.",
+      "answer": 2,
+      "question": {
+        "en": "A six-month algorithmic-trading project requires exploratory testing, algorithm verification, reproducible evidence, and regulatory communication. The current team has a domain expert and a junior tester with Python experience, and two additional positions are funded. Which skills analysis best follows the CTAL-TM v3.0 syllabus?",
+        "pt": "Um projeto de negociação algorítmica de seis meses exige teste exploratório, verificação de algoritmos, evidência reproduzível e comunicação regulatória. A equipe atual tem um especialista de domínio e um testador júnior com experiência em Python, e há verba para duas posições adicionais. Qual análise de habilidades melhor segue o syllabus CTAL-TM v3.0?"
+      },
+      "en": [
+        "Recruit two domain-test specialists based on business criticality and assign evidence automation to the current Python tester",
+        "Recruit two automation engineers based on reproducibility needs and assign regulatory analysis to the current domain expert",
+        "Map activities and required skill levels, compare them with available skills, prioritize gaps by risk, and choose development or external acquisition",
+        "Divide the work between current testers and engage contractors after schedule variance demonstrates an unmet capability"
+      ],
+      "pt": [
+        "Recrutar dois especialistas de teste do domínio pela criticidade do negócio e atribuir automação de evidências ao testador com Python",
+        "Recrutar dois engenheiros de automação pela necessidade de reprodutibilidade e atribuir análise regulatória ao especialista de domínio",
+        "Mapear atividades e níveis de habilidade, compará-los às habilidades disponíveis, priorizar lacunas por risco e escolher desenvolvimento ou aquisição externa",
+        "Dividir o trabalho entre os testadores atuais e contratar especialistas após variação do cronograma demonstrar uma capacidade ausente"
+      ],
+      "explanations": {
+        "en": "Section 3.1.2 requires analysis of project activities, required skill levels, available skills, and gaps before selecting development or acquisition actions.",
+        "pt": "A seção 3.1.2 exige analisar atividades, níveis de habilidade requeridos, habilidades disponíveis e lacunas antes de escolher ações de desenvolvimento ou aquisição."
+      }
+    },
+    {
+      "id": "ctaltm-187",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.2",
+      "reason": "A resposta original misturava categorias de competência e tecnologias de forma não canônica. O reparo mantém o contexto, mas cobra a sequência de análise de habilidades em vez de uma taxonomia inventada.",
+      "answer": 2,
+      "question": {
+        "en": "An automotive cybersecurity project requires compliance knowledge, static and dynamic testing, penetration testing, and collaboration with external suppliers. The existing testers lack cybersecurity experience. Which skills determination best follows the CTAL-TM v3.0 syllabus?",
+        "pt": "Um projeto de cibersegurança automotiva exige conhecimento de conformidade, testes estáticos e dinâmicos, teste de penetração e colaboração com fornecedores externos. Os testadores atuais não têm experiência em cibersegurança. Qual determinação de habilidades melhor segue o syllabus CTAL-TM v3.0?"
+      },
+      "en": [
+        "Prioritize compliance credentials and rank candidates by ASPICE and cybersecurity certificates before assessing their test-task performance",
+        "Prioritize penetration-tool experience and rely on supplier managers to provide the collaboration and communication capabilities",
+        "Map project activities to required skill levels, assess the current team, identify risk-prioritized gaps, and plan training, recruitment, or expert support",
+        "Develop the current generalists through tool training and revisit specialist needs after the first penetration-test cycle"
+      ],
+      "pt": [
+        "Priorizar credenciais de conformidade e ordenar candidatos por certificados ASPICE e de cibersegurança antes de avaliar tarefas de teste",
+        "Priorizar experiência em ferramentas de penetração e contar com gestores de fornecedores para capacidades de colaboração e comunicação",
+        "Mapear atividades do projeto aos níveis exigidos, avaliar a equipe atual, identificar lacunas priorizadas por risco e planejar treinamento, recrutamento ou apoio especializado",
+        "Desenvolver os generalistas atuais com treinamento de ferramentas e reavaliar necessidades especializadas após o primeiro ciclo de penetração"
+      ],
+      "explanations": {
+        "en": "Section 3.1.2 bases skill determination on project activities, required levels, existing capabilities, and identified gaps; section 3.1 permits external expertise where needed.",
+        "pt": "A seção 3.1.2 baseia a determinação em atividades, níveis exigidos, capacidades existentes e lacunas; a seção 3.1 admite expertise externa quando necessária."
+      }
+    },
+    {
+      "id": "ctaltm-188",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.3",
+      "reason": "Questionário de autoavaliação validado pelo gerente não é exemplo listado em 3.1.3. O reparo usa demonstração de tarefa típica, explicitamente prevista para avaliar competências profissional e metodológica.",
+      "answer": 2,
+      "question": {
+        "en": "A Test Manager wants evidence of a team member's professional and methodological competence. Which assessment technique is explicitly exemplified in the CTAL-TM v3.0 syllabus?",
+        "pt": "Um Gerente de Teste quer evidência da competência profissional e metodológica de um membro da equipe. Qual técnica de avaliação é explicitamente exemplificada no syllabus CTAL-TM v3.0?"
+      },
+      "en": [
+        "Ask the member to rate four competence areas on a numerical scale and discuss the ratings with the manager",
+        "Infer the member's current skill level from job title, project tenure, and the complexity of previous assignments",
+        "Give stated test objectives and assess how the member selects, explains, and applies suitable test techniques",
+        "Use a team-role profile as direct evidence of the member's ability to perform specialized test tasks"
+      ],
+      "pt": [
+        "Pedir ao membro que avalie quatro áreas de competência em escala numérica e discutir as notas com o gerente",
+        "Inferir o nível atual pelo cargo, tempo no projeto e complexidade das atribuições anteriores",
+        "Fornecer objetivos de teste e avaliar como o membro seleciona, explica e aplica técnicas de teste adequadas",
+        "Usar um perfil de papéis de equipe como evidência direta da capacidade de executar tarefas especializadas de teste"
+      ],
+      "explanations": {
+        "en": "Section 3.1.3 lists determining and appropriately applying test techniques for stated objectives among the typical tasks used to assess competence.",
+        "pt": "A seção 3.1.3 lista determinar e aplicar adequadamente técnicas para objetivos definidos entre as tarefas típicas usadas na avaliação de competência."
+      }
+    },
+    {
+      "id": "ctaltm-189",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.3",
+      "reason": "Feedback 360 graus não é citado pelo syllabus. O reparo preserva o índice 2 com outra demonstração de tarefa prevista em 3.1.3 e fornece enunciado bilíngue completo.",
+      "answer": 2,
+      "question": {
+        "en": "According to the CTAL-TM v3.0 syllabus, which activity provides direct evidence for assessing a test team member's skills?",
+        "pt": "Segundo o syllabus CTAL-TM v3.0, qual atividade fornece evidência direta para avaliar as habilidades de um membro da equipe de teste?"
+      },
+      "en": [
+        "Compare the number of defects reported by the member with the team's average over the previous release",
+        "Ask project stakeholders to rate the member's overall contribution on a common satisfaction scale",
+        "Ask the member to review a test basis, communicate the findings, and discuss the reasoning used",
+        "Combine project tenure with certification count and rank the result against colleagues in similar roles"
+      ],
+      "pt": [
+        "Comparar o número de defeitos relatados pelo membro com a média da equipe na versão anterior",
+        "Pedir aos stakeholders que avaliem a contribuição geral do membro em uma escala comum de satisfação",
+        "Pedir ao membro que revise uma base de teste, comunique os achados e discuta o raciocínio utilizado",
+        "Combinar tempo no projeto com número de certificações e comparar o resultado com colegas em papéis semelhantes"
+      ],
+      "explanations": {
+        "en": "Reviewing the test basis and communicating findings is one of the demonstration tasks listed in section 3.1.3 and can also reveal communication skills.",
+        "pt": "Revisar a base de teste e comunicar os achados é uma das tarefas demonstrativas listadas em 3.1.3 e também pode revelar habilidades de comunicação."
+      }
+    },
+    {
+      "id": "ctaltm-190",
+      "status": "REVISED",
+      "section": "3.1.4",
+      "reason": "As quatro opções agora são abordagens reais de desenvolvimento descritas no syllabus e se distinguem pela dinâmica do cenário, não por negações absolutas.",
+      "answer": 2,
+      "en": [
+        "Training and education, where an instructor teaches predefined knowledge and practices in a structured learning setting",
+        "Self-study, where the junior uses selected books, recordings, and research resources according to a personal study plan",
+        "Mentoring or coaching, where an experienced colleague provides continuing guidance, feedback, and assistance toward agreed goals",
+        "Peer learning, where colleagues exchange knowledge and experiences as participants with comparable responsibility for the activity"
+      ],
+      "pt": [
+        "Treinamento e educação, em que um instrutor ensina conhecimentos e práticas predefinidos em ambiente estruturado",
+        "Autoestudo, em que o júnior usa livros, gravações e pesquisa selecionados conforme um plano pessoal de estudo",
+        "Mentoria ou coaching, em que um colega experiente fornece orientação contínua, feedback e assistência para metas acordadas",
+        "Aprendizagem entre pares, em que colegas trocam conhecimento e experiências como participantes com responsabilidade comparável na atividade"
+      ],
+      "explanations": {
+        "en": "Section 3.1.4 describes mentoring or coaching as continuing individual guidance and assistance from an experienced person.",
+        "pt": "A seção 3.1.4 descreve mentoria ou coaching como orientação individual contínua e assistência de uma pessoa experiente."
+      }
+    },
+    {
+      "id": "ctaltm-191",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.4",
+      "reason": "O original atribuía ao syllabus uma tese sobre certificação e competência que ele não formula. O reparo pergunta pela abordagem de desenvolvimento realmente exemplificada: treinamento e educação.",
+      "answer": 2,
+      "question": {
+        "en": "A Test Manager sponsors a tester to attend a live external ISTQB course. According to the CTAL-TM v3.0 syllabus, which approach to competence development does this represent?",
+        "pt": "Um Gerente de Teste patrocina a participação de um testador em um curso externo ao vivo do ISTQB. Segundo o syllabus CTAL-TM v3.0, qual abordagem de desenvolvimento de competência isso representa?"
+      },
+      "en": [
+        "Peer learning, because participants exchange examples and experiences during the instructor-led sessions",
+        "Self-study, because the participant prepares from syllabus material and completes exercises between course sessions",
+        "Training and education, because predefined knowledge and practices are taught in a structured live learning setting",
+        "Mentoring or coaching, because the instructor provides feedback on exercises and answers participant questions"
+      ],
+      "pt": [
+        "Aprendizagem entre pares, pois participantes trocam exemplos e experiências durante as sessões conduzidas pelo instrutor",
+        "Autoestudo, pois o participante se prepara pelo syllabus e conclui exercícios entre as sessões do curso",
+        "Treinamento e educação, pois conhecimentos e práticas predefinidos são ensinados em ambiente estruturado de aprendizagem ao vivo",
+        "Mentoria ou coaching, pois o instrutor fornece feedback sobre exercícios e responde às perguntas dos participantes"
+      ],
+      "explanations": {
+        "en": "Section 3.1.4 identifies attendance at a training course as training and education. Certification can separately serve as assessment evidence under section 3.1.3.",
+        "pt": "A seção 3.1.4 identifica a participação em curso como treinamento e educação. A certificação pode servir separadamente como evidência de avaliação em 3.1.3."
+      }
+    },
+    {
+      "id": "ctaltm-192",
+      "status": "REVISED",
+      "section": "3.1.5",
+      "reason": "Os distratores agora descrevem estilos gerenciais plausíveis, com extensão semelhante; a correta reúne atividades gerenciais e competências social e pessoal previstas em 3.1.5.",
+      "answer": 2,
+      "en": [
+        "Maintain deep expertise in a test technology, review difficult artifacts, and decide the team's technical methods",
+        "Centralize task control, retain high-risk assignments, and use direct supervision to maintain consistent execution quality",
+        "Plan and control testing while communicating, delegating, asserting test interests, promoting test benefits, and resolving conflicts",
+        "Adapt working conditions, set project priorities, and represent stakeholder interests when making the release decision"
+      ],
+      "pt": [
+        "Manter expertise profunda em uma tecnologia, revisar artefatos difíceis e decidir os métodos técnicos da equipe",
+        "Centralizar o controle de tarefas, reter atribuições de alto risco e supervisionar diretamente para manter execução consistente",
+        "Planejar e controlar o teste enquanto comunica, delega, defende interesses de teste, promove benefícios e resolve conflitos",
+        "Adaptar condições de trabalho, definir prioridades do projeto e representar interesses dos stakeholders na decisão de liberação"
+      ],
+      "explanations": {
+        "en": "Section 3.1.5 combines planning, monitoring, control, and reporting with delegation, communication, advocacy for testing, and conflict resolution.",
+        "pt": "A seção 3.1.5 combina planejamento, monitoramento, controle e relatório com delegação, comunicação, defesa do teste e resolução de conflitos."
+      }
+    },
+    {
+      "id": "ctaltm-193",
+      "status": "REVISED",
+      "section": "3.1.5",
+      "reason": "As alternativas incorretas agora são respostas gerenciais possíveis ao cenário; a correta usa a linguagem canônica de comunicação, defesa dos interesses de teste e resolução de conflitos.",
+      "answer": 2,
+      "en": [
+        "Technical problem solving, by selecting correction approaches with developers before discussing the release date",
+        "Operational control, by reprioritizing remaining tests and redistributing execution work across the team",
+        "Stakeholder communication and conflict resolution, by presenting status, asserting test interests, and supporting an informed release decision",
+        "Personnel management, by adjusting responsibilities and availability to increase defect-verification capacity before Friday"
+      ],
+      "pt": [
+        "Resolução técnica de problemas, selecionando abordagens de correção com desenvolvedores antes de discutir a data da versão",
+        "Controle operacional, repriorizando testes restantes e redistribuindo o trabalho de execução pela equipe",
+        "Comunicação com stakeholders e resolução de conflitos, apresentando status, defendendo interesses de teste e apoiando decisão informada",
+        "Gestão de pessoas, ajustando responsabilidades e disponibilidade para aumentar a capacidade de verificação antes de sexta-feira"
+      ],
+      "explanations": {
+        "en": "Section 3.1.5 requires leaders to communicate, assert test interests, promote testing benefits, and resolve conflicts with stakeholders.",
+        "pt": "A seção 3.1.5 exige que líderes comuniquem, defendam interesses de teste, promovam seus benefícios e resolvam conflitos com stakeholders."
+      }
+    },
+    {
+      "id": "ctaltm-194",
+      "status": "REVISED",
+      "section": "3.1.6",
+      "reason": "As quatro alternativas agora são listas equivalentes de fatores reais de Herzberg; o candidato precisa distinguir motivadores de fatores de higiene.",
+      "answer": 2,
+      "en": [
+        "Market-based remuneration, paid overtime, and appropriate social benefits provided consistently to the test team",
+        "A suitable workplace, stable test environment, mature test objects, and clear specifications for execution",
+        "Recognition, increased autonomy, meaningful attainable challenges, and opportunities for professional advancement and development",
+        "Workplace safety, reliable agreements, appreciative management policies, and constructive relationships with colleagues and supervisors"
+      ],
+      "pt": [
+        "Remuneração compatível com o mercado, horas extras pagas e benefícios sociais adequados fornecidos à equipe de teste",
+        "Local de trabalho adequado, ambiente de teste estável, objetos maduros e especificações claras para execução",
+        "Reconhecimento, maior autonomia, desafios significativos e atingíveis e oportunidades de avanço e desenvolvimento profissional",
+        "Segurança no trabalho, acordos cumpridos, políticas de gestão respeitosas e relações construtivas com colegas e supervisores"
+      ],
+      "explanations": {
+        "en": "Section 3.1.6 classifies recognition, responsibility and autonomy, meaningful challenge, and advancement as motivators; the other groups are hygiene factors.",
+        "pt": "A seção 3.1.6 classifica reconhecimento, responsabilidade e autonomia, desafio significativo e avanço como motivadores; os outros grupos são fatores de higiene."
+      }
+    },
+    {
+      "id": "ctaltm-195",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.1.6",
+      "reason": "Salário e condições não excluíam falhas em outros fatores de higiene. O reparo explicita higiene adequada e sinais de motivadores ausentes, tornando o índice 3 uma ação unívoca.",
+      "answer": 3,
+      "question": {
+        "en": "A test team has competitive pay, supportive management, safe working conditions, stable environments, and constructive relationships. Team members report repetitive work, little autonomy, limited recognition, and few growth opportunities. According to the CTAL-TM v3.0 syllabus, which response best addresses the motivation problem?",
+        "pt": "Uma equipe de teste tem remuneração competitiva, gestão apoiadora, condições seguras, ambientes estáveis e relações construtivas. Os membros relatam trabalho repetitivo, pouca autonomia, reconhecimento limitado e poucas oportunidades de crescimento. Segundo o syllabus CTAL-TM v3.0, qual resposta melhor aborda o problema de motivação?"
+      },
+      "en": [
+        "Increase salary bands and overtime benefits to strengthen the remuneration component of the employment package",
+        "Invest in workplace upgrades and additional environment stabilization to strengthen day-to-day operating conditions",
+        "Add supervisory checkpoints and more detailed task assignments to increase predictability and management visibility",
+        "Increase recognition, autonomy, meaningful challenge, responsibility, and professional-development opportunities in the team's work"
+      ],
+      "pt": [
+        "Aumentar faixas salariais e benefícios de horas extras para fortalecer a remuneração do pacote de emprego",
+        "Investir em melhorias do local e estabilização adicional do ambiente para fortalecer as condições operacionais diárias",
+        "Adicionar pontos de supervisão e atribuições mais detalhadas para aumentar previsibilidade e visibilidade gerencial",
+        "Aumentar reconhecimento, autonomia, desafios significativos, responsabilidade e oportunidades de desenvolvimento profissional no trabalho da equipe"
+      ],
+      "explanations": {
+        "en": "The scenario establishes adequate hygiene factors and identifies weak motivators. Section 3.1.6 recommends strengthening recognition, autonomy, meaningful work, responsibility, and advancement.",
+        "pt": "O cenário estabelece fatores de higiene adequados e motivadores fracos. A seção 3.1.6 recomenda fortalecer reconhecimento, autonomia, trabalho significativo, responsabilidade e avanço."
+      }
+    },
+    {
+      "id": "ctaltm-196",
+      "status": "REVISED",
+      "section": "3.2.1",
+      "reason": "Cada alternativa agora representa uma categoria completa de custo da qualidade com extensão equivalente, eliminando a pista de resposta longa.",
+      "answer": 3,
+      "en": [
+        "Training developers in secure coding and reviewing the test basis early to prevent defect introduction",
+        "Performing static and dynamic tests and reviewing work products to detect defects before release",
+        "Correcting defects found during testing and providing workarounds before delivery to customers",
+        "Handling customer-reported field defects through support, corrective deployment, legal response, and revenue recovery"
+      ],
+      "pt": [
+        "Treinar desenvolvedores em codificação segura e revisar cedo a base de teste para prevenir defeitos",
+        "Executar testes estáticos e dinâmicos e revisar produtos de trabalho para detectar defeitos antes da versão",
+        "Corrigir defeitos encontrados durante o teste e fornecer soluções alternativas antes da entrega aos clientes",
+        "Tratar defeitos de campo relatados por clientes por suporte, implantação corretiva, resposta jurídica e recuperação de receita"
+      ],
+      "explanations": {
+        "en": "Section 3.2.1 defines external failure costs as reactive costs arising after a defective product reaches the customer.",
+        "pt": "A seção 3.2.1 define custos de falha externa como custos reativos surgidos após um produto defeituoso chegar ao cliente."
+      }
+    },
+    {
+      "id": "ctaltm-197",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "Os quatro resultados agora explicitam operações comparáveis; a explicação corrige a dupla subtração verbal da rodada anterior e mantém o resultado de $300.000.",
+      "answer": 3,
+      "en": [
+        "$380,000: subtract the $120,000 test cost from the $500,000 no-test defect cost and omit residual defect cost",
+        "$420,000: subtract the $80,000 residual defect cost from the $500,000 no-test defect cost and omit test cost",
+        "$200,000: add the $120,000 test cost and $80,000 residual defect cost and treat the sum as value",
+        "$300,000: subtract the $120,000 test cost and $80,000 residual defect cost from the $500,000 no-test defect cost"
+      ],
+      "pt": [
+        "$380.000: subtrair o custo de teste de $120.000 do custo-base de defeitos de $500.000 e omitir o custo residual",
+        "$420.000: subtrair o custo residual de $80.000 do custo-base de defeitos de $500.000 e omitir o custo de teste",
+        "$200.000: somar o custo de teste de $120.000 ao custo residual de $80.000 e tratar o total como valor",
+        "$300.000: subtrair o custo de teste de $120.000 e o custo residual de $80.000 do custo sem teste de $500.000"
+      ],
+      "explanations": {
+        "en": "For the stated scenario, net value is $500,000 - $120,000 - $80,000 = $300,000.",
+        "pt": "No cenário apresentado, o valor líquido é $500.000 - $120.000 - $80.000 = $300.000."
+      }
+    },
+    {
+      "id": "ctaltm-198",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "Os distratores agora são erros de comparação ou cálculo verossímeis e têm construção paralela; o índice 1 preserva benefício líquido de $100.000.",
+      "answer": 1,
+      "en": [
+        "Not justified: compare the $300,000 residual defect cost with the $200,000 investment and infer a $100,000 shortfall",
+        "Justified: the $300,000 avoided defect cost exceeds the $200,000 investment, producing a $100,000 net benefit",
+        "Justified: treat the $300,000 avoided defect cost as net benefit before accounting for the automation investment",
+        "Not justified: combine the $300,000 residual cost and $200,000 investment and compare $500,000 with the $300,000 reduction"
+      ],
+      "pt": [
+        "Não justificado: comparar o custo residual de $300.000 com o investimento de $200.000 e inferir déficit de $100.000",
+        "Justificado: o custo evitado de $300.000 supera o investimento de $200.000, produzindo benefício líquido de $100.000",
+        "Justificado: tratar o custo evitado de $300.000 como benefício líquido antes de contabilizar o investimento em automação",
+        "Não justificado: combinar custo residual de $300.000 e investimento de $200.000 e comparar $500.000 com a redução de $300.000"
+      ],
+      "explanations": {
+        "en": "Avoided cost is $600,000 - $300,000 = $300,000; subtracting the $200,000 investment leaves $100,000 net benefit.",
+        "pt": "O custo evitado é $600.000 - $300.000 = $300.000; subtrair o investimento de $200.000 deixa benefício líquido de $100.000."
+      }
+    },
+    {
+      "id": "ctaltm-199",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "As alternativas agora diferem por operações matemáticas identificáveis, com extensão paralela e sem distratores baseados em linguagem absolutista.",
+      "answer": 3,
+      "en": [
+        "$200,000: use the complete reduction in production-defect cost and omit the additional test cost",
+        "$300,000: add the $200,000 reduction in production-defect cost to the $100,000 additional test cost",
+        "-$100,000: subtract the $200,000 reduction in production-defect cost from the $100,000 additional test cost",
+        "$100,000: subtract the $100,000 additional test cost from the $200,000 reduction in production-defect cost"
+      ],
+      "pt": [
+        "$200.000: usar a redução completa do custo de defeitos em produção e omitir o custo adicional de teste",
+        "$300.000: somar a redução de $200.000 no custo de defeitos ao custo adicional de teste de $100.000",
+        "-$100.000: subtrair a redução de $200.000 no custo de defeitos do custo adicional de teste de $100.000",
+        "$100.000: subtrair o custo adicional de teste de $100.000 da redução de $200.000 no custo de defeitos"
+      ],
+      "explanations": {
+        "en": "Marginal net value is the $200,000 additional avoided cost minus the $100,000 additional test cost, giving $100,000.",
+        "pt": "O valor líquido marginal é o custo adicional evitado de $200.000 menos o custo adicional de teste de $100.000, resultando em $100.000."
+      }
+    },
+    {
+      "id": "ctaltm-200",
+      "status": "REPAIR_PROPOSED",
+      "approval": "NOT_APPROVED",
+      "section": "3.2.2",
+      "reason": "O original revelava a estimativa contrafactual de $1.500.000 dentro da resposta longa. O reparo move o dado para o enunciado e apresenta quatro cálculos paralelos.",
+      "answer": 3,
+      "question": {
+        "en": "Testing costs $400,000 and the expected production-defect cost after testing is $200,000. The expected production-defect cost in the no-test scenario is $1,500,000. According to the CTAL-TM v3.0 syllabus, what net value does testing provide under these assumptions?",
+        "pt": "O teste custa $400.000 e o custo esperado de defeitos em produção após o teste é $200.000. O custo esperado de defeitos em produção no cenário sem teste é $1.500.000. Segundo o syllabus CTAL-TM v3.0, qual valor líquido o teste fornece nessas premissas?"
+      },
+      "en": [
+        "-$200,000: subtract the $400,000 test cost from the $200,000 residual production-defect cost",
+        "$1,100,000: subtract the $400,000 test cost from the $1,500,000 no-test defect cost and omit residual cost",
+        "$1,300,000: subtract the $200,000 residual defect cost from the $1,500,000 no-test defect cost and omit test cost",
+        "$900,000: subtract the $400,000 test cost and $200,000 residual defect cost from the $1,500,000 no-test defect cost"
+      ],
+      "pt": [
+        "-$200.000: subtrair o custo de teste de $400.000 do custo residual de defeitos em produção de $200.000",
+        "$1.100.000: subtrair o custo de teste de $400.000 do custo-base de $1.500.000 e omitir o custo residual",
+        "$1.300.000: subtrair o custo residual de $200.000 do custo-base de $1.500.000 e omitir o custo de teste",
+        "$900.000: subtrair o custo de teste de $400.000 e o custo residual de $200.000 do custo sem teste de $1.500.000"
+      ],
+      "explanations": {
+        "en": "Net value is $1,500,000 - $400,000 - $200,000 = $900,000. The repair places every required value in the stem.",
+        "pt": "O valor líquido é $1.500.000 - $400.000 - $200.000 = $900.000. O reparo coloca no enunciado todos os valores necessários."
+      }
+    }
+  ]
+}

@@ -8,7 +8,13 @@ on:
       - "build_bank.py"
       - "add_en.py"
       - "check_alignment.py"
-      - "check_alignment_baseline.*.json"
+      - "check_alignment*baseline*.json"
+      - "verify_sync.py"
+      - "test_sync_protection.py"
+      - "test_editorial_batch.py"
+      - "apply_editorial_batch.py"
+      - "editorial/*.json"
+      - ".github/workflows/*.yml"
   pull_request:
     paths:
       - "ctfl-questions-ptbr.json"
@@ -16,7 +22,13 @@ on:
       - "build_bank.py"
       - "add_en.py"
       - "check_alignment.py"
-      - "check_alignment_baseline.*.json"
+      - "check_alignment*baseline*.json"
+      - "verify_sync.py"
+      - "test_sync_protection.py"
+      - "test_editorial_batch.py"
+      - "apply_editorial_batch.py"
+      - "editorial/*.json"
+      - ".github/workflows/*.yml"
 
 jobs:
   check-alignment:
@@ -26,7 +38,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check ctfl-questions-ptbr.json (threshold 0, baseline madura)
+      - name: Test synchronization protections
+        run: python3 -m unittest test_sync_protection.py test_editorial_batch.py
+      - name: Check legacy bank
         run: python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
       - name: Check synapse-question-bank.json (threshold 0; inconclusivos em allowlist explícita)
         run: python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 0

@@ -5,14 +5,30 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 - `synapse-question-bank.json` — todas as 5 certificações (1100 questões)
 
 ## Estado atual
+
+**Candidato editorial local:** 1.6.1-editorial.1. O app permanece 3.17.0.
+Primeiro lote: 12 questões lidas, oito reformuladas, sem alteração de
+gabaritos/pools. Revisão integral pendente; quatro guardas ainda bloqueiam.
+
+**Reconciliação local em 2026-10-24:** v1.6.0-ctaltm copiada da entrega
+publicada no app para impedir reversão de blueprint, pools e distratores.
+CTAL-TM é LIVE e bloqueante nas guardas, mas ainda falha em quatro critérios
+psicométricos. Não considerar esta reconciliação aprovação editorial nem
+release pronta. Evidências e pendências em `CTALTM_QUALITY_REVIEW.md`.
+
+Proteção de sync: `verify_sync.py` rejeita downgrade e compara os dois bancos
+e as fatias completas. `test_sync_protection.py` cobre as falhas que o sync
+deve bloquear. O workflow valida qualidade antes de copiar/abrir PR, regenera
+fatias e não usa auto-merge. Conteúdo diferente na mesma versão exige bump
+na fonte. Verificações novas não estão ativas no GitHub até o envio autorizado.
 O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (total de 1.100 questões).
 
 **Conteúdo no Ar (Lançado):**
 - **CTFL v4.0:** 300 questões
 - **CTAL-TA v4.0:** 200 itens
+- **CTAL-TM v3.0:** 200 itens (publicado no app; revisão editorial bloqueada)
 
 **Roadmap de Lançamentos Futuros (Em Breve):**
-- **CTAL-TM v3.0:** 200 itens (em breve)
 - **CT-AI v2.0:** 200 itens (em breve)
 - **CTAL-AT v2.0:** 200 itens (em breve - syllabus totalmente novo, a ser gerado)
 
@@ -65,7 +81,7 @@ prontos pro app, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
 | Cert | Questões | Syllabus | Status |
 |------|----------|----------|--------|
 | CTAL-TA | 200 | Advanced Level Test Analyst v4.0 | **No ar** |
-| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Em breve |
+| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Publicado no app; qualidade bloqueante pendente |
 | CT-AI | 200 | Certified Tester AI Testing v2.0 | Em breve |
 | CTFL-AT | 200 | Agile Tester Extension v2014 | Legado / Adormecido |
 

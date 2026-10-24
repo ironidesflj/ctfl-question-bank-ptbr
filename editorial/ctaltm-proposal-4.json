@@ -1,0 +1,662 @@
+{
+  "range": [77, 108],
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "reviews": [
+    {
+      "id": "ctaltm-77",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.5",
+      "reason": "O gabarito atual é a alternativa mais completa, mas chama de essencial uma lista maior do que os quatro campos que o syllabus declara obrigatórios na maioria dos ambientes (título/resumo, descrição detalhada preferencialmente com reprodução, severidade e prioridade). O syllabus também exige seleção contextual e alerta contra atributos desnecessários; por isso, a redação atual pode ensinar uma obrigatoriedade universal inexistente.",
+      "answer": 3,
+      "en": [
+        "A unique identifier, creation date, reporter, current owner, and current defect state",
+        "The affected component, test item and release, test environment, and related references",
+        "The associated risks and costs, available workaround, affected requirements, and quality characteristic",
+        "A short defect title, a detailed anomaly description with reproduction steps, severity, and fix priority"
+      ],
+      "pt": [
+        "Um identificador único, data de criação, relator, responsável atual e estado atual do defeito",
+        "O componente afetado, item e versão de teste, ambiente de teste e referências relacionadas",
+        "Os riscos e custos associados, solução alternativa disponível, requisitos afetados e característica de qualidade",
+        "Um título curto do defeito, descrição detalhada da anomalia com passos de reprodução, severidade e prioridade de correção"
+      ],
+      "explanations": {
+        "en": "Section 2.3.5 identifies a short title, a detailed anomaly description preferably including reproduction steps, severity, and fix priority as mandatory in most environments. The other data groups can be useful for lifecycle management, resolution, status assessment, or process analysis, but their collection depends on context.",
+        "pt": "A seção 2.3.5 identifica como obrigatórios na maioria dos ambientes um título curto, uma descrição detalhada da anomalia preferencialmente com passos de reprodução, severidade e prioridade de correção. Os outros grupos de dados podem ser úteis para gerenciar o ciclo de vida, resolver o defeito, avaliar o status ou analisar o processo, mas sua coleta depende do contexto."
+      }
+    },
+    {
+      "id": "ctaltm-78",
+      "status": "REVISED",
+      "section": "2.3.5",
+      "reason": "A resposta é semanticamente correta, porém ODC não é citado no syllabus v3.0 e a alternativa correta concentrava muito mais detalhe. A proposta usa diretamente as dimensões previstas pelo syllabus e torna os demais esquemas classificações úteis, mas voltadas a finalidades diferentes.",
+      "answer": 1,
+      "en": [
+        "Severity and fix priority, to support impact assessment and repair scheduling",
+        "SDLC phase of introduction, detection, and removal, together with defect root cause",
+        "Affected component, test item, and release, to support defect location and cluster analysis",
+        "Current state, owner, and change history, to support management through the defect lifecycle"
+      ],
+      "pt": [
+        "Severidade e prioridade de correção, para apoiar a avaliação de impacto e o agendamento do reparo",
+        "Fase do SDLC de introdução, detecção e remoção, juntamente com a causa-raiz do defeito",
+        "Componente, item de teste e versão afetados, para apoiar a localização e a análise de agrupamentos de defeitos",
+        "Estado atual, responsável e histórico de mudanças, para apoiar o gerenciamento durante o ciclo de vida do defeito"
+      ],
+      "explanations": {
+        "en": "To assess process capability and phase containment, the relevant classification records the SDLC phases in which defects were introduced, detected, and removed, together with root-cause information. The other classifications serve valid but different defect-management purposes.",
+        "pt": "Para avaliar a capacidade do processo e a contenção por fase, a classificação relevante registra as fases do SDLC em que os defeitos foram introduzidos, detectados e removidos, juntamente com informações de causa-raiz. As outras classificações atendem a finalidades válidas, porém diferentes, do gerenciamento de defeitos."
+      }
+    },
+    {
+      "id": "ctaltm-79",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "O significado e o gabarito estão corretos, mas três distratores eram punitivos ou negligentes e não exigiam conhecimento do syllabus. A proposta compara usos aparentemente gerenciais dos dados, distinguindo análise suficiente de inferências indevidas.",
+      "answer": 2,
+      "en": [
+        "Ranking individual developers from severity counts and assigning corrective training to the lowest-ranked people",
+        "Using total defect counts alone to reduce testing in phases that currently report fewer defects",
+        "Analyzing introduction, detection, and removal phases to assess containment and target process improvements",
+        "Using closed-defect counts to infer process capability without considering defect phase, location, or root cause"
+      ],
+      "pt": [
+        "Classificar individualmente os desenvolvedores pelas contagens de severidade e atribuir treinamento corretivo aos últimos colocados",
+        "Usar apenas a contagem total de defeitos para reduzir o teste nas fases que atualmente relatam menos defeitos",
+        "Analisar as fases de introdução, detecção e remoção para avaliar a contenção e direcionar melhorias do processo",
+        "Usar contagens de defeitos fechados para inferir a capacidade do processo sem considerar fase, localização ou causa-raiz"
+      ],
+      "explanations": {
+        "en": "Section 2.3.6 recommends using introduction, detection, and removal phase data to assess phase containment, improve detection effectiveness, and reduce defect-related cost. Counts without relevant classification do not support those conclusions, and the syllabus does not advocate individual blame.",
+        "pt": "A seção 2.3.6 recomenda usar dados das fases de introdução, detecção e remoção para avaliar a contenção por fase, melhorar a eficácia da detecção e reduzir o custo associado a defeitos. Contagens sem classificação relevante não sustentam essas conclusões, e o syllabus não recomenda responsabilização individual."
+      }
+    },
+    {
+      "id": "ctaltm-80",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "A resposta aplica corretamente contenção por fase, mas os distratores originais eram extremos e a correta acumulava toda a terminologia técnica. A proposta oferece quatro ações de gestão comparáveis e mantém a única ação que aproxima detecção e introdução.",
+      "answer": 3,
+      "en": [
+        "Move most requirements-review effort to system testing, where the current detection yield is higher",
+        "Keep the current process and lower the severity assigned to requirement defects detected during system testing",
+        "Increase system-test execution without changing early reviews, then reassess the distribution after release",
+        "Strengthen early reviews and static evaluation of requirements, then monitor whether phase containment improves"
+      ],
+      "pt": [
+        "Transferir a maior parte do esforço de revisão de requisitos para o teste de sistema, onde o rendimento atual de detecção é maior",
+        "Manter o processo atual e reduzir a severidade atribuída a defeitos de requisitos detectados no teste de sistema",
+        "Aumentar a execução do teste de sistema sem alterar as revisões iniciais e reavaliar a distribuição após a liberação",
+        "Fortalecer revisões iniciais e a avaliação estática dos requisitos e então monitorar se a contenção por fase melhora"
+      ],
+      "explanations": {
+        "en": "The data shows weak containment of defects in the phase where they are introduced. Strengthening early defect-detection activities and measuring the resulting containment directly addresses the problem; adding late testing alone does not improve early containment.",
+        "pt": "Os dados mostram baixa contenção dos defeitos na fase em que são introduzidos. Fortalecer atividades iniciais de detecção e medir a contenção resultante trata diretamente o problema; apenas acrescentar teste tardio não melhora a contenção inicial."
+      }
+    },
+    {
+      "id": "ctaltm-81",
+      "status": "REVISED",
+      "section": "2.3.6",
+      "reason": "A alternativa correta está alinhada ao syllabus, mas os três distratores eram obviamente absurdos e dois diziam praticamente a mesma coisa. A proposta contrasta causa-raiz com três análises insuficientes, mantendo construções paralelas.",
+      "answer": 3,
+      "en": [
+        "Identify the people associated with defect introduction and use the result primarily for performance ranking",
+        "Classify visible failure symptoms and improve defect status labels without investigating their causes",
+        "Use total defect counts to forecast release dates without analyzing recurring defect patterns",
+        "Identify underlying reasons for defect introduction and derive proactive measures that prevent recurrence"
+      ],
+      "pt": [
+        "Identificar as pessoas associadas à introdução de defeitos e usar o resultado principalmente para classificação de desempenho",
+        "Classificar sintomas visíveis de falha e melhorar os rótulos de status sem investigar suas causas",
+        "Usar contagens totais de defeitos para prever datas de liberação sem analisar padrões recorrentes",
+        "Identificar as razões subjacentes à introdução de defeitos e derivar medidas proativas que evitem recorrência"
+      ],
+      "explanations": {
+        "en": "Root-cause information is used to determine why defects are introduced and to derive proactive process improvements that reduce future defects. Ranking people, relabeling symptoms, or using aggregate counts without causal analysis does not perform root-cause analysis.",
+        "pt": "Informações de causa-raiz são usadas para determinar por que os defeitos são introduzidos e derivar melhorias proativas do processo que reduzam defeitos futuros. Classificar pessoas, renomear sintomas ou usar contagens agregadas sem análise causal não constitui análise de causa-raiz."
+      }
+    },
+    {
+      "id": "ctaltm-82",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.6",
+      "reason": "O syllabus não usa a métrica 'defect arrival rate' nem associa uma elevação isolada a integração tardia, problemas de ambiente ou código instável. Sem tendência planejada, volume e escopo de execução, mudanças de testabilidade ou risco residual, a série não permite inferir causa nem determinar que o teste deva ser estendido. A alternativa marcada é prudente, mas contém causalidade e ação não demonstradas pela evidência dada.",
+      "answer": 1,
+      "en": [
+        "The trend proves product quality is improving, so the planned release decision should be retained",
+        "The trend may be a deviation from expectations; its context, causes, and residual risk should be analyzed before corrective or release decisions",
+        "The trend proves the test environment is unstable, so the environment should be replaced before further analysis",
+        "The trend proves tester productivity is insufficient, so additional testers should be assigned immediately"
+      ],
+      "pt": [
+        "A tendência prova que a qualidade do produto está melhorando, portanto a decisão de liberação planejada deve ser mantida",
+        "A tendência pode ser um desvio das expectativas; seu contexto, causas e risco residual devem ser analisados antes de decisões corretivas ou de liberação",
+        "A tendência prova que o ambiente de teste está instável, portanto o ambiente deve ser substituído antes de análise adicional",
+        "A tendência prova que a produtividade dos testadores é insuficiente, portanto testadores adicionais devem ser alocados imediatamente"
+      ],
+      "explanations": {
+        "en": "A rising trend can justify investigation, but it does not by itself establish a cause or prescribe extending testing. Test management should interpret the metric against the plan and context, investigate causes, and use residual risk and other evidence for control and release decisions.",
+        "pt": "Uma tendência crescente pode justificar investigação, mas não estabelece por si só uma causa nem prescreve a extensão do teste. O gerenciamento de teste deve interpretar a métrica em relação ao plano e ao contexto, investigar causas e usar risco residual e outras evidências nas decisões de controle e liberação."
+      }
+    },
+    {
+      "id": "ctaltm-83",
+      "status": "REVISED",
+      "section": "3.1.1",
+      "reason": "O gabarito está correto, mas os distratores originais eram listas não taxonômicas facilmente descartáveis e a explicação atribuía métodos, procedimentos e ferramentas à competência metodológica, enquanto o syllabus a exemplifica por habilidades analíticas, conceituais e de julgamento.",
+      "answer": 2,
+      "en": [
+        "Professional, Technical, Social, and Organizational competencies",
+        "Methodological, Operational, Leadership, and Personal competencies",
+        "Professional, Methodological, Social, and Personal competencies",
+        "Analytical, Procedural, Interpersonal, and Domain competencies"
+      ],
+      "pt": [
+        "Competências Profissional, Técnica, Social e Organizacional",
+        "Competências Metodológica, Operacional, de Liderança e Pessoal",
+        "Competências Profissional, Metodológica, Social e Pessoal",
+        "Competências Analítica, Procedimental, Interpessoal e de Domínio"
+      ],
+      "explanations": {
+        "en": "The syllabus classifies skills into Professional competence for specialized tasks, Methodological competence for general analytical, conceptual, and judgmental ability, Social competence for communication and cooperation, and Personal competence for self-development and attitudes.",
+        "pt": "O syllabus classifica as habilidades em competência Profissional para tarefas especializadas, competência Metodológica para capacidades gerais analíticas, conceituais e de julgamento, competência Social para comunicação e cooperação e competência Pessoal para autodesenvolvimento e atitudes."
+      }
+    },
+    {
+      "id": "ctaltm-84",
+      "status": "INCONCLUSIVO",
+      "section": "3.1.1",
+      "reason": "A seção 3.1.1 declara explicitamente que analisar a base de teste, modelar testes e desenvolver/configurar/manter ambientes são exemplos de competência profissional. O gabarito atual acrescenta competência metodológica e a define incorretamente como métodos e ferramentas. Embora julgamento analítico possa participar dessas tarefas, o enunciado não fornece evidência para tornar a combinação a única resposta correta.",
+      "answer": 3,
+      "en": [
+        "Primarily Personal competence, because these activities depend on self-management and reliability",
+        "Primarily Social competence, because these activities depend on cooperation with other team members",
+        "Primarily Methodological competence, because these activities use general analytical and judgmental ability",
+        "Primarily Professional competence, because the syllabus lists them as specialized testing tasks"
+      ],
+      "pt": [
+        "Principalmente competência Pessoal, porque essas atividades dependem de autogerenciamento e confiabilidade",
+        "Principalmente competência Social, porque essas atividades dependem de cooperação com outros membros da equipe",
+        "Principalmente competência Metodológica, porque essas atividades usam capacidade geral analítica e de julgamento",
+        "Principalmente competência Profissional, porque o syllabus as lista como tarefas especializadas de teste"
+      ],
+      "explanations": {
+        "en": "Section 3.1.1 places managing test tasks, analyzing the test basis, designing tests, and developing, configuring, and maintaining test data, environments, and scripts within Professional competence. Methodological competence refers to general analytical, conceptual, and judgmental skills rather than simply using methods or tools.",
+        "pt": "A seção 3.1.1 situa o gerenciamento de tarefas de teste, a análise da base de teste, a modelagem de testes e o desenvolvimento, configuração e manutenção de dados, ambientes e scripts de teste na competência Profissional. A competência Metodológica se refere a habilidades gerais analíticas, conceituais e de julgamento, não simplesmente ao uso de métodos ou ferramentas."
+      }
+    },
+    {
+      "id": "ctaltm-85",
+      "status": "REVISED",
+      "section": "3.1.2",
+      "reason": "A resposta aplica corretamente a análise de contexto, mas era muito mais longa e abrangente que alternativas absolutas. A proposta apresenta quatro perfis completos e comparáveis, mantendo no correto as competências exigidas pelo domínio, arquitetura, SDLC e organização da equipe.",
+      "answer": 3,
+      "en": [
+        "Professional competence centered on manual UI testing and healthcare knowledge, with limited emphasis on distributed collaboration",
+        "Methodological and personal competence centered on generic agile practice, without architecture, security, or domain specialization",
+        "Professional competence centered on microservices interfaces, supported by sequential test practices and centralized team coordination",
+        "Domain- and architecture-specific professional skills supported by agile methods, distributed collaboration, and self-management"
+      ],
+      "pt": [
+        "Competência Profissional centrada em teste manual de interface e conhecimento de saúde, com ênfase limitada em colaboração distribuída",
+        "Competências Metodológica e Pessoal centradas em prática ágil genérica, sem especialização em arquitetura, segurança ou domínio",
+        "Competência Profissional centrada em interfaces de microsserviços, apoiada por práticas sequenciais de teste e coordenação centralizada da equipe",
+        "Habilidades profissionais específicas de domínio e arquitetura apoiadas por métodos ágeis, colaboração distribuída e autogerenciamento"
+      ],
+      "explanations": {
+        "en": "Required skills follow the project context: the domain calls for business expertise; architecture and quality concerns call for relevant technical expertise; the agile SDLC and distributed team increase the need for suitable methodological, social, and personal competencies.",
+        "pt": "As habilidades necessárias decorrem do contexto do projeto: o domínio exige conhecimento de negócio; a arquitetura e as preocupações de qualidade exigem conhecimento técnico pertinente; o SDLC ágil e a equipe distribuída aumentam a necessidade de competências metodológicas, sociais e pessoais adequadas."
+      }
+    },
+    {
+      "id": "ctaltm-86",
+      "status": "REVISED",
+      "section": "3.1.2",
+      "reason": "A resposta atual mistura desenvolvimento de competências da seção 3.1.4 com análise de habilidades e afirma sem base que conhecimento de saúde é difícil de desenvolver. A proposta mantém o índice correto, compara habilidades requeridas e disponíveis e usa especialistas externos apenas quando a capacidade necessária não pode ser suprida a tempo.",
+      "answer": 1,
+      "en": [
+        "Assign all three gaps to current team members and rely on role flexibility without changing staffing or development plans",
+        "Compare required and available skills, develop skills where feasible, and use external experts for capabilities unavailable in time",
+        "Recruit domain expertise first and defer security and performance work until later project increments",
+        "Replace the current team based on the matrix before assessing whether its existing strengths can cover other test tasks"
+      ],
+      "pt": [
+        "Atribuir as três lacunas aos membros atuais e confiar na flexibilidade de papéis sem alterar os planos de pessoal ou desenvolvimento",
+        "Comparar habilidades requeridas e disponíveis, desenvolver habilidades quando viável e usar especialistas externos para capacidades indisponíveis a tempo",
+        "Recrutar primeiro expertise de domínio e adiar o trabalho de segurança e desempenho para incrementos posteriores do projeto",
+        "Substituir a equipe atual com base na matriz antes de avaliar se seus pontos fortes existentes cobrem outras tarefas de teste"
+      ],
+      "explanations": {
+        "en": "Staffing requires a context-based comparison of required and available skills. Skills can be developed, and the syllabus explicitly allows external experts for specific tasks beyond the team's capabilities; the response should balance these choices rather than ignore, sequence blindly, or replace the whole team.",
+        "pt": "A composição da equipe requer comparação contextual entre habilidades necessárias e disponíveis. Habilidades podem ser desenvolvidas, e o syllabus admite explicitamente especialistas externos para tarefas específicas além das capacidades da equipe; a resposta deve equilibrar essas escolhas, em vez de ignorar lacunas, sequenciá-las sem análise ou substituir toda a equipe."
+      }
+    },
+    {
+      "id": "ctaltm-87",
+      "status": "REVISED",
+      "section": "3.1.3",
+      "reason": "A correta reproduz as técnicas do syllabus, mas era uma enumeração extensa cercada por três alternativas com 'only/apenas'. A proposta apresenta quatro estratégias de avaliação com nível de detalhe e construção equivalentes.",
+      "answer": 2,
+      "en": [
+        "Infer task proficiency from years in testing and use tenure as the principal evidence for the skills matrix",
+        "Combine self-ratings and manager ratings, without observing how the person performs representative test tasks",
+        "Observe representative test tasks and supplement the results with credentials, experience, and education",
+        "Map academic degrees to role requirements and use educational history instead of practical work samples"
+      ],
+      "pt": [
+        "Inferir proficiência nas tarefas pelos anos em teste e usar tempo de experiência como evidência principal da matriz de habilidades",
+        "Combinar autoavaliações e avaliações do gestor sem observar como a pessoa executa tarefas representativas de teste",
+        "Observar tarefas representativas de teste e complementar os resultados com credenciais, experiência e formação",
+        "Mapear diplomas acadêmicos aos requisitos do papel e usar o histórico educacional em vez de amostras práticas de trabalho"
+      ],
+      "explanations": {
+        "en": "The syllabus recommends assessing professional and methodological competence through demonstrations of representative test tasks, with credentials, certifications, work experience, and degrees as additional evidence. The other approaches substitute indirect evidence for observed capability.",
+        "pt": "O syllabus recomenda avaliar competências profissional e metodológica por demonstrações de tarefas representativas de teste, usando credenciais, certificações, experiência profissional e diplomas como evidência adicional. As outras abordagens substituem a capacidade observada por evidências indiretas."
+      }
+    },
+    {
+      "id": "ctaltm-88",
+      "status": "REVISED",
+      "section": "3.1.3",
+      "reason": "O gabarito está correto, mas os distratores originais negavam de forma grosseira a utilidade dos papéis. A proposta usa interpretações alternativas plausíveis do modelo e mantém extensão semelhante.",
+      "answer": 3,
+      "en": [
+        "A team becomes effective when every member is assigned the same preferred role to reduce interpersonal variation",
+        "A team becomes effective when the strongest individual role is identified and used as the model for all members",
+        "A team becomes effective when role assignments mirror formal job titles and remain stable throughout the project",
+        "A mix of personality and role types supports effectiveness and reveals present and missing skills"
+      ],
+      "pt": [
+        "Uma equipe se torna eficaz quando todos recebem o mesmo papel preferido para reduzir a variação interpessoal",
+        "Uma equipe se torna eficaz quando o papel individual mais forte é identificado e usado como modelo para todos os membros",
+        "Uma equipe se torna eficaz quando os papéis refletem os cargos formais e permanecem estáveis durante todo o projeto",
+        "Uma combinação de tipos de personalidade e papéis favorece a eficácia e revela habilidades presentes e ausentes"
+      ],
+      "explanations": {
+        "en": "Belbin's model holds that teams work effectively when composed of different personality and role types. It helps a team identify the skills it has and those it may be lacking; it does not prescribe uniformity, one ideal role, or fixed mapping to job titles.",
+        "pt": "O modelo de Belbin sustenta que equipes funcionam eficazmente quando compostas por diferentes tipos de personalidade e papéis. Ele ajuda a identificar as habilidades existentes e as que podem faltar; não prescreve uniformidade, um papel ideal único ou mapeamento fixo para cargos."
+      }
+    },
+    {
+      "id": "ctaltm-89",
+      "status": "REVISED",
+      "section": "3.1.4",
+      "reason": "A resposta lista corretamente as abordagens, porém os distratores 'apenas' e 'não fazer nada' eram triviais. A proposta oferece conjuntos de ações de desenvolvimento e gestão de tamanho comparável, dos quais apenas um corresponde integralmente à lista do syllabus.",
+      "answer": 3,
+      "en": [
+        "Training and education, self-study, peer competition, periodic role rotation, and annual appraisal",
+        "Self-study, performance ranking, mandatory certification, independent assignments, and promotion",
+        "Recruitment, outsourcing, reassignment, succession planning, and replacement of current team members",
+        "Training and education, self-study, peer learning, mentoring or coaching, and on-the-job training"
+      ],
+      "pt": [
+        "Treinamento e educação, autoestudo, competição entre pares, rotação periódica de papéis e avaliação anual",
+        "Autoestudo, classificação de desempenho, certificação obrigatória, tarefas independentes e promoção",
+        "Recrutamento, terceirização, realocação, planejamento sucessório e substituição de membros atuais",
+        "Treinamento e educação, autoestudo, aprendizagem entre pares, mentoria ou coaching e treinamento no trabalho"
+      ],
+      "explanations": {
+        "en": "Section 3.1.4 names training and education, self-study, peer learning, mentoring or coaching, and on-the-job training as competence-development approaches. The other sets mix learning with staffing or appraisal actions not presented as the listed development approaches.",
+        "pt": "A seção 3.1.4 cita treinamento e educação, autoestudo, aprendizagem entre pares, mentoria ou coaching e treinamento no trabalho como abordagens de desenvolvimento de competências. Os outros conjuntos misturam aprendizagem com ações de pessoal ou avaliação que não integram a lista de abordagens de desenvolvimento."
+      }
+    },
+    {
+      "id": "ctaltm-90",
+      "status": "REVISED",
+      "section": "3.1.4",
+      "reason": "A correta está alinhada ao syllabus, mas as alternativas incorretas eram absolutas e pouco plausíveis. A proposta compara formatos reais de desenvolvimento e mantém interação, feedback e reflexão como discriminadores.",
+      "answer": 1,
+      "en": [
+        "Structured self-study with written quizzes, completed individually and without observed interpersonal practice",
+        "Coaching or mentoring combined with social exchange, feedback, reflection, and opportunities to practice",
+        "Lecture-based training followed by an individual examination, without follow-up coaching or peer feedback",
+        "Repeated role rotation across projects, without explicit feedback, reflection, or development objectives"
+      ],
+      "pt": [
+        "Autoestudo estruturado com questionários escritos, realizado individualmente e sem prática interpessoal observada",
+        "Coaching ou mentoria combinados com troca social, feedback, reflexão e oportunidades de prática",
+        "Treinamento expositivo seguido de exame individual, sem coaching posterior nem feedback dos pares",
+        "Rotação repetida de papéis entre projetos, sem feedback explícito, reflexão ou objetivos de desenvolvimento"
+      ],
+      "explanations": {
+        "en": "For social and personal competence, the syllabus recommends approaches such as training and coaching and identifies social exchange, feedback, and reflection as key success factors. Isolated study, examination, or rotation lacks those central mechanisms.",
+        "pt": "Para competências sociais e pessoais, o syllabus recomenda abordagens como treinamento e coaching e identifica troca social, feedback e reflexão como fatores-chave de sucesso. Estudo, exame ou rotação isolados não contêm esses mecanismos centrais."
+      }
+    },
+    {
+      "id": "ctaltm-91",
+      "status": "REVISED",
+      "section": "3.1.5",
+      "reason": "A alternativa correta cobre o syllabus, mas era muito mais detalhada que três distratores definidos por 'only/apenas'. A proposta apresenta perfis de liderança parciais e um perfil completo, todos com estrutura comparável.",
+      "answer": 2,
+      "en": [
+        "Planning, progress reporting, and technical testing knowledge, without delegation or conflict-management capability",
+        "Communication, coaching, and conflict resolution, without knowledge of test approaches, strategies, or the SDLC",
+        "Management and test-management knowledge together with delegation, resilience, communication, and conflict resolution",
+        "Staff administration and directive control, without the methodological and stakeholder skills needed to adapt leadership"
+      ],
+      "pt": [
+        "Planejamento, relatório de progresso e conhecimento técnico de teste, sem capacidade de delegação ou gestão de conflitos",
+        "Comunicação, coaching e resolução de conflitos, sem conhecimento de abordagens, estratégias de teste ou do SDLC",
+        "Conhecimento de gestão e gerenciamento de teste junto com delegação, resiliência, comunicação e resolução de conflitos",
+        "Administração de pessoal e controle diretivo, sem as habilidades metodológicas e de stakeholders necessárias para adaptar a liderança"
+      ],
+      "explanations": {
+        "en": "Leading a test team requires professional and methodological competence in management, specific test-management knowledge, and social and personal competence. Each distractor omits a material part of that combined profile.",
+        "pt": "Liderar uma equipe de teste requer competência profissional e metodológica em gestão, conhecimento específico de gerenciamento de teste e competências sociais e pessoais. Cada distrator omite uma parte relevante desse perfil combinado."
+      }
+    },
+    {
+      "id": "ctaltm-92",
+      "status": "UNCHANGED",
+      "section": "3.1.5",
+      "reason": "As quatro alternativas têm construção e extensão equivalentes, PT e EN preservam a mesma ordem, e apenas Formação, Confrontação, Normatização, Performance e Encerramento corresponde à sequência apresentada no syllabus.",
+      "answer": 3
+    },
+    {
+      "id": "ctaltm-93",
+      "status": "REVISED",
+      "section": "3.1.6",
+      "reason": "A correta reunia quatro motivadores e era muito mais longa que cada distrator de higiene. A proposta reduz cada alternativa a um par conceitualmente homogêneo e de extensão comparável.",
+      "answer": 3,
+      "en": [
+        "Market-rate remuneration and payment for overtime worked",
+        "Pleasant working conditions and a stable test environment",
+        "Job security and good relationships with colleagues and supervisors",
+        "Recognition for work performed and increased responsibility and autonomy"
+      ],
+      "pt": [
+        "Remuneração compatível com o mercado e pagamento pelas horas extras trabalhadas",
+        "Condições agradáveis de trabalho e um ambiente de teste estável",
+        "Segurança no emprego e bom relacionamento com colegas e supervisores",
+        "Reconhecimento pelo trabalho realizado e maior responsabilidade e autonomia"
+      ],
+      "explanations": {
+        "en": "Recognition and increased responsibility or autonomy are motivators because they can create growth and satisfaction. Remuneration, working conditions, security, and interpersonal relationships are hygiene factors whose absence can demotivate.",
+        "pt": "Reconhecimento e maior responsabilidade ou autonomia são motivadores porque podem gerar crescimento e satisfação. Remuneração, condições de trabalho, segurança e relações interpessoais são fatores de higiene cuja ausência pode desmotivar."
+      }
+    },
+    {
+      "id": "ctaltm-94",
+      "status": "REVISED",
+      "section": "3.1.6",
+      "reason": "O gabarito expressa corretamente Herzberg, mas era uma resposta completa cercada por propostas caricatas. A revisão transforma todas as alternativas em interpretações e ações gerenciais comparáveis.",
+      "answer": 1,
+      "en": [
+        "Treat remuneration as the main motivator and increase it further while leaving responsibility and task design unchanged",
+        "Recognize pay and the office as hygiene factors, then add recognition, autonomy, meaningful challenges, and development",
+        "Conclude that hygiene factors do not matter and redirect resources away from maintaining acceptable working conditions",
+        "Standardize tasks and reduce autonomy, assuming predictability will create satisfaction despite limited growth opportunities"
+      ],
+      "pt": [
+        "Tratar a remuneração como principal motivador e aumentá-la novamente, mantendo inalteradas a responsabilidade e a organização das tarefas",
+        "Reconhecer salário e escritório como fatores de higiene e então acrescentar reconhecimento, autonomia, desafios significativos e desenvolvimento",
+        "Concluir que fatores de higiene não importam e redirecionar recursos da manutenção de condições aceitáveis de trabalho",
+        "Padronizar tarefas e reduzir autonomia, supondo que a previsibilidade gerará satisfação apesar das oportunidades limitadas de crescimento"
+      ],
+      "explanations": {
+        "en": "Salary and working conditions are hygiene factors: inadequate conditions can demotivate, but adequate conditions do not automatically create satisfaction. Recognition, autonomy, meaningful challenges, and professional development are motivators that should be strengthened.",
+        "pt": "Salário e condições de trabalho são fatores de higiene: condições inadequadas podem desmotivar, mas condições adequadas não geram satisfação automaticamente. Reconhecimento, autonomia, desafios significativos e desenvolvimento profissional são motivadores que devem ser fortalecidos."
+      }
+    },
+    {
+      "id": "ctaltm-95",
+      "status": "UNCHANGED",
+      "section": "3.2.1",
+      "reason": "O gabarito reproduz as quatro categorias de Feigenbaum adotadas pelo syllabus; os distratores são taxonomias paralelas, têm extensão semelhante e não introduzem pista absolutista ou divergência PT/EN.",
+      "answer": 2
+    },
+    {
+      "id": "ctaltm-96",
+      "status": "UNCHANGED",
+      "section": "3.2.1",
+      "reason": "Cada alternativa é um exemplo claro de uma categoria diferente do custo da qualidade, com construção paralela. Corrigir defeitos encontrados antes da liberação é custo de falha interna, e as versões PT/EN são equivalentes.",
+      "answer": 3
+    },
+    {
+      "id": "ctaltm-97",
+      "status": "UNCHANGED",
+      "section": "3.2.1",
+      "reason": "As alternativas são as quatro categorias do syllabus com extensão idêntica; perdas e atividades reativas após a entrega ao cliente pertencem inequivocamente a falhas externas. Não há inconsistência bilíngue ou de explicação.",
+      "answer": 3
+    },
+    {
+      "id": "ctaltm-98",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "O cálculo e o índice do gabarito estão corretos, mas só a correta mostrava a operação, criando pista de detalhe. A proposta explicita em todas as alternativas a interpretação numérica adotada.",
+      "answer": 1,
+      "en": [
+        "20,000, calculated as the residual external failure cost minus the testing cost",
+        "320,000, calculated as the 400,000 reduction in external failure cost minus the 80,000 testing cost",
+        "80,000, corresponding to the testing cost without considering the reduction in external failures",
+        "400,000, corresponding to the reduction in external failures before subtracting the testing cost"
+      ],
+      "pt": [
+        "20.000, calculados como o custo residual de falha externa menos o custo do teste",
+        "320.000, calculados como a redução de 400.000 no custo de falhas externas menos o custo de teste de 80.000",
+        "80.000, correspondentes ao custo do teste sem considerar a redução nas falhas externas",
+        "400.000, correspondentes à redução nas falhas externas antes de subtrair o custo do teste"
+      ],
+      "explanations": {
+        "en": "Testing reduces expected external failure cost by 500,000 minus 100,000, or 400,000. Subtracting the 80,000 testing cost gives a net added value of 320,000.",
+        "pt": "O teste reduz o custo esperado de falhas externas em 500.000 menos 100.000, ou 400.000. Subtraindo o custo de teste de 80.000, obtém-se valor líquido agregado de 320.000."
+      }
+    },
+    {
+      "id": "ctaltm-99",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "O resultado aritmético está correto, porém a alternativa certa era a única com memória de cálculo. A revisão apresenta todos os valores como interpretações explícitas do caso e remove o distrator 'zero' não plausível.",
+      "answer": 2,
+      "en": [
+        "300,000, using one year of savings and disregarding both the remaining years and the investment",
+        "100,000, treating the initial investment as the net value and disregarding the expected savings",
+        "800,000, subtracting the 100,000 investment from 900,000 in three-year savings; the case supports the investment",
+        "900,000, using gross three-year savings before subtracting the initial investment; net value is overstated"
+      ],
+      "pt": [
+        "300.000, usando um ano de economia e desconsiderando tanto os anos restantes quanto o investimento",
+        "100.000, tratando o investimento inicial como valor líquido e desconsiderando a economia esperada",
+        "800.000, subtraindo o investimento de 100.000 da economia de 900.000 em três anos; o caso apoia o investimento",
+        "900.000, usando a economia bruta de três anos antes de subtrair o investimento inicial; o valor líquido fica superestimado"
+      ],
+      "explanations": {
+        "en": "The stated three-year savings are 3 × 300,000 = 900,000. Subtracting the 100,000 investment yields a net value of 800,000, so the simplified business case supports the investment.",
+        "pt": "A economia declarada em três anos é 3 × 300.000 = 900.000. Subtraindo o investimento de 100.000, obtém-se valor líquido de 800.000; portanto, o caso de negócio simplificado apoia o investimento."
+      }
+    },
+    {
+      "id": "ctaltm-100",
+      "status": "REVISED",
+      "section": "3.2.2",
+      "reason": "A resposta correta está alinhada ao custo-benefício, mas era muito mais longa e técnica do que três argumentos evidentemente fracos. A proposta cria quatro argumentos executivos comparáveis e preserva a quantificação de benefícios e custos como discriminador.",
+      "answer": 3,
+      "en": [
+        "Present testing as a required compliance expense and justify the budget mainly by reference to certification guidance",
+        "Promise that testing eliminates all defects and therefore guarantees that every testing investment pays for itself",
+        "Use the number of executed tests as the primary evidence of value, independently of risk reduction or business outcomes",
+        "Compare appraisal and internal failure costs with avoided external failures and communicate quantitative and qualitative benefits"
+      ],
+      "pt": [
+        "Apresentar o teste como despesa obrigatória de conformidade e justificar o orçamento principalmente por referência à orientação de certificação",
+        "Prometer que o teste elimina todos os defeitos e, portanto, garante o retorno de qualquer investimento em teste",
+        "Usar o número de testes executados como principal evidência de valor, independentemente da redução de risco ou dos resultados de negócio",
+        "Comparar custos de avaliação e falha interna com falhas externas evitadas e comunicar benefícios quantitativos e qualitativos"
+      ],
+      "explanations": {
+        "en": "The syllabus frames testing value through quantitative benefits such as avoided failure cost and risk reduction, qualitative benefits such as confidence and reputation, and information for decisions. Cost-benefit reasoning compares those benefits with prevention, appraisal, and failure costs.",
+        "pt": "O syllabus apresenta o valor do teste por benefícios quantitativos, como custos de falha evitados e redução de risco, benefícios qualitativos, como confiança e reputação, e informação para decisões. O raciocínio de custo-benefício compara esses benefícios com custos de prevenção, avaliação e falhas."
+      }
+    },
+    {
+      "id": "ctaltm-101",
+      "status": "UNCHANGED",
+      "section": "1.1.1",
+      "reason": "A correta aplica diretamente a orientação de iniciar o planejamento o mais cedo possível e atualizá-lo iterativamente. Os distratores representam adiamento, tratamento pontual ou redução indevida do plano, com extensão comparável e equivalência bilíngue preservada.",
+      "answer": 0
+    },
+    {
+      "id": "ctaltm-102",
+      "status": "REVISED",
+      "section": "1.1.1",
+      "reason": "A alternativa correta dizia que todos os itens eram componentes estruturais do plano, formulação mais rígida do que o syllabus, que descreve tarefas de planejamento e aceitação sem impor essa estrutura documental. A proposta caracteriza os itens como alinhados às tarefas correspondentes.",
+      "answer": 0,
+      "en": [
+        "They align with planning tasks for context and scope, product risks, approach and resources, and plan acceptance",
+        "They are monitoring evidence used primarily to record results, detect deviations, and track changes in identified risks",
+        "They are completion outputs used primarily to summarize results, archive testware, hand over assets, and capture lessons",
+        "They are test-design work products used primarily to derive coverage items, test cases, test data, and execution procedures"
+      ],
+      "pt": [
+        "Eles se alinham às tarefas de planejamento de contexto e escopo, riscos do produto, abordagem e recursos e aceitação do plano",
+        "Eles são evidências de monitoramento usadas principalmente para registrar resultados, detectar desvios e acompanhar mudanças nos riscos identificados",
+        "Eles são produtos de conclusão usados principalmente para resumir resultados, arquivar testware, transferir ativos e capturar lições",
+        "Eles são produtos de modelagem usados principalmente para derivar itens de cobertura, casos de teste, dados de teste e procedimentos de execução"
+      ],
+      "explanations": {
+        "en": "Section 1.1.1 organizes planning around understanding context and scope, identifying and analyzing product risks, defining the approach and resources, and establishing a plan accepted by stakeholders. The listed outputs fit those tasks, without implying a mandatory document template.",
+        "pt": "A seção 1.1.1 organiza o planejamento em torno de compreender contexto e escopo, identificar e analisar riscos do produto, definir abordagem e recursos e estabelecer um plano aceito pelos stakeholders. Os produtos listados se encaixam nessas tarefas, sem implicar um modelo documental obrigatório."
+      }
+    },
+    {
+      "id": "ctaltm-103",
+      "status": "REVISED",
+      "section": "1.1.2",
+      "reason": "O gabarito está correto, mas acumulava definição e justificativa enquanto os demais rótulos tinham explicações frágeis. A proposta distingue monitoramento, controle, conclusão e planejamento por suas funções específicas.",
+      "answer": 0,
+      "en": [
+        "Test monitoring, because the dashboard records and reports status and supports identification of deviations from the plan",
+        "Test control, because publishing status information is itself a corrective directive that changes test execution",
+        "Test completion, because any summary of metrics constitutes the final evaluation of the completed test effort",
+        "Test planning, because updating a forecast replaces the ongoing monitoring activity with a new initial estimate"
+      ],
+      "pt": [
+        "Monitoramento de teste, porque o painel registra e reporta o status e apoia a identificação de desvios em relação ao plano",
+        "Controle de teste, porque publicar informações de status é por si só uma diretriz corretiva que altera a execução",
+        "Conclusão de teste, porque qualquer resumo de métricas constitui a avaliação final do esforço de teste concluído",
+        "Planejamento de teste, porque atualizar uma previsão substitui a atividade contínua de monitoramento por uma nova estimativa inicial"
+      ],
+      "explanations": {
+        "en": "Test monitoring collects and records results and identifies deviations and changing risks. A dashboard and forecast communicate that monitored status; test control begins when corrective directives are selected and implemented.",
+        "pt": "O monitoramento de teste coleta e registra resultados e identifica desvios e mudanças nos riscos. Um painel e uma previsão comunicam esse status monitorado; o controle de teste começa quando diretrizes corretivas são selecionadas e implementadas."
+      }
+    },
+    {
+      "id": "ctaltm-104",
+      "status": "REVISED",
+      "section": "1.1.2",
+      "reason": "A identificação de controle está correta, porém a alternativa marcada tinha explicação completa e os distratores confundiam atividades por associações superficiais. A revisão usa definições concorrentes de extensão semelhante e esclarece a passagem de observação para ação corretiva.",
+      "answer": 0,
+      "en": [
+        "Test control, because reprioritization is a corrective response to a deviation identified through monitoring",
+        "Test monitoring, because both observing the rate and changing priorities are forms of collecting status data",
+        "Test completion, because reprioritization confirms which tests can be omitted before the sprint milestone",
+        "Test design, because changing execution priority changes the design of the existing test cases"
+      ],
+      "pt": [
+        "Controle de teste, porque a repriorização é uma resposta corretiva a um desvio identificado pelo monitoramento",
+        "Monitoramento de teste, porque observar a taxa e mudar prioridades são formas de coletar dados de status",
+        "Conclusão de teste, porque a repriorização confirma quais testes podem ser omitidos antes do marco do sprint",
+        "Modelagem de teste, porque mudar a prioridade de execução altera a modelagem dos casos de teste existentes"
+      ],
+      "explanations": {
+        "en": "Observing the drop is monitoring. Reprioritizing tests and authorizing investigation in response are control actions because they manage a deviation and direct testing toward the objectives.",
+        "pt": "Observar a queda é monitoramento. Repriorizar testes e autorizar investigação em resposta são ações de controle porque gerenciam um desvio e direcionam o teste aos objetivos."
+      }
+    },
+    {
+      "id": "ctaltm-105",
+      "status": "REVISED",
+      "section": "1.1.3",
+      "reason": "Todas as ações pertencem à conclusão, mas a correta enumerava quase todo o enunciado e era muito mais longa. A proposta dá a cada atividade uma justificativa completa e paralela.",
+      "answer": 0,
+      "en": [
+        "Test completion, because it combines reporting, archiving, handover, and lessons learned",
+        "Test control, because it compares final status with the plan and directs corrective work on unresolved defects",
+        "Test monitoring, because it records final results and tracks the remaining defect and testware status",
+        "Test planning, because it prepares reusable assets and improvement actions for the next release"
+      ],
+      "pt": [
+        "Conclusão de teste, porque combina relatório, arquivamento, transferência e lições aprendidas",
+        "Controle de teste, porque compara o status final com o plano e direciona trabalho corretivo sobre defeitos não resolvidos",
+        "Monitoramento de teste, porque registra resultados finais e acompanha o status remanescente de defeitos e testware",
+        "Planejamento de teste, porque prepara ativos reutilizáveis e ações de melhoria para a próxima versão"
+      ],
+      "explanations": {
+        "en": "At a project milestone, creating and approving the completion report, archiving and handing over testware and known-defect information, and collecting lessons learned are test-completion tasks.",
+        "pt": "Em um marco do projeto, criar e aprovar o relatório de conclusão, arquivar e transferir testware e informações de defeitos conhecidos e coletar lições aprendidas são tarefas de conclusão de teste."
+      }
+    },
+    {
+      "id": "ctaltm-106",
+      "status": "REVISED",
+      "section": "1.1.3",
+      "reason": "A consequência correta é sustentada pelo syllabus, mas três distratores negavam qualquer valor à conclusão e eram facilmente eliminados. A revisão formula consequências gerenciais plausíveis, preservando rastreabilidade, reutilização, handover e aprendizado como critérios.",
+      "answer": 0,
+      "en": [
+        "Greater rework and loss of traceability, reuse, handover quality, and organizational learning for maintenance and future releases",
+        "Faster reassignment with no later effect, provided test execution itself finished before the team moved",
+        "Lower lifecycle cost because reports, testware, and known-defect information can be reconstructed when maintenance needs them",
+        "Improved agility because lessons learned are useful during iterations but add little value at a release milestone"
+      ],
+      "pt": [
+        "Mais retrabalho e perda de rastreabilidade, reutilização, qualidade da transferência e aprendizado organizacional para manutenção e versões futuras",
+        "Realocação mais rápida sem efeito posterior, desde que a execução de teste tenha terminado antes da mudança da equipe",
+        "Menor custo de ciclo de vida porque relatórios, testware e informações de defeitos conhecidos podem ser reconstruídos quando a manutenção precisar",
+        "Maior agilidade porque lições aprendidas são úteis durante iterações, mas agregam pouco valor em um marco de liberação"
+      ],
+      "explanations": {
+        "en": "Completion preserves reusable testware, communicates known defects, consolidates results, restores or hands over assets, and records lessons learned. Skipping it shifts cost and risk to maintenance and future work rather than eliminating that work.",
+        "pt": "A conclusão preserva testware reutilizável, comunica defeitos conhecidos, consolida resultados, restaura ou transfere ativos e registra lições aprendidas. Ignorá-la transfere custo e risco para manutenção e trabalho futuro, em vez de eliminar esse trabalho."
+      }
+    },
+    {
+      "id": "ctaltm-107",
+      "status": "REVISED",
+      "section": "1.2.1",
+      "reason": "A conclusão geral é defensável pela definição ampla de stakeholder, embora Vendas e Compliance não sejam exemplos nomeados na lista típica. Os distratores originais usavam 'only/uniform' e eram fracos; a proposta mantém a diversidade de interesses como única explicação compatível com o conceito.",
+      "answer": 0,
+      "en": [
+        "Both have a direct or indirect interest in product quality, but each uses test information for different objectives and constraints",
+        "Both have the same interest in testing because every stakeholder primarily uses results to approve detailed test designs",
+        "Only Compliance has a stakeholder interest because a group must own mandatory requirements to qualify as a test stakeholder",
+        "Compliance should determine all testing priorities because regulatory constraints replace the need to analyze other stakeholder interests"
+      ],
+      "pt": [
+        "Ambas têm interesse direto ou indireto na qualidade do produto, mas cada uma usa informações de teste para objetivos e restrições diferentes",
+        "Ambas têm o mesmo interesse em teste porque todo stakeholder usa os resultados principalmente para aprovar modelagens detalhadas de teste",
+        "Apenas Compliance tem interesse de stakeholder porque um grupo precisa ser dono de requisitos obrigatórios para ser stakeholder de teste",
+        "Compliance deve determinar todas as prioridades de teste porque restrições regulatórias substituem a análise de outros interesses de stakeholders"
+      ],
+      "explanations": {
+        "en": "A test stakeholder is any individual or group with a direct or indirect interest in product quality. Stakeholder interests differ, so Sales may seek evidence for claims while Compliance seeks evidence of adherence; neither interest erases the other.",
+        "pt": "Um stakeholder de teste é qualquer indivíduo ou grupo com interesse direto ou indireto na qualidade do produto. Os interesses diferem; Vendas pode buscar evidência para reivindicações enquanto Compliance busca evidência de conformidade, e nenhum interesse elimina o outro."
+      }
+    },
+    {
+      "id": "ctaltm-108",
+      "status": "REVISED",
+      "section": "1.2.1",
+      "reason": "A intenção está correta, mas a resposta e a explicação acrescentavam suporte e recuperação não explicitados na seção. A proposta adere ao texto oficial: aceitação operacional, prontidão para produção e contribuição para requisitos não funcionais, com distratores plausíveis de prioridade.",
+      "answer": 0,
+      "en": [
+        "Participate in operational acceptance testing, assess production readiness, and contribute to defining non-functional requirements",
+        "Maximize the number of executed test cases, regardless of operational risks or the information needed for release decisions",
+        "Prioritize release speed and defer operational acceptance until the system has already entered production",
+        "Focus on functional user acceptance and leave production readiness and non-functional requirements entirely to development"
+      ],
+      "pt": [
+        "Participar do teste de aceitação operacional, avaliar a prontidão para produção e contribuir para definir requisitos não funcionais",
+        "Maximizar o número de casos de teste executados, independentemente dos riscos operacionais ou da informação necessária para decisões de liberação",
+        "Priorizar a velocidade de liberação e adiar a aceitação operacional até que o sistema já tenha entrado em produção",
+        "Concentrar-se na aceitação funcional do usuário e deixar prontidão para produção e requisitos não funcionais inteiramente para desenvolvimento"
+      ],
+      "explanations": {
+        "en": "Section 1.2.1 states that the Operations Team engages in operational acceptance testing, ensures readiness for production, and contributes to defining non-functional requirements. The other choices conflict with that operational interest.",
+        "pt": "A seção 1.2.1 afirma que a equipe de Operações participa do teste de aceitação operacional, assegura a prontidão para produção e contribui para definir requisitos não funcionais. As outras escolhas entram em conflito com esse interesse operacional."
+      }
+    }
+  ]
+}

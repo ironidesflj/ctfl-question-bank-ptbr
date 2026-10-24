@@ -1,0 +1,7248 @@
+{
+  "bank_version": "1.6.1-editorial.1",
+  "bank_sha256": "9ce1ca9d4a6fda79667b5e79c041a766572fe3c972fa949c7a87a2ed8db6c327",
+  "scope": "CTAL-TM triage; flags are not semantic verdicts",
+  "count": 200,
+  "guards": {
+    "length_bias": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 10] LENGTH_BIAS — pick-longest hit rate (limiar: > 40%)",
+        "  Cert           N    PT_hit%    EN_hit%",
+        "  CT-AI        200      94.0%      93.5%",
+        "  CTAL-TA      200      11.0%      12.0%",
+        "  CTAL-TM      200      87.0%      88.5%",
+        "  CTFL         300      24.7%      33.7%",
+        "  CTFL-AT      200      83.0%      83.5%",
+        "  → [FAIL] 6 cert/locale(s) acima do limiar:",
+        "      CT-AI/PT: 94.0% > 40% (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: 93.5% > 40% (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: 87.0% > 40%",
+        "      CTAL-TM/EN: 88.5% > 40%",
+        "      CTFL-AT/PT: 83.0% > 40% (LATENT — não bloqueia CI)",
+        "      CTFL-AT/EN: 83.5% > 40% (LATENT — não bloqueia CI)"
+      ]
+    },
+    "length_effect_size": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 11] LENGTH_EFFECT_SIZE — Cohen's d correct vs distractor (limiar: d > 0.50)",
+        "  Cert           N       PT_d       EN_d      PT_mΔ      EN_mΔ",
+        "  CT-AI        200      2.536      2.693       68.0       62.7",
+        "  CTAL-TA      200      0.120      0.123       12.0       11.9",
+        "  CTAL-TM      200      2.200      2.306      110.5      101.9",
+        "  CTFL         300      0.030      0.102        1.1        3.4",
+        "  CTFL-AT      200      1.596      1.622       56.2       49.7",
+        "  → [FAIL] 6 cert/locale(s) com d > 0.50:",
+        "      CT-AI/PT: d=2.536 > 0.50 (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: d=2.693 > 0.50 (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: d=2.200 > 0.50",
+        "      CTAL-TM/EN: d=2.306 > 0.50",
+        "      CTFL-AT/PT: d=1.596 > 0.50 (LATENT — não bloqueia CI)",
+        "      CTFL-AT/EN: d=1.622 > 0.50 (LATENT — não bloqueia CI)"
+      ]
+    },
+    "hedge_ratio": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 12] HEDGE_RATIO — correct_hedge% / distractor_hedge% (faixa ok: 0.5–2.0)",
+        "  Cert           N      PT(c%/d%→r)      EN(c%/d%→r)",
+        "  CT-AI        200    5.5/17.8→ 0.31    7.0/19.7→ 0.36",
+        "  CTAL-TA      200   22.0/14.2→ 1.55   22.0/14.8→ 1.48",
+        "  CTAL-TM      200   10.5/38.5→ 0.27   10.0/39.8→ 0.25",
+        "  CTFL         300    5.3/ 3.8→ 1.41    5.7/ 4.2→ 1.34",
+        "  CTFL-AT      200   12.5/23.5→ 0.53   13.5/25.3→ 0.53",
+        "  → [FAIL] 4 cert/locale(s) fora da faixa [0.5, 2.0]:",
+        "      CT-AI/PT: ratio=0.308 (correct=5.5%, distractor=17.8%) (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: ratio=0.356 (correct=7.0%, distractor=19.7%) (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: ratio=0.273 (correct=10.5%, distractor=38.5%)",
+        "      CTAL-TM/EN: ratio=0.251 (correct=10.0%, distractor=39.8%)"
+      ]
+    },
+    "answer_index_chi2": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 13] ANSWER_INDEX_CHI2 — goodness-of-fit vs uniforme (limiar: p < 0.010 para certs ≥ 50 Q)",
+        "  Cert           N    idx0    idx1    idx2    idx3      chi2     df        p",
+        "  CT-AI        200      36      61      60      43     9.320      3   0.0250",
+        "  CTAL-TA      200      52      54      48      46     0.800      3   0.8502",
+        "  CTAL-TM      200      50      50      50      50     0.000      3   1.0000",
+        "  CTFL         300      78      75      76      71     0.347      3   0.9466",
+        "  CTFL-AT      200      51      50      50      49     0.040      3   0.9943",
+        "  → [PASS] certs LIVE (CTAL-TA, CTAL-TM, CTFL) com n ≥ 50 têm p ≥ 0.010."
+      ]
+    },
+    "runs_test": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 14] RUNS_TEST — Wald-Wolfowitz sobre 'mesmo-anterior?' (limiar: z < -5.0)",
+        "  Cert           N     runs   expected         z  verdict",
+        "  CT-AI        200       61       57.4      0.91       ok (longest_same_run=4)",
+        "  CTAL-TA      200        3        3.0      0.10       ok (longest_same_run=2)",
+        "  CTAL-TM      200       52       98.1     -6.71     FAIL (longest_same_run=46)",
+        "  CTFL         300      104      134.1     -3.92       ok (longest_same_run=4)",
+        "  CTFL-AT      200        3        3.0      0.10       ok (longest_same_run=2)",
+        "  → [FAIL] 1 cert(s) com z < -5.0 (clustering detectado):",
+        "      CTAL-TM: z=-6.71 (runs=52, expected=98.1, longest_same_run=46)"
+      ]
+    },
+    "blueprint_match": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 15] BLUEPRINT_MATCH — drift capítulos vs meta.chapterWeights + validação K-levels",
+        "  [chapter-weight drift]",
+        "  Cert                       ch           exam_wt%    bank_act%      Δpp",
+        "  CT-AI      (sem chapterWeights no meta — skip com warning)",
+        "  CTAL-TA                   ch1             17.78%             18.00%    -0.22     ok",
+        "  CTAL-TA                   ch2              6.67%              7.00%    -0.33     ok",
+        "  CTAL-TA                   ch3             48.89%             49.00%    -0.11     ok",
+        "  CTAL-TA                   ch4              8.89%              9.00%    -0.11     ok",
+        "  CTAL-TA                   ch5             17.78%             17.00%     0.78     ok",
+        "  CTAL-TM                   ch1             52.00%             54.50%    -2.50     ok",
+        "  CTAL-TM                   ch2             30.00%             28.00%     2.00     ok",
+        "  CTAL-TM                   ch3             18.00%             17.50%     0.50     ok",
+        "  CTFL                      ch1             20.00%             20.00%     0.00     ok",
+        "  CTFL                      ch2             15.00%             12.67%     2.33     ok",
+        "  CTFL                      ch3             10.00%             12.67%    -2.67     ok",
+        "  CTFL                      ch4             27.50%             27.33%     0.17     ok",
+        "  CTFL                      ch5             22.50%             22.33%     0.17     ok",
+        "  CTFL                      ch6              5.00%              5.00%     0.00     ok",
+        "  CTFL-AT    (sem chapterWeights no meta — skip com warning)",
+        "  [K-level validation]",
+        "  Cert                   declared              present  verdict",
+        "  CT-AI               K1,K2,K3,K4          K1,K2,K3,K4       ok",
+        "  CTAL-TA                K2,K3,K4             K2,K3,K4       ok",
+        "  CTAL-TM                K2,K3,K4             K2,K3,K4       ok",
+        "  CTFL                   K1,K2,K3             K1,K2,K3       ok",
+        "  CTFL-AT                K1,K2,K3             K1,K2,K3       ok",
+        "  → [PASS] certs LIVE (CTAL-TA, CTAL-TM, CTFL) com chapterWeights dentro de ±15pp e K-levels consistentes."
+      ]
+    },
+    "letter_pattern": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 16] LETTER_PATTERN — exp cita letra A-D fixa (shuffle não-seedado em bank.js)",
+        "  0 suspeita(s) total | 30 na baseline | 0 NOVA(S)",
+        "  → [PASS] nenhuma suspeita nova fora da baseline."
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "ctaltm-01",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "READ_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            51,
+            43,
+            50,
+            65
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            54,
+            39,
+            51,
+            61
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-02",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            84,
+            103,
+            106,
+            93
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            78,
+            96,
+            89,
+            95
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-03",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            94,
+            79,
+            87,
+            86
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            80,
+            73,
+            81,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-04",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            89,
+            85,
+            70
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            81,
+            84,
+            83,
+            71
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-05",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "READ_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            18,
+            22,
+            21,
+            16
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            15,
+            15,
+            13,
+            13
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-06",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "READ_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            17,
+            28,
+            49,
+            29
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            18,
+            26,
+            49,
+            30
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-07",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            101,
+            94,
+            88,
+            90
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            79,
+            75,
+            80,
+            83
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-08",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            105,
+            100,
+            98,
+            82
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            98,
+            93,
+            89,
+            85
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-09",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "READ_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            43,
+            44,
+            45,
+            44
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            38,
+            41,
+            40,
+            40
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-10",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            93,
+            76,
+            94,
+            85
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            78,
+            67,
+            84,
+            64
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-11",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            108,
+            101,
+            101,
+            101
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            99,
+            98,
+            90,
+            91
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-12",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "REVISED_AWAITING_SECOND_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            101,
+            99,
+            91,
+            88
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            81,
+            88,
+            86,
+            74
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-13",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            204,
+            116,
+            80,
+            104
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            166,
+            112,
+            71,
+            92
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-14",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            115,
+            217,
+            131,
+            98
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            91,
+            213,
+            105,
+            83
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-15",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            68,
+            123,
+            214,
+            102
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            42,
+            102,
+            202,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-16",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            129,
+            110,
+            87,
+            213
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            114,
+            103,
+            76,
+            182
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-17",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            86,
+            183,
+            109,
+            116
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            79,
+            163,
+            90,
+            95
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-18",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            171,
+            247,
+            185,
+            133
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            146,
+            231,
+            150,
+            107
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-19",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            125,
+            120,
+            356,
+            105
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            106,
+            110,
+            305,
+            88
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-20",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            93,
+            91,
+            63,
+            208
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            91,
+            87,
+            53,
+            180
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-21",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            84,
+            86,
+            77
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            71,
+            76,
+            65,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-22",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            58,
+            18,
+            56,
+            72
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            46,
+            14,
+            60,
+            69
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-23",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            58,
+            48,
+            155,
+            47
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            60,
+            51,
+            146,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-24",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            43,
+            42,
+            43,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            40,
+            46,
+            42,
+            59
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-25",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            34,
+            89,
+            89,
+            28
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            28,
+            76,
+            76,
+            23
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-26",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            88,
+            159,
+            59,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            68,
+            139,
+            62,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-27",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            111,
+            94,
+            211,
+            83
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            103,
+            72,
+            198,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-28",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            84,
+            59,
+            65,
+            203
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            69,
+            54,
+            58,
+            184
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-29",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            91,
+            62,
+            78,
+            237
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            80,
+            65,
+            66,
+            218
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-30",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            45,
+            39,
+            32,
+            33
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            45,
+            39,
+            32,
+            33
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-31",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            69,
+            53,
+            90,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            41,
+            80,
+            55
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-32",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            75,
+            72,
+            43,
+            176
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            65,
+            70,
+            33,
+            169
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-33",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            123,
+            98,
+            79,
+            138
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            106,
+            75,
+            71,
+            114
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-34",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            76,
+            272,
+            61,
+            64
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            63,
+            254,
+            59,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-35",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            78,
+            92,
+            174,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            76,
+            75,
+            173,
+            63
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-36",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            79,
+            59,
+            57,
+            80
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            61,
+            57,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-37",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            75,
+            37,
+            35,
+            167
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            31,
+            38,
+            134
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-38",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            32,
+            58,
+            63,
+            52
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            20,
+            54,
+            50,
+            55
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-39",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            60,
+            49,
+            121,
+            51
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            51,
+            48,
+            120,
+            47
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-40",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            65,
+            73,
+            40,
+            136
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            66,
+            61,
+            39,
+            140
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-41",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            62,
+            80,
+            33,
+            74
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            57,
+            76,
+            40,
+            68
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-42",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            53,
+            156,
+            26,
+            33
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            56,
+            149,
+            34,
+            31
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-43",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            96,
+            61,
+            214,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            83,
+            55,
+            186,
+            52
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-44",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            61,
+            66,
+            47,
+            115
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            65,
+            62,
+            50,
+            97
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-45",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            100,
+            71,
+            60,
+            103
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            84,
+            54,
+            45,
+            88
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-46",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            58,
+            117,
+            68,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            54,
+            104,
+            50,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-47",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            26,
+            21,
+            47,
+            67
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            21,
+            17,
+            38,
+            59
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-48",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            24,
+            41,
+            21,
+            49
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            22,
+            39,
+            18,
+            37
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-49",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            51,
+            56,
+            40,
+            210
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            49,
+            52,
+            40,
+            206
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-50",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            31,
+            177,
+            45,
+            53
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            29,
+            159,
+            39,
+            55
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-51",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            24,
+            10,
+            105,
+            44
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            26,
+            10,
+            116,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-52",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            57,
+            51,
+            45,
+            108
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            45,
+            41,
+            91
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-53",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            79,
+            90,
+            89,
+            186
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            64,
+            79,
+            90,
+            131
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-54",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            55,
+            141,
+            87,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            48,
+            136,
+            68,
+            42
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-55",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            19,
+            20,
+            19,
+            22
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            15,
+            15,
+            15,
+            12
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-56",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            40,
+            30,
+            35,
+            64
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            33,
+            29,
+            27,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-57",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            35,
+            29,
+            48,
+            82
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            28,
+            23,
+            41,
+            82
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-58",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            80,
+            176,
+            80,
+            64
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            76,
+            180,
+            62,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-59",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            50,
+            46,
+            180,
+            25
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            42,
+            48,
+            164,
+            18
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-60",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            83,
+            65,
+            255
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            65,
+            75,
+            69,
+            222
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-61",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            89,
+            53,
+            92,
+            225
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            71,
+            46,
+            71,
+            215
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-62",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            39,
+            140,
+            50,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            27,
+            132,
+            43,
+            37
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-63",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            99,
+            111,
+            229,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            90,
+            90,
+            205,
+            60
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-64",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            65,
+            56,
+            52,
+            217
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            61,
+            42,
+            50,
+            198
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-65",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            97,
+            89,
+            65,
+            132
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            80,
+            64,
+            52,
+            117
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-66",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            50,
+            134,
+            62,
+            84
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            43,
+            133,
+            54,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-67",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            59,
+            51,
+            259,
+            77
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            54,
+            235,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-68",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            58,
+            60,
+            74,
+            145
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            56,
+            52,
+            62,
+            124
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-69",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            64,
+            75,
+            52,
+            115
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            62,
+            59,
+            43,
+            108
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-70",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            86,
+            294,
+            76,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            65,
+            234,
+            58,
+            44
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-71",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            56,
+            60,
+            208,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            44,
+            46,
+            205,
+            57
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-72",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            60,
+            91,
+            63,
+            193
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            74,
+            48,
+            163
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-73",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            76,
+            74,
+            80,
+            189
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            79,
+            62,
+            69,
+            177
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-74",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            220,
+            76,
+            87
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            66,
+            225,
+            58,
+            69
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-75",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            79,
+            62,
+            205,
+            47
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            60,
+            51,
+            177,
+            39
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-76",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            81,
+            110,
+            74,
+            214
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            69,
+            83,
+            70,
+            174
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-77",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            50,
+            64,
+            42,
+            215
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            47,
+            65,
+            37,
+            195
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-78",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            52,
+            168,
+            68,
+            77
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            46,
+            165,
+            68,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-79",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            52,
+            50,
+            196,
+            39
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            58,
+            36,
+            192,
+            42
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-80",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            47,
+            78,
+            64,
+            208
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            39,
+            64,
+            51,
+            196
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-81",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            41,
+            75,
+            42,
+            146
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            37,
+            68,
+            32,
+            130
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-82",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            48,
+            247,
+            50,
+            43
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            52,
+            221,
+            47,
+            44
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-83",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            49,
+            74,
+            57,
+            34
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            38,
+            72,
+            63,
+            38
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-84",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            62,
+            73,
+            77,
+            157
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            56,
+            68,
+            73,
+            148
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-85",
+      "chapter": 3,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            86,
+            86,
+            78,
+            311
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            69,
+            71,
+            67,
+            306
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-86",
+      "chapter": 3,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            53,
+            315,
+            55,
+            39
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            57,
+            251,
+            50,
+            35
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-87",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            94,
+            84,
+            257,
+            78
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            89,
+            90,
+            237,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-88",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            67,
+            68,
+            39,
+            188
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            54,
+            67,
+            36,
+            161
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-89",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            52,
+            58,
+            70,
+            108
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            44,
+            57,
+            54,
+            97
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-90",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            73,
+            169,
+            87,
+            72
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            68,
+            171,
+            71,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-91",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            72,
+            80,
+            270,
+            44
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            63,
+            68,
+            244,
+            45
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-92",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            63,
+            63,
+            63,
+            63
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            50,
+            50,
+            50,
+            50
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-93",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            61,
+            84,
+            54,
+            164
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            57,
+            72,
+            49,
+            166
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-94",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            62,
+            231,
+            53,
+            51
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            61,
+            233,
+            53,
+            46
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-95",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            75,
+            76,
+            94,
+            84
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            55,
+            57,
+            81,
+            62
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-96",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            73,
+            60,
+            46,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            48,
+            45,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-97",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            19,
+            19,
+            25,
+            25
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            16,
+            15,
+            22,
+            22
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-98",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            6,
+            79,
+            6,
+            7
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            6,
+            78,
+            6,
+            7
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-99",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            39,
+            30,
+            102,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            39,
+            35,
+            90,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-100",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            63,
+            62,
+            66,
+            221
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            59,
+            60,
+            60,
+            217
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-101",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            150,
+            149,
+            170,
+            174
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            126,
+            150,
+            131,
+            138
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-102",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            208,
+            104,
+            73,
+            121
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            208,
+            87,
+            74,
+            129
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-103",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            120,
+            73,
+            61,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            127,
+            66,
+            65,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-104",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            111,
+            78,
+            78,
+            91
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            103,
+            72,
+            79,
+            72
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-105",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            154,
+            70,
+            84,
+            91
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            147,
+            57,
+            70,
+            80
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-106",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            261,
+            88,
+            109,
+            87
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            249,
+            79,
+            93,
+            84
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-107",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            207,
+            102,
+            111,
+            112
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            174,
+            103,
+            92,
+            100
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-108",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            182,
+            99,
+            100,
+            115
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            151,
+            83,
+            83,
+            108
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-109",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            175,
+            85,
+            83,
+            127
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            172,
+            79,
+            79,
+            102
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-110",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            242,
+            94,
+            86,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            210,
+            76,
+            85,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-111",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            273,
+            109,
+            90,
+            125
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            249,
+            87,
+            85,
+            109
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-112",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            167,
+            108,
+            101,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            168,
+            84,
+            96,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-113",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            214,
+            91,
+            69,
+            96
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            180,
+            80,
+            74,
+            83
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-114",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            197,
+            95,
+            89,
+            100
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            175,
+            97,
+            89,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-115",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            244,
+            71,
+            83,
+            114
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            216,
+            56,
+            69,
+            89
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-116",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            234,
+            75,
+            77,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            228,
+            69,
+            67,
+            63
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-117",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            191,
+            102,
+            67,
+            99
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            171,
+            80,
+            73,
+            104
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-118",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            478,
+            125,
+            121,
+            118
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            415,
+            114,
+            101,
+            110
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-119",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            507,
+            172,
+            107,
+            123
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            463,
+            137,
+            95,
+            110
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-120",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            240,
+            73,
+            104,
+            92
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            217,
+            65,
+            93,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-121",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            191,
+            103,
+            72,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            177,
+            93,
+            68,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-122",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            174,
+            39,
+            64,
+            89
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            152,
+            41,
+            65,
+            88
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-123",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            67,
+            55,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            70,
+            66,
+            55,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-124",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            200,
+            89,
+            82,
+            88
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            199,
+            76,
+            78,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-125",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            195,
+            73,
+            81,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            173,
+            80,
+            83,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-126",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            334,
+            102,
+            110,
+            120
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            315,
+            100,
+            112,
+            109
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-127",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            279,
+            180,
+            85,
+            87
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            239,
+            148,
+            77,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-128",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            306,
+            159,
+            106,
+            84
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            277,
+            146,
+            90,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-129",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            319,
+            89,
+            119,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            282,
+            79,
+            109,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-130",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            180,
+            76,
+            85,
+            57
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            184,
+            73,
+            74,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-131",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            209,
+            71,
+            52,
+            60
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            191,
+            59,
+            44,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-132",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            167,
+            77,
+            77,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            159,
+            71,
+            77,
+            77
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-133",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            153,
+            98,
+            125,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            141,
+            91,
+            109,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-134",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            234,
+            70,
+            97,
+            78
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            222,
+            63,
+            90,
+            70
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-135",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            180,
+            74,
+            88,
+            78
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            180,
+            71,
+            87,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-136",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            59,
+            51,
+            61,
+            38
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            43,
+            49,
+            59,
+            41
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-137",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            200,
+            43,
+            51,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            181,
+            40,
+            51,
+            59
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-138",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            115,
+            45,
+            45,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            117,
+            43,
+            46,
+            60
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-139",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            125,
+            47,
+            64,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            132,
+            50,
+            64,
+            59
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-140",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            175,
+            107,
+            66,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            168,
+            99,
+            71,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-141",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            187,
+            119,
+            48,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            160,
+            101,
+            47,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-142",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            155,
+            51,
+            37,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            146,
+            55,
+            46,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-143",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            167,
+            63,
+            65,
+            62
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            172,
+            63,
+            57,
+            51
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-144",
+      "chapter": 1,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            272,
+            70,
+            61,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            227,
+            64,
+            52,
+            81
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-145",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            218,
+            121,
+            44,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            199,
+            91,
+            52,
+            76
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-146",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 0,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            163,
+            81,
+            78,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            136,
+            69,
+            75,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-147",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            84,
+            188,
+            75,
+            91
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            168,
+            66,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-148",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            55,
+            164,
+            86,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            52,
+            145,
+            74,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-149",
+      "chapter": 1,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            150,
+            360,
+            131,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            144,
+            312,
+            111,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-150",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            66,
+            135,
+            45,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            64,
+            131,
+            48,
+            55
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-151",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            32,
+            105,
+            50,
+            23
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            20,
+            111,
+            41,
+            20
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-152",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            69,
+            200,
+            62,
+            109
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            52,
+            179,
+            40,
+            96
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-153",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            66,
+            167,
+            75,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            64,
+            172,
+            81,
+            45
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-154",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            42,
+            184,
+            47,
+            80
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            46,
+            170,
+            48,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-155",
+      "chapter": 1,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            115,
+            213,
+            116,
+            99
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            94,
+            181,
+            92,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-156",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            65,
+            113,
+            57,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            58,
+            96,
+            39,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-157",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            57,
+            98,
+            44,
+            40
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            64,
+            95,
+            43,
+            32
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-158",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            90,
+            160,
+            57,
+            52
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            84,
+            155,
+            56,
+            47
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-159",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            79,
+            268,
+            74,
+            63
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            66,
+            264,
+            75,
+            55
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-160",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            56,
+            260,
+            56,
+            81
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            51,
+            238,
+            47,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-161",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            102,
+            360,
+            131,
+            136
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            83,
+            328,
+            121,
+            110
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-162",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            85,
+            221,
+            113,
+            78
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            78,
+            182,
+            97,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-163",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            81,
+            286,
+            66,
+            61
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            78,
+            256,
+            51,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-164",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            42,
+            217,
+            35,
+            49
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            38,
+            200,
+            30,
+            43
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-165",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            203,
+            87,
+            74
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            73,
+            198,
+            77,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-166",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            93,
+            255,
+            60,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            84,
+            247,
+            51,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-167",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            67,
+            184,
+            49,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            168,
+            41,
+            47
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-168",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            100,
+            232,
+            77,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            93,
+            225,
+            69,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-169",
+      "chapter": 2,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            106,
+            376,
+            103,
+            52
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            87,
+            323,
+            84,
+            58
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-170",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            41,
+            47,
+            196,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            40,
+            40,
+            172,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-171",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            91,
+            63,
+            197,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            87,
+            55,
+            182,
+            56
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-172",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            93,
+            56,
+            229,
+            78
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            70,
+            45,
+            211,
+            67
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-173",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            76,
+            49,
+            243,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            64,
+            40,
+            214,
+            42
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-174",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            126,
+            124,
+            288,
+            99
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            100,
+            103,
+            255,
+            80
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-175",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            88,
+            84,
+            286,
+            50
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            64,
+            242,
+            48
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-176",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            55,
+            95,
+            226,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            50,
+            98,
+            201,
+            65
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-177",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            88,
+            78,
+            290,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            79,
+            76,
+            243,
+            52
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-178",
+      "chapter": 2,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            33,
+            46,
+            269,
+            46
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            27,
+            43,
+            222,
+            43
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-179",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            55,
+            57,
+            342,
+            70
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            50,
+            56,
+            297,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-180",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            86,
+            93,
+            293,
+            73
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            74,
+            69,
+            247,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-181",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            97,
+            64,
+            273,
+            110
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            78,
+            65,
+            218,
+            90
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-182",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            80,
+            55,
+            286,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            74,
+            50,
+            220,
+            79
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-183",
+      "chapter": 2,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            44,
+            37,
+            191,
+            57
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            38,
+            38,
+            186,
+            51
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-184",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            74,
+            82,
+            89,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            66,
+            85,
+            85,
+            65
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-185",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            74,
+            59,
+            72,
+            66
+          ],
+          "pick_longest_hits_answer": false,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            62,
+            61,
+            77,
+            63
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-186",
+      "chapter": 3,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            91,
+            90,
+            520,
+            102
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            71,
+            77,
+            472,
+            84
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-187",
+      "chapter": 3,
+      "kLevel": 4,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            105,
+            123,
+            429,
+            85
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            87,
+            95,
+            360,
+            77
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-188",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            32,
+            40,
+            151,
+            34
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            26,
+            33,
+            122,
+            27
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-189",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            70,
+            74,
+            145,
+            101
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            70,
+            62,
+            142,
+            114
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-190",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            71,
+            59,
+            129,
+            72
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            60,
+            51,
+            113,
+            71
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-191",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            84,
+            70,
+            234,
+            81
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            79,
+            66,
+            204,
+            59
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-192",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "study",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            76,
+            63,
+            135,
+            68
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            60,
+            54,
+            132,
+            53
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-193",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            79,
+            179,
+            75
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            66,
+            78,
+            167,
+            66
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-194",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 2,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            54,
+            69,
+            147,
+            55
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": true,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            47,
+            55,
+            150,
+            54
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-195",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            73,
+            57,
+            56,
+            210
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            71,
+            56,
+            63,
+            196
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-196",
+      "chapter": 3,
+      "kLevel": 2,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            58,
+            52,
+            54,
+            160
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        },
+        "en": {
+          "option_lengths": [
+            45,
+            43,
+            50,
+            155
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-197",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "study",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            77,
+            34,
+            60,
+            136
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            73,
+            35,
+            55,
+            141
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": []
+        }
+      }
+    },
+    {
+      "id": "ctaltm-198",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "study",
+      "answer": 1,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            111,
+            159,
+            95,
+            86
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            109,
+            148,
+            97,
+            76
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-199",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            70,
+            50,
+            50,
+            124
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            67,
+            48,
+            54,
+            119
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ctaltm-200",
+      "chapter": 3,
+      "kLevel": 3,
+      "pool": "exam",
+      "answer": 3,
+      "editorial_status": "PENDING_REVIEW",
+      "locales": {
+        "pt": {
+          "option_lengths": [
+            99,
+            88,
+            103,
+            426
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            0,
+            1,
+            2
+          ]
+        },
+        "en": {
+          "option_lengths": [
+            102,
+            91,
+            89,
+            390
+          ],
+          "pick_longest_hits_answer": true,
+          "correct_has_absolute_qualifier": false,
+          "distractors_with_absolute_qualifier": [
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

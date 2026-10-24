@@ -1,0 +1,322 @@
+{
+  "scope": "Simulation only; structural validation is not semantic approval",
+  "coverage": 188,
+  "statuses": {
+    "REVISED": 141,
+    "UNCHANGED": 10,
+    "INCONCLUSIVO": 26,
+    "REPAIR_PROPOSED": 11
+  },
+  "pending_semantic_decisions": [
+    {
+      "id": "ctaltm-39",
+      "status": "INCONCLUSIVO",
+      "reason": "O item original atribui 'defining the improvement program scope' a Establishing, mas a seção 1.5.1 coloca o acordo sobre objetivos e escopo em Initiating. Establishing prepara e prioriza o plano. Abaixo há reparo completo que preserva o índice 2; continua INCONCLUSIVO e depende de aprovação editorial do responsável."
+    },
+    {
+      "id": "ctaltm-51",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original usa uma taxonomia divergente. A reparação propõe a lista oficial no mesmo índice; permanece pendente de decisão do revisor."
+    },
+    {
+      "id": "ctaltm-52",
+      "status": "INCONCLUSIVO",
+      "reason": "O cenário original também cabia em evolução. A reparação acrescenta o critério econômico e a preservação dos dados que caracterizam aposentadoria; aguarda aprovação."
+    },
+    {
+      "id": "ctaltm-64",
+      "status": "INCONCLUSIVO",
+      "reason": "O enunciado original torna três fatores verdadeiros falsos por exclusividade e a explicação usa categorias divergentes. A reparação pergunta pela taxonomia oficial; aguarda decisão."
+    },
+    {
+      "id": "ctaltm-65",
+      "status": "INCONCLUSIVO",
+      "reason": "A seção identifica fatores, mas não determina a direção do efeito. A reparação pede a conclusão sustentada e mantém a resposta cautelosa no índice original; aguarda aprovação."
+    },
+    {
+      "id": "ctaltm-66",
+      "status": "INCONCLUSIVO",
+      "reason": "O original transforma uma inferência provável em regra. A reparação exige reestimativa condicionada ao trabalho afetado e ao retrabalho; permanece pendente."
+    },
+    {
+      "id": "ctaltm-67",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original adiciona bottom-up e priorização por risco não apresentados na seção. A reparação seleciona Wideband Delphi para contexto sequencial com especialistas; aguarda aprovação."
+    },
+    {
+      "id": "ctaltm-69",
+      "status": "INCONCLUSIVO",
+      "reason": "A sequência original acrescenta estados ausentes do fluxo simples e omite IN PROGRESS. A reparação usa a sequência oficial no mesmo índice; aguarda decisão."
+    },
+    {
+      "id": "ctaltm-70",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original exige centralização e integrações não previstas. A reparação combina práticas explícitas de fluxo, ferramenta, comunicação e atributos; permanece pendente."
+    },
+    {
+      "id": "ctaltm-77",
+      "status": "INCONCLUSIVO",
+      "reason": "O item atual trata uma lista extensa como universalmente essencial, enquanto o syllabus distingue quatro informações obrigatórias na maioria dos ambientes e orienta selecionar os demais dados conforme o contexto."
+    },
+    {
+      "id": "ctaltm-82",
+      "status": "INCONCLUSIVO",
+      "reason": "O syllabus não define taxa de chegada de defeitos nem permite inferir integração tardia, ambiente instável ou extensão do teste a partir da tendência isolada. O reparo usa explicitamente a métrica de defeitos reabertos prevista na seção."
+    },
+    {
+      "id": "ctaltm-84",
+      "status": "INCONCLUSIVO",
+      "reason": "O syllabus lista as atividades do enunciado como competência profissional. O gabarito atual acrescenta competência metodológica e a define como métodos e ferramentas, classificação não sustentada pelo texto oficial."
+    },
+    {
+      "id": "ctaltm-121",
+      "status": "INCONCLUSIVO",
+      "reason": "O original não fornece a regra que combina alta probabilidade e baixo impacto, portanto não determina nível nem esforço. A reparação explicita que a matriz acordada classifica a combinação como média; a aprovação dessa mudança permanece com o revisor."
+    },
+    {
+      "id": "ctaltm-122",
+      "status": "INCONCLUSIVO",
+      "reason": "O original nomeia 'test basis walkthrough', técnica ausente da lista oficial. A reparação descreve explicitamente um checklist aplicado aos requisitos, tornando o gabarito compatível com uma técnica listada; a mudança não está aprovada."
+    },
+    {
+      "id": "ctaltm-124",
+      "status": "INCONCLUSIVO",
+      "reason": "O original infere categoria média ou alta sem fornecer matriz ou cálculo. A reparação informa que a matriz acordada resulta em nível alto e passa a avaliar a interpretação desse resultado; a aprovação continua pendente."
+    },
+    {
+      "id": "ctaltm-125",
+      "status": "INCONCLUSIVO",
+      "reason": "O original chama de quantitativo o produto de escalas ordinais. A reparação explicita a ausência de dados estatisticamente válidos e pergunta pela interpretação adequada do escore; ela preserva o índice e segue pendente de decisão editorial."
+    },
+    {
+      "id": "ctaltm-132",
+      "status": "INCONCLUSIVO",
+      "reason": "O original atribui a 1.4.1 uma taxonomia de abordagens que a v3.0 não lista. A reparação pergunta como integrar a análise de riscos à estratégia, combinando corretamente 1.3 e 1.4.1; a decisão editorial permanece pendente."
+    },
+    {
+      "id": "ctaltm-136",
+      "status": "INCONCLUSIVO",
+      "reason": "O original usa 'Time-bound', enquanto a v3.0 define T como 'timely'. A reparação mantém o cenário e usa a terminologia oficial nas quatro alternativas; a alteração aguarda aprovação do revisor."
+    },
+    {
+      "id": "ctaltm-139",
+      "status": "INCONCLUSIVO",
+      "reason": "O original atribui estado futuro, lacunas e recomendações à fase Diagnosing, mas a v3.0 a descreve como avaliação do processo atual para identificar melhorias. A reparação alinha enunciado e alternativas às quatro fases pertinentes; aprovação pendente."
+    },
+    {
+      "id": "ctaltm-150",
+      "status": "INCONCLUSIVO",
+      "reason": "O cenário original admite evolução ou aposentadoria: mudanças de ambiente e decisões do fornecedor podem exigir evolução, e aposentadoria depende de os benefícios da troca superarem custos e riscos. A pergunta proposta adiciona essa evidência e continua sem aprovação."
+    },
+    {
+      "id": "ctaltm-151",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original lista cinco estágios divergentes dos quatro estágios oficiais. A proposta corrige pergunta e alternativas, mas permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-155",
+      "status": "INCONCLUSIVO",
+      "reason": "O syllabus não sustenta as alegações específicas sobre Kanban, limites de WIP e fluxo cumulativo. A proposta troca o cenário por modelo iterativo, conteúdo explicitamente comparado na seção, e permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-161",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original decreta que a versão não está pronta e sugere adiar correções críticas sem critérios de saída ou autoridade de risco. A proposta pede uma análise para decisão e permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-162",
+      "status": "INCONCLUSIVO",
+      "reason": "A recomendação original de liberar não é sustentada sem impacto dos três defeitos major e critérios de saída. A proposta explicita a ausência desses dados, orienta o relatório à decisão e permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-168",
+      "status": "INCONCLUSIVO",
+      "reason": "O original presume que juniores exigem mais tempo e pareamento, mas o syllabus estabelece habilidades e experiência como fatores sem conversão fixa. A proposta pergunta como refletir o mix e permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-170",
+      "status": "INCONCLUSIVO",
+      "reason": "O gabarito original coloca Deferred depois de Closed, embora Closed seja terminal, e combina estados em sequência ambígua. A proposta usa o fluxo ramificado oficial e permanece não aprovada."
+    },
+    {
+      "id": "ctaltm-173",
+      "status": "REPAIR_PROPOSED",
+      "reason": "Defeitos reabertos são tratados em 2.3.6 como informação para avaliar a qualidade da depuração; os critérios de aceite e a verificação unitária prescritos no original não constam em 2.3.2."
+    },
+    {
+      "id": "ctaltm-175",
+      "status": "REPAIR_PROPOSED",
+      "reason": "O original dizia que planejamento e refinamento substituem triagem e restringia reuniões a alta severidade; 2.3.3 condiciona formalidade e gatilhos ao contexto e exige documentar a decisão da equipe."
+    },
+    {
+      "id": "ctaltm-182",
+      "status": "REPAIR_PROPOSED",
+      "reason": "A distribuição 80/10/10 original não demonstrava contenção deficiente. O reparo acrescenta evidência de que níveis anteriores deixaram passar defeitos dentro de seus objetivos, tornando a ação do índice 2 justificável."
+    },
+    {
+      "id": "ctaltm-183",
+      "status": "REPAIR_PROPOSED",
+      "reason": "ODC e suas categorias não aparecem no syllabus v3.0. O reparo usa dados de classificação explicitamente previstos em 2.3.5 e pergunta seu uso para melhoria conforme 2.3.6."
+    },
+    {
+      "id": "ctaltm-186",
+      "status": "REPAIR_PROPOSED",
+      "reason": "O original prescrevia uma combinação específica de contratações que o contexto não tornava única e classificava capacidades de forma discutível. O reparo testa a análise de lacunas exigida pelo LO."
+    },
+    {
+      "id": "ctaltm-187",
+      "status": "REPAIR_PROPOSED",
+      "reason": "A resposta original misturava categorias de competência e tecnologias de forma não canônica. O reparo mantém o contexto, mas cobra a sequência de análise de habilidades em vez de uma taxonomia inventada."
+    },
+    {
+      "id": "ctaltm-188",
+      "status": "REPAIR_PROPOSED",
+      "reason": "Questionário de autoavaliação validado pelo gerente não é exemplo listado em 3.1.3. O reparo usa demonstração de tarefa típica, explicitamente prevista para avaliar competências profissional e metodológica."
+    },
+    {
+      "id": "ctaltm-189",
+      "status": "REPAIR_PROPOSED",
+      "reason": "Feedback 360 graus não é citado pelo syllabus. O reparo preserva o índice 2 com outra demonstração de tarefa prevista em 3.1.3 e fornece enunciado bilíngue completo."
+    },
+    {
+      "id": "ctaltm-191",
+      "status": "REPAIR_PROPOSED",
+      "reason": "O original atribuía ao syllabus uma tese sobre certificação e competência que ele não formula. O reparo pergunta pela abordagem de desenvolvimento realmente exemplificada: treinamento e educação."
+    },
+    {
+      "id": "ctaltm-195",
+      "status": "REPAIR_PROPOSED",
+      "reason": "Salário e condições não excluíam falhas em outros fatores de higiene. O reparo explicita higiene adequada e sinais de motivadores ausentes, tornando o índice 3 uma ação unívoca."
+    },
+    {
+      "id": "ctaltm-200",
+      "status": "REPAIR_PROPOSED",
+      "reason": "O original revelava a estimativa contrafactual de $1.500.000 dentro da resposta longa. O reparo move o dado para o enunciado e apresenta quatro cálculos paralelos."
+    }
+  ],
+  "guards": {
+    "length_bias": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 10] LENGTH_BIAS — pick-longest hit rate (limiar: > 40%)",
+        "  Cert           N    PT_hit%    EN_hit%",
+        "  CT-AI        200      94.0%      93.5%",
+        "  CTAL-TA      200      11.0%      12.0%",
+        "  CTAL-TM      200      44.5%      54.5%",
+        "  CTFL         300      24.7%      33.7%",
+        "  CTFL-AT      200      83.0%      83.5%",
+        "  → [FAIL] 6 cert/locale(s) acima do limiar:",
+        "      CT-AI/PT: 94.0% > 40% (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: 93.5% > 40% (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: 44.5% > 40%",
+        "      CTAL-TM/EN: 54.5% > 40%",
+        "      CTFL-AT/PT: 83.0% > 40% (LATENT — não bloqueia CI)",
+        "      CTFL-AT/EN: 83.5% > 40% (LATENT — não bloqueia CI)"
+      ]
+    },
+    "length_effect_size": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 11] LENGTH_EFFECT_SIZE — Cohen's d correct vs distractor (limiar: d > 0.50)",
+        "  Cert           N       PT_d       EN_d      PT_mΔ      EN_mΔ",
+        "  CT-AI        200      2.536      2.693       68.0       62.7",
+        "  CTAL-TA      200      0.120      0.123       12.0       11.9",
+        "  CTAL-TM      200      0.648      0.679       29.3       27.7",
+        "  CTFL         300      0.030      0.102        1.1        3.4",
+        "  CTFL-AT      200      1.596      1.622       56.2       49.7",
+        "  → [FAIL] 6 cert/locale(s) com d > 0.50:",
+        "      CT-AI/PT: d=2.536 > 0.50 (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: d=2.693 > 0.50 (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: d=0.648 > 0.50",
+        "      CTAL-TM/EN: d=0.679 > 0.50",
+        "      CTFL-AT/PT: d=1.596 > 0.50 (LATENT — não bloqueia CI)",
+        "      CTFL-AT/EN: d=1.622 > 0.50 (LATENT — não bloqueia CI)"
+      ]
+    },
+    "hedge_ratio": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 12] HEDGE_RATIO — correct_hedge% / distractor_hedge% (faixa ok: 0.5–2.0)",
+        "  Cert           N      PT(c%/d%→r)      EN(c%/d%→r)",
+        "  CT-AI        200    5.5/17.8→ 0.31    7.0/19.7→ 0.36",
+        "  CTAL-TA      200   22.0/14.2→ 1.55   22.0/14.8→ 1.48",
+        "  CTAL-TM      200    2.5/ 9.0→ 0.28    2.0/ 9.2→ 0.22",
+        "  CTFL         300    5.3/ 3.8→ 1.41    5.7/ 4.2→ 1.34",
+        "  CTFL-AT      200   12.5/23.5→ 0.53   13.5/25.3→ 0.53",
+        "  → [FAIL] 4 cert/locale(s) fora da faixa [0.5, 2.0]:",
+        "      CT-AI/PT: ratio=0.308 (correct=5.5%, distractor=17.8%) (LATENT — não bloqueia CI)",
+        "      CT-AI/EN: ratio=0.356 (correct=7.0%, distractor=19.7%) (LATENT — não bloqueia CI)",
+        "      CTAL-TM/PT: ratio=0.278 (correct=2.5%, distractor=9.0%)",
+        "      CTAL-TM/EN: ratio=0.218 (correct=2.0%, distractor=9.2%)"
+      ]
+    },
+    "answer_index_chi2": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 13] ANSWER_INDEX_CHI2 — goodness-of-fit vs uniforme (limiar: p < 0.010 para certs ≥ 50 Q)",
+        "  Cert           N    idx0    idx1    idx2    idx3      chi2     df        p",
+        "  CT-AI        200      36      61      60      43     9.320      3   0.0250",
+        "  CTAL-TA      200      52      54      48      46     0.800      3   0.8502",
+        "  CTAL-TM      200      50      50      50      50     0.000      3   1.0000",
+        "  CTFL         300      78      75      76      71     0.347      3   0.9466",
+        "  CTFL-AT      200      51      50      50      49     0.040      3   0.9943",
+        "  → [PASS] certs LIVE (CTAL-TA, CTAL-TM, CTFL) com n ≥ 50 têm p ≥ 0.010."
+      ]
+    },
+    "runs_test": {
+      "passed_for_live_certs": false,
+      "evidence": [
+        "[Guarda 14] RUNS_TEST — Wald-Wolfowitz sobre 'mesmo-anterior?' (limiar: z < -5.0)",
+        "  Cert           N     runs   expected         z  verdict",
+        "  CT-AI        200       61       57.4      0.91       ok (longest_same_run=4)",
+        "  CTAL-TA      200        3        3.0      0.10       ok (longest_same_run=2)",
+        "  CTAL-TM      200       52       98.1     -6.71     FAIL (longest_same_run=46)",
+        "  CTFL         300      104      134.1     -3.92       ok (longest_same_run=4)",
+        "  CTFL-AT      200        3        3.0      0.10       ok (longest_same_run=2)",
+        "  → [FAIL] 1 cert(s) com z < -5.0 (clustering detectado):",
+        "      CTAL-TM: z=-6.71 (runs=52, expected=98.1, longest_same_run=46)"
+      ]
+    },
+    "blueprint_match": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 15] BLUEPRINT_MATCH — drift capítulos vs meta.chapterWeights + validação K-levels",
+        "  [chapter-weight drift]",
+        "  Cert                       ch           exam_wt%    bank_act%      Δpp",
+        "  CT-AI      (sem chapterWeights no meta — skip com warning)",
+        "  CTAL-TA                   ch1             17.78%             18.00%    -0.22     ok",
+        "  CTAL-TA                   ch2              6.67%              7.00%    -0.33     ok",
+        "  CTAL-TA                   ch3             48.89%             49.00%    -0.11     ok",
+        "  CTAL-TA                   ch4              8.89%              9.00%    -0.11     ok",
+        "  CTAL-TA                   ch5             17.78%             17.00%     0.78     ok",
+        "  CTAL-TM                   ch1             52.00%             54.50%    -2.50     ok",
+        "  CTAL-TM                   ch2             30.00%             28.00%     2.00     ok",
+        "  CTAL-TM                   ch3             18.00%             17.50%     0.50     ok",
+        "  CTFL                      ch1             20.00%             20.00%     0.00     ok",
+        "  CTFL                      ch2             15.00%             12.67%     2.33     ok",
+        "  CTFL                      ch3             10.00%             12.67%    -2.67     ok",
+        "  CTFL                      ch4             27.50%             27.33%     0.17     ok",
+        "  CTFL                      ch5             22.50%             22.33%     0.17     ok",
+        "  CTFL                      ch6              5.00%              5.00%     0.00     ok",
+        "  CTFL-AT    (sem chapterWeights no meta — skip com warning)",
+        "  [K-level validation]",
+        "  Cert                   declared              present  verdict",
+        "  CT-AI               K1,K2,K3,K4          K1,K2,K3,K4       ok",
+        "  CTAL-TA                K2,K3,K4             K2,K3,K4       ok",
+        "  CTAL-TM                K2,K3,K4             K2,K3,K4       ok",
+        "  CTFL                   K1,K2,K3             K1,K2,K3       ok",
+        "  CTFL-AT                K1,K2,K3             K1,K2,K3       ok",
+        "  → [PASS] certs LIVE (CTAL-TA, CTAL-TM, CTFL) com chapterWeights dentro de ±15pp e K-levels consistentes."
+      ]
+    },
+    "letter_pattern": {
+      "passed_for_live_certs": true,
+      "evidence": [
+        "[Guarda 16] LETTER_PATTERN — exp cita letra A-D fixa (shuffle não-seedado em bank.js)",
+        "  0 suspeita(s) total | 30 na baseline | 0 NOVA(S)",
+        "  → [PASS] nenhuma suspeita nova fora da baseline."
+      ]
+    }
+  },
+  "canonical_bank_changed": false
+}

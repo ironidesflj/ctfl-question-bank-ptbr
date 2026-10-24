@@ -1,0 +1,51 @@
+{
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "sections": ["1.1.1", "1.1.2", "1.1.3", "1.2.1", "1.2.2", "1.2.3", "1.2.4"],
+  "reviewed_unchanged": ["ctaltm-01", "ctaltm-05", "ctaltm-06", "ctaltm-09"],
+  "updates": {
+    "ctaltm-02": {
+      "reason": "Substituir restrições absolutas por estratégias de planejamento comparáveis; preservar início antecipado e atualização contínua.",
+      "explanations": {
+        "en": "The best answer is 'Begin early, preferably before requirements identification, and revise as the project progresses'. Planning starts before implementation details are settled and evolves with the project. Waiting for design approval or execution readiness delays it unnecessarily. Starting early but freezing the plan also misses the need to adapt. See CTAL-TM v3.0, section 1.1.1.",
+        "pt": "A melhor resposta é 'Começar cedo, de preferência antes da identificação dos requisitos, e revisar conforme o projeto avança'. O planejamento começa antes de os detalhes de implementação estarem definidos e evolui com o projeto. Esperar a aprovação do design ou a prontidão da execução o atrasa desnecessariamente. Começar cedo e congelar o plano também ignora a necessidade de adaptação. Ver CTAL-TM v3.0, seção 1.1.1."
+      },
+      "en": ["Begin after design approval, then revise the plan as implementation progresses", "Begin early, preferably before requirements identification, and revise as the project progresses", "Begin when execution resources are ready, using requirement reviews to prepare the inputs", "Begin during requirements analysis, then retain that baseline while tracking changes in reports"],
+      "pt": ["Começar após a aprovação do design e revisar o plano conforme a implementação avança", "Começar cedo, de preferência antes da identificação dos requisitos, e revisar conforme o projeto avança", "Começar quando os recursos de execução estiverem prontos, preparando os insumos nas revisões de requisitos", "Começar na análise de requisitos e manter essa baseline, acompanhando mudanças nos relatórios"]
+    },
+    "ctaltm-03": {
+      "reason": "Nomear atividades na mesma estrutura; retirar definição explicativa excessiva apenas da resposta correta.",
+      "en": ["Test planning: establishing initial resource estimates and the baseline schedule", "Test completion: evaluating the outage and archiving the release testware", "Test control: implementing corrective actions to address deviations from the plan", "Test analysis: identifying test conditions from changes to the test basis"],
+      "pt": ["Planejamento de teste: estabelecer estimativas iniciais de recursos e a baseline do cronograma", "Conclusão do teste: avaliar a indisponibilidade e arquivar o testware da versão", "Controle de teste: implementar ações corretivas para tratar desvios em relação ao plano", "Análise de teste: identificar condições de teste a partir de mudanças na base de teste"]
+    },
+    "ctaltm-04": {
+      "reason": "Comparar pares de atividades sem pistas de duração, cargo exclusivo ou uma correta desproporcional.",
+      "en": ["Monitoring prioritizes corrective actions; control gathers evidence of deviations", "Monitoring selects test techniques; control derives test cases from those techniques", "Monitoring defines test objectives; control estimates the resources to achieve them", "Monitoring identifies deviations; control implements corrective actions"],
+      "pt": ["Monitoramento prioriza ações corretivas; controle reúne evidências de desvios", "Monitoramento seleciona técnicas de teste; controle deriva casos de teste dessas técnicas", "Monitoramento define objetivos de teste; controle estima os recursos para alcançá-los", "Monitoramento identifica desvios; controle implementa ações corretivas"]
+    },
+    "ctaltm-07": {
+      "reason": "Opções paralelas distinguem interesses dos stakeholders sem sobrecarregar a correta com quatro critérios.",
+      "en": ["They implement the product and use component test results to guide code changes", "They design test cases and use execution results to report testing progress", "They define the required quality and recommend coverage based on perceived risks", "They prepare production operations and evaluate service readiness before deployment"],
+      "pt": ["Eles implementam o produto e usam resultados de testes de componente para orientar mudanças no código", "Eles projetam casos de teste e usam resultados de execução para relatar o progresso dos testes", "Eles definem a qualidade requerida e recomendam cobertura com base nos riscos percebidos", "Eles preparam a operação em produção e avaliam a prontidão do serviço antes da implantação"]
+    },
+    "ctaltm-08": {
+      "reason": "Trocar equivalências absurdas entre equipes por descrições plausíveis de responsabilidades.",
+      "en": ["Operations contributes business acceptance priorities and determines the product purchase criteria", "Operations contributes test design techniques and prepares the functional test specifications", "Operations contributes implementation choices and designs the component test architecture", "Operations contributes non-functional requirements and assesses operational readiness"],
+      "pt": ["Operações contribui com prioridades de aceitação do negócio e determina os critérios de compra do produto", "Operações contribui com técnicas de design de teste e prepara as especificações de testes funcionais", "Operações contribui com escolhas de implementação e projeta a arquitetura dos testes de componente", "Operações contribui com requisitos não funcionais e avalia a prontidão operacional"]
+    },
+    "ctaltm-10": {
+      "reason": "Retirar distrator de salários e criar finalidades de gestão próximas, porém distintas da análise de stakeholders.",
+      "en": ["To estimate testing effort from the relative influence of the project sponsors", "To prioritize stakeholder involvement and manage their expectations", "To assign test design tasks according to each stakeholder's technical specialization", "To derive test case execution order from the reporting hierarchy"],
+      "pt": ["Para estimar o esforço de teste com base na influência relativa dos patrocinadores do projeto", "Para priorizar o envolvimento dos stakeholders e gerenciar suas expectativas", "Para atribuir tarefas de design de teste conforme a especialização técnica de cada stakeholder", "Para derivar a ordem de execução dos casos de teste a partir da hierarquia de reporte"]
+    },
+    "ctaltm-11": {
+      "reason": "Contrapor estratégias híbridas de gestão sem usar apenas, pular ou rapidez como pista óbvia.",
+      "en": ["Use sequential test governance across both streams, with sprint results consolidated at phase gates", "Use sprint-level test governance across both streams, with regulatory records assembled at release", "Adapt sequential and agile test management activities to the relevant parts of the project", "Manage each stream independently, reconciling their test strategies during final acceptance"],
+      "pt": ["Usar governança sequencial de teste nas duas frentes, consolidando resultados dos sprints nos marcos de fase", "Usar governança de teste por sprint nas duas frentes, reunindo os registros regulatórios na liberação", "Adaptar atividades sequenciais e ágeis de gerenciamento de teste às partes correspondentes do projeto", "Gerenciar cada frente de forma independente, conciliando suas estratégias de teste na aceitação final"]
+    },
+    "ctaltm-12": {
+      "reason": "Alternativas paralelas apresentam formas de planejamento concorrentes; remover extremos sem planejamento ou plano no fim.",
+      "en": ["It bases planning changes on release-level results rather than iteration feedback", "It preserves the initial project plan while recording sprint changes in progress reports", "It postpones scope revisions until the next release to stabilize the current iteration", "It updates test planning per iteration to incorporate changes and feedback"],
+      "pt": ["Ele fundamenta mudanças no planejamento nos resultados da versão, em vez do feedback de cada iteração", "Ele preserva o plano inicial do projeto e registra mudanças dos sprints nos relatórios de progresso", "Ele adia revisões de escopo para a próxima versão, a fim de estabilizar a iteração corrente", "Ele atualiza o planejamento de teste a cada iteração para incorporar mudanças e feedback"]
+    }
+  }
+}

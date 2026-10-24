@@ -1,86 +1,78 @@
-name: Sync question bank to ctfl-app
+name: Sync validated question bank to ctfl-app
 
 on:
   push:
     branches: [main]
     paths:
-      - "ctfl-questions-ptbr.json"
-      - "synapse-question-bank.json"
+      - "*.json"
+      - "check_alignment.py"
+      - "verify_sync.py"
+      - "test_sync_protection.py"
+      - "test_editorial_batch.py"
+      - "apply_editorial_batch.py"
+      - "editorial/*.json"
+      - ".github/workflows/sync-app.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-bank-to-app
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout bank repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           path: bank
-
-      - name: Checkout ctfl-app repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           repository: ironidesflj/ctfl-app
           token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
           path: app
-
-      - name: Detect which bank files changed
-        id: changed
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Test sync protections
+        working-directory: bank
+        run: python3 -m unittest test_sync_protection.py test_editorial_batch.py
+      - name: Reject downgrade and live metadata loss before copying
+        run: python3 bank/verify_sync.py bank app --check-current
+      - name: Block sync on canonical quality failures
+        working-directory: bank
         run: |
-          cd bank
-          # Diff the pushed commit against its parent to see which bank files changed
-          CHANGED_LEGACY=""
-          CHANGED_SYNAPSE=""
-          if git diff --name-only HEAD^ HEAD -- ctfl-questions-ptbr.json | grep -q .; then
-            CHANGED_LEGACY="1"
-          fi
-          if git diff --name-only HEAD^ HEAD -- synapse-question-bank.json | grep -q .; then
-            CHANGED_SYNAPSE="1"
-          fi
-          echo "legacy_changed=$CHANGED_LEGACY" >> $GITHUB_OUTPUT
-          echo "synapse_changed=$CHANGED_SYNAPSE" >> $GITHUB_OUTPUT
-          echo "Legacy file changed: ${CHANGED_LEGACY:-no}"
-          echo "Synapse file changed: ${CHANGED_SYNAPSE:-no}"
-
-      - name: Copy legacy bank JSON (if changed)
-        if: steps.changed.outputs.legacy_changed == '1'
-        run: cp bank/ctfl-questions-ptbr.json app/src/data/ctfl-questions-ptbr.json
-
-      - name: Copy synapse multi-cert bank JSON (if changed)
-        if: steps.changed.outputs.synapse_changed == '1'
-        run: cp bank/synapse-question-bank.json app/src/data/synapse-question-bank.json
-
-      - name: Verify checksums match source-of-truth
-        if: steps.changed.outputs.legacy_changed == '1' || steps.changed.outputs.synapse_changed == '1'
+          python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
+          python3 check_alignment.py --bank-file synapse-question-bank.json --threshold 0
+      - name: Copy canonical files and regenerate derived slices
         run: |
-          echo "=== Source (bank repo) checksums ==="
-          sha256sum bank/ctfl-questions-ptbr.json bank/synapse-question-bank.json 2>/dev/null || true
-          echo "=== Destination (app repo) checksums ==="
-          sha256sum app/src/data/ctfl-questions-ptbr.json app/src/data/synapse-question-bank.json 2>/dev/null || true
-
-      - name: Open PR in ctfl-app
-        if: steps.changed.outputs.legacy_changed == '1' || steps.changed.outputs.synapse_changed == '1'
+          cp bank/ctfl-questions-ptbr.json app/src/data/ctfl-questions-ptbr.json
+          cp bank/synapse-question-bank.json app/src/data/synapse-question-bank.json
+          cd app
+          node scripts/split-bank.mjs
+      - name: Enforce checksums and full slice equality
+        run: python3 bank/verify_sync.py bank app
+      - name: Verify app regression
+        working-directory: app
+        run: |
+          npm ci
+          npm run test -- --maxWorkers=4
+          npm run build
+      - name: Open reviewed sync PR
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.CTFL_APP_SYNC_TOKEN }}
           path: app
-          branch: sync/bank-update-${{ github.sha }}
-          title: "sync: atualiza banco de questões (origem: ctfl-question-bank-ptbr@${{ github.sha }})"
+          branch: sync/validated-bank
+          title: "sync: banco canônico validado"
           body: |
-            PR automático gerado por push no repo do banco.
-
-            **Arquivos atualizados:**
-            - `ctfl-questions-ptbr.json`: ${{ steps.changed.outputs.legacy_changed == '1' && '✅ alterado' || '— sem mudança' }}
-            - `synapse-question-bank.json`: ${{ steps.changed.outputs.synapse_changed == '1' && '✅ alterado' || '— sem mudança' }}
-
-            Commit de origem: ${{ github.event.head_commit.message }}
-
-            **Checklist de revisão:**
-            - [ ] Verificar que `bun run test` passa no app repo
-            - [ ] Verificar que `python check_alignment.py` passa no bank repo (incluindo os novos guards de viés)
-            - [ ] Confirmar que o pick-longest exploit caiu para ≤ 35% em CTFL e CTAL-TA
-            - [ ] Mergear manualmente — não há auto-merge configurado
-          commit-message: "sync: atualiza banco de questões a partir do banco (legacy + synapse)"
-
-      - name: No changes detected
-        if: steps.changed.outputs.legacy_changed != '1' && steps.changed.outputs.synapse_changed != '1'
-        run: echo "Nenhum arquivo de banco alterado neste push — nada a sincronizar."
+            Fonte: ironidesflj/ctfl-question-bank-ptbr@${{ github.sha }}.
+            Guardas canônicas com threshold zero, anti-downgrade,
+            checksums e fatias completas validados antes de abrir este PR.
+            Revisão e merge manuais obrigatórios; sem auto-merge.
+          commit-message: "sync: reconcile validated canonical bank and derived slices"

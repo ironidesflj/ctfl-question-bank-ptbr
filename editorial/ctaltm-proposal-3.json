@@ -1,0 +1,726 @@
+{
+  "range": [45, 76],
+  "source": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+  "reviews": [
+    {
+      "id": "ctaltm-45",
+      "status": "REVISED",
+      "section": "1.6.1",
+      "reason": "A correta era a mais longa e os três distratores eram caricaturas absolutas; a proposta compara estratégias de introdução plausíveis e preserva piloto, treinamento e rollout incremental.",
+      "answer": 3,
+      "en": [
+        "Complete a proof of concept, then deploy organization-wide without validating the tool in a project",
+        "Select the tool from a vendor demonstration, then define objective requirements during the rollout",
+        "Pilot technical compatibility, while postponing process adaptation and user training until after rollout",
+        "Run a pilot to validate requirements and process fit, then roll out incrementally with user training"
+      ],
+      "pt": [
+        "Concluir uma prova de conceito e depois implantar em toda a organização sem validar a ferramenta em um projeto",
+        "Selecionar a ferramenta com base em uma demonstração do fornecedor e definir requisitos objetivos durante a adoção",
+        "Pilotar a compatibilidade técnica, adiando a adaptação de processos e o treinamento até depois da adoção",
+        "Executar um piloto para validar requisitos e aderência aos processos e então adotar incrementalmente com treinamento"
+      ],
+      "explanations": {
+        "en": "Section 1.6.1 recommends a pilot project to validate selection criteria, requirements, and fit with existing processes. It also recommends training, coaching, or mentoring and an incremental rollout. A proof of concept, vendor demonstration, or narrowly technical pilot does not replace those adoption practices.",
+        "pt": "A seção 1.6.1 recomenda um projeto piloto para validar critérios de seleção, requisitos e aderência aos processos existentes. Também recomenda treinamento, coaching ou mentoria e adoção incremental. Uma prova de conceito, demonstração do fornecedor ou piloto apenas técnico não substitui essas práticas de adoção."
+      }
+    },
+    {
+      "id": "ctaltm-46",
+      "status": "REVISED",
+      "section": "1.6.1",
+      "reason": "A tradução continha o anglicismo incorreto “Avoidance” e os distratores eram inverossímeis; as opções agora distinguem práticas e estágios próximos do domínio.",
+      "answer": 1,
+      "en": [
+        "A proof-of-concept evaluation focused on deciding whether the candidate tool meets its requirements",
+        "A phased tool introduction combining a pilot, feedback, training, and incremental rollout",
+        "The acquisition stage, focused on assigning ownership and defining conventions for tool work products",
+        "The evolution stage, focused on modifying an established tool after environmental or business changes"
+      ],
+      "pt": [
+        "Uma avaliação de prova de conceito voltada a decidir se a ferramenta candidata atende aos requisitos",
+        "Uma introdução faseada da ferramenta, combinando piloto, feedback, treinamento e adoção incremental",
+        "O estágio de aquisição, voltado a atribuir propriedade e definir convenções para os produtos de trabalho da ferramenta",
+        "O estágio de evolução, voltado a modificar uma ferramenta estabelecida após mudanças ambientais ou de negócio"
+      ],
+      "explanations": {
+        "en": "The scenario combines the adoption practices in section 1.6.1: a pilot project, gathering information from actual use, training users, and rolling the tool out incrementally. It is broader than a proof of concept and does not describe acquisition or later evolution.",
+        "pt": "O cenário combina as práticas de adoção da seção 1.6.1: projeto piloto, coleta de informações do uso real, treinamento dos usuários e adoção incremental. É mais amplo que uma prova de conceito e não descreve aquisição nem evolução posterior."
+      }
+    },
+    {
+      "id": "ctaltm-47",
+      "status": "REVISED",
+      "section": "1.6.2",
+      "reason": "Os distratores “marketing” e “fora do escopo” eliminavam qualquer dúvida sem testar a distinção do syllabus; a proposta usa quatro perspectivas reais de decisão.",
+      "answer": 2,
+      "en": [
+        "Financial aspects, including acquisition, licensing, training, maintenance, and support costs",
+        "Regulation and security aspects, including compliance obligations and relevant tool certifications",
+        "Existing software landscape and integration aspects, including compatibility with the organization’s technologies",
+        "Stakeholder requirement aspects, including the functionality needed by the tool’s different users"
+      ],
+      "pt": [
+        "Aspectos financeiros, incluindo custos de aquisição, licenciamento, treinamento, manutenção e suporte",
+        "Aspectos de regulamentação e segurança, incluindo obrigações de conformidade e certificações relevantes da ferramenta",
+        "Aspectos do cenário de software existente e de integração, incluindo compatibilidade com as tecnologias da organização",
+        "Aspectos dos requisitos dos stakeholders, incluindo a funcionalidade necessária aos diferentes usuários da ferramenta"
+      ],
+      "explanations": {
+        "en": "Integration with CI/CD, supported languages, and operating-system compatibility concern how the tool fits the existing software landscape and technologies. Section 1.6.2 treats financial, regulatory and security, stakeholder requirement, and software-landscape considerations separately.",
+        "pt": "A integração com CI/CD, as linguagens suportadas e a compatibilidade com sistemas operacionais dizem respeito ao encaixe da ferramenta no cenário de software e nas tecnologias existentes. A seção 1.6.2 trata separadamente considerações financeiras, regulatórias e de segurança, de requisitos dos stakeholders e do cenário de software."
+      }
+    },
+    {
+      "id": "ctaltm-48",
+      "status": "REVISED",
+      "section": "1.6.2",
+      "reason": "A resposta correta acumulava exemplos enquanto os distratores eram rótulos vagos ou absolutistas; as alternativas agora representam dimensões comparáveis da decisão.",
+      "answer": 3,
+      "en": [
+        "Existing software landscape considerations concerning dependencies, preferred vendors, and integration constraints",
+        "Tool lifecycle considerations concerning acquisition, support and maintenance, evolution, and retirement",
+        "Tool metric considerations concerning execution status, requirements coverage, and defect information",
+        "Financial and stakeholder considerations concerning lifetime costs, supplier support, and effects on tool users"
+      ],
+      "pt": [
+        "Considerações do cenário de software existente relativas a dependências, fornecedores preferenciais e restrições de integração",
+        "Considerações do ciclo de vida relativas a aquisição, suporte e manutenção, evolução e aposentadoria",
+        "Considerações de métricas da ferramenta relativas a status de execução, cobertura de requisitos e informações de defeitos",
+        "Considerações financeiras e de stakeholders relativas a custos ao longo da vida, suporte do fornecedor e efeitos nos usuários"
+      ],
+      "explanations": {
+        "en": "Licensing and total lifetime cost are financial considerations, while supplier support and the effect on users belong to the organizational and stakeholder side of a tool decision. The other choices describe different syllabus topics rather than the concerns in the scenario.",
+        "pt": "Licenciamento e custo total ao longo da vida são considerações financeiras, enquanto suporte do fornecedor e efeito sobre os usuários pertencem ao lado organizacional e dos stakeholders da decisão. As demais opções descrevem outros tópicos do syllabus, não as preocupações do cenário."
+      }
+    },
+    {
+      "id": "ctaltm-49",
+      "status": "REVISED",
+      "section": "1.6.3",
+      "reason": "A correta era uma lista muito maior, e as erradas repetiam “only”; a proposta ancora o plano em perspectivas, custos, benefícios, riscos e interoperabilidade citados na seção.",
+      "answer": 3,
+      "en": [
+        "Acquisition price, feature count, vendor popularity, and deployment date, without recurring-cost or benefit analysis",
+        "User interface, project-lead preferences, initial training, and purchase approval, leaving support and operations unassessed",
+        "License model, proof-of-concept results, and tool features, assuming expected benefits and costs will remain stable",
+        "Stakeholder viewpoints, measurable benefits, recurring and non-recurring costs, opportunity costs, ROI risks, and interoperability"
+      ],
+      "pt": [
+        "Preço de aquisição, quantidade de recursos, popularidade do fornecedor e data de implantação, sem analisar custos recorrentes ou benefícios",
+        "Interface do usuário, preferências da liderança, treinamento inicial e aprovação de compra, sem avaliar suporte e operações",
+        "Modelo de licença, resultados da prova de conceito e recursos da ferramenta, supondo benefícios e custos estáveis",
+        "Perspectivas dos stakeholders, benefícios mensuráveis, custos recorrentes e não recorrentes, custos de oportunidade, riscos de ROI e interoperabilidade"
+      ],
+      "explanations": {
+        "en": "Section 1.6.3 calls for considering the viewpoints of management, support and operations, project leads, users, and operational staff. It also requires a cost-benefit view covering recurring, non-recurring, and opportunity costs, expected benefits, ROI risks, and cooperation among tools.",
+        "pt": "A seção 1.6.3 pede a consideração das perspectivas da direção, suporte e operações, líderes de projeto, usuários e equipe operacional. Também exige uma visão de custo-benefício que cubra custos recorrentes, não recorrentes e de oportunidade, benefícios esperados, riscos de ROI e cooperação entre ferramentas."
+      }
+    },
+    {
+      "id": "ctaltm-50",
+      "status": "REVISED",
+      "section": "1.6.3",
+      "reason": "Logotipo e folheto de marketing eram distratores de preenchimento; a proposta compara quatro critérios de seleção financeiramente plausíveis.",
+      "answer": 1,
+      "en": [
+        "Compare the tools’ license prices over three years and treat maintenance and staffing as project overhead",
+        "Compare ROI using recurring, non-recurring, and opportunity costs over the expected tool lifetime",
+        "Prefer the open-source tool because avoiding a license fee offsets the stated engineering effort",
+        "Prefer the commercial tool because its purchase price indicates lower long-term maintenance risk"
+      ],
+      "pt": [
+        "Comparar os preços de licença por três anos e tratar manutenção e pessoal como despesas gerais do projeto",
+        "Comparar o ROI usando custos recorrentes, não recorrentes e de oportunidade ao longo da vida esperada da ferramenta",
+        "Preferir a ferramenta open source porque evitar licença compensa o esforço de engenharia informado",
+        "Preferir a ferramenta comercial porque seu preço de compra indica menor risco de manutenção no longo prazo"
+      ],
+      "explanations": {
+        "en": "The license price alone does not represent the investment. Section 1.6.3 requires cost-benefit analysis across recurring costs such as maintenance, support, and ongoing training, non-recurring costs such as acquisition and integration, and opportunity costs over the tool’s lifetime.",
+        "pt": "O preço da licença isolado não representa o investimento. A seção 1.6.3 exige análise de custo-benefício com custos recorrentes, como manutenção, suporte e treinamento contínuo, custos não recorrentes, como aquisição e integração, e custos de oportunidade ao longo da vida da ferramenta."
+      }
+    },
+    {
+      "id": "ctaltm-51",
+      "status": "INCONCLUSIVO",
+      "section": "1.6.4",
+      "reason": "O gabarito nomeia “introdução, implantação e uso, suporte e manutenção, aposentadoria”, mas o syllabus define quatro estágios diferentes: aquisição, suporte e manutenção, evolução e aposentadoria. Proposta abaixo preserva o índice 2, porém a correção semântica precisa de aprovação humana.",
+      "answer": 2,
+      "en": [
+        "Evaluation, pilot operation, organizational deployment, and replacement",
+        "Purchase, configuration, continuous use, and license renewal",
+        "Acquisition, support and maintenance, evolution, and retirement",
+        "Selection, user training, test execution, and data disposal"
+      ],
+      "pt": [
+        "Avaliação, operação piloto, implantação organizacional e substituição",
+        "Compra, configuração, uso contínuo e renovação da licença",
+        "Aquisição, suporte e manutenção, evolução e aposentadoria",
+        "Seleção, treinamento de usuários, execução de testes e descarte de dados"
+      ],
+      "explanations": {
+        "en": "Section 1.6.4 explicitly defines the four tool lifecycle stages as acquisition, support and maintenance, evolution, and retirement. Pilot and rollout are introduction practices from section 1.6.1, not lifecycle stages in section 1.6.4.",
+        "pt": "A seção 1.6.4 define explicitamente os quatro estágios do ciclo de vida da ferramenta como aquisição, suporte e manutenção, evolução e aposentadoria. Piloto e adoção são práticas de introdução da seção 1.6.1, não estágios do ciclo de vida na seção 1.6.4."
+      }
+    },
+    {
+      "id": "ctaltm-52",
+      "status": "INCONCLUSIVO",
+      "section": "1.6.4",
+      "reason": "Suporte descontinuado e tecnologia antiga podem exigir evolução; aposentadoria só fica caracterizada quando a substituição supera custos e riscos e os dados são preservados. O enunciado não informa essa decisão. A proposta explicita a condição mantendo o índice 3.",
+      "answer": 3,
+      "en": [
+        "Acquisition, because ownership and conventions for a newly selected tool still need to be defined",
+        "Support and maintenance, because routine upkeep remains sufficient to sustain the current tool",
+        "Evolution, because the organization will adapt the current tool to changed technology and vendor conditions",
+        "Retirement, if replacement now offers greater benefits than costs and the tool’s data is preserved or archived"
+      ],
+      "pt": [
+        "Aquisição, porque ainda é preciso definir propriedade e convenções para uma ferramenta recém-selecionada",
+        "Suporte e manutenção, porque a manutenção rotineira ainda é suficiente para sustentar a ferramenta atual",
+        "Evolução, porque a organização adaptará a ferramenta atual às mudanças de tecnologia e do fornecedor",
+        "Aposentadoria, se a substituição agora oferecer mais benefícios que custos e os dados forem preservados ou arquivados"
+      ],
+      "explanations": {
+        "en": "Vendor and environmental changes may trigger evolution. Retirement applies at the end of the tool’s lifetime, when moving to a replacement offers more benefits and opportunities than costs and risks, with relevant data preserved or archived. The scenario suggests retirement but does not state that decision criterion.",
+        "pt": "Mudanças do fornecedor e do ambiente podem provocar evolução. A aposentadoria se aplica ao fim da vida da ferramenta, quando migrar para uma substituta oferece mais benefícios e oportunidades que custos e riscos, com os dados relevantes preservados ou arquivados. O cenário sugere aposentadoria, mas não informa esse critério de decisão."
+      }
+    },
+    {
+      "id": "ctaltm-53",
+      "status": "REVISED",
+      "section": "1.6.5",
+      "reason": "A correta reunia três métricas e era muito mais longa; os novos pares distinguem uso operacional da ferramenta de coleta e avaliação de métricas com estrutura paralela.",
+      "answer": 3,
+      "en": [
+        "Use a requirements tool to store requirement owners without evaluating coverage by passed and failed tests",
+        "Use a static analysis tool to list analyzed files without evaluating the reported code-complexity measures",
+        "Use a test management tool to assign test owners without evaluating planned and current execution status",
+        "Use a defect management tool to evaluate defect status, severity, priority, and density for test items"
+      ],
+      "pt": [
+        "Usar uma ferramenta de requisitos para armazenar responsáveis sem avaliar cobertura por testes aprovados e reprovados",
+        "Usar uma ferramenta de análise estática para listar arquivos sem avaliar as medidas reportadas de complexidade de código",
+        "Usar uma ferramenta de gerenciamento de teste para atribuir responsáveis sem avaliar status planejado e atual de execução",
+        "Usar uma ferramenta de defeitos para avaliar status, severidade, prioridade e densidade de defeitos dos itens de teste"
+      ],
+      "explanations": {
+        "en": "Section 1.6.5 identifies status, severity, priority, and defect density as defect-management-tool data that can support management and optimization. Merely storing or assigning records without evaluating the relevant measurements does not illustrate metric evaluation.",
+        "pt": "A seção 1.6.5 identifica status, severidade, prioridade e densidade de defeitos como dados de ferramentas de defeitos que podem apoiar gestão e otimização. Apenas armazenar ou atribuir registros sem avaliar as medições relevantes não ilustra avaliação de métricas."
+      }
+    },
+    {
+      "id": "ctaltm-54",
+      "status": "REVISED",
+      "section": "1.6.5",
+      "reason": "Os três distratores eram afirmações desqualificadoras e absolutas; a proposta contrasta usos e limitações plausíveis de métricas de ferramentas.",
+      "answer": 1,
+      "en": [
+        "They provide a current status snapshot, but do not support evaluation of changes or trends over time",
+        "They reveal trends in captured data, helping manage test effort and identify areas for optimization",
+        "They determine the corrective action directly, so the test manager need not interpret the metric in context",
+        "They primarily rank individual tester productivity, rather than supporting management of the overall test effort"
+      ],
+      "pt": [
+        "Elas fornecem um retrato do status atual, mas não apoiam a avaliação de mudanças ou tendências ao longo do tempo",
+        "Elas revelam tendências nos dados coletados, ajudando a gerenciar o esforço e identificar áreas de otimização",
+        "Elas determinam diretamente a ação corretiva, dispensando a interpretação contextual da métrica pelo gerente de teste",
+        "Elas classificam principalmente a produtividade individual, em vez de apoiar a gestão do esforço global de teste"
+      ],
+      "explanations": {
+        "en": "Tool data can be evaluated as current information or as a trend and can reduce collection effort. Section 1.6.5 says such data supports management of the overall test effort and identification of optimization areas; it does not make contextual interpretation or management judgment unnecessary.",
+        "pt": "Dados de ferramentas podem ser avaliados como informação atual ou tendência e podem reduzir o esforço de coleta. A seção 1.6.5 afirma que esses dados apoiam a gestão do esforço global e a identificação de áreas de otimização; eles não tornam desnecessários a interpretação contextual ou o julgamento gerencial."
+      }
+    },
+    {
+      "id": "ctaltm-55",
+      "status": "UNCHANGED",
+      "section": "2.1.1",
+      "reason": "O percentual de testes executados, aprovados e reprovados é explicitamente métrica de projeto; as quatro categorias são curtas, paralelas e sem pista relevante de comprimento ou absolutismo.",
+      "answer": 2
+    },
+    {
+      "id": "ctaltm-56",
+      "status": "REVISED",
+      "section": "2.1.1",
+      "reason": "A correta tinha explicação embutida e maior extensão; a proposta apresenta métricas nomeadas de extensão comparável e separa produto, projeto, processo e custo.",
+      "answer": 3,
+      "en": [
+        "Percentage of planned test cases executed by the milestone",
+        "Actual testing cost compared with the planned testing cost",
+        "Defect detection percentage for the testing process",
+        "Defect density measured for each module of the product"
+      ],
+      "pt": [
+        "Percentual dos casos de teste planejados executados até o marco",
+        "Custo real de teste comparado com o custo planejado",
+        "Percentual de detecção de defeitos do processo de teste",
+        "Densidade de defeitos medida em cada módulo do produto"
+      ],
+      "explanations": {
+        "en": "Product metrics measure product attributes. Defect density by module describes the concentration of defects in parts of the product. Execution progress and cost variance are project-management metrics, while defect detection percentage indicates testing-process effectiveness.",
+        "pt": "Métricas de produto medem atributos do produto. A densidade de defeitos por módulo descreve a concentração de defeitos em partes do produto. Progresso de execução e variação de custo são métricas de gestão do projeto, enquanto o percentual de detecção indica eficácia do processo de teste."
+      }
+    },
+    {
+      "id": "ctaltm-57",
+      "status": "REVISED",
+      "section": "2.1.1",
+      "reason": "A correta era a única alternativa que explicava sua categoria; todas as opções agora nomeiam uma métrica e seu objeto em construção paralela.",
+      "answer": 3,
+      "en": [
+        "Requirements coverage against the selected product requirements",
+        "Defect density across the product’s components",
+        "Actual testing cost against the project’s planned cost",
+        "Defect detection percentage for testing-process effectiveness"
+      ],
+      "pt": [
+        "Cobertura de requisitos em relação aos requisitos selecionados do produto",
+        "Densidade de defeitos nos componentes do produto",
+        "Custo real de teste em relação ao custo planejado do projeto",
+        "Percentual de detecção de defeitos para a eficácia do processo de teste"
+      ],
+      "explanations": {
+        "en": "Process metrics measure the capability of the testing process and the effectiveness or efficiency of testing. Section 2.1.1 explicitly identifies defect detection percentage as a metric for monitoring test effectiveness.",
+        "pt": "Métricas de processo medem a capacidade do processo de teste e a eficácia ou eficiência do teste. A seção 2.1.1 identifica explicitamente o percentual de detecção de defeitos como métrica para monitorar a eficácia do teste."
+      }
+    },
+    {
+      "id": "ctaltm-58",
+      "status": "REVISED",
+      "section": "2.1.2",
+      "reason": "A correta concentrava todo o conteúdo útil e os distratores usavam “only” ou uma finalidade absurda; a proposta compara usos gerenciais próximos.",
+      "answer": 1,
+      "en": [
+        "Use metrics at test completion to consolidate lessons learned, testware, and other completed-test information",
+        "Assess progress and exit criteria, then direct corrective actions such as reprioritizing tests or adjusting resources",
+        "Convert each metric deviation into a predefined action without reviewing its cause or project context",
+        "Use progress measures to revise the original test objectives in response to deviations from the plan"
+      ],
+      "pt": [
+        "Usar métricas na conclusão para consolidar lições aprendidas, testware e outras informações dos testes concluídos",
+        "Avaliar progresso e critérios de saída e então orientar correções, como repriorizar testes ou ajustar recursos",
+        "Converter cada desvio de métrica em uma ação predefinida sem examinar sua causa ou o contexto do projeto",
+        "Usar medidas de progresso para revisar os objetivos de teste em resposta a desvios do plano"
+      ],
+      "explanations": {
+        "en": "Test monitoring evaluates progress and fulfillment of exit criteria. Test control uses that information to guide corrective actions, including reprioritizing tests, reassessing entry or exit criteria, adjusting schedules, and adding resources where needed.",
+        "pt": "O monitoramento avalia o progresso e o atendimento aos critérios de saída. O controle usa essas informações para orientar ações corretivas, incluindo repriorizar testes, reavaliar critérios de entrada ou saída, ajustar cronogramas e acrescentar recursos quando necessário."
+      }
+    },
+    {
+      "id": "ctaltm-59",
+      "status": "REVISED",
+      "section": "2.1.2",
+      "reason": "Ignorar, liberar e demitir eram reações caricaturais; a proposta apresenta respostas gerenciais plausíveis e mantém a ação orientada por causa, risco, recursos e comunicação.",
+      "answer": 2,
+      "en": [
+        "Keep the current plan until the next milestone, then explain the schedule variance in the completion report",
+        "Reduce the remaining scope by dropping blocked and high-risk tests without reassessing the exit criteria",
+        "Analyze causes, reprioritize by risk, adjust schedule or resources as needed, and communicate the revised forecast",
+        "Treat the rising defect rate as evidence of effective testing and accelerate the release decision"
+      ],
+      "pt": [
+        "Manter o plano atual até o próximo marco e explicar a variação do cronograma no relatório de conclusão",
+        "Reduzir o escopo restante removendo testes bloqueados e de alto risco sem reavaliar os critérios de saída",
+        "Analisar causas, repriorizar por risco, ajustar cronograma ou recursos conforme necessário e comunicar a nova previsão",
+        "Tratar o aumento da taxa de defeitos como evidência de teste eficaz e acelerar a decisão de liberação"
+      ],
+      "explanations": {
+        "en": "The metrics show a significant deviation that calls for test control. Appropriate directives include reprioritizing tests when risks materialize, reassessing criteria, adjusting the schedule, and adding resources where needed, with the resulting status communicated to stakeholders.",
+        "pt": "As métricas mostram um desvio significativo que exige controle de teste. Diretrizes adequadas incluem repriorizar testes quando riscos se materializam, reavaliar critérios, ajustar o cronograma e acrescentar recursos quando necessário, comunicando o status resultante aos stakeholders."
+      }
+    },
+    {
+      "id": "ctaltm-60",
+      "status": "REVISED",
+      "section": "2.1.3",
+      "reason": "A correta era muito mais longa e as demais ocultavam informação de forma óbvia; as opções agora são relatórios parcialmente plausíveis com omissões distintas.",
+      "answer": 3,
+      "en": [
+        "Report execution status and the pass rate, while leaving open-defect severity and untested product risks to a later report",
+        "Report open defects by severity and priority, while omitting test progress and coverage of critical product risks",
+        "Report product-risk coverage and testing cost, while omitting blocked tests and the status of unresolved defects",
+        "Report progress, risk coverage, unresolved defects, effort and cost, and a justified recommendation tied to exit criteria"
+      ],
+      "pt": [
+        "Relatar status de execução e taxa de aprovação, deixando severidade dos defeitos abertos e riscos não testados para outro relatório",
+        "Relatar defeitos abertos por severidade e prioridade, omitindo progresso e cobertura dos riscos críticos do produto",
+        "Relatar cobertura de riscos do produto e custo de teste, omitindo testes bloqueados e status dos defeitos não resolvidos",
+        "Relatar progresso, cobertura de riscos, defeitos não resolvidos, esforço e custo, com recomendação justificada pelos critérios de saída"
+      ],
+      "explanations": {
+        "en": "A decision-enabling report should interpret the relevant test results rather than present an isolated favorable metric. Section 2.1.3 identifies product risks, defects, test progress, coverage, cost, and effort as reportable information and ties termination decisions to reported metrics and agreed exit criteria.",
+        "pt": "Um relatório que apoie decisões deve interpretar os resultados relevantes, não apresentar uma métrica favorável isolada. A seção 2.1.3 identifica riscos do produto, defeitos, progresso, cobertura, custo e esforço como informações reportáveis e vincula decisões de encerramento às métricas relatadas e aos critérios de saída acordados."
+      }
+    },
+    {
+      "id": "ctaltm-61",
+      "status": "REVISED",
+      "section": "2.1.3",
+      "reason": "A correta tinha o dobro do tamanho e uma alternativa dizia não enviar relatório; a proposta mantém quatro estratégias de comunicação com lacunas comparáveis.",
+      "answer": 3,
+      "en": [
+        "Send both groups the detailed defect log, without interpreting residual risk or the release implications",
+        "Send both groups the one-page decision summary, with links to metrics but no reproduction evidence",
+        "Prepare separate formats, but omit residual risk for executives and environment details for developers",
+        "Tailor an executive decision summary with residual risk and a developer report with reproducible failure details"
+      ],
+      "pt": [
+        "Enviar aos dois grupos o log detalhado de defeitos, sem interpretar risco residual ou implicações para a liberação",
+        "Enviar aos dois grupos o resumo decisório de uma página, com links para métricas mas sem evidências de reprodução",
+        "Preparar formatos separados, mas omitir risco residual dos executivos e detalhes de ambiente dos desenvolvedores",
+        "Adaptar um resumo executivo com risco residual e um relatório técnico com detalhes reproduzíveis das falhas"
+      ],
+      "explanations": {
+        "en": "Section 2.1.3 requires higher-level reporting to be tailored to the project context and stakeholder needs. Executives need concise decision-oriented risk and status information, while developers need actionable evidence sufficient to investigate and reproduce failures.",
+        "pt": "A seção 2.1.3 exige que relatórios de níveis mais altos sejam adaptados ao contexto do projeto e às necessidades dos stakeholders. Executivos precisam de informações concisas de risco e status voltadas à decisão, enquanto desenvolvedores precisam de evidência acionável para investigar e reproduzir falhas."
+      }
+    },
+    {
+      "id": "ctaltm-62",
+      "status": "REVISED",
+      "section": "2.2.1",
+      "reason": "A lista correta misturava fatores de outras seções e os distratores repetiam “only”; a proposta foca os elementos que 2.2.1 manda estimar e decompor.",
+      "answer": 1,
+      "en": [
+        "Estimate effort for test execution and derive duration and cost directly from that single value",
+        "Identify test levels, activities, and tasks, then estimate effort, duration, and cost under time-cost-quality constraints",
+        "Estimate calendar duration for milestones and treat people, tools, and infrastructure as external project assumptions",
+        "Set the testing budget first and identify the activities and work products after execution has started"
+      ],
+      "pt": [
+        "Estimar o esforço da execução e derivar duração e custo diretamente desse único valor",
+        "Identificar níveis, atividades e tarefas de teste e estimar esforço, duração e custo sob restrições de tempo-custo-qualidade",
+        "Estimar a duração de calendário dos marcos e tratar pessoas, ferramentas e infraestrutura como premissas externas",
+        "Definir primeiro o orçamento de teste e identificar atividades e produtos de trabalho após o início da execução"
+      ],
+      "explanations": {
+        "en": "Section 2.2.1 distinguishes effort, elapsed duration, and cost. It says to identify test levels, activities, and tasks before estimating the work and recognizes that testing is constrained by the project’s interdependent time, cost, and quality values.",
+        "pt": "A seção 2.2.1 distingue esforço, duração decorrida e custo. Ela orienta identificar níveis, atividades e tarefas de teste antes de estimar o trabalho e reconhece que o teste é limitado pelos valores interdependentes de tempo, custo e qualidade do projeto."
+      }
+    },
+    {
+      "id": "ctaltm-63",
+      "status": "REVISED",
+      "section": "2.2.1",
+      "reason": "Os distratores usavam regras absolutas facilmente descartáveis; as opções agora distinguem formas plausíveis de relacionar a subatividade de teste às restrições do projeto.",
+      "answer": 2,
+      "en": [
+        "Estimate testing as an independent subproject and reconcile its schedule and budget after project approval",
+        "Allocate a fixed share of the project estimate to testing, then fit test tasks within that allocation",
+        "Align the test estimate with project constraints because testing is a subactivity and time, cost, and quality interact",
+        "Base the test estimate on completed execution data and use the result to update the finished project estimate"
+      ],
+      "pt": [
+        "Estimar o teste como subprojeto independente e conciliar cronograma e orçamento após a aprovação do projeto",
+        "Destinar ao teste uma parcela fixa da estimativa do projeto e ajustar as tarefas a essa alocação",
+        "Alinhar a estimativa de teste às restrições do projeto porque teste é subatividade e tempo, custo e qualidade interagem",
+        "Basear a estimativa nos dados da execução concluída e usar o resultado para atualizar a estimativa do projeto encerrado"
+      ],
+      "explanations": {
+        "en": "Testing is often a subproject or subactivity of a larger project. Section 2.2.1 therefore requires its estimate to respect natural project constraints and the interdependence of time, cost, and quality rather than applying a fixed percentage or estimating in isolation.",
+        "pt": "O teste costuma ser um subprojeto ou subatividade de um projeto maior. A seção 2.2.1 exige que sua estimativa respeite as restrições naturais do projeto e a interdependência de tempo, custo e qualidade, em vez de aplicar um percentual fixo ou estimar isoladamente."
+      }
+    },
+    {
+      "id": "ctaltm-64",
+      "status": "INCONCLUSIVO",
+      "section": "2.2.2",
+      "reason": "O enunciado pergunta por “um fator”, mas as três erradas citam fatores reais e só ficam erradas pelo “only”; além disso, a explicação inventa quatro categorias, enquanto o syllabus lista produto, processo de desenvolvimento, pessoas, resultados de teste e contexto. A proposta mantém o índice 3 e usa a taxonomia oficial.",
+      "answer": 3,
+      "en": [
+        "The product’s market share, sales targets, and planned advertising channels",
+        "The organization’s reporting hierarchy, office capacity, and procurement calendar",
+        "The customer-acquisition cost, product price, and supplier marketing budget",
+        "The test basis and product, development process, people, test results, and test-context characteristics"
+      ],
+      "pt": [
+        "A participação de mercado do produto, metas de vendas e canais de publicidade planejados",
+        "A hierarquia de reporte da organização, capacidade do escritório e calendário de compras",
+        "O custo de aquisição de clientes, preço do produto e orçamento de marketing do fornecedor",
+        "As características da base e do produto, processo de desenvolvimento, pessoas, resultados de teste e contexto de teste"
+      ],
+      "explanations": {
+        "en": "Section 2.2.2 groups influences on test effort under product and test-basis characteristics, development process, people, test results, and test context. The original alternatives each named a genuine influence but made it artificially wrong by claiming exclusivity, and the original explanation used a different category scheme.",
+        "pt": "A seção 2.2.2 agrupa influências sobre o esforço em características do produto e da base de teste, processo de desenvolvimento, pessoas, resultados de teste e contexto de teste. As alternativas originais citavam influências reais e só se tornavam artificiosamente erradas pela exclusividade, enquanto a explicação usava outra classificação."
+      }
+    },
+    {
+      "id": "ctaltm-65",
+      "status": "INCONCLUSIVO",
+      "section": "2.2.2",
+      "reason": "O syllabus afirma que qualidade da base, habilidades, experiência e satisfação influenciam a estimativa, mas não determina que uma base madura e equipe experiente reduzam esforço. A direção depende do contexto. A proposta preserva o índice 3 e remove a causalidade não sustentada.",
+      "answer": 3,
+      "en": [
+        "Estimate higher effort on the assumption that experienced testers will identify more defects",
+        "Exclude team experience and test-basis quality because they do not affect test-effort estimation",
+        "Derive the effort from the approved budget and treat contextual factors as schedule inputs",
+        "Include both characteristics in the estimate, but derive their direction and magnitude from the project context"
+      ],
+      "pt": [
+        "Estimar esforço maior supondo que testadores experientes identificarão mais defeitos",
+        "Excluir experiência da equipe e qualidade da base porque não afetam a estimativa do esforço de teste",
+        "Derivar o esforço do orçamento aprovado e tratar fatores contextuais como entradas do cronograma",
+        "Incluir ambas as características na estimativa, mas derivar sua direção e magnitude do contexto do projeto"
+      ],
+      "explanations": {
+        "en": "The quality of the test basis and the skills and experience of the people involved are relevant estimation factors. Section 2.2.2 does not assign a universal positive or negative effect to them, so the estimate must use project-specific evidence rather than assume that effort will be lower.",
+        "pt": "A qualidade da base de teste e as habilidades e experiência das pessoas envolvidas são fatores relevantes. A seção 2.2.2 não lhes atribui efeito universal positivo ou negativo; a estimativa deve usar evidências específicas do projeto, sem presumir esforço menor."
+      }
+    },
+    {
+      "id": "ctaltm-66",
+      "status": "INCONCLUSIVO",
+      "section": "2.2.2",
+      "reason": "A seção não declara “alta taxa de mudanças” como categoria nem garante aumento; ela cita qualidade da base e volume de retrabalho, e 2.2.3 manda atualizar estimativas quando a informação muda. A proposta mantém o índice 1 com conclusão condicionada ao impacto observado.",
+      "answer": 1,
+      "en": [
+        "Keep the estimate unchanged because the original test basis remains the formal estimation baseline",
+        "Re-estimate the affected work; added analysis, implementation, execution, regression, or rework may increase effort",
+        "Reduce the estimate because later requirements provide more current information than the original test basis",
+        "Transfer the impact to the development estimate because requirement changes do not alter testing activities"
+      ],
+      "pt": [
+        "Manter a estimativa porque a base de teste original continua sendo a baseline formal da estimativa",
+        "Reestimar o trabalho afetado; análise, implementação, execução, regressão ou retrabalho adicionais podem aumentar o esforço",
+        "Reduzir a estimativa porque requisitos tardios fornecem informação mais atual que a base de teste original",
+        "Transferir o impacto para a estimativa de desenvolvimento porque mudanças de requisitos não alteram atividades de teste"
+      ],
+      "explanations": {
+        "en": "Test-basis quality and the amount of rework influence test effort, and estimates should be updated when information changes. Late requirements changes may therefore increase effort through affected test work, but the syllabus does not support an unconditional increase without assessing their scope and impact.",
+        "pt": "A qualidade da base de teste e o volume de retrabalho influenciam o esforço, e estimativas devem ser atualizadas quando a informação muda. Mudanças tardias podem aumentar o esforço pelo trabalho de teste afetado, mas o syllabus não sustenta aumento incondicional sem avaliar escopo e impacto."
+      }
+    },
+    {
+      "id": "ctaltm-67",
+      "status": "INCONCLUSIVO",
+      "section": "2.2.3",
+      "reason": "O gabarito mistura Wideband Delphi com bottom-up e priorização baseada em risco, abordagens que não aparecem nesta seção. Para SDLC sequencial e especialistas disponíveis, o exemplo oficial é Wideband Delphi. A proposta preserva o índice 2 e exige registrar premissas.",
+      "answer": 2,
+      "en": [
+        "Use ratio-based extrapolation from similar historical projects, documenting the ratios selected for the estimate",
+        "Use planning poker because its short sessions fit the fixed-price constraint of the sequential project",
+        "Use Wideband Delphi with the experienced team, document assumptions, and update the estimate as information changes",
+        "Use automation metrics from the unrelated project because metric-based techniques do not require comparable data"
+      ],
+      "pt": [
+        "Usar extrapolação por razões de projetos históricos semelhantes, documentando as razões escolhidas para a estimativa",
+        "Usar planning poker porque suas sessões curtas se ajustam à restrição de preço fixo do projeto sequencial",
+        "Usar Wideband Delphi com a equipe experiente, documentar premissas e atualizar a estimativa quando a informação mudar",
+        "Usar métricas de automação do projeto não relacionado porque técnicas métricas dispensam dados comparáveis"
+      ],
+      "explanations": {
+        "en": "Section 2.2.3 says ratio and extrapolation techniques rely on relevant historical data, which is unavailable here. Expert-based methods use available expertise, and the syllabus gives Wideband Delphi as an example for a sequential development model. Assumptions should be documented and estimates updated as information changes.",
+        "pt": "A seção 2.2.3 afirma que técnicas de razão e extrapolação dependem de dados históricos relevantes, ausentes no cenário. Métodos baseados em especialistas usam a expertise disponível, e o syllabus dá Wideband Delphi como exemplo para modelo sequencial. Premissas devem ser documentadas e a estimativa atualizada quando a informação mudar."
+      }
+    },
+    {
+      "id": "ctaltm-68",
+      "status": "REVISED",
+      "section": "2.2.3",
+      "reason": "Os distratores eram recusas ou palpites sem método; a proposta compara técnicas reais e vincula a disponibilidade de dados semelhantes à razão/extrapolação.",
+      "answer": 3,
+      "en": [
+        "Use Wideband Delphi and deliberately exclude the comparable historical data from the expert discussion",
+        "Use planning poker, giving team experience more weight than the project’s lifecycle and complexity",
+        "Use three-point estimation because historical data removes the need to assess uncertainty and variability",
+        "Use ratios or extrapolation from similar historical data, reviewed by experts with assumptions documented"
+      ],
+      "pt": [
+        "Usar Wideband Delphi e excluir deliberadamente os dados históricos comparáveis da discussão dos especialistas",
+        "Usar planning poker, dando mais peso à experiência da equipe que ao ciclo de vida e à complexidade",
+        "Usar estimativa de três pontos porque dados históricos eliminam a necessidade de avaliar incerteza e variabilidade",
+        "Usar razões ou extrapolação de dados históricos semelhantes, revisadas por especialistas e com premissas documentadas"
+      ],
+      "explanations": {
+        "en": "Section 2.2.3 states that ratio-based estimation and extrapolation rely on historical data from previous or similar projects. The available experts can review the result, while the assumptions underlying the estimate should be documented.",
+        "pt": "A seção 2.2.3 afirma que estimativas baseadas em razões e extrapolação dependem de dados históricos de projetos anteriores ou semelhantes. Os especialistas disponíveis podem revisar o resultado, e as premissas da estimativa devem ser documentadas."
+      }
+    },
+    {
+      "id": "ctaltm-69",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.1",
+      "reason": "A sequência do gabarito acrescenta Assigned e Verified, ausentes do fluxo simples oficial, e não usa IN PROGRESS. A proposta preserva o índice 3 e reproduz OPEN/NEW, IN PROGRESS, RESOLVED/FIXED e CLOSED, com ramos contextuais.",
+      "answer": 3,
+      "en": [
+        "OPEN or NEW, followed directly by CLOSED before analysis or confirmation testing",
+        "REJECTED, followed by IN PROGRESS, RESOLVED, and then OPEN as the terminal state",
+        "RESOLVED or FIXED, followed by IN PROGRESS, OPEN, and then a second analysis state",
+        "OPEN or NEW, then IN PROGRESS, RESOLVED or FIXED, and CLOSED, with contextual branches"
+      ],
+      "pt": [
+        "ABERTO ou NOVO, seguido diretamente por FECHADO antes da análise ou do teste de confirmação",
+        "REJEITADO, seguido por EM ANDAMENTO, RESOLVIDO e então ABERTO como estado terminal",
+        "RESOLVIDO ou CORRIGIDO, seguido por EM ANDAMENTO, ABERTO e então um segundo estado de análise",
+        "ABERTO ou NOVO, depois EM ANDAMENTO, RESOLVIDO ou CORRIGIDO e FECHADO, com ramos contextuais"
+      ],
+      "explanations": {
+        "en": "The simple workflow in section 2.3.1 uses OPEN (or NEW), IN PROGRESS, RESOLVED (or FIXED/READY FOR RETEST), and CLOSED. Context-specific extensions may include REJECTED, RE-OPENED, ACCEPTED, CLARIFICATION, or DEFERRED, and organizations may vary names and transition rules.",
+        "pt": "O fluxo simples da seção 2.3.1 usa ABERTO (ou NOVO), EM ANDAMENTO, RESOLVIDO (ou CORRIGIDO/PRONTO PARA RETESTE) e FECHADO. Extensões contextuais podem incluir REJEITADO, REABERTO, ACEITO, ESCLARECIMENTO ou ADIADO, e organizações podem variar nomes e regras de transição."
+      }
+    },
+    {
+      "id": "ctaltm-70",
+      "status": "INCONCLUSIVO",
+      "section": "2.3.1",
+      "reason": "A alternativa correta exige ferramenta centralizada, trilha de auditoria e integração com controle de versão, requisitos não estabelecidos em 2.3.1. O syllabus exige fluxo contextual, comunicação, suporte de ferramenta, equipe engajada e atributos de valor. A proposta mantém o índice 1.",
+      "answer": 1,
+      "en": [
+        "Centralize every decision in the tracking tool and replace triage communication with automated workflow transitions",
+        "Define a contextual workflow with ownership and transitions, combine tool support with communication, and collect valuable attributes",
+        "Use triage meetings as the complete defect record and update the tracking tool after the project closes",
+        "Require every available attribute at each transition so that no potentially useful defect data is omitted"
+      ],
+      "pt": [
+        "Centralizar toda decisão na ferramenta e substituir a comunicação da triagem por transições automatizadas do fluxo",
+        "Definir fluxo contextual com responsáveis e transições, combinar ferramenta com comunicação e coletar atributos de valor",
+        "Usar reuniões de triagem como registro completo e atualizar a ferramenta de defeitos após o encerramento do projeto",
+        "Exigir todos os atributos disponíveis em cada transição para não omitir nenhum dado potencialmente útil"
+      ],
+      "explanations": {
+        "en": "Effective defect management combines adequate tool support, communication, a well-defined workflow, and an engaged team. Section 2.3.1 also recommends clear ownership and transition rules and limiting required transition attributes to those that provide substantial value; it does not mandate the specific integrations asserted in the original answer.",
+        "pt": "O gerenciamento eficaz combina suporte adequado de ferramenta, comunicação, fluxo bem definido e equipe engajada. A seção 2.3.1 também recomenda responsáveis e regras de transição claras e limitar atributos obrigatórios aos que fornecem valor substancial; ela não exige as integrações específicas afirmadas no gabarito original."
+      }
+    },
+    {
+      "id": "ctaltm-71",
+      "status": "REVISED",
+      "section": "2.3.2",
+      "reason": "As três erradas repetiam “only” e a correta atribuía papéis não definidos pelo texto; a proposta reproduz a composição possível do comitê multifuncional e sua função decisória.",
+      "answer": 2,
+      "en": [
+        "The test organization, which owns the process and makes validity, priority, and closure decisions for every project",
+        "Development and suppliers, which decide fixes without representation from project or product management",
+        "A cross-functional committee with test management, development, suppliers, project or product management, and relevant stakeholders",
+        "The product owner, who decides validity and priority before asking the other roles to implement the decision"
+      ],
+      "pt": [
+        "A organização de teste, que possui o processo e decide validade, prioridade e encerramento em todos os projetos",
+        "Desenvolvimento e fornecedores, que decidem correções sem representação da gestão de projeto ou produto",
+        "Um comitê multifuncional com gestão de teste, desenvolvimento, fornecedores, gestão de projeto ou produto e stakeholders relevantes",
+        "O Product Owner, que decide validade e prioridade antes de pedir aos demais papéis que implementem a decisão"
+      ],
+      "explanations": {
+        "en": "Section 2.3.2 says a cross-functional team or defect management committee is generally responsible for project defects. It may include the test manager, development representatives, suppliers, project management, product management or the product owner, and other interested stakeholders.",
+        "pt": "A seção 2.3.2 afirma que uma equipe multifuncional ou comitê de gerenciamento de defeitos geralmente é responsável pelos defeitos do projeto. Ela pode incluir gerente de teste, representantes de desenvolvimento, fornecedores, gestão de projeto, gestão de produto ou Product Owner e outros stakeholders interessados."
+      }
+    },
+    {
+      "id": "ctaltm-72",
+      "status": "REVISED",
+      "section": "2.3.2",
+      "reason": "Os distratores negavam a participação de operações de modo absoluto; a proposta compara modelos de triagem e explicita por que operações é stakeholder relevante no cenário.",
+      "answer": 3,
+      "en": [
+        "Collect operations reports in the tool, while keeping prioritization within the existing test and development group",
+        "Ask the test manager to classify operations reports before the committee considers the remaining project defects",
+        "Review operations reports during the release retrospective and defer their prioritization until the next planning cycle",
+        "Include operations in cross-functional triage and assess validity, ownership, risk, cost, benefit, and priority together"
+      ],
+      "pt": [
+        "Coletar relatos de operações na ferramenta, mantendo a priorização no grupo atual de teste e desenvolvimento",
+        "Pedir ao gerente de teste que classifique relatos de operações antes de o comitê avaliar os demais defeitos",
+        "Revisar relatos de operações na retrospectiva da versão e adiar a priorização até o próximo ciclo de planejamento",
+        "Incluir operações na triagem multifuncional e avaliar em conjunto validade, responsável, risco, custo, benefício e prioridade"
+      ],
+      "explanations": {
+        "en": "The committee may include any stakeholders with an interest in the software under test. Because operations supplies relevant production-defect information in this scenario, excluding it prevents effective cross-functional decisions about validity, ownership, risk, cost, benefit, and priority.",
+        "pt": "O comitê pode incluir quaisquer stakeholders interessados no software em teste. Como operações fornece informações relevantes sobre defeitos de produção neste cenário, excluí-la impede decisões multifuncionais eficazes sobre validade, responsável, risco, custo, benefício e prioridade."
+      }
+    },
+    {
+      "id": "ctaltm-73",
+      "status": "REVISED",
+      "section": "2.3.3",
+      "reason": "As erradas eram absolutas e a correta afirmava que defeitos viram histórias de usuário, formulação não usada no syllabus; a proposta preserva leveza contextual e os gatilhos oficiais de registro.",
+      "answer": 3,
+      "en": [
+        "Create a formal defect report for each observed failure, including failures corrected immediately by a co-located team",
+        "Use informal exchange as the default, including for defects that require another team or supplier",
+        "Record unresolved defects in iteration notes and prioritize them separately from product-backlog items and user stories",
+        "Use context-sensitive lightweight management, formally report specified unresolved defects, and add iteration carryovers to the product backlog"
+      ],
+      "pt": [
+        "Criar relatório formal para cada falha observada, incluindo falhas corrigidas imediatamente por uma equipe colocalizada",
+        "Adotar a troca informal como padrão, inclusive para defeitos que exigem outra equipe ou fornecedor",
+        "Registrar defeitos não resolvidos nas notas da iteração e priorizá-los separadamente dos itens do backlog e histórias de usuário",
+        "Usar gestão leve conforme o contexto, relatar formalmente os casos não resolvidos previstos e levar pendências ao backlog do produto"
+      ],
+      "explanations": {
+        "en": "Agile defect management is often lightweight and less formal, but formal reports are still appropriate for blockers not fixed immediately, defects unresolved within the iteration, cross-team or supplier defects, and explicitly requested reports. Unresolved iteration defects commonly enter the product backlog for prioritization with other items.",
+        "pt": "O gerenciamento ágil costuma ser leve e menos formal, mas relatórios formais ainda são adequados para bloqueios não corrigidos de imediato, defeitos não resolvidos na iteração, casos entre equipes ou com fornecedor e relatos solicitados. Pendências da iteração normalmente entram no backlog do produto para priorização com outros itens."
+      }
+    },
+    {
+      "id": "ctaltm-74",
+      "status": "REVISED",
+      "section": "2.3.3",
+      "reason": "Três opções dependiam de “always/never”; a correta agora aplica diretamente a regra do syllabus para defeito que não pode ser resolvido na mesma iteração.",
+      "answer": 1,
+      "en": [
+        "Close the defect without a report because the remaining sprint time is insufficient for confirmation testing",
+        "If it cannot be resolved in the iteration, create a report and add it to the product backlog with appropriate priority",
+        "Record it in the sprint-review notes and keep it outside the product backlog until the next release",
+        "Move it directly to the next sprint before assessing its impact against other defects and user stories"
+      ],
+      "pt": [
+        "Fechar o defeito sem relatório porque o tempo restante do sprint é insuficiente para teste de confirmação",
+        "Se não puder ser resolvido na iteração, criar relatório e adicioná-lo ao backlog do produto com prioridade apropriada",
+        "Registrá-lo nas notas da revisão do sprint e mantê-lo fora do backlog do produto até a próxima versão",
+        "Movê-lo diretamente para o próximo sprint antes de avaliar seu impacto diante de outros defeitos e histórias de usuário"
+      ],
+      "explanations": {
+        "en": "Section 2.3.3 says defects that cannot be resolved within the same iteration should be formally reported. A common practice is to add them to the product backlog so they can be prioritized among other defects and user stories for a later iteration.",
+        "pt": "A seção 2.3.3 afirma que defeitos que não podem ser resolvidos na mesma iteração devem ser formalmente relatados. Uma prática comum é adicioná-los ao backlog do produto para priorização entre outros defeitos e histórias de usuário de uma iteração posterior."
+      }
+    },
+    {
+      "id": "ctaltm-75",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "As erradas negavam a existência de defeitos e a correta introduzia “definition of done”, não citada na seção; a proposta usa os três desafios oficiais: ferramentas/atributos, priorização e planos transparentes.",
+      "answer": 2,
+      "en": [
+        "Maintaining the same defect-meeting cadence for both teams even when their increment-delivery rates differ",
+        "Allowing each team to plan defect fixes independently and reconciling the plans at the next release milestone",
+        "Aligning defect attributes and tools, coordinating prioritization cadence, and keeping development and fix plans transparent",
+        "Assigning final defect decisions to the sequential team so cross-team ownership does not need further discussion"
+      ],
+      "pt": [
+        "Manter a mesma cadência de reuniões de defeitos para as duas equipes, mesmo com ritmos diferentes de entrega",
+        "Permitir que cada equipe planeje correções separadamente e conciliar os planos no próximo marco de liberação",
+        "Alinhar atributos e ferramentas, coordenar a cadência de priorização e dar transparência aos planos de desenvolvimento e correção",
+        "Atribuir decisões finais à equipe sequencial para dispensar nova discussão sobre responsabilidade entre equipes"
+      ],
+      "explanations": {
+        "en": "Section 2.3.4 identifies alignment of defect attributes and tools, appropriate participation and cadence for prioritization, and alignment and transparency of plans for new development and defect fixes as hybrid-development challenges.",
+        "pt": "A seção 2.3.4 identifica como desafios do desenvolvimento híbrido o alinhamento de atributos e ferramentas, participação e cadência adequadas na priorização e alinhamento e transparência dos planos de novos desenvolvimentos e correções."
+      }
+    },
+    {
+      "id": "ctaltm-76",
+      "status": "REVISED",
+      "section": "2.3.4",
+      "reason": "A correta era muito mais longa e as erradas eram soluções extremas; as opções agora apresentam quatro políticas de coordenação comparáveis e a correta segue as práticas explícitas da seção.",
+      "answer": 3,
+      "en": [
+        "Keep separate unsynchronized tools and reconcile defect status when the shared release milestone is reached",
+        "Exclude product owners from triage and use the sequential team’s meeting cadence for every participating team",
+        "Maintain separate development plans and let the sequential team set priorities for cross-team defect fixes",
+        "Align attributes and tools, synchronize systems as needed, include product owners, and share cross-team plans"
+      ],
+      "pt": [
+        "Manter ferramentas separadas sem sincronização e conciliar status de defeitos ao atingir o marco comum de liberação",
+        "Excluir Product Owners da triagem e usar a cadência de reuniões da equipe sequencial para todas as equipes",
+        "Manter planos de desenvolvimento separados e deixar a equipe sequencial priorizar correções de defeitos entre equipes",
+        "Alinhar atributos e ferramentas, sincronizar sistemas quando necessário, incluir Product Owners e compartilhar planos entre equipes"
+      ],
+      "explanations": {
+        "en": "In a hybrid environment, section 2.3.4 recommends one defect tool where practical or synchronization between tools, involvement of product owners in prioritization, meeting cadence that keeps pace with Agile delivery, and transparent plans aligned across all teams.",
+        "pt": "Em ambiente híbrido, a seção 2.3.4 recomenda uma ferramenta de defeitos quando viável ou sincronização entre ferramentas, participação dos Product Owners na priorização, cadência de reuniões compatível com entregas ágeis e planos transparentes alinhados entre todas as equipes."
+      }
+    }
+  ]
+}
