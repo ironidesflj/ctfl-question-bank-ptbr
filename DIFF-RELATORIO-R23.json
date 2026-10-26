@@ -1,0 +1,5675 @@
+[
+ {
+  "id": "ctaltm-01",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   3
+  ],
+  "text_changed_en": [
+   1
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   51,
+   43,
+   50,
+   65
+  ],
+  "lens_pt_after": [
+   51,
+   43,
+   50,
+   63
+  ]
+ },
+ {
+  "id": "ctaltm-02",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   111,
+   156,
+   127,
+   88
+  ],
+  "lens_pt_after": [
+   139,
+   156,
+   177,
+   141
+  ]
+ },
+ {
+  "id": "ctaltm-03",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   98,
+   82,
+   120,
+   81
+  ],
+  "lens_pt_after": [
+   116,
+   113,
+   103,
+   124
+  ]
+ },
+ {
+  "id": "ctaltm-04",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   88,
+   109,
+   81,
+   147
+  ],
+  "lens_pt_after": [
+   153,
+   120,
+   142,
+   140
+  ]
+ },
+ {
+  "id": "ctaltm-05",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [],
+  "text_changed_en": [],
+  "exp_changed": false,
+  "lens_pt_before": [
+   18,
+   22,
+   21,
+   16
+  ],
+  "lens_pt_after": [
+   18,
+   22,
+   21,
+   16
+  ]
+ },
+ {
+  "id": "ctaltm-06",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   17,
+   28,
+   49,
+   29
+  ],
+  "lens_pt_after": [
+   30,
+   28,
+   32,
+   29
+  ]
+ },
+ {
+  "id": "ctaltm-07",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   90,
+   126,
+   146,
+   114
+  ],
+  "lens_pt_after": [
+   129,
+   154,
+   146,
+   122
+  ]
+ },
+ {
+  "id": "ctaltm-08",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   105,
+   92,
+   104,
+   119
+  ],
+  "lens_pt_after": [
+   130,
+   105,
+   119,
+   119
+  ]
+ },
+ {
+  "id": "ctaltm-09",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [],
+  "text_changed_en": [],
+  "exp_changed": false,
+  "lens_pt_before": [
+   43,
+   44,
+   45,
+   44
+  ],
+  "lens_pt_after": [
+   43,
+   44,
+   45,
+   44
+  ]
+ },
+ {
+  "id": "ctaltm-10",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   75,
+   172,
+   91,
+   74
+  ],
+  "lens_pt_after": [
+   158,
+   153,
+   152,
+   130
+  ]
+ },
+ {
+  "id": "ctaltm-11",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   119,
+   98,
+   132,
+   88
+  ],
+  "lens_pt_after": [
+   151,
+   125,
+   132,
+   135
+  ]
+ },
+ {
+  "id": "ctaltm-12",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   75,
+   88,
+   79,
+   126
+  ],
+  "lens_pt_after": [
+   119,
+   132,
+   147,
+   126
+  ]
+ },
+ {
+  "id": "ctaltm-13",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   204,
+   116,
+   80,
+   104
+  ],
+  "lens_pt_after": [
+   155,
+   165,
+   151,
+   152
+  ]
+ },
+ {
+  "id": "ctaltm-14",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   115,
+   217,
+   131,
+   98
+  ],
+  "lens_pt_after": [
+   184,
+   203,
+   173,
+   190
+  ]
+ },
+ {
+  "id": "ctaltm-15",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   68,
+   123,
+   214,
+   102
+  ],
+  "lens_pt_after": [
+   190,
+   161,
+   197,
+   164
+  ]
+ },
+ {
+  "id": "ctaltm-16",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   129,
+   110,
+   87,
+   213
+  ],
+  "lens_pt_after": [
+   205,
+   174,
+   165,
+   201
+  ]
+ },
+ {
+  "id": "ctaltm-17",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   86,
+   183,
+   109,
+   116
+  ],
+  "lens_pt_after": [
+   182,
+   163,
+   137,
+   161
+  ]
+ },
+ {
+  "id": "ctaltm-18",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   171,
+   247,
+   185,
+   133
+  ],
+  "lens_pt_after": [
+   196,
+   226,
+   208,
+   224
+  ]
+ },
+ {
+  "id": "ctaltm-19",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   125,
+   120,
+   356,
+   105
+  ],
+  "lens_pt_after": [
+   269,
+   268,
+   309,
+   283
+  ]
+ },
+ {
+  "id": "ctaltm-20",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   93,
+   91,
+   63,
+   208
+  ],
+  "lens_pt_after": [
+   160,
+   159,
+   208,
+   191
+  ]
+ },
+ {
+  "id": "ctaltm-21",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [],
+  "text_changed_en": [
+   1
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   77,
+   84,
+   86,
+   77
+  ],
+  "lens_pt_after": [
+   77,
+   84,
+   86,
+   77
+  ]
+ },
+ {
+  "id": "ctaltm-22",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   58,
+   18,
+   56,
+   72
+  ],
+  "lens_pt_after": [
+   51,
+   50,
+   56,
+   61
+  ]
+ },
+ {
+  "id": "ctaltm-23",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   58,
+   48,
+   155,
+   47
+  ],
+  "lens_pt_after": [
+   161,
+   122,
+   150,
+   127
+  ]
+ },
+ {
+  "id": "ctaltm-24",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   43,
+   42,
+   43,
+   65
+  ],
+  "lens_pt_after": [
+   63,
+   56,
+   64,
+   65
+  ]
+ },
+ {
+  "id": "ctaltm-25",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   34,
+   89,
+   89,
+   28
+  ],
+  "lens_pt_after": [
+   59,
+   61,
+   61,
+   53
+  ]
+ },
+ {
+  "id": "ctaltm-26",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   88,
+   159,
+   59,
+   68
+  ],
+  "lens_pt_after": [
+   150,
+   140,
+   135,
+   163
+  ]
+ },
+ {
+  "id": "ctaltm-27",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   111,
+   94,
+   211,
+   83
+  ],
+  "lens_pt_after": [
+   228,
+   180,
+   201,
+   179
+  ]
+ },
+ {
+  "id": "ctaltm-28",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   84,
+   59,
+   65,
+   203
+  ],
+  "lens_pt_after": [
+   191,
+   170,
+   160,
+   185
+  ]
+ },
+ {
+  "id": "ctaltm-29",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   91,
+   62,
+   78,
+   237
+  ],
+  "lens_pt_after": [
+   231,
+   194,
+   180,
+   217
+  ]
+ },
+ {
+  "id": "ctaltm-30",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [],
+  "text_changed_en": [],
+  "exp_changed": false,
+  "lens_pt_before": [
+   45,
+   39,
+   32,
+   33
+  ],
+  "lens_pt_after": [
+   45,
+   39,
+   32,
+   33
+  ]
+ },
+ {
+  "id": "ctaltm-31",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   69,
+   53,
+   90,
+   61
+  ],
+  "lens_pt_after": [
+   94,
+   84,
+   90,
+   105
+  ]
+ },
+ {
+  "id": "ctaltm-32",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   75,
+   72,
+   43,
+   176
+  ],
+  "lens_pt_after": [
+   212,
+   153,
+   155,
+   176
+  ]
+ },
+ {
+  "id": "ctaltm-33",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   123,
+   98,
+   79,
+   138
+  ],
+  "lens_pt_after": [
+   161,
+   125,
+   142,
+   138
+  ]
+ },
+ {
+  "id": "ctaltm-34",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   76,
+   272,
+   61,
+   64
+  ],
+  "lens_pt_after": [
+   216,
+   242,
+   236,
+   209
+  ]
+ },
+ {
+  "id": "ctaltm-35",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   78,
+   92,
+   174,
+   73
+  ],
+  "lens_pt_after": [
+   190,
+   159,
+   153,
+   144
+  ]
+ },
+ {
+  "id": "ctaltm-36",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   79,
+   59,
+   57,
+   80
+  ],
+  "lens_pt_after": [
+   79,
+   89,
+   96,
+   80
+  ]
+ },
+ {
+  "id": "ctaltm-37",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   75,
+   37,
+   35,
+   167
+  ],
+  "lens_pt_after": [
+   153,
+   148,
+   154,
+   167
+  ]
+ },
+ {
+  "id": "ctaltm-38",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0
+  ],
+  "text_changed_en": [
+   0
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   32,
+   58,
+   63,
+   52
+  ],
+  "lens_pt_after": [
+   52,
+   58,
+   63,
+   52
+  ]
+ },
+ {
+  "id": "ctaltm-39",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   60,
+   49,
+   121,
+   51
+  ],
+  "lens_pt_after": [
+   108,
+   97,
+   121,
+   99
+  ]
+ },
+ {
+  "id": "ctaltm-40",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   65,
+   73,
+   40,
+   136
+  ],
+  "lens_pt_after": [
+   147,
+   160,
+   128,
+   136
+  ]
+ },
+ {
+  "id": "ctaltm-41",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   1,
+   2
+  ],
+  "text_changed_en": [
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   62,
+   80,
+   33,
+   74
+  ],
+  "lens_pt_after": [
+   62,
+   85,
+   74,
+   74
+  ]
+ },
+ {
+  "id": "ctaltm-42",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   53,
+   156,
+   26,
+   33
+  ],
+  "lens_pt_after": [
+   174,
+   156,
+   139,
+   130
+  ]
+ },
+ {
+  "id": "ctaltm-43",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   96,
+   61,
+   214,
+   50
+  ],
+  "lens_pt_after": [
+   184,
+   199,
+   214,
+   178
+  ]
+ },
+ {
+  "id": "ctaltm-44",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   61,
+   66,
+   47,
+   115
+  ],
+  "lens_pt_after": [
+   136,
+   109,
+   111,
+   115
+  ]
+ },
+ {
+  "id": "ctaltm-45",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   100,
+   71,
+   60,
+   103
+  ],
+  "lens_pt_after": [
+   127,
+   126,
+   120,
+   103
+  ]
+ },
+ {
+  "id": "ctaltm-46",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   58,
+   117,
+   68,
+   74
+  ],
+  "lens_pt_after": [
+   121,
+   117,
+   127,
+   121
+  ]
+ },
+ {
+  "id": "ctaltm-47",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   26,
+   21,
+   47,
+   67
+  ],
+  "lens_pt_after": [
+   58,
+   57,
+   47,
+   54
+  ]
+ },
+ {
+  "id": "ctaltm-48",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   24,
+   41,
+   21,
+   49
+  ],
+  "lens_pt_after": [
+   54,
+   60,
+   53,
+   49
+  ]
+ },
+ {
+  "id": "ctaltm-49",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   51,
+   56,
+   40,
+   210
+  ],
+  "lens_pt_after": [
+   163,
+   184,
+   212,
+   191
+  ]
+ },
+ {
+  "id": "ctaltm-50",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   31,
+   177,
+   45,
+   53
+  ],
+  "lens_pt_after": [
+   164,
+   177,
+   151,
+   151
+  ]
+ },
+ {
+  "id": "ctaltm-51",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   24,
+   10,
+   105,
+   44
+  ],
+  "lens_pt_after": [
+   121,
+   125,
+   105,
+   116
+  ]
+ },
+ {
+  "id": "ctaltm-52",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   57,
+   51,
+   45,
+   108
+  ],
+  "lens_pt_after": [
+   116,
+   120,
+   120,
+   108
+  ]
+ },
+ {
+  "id": "ctaltm-53",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   79,
+   90,
+   89,
+   186
+  ],
+  "lens_pt_after": [
+   176,
+   161,
+   159,
+   186
+  ]
+ },
+ {
+  "id": "ctaltm-54",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   55,
+   141,
+   87,
+   54
+  ],
+  "lens_pt_after": [
+   141,
+   141,
+   143,
+   127
+  ]
+ },
+ {
+  "id": "ctaltm-55",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [],
+  "text_changed_en": [],
+  "exp_changed": false,
+  "lens_pt_before": [
+   19,
+   20,
+   19,
+   22
+  ],
+  "lens_pt_after": [
+   19,
+   20,
+   19,
+   22
+  ]
+ },
+ {
+  "id": "ctaltm-56",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   40,
+   30,
+   35,
+   64
+  ],
+  "lens_pt_after": [
+   58,
+   58,
+   71,
+   64
+  ]
+ },
+ {
+  "id": "ctaltm-57",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   35,
+   29,
+   48,
+   82
+  ],
+  "lens_pt_after": [
+   74,
+   85,
+   67,
+   82
+  ]
+ },
+ {
+  "id": "ctaltm-58",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   80,
+   176,
+   80,
+   64
+  ],
+  "lens_pt_after": [
+   160,
+   176,
+   175,
+   162
+  ]
+ },
+ {
+  "id": "ctaltm-59",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   50,
+   46,
+   180,
+   25
+  ],
+  "lens_pt_after": [
+   197,
+   156,
+   180,
+   152
+  ]
+ },
+ {
+  "id": "ctaltm-60",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   77,
+   83,
+   65,
+   255
+  ],
+  "lens_pt_after": [
+   221,
+   230,
+   203,
+   248
+  ]
+ },
+ {
+  "id": "ctaltm-61",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   89,
+   53,
+   92,
+   225
+  ],
+  "lens_pt_after": [
+   190,
+   211,
+   189,
+   225
+  ]
+ },
+ {
+  "id": "ctaltm-62",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   39,
+   140,
+   50,
+   50
+  ],
+  "lens_pt_after": [
+   127,
+   140,
+   136,
+   175
+  ]
+ },
+ {
+  "id": "ctaltm-63",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   99,
+   111,
+   229,
+   65
+  ],
+  "lens_pt_after": [
+   193,
+   205,
+   216,
+   198
+  ]
+ },
+ {
+  "id": "ctaltm-64",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   65,
+   56,
+   52,
+   217
+  ],
+  "lens_pt_after": [
+   200,
+   180,
+   222,
+   217
+  ]
+ },
+ {
+  "id": "ctaltm-65",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   97,
+   89,
+   65,
+   132
+  ],
+  "lens_pt_after": [
+   149,
+   133,
+   149,
+   132
+  ]
+ },
+ {
+  "id": "ctaltm-66",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   50,
+   134,
+   62,
+   84
+  ],
+  "lens_pt_after": [
+   115,
+   134,
+   131,
+   142
+  ]
+ },
+ {
+  "id": "ctaltm-67",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   59,
+   51,
+   259,
+   77
+  ],
+  "lens_pt_after": [
+   205,
+   211,
+   242,
+   229
+  ]
+ },
+ {
+  "id": "ctaltm-68",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   58,
+   60,
+   74,
+   145
+  ],
+  "lens_pt_after": [
+   136,
+   134,
+   152,
+   145
+  ]
+ },
+ {
+  "id": "ctaltm-69",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   64,
+   75,
+   52,
+   115
+  ],
+  "lens_pt_after": [
+   106,
+   113,
+   127,
+   115
+  ]
+ },
+ {
+  "id": "ctaltm-70",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   86,
+   294,
+   76,
+   54
+  ],
+  "lens_pt_after": [
+   268,
+   287,
+   243,
+   230
+  ]
+ },
+ {
+  "id": "ctaltm-71",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   56,
+   60,
+   208,
+   58
+  ],
+  "lens_pt_after": [
+   182,
+   200,
+   208,
+   230
+  ]
+ },
+ {
+  "id": "ctaltm-72",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   60,
+   91,
+   63,
+   193
+  ],
+  "lens_pt_after": [
+   170,
+   186,
+   183,
+   193
+  ]
+ },
+ {
+  "id": "ctaltm-73",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   76,
+   74,
+   80,
+   189
+  ],
+  "lens_pt_after": [
+   197,
+   161,
+   167,
+   189
+  ]
+ },
+ {
+  "id": "ctaltm-74",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   77,
+   220,
+   76,
+   87
+  ],
+  "lens_pt_after": [
+   182,
+   220,
+   236,
+   190
+  ]
+ },
+ {
+  "id": "ctaltm-75",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   79,
+   62,
+   205,
+   47
+  ],
+  "lens_pt_after": [
+   182,
+   186,
+   205,
+   212
+  ]
+ },
+ {
+  "id": "ctaltm-76",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   81,
+   110,
+   74,
+   214
+  ],
+  "lens_pt_after": [
+   195,
+   195,
+   220,
+   214
+  ]
+ },
+ {
+  "id": "ctaltm-77",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   50,
+   64,
+   42,
+   215
+  ],
+  "lens_pt_after": [
+   242,
+   182,
+   200,
+   215
+  ]
+ },
+ {
+  "id": "ctaltm-78",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   52,
+   168,
+   68,
+   77
+  ],
+  "lens_pt_after": [
+   153,
+   168,
+   176,
+   154
+  ]
+ },
+ {
+  "id": "ctaltm-79",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   52,
+   50,
+   196,
+   39
+  ],
+  "lens_pt_after": [
+   173,
+   204,
+   196,
+   173
+  ]
+ },
+ {
+  "id": "ctaltm-80",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   47,
+   78,
+   64,
+   208
+  ],
+  "lens_pt_after": [
+   208,
+   177,
+   212,
+   208
+  ]
+ },
+ {
+  "id": "ctaltm-81",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   41,
+   75,
+   42,
+   146
+  ],
+  "lens_pt_after": [
+   151,
+   155,
+   140,
+   146
+  ]
+ },
+ {
+  "id": "ctaltm-82",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   48,
+   247,
+   50,
+   43
+  ],
+  "lens_pt_after": [
+   241,
+   242,
+   203,
+   211
+  ]
+ },
+ {
+  "id": "ctaltm-83",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   49,
+   74,
+   57,
+   34
+  ],
+  "lens_pt_after": [
+   49,
+   57,
+   57,
+   68
+  ]
+ },
+ {
+  "id": "ctaltm-84",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   62,
+   73,
+   77,
+   157
+  ],
+  "lens_pt_after": [
+   151,
+   167,
+   172,
+   157
+  ]
+ },
+ {
+  "id": "ctaltm-85",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   86,
+   86,
+   78,
+   311
+  ],
+  "lens_pt_after": [
+   241,
+   282,
+   254,
+   301
+  ]
+ },
+ {
+  "id": "ctaltm-86",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   53,
+   315,
+   55,
+   39
+  ],
+  "lens_pt_after": [
+   299,
+   292,
+   246,
+   237
+  ]
+ },
+ {
+  "id": "ctaltm-87",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   94,
+   84,
+   257,
+   78
+  ],
+  "lens_pt_after": [
+   224,
+   214,
+   235,
+   223
+  ]
+ },
+ {
+  "id": "ctaltm-88",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   67,
+   68,
+   39,
+   188
+  ],
+  "lens_pt_after": [
+   177,
+   164,
+   166,
+   185
+  ]
+ },
+ {
+  "id": "ctaltm-89",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   52,
+   58,
+   70,
+   108
+  ],
+  "lens_pt_after": [
+   127,
+   130,
+   133,
+   108
+  ]
+ },
+ {
+  "id": "ctaltm-90",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   73,
+   169,
+   87,
+   72
+  ],
+  "lens_pt_after": [
+   173,
+   169,
+   186,
+   159
+  ]
+ },
+ {
+  "id": "ctaltm-91",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   72,
+   80,
+   270,
+   44
+  ],
+  "lens_pt_after": [
+   255,
+   228,
+   257,
+   217
+  ]
+ },
+ {
+  "id": "ctaltm-92",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [],
+  "text_changed_en": [],
+  "exp_changed": false,
+  "lens_pt_before": [
+   63,
+   63,
+   63,
+   63
+  ],
+  "lens_pt_after": [
+   63,
+   63,
+   63,
+   63
+  ]
+ },
+ {
+  "id": "ctaltm-93",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   61,
+   84,
+   54,
+   164
+  ],
+  "lens_pt_after": [
+   155,
+   146,
+   136,
+   154
+  ]
+ },
+ {
+  "id": "ctaltm-94",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   62,
+   231,
+   53,
+   51
+  ],
+  "lens_pt_after": [
+   216,
+   224,
+   199,
+   198
+  ]
+ },
+ {
+  "id": "ctaltm-95",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   75,
+   76,
+   94,
+   84
+  ],
+  "lens_pt_after": [
+   87,
+   76,
+   94,
+   96
+  ]
+ },
+ {
+  "id": "ctaltm-96",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   1,
+   2
+  ],
+  "text_changed_en": [
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   73,
+   60,
+   46,
+   86
+  ],
+  "lens_pt_after": [
+   73,
+   88,
+   77,
+   86
+  ]
+ },
+ {
+  "id": "ctaltm-97",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1
+  ],
+  "text_changed_en": [
+   0,
+   1
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   19,
+   19,
+   25,
+   25
+  ],
+  "lens_pt_after": [
+   31,
+   30,
+   25,
+   25
+  ]
+ },
+ {
+  "id": "ctaltm-98",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   6,
+   79,
+   6,
+   7
+  ],
+  "lens_pt_after": [
+   95,
+   79,
+   73,
+   71
+  ]
+ },
+ {
+  "id": "ctaltm-99",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   39,
+   30,
+   102,
+   48
+  ],
+  "lens_pt_after": [
+   123,
+   103,
+   104,
+   105
+  ]
+ },
+ {
+  "id": "ctaltm-100",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   63,
+   62,
+   66,
+   221
+  ],
+  "lens_pt_after": [
+   194,
+   201,
+   181,
+   214
+  ]
+ },
+ {
+  "id": "ctaltm-101",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   150,
+   149,
+   170,
+   174
+  ],
+  "lens_pt_after": [
+   150,
+   161,
+   164,
+   158
+  ]
+ },
+ {
+  "id": "ctaltm-102",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   208,
+   104,
+   73,
+   121
+  ],
+  "lens_pt_after": [
+   193,
+   203,
+   174,
+   192
+  ]
+ },
+ {
+  "id": "ctaltm-103",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   120,
+   73,
+   61,
+   79
+  ],
+  "lens_pt_after": [
+   120,
+   130,
+   127,
+   140
+  ]
+ },
+ {
+  "id": "ctaltm-104",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   111,
+   78,
+   78,
+   91
+  ],
+  "lens_pt_after": [
+   111,
+   105,
+   110,
+   115
+  ]
+ },
+ {
+  "id": "ctaltm-105",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   154,
+   70,
+   84,
+   91
+  ],
+  "lens_pt_after": [
+   154,
+   155,
+   147,
+   143
+  ]
+ },
+ {
+  "id": "ctaltm-106",
+  "answer_before": 0,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   261,
+   88,
+   109,
+   87
+  ],
+  "lens_pt_after": [
+   209,
+   240,
+   228,
+   206
+  ]
+ },
+ {
+  "id": "ctaltm-107",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   207,
+   102,
+   111,
+   112
+  ],
+  "lens_pt_after": [
+   207,
+   193,
+   197,
+   190
+  ]
+ },
+ {
+  "id": "ctaltm-108",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   182,
+   99,
+   100,
+   115
+  ],
+  "lens_pt_after": [
+   182,
+   158,
+   155,
+   170
+  ]
+ },
+ {
+  "id": "ctaltm-109",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   175,
+   85,
+   83,
+   127
+  ],
+  "lens_pt_after": [
+   175,
+   159,
+   166,
+   186
+  ]
+ },
+ {
+  "id": "ctaltm-110",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   242,
+   94,
+   86,
+   68
+  ],
+  "lens_pt_after": [
+   222,
+   204,
+   179,
+   181
+  ]
+ },
+ {
+  "id": "ctaltm-111",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   273,
+   109,
+   90,
+   125
+  ],
+  "lens_pt_after": [
+   233,
+   232,
+   214,
+   213
+  ]
+ },
+ {
+  "id": "ctaltm-112",
+  "answer_before": 0,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   167,
+   108,
+   101,
+   90
+  ],
+  "lens_pt_after": [
+   171,
+   202,
+   167,
+   180
+  ]
+ },
+ {
+  "id": "ctaltm-113",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   214,
+   91,
+   69,
+   96
+  ],
+  "lens_pt_after": [
+   177,
+   166,
+   162,
+   165
+  ]
+ },
+ {
+  "id": "ctaltm-114",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   197,
+   95,
+   89,
+   100
+  ],
+  "lens_pt_after": [
+   181,
+   182,
+   157,
+   166
+  ]
+ },
+ {
+  "id": "ctaltm-115",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   244,
+   71,
+   83,
+   114
+  ],
+  "lens_pt_after": [
+   226,
+   206,
+   199,
+   194
+  ]
+ },
+ {
+  "id": "ctaltm-116",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   234,
+   75,
+   77,
+   74
+  ],
+  "lens_pt_after": [
+   222,
+   214,
+   196,
+   191
+  ]
+ },
+ {
+  "id": "ctaltm-117",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   191,
+   102,
+   67,
+   99
+  ],
+  "lens_pt_after": [
+   191,
+   185,
+   172,
+   185
+  ]
+ },
+ {
+  "id": "ctaltm-118",
+  "answer_before": 0,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   478,
+   125,
+   121,
+   118
+  ],
+  "lens_pt_after": [
+   445,
+   457,
+   443,
+   447
+  ]
+ },
+ {
+  "id": "ctaltm-119",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   507,
+   172,
+   107,
+   123
+  ],
+  "lens_pt_after": [
+   464,
+   462,
+   415,
+   457
+  ]
+ },
+ {
+  "id": "ctaltm-120",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   240,
+   73,
+   104,
+   92
+  ],
+  "lens_pt_after": [
+   217,
+   221,
+   209,
+   203
+  ]
+ },
+ {
+  "id": "ctaltm-121",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   191,
+   103,
+   72,
+   90
+  ],
+  "lens_pt_after": [
+   182,
+   173,
+   160,
+   192
+  ]
+ },
+ {
+  "id": "ctaltm-122",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   174,
+   39,
+   64,
+   89
+  ],
+  "lens_pt_after": [
+   149,
+   146,
+   141,
+   140
+  ]
+ },
+ {
+  "id": "ctaltm-123",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   77,
+   67,
+   55,
+   54
+  ],
+  "lens_pt_after": [
+   77,
+   64,
+   82,
+   74
+  ]
+ },
+ {
+  "id": "ctaltm-124",
+  "answer_before": 0,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   200,
+   89,
+   82,
+   88
+  ],
+  "lens_pt_after": [
+   168,
+   208,
+   178,
+   212
+  ]
+ },
+ {
+  "id": "ctaltm-125",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   195,
+   73,
+   81,
+   85
+  ],
+  "lens_pt_after": [
+   183,
+   207,
+   197,
+   169
+  ]
+ },
+ {
+  "id": "ctaltm-126",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   334,
+   102,
+   110,
+   120
+  ],
+  "lens_pt_after": [
+   291,
+   272,
+   267,
+   257
+  ]
+ },
+ {
+  "id": "ctaltm-127",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   279,
+   180,
+   85,
+   87
+  ],
+  "lens_pt_after": [
+   257,
+   252,
+   212,
+   208
+  ]
+ },
+ {
+  "id": "ctaltm-128",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   306,
+   159,
+   106,
+   84
+  ],
+  "lens_pt_after": [
+   297,
+   289,
+   302,
+   242
+  ]
+ },
+ {
+  "id": "ctaltm-129",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   319,
+   89,
+   119,
+   75
+  ],
+  "lens_pt_after": [
+   294,
+   299,
+   260,
+   244
+  ]
+ },
+ {
+  "id": "ctaltm-130",
+  "answer_before": 0,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   180,
+   76,
+   85,
+   57
+  ],
+  "lens_pt_after": [
+   169,
+   204,
+   180,
+   167
+  ]
+ },
+ {
+  "id": "ctaltm-131",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   209,
+   71,
+   52,
+   60
+  ],
+  "lens_pt_after": [
+   198,
+   219,
+   185,
+   183
+  ]
+ },
+ {
+  "id": "ctaltm-132",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   167,
+   77,
+   77,
+   71
+  ],
+  "lens_pt_after": [
+   167,
+   160,
+   185,
+   148
+  ]
+ },
+ {
+  "id": "ctaltm-133",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   153,
+   98,
+   125,
+   75
+  ],
+  "lens_pt_after": [
+   153,
+   161,
+   169,
+   153
+  ]
+ },
+ {
+  "id": "ctaltm-134",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   234,
+   70,
+   97,
+   78
+  ],
+  "lens_pt_after": [
+   223,
+   216,
+   219,
+   246
+  ]
+ },
+ {
+  "id": "ctaltm-135",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   180,
+   74,
+   88,
+   78
+  ],
+  "lens_pt_after": [
+   180,
+   207,
+   185,
+   170
+  ]
+ },
+ {
+  "id": "ctaltm-136",
+  "answer_before": 0,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   59,
+   51,
+   61,
+   38
+  ],
+  "lens_pt_after": [
+   49,
+   51,
+   61,
+   59
+  ]
+ },
+ {
+  "id": "ctaltm-137",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   200,
+   43,
+   51,
+   61
+  ],
+  "lens_pt_after": [
+   185,
+   213,
+   169,
+   181
+  ]
+ },
+ {
+  "id": "ctaltm-138",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   115,
+   45,
+   45,
+   73
+  ],
+  "lens_pt_after": [
+   115,
+   142,
+   138,
+   127
+  ]
+ },
+ {
+  "id": "ctaltm-139",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   125,
+   47,
+   64,
+   56
+  ],
+  "lens_pt_after": [
+   125,
+   148,
+   150,
+   145
+  ]
+ },
+ {
+  "id": "ctaltm-140",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   175,
+   107,
+   66,
+   74
+  ],
+  "lens_pt_after": [
+   175,
+   158,
+   160,
+   203
+  ]
+ },
+ {
+  "id": "ctaltm-141",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   187,
+   119,
+   48,
+   73
+  ],
+  "lens_pt_after": [
+   187,
+   195,
+   153,
+   184
+  ]
+ },
+ {
+  "id": "ctaltm-142",
+  "answer_before": 0,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   155,
+   51,
+   37,
+   54
+  ],
+  "lens_pt_after": [
+   192,
+   155,
+   156,
+   154
+  ]
+ },
+ {
+  "id": "ctaltm-143",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   167,
+   63,
+   65,
+   62
+  ],
+  "lens_pt_after": [
+   167,
+   192,
+   174,
+   169
+  ]
+ },
+ {
+  "id": "ctaltm-144",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   272,
+   70,
+   61,
+   90
+  ],
+  "lens_pt_after": [
+   272,
+   232,
+   223,
+   281
+  ]
+ },
+ {
+  "id": "ctaltm-145",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   218,
+   121,
+   44,
+   79
+  ],
+  "lens_pt_after": [
+   215,
+   205,
+   182,
+   189
+  ]
+ },
+ {
+  "id": "ctaltm-146",
+  "answer_before": 0,
+  "answer_after": 0,
+  "text_changed_pt": [
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   163,
+   81,
+   78,
+   85
+  ],
+  "lens_pt_after": [
+   163,
+   197,
+   165,
+   163
+  ]
+ },
+ {
+  "id": "ctaltm-147",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   84,
+   188,
+   75,
+   91
+  ],
+  "lens_pt_after": [
+   174,
+   172,
+   196,
+   162
+  ]
+ },
+ {
+  "id": "ctaltm-148",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   55,
+   164,
+   86,
+   86
+  ],
+  "lens_pt_after": [
+   157,
+   164,
+   184,
+   171
+  ]
+ },
+ {
+  "id": "ctaltm-149",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   150,
+   360,
+   131,
+   86
+  ],
+  "lens_pt_after": [
+   327,
+   356,
+   295,
+   302
+  ]
+ },
+ {
+  "id": "ctaltm-150",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   66,
+   135,
+   45,
+   56
+  ],
+  "lens_pt_after": [
+   135,
+   135,
+   168,
+   125
+  ]
+ },
+ {
+  "id": "ctaltm-151",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   32,
+   105,
+   50,
+   23
+  ],
+  "lens_pt_after": [
+   109,
+   105,
+   124,
+   104
+  ]
+ },
+ {
+  "id": "ctaltm-152",
+  "answer_before": 1,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   69,
+   200,
+   62,
+   109
+  ],
+  "lens_pt_after": [
+   197,
+   207,
+   171,
+   167
+  ]
+ },
+ {
+  "id": "ctaltm-153",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   66,
+   167,
+   75,
+   48
+  ],
+  "lens_pt_after": [
+   160,
+   167,
+   188,
+   154
+  ]
+ },
+ {
+  "id": "ctaltm-154",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   42,
+   184,
+   47,
+   80
+  ],
+  "lens_pt_after": [
+   166,
+   184,
+   162,
+   208
+  ]
+ },
+ {
+  "id": "ctaltm-155",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   115,
+   213,
+   116,
+   99
+  ],
+  "lens_pt_after": [
+   216,
+   213,
+   177,
+   178
+  ]
+ },
+ {
+  "id": "ctaltm-156",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   65,
+   113,
+   57,
+   68
+  ],
+  "lens_pt_after": [
+   114,
+   113,
+   120,
+   109
+  ]
+ },
+ {
+  "id": "ctaltm-157",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   57,
+   98,
+   44,
+   40
+  ],
+  "lens_pt_after": [
+   90,
+   98,
+   91,
+   120
+  ]
+ },
+ {
+  "id": "ctaltm-158",
+  "answer_before": 1,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   90,
+   160,
+   57,
+   52
+  ],
+  "lens_pt_after": [
+   176,
+   142,
+   160,
+   143
+  ]
+ },
+ {
+  "id": "ctaltm-159",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   79,
+   268,
+   74,
+   63
+  ],
+  "lens_pt_after": [
+   251,
+   256,
+   206,
+   225
+  ]
+ },
+ {
+  "id": "ctaltm-160",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   56,
+   260,
+   56,
+   81
+  ],
+  "lens_pt_after": [
+   227,
+   249,
+   203,
+   211
+  ]
+ },
+ {
+  "id": "ctaltm-161",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   102,
+   360,
+   131,
+   136
+  ],
+  "lens_pt_after": [
+   323,
+   360,
+   293,
+   303
+  ]
+ },
+ {
+  "id": "ctaltm-162",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   85,
+   221,
+   113,
+   78
+  ],
+  "lens_pt_after": [
+   269,
+   221,
+   276,
+   242
+  ]
+ },
+ {
+  "id": "ctaltm-163",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   81,
+   286,
+   66,
+   61
+  ],
+  "lens_pt_after": [
+   266,
+   286,
+   330,
+   281
+  ]
+ },
+ {
+  "id": "ctaltm-164",
+  "answer_before": 1,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   42,
+   217,
+   35,
+   49
+  ],
+  "lens_pt_after": [
+   242,
+   214,
+   230,
+   217
+  ]
+ },
+ {
+  "id": "ctaltm-165",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   77,
+   203,
+   87,
+   74
+  ],
+  "lens_pt_after": [
+   250,
+   203,
+   243,
+   229
+  ]
+ },
+ {
+  "id": "ctaltm-166",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   93,
+   255,
+   60,
+   68
+  ],
+  "lens_pt_after": [
+   265,
+   255,
+   311,
+   228
+  ]
+ },
+ {
+  "id": "ctaltm-167",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   67,
+   184,
+   49,
+   58
+  ],
+  "lens_pt_after": [
+   204,
+   184,
+   193,
+   186
+  ]
+ },
+ {
+  "id": "ctaltm-168",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   100,
+   232,
+   77,
+   71
+  ],
+  "lens_pt_after": [
+   264,
+   232,
+   280,
+   228
+  ]
+ },
+ {
+  "id": "ctaltm-169",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   106,
+   376,
+   103,
+   52
+  ],
+  "lens_pt_after": [
+   339,
+   376,
+   357,
+   333
+  ]
+ },
+ {
+  "id": "ctaltm-170",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   41,
+   47,
+   196,
+   90
+  ],
+  "lens_pt_after": [
+   212,
+   222,
+   196,
+   221
+  ]
+ },
+ {
+  "id": "ctaltm-171",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   91,
+   63,
+   197,
+   65
+  ],
+  "lens_pt_after": [
+   197,
+   229,
+   197,
+   233
+  ]
+ },
+ {
+  "id": "ctaltm-172",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   93,
+   56,
+   229,
+   78
+  ],
+  "lens_pt_after": [
+   259,
+   276,
+   229,
+   255
+  ]
+ },
+ {
+  "id": "ctaltm-173",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   76,
+   49,
+   243,
+   50
+  ],
+  "lens_pt_after": [
+   287,
+   234,
+   243,
+   242
+  ]
+ },
+ {
+  "id": "ctaltm-174",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   126,
+   124,
+   288,
+   99
+  ],
+  "lens_pt_after": [
+   340,
+   251,
+   288,
+   261
+  ]
+ },
+ {
+  "id": "ctaltm-175",
+  "answer_before": 2,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   88,
+   84,
+   286,
+   50
+  ],
+  "lens_pt_after": [
+   282,
+   321,
+   252,
+   268
+  ]
+ },
+ {
+  "id": "ctaltm-176",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   55,
+   95,
+   226,
+   71
+  ],
+  "lens_pt_after": [
+   236,
+   239,
+   226,
+   274
+  ]
+ },
+ {
+  "id": "ctaltm-177",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   88,
+   78,
+   290,
+   68
+  ],
+  "lens_pt_after": [
+   248,
+   264,
+   290,
+   322
+  ]
+ },
+ {
+  "id": "ctaltm-178",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   33,
+   46,
+   269,
+   46
+  ],
+  "lens_pt_after": [
+   241,
+   315,
+   269,
+   240
+  ]
+ },
+ {
+  "id": "ctaltm-179",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   55,
+   57,
+   342,
+   70
+  ],
+  "lens_pt_after": [
+   310,
+   348,
+   342,
+   321
+  ]
+ },
+ {
+  "id": "ctaltm-180",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   86,
+   93,
+   293,
+   73
+  ],
+  "lens_pt_after": [
+   273,
+   298,
+   293,
+   271
+  ]
+ },
+ {
+  "id": "ctaltm-181",
+  "answer_before": 2,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   97,
+   64,
+   273,
+   110
+  ],
+  "lens_pt_after": [
+   295,
+   273,
+   257,
+   260
+  ]
+ },
+ {
+  "id": "ctaltm-182",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   80,
+   55,
+   286,
+   86
+  ],
+  "lens_pt_after": [
+   289,
+   245,
+   286,
+   296
+  ]
+ },
+ {
+  "id": "ctaltm-183",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   44,
+   37,
+   191,
+   57
+  ],
+  "lens_pt_after": [
+   180,
+   187,
+   191,
+   218
+  ]
+ },
+ {
+  "id": "ctaltm-184",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   74,
+   82,
+   89,
+   68
+  ],
+  "lens_pt_after": [
+   83,
+   108,
+   89,
+   77
+  ]
+ },
+ {
+  "id": "ctaltm-185",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0
+  ],
+  "text_changed_en": [
+   0,
+   1
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   74,
+   59,
+   72,
+   66
+  ],
+  "lens_pt_after": [
+   88,
+   59,
+   72,
+   66
+  ]
+ },
+ {
+  "id": "ctaltm-186",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   91,
+   90,
+   520,
+   102
+  ],
+  "lens_pt_after": [
+   490,
+   440,
+   520,
+   441
+  ]
+ },
+ {
+  "id": "ctaltm-187",
+  "answer_before": 2,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   105,
+   123,
+   429,
+   85
+  ],
+  "lens_pt_after": [
+   462,
+   386,
+   396,
+   429
+  ]
+ },
+ {
+  "id": "ctaltm-188",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   32,
+   40,
+   151,
+   34
+  ],
+  "lens_pt_after": [
+   154,
+   176,
+   151,
+   151
+  ]
+ },
+ {
+  "id": "ctaltm-189",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   70,
+   74,
+   145,
+   101
+  ],
+  "lens_pt_after": [
+   157,
+   176,
+   145,
+   166
+  ]
+ },
+ {
+  "id": "ctaltm-190",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   71,
+   59,
+   129,
+   72
+  ],
+  "lens_pt_after": [
+   140,
+   153,
+   129,
+   136
+  ]
+ },
+ {
+  "id": "ctaltm-191",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   84,
+   70,
+   234,
+   81
+  ],
+  "lens_pt_after": [
+   251,
+   225,
+   234,
+   221
+  ]
+ },
+ {
+  "id": "ctaltm-192",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   76,
+   63,
+   135,
+   68
+  ],
+  "lens_pt_after": [
+   160,
+   152,
+   135,
+   163
+  ]
+ },
+ {
+  "id": "ctaltm-193",
+  "answer_before": 2,
+  "answer_after": 0,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   77,
+   79,
+   179,
+   75
+  ],
+  "lens_pt_after": [
+   179,
+   176,
+   183,
+   213
+  ]
+ },
+ {
+  "id": "ctaltm-194",
+  "answer_before": 2,
+  "answer_after": 2,
+  "text_changed_pt": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   54,
+   69,
+   147,
+   55
+  ],
+  "lens_pt_after": [
+   161,
+   144,
+   150,
+   160
+  ]
+ },
+ {
+  "id": "ctaltm-195",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   73,
+   57,
+   56,
+   210
+  ],
+  "lens_pt_after": [
+   254,
+   205,
+   198,
+   210
+  ]
+ },
+ {
+  "id": "ctaltm-196",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   58,
+   52,
+   54,
+   160
+  ],
+  "lens_pt_after": [
+   199,
+   161,
+   167,
+   160
+  ]
+ },
+ {
+  "id": "ctaltm-197",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   77,
+   34,
+   60,
+   136
+  ],
+  "lens_pt_after": [
+   168,
+   166,
+   161,
+   136
+  ]
+ },
+ {
+  "id": "ctaltm-198",
+  "answer_before": 1,
+  "answer_after": 1,
+  "text_changed_pt": [
+   0,
+   2,
+   3
+  ],
+  "text_changed_en": [
+   0,
+   2,
+   3
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   111,
+   159,
+   95,
+   86
+  ],
+  "lens_pt_after": [
+   186,
+   159,
+   166,
+   180
+  ]
+ },
+ {
+  "id": "ctaltm-199",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": false,
+  "lens_pt_before": [
+   70,
+   50,
+   50,
+   124
+  ],
+  "lens_pt_after": [
+   150,
+   135,
+   138,
+   124
+  ]
+ },
+ {
+  "id": "ctaltm-200",
+  "answer_before": 3,
+  "answer_after": 3,
+  "text_changed_pt": [
+   0,
+   1,
+   2
+  ],
+  "text_changed_en": [
+   0,
+   1,
+   2
+  ],
+  "exp_changed": true,
+  "lens_pt_before": [
+   99,
+   88,
+   103,
+   426
+  ],
+  "lens_pt_after": [
+   485,
+   386,
+   425,
+   426
+  ]
+ }
+]

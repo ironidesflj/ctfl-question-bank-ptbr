@@ -1,0 +1,118 @@
+{
+ "plan": "rodada20-faseB-clustering",
+ "applied": [
+  {
+   "id": "ctaltm-106",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 1,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-112",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 2,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-118",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 3,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-124",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 1,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-130",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 2,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-136",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 3,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-142",
+   "cert": "CTAL-TM",
+   "from": 0,
+   "to": 1,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-152",
+   "cert": "CTAL-TM",
+   "from": 1,
+   "to": 0,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-158",
+   "cert": "CTAL-TM",
+   "from": 1,
+   "to": 2,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-164",
+   "cert": "CTAL-TM",
+   "from": 1,
+   "to": 3,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-175",
+   "cert": "CTAL-TM",
+   "from": 2,
+   "to": 0,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-181",
+   "cert": "CTAL-TM",
+   "from": 2,
+   "to": 1,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-187",
+   "cert": "CTAL-TM",
+   "from": 2,
+   "to": 3,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  },
+  {
+   "id": "ctaltm-193",
+   "cert": "CTAL-TM",
+   "from": 2,
+   "to": 0,
+   "reason": "quebra de bloco monolítico (clustering) — ver plano",
+   "plan": "rodada20-faseB-clustering"
+  }
+ ],
+ "letter_citations_remapped": 0
+}

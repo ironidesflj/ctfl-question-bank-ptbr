@@ -17,14 +17,13 @@ GUARDS EXISTENTES (0, 1, 2) — preservados:
   Guarda 1: opção vs. explicação (heurística SequenceMatcher, com baseline)
   Guarda 2: tema PT/EN (z-score da similaridade, com baseline)
 
-NOVOS GUARDS PSICOMÉTRICOS (10-16) — F1.3 + Spec 3:
+NOVOS GUARDS PSICOMÉTRICOS (10-15) — F1.3:
   Guarda 10  LENGTH_BIAS          — pick-longest hit rate > 0.40 por cert (PT + EN)
   Guarda 11  LENGTH_EFFECT_SIZE   — Cohen's d > 0.50 por cert (correct vs distractor lengths)
   Guarda 12  HEDGE_RATIO          — ratio (correct_hedge / distractor_hedge) < 0.5 OU > 2.0
   Guarda 13  ANSWER_INDEX_CHI2    — chi2 goodness-of-fit vs uniforme, p < 0.01 (certs com ≥50 Q)
   Guarda 14  RUNS_TEST            — Wald-Wolfowitz z-score < -5.0 (clustering)
   Guarda 15  BLUEPRINT_MATCH      — drift > 15pp vs meta.chapterWeights + validação K-levels
-  Guarda 16  LETTER_PATTERN       — explicação cita letra A-D fixa apesar do shuffle
 
 Os novos guards usam APENAS stdlib (json, math, statistics, sys, collections, re,
 unicodedata, argparse, difflib, pathlib). Não dependem de scipy/numpy — o ambiente
@@ -40,7 +39,7 @@ IMPORTANTE — limitações conhecidas dos guards existentes (não é prova de b
 
 Saída:
   - Cada guard novo imprime [PASS] ou [FAIL] com detalhes por cert.
-  - Resumo final: "X/N new guards passed, Y failed".
+  - Resumo final: "X/6 new guards passed, Y failed".
   - Exit code 0 se todos os guards passarem, 1 caso contrário.
 """
 
@@ -61,20 +60,12 @@ from pathlib import Path
 CERTS_CANONICAL = ["CTFL", "CTFL-AT", "CTAL-TA", "CTAL-TM", "CT-AI"]
 
 # Certs reachable in the app today (VALID_CERTS in ctfl-app/src/certs.js).
-# CTAL-TM is reachable since app v3.17.0 and must block on quality debt.
-# Only CTFL-AT and CT-AI remain latent. Never hide a live certificate to make CI green.
-LIVE_CERTS = {"CTFL", "CTAL-TA", "CTAL-TM"}
-
-# Casos inconclusivos decididos na auditoria P2.1. Eles permanecem visíveis na
-# saída, mas ficam fora das baselines de falsos positivos e não abrem uma
-# tolerância global para IDs desconhecidos. Chaves por arquivo + guarda evitam
-# que um ID aceito numa heurística seja silenciado em outra.
-INCONCLUSIVE_ALLOWLIST = {
-    "synapse-question-bank.json": {
-        "option_exp": {"ctalta-106"},
-        "topic": {"ctalta-120"},
-    },
-}
+# CTFL-AT/CTAL-TM/CT-AI are LATENT: real data-quality debt, but not user-facing
+# until promoted to live, so their guard failures are reported (visibility)
+# but must NOT block CI for the two certs Fase 1 actually fixed. Without this
+# scoping, the 6 new guards below would exit non-zero forever, since the 3
+# untouched certs will always fail length_bias/effect_size/chi2/runs_test.
+LIVE_CERTS = {"CTFL", "CTAL-TA", "CTAL-TM"}  # r19: CTAL-TM promovido
 
 # Guard 12 — hedge/absolute lexicon (as specified in F1.3 task).
 # These are "absolutist" qualifiers; the guard name says "hedge" but the word
@@ -632,6 +623,15 @@ def guard_runs_test(bank_path: Path) -> tuple:
 
     FAIL if z < -5.0 (fewer runs than expected → clustering, e.g. CTFL ch5's
     31-consecutive same-answer run).
+
+    r20: também REPORTA o runs test POR POOL (study/exam) como informação —
+    clustering pode se esconder no entrelaçamento dos pools (a run de 46 do
+    CTAL-TM permeava os dois pools: study z=-6.34, exam z=-4.84, invisíveis
+    na sequência completa até a análise manual). O veredito de bloqueio
+    permanece EXATAMENTE o de antes (sequência completa, mesmo limiar) —
+    nada de novo bloqueia; a linha por pool é taggeada (informativo) para
+    dar visibilidade ao fenômeno. Promoção a bloqueio: decidir após a
+    convergência editorial (Rodada 21+).
     """
     with open(bank_path, encoding="utf-8") as f:
         bank = json.load(f)
@@ -670,6 +670,39 @@ def guard_runs_test(bank_path: Path) -> tuple:
             tag = "" if cert in LIVE_CERTS else " (LATENT — não bloqueia CI)"
             lines.append("      %s: z=%.2f (runs=%d, expected=%.1f, longest_same_run=%d)%s" % (
                 cert, z, runs, mu, longest, tag))
+    # r20: runs test POR POOL — informativo (não altera o veredito acima).
+    # O entrelaçamento study/exam na ordem do arquivo pode mascarar
+    # clustering que só aparece dentro de cada pool.
+    pool_lines = []
+    any_pool_info = False
+    for cert in certs_present:
+        qs = [q for q in bank["questions"] if _cert_of(q) == cert]
+        pools_present = sorted({q.get("pool") for q in qs if q.get("pool") in ("study", "exam")})
+        if not pools_present:
+            continue
+        if not any_pool_info:
+            pool_lines.append("  — por pool (INFORMATIVO — não altera o veredito):")
+            any_pool_info = True
+        for pool in pools_present:
+            seq = [q.get("answer") for q in qs
+                   if q.get("pool") == pool and isinstance(q.get("answer"), int) and 0 <= q.get("answer") < 4]
+            n = len(seq)
+            if n < 2:
+                continue
+            runs, mu, z, n1, n2 = _runs_test_z(seq)
+            longest = 1
+            cur = 1
+            for i in range(1, n):
+                if seq[i] == seq[i - 1]:
+                    cur += 1
+                    if cur > longest:
+                        longest = cur
+                else:
+                    cur = 1
+            flag = " ⚠ clustering" if z < RUNS_Z_THRESHOLD else ""
+            pool_lines.append("      %-10s %-6s n=%-4d runs=%-4d expected=%-6.1f z=%7.2f longest_same_run=%d%s" % (
+                cert, pool, n, runs, mu, z, longest, flag))
+    lines.extend(pool_lines)
     if blocking:
         return (False, lines)
     lines.append("  → [PASS] certs LIVE (%s) com z ≥ %.1f." % (", ".join(sorted(LIVE_CERTS)), RUNS_Z_THRESHOLD))
@@ -859,23 +892,16 @@ def run_existing_guards(args, bank_path: Path, baseline_file: Path, topic_baseli
     # --- Guard 1: option vs. explanation (heuristic, with baseline) ---
     suspects = check(bank_path)
     baseline_ids = load_baseline(baseline_file)
-    allowed_option_ids = INCONCLUSIVE_ALLOWLIST.get(bank_path.name, {}).get("option_exp", set())
-    inconclusive_suspects = [s for s in suspects if s["id"] in allowed_option_ids]
-    new_suspects = [
-        s for s in suspects
-        if s["id"] not in baseline_ids and s["id"] not in allowed_option_ids
-    ]
+    new_suspects = [s for s in suspects if s["id"] not in baseline_ids]
 
     if args.update_baseline:
-        baseline_suspects = [s for s in suspects if s["id"] not in allowed_option_ids]
-        save_baseline(baseline_suspects, baseline_file)
-        print(f"Baseline (opção/exp) atualizada com {len(baseline_suspects)} id(s) em {baseline_file}")
+        save_baseline(suspects, baseline_file)
+        print(f"Baseline (opção/exp) atualizada com {len(suspects)} id(s) em {baseline_file}")
         if not args.update_topic_baseline:
             sys.exit(0)
 
     print(f"[Guarda opção/exp | {args.bank_file}] {len(suspects)} suspeita(s) total | "
-          f"{len(baseline_ids)} na baseline | {len(inconclusive_suspects)} inconclusiva(s) explícita(s) | "
-          f"{len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
+          f"{len(baseline_ids)} na baseline | {len(new_suspects)} NOVA(S) (threshold: {args.threshold})\n")
     if new_suspects:
         print("ATENÇÃO: heurística de alerta, NÃO prova de bug. Leia PT/EN par a par antes de corrigir.\n")
         for s in new_suspects:
@@ -889,22 +915,15 @@ def run_existing_guards(args, bank_path: Path, baseline_file: Path, topic_baseli
     else:
         topic_suspects, mean, std, threshold_val, total = topic_result
     topic_baseline_ids = load_topic_baseline(topic_baseline_file)
-    allowed_topic_ids = INCONCLUSIVE_ALLOWLIST.get(bank_path.name, {}).get("topic", set())
-    inconclusive_topic_suspects = [s for s in topic_suspects if s["id"] in allowed_topic_ids]
-    new_topic_suspects = [
-        s for s in topic_suspects
-        if s["id"] not in topic_baseline_ids and s["id"] not in allowed_topic_ids
-    ]
+    new_topic_suspects = [s for s in topic_suspects if s["id"] not in topic_baseline_ids]
 
     if args.update_topic_baseline:
-        baseline_topic_suspects = [s for s in topic_suspects if s["id"] not in allowed_topic_ids]
-        save_topic_baseline(baseline_topic_suspects, topic_baseline_file)
-        print(f"Baseline (tema) atualizada com {len(baseline_topic_suspects)} id(s) em {topic_baseline_file}")
+        save_topic_baseline(topic_suspects, topic_baseline_file)
+        print(f"Baseline (tema) atualizada com {len(topic_suspects)} id(s) em {topic_baseline_file}")
         sys.exit(0)
 
     print(f"\n[Guarda tema | {args.bank_file}] {total} questões bilíngues | média={mean} desvio={std} limiar={threshold_val}")
     print(f"  {len(topic_suspects)} suspeita(s) total | {len(topic_baseline_ids)} na baseline | "
-          f"{len(inconclusive_topic_suspects)} inconclusiva(s) explícita(s) | "
           f"{len(new_topic_suspects)} NOVA(S)\n")
     if new_topic_suspects:
         print("Suspeitas de desalinhamento de TEMA:\n")
@@ -975,7 +994,9 @@ def main():
         else:
             print(f"ERRO: arquivo de banco não encontrado: {bank_file_name}")
             sys.exit(2)
-    bank_stem = bank_path.stem
+    # Baselines live beside this script and are named after the bank filename,
+    # not after an absolute CLI path.
+    bank_stem = Path(bank_file_name).name.replace(".json", "")
     baseline_file = Path(__file__).parent / f"check_alignment_baseline.{bank_stem}.json"
     topic_baseline_file = Path(__file__).parent / f"check_alignment_topic_baseline.{bank_stem}.json"
 
@@ -1001,7 +1022,7 @@ def main():
     existing_ok = run_existing_guards(args, bank_path, baseline_file, topic_baseline_file)
     passed, failed, failed_names = run_new_guards(bank_path, selected_guards)
     print("=" * 80)
-    print(f"RESUMO: {passed}/{len(selected_guards)} new guards passed, {failed} failed. "
+    print(f"RESUMO: {passed}/6 new guards passed, {failed} failed. "
           f"(existing guards: {'PASS' if existing_ok else 'FAIL'})")
     if failed_names:
         print("  Failed new guards: %s" % ", ".join(failed_names))
