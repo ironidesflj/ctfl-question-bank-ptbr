@@ -6,15 +6,13 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 
 ## Estado atual
 
-**Candidato editorial local:** 1.6.1-editorial.1. O app permanece 3.17.0.
-Primeiro lote: 12 questões lidas, oito reformuladas, sem alteração de
-gabaritos/pools. Revisão integral pendente; quatro guardas ainda bloqueiam.
+**Release candidata:** 1.7.0-rc1, integrada ao app Synapse 3.18.0.
+O CTAL-TM recebeu revisão editorial e 14 trocas estruturais auditadas, sem
+alterar CTFL, CTAL-TA, CT-AI ou CTFL-AT.
 
-**Reconciliação local em 2026-10-24:** v1.6.0-ctaltm copiada da entrega
-publicada no app para impedir reversão de blueprint, pools e distratores.
-CTAL-TM é LIVE e bloqueante nas guardas, mas ainda falha em quatro critérios
-psicométricos. Não considerar esta reconciliação aprovação editorial nem
-release pronta. Evidências e pendências em `CTALTM_QUALITY_REVIEW.md`.
+As guardas bloqueantes do CTAL-TM PT/EN passam na release candidata
+(comprimento, efeito de comprimento, qualificadores e runs test). CT-AI e
+CTFL-AT continuam latentes e não bloqueiam o conteúdo publicado.
 
 Proteção de sync: `verify_sync.py` rejeita downgrade e compara os dois bancos
 e as fatias completas. `test_sync_protection.py` cobre as falhas que o sync
@@ -26,7 +24,7 @@ O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (tot
 **Conteúdo no Ar (Lançado):**
 - **CTFL v4.0:** 300 questões
 - **CTAL-TA v4.0:** 200 itens
-- **CTAL-TM v3.0:** 200 itens (publicado no app; revisão editorial bloqueada)
+- **CTAL-TM v3.0:** 200 itens (release candidata 1.7.0-rc1; guardas live verdes)
 
 **Roadmap de Lançamentos Futuros (Em Breve):**
 - **CT-AI v2.0:** 200 itens (em breve)
@@ -81,7 +79,7 @@ prontos pro app, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
 | Cert | Questões | Syllabus | Status |
 |------|----------|----------|--------|
 | CTAL-TA | 200 | Advanced Level Test Analyst v4.0 | **No ar** |
-| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Publicado no app; qualidade bloqueante pendente |
+| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Release candidata; guardas live verdes |
 | CT-AI | 200 | Certified Tester AI Testing v2.0 | Em breve |
 | CTFL-AT | 200 | Agile Tester Extension v2014 | Legado / Adormecido |
 
