@@ -10,7 +10,8 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 questões CTFL do pool de estudo, em PT-BR. O registro liga cada ID pública à
 ID interna existente; não altera o banco nem as chaves de progresso dos alunos.
 `python3 verify_axon_ids.py` verifica sequência, unicidade e exclusão do pool
-de simulado no CI. Este repositório ainda não publica snapshots ou manifesto;
+de simulado. No CI, `--against-parent` também impede remapear IDs já
+reservadas. Este repositório ainda não publica snapshots ou manifesto;
 referências por questão e revisão editorial são gates antes dessa etapa.
 O rascunho das 50 referências e as dúvidas por item estão em
 `editorial/axon-ctfl-reference-review.md`; nenhuma referência desse rascunho

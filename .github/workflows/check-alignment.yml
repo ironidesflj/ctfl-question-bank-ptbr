@@ -41,13 +41,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Test synchronization protections
         run: python3 -m unittest test_sync_protection.py test_editorial_batch.py test_axon_ids.py
       - name: Validate reserved Axon IDs
-        run: python3 verify_axon_ids.py
+        run: python3 verify_axon_ids.py --against-parent
       - name: Check legacy bank
         run: python3 check_alignment.py --bank-file ctfl-questions-ptbr.json --threshold 0
       - name: Check synapse-question-bank.json (threshold 0; inconclusivos em allowlist explícita)

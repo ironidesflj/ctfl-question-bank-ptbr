@@ -4,14 +4,32 @@ This does not publish a manifest or alter the question IDs used for progress.
 """
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
 
-def verify() -> None:
+def verify_append_only(previous: dict, current: dict) -> None:
+    old = previous["mappings"]
+    if current["mappings"][: len(old)] != old or current["lastIssued"] < previous["lastIssued"]:
+        raise ValueError("Published Axon ID mappings must be append-only")
+
+
+def verify(against_parent: bool = False) -> None:
     ledger = json.loads((ROOT / "axon/ctfl-public-ids.json").read_text())
+    if against_parent:
+        result = subprocess.run(
+            ["git", "show", "HEAD^:axon/ctfl-public-ids.json"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if result.returncode:
+            raise ValueError(f"Cannot read previous Axon ID ledger: {result.stderr.strip()}")
+        verify_append_only(json.loads(result.stdout), ledger)
     bank = json.loads((ROOT / "synapse-question-bank.json").read_text())
     questions = {q["id"]: q for q in bank["questions"]}
     if len(questions) != len(bank["questions"]):
@@ -56,7 +74,9 @@ def verify() -> None:
 
 if __name__ == "__main__":
     try:
-        verify()
+        if sys.argv[1:] not in ([], ["--against-parent"]):
+            raise ValueError("Usage: verify_axon_ids.py [--against-parent]")
+        verify(against_parent="--against-parent" in sys.argv[1:])
     except (KeyError, TypeError, ValueError) as exc:
         print(f"Axon ID validation failed: {exc}", file=sys.stderr)
         raise SystemExit(1) from exc
