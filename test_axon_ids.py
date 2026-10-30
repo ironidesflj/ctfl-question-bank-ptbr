@@ -43,6 +43,33 @@ class AxonIdGuardTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "outside the CTFL study pool"):
                     verify_axon_ids.verify()
 
+    def test_corrected_questions_keep_answer_identity_and_publishable_references(self):
+        expected = {
+            "ch1-40": 3, "ch2-18": 2, "ch4-70": 0, "ch4-81": 3,
+            "ctalta-194": 1, "ctalta-196": 3, "ctalta-200": 1, "ctaltm-125": 0,
+        }
+        bank = json.loads((verify_axon_ids.ROOT / "synapse-question-bank.json").read_text())
+        questions = {question["id"]: question for question in bank["questions"]}
+        references = {
+            record["internalId"]: record
+            for exam in ("ctfl", "ctal-ta", "ctal-tm")
+            for record in json.loads(
+                (verify_axon_ids.ROOT / f"axon/{exam}-reference-candidates.json").read_text()
+            )["records"]
+        }
+        for question_id, answer in expected.items():
+            with self.subTest(question_id=question_id):
+                question = questions[question_id]
+                self.assertEqual(question["pool"], "study")
+                self.assertEqual(question["answer"], answer)
+                self.assertEqual(references[question_id]["state"], "candidate")
+                self.assertTrue(references[question_id]["reference"])
+                for lang in ("pt", "en"):
+                    self.assertEqual(len(question["locales"][lang]["options"]), 4)
+        for question_id in ("ch4-70", "ch4-81"):
+            self.assertIn("complementar", questions[question_id]["locales"]["pt"]["q"].lower())
+            self.assertIn("supplementary", questions[question_id]["locales"]["en"]["q"].lower())
+
     def test_requires_reference_state_for_every_reserved_id(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

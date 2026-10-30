@@ -15,10 +15,14 @@ EXAMS = {
     "ctal-ta": ("CTAL-TA", "CTALTA", "SYN-CTALTA-", 110),
     "ctal-tm": ("CTAL-TM", "CTALTM", "SYN-CTALTM-", 101),
 }
-OFFICIAL_HOSTS = (
+APPROVED_REFERENCE_PREFIXES = (
     "https://istqb.org/",
     "https://www.istqb.org/",
     "https://glossary.istqb.org/",
+    # Primary ODC source cited for the Trigger attribute; the syllabus cites ODC
+    # but does not detail this specific attribute.
+    "https://research.ibm.com/publications/orthogonal-defect-classificationa-concept-for-in-process-measurements",
+    "https://asq.org/quality-progress/articles/fishbone-stories?id=5c9adae78e3242588621ab300378d40b",
 )
 
 
@@ -123,8 +127,8 @@ def verify(against_parent: bool = False) -> None:
                 raise ValueError(f"{public_id} has an invalid confidence value")
             if review.get("state") == "candidate":
                 url = review.get("reference", "")
-                if not url.startswith(OFFICIAL_HOSTS) or not review.get("referenceTitle"):
-                    raise ValueError(f"{public_id} candidate has no official reference")
+                if not url.startswith(APPROVED_REFERENCE_PREFIXES) or not review.get("referenceTitle"):
+                    raise ValueError(f"{public_id} candidate has no approved primary reference")
             elif review.get("state") == "held":
                 if review.get("reference") is not None or review.get("referenceTitle") is not None:
                     raise ValueError(f"{public_id} is held but contains a publishable reference")

@@ -599,11 +599,11 @@
     {
       "publicId": "SYN-CTALTM-00067",
       "internalId": "ctaltm-125",
-      "state": "held",
-      "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Syllabus does not mandate this likelihood-times-impact formula; nearest fit is risk-level assessment."
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/?download_id=3445&sdm_process_download=1",
+      "referenceTitle": "ISTQB CTAL-TM v3.0 — §1.3.3 Quality Risk Assessment",
+      "reviewNote": "Cálculo quantitativo com probabilidade e impacto, condicionado a dados extensos e estatisticamente válidos."
     },
     {
       "publicId": "SYN-CTALTM-00068",

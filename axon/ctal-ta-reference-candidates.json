@@ -95,47 +95,47 @@
     {
       "publicId": "SYN-CTALTA-00011",
       "internalId": "ctalta-19",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "LO code/section mismatch in bank (TA-2.1.1 vs section 2.1); confirm source tagging."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.1.1, §2.1 Risk Analysis",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00012",
       "internalId": "ctalta-20",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "LO code/section mismatch in bank (TA-2.1.1 vs section 2.1); confirm source tagging."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.1.1, §2.1 Risk Analysis",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00013",
       "internalId": "ctalta-21",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question emphasizes risk mitigation; bank LO TA-2.1.1 is risk analysis. Check whether TA-2.2.1 is more specific."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.1.1, §§2.1–2.2 Risk Analysis and Risk Control",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00014",
       "internalId": "ctalta-23",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank uses broad section 2.2; confirm regression-selection content against precise LO scope."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.2.1, §2.2 Risk Control; análise de impacto e seleção/escopo de regressão",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00015",
       "internalId": "ctalta-25",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank uses broad section 2.2; confirm regression-selection content against precise LO scope."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.2.1, §2.2 Risk Control; análise de impacto e seleção/escopo de regressão",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00016",
@@ -554,11 +554,11 @@
     {
       "publicId": "SYN-CTALTA-00062",
       "internalId": "ctalta-102",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question directly tests decision table construction; bank tag TA-1.1.1 appears inconsistent. Proposed TA-3.3.1; editorial check."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-1.1.1, §1.1 Testing in the Software Development Lifecycle",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00063",
@@ -653,20 +653,20 @@
     {
       "publicId": "SYN-CTALTA-00073",
       "internalId": "ctalta-122",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Prioritization under risk-based testing is related but broad; confirm LO specificity."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — §2.1 Risk Analysis; teste baseado em risco e priorização",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00074",
       "internalId": "ctalta-123",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Impact analysis for downstream dependencies; verify whether this fits regression scope LO specifically."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-2.2.1, §2.2 Risk Control; análise de impacto e seleção/escopo de regressão",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00075",
@@ -761,11 +761,11 @@
     {
       "publicId": "SYN-CTALTA-00085",
       "internalId": "ctalta-145",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Fork/join handling in scenario models may extend beyond explicit LO scope; editorial check."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-3.2.3, §3.2.3 Scenario-Based Testing; activity diagrams, fork/join",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00086",
@@ -788,11 +788,11 @@
     {
       "publicId": "SYN-CTALTA-00088",
       "internalId": "ctalta-153",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank section is broad 3.3.1; confirm rule enumeration is directly supported by syllabus LO."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-3.3.1, §3.3.1 Decision Table Testing",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00089",
@@ -887,110 +887,110 @@
     {
       "publicId": "SYN-CTALTA-00099",
       "internalId": "ctalta-178",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question asks a specific usability aspect rather than TA contribution; confirm LO alignment."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-4.2.1, §4.2 Usability Testing",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00100",
       "internalId": "ctalta-182",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question identifies interoperability property, not explicitly TA contribution; confirm LO alignment."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-4.4.1, §4.4 Compatibility/Interoperability Testing",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00101",
       "internalId": "ctalta-183",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question is defect classification for interoperability; confirm LO scope."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-4.4.1, §4.4 Compatibility/Interoperability Testing",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00102",
       "internalId": "ctalta-187",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank tags as modeling defects (TA-5.2.1), but question directly constructs a decision table; editorial check on cross-chapter fit."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.2.1, §5.2 Supporting Phase Containment; model-based defect detection; also §3.3.1",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00103",
       "internalId": "ctalta-191",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question names scenario-based reviewing; review technique is likely TA-5.2.2, but answer also invokes effectiveness conditions; confirm."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.2.2, §5.2.2 review techniques",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00104",
       "internalId": "ctalta-192",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Question names checklist-based reviewing; review technique is likely TA-5.2.2, but asks limitation; confirm."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.2.2, §5.2.2 review techniques",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00105",
       "internalId": "ctalta-194",
-      "state": "held",
-      "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank section is broad 5.3; confirm Pareto analysis as direct LO coverage."
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — §5.3.2; Pareto e análise de causa raiz",
+      "reviewNote": "Categorias somam 60, com 40/60 aproximadamente 67%; decisão também considera severidade."
     },
     {
       "publicId": "SYN-CTALTA-00106",
       "internalId": "ctalta-195",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank section is broad 5.3; verify inference is in syllabus discussion and not beyond LO."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.3.1, §5.3 defect metrics and improving defect detection",
+      "reviewNote": "Correspondência temática confirmada. A redação de SYN-CTALTA-00107 continua retida por inferência causal mais forte do que os dados permitem."
     },
     {
       "publicId": "SYN-CTALTA-00107",
       "internalId": "ctalta-196",
-      "state": "held",
-      "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Bank section is broad 5.3; verify defect-density interpretation is supported by syllabus."
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.3.1, §5.3; análise de resultados",
+      "reviewNote": "Correção pede investigação e comparabilidade, sem concluir causa ou piora apenas pela série."
     },
     {
       "publicId": "SYN-CTALTA-00108",
       "internalId": "ctalta-198",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "ODC attribute detail exceeds broad root-cause LO description; confirm direct coverage."
+      "reference": "https://research.ibm.com/publications/orthogonal-defect-classificationa-concept-for-in-process-measurements",
+      "referenceTitle": "Chillarege et al. (1992), IBM Research — Orthogonal Defect Classification; atributo Trigger",
+      "reviewNote": "A fonte primária do ODC define o atributo Trigger; o CTAL-TA v4.0 §5.3.2 cita ODC como apoio à análise de causa raiz."
     },
     {
       "publicId": "SYN-CTALTA-00109",
       "internalId": "ctalta-199",
-      "state": "held",
+      "state": "candidate",
       "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Five whys is root cause analysis, but not defect classification; verify specific syllabus treatment."
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0 — LO TA-5.3.2, §5.3.2; five whys e análise de causa raiz",
+      "reviewNote": "Revisado contra a questão PT-BR e o syllabus oficial vigente; correspondência específica confirmada."
     },
     {
       "publicId": "SYN-CTALTA-00110",
       "internalId": "ctalta-200",
-      "state": "held",
-      "confidence": "média",
-      "reference": null,
-      "referenceTitle": null,
-      "reviewNote": "Ishikawa category taxonomy may extend beyond LO; verify direct syllabus support."
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://asq.org/quality-progress/articles/fishbone-stories?id=5c9adae78e3242588621ab300378d40b",
+      "referenceTitle": "ASQ Quality Progress — Fish(bone) Stories; os 6 Ms clássicos",
+      "reviewNote": "Os 6 Ms são apresentados como modelo possível, adaptável ao contexto, sem afirmar frequência universal."
     }
   ]
 }

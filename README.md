@@ -20,6 +20,11 @@ referências explícitas e exclusão do pool de simulado. No CI,
 nenhuma está aprovada para manifesto. Nenhum snapshot ou manifesto foi
 publicado, e inclusão no ledger não aprova nem publica conteúdo no hub.
 
+A revisão das 50 retenções foi concluída: 431 referências candidatas e nenhuma
+retida. As oito correções finais mantiveram IDs e índices de resposta. Duas
+questões CTFL sobre casos de uso estão marcadas como conteúdo complementar
+fora do exame v4.0.1. Registro: `editorial/axon-study-reference-review-2026-10-30.md`.
+
 ## Estado atual
 
 **Release candidata:** 1.7.0-rc1, integrada ao app Synapse 3.18.0.
