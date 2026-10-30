@@ -6,18 +6,24 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 
 ## IDs públicas Axon (em preparação)
 
-`axon/ctfl-public-ids.json` reserva as primeiras 50 IDs `SYN-CTFL-*` para
-questões CTFL do pool de estudo, em PT-BR. O registro liga cada ID pública à
-ID interna existente; não altera o banco nem as chaves de progresso dos alunos.
-`python3 verify_axon_ids.py` verifica sequência, unicidade e exclusão do pool
-de simulado. No CI, `--against-parent` também impede remapear IDs já
-reservadas. Este repositório ainda não publica snapshots ou manifesto;
-referências por questão e revisão editorial são gates antes dessa etapa.
-O rascunho das 50 referências e as dúvidas por item estão em
-`editorial/axon-ctfl-reference-review.md`; nenhuma referência desse rascunho
-foi aprovada para manifesto.
-O mapa estruturado `axon/ctfl-reference-candidates.json` registra 48 candidatas
-e mantém duas questões em estado `held`; o CI exige estado e fonte para cada ID.
+Os ledgers em `axon/*-public-ids.json` reservam IDs para as 431 questões dos
+pools de estudo das três provas ativas: CTFL (220), CTAL-TA (110) e CTAL-TM
+(101). Cada ID pública aponta para a ID interna existente; nenhuma questão,
+gabarito ou chave de progresso do aluno foi alterada. Os 269 itens de simulado
+e as 400 questões CTFL-AT/CT-AI fora do escopo ativo não entram nesses ledgers.
+`python3 verify_axon_ids.py` valida sequência, unicidade, pool de estudo PT-BR,
+referências explícitas e exclusão do pool de simulado. No CI,
+`--against-parent` também impede remapear IDs já reservadas. Os mapas em
+`axon/*-reference-candidates.json` contêm 381 referências candidatas e 50 itens
+`held` para revisão editorial final, listados em
+`editorial/axon-study-reference-held.md`. As referências ainda são provisórias;
+nenhuma está aprovada para manifesto. Nenhum snapshot ou manifesto foi
+publicado, e inclusão no ledger não aprova nem publica conteúdo no hub.
+
+A revisão das 50 retenções foi concluída: 431 referências candidatas e nenhuma
+retida. As oito correções finais mantiveram IDs e índices de resposta. Duas
+questões CTFL sobre casos de uso estão marcadas como conteúdo complementar
+fora do exame v4.0.1. Registro: `editorial/axon-study-reference-review-2026-10-30.md`.
 
 ## Estado atual
 
