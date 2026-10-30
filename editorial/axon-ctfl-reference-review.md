@@ -69,3 +69,18 @@ Formato: publicId | internalId | referência | confiança | nota
 - `SYN-CTFL-00047` (`ch2-23`) e `SYN-CTFL-00048` (`ch2-24`): conferir o alcance da seção; o PDF cita bottom-up para integração, mas não cita use cases nessa seção.
 - `SYN-CTFL-00049` (`ch2-25`): automação em cada integração é comportamento de CI, não garantia intrínseca do benefício do syllabus.
 - Questões de princípios `00005`–`00010`: evidência de referência é LO geral FL-1.3.1; nomenclatura/princípio é discriminador editorial, não sub-LO oficial.
+
+## Decisão proposta para o primeiro manifesto
+
+- Manter `00032`, `00045` e `00048` reservadas, mas **fora do manifesto** até
+  haver conteúdo e referência específicos defensáveis. A reserva da ID não
+  obriga sua publicação imediata.
+- Corrigir a atribuição editorial de `00028` para §1.1 e conferir `00004`
+  contra §1.2.2; as duas podem seguir após revisão do texto da questão.
+- Tratar as demais correspondências como candidatas, não aprovadas. Uma
+  revisão humana final deve confirmar enunciado, alternativa correta,
+  explicação e referência de cada registro antes de gerar snapshot.
+- Evitar reescrever em produção uma questão já respondida sob a mesma ID
+  interna só para completar o lote: o histórico local do aluno poderia passar
+  a representar um enunciado diferente. Se o conteúdo precisar mudar de
+  conceito, considerar uma nova questão e uma nova ID em lote futuro.
