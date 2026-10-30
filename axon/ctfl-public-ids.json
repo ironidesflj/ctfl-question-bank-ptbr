@@ -1,0 +1,207 @@
+{
+  "exam": "ctfl",
+  "lang": "pt-BR",
+  "lastIssued": 50,
+  "mappings": [
+    {
+      "internalId": "ch1-01",
+      "publicId": "SYN-CTFL-00001"
+    },
+    {
+      "internalId": "ch1-03",
+      "publicId": "SYN-CTFL-00002"
+    },
+    {
+      "internalId": "ch1-04",
+      "publicId": "SYN-CTFL-00003"
+    },
+    {
+      "internalId": "ch1-05",
+      "publicId": "SYN-CTFL-00004"
+    },
+    {
+      "internalId": "ch1-07",
+      "publicId": "SYN-CTFL-00005"
+    },
+    {
+      "internalId": "ch1-08",
+      "publicId": "SYN-CTFL-00006"
+    },
+    {
+      "internalId": "ch1-09",
+      "publicId": "SYN-CTFL-00007"
+    },
+    {
+      "internalId": "ch1-10",
+      "publicId": "SYN-CTFL-00008"
+    },
+    {
+      "internalId": "ch1-11",
+      "publicId": "SYN-CTFL-00009"
+    },
+    {
+      "internalId": "ch1-13",
+      "publicId": "SYN-CTFL-00010"
+    },
+    {
+      "internalId": "ch1-14",
+      "publicId": "SYN-CTFL-00011"
+    },
+    {
+      "internalId": "ch1-15",
+      "publicId": "SYN-CTFL-00012"
+    },
+    {
+      "internalId": "ch1-16",
+      "publicId": "SYN-CTFL-00013"
+    },
+    {
+      "internalId": "ch1-17",
+      "publicId": "SYN-CTFL-00014"
+    },
+    {
+      "internalId": "ch1-19",
+      "publicId": "SYN-CTFL-00015"
+    },
+    {
+      "internalId": "ch1-20",
+      "publicId": "SYN-CTFL-00016"
+    },
+    {
+      "internalId": "ch1-21",
+      "publicId": "SYN-CTFL-00017"
+    },
+    {
+      "internalId": "ch1-22",
+      "publicId": "SYN-CTFL-00018"
+    },
+    {
+      "internalId": "ch1-23",
+      "publicId": "SYN-CTFL-00019"
+    },
+    {
+      "internalId": "ch1-25",
+      "publicId": "SYN-CTFL-00020"
+    },
+    {
+      "internalId": "ch1-26",
+      "publicId": "SYN-CTFL-00021"
+    },
+    {
+      "internalId": "ch1-27",
+      "publicId": "SYN-CTFL-00022"
+    },
+    {
+      "internalId": "ch1-30",
+      "publicId": "SYN-CTFL-00023"
+    },
+    {
+      "internalId": "ch1-31",
+      "publicId": "SYN-CTFL-00024"
+    },
+    {
+      "internalId": "ch1-32",
+      "publicId": "SYN-CTFL-00025"
+    },
+    {
+      "internalId": "ch1-33",
+      "publicId": "SYN-CTFL-00026"
+    },
+    {
+      "internalId": "ch1-34",
+      "publicId": "SYN-CTFL-00027"
+    },
+    {
+      "internalId": "ch1-35",
+      "publicId": "SYN-CTFL-00028"
+    },
+    {
+      "internalId": "ch1-36",
+      "publicId": "SYN-CTFL-00029"
+    },
+    {
+      "internalId": "ch1-37",
+      "publicId": "SYN-CTFL-00030"
+    },
+    {
+      "internalId": "ch1-38",
+      "publicId": "SYN-CTFL-00031"
+    },
+    {
+      "internalId": "ch1-40",
+      "publicId": "SYN-CTFL-00032"
+    },
+    {
+      "internalId": "ch2-04",
+      "publicId": "SYN-CTFL-00033"
+    },
+    {
+      "internalId": "ch2-05",
+      "publicId": "SYN-CTFL-00034"
+    },
+    {
+      "internalId": "ch2-06",
+      "publicId": "SYN-CTFL-00035"
+    },
+    {
+      "internalId": "ch2-07",
+      "publicId": "SYN-CTFL-00036"
+    },
+    {
+      "internalId": "ch2-08",
+      "publicId": "SYN-CTFL-00037"
+    },
+    {
+      "internalId": "ch2-09",
+      "publicId": "SYN-CTFL-00038"
+    },
+    {
+      "internalId": "ch2-10",
+      "publicId": "SYN-CTFL-00039"
+    },
+    {
+      "internalId": "ch2-11",
+      "publicId": "SYN-CTFL-00040"
+    },
+    {
+      "internalId": "ch2-12",
+      "publicId": "SYN-CTFL-00041"
+    },
+    {
+      "internalId": "ch2-13",
+      "publicId": "SYN-CTFL-00042"
+    },
+    {
+      "internalId": "ch2-15",
+      "publicId": "SYN-CTFL-00043"
+    },
+    {
+      "internalId": "ch2-17",
+      "publicId": "SYN-CTFL-00044"
+    },
+    {
+      "internalId": "ch2-18",
+      "publicId": "SYN-CTFL-00045"
+    },
+    {
+      "internalId": "ch2-21",
+      "publicId": "SYN-CTFL-00046"
+    },
+    {
+      "internalId": "ch2-23",
+      "publicId": "SYN-CTFL-00047"
+    },
+    {
+      "internalId": "ch2-24",
+      "publicId": "SYN-CTFL-00048"
+    },
+    {
+      "internalId": "ch2-25",
+      "publicId": "SYN-CTFL-00049"
+    },
+    {
+      "internalId": "ch3-01",
+      "publicId": "SYN-CTFL-00050"
+    }
+  ]
+}

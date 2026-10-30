@@ -4,6 +4,15 @@ Banco de questões bilíngue para preparação a certificações ISTQB. Dois arq
 - `ctfl-questions-ptbr.json` — só CTFL v4.0 (300 questões), consumido pelo [`ctfl-app`](https://github.com/ironidesflj/ctfl-app)
 - `synapse-question-bank.json` — todas as 5 certificações (1100 questões)
 
+## IDs públicas Axon (em preparação)
+
+`axon/ctfl-public-ids.json` reserva as primeiras 50 IDs `SYN-CTFL-*` para
+questões CTFL do pool de estudo, em PT-BR. O registro liga cada ID pública à
+ID interna existente; não altera o banco nem as chaves de progresso dos alunos.
+`python3 verify_axon_ids.py` verifica sequência, unicidade e exclusão do pool
+de simulado no CI. Este repositório ainda não publica snapshots ou manifesto;
+referências por questão e revisão editorial são gates antes dessa etapa.
+
 ## Estado atual
 
 **Release candidata:** 1.7.0-rc1, integrada ao app Synapse 3.18.0.
