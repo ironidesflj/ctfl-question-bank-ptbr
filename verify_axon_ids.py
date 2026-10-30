@@ -19,6 +19,7 @@ def verify_append_only(previous: dict, current: dict) -> None:
 
 def verify(against_parent: bool = False) -> None:
     ledger = json.loads((ROOT / "axon/ctfl-public-ids.json").read_text())
+    references = json.loads((ROOT / "axon/ctfl-reference-candidates.json").read_text())
     if against_parent:
         result = subprocess.run(
             ["git", "show", "HEAD^:axon/ctfl-public-ids.json"],
@@ -39,8 +40,14 @@ def verify(against_parent: bool = False) -> None:
         raise ValueError("Unexpected exam or canonical language")
 
     mappings = ledger["mappings"]
+    ref_records = references["records"]
     if not mappings or ledger["lastIssued"] != len(mappings):
         raise ValueError("lastIssued must equal the number of reserved IDs")
+    if len(ref_records) != len(mappings):
+        raise ValueError("Every reserved ID must have an explicit reference review state")
+    ref_by_id = {item["publicId"]: item for item in ref_records}
+    if len(ref_by_id) != len(ref_records):
+        raise ValueError("Duplicate public ID in reference review")
 
     seen_internal = set()
     seen_public = set()
@@ -68,6 +75,24 @@ def verify(against_parent: bool = False) -> None:
         answer = question.get("answer")
         if type(answer) is not int or not 0 <= answer < len(options):
             raise ValueError(f"{internal_id} has invalid zero-based answer index")
+
+        review = ref_by_id.get(public_id)
+        if not review or review.get("internalId") != internal_id:
+            raise ValueError(f"{public_id} has no matching reference review")
+        if review.get("state") == "candidate":
+            url = review.get("reference", "")
+            official_hosts = (
+                "https://istqb.org/",
+                "https://www.istqb.org/",
+                "https://glossary.istqb.org/",
+            )
+            if not url.startswith(official_hosts) or not review.get("referenceTitle"):
+                raise ValueError(f"{public_id} candidate has no official reference")
+        elif review.get("state") == "held":
+            if review.get("reference") is not None or review.get("referenceTitle") is not None:
+                raise ValueError(f"{public_id} is held but contains a publishable reference")
+        else:
+            raise ValueError(f"{public_id} has an invalid review state")
 
     print(f"Validated {len(mappings)} CTFL study IDs; no exam question included")
 

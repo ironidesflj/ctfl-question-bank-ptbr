@@ -51,7 +51,7 @@ Formato: publicId | internalId | referência | confiança | nota
 - `SYN-CTFL-00045` | `ch2-18` | LO FL-2.1.1 — Explain the impact of the chosen SDLC on testing; §2.1.2 | **baixa** | Resposta depende do contexto do projeto; syllabus não declara um nível universalmente mais difícil no sprint. Revisar questão.
 - `SYN-CTFL-00046` | `ch2-21` | LO FL-2.3.1 — Summarize maintenance testing and its triggers | **alta** | Correspondência direta.
 - `SYN-CTFL-00047` | `ch2-23` | §2.2.1 Test Levels — integration approaches / bottom-up integration | **média** | Mapeamento à seção narrativa; confirmar seção/subseção exata, sem LO dedicado à estratégia.
-- `SYN-CTFL-00048` | `ch2-24` | §2.2.1 Test Levels — test basis for system testing | **baixa** | O PDF não menciona “use cases” nessa seção; confirmar outra fonte oficial antes de atribuir referência específica.
+- `SYN-CTFL-00048` | `ch2-24` | ISTQB CTAL-TA v4.0, §3.2.3 Scenario-Based Testing | **alta** | A seção diz que o modelo pode ser um use case, que os testes cobrem os cenários e que scenario-based testing ocorre com frequência em system/acceptance testing. Fonte oficial: https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf
 - `SYN-CTFL-00049` | `ch2-25` | §2.1.4 DevOps and Testing; LO FL-2.1.4 — Summarize how DevOps might impact testing | **média** | Feedback rápido de CI é tratado diretamente aqui; “em cada integração” depende da configuração do pipeline.
 - `SYN-CTFL-00050` | `ch3-01` | LO FL-3.1.1 — Recognize types of work products that can be examined by static testing; LO FL-3.1.3 — Compare and contrast static and dynamic testing | **alta** | Questão define estático por ausência de execução; mais diretamente FL-3.1.3.
 
@@ -66,17 +66,20 @@ Formato: publicId | internalId | referência | confiança | nota
 - `SYN-CTFL-00032` (`ch1-40`): remover/substanciar “exponential”; atribuição atual excede o que o syllabus sustenta.
 - `SYN-CTFL-00045` (`ch2-18`): questão pede nível “mais desafiador” sem critério universal no syllabus; avaliar reescrita ou fonte contextual.
 - `SYN-CTFL-00044` (`ch2-17`): confirmar se a descrição de TDD como teste unitário antes do código está deliberadamente mais estreita que o objetivo test-first.
-- `SYN-CTFL-00047` (`ch2-23`) e `SYN-CTFL-00048` (`ch2-24`): conferir o alcance da seção; o PDF cita bottom-up para integração, mas não cita use cases nessa seção.
+- `SYN-CTFL-00047` (`ch2-23`): CTFL §2.2.1 cita bottom-up como estratégia de integração; não há LO dedicado.
 - `SYN-CTFL-00049` (`ch2-25`): automação em cada integração é comportamento de CI, não garantia intrínseca do benefício do syllabus.
 - Questões de princípios `00005`–`00010`: evidência de referência é LO geral FL-1.3.1; nomenclatura/princípio é discriminador editorial, não sub-LO oficial.
 
 ## Decisão proposta para o primeiro manifesto
 
-- Manter `00032`, `00045` e `00048` reservadas, mas **fora do manifesto** até
+- Manter `00032` e `00045` reservadas, mas **fora do manifesto** até
   haver conteúdo e referência específicos defensáveis. A reserva da ID não
   obriga sua publicação imediata.
 - Corrigir a atribuição editorial de `00028` para §1.1 e conferir `00004`
   contra §1.2.2; as duas podem seguir após revisão do texto da questão.
+- `00048` ganha referência específica no CTAL-TA v4.0 §3.2.3 (cenários
+  baseados em casos de uso), fonte oficial ISTQB. É uma referência de nível
+  avançado aplicada a uma questão CTFL; manter essa nota visível na revisão.
 - Tratar as demais correspondências como candidatas, não aprovadas. Uma
   revisão humana final deve confirmar enunciado, alternativa correta,
   explicação e referência de cada registro antes de gerar snapshot.

@@ -1,0 +1,456 @@
+{
+  "exam": "ctfl",
+  "lang": "pt-BR",
+  "records": [
+    {
+      "publicId": "SYN-CTFL-00001",
+      "internalId": "ch1-01",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.2.3",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00002",
+      "internalId": "ch1-03",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.1.2",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00003",
+      "internalId": "ch1-04",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.2.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00004",
+      "internalId": "ch1-05",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.2.2",
+      "reviewNote": "A errata v4.0.1 esclarece que §1.2.2 compara testing e QA, não QC e QA. Rever a formulação da questão antes da aprovação."
+    },
+    {
+      "publicId": "SYN-CTFL-00005",
+      "internalId": "ch1-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00006",
+      "internalId": "ch1-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00007",
+      "internalId": "ch1-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "O syllabus diz que testes estáticos/dinâmicos devem começar tão cedo quanto possível."
+    },
+    {
+      "publicId": "SYN-CTFL-00008",
+      "internalId": "ch1-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00009",
+      "internalId": "ch1-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00010",
+      "internalId": "ch1-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00011",
+      "internalId": "ch1-14",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.3.1",
+      "reviewNote": "Aplicação direta do agrupamento de defeitos."
+    },
+    {
+      "publicId": "SYN-CTFL-00012",
+      "internalId": "ch1-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Correspondência direta: test planning."
+    },
+    {
+      "publicId": "SYN-CTFL-00013",
+      "internalId": "ch1-16",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Correspondência direta: monitoring and control."
+    },
+    {
+      "publicId": "SYN-CTFL-00014",
+      "internalId": "ch1-17",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Correspondência direta: test analysis / test conditions."
+    },
+    {
+      "publicId": "SYN-CTFL-00015",
+      "internalId": "ch1-19",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Correspondência direta: test implementation."
+    },
+    {
+      "publicId": "SYN-CTFL-00016",
+      "internalId": "ch1-20",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Execução, comparação com resultado esperado e tratamento de anomalias."
+    },
+    {
+      "publicId": "SYN-CTFL-00017",
+      "internalId": "ch1-21",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.1",
+      "reviewNote": "Correspondência direta: test completion."
+    },
+    {
+      "publicId": "SYN-CTFL-00018",
+      "internalId": "ch1-22",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.3",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00019",
+      "internalId": "ch1-23",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.4",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00020",
+      "internalId": "ch1-25",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.5.1",
+      "reviewNote": "Pensamento analítico/crítico é listado como habilidade genérica; verificar alternativa exata na revisão."
+    },
+    {
+      "publicId": "SYN-CTFL-00021",
+      "internalId": "ch1-26",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.5.2",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00022",
+      "internalId": "ch1-27",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.5.3",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00023",
+      "internalId": "ch1-30",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.4",
+      "reviewNote": "Correspondência direta; seção cita cobertura, impacto de mudanças e risco residual."
+    },
+    {
+      "publicId": "SYN-CTFL-00024",
+      "internalId": "ch1-31",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.4.5",
+      "reviewNote": "Mapeamento direto ao papel de test management, mas questão reduz o papel a responsabilidades típicas."
+    },
+    {
+      "publicId": "SYN-CTFL-00025",
+      "internalId": "ch1-32",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://glossary.istqb.org/en_US/term/test-basis",
+      "referenceTitle": "ISTQB Glossary — Test basis; CTFL v4.0.1 §1.4.4",
+      "reviewNote": "A seção e o glossário sustentam “test basis”; não há LO próprio definindo-a."
+    },
+    {
+      "publicId": "SYN-CTFL-00026",
+      "internalId": "ch1-33",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §1.1 What is Testing?",
+      "reviewNote": "O texto define explicitamente verification e validation; não há LO individual dedicado à distinção."
+    },
+    {
+      "publicId": "SYN-CTFL-00027",
+      "internalId": "ch1-34",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §1.5.1 Essential Skills and Good Practices in Testing",
+      "reviewNote": "Ceticismo construtivo/mindset descritos no conteúdo; conexão com LO FL-1.5.1."
+    },
+    {
+      "publicId": "SYN-CTFL-00028",
+      "internalId": "ch1-35",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §1.1 What is Testing?",
+      "reviewNote": "O conceito está no texto, mas FL-1.1.1 trata de objetivos de teste, não de objetos; não usar esse LO como referência específica."
+    },
+    {
+      "publicId": "SYN-CTFL-00029",
+      "internalId": "ch1-36",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.5.1",
+      "reviewNote": "Tema coberto; o item enfatiza comunicação clara do relatório."
+    },
+    {
+      "publicId": "SYN-CTFL-00030",
+      "internalId": "ch1-37",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.1.5",
+      "reviewNote": "Correspondência direta. “Tradicional” é contraste didático, não termo do LO."
+    },
+    {
+      "publicId": "SYN-CTFL-00031",
+      "internalId": "ch1-38",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-1.2.3",
+      "reviewNote": "RCA é citada no conteúdo; benefício de prevenção via melhorias está descrito, mas não é objetivo próprio."
+    },
+    {
+      "publicId": "SYN-CTFL-00032",
+      "internalId": "ch1-40",
+      "state": "held",
+      "confidence": "baixa",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Apoio apenas temático. A explicação diz “exponential”; syllabus não sustenta quantificação exponencial; revisar/retirar essa palavra."
+    },
+    {
+      "publicId": "SYN-CTFL-00033",
+      "internalId": "ch2-04",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.1.6",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00034",
+      "internalId": "ch2-05",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00035",
+      "internalId": "ch2-06",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00036",
+      "internalId": "ch2-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00037",
+      "internalId": "ch2-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.1",
+      "reviewNote": "Seção 2.2.1 enumera tipos/formas de aceitação."
+    },
+    {
+      "publicId": "SYN-CTFL-00038",
+      "internalId": "ch2-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00039",
+      "internalId": "ch2-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.2",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00040",
+      "internalId": "ch2-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.2",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00041",
+      "internalId": "ch2-12",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §4.3 White-box Test Techniques",
+      "reviewNote": "A seção é mais direta que o LO amplo FL-4.1.1 para a base estrutural perguntada."
+    },
+    {
+      "publicId": "SYN-CTFL-00042",
+      "internalId": "ch2-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.2.3",
+      "reviewNote": "Correspondência direta à definição de confirmation testing."
+    },
+    {
+      "publicId": "SYN-CTFL-00043",
+      "internalId": "ch2-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00044",
+      "internalId": "ch2-17",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §2.1.3 Test-First Approaches to Development; LO FL-4.5.3",
+      "reviewNote": "A comparação TDD/ATDD é pertinente; confirmar se “teste unitário” no gabarito é específico demais para TDD."
+    },
+    {
+      "publicId": "SYN-CTFL-00045",
+      "internalId": "ch2-18",
+      "state": "held",
+      "confidence": "baixa",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Resposta depende do contexto do projeto; syllabus não declara um nível universalmente mais difícil no sprint. Revisar questão."
+    },
+    {
+      "publicId": "SYN-CTFL-00046",
+      "internalId": "ch2-21",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-2.3.1",
+      "reviewNote": "Correspondência direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00047",
+      "internalId": "ch2-23",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §2.2.1 Test Levels",
+      "reviewNote": "Mapeamento à seção narrativa; confirmar seção/subseção exata, sem LO dedicado à estratégia."
+    },
+    {
+      "publicId": "SYN-CTFL-00048",
+      "internalId": "ch2-24",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "ISTQB CTAL-TA v4.0, §3.2.3 Scenario-Based Testing",
+      "reviewNote": "A seção diz que o modelo pode ser um use case, que os testes cobrem os cenários e que scenario-based testing ocorre com frequência em system/acceptance testing."
+    },
+    {
+      "publicId": "SYN-CTFL-00049",
+      "internalId": "ch2-25",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — §2.1.4 DevOps and Testing; LO FL-2.1.4",
+      "reviewNote": "Feedback rápido de CI é tratado diretamente aqui; “em cada integração” depende da configuração do pipeline."
+    },
+    {
+      "publicId": "SYN-CTFL-00050",
+      "internalId": "ch3-01",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Questão define estático por ausência de execução; mais diretamente FL-3.1.3."
+    }
+  ]
+}

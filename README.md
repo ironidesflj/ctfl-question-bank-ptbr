@@ -16,6 +16,8 @@ referências por questão e revisão editorial são gates antes dessa etapa.
 O rascunho das 50 referências e as dúvidas por item estão em
 `editorial/axon-ctfl-reference-review.md`; nenhuma referência desse rascunho
 foi aprovada para manifesto.
+O mapa estruturado `axon/ctfl-reference-candidates.json` registra 48 candidatas
+e mantém duas questões em estado `held`; o CI exige estado e fonte para cada ID.
 
 ## Estado atual
 
