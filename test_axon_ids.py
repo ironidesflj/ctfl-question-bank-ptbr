@@ -8,6 +8,14 @@ import verify_axon_ids
 
 
 class AxonIdGuardTests(unittest.TestCase):
+    def test_published_id_cannot_be_remapped(self):
+        previous = {"lastIssued": 1, "mappings": [{"internalId": "ch1-01", "publicId": "SYN-CTFL-00001"}]}
+        current = {"lastIssued": 2, "mappings": [*previous["mappings"], {"internalId": "ch1-03", "publicId": "SYN-CTFL-00002"}]}
+        verify_axon_ids.verify_append_only(previous, current)
+        current["mappings"][0] = {"internalId": "ch1-04", "publicId": "SYN-CTFL-00001"}
+        with self.assertRaisesRegex(ValueError, "append-only"):
+            verify_axon_ids.verify_append_only(previous, current)
+
     def test_rejects_exam_question_in_public_ledger(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
