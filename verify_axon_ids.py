@@ -14,6 +14,8 @@ def verify() -> None:
     ledger = json.loads((ROOT / "axon/ctfl-public-ids.json").read_text())
     bank = json.loads((ROOT / "synapse-question-bank.json").read_text())
     questions = {q["id"]: q for q in bank["questions"]}
+    if len(questions) != len(bank["questions"]):
+        raise ValueError("Duplicate internal question ID in canonical bank")
 
     if ledger["exam"] != "ctfl" or ledger["lang"] != "pt-BR":
         raise ValueError("Unexpected exam or canonical language")
@@ -40,6 +42,14 @@ def verify() -> None:
             raise ValueError(f"{internal_id} is missing or outside the CTFL study pool")
         if not question.get("locales", {}).get("pt", {}).get("q"):
             raise ValueError(f"{internal_id} has no Portuguese statement")
+        options = question["locales"]["pt"].get("options")
+        if not isinstance(options, list) or len(options) < 2 or not all(
+            isinstance(option, str) and option.strip() for option in options
+        ):
+            raise ValueError(f"{internal_id} has invalid Portuguese options")
+        answer = question.get("answer")
+        if type(answer) is not int or not 0 <= answer < len(options):
+            raise ValueError(f"{internal_id} has invalid zero-based answer index")
 
     print(f"Validated {len(mappings)} CTFL study IDs; no exam question included")
 
