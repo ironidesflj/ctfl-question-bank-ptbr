@@ -16,6 +16,7 @@ on:
       - "editorial/*.json"
       - "axon/*.json"
       - "verify_axon_ids.py"
+      - "test_axon_ids.py"
       - ".github/workflows/*.yml"
   pull_request:
     paths:
@@ -32,6 +33,7 @@ on:
       - "editorial/*.json"
       - "axon/*.json"
       - "verify_axon_ids.py"
+      - "test_axon_ids.py"
       - ".github/workflows/*.yml"
 
 jobs:
@@ -43,7 +45,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Test synchronization protections
-        run: python3 -m unittest test_sync_protection.py test_editorial_batch.py
+        run: python3 -m unittest test_sync_protection.py test_editorial_batch.py test_axon_ids.py
       - name: Validate reserved Axon IDs
         run: python3 verify_axon_ids.py
       - name: Check legacy bank
