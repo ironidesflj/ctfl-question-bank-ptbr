@@ -1,0 +1,996 @@
+{
+  "exam": "ctal-ta",
+  "lang": "pt-BR",
+  "records": [
+    {
+      "publicId": "SYN-CTALTA-00001",
+      "internalId": "ctalta-03",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.1 Summarize the tasks performed by the test analyst as part of test analysis (Section 1.2.1 Test Analysis)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00002",
+      "internalId": "ctalta-04",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.1 Summarize the tasks performed by the test analyst as part of test analysis (Section 1.2.1 Test Analysis)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00003",
+      "internalId": "ctalta-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.3 Summarize the tasks performed by the test analyst as part of test implementation (Section 1.2.3 Test Implementation)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00004",
+      "internalId": "ctalta-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.4 Summarize the tasks performed by the test analyst as part of test execution (Section 1.2.4 Test Execution)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00005",
+      "internalId": "ctalta-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.1 Differentiate between high-level test cases and low-level test cases (Section 1.3.1 High-Level Test Cases and Low-Level Test Cases)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00006",
+      "internalId": "ctalta-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.2 Explain the quality criteria for test cases (Section 1.3.2 Quality Criteria for Test Cases)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00007",
+      "internalId": "ctalta-12",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.2 Explain the quality criteria for test cases (Section 1.3.2 Quality Criteria for Test Cases)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00008",
+      "internalId": "ctalta-14",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.4 Explain the test oracle problem and potential solutions (Section 1.3.4 Determining Test Oracles)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00009",
+      "internalId": "ctalta-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.5 Give examples of test data requirements (Section 1.3.5 Test Data Requirements)",
+      "reviewNote": "Bank tag appears to use oracle LO; question is specifically about categories of test data, mapped here to TA-1.3.5."
+    },
+    {
+      "publicId": "SYN-CTALTA-00010",
+      "internalId": "ctalta-18",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.7 Summarize the types of tools to manage the testware (Section 1.3.7 Tools Applied in Managing the Testware)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00011",
+      "internalId": "ctalta-19",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "LO code/section mismatch in bank (TA-2.1.1 vs section 2.1); confirm source tagging."
+    },
+    {
+      "publicId": "SYN-CTALTA-00012",
+      "internalId": "ctalta-20",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "LO code/section mismatch in bank (TA-2.1.1 vs section 2.1); confirm source tagging."
+    },
+    {
+      "publicId": "SYN-CTALTA-00013",
+      "internalId": "ctalta-21",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question emphasizes risk mitigation; bank LO TA-2.1.1 is risk analysis. Check whether TA-2.2.1 is more specific."
+    },
+    {
+      "publicId": "SYN-CTALTA-00014",
+      "internalId": "ctalta-23",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank uses broad section 2.2; confirm regression-selection content against precise LO scope."
+    },
+    {
+      "publicId": "SYN-CTALTA-00015",
+      "internalId": "ctalta-25",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank uses broad section 2.2; confirm regression-selection content against precise LO scope."
+    },
+    {
+      "publicId": "SYN-CTALTA-00016",
+      "internalId": "ctalta-27",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00017",
+      "internalId": "ctalta-28",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00018",
+      "internalId": "ctalta-29",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00019",
+      "internalId": "ctalta-31",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00020",
+      "internalId": "ctalta-32",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00021",
+      "internalId": "ctalta-35",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00022",
+      "internalId": "ctalta-36",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.3 Summarize the benefits and limitations of random testing (Section 3.1.3 Random Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00023",
+      "internalId": "ctalta-37",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.3 Summarize the benefits and limitations of random testing (Section 3.1.3 Random Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00024",
+      "internalId": "ctalta-38",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.1 Explain CRUD testing (Section 3.2.1 CRUD Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00025",
+      "internalId": "ctalta-39",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00026",
+      "internalId": "ctalta-40",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00027",
+      "internalId": "ctalta-41",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00028",
+      "internalId": "ctalta-42",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00029",
+      "internalId": "ctalta-44",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.3 Apply scenario-based testing (Section 3.2.3 Scenario-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00030",
+      "internalId": "ctalta-47",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.3 Apply scenario-based testing (Section 3.2.3 Scenario-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00031",
+      "internalId": "ctalta-51",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.1 Apply decision table testing (Section 3.3.1 Decision Table Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00032",
+      "internalId": "ctalta-52",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.1 Apply decision table testing (Section 3.3.1 Decision Table Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00033",
+      "internalId": "ctalta-53",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.1 Apply decision table testing (Section 3.3.1 Decision Table Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00034",
+      "internalId": "ctalta-55",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00035",
+      "internalId": "ctalta-56",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00036",
+      "internalId": "ctalta-57",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00037",
+      "internalId": "ctalta-60",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.1 Prepare test charters for session-based testing (Section 3.4.1 Test Charters for Session-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00038",
+      "internalId": "ctalta-62",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00039",
+      "internalId": "ctalta-63",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00040",
+      "internalId": "ctalta-65",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00041",
+      "internalId": "ctalta-69",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00042",
+      "internalId": "ctalta-70",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00043",
+      "internalId": "ctalta-71",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00044",
+      "internalId": "ctalta-72",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00045",
+      "internalId": "ctalta-73",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00046",
+      "internalId": "ctalta-75",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.1.1 Differentiate between functional correctness, functional appropriateness, and functional completeness testing (Section 4.1.1 Functional Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00047",
+      "internalId": "ctalta-76",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.1.1 Differentiate between functional correctness, functional appropriateness, and functional completeness testing (Section 4.1.1 Functional Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00048",
+      "internalId": "ctalta-77",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.1.1 Differentiate between functional correctness, functional appropriateness, and functional completeness testing (Section 4.1.1 Functional Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00049",
+      "internalId": "ctalta-79",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.2.1 Explain how the test analyst contributes to usability testing (Section 4.2.1 Usability Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00050",
+      "internalId": "ctalta-80",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.3.1 Explain how the test analyst contributes to adaptability and installability testing (Section 4.3.1 Flexibility Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00051",
+      "internalId": "ctalta-81",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.3.1 Explain how the test analyst contributes to adaptability and installability testing (Section 4.3.1 Flexibility Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00052",
+      "internalId": "ctalta-82",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-4.4.1 Explain how the test analyst contributes to interoperability testing (Section 4.4.1 Compatibility Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00053",
+      "internalId": "ctalta-84",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.1.1 Explain how the test analyst can contribute to defect prevention (Section 5.1.1 Defect Prevention Practices)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00054",
+      "internalId": "ctalta-85",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.1.1 Explain how the test analyst can contribute to defect prevention (Section 5.1.1 Defect Prevention Practices)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00055",
+      "internalId": "ctalta-86",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.2.1 Use a model of the test object to detect defects in a specification (Section 5.2.1 Supporting Phase Containment with Models)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00056",
+      "internalId": "ctalta-89",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.2.1 Use a model of the test object to detect defects in a specification (Section 5.2.1 Supporting Phase Containment with Models)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00057",
+      "internalId": "ctalta-90",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.2.2 Apply a review technique to a test basis to find defects (Section 5.2.2 Applying Review Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00058",
+      "internalId": "ctalta-92",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.2.2 Apply a review technique to a test basis to find defects (Section 5.2.2 Applying Review Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00059",
+      "internalId": "ctalta-93",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.2.2 Apply a review technique to a test basis to find defects (Section 5.2.2 Applying Review Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00060",
+      "internalId": "ctalta-96",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.3.1 Analyze test results to identify potential improvements to defect detection (Section 5.3.1 Analyzing Test Results to Improve Defect Detection)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00061",
+      "internalId": "ctalta-100",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-5.3.2 Explain how defect classification supports root cause analysis (Section 5.3.2 Supporting Root Cause Analysis with Defect Classification)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00062",
+      "internalId": "ctalta-102",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question directly tests decision table construction; bank tag TA-1.1.1 appears inconsistent. Proposed TA-3.3.1; editorial check."
+    },
+    {
+      "publicId": "SYN-CTALTA-00063",
+      "internalId": "ctalta-105",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.2 Summarize the tasks performed by the test analyst as part of test design (Section 1.2.2 Test Design)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00064",
+      "internalId": "ctalta-106",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.2 Summarize the tasks performed by the test analyst as part of test design (Section 1.2.2 Test Design)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00065",
+      "internalId": "ctalta-107",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.2.3 Summarize the tasks performed by the test analyst as part of test implementation (Section 1.2.3 Test Implementation)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00066",
+      "internalId": "ctalta-109",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.1 Differentiate between high-level test cases and low-level test cases (Section 1.3.1 High-Level Test Cases and Low-Level Test Cases)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00067",
+      "internalId": "ctalta-110",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.1 Differentiate between high-level test cases and low-level test cases (Section 1.3.1 High-Level Test Cases and Low-Level Test Cases)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00068",
+      "internalId": "ctalta-113",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.3 Give examples of test environment requirements (Section 1.3.3 Test Environment Requirements)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00069",
+      "internalId": "ctalta-115",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.5 Give examples of test data requirements (Section 1.3.5 Test Data Requirements)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00070",
+      "internalId": "ctalta-116",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.6 Use keyword-driven testing to develop test scripts (Section 1.3.6 Developing Test Scripts Using Keyword-Driven Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00071",
+      "internalId": "ctalta-117",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-1.3.6 Use keyword-driven testing to develop test scripts (Section 1.3.6 Developing Test Scripts Using Keyword-Driven Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00072",
+      "internalId": "ctalta-119",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-2.1.1 Summarize the test analyst’s contribution to product risk analysis (Section 2.1 Risk Analysis)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00073",
+      "internalId": "ctalta-122",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Prioritization under risk-based testing is related but broad; confirm LO specificity."
+    },
+    {
+      "publicId": "SYN-CTALTA-00074",
+      "internalId": "ctalta-123",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Impact analysis for downstream dependencies; verify whether this fits regression scope LO specifically."
+    },
+    {
+      "publicId": "SYN-CTALTA-00075",
+      "internalId": "ctalta-126",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00076",
+      "internalId": "ctalta-127",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00077",
+      "internalId": "ctalta-129",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00078",
+      "internalId": "ctalta-130",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.1 Apply domain testing (Section 3.1.1 Domain Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00079",
+      "internalId": "ctalta-133",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00080",
+      "internalId": "ctalta-134",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00081",
+      "internalId": "ctalta-135",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.1.2 Apply combinatorial testing (Section 3.1.2 Combinatorial Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00082",
+      "internalId": "ctalta-138",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.1 Explain CRUD testing (Section 3.2.1 CRUD Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00083",
+      "internalId": "ctalta-140",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00084",
+      "internalId": "ctalta-143",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.2 Apply state transition testing (Section 3.2.2 State Transition Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00085",
+      "internalId": "ctalta-145",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Fork/join handling in scenario models may extend beyond explicit LO scope; editorial check."
+    },
+    {
+      "publicId": "SYN-CTALTA-00086",
+      "internalId": "ctalta-146",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.3 Apply scenario-based testing (Section 3.2.3 Scenario-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00087",
+      "internalId": "ctalta-148",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.2.3 Apply scenario-based testing (Section 3.2.3 Scenario-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00088",
+      "internalId": "ctalta-153",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank section is broad 3.3.1; confirm rule enumeration is directly supported by syllabus LO."
+    },
+    {
+      "publicId": "SYN-CTALTA-00089",
+      "internalId": "ctalta-154",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00090",
+      "internalId": "ctalta-155",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00091",
+      "internalId": "ctalta-157",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.3.2 Apply metamorphic testing (Section 3.3.2 Metamorphic Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00092",
+      "internalId": "ctalta-158",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.1 Prepare test charters for session-based testing (Section 3.4.1 Test Charters for Session-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00093",
+      "internalId": "ctalta-160",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.1 Prepare test charters for session-based testing (Section 3.4.1 Test Charters for Session-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00094",
+      "internalId": "ctalta-161",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.1 Prepare test charters for session-based testing (Section 3.4.1 Test Charters for Session-Based Testing)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00095",
+      "internalId": "ctalta-163",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00096",
+      "internalId": "ctalta-164",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00097",
+      "internalId": "ctalta-165",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.4.2 Prepare checklists that support experience-based testing (Section 3.4.2 Checklists Supporting Experience-Based Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00098",
+      "internalId": "ctalta-173",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://istqb.org/wp-content/uploads/sdm-uploads/ISTQB-CTAL-TA-Syllabus-v4.0-EN-4.pdf",
+      "referenceTitle": "TA-3.5.1 Select appropriate test techniques to mitigate product risks for a given situation (Section 3.5.1 Applying the Most Appropriate Test Techniques)",
+      "reviewNote": "Direct match to official v4.0 LO based on question content."
+    },
+    {
+      "publicId": "SYN-CTALTA-00099",
+      "internalId": "ctalta-178",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question asks a specific usability aspect rather than TA contribution; confirm LO alignment."
+    },
+    {
+      "publicId": "SYN-CTALTA-00100",
+      "internalId": "ctalta-182",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question identifies interoperability property, not explicitly TA contribution; confirm LO alignment."
+    },
+    {
+      "publicId": "SYN-CTALTA-00101",
+      "internalId": "ctalta-183",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question is defect classification for interoperability; confirm LO scope."
+    },
+    {
+      "publicId": "SYN-CTALTA-00102",
+      "internalId": "ctalta-187",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank tags as modeling defects (TA-5.2.1), but question directly constructs a decision table; editorial check on cross-chapter fit."
+    },
+    {
+      "publicId": "SYN-CTALTA-00103",
+      "internalId": "ctalta-191",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question names scenario-based reviewing; review technique is likely TA-5.2.2, but answer also invokes effectiveness conditions; confirm."
+    },
+    {
+      "publicId": "SYN-CTALTA-00104",
+      "internalId": "ctalta-192",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Question names checklist-based reviewing; review technique is likely TA-5.2.2, but asks limitation; confirm."
+    },
+    {
+      "publicId": "SYN-CTALTA-00105",
+      "internalId": "ctalta-194",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank section is broad 5.3; confirm Pareto analysis as direct LO coverage."
+    },
+    {
+      "publicId": "SYN-CTALTA-00106",
+      "internalId": "ctalta-195",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank section is broad 5.3; verify inference is in syllabus discussion and not beyond LO."
+    },
+    {
+      "publicId": "SYN-CTALTA-00107",
+      "internalId": "ctalta-196",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Bank section is broad 5.3; verify defect-density interpretation is supported by syllabus."
+    },
+    {
+      "publicId": "SYN-CTALTA-00108",
+      "internalId": "ctalta-198",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "ODC attribute detail exceeds broad root-cause LO description; confirm direct coverage."
+    },
+    {
+      "publicId": "SYN-CTALTA-00109",
+      "internalId": "ctalta-199",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Five whys is root cause analysis, but not defect classification; verify specific syllabus treatment."
+    },
+    {
+      "publicId": "SYN-CTALTA-00110",
+      "internalId": "ctalta-200",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Ishikawa category taxonomy may extend beyond LO; verify direct syllabus support."
+    }
+  ]
+}

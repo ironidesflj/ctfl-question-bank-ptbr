@@ -1,0 +1,915 @@
+{
+  "exam": "ctal-tm",
+  "lang": "pt-BR",
+  "records": [
+    {
+      "publicId": "SYN-CTALTM-00001",
+      "internalId": "ctaltm-01",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test planning",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00002",
+      "internalId": "ctaltm-02",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test planning",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00003",
+      "internalId": "ctaltm-05",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test completion",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00004",
+      "internalId": "ctaltm-06",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test completion",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00005",
+      "internalId": "ctaltm-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare why different stakeholders are interested in testing",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00006",
+      "internalId": "ctaltm-09",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare why different stakeholders are interested in testing",
+      "reviewNote": "Matrix quadrant detail is discussed in stakeholder management; mapped to the stakeholder LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00007",
+      "internalId": "ctaltm-10",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "1.2 The Context of Testing",
+      "reviewNote": "Matrix rationale spans stakeholder interest and management; section fit clearer than a single LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00008",
+      "internalId": "ctaltm-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain testing in a hybrid software development model",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00009",
+      "internalId": "ctaltm-12",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test management activities for various software development lifecycles",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00010",
+      "internalId": "ctaltm-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test management activities for various software development lifecycles",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00011",
+      "internalId": "ctaltm-17",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare test management activities for various test types",
+      "reviewNote": "Confirmation/regression distinction is treated as test types; mapped to 1.2.6."
+    },
+    {
+      "publicId": "SYN-CTALTM-00012",
+      "internalId": "ctaltm-20",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the various measures that risk-based testing takes in order to respond to risks",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00013",
+      "internalId": "ctaltm-21",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the various measures that risk-based testing takes in order to respond to risks",
+      "reviewNote": "No-defect result interpretation is a risk-based testing measure; mapped to TM-1.3.1."
+    },
+    {
+      "publicId": "SYN-CTALTM-00014",
+      "internalId": "ctaltm-23",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of different techniques a test manager can use for identifying risks related to product quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00015",
+      "internalId": "ctaltm-24",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the factors that determine the risk levels related to product quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00016",
+      "internalId": "ctaltm-26",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the factors that determine the risk levels related to product quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00017",
+      "internalId": "ctaltm-30",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate between heavyweight and lightweight examples of risk-based testing techniques",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00018",
+      "internalId": "ctaltm-32",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain typical choices for a test approach",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00019",
+      "internalId": "ctaltm-38",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to use the IDEAL model for test process improvement on a given project",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00020",
+      "internalId": "ctaltm-40",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the model-based improvement approach to test process improvement and understand how to apply it on a project context",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00021",
+      "internalId": "ctaltm-41",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the model-based improvement approach to test process improvement and understand how to apply it on a project context",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00022",
+      "internalId": "ctaltm-42",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the analytical-based improvement approach to test process improvement and understand how to apply it on a project context",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00023",
+      "internalId": "ctaltm-45",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the best practices for tool introduction",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00024",
+      "internalId": "ctaltm-48",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the impact of different technical and business aspects when deciding on a tool type",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00025",
+      "internalId": "ctaltm-56",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of metrics to achieve the test objectives",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00026",
+      "internalId": "ctaltm-57",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of metrics to achieve the test objectives",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00027",
+      "internalId": "ctaltm-58",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to control test progress using test metrics",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00028",
+      "internalId": "ctaltm-59",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to control test progress using test metrics",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00029",
+      "internalId": "ctaltm-62",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the factors that need to be considered in test estimation",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00030",
+      "internalId": "ctaltm-63",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "2.2 Test Estimation",
+      "reviewNote": "Estimation relationship is covered broadly in section 2.2; no single LO wording fits exactly."
+    },
+    {
+      "publicId": "SYN-CTALTM-00031",
+      "internalId": "ctaltm-65",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00032",
+      "internalId": "ctaltm-66",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00033",
+      "internalId": "ctaltm-71",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the process and participants required for effective defect management",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00034",
+      "internalId": "ctaltm-72",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the process and participants required for effective defect management",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00035",
+      "internalId": "ctaltm-74",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the specifics of defect management in Agile software development",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00036",
+      "internalId": "ctaltm-79",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00037",
+      "internalId": "ctaltm-81",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00038",
+      "internalId": "ctaltm-82",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00039",
+      "internalId": "ctaltm-83",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of typical skills needed by test team members within four areas of competence",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00040",
+      "internalId": "ctaltm-88",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of typical skills needed by test team members within four areas of competence",
+      "reviewNote": "Belbin team roles are mentioned within team skills; mapped to competency examples."
+    },
+    {
+      "publicId": "SYN-CTALTM-00041",
+      "internalId": "ctaltm-89",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate between the typical approaches for developing skills of test team members",
+      "reviewNote": "Multiple skill development approaches; mapped to differentiating approaches."
+    },
+    {
+      "publicId": "SYN-CTALTM-00042",
+      "internalId": "ctaltm-91",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain skills required to manage a test team",
+      "reviewNote": "Team management competency spans the whole test team section; mapped to management skills LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00043",
+      "internalId": "ctaltm-93",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of motivating and hygiene factors for test team members",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00044",
+      "internalId": "ctaltm-95",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples for each of the four categories determining the cost of quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00045",
+      "internalId": "ctaltm-96",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples for each of the four categories determining the cost of quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00046",
+      "internalId": "ctaltm-97",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples for each of the four categories determining the cost of quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00047",
+      "internalId": "ctaltm-100",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Apply a cost-benefit calculation to estimate the added value of testing for stakeholders",
+      "reviewNote": "Business case argument in stakeholder relationship; mapped to cost-benefit LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00048",
+      "internalId": "ctaltm-101",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test planning",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00049",
+      "internalId": "ctaltm-102",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test planning",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00050",
+      "internalId": "ctaltm-103",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test monitoring and test control",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00051",
+      "internalId": "ctaltm-104",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test monitoring and test control",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00052",
+      "internalId": "ctaltm-105",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test completion",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00053",
+      "internalId": "ctaltm-106",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test completion",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00054",
+      "internalId": "ctaltm-107",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare why different stakeholders are interested in testing",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00055",
+      "internalId": "ctaltm-109",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain why stakeholders' knowledge is important in test management",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00056",
+      "internalId": "ctaltm-111",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain testing in a hybrid software development model",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00057",
+      "internalId": "ctaltm-112",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain testing in a hybrid software development model",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00058",
+      "internalId": "ctaltm-113",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test management activities for various software development lifecycles",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00059",
+      "internalId": "ctaltm-114",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test management activities for various software development lifecycles",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00060",
+      "internalId": "ctaltm-115",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare test management activities at various test levels",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00061",
+      "internalId": "ctaltm-116",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare test management activities at various test levels",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00062",
+      "internalId": "ctaltm-117",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Compare test management activities for various test types",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00063",
+      "internalId": "ctaltm-120",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the various measures that risk-based testing takes in order to respond to risks",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00064",
+      "internalId": "ctaltm-121",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the various measures that risk-based testing takes in order to respond to risks",
+      "reviewNote": "Specific risk response choices; mapped to general response measures LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00065",
+      "internalId": "ctaltm-123",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of different techniques a test manager can use for identifying risks related to product quality",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00066",
+      "internalId": "ctaltm-124",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the factors that determine the risk levels related to product quality",
+      "reviewNote": "Likelihood and impact factor mapping directly to risk level factors."
+    },
+    {
+      "publicId": "SYN-CTALTM-00067",
+      "internalId": "ctaltm-125",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Syllabus does not mandate this likelihood-times-impact formula; nearest fit is risk-level assessment."
+    },
+    {
+      "publicId": "SYN-CTALTM-00068",
+      "internalId": "ctaltm-129",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate between heavyweight and lightweight examples of risk-based testing techniques",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00069",
+      "internalId": "ctaltm-131",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of success metrics and difficulties associated with risk-based testing",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00070",
+      "internalId": "ctaltm-133",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Analyze an organizational test strategy and the project context to select the appropriate test approach",
+      "reviewNote": "Process-compliant approach terminology is discussed in project test strategy; mapped to approach selection."
+    },
+    {
+      "publicId": "SYN-CTALTM-00071",
+      "internalId": "ctaltm-138",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to use the IDEAL model for test process improvement on a given project",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00072",
+      "internalId": "ctaltm-139",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to use the IDEAL model for test process improvement on a given project",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00073",
+      "internalId": "ctaltm-141",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the model-based improvement approach to test process improvement and understand how to apply it on a project context",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00074",
+      "internalId": "ctaltm-142",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the analytical-based improvement approach to test process improvement and understand how to apply it on a project context",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00075",
+      "internalId": "ctaltm-146",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize the best practices for tool introduction",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00076",
+      "internalId": "ctaltm-148",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the impact of different technical and business aspects when deciding on a tool type",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00077",
+      "internalId": "ctaltm-151",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate among the stages of the tool lifecycle",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00078",
+      "internalId": "ctaltm-152",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples for metric collection and evaluation by using tools",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00079",
+      "internalId": "ctaltm-153",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples for metric collection and evaluation by using tools",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00080",
+      "internalId": "ctaltm-155",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Summarize test management activities for various software development lifecycles",
+      "reviewNote": "Kanban adaptation in SDLC; LO 1.2.4 is nearest."
+    },
+    {
+      "publicId": "SYN-CTALTM-00081",
+      "internalId": "ctaltm-159",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how to control test progress using test metrics",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00082",
+      "internalId": "ctaltm-164",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the factors that need to be considered in test estimation",
+      "reviewNote": "Specific factor list mapped to estimation factors LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00083",
+      "internalId": "ctaltm-165",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00084",
+      "internalId": "ctaltm-166",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "Factors increasing estimate are covered by estimation influence LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00085",
+      "internalId": "ctaltm-167",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00086",
+      "internalId": "ctaltm-168",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of factors which may influence test estimates",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00087",
+      "internalId": "ctaltm-173",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Implement a defect management process, including the defect workflow, that can be used to monitor and control defects",
+      "reviewNote": "Reopened defect workflow maps to the defect management process LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00088",
+      "internalId": "ctaltm-176",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain the challenges of defect management in hybrid software development",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00089",
+      "internalId": "ctaltm-179",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "Specific distribution statistic use is one of process improvement applications."
+    },
+    {
+      "publicId": "SYN-CTALTM-00090",
+      "internalId": "ctaltm-180",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "Root cause-based improvement action maps to defect statistics improvement."
+    },
+    {
+      "publicId": "SYN-CTALTM-00091",
+      "internalId": "ctaltm-181",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "Trend analysis improvement maps to defect statistics improvement."
+    },
+    {
+      "publicId": "SYN-CTALTM-00092",
+      "internalId": "ctaltm-182",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain how defect report statistics can be used to devise process improvement",
+      "reviewNote": "Test-level distribution improvement maps to defect statistics improvement."
+    },
+    {
+      "publicId": "SYN-CTALTM-00093",
+      "internalId": "ctaltm-183",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Use the data and classification information that should be gathered during defect management",
+      "reviewNote": "ODC classification links to defect data and statistics; mapped to data/classification LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00094",
+      "internalId": "ctaltm-184",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of typical skills needed by test team members within four areas of competence",
+      "reviewNote": "Social competency examples fall within the four areas competency LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00095",
+      "internalId": "ctaltm-185",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Give examples of typical skills needed by test team members within four areas of competence",
+      "reviewNote": "Personal competency examples fall within the four areas competency LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00096",
+      "internalId": "ctaltm-189",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain typical techniques for skill assessments for test team members",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00097",
+      "internalId": "ctaltm-190",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate between the typical approaches for developing skills of test team members",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00098",
+      "internalId": "ctaltm-191",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Differentiate between the typical approaches for developing skills of test team members",
+      "reviewNote": "Certification is one development approach; practice also matters, mapped to skill development LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00099",
+      "internalId": "ctaltm-192",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Explain skills required to manage a test team",
+      "reviewNote": "LO match supported by question content and syllabus objective."
+    },
+    {
+      "publicId": "SYN-CTALTM-00100",
+      "internalId": "ctaltm-197",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Apply a cost-benefit calculation to estimate the added value of testing for stakeholders",
+      "reviewNote": "Cost-benefit application directly matches LO."
+    },
+    {
+      "publicId": "SYN-CTALTM-00101",
+      "internalId": "ctaltm-198",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTAL-TM_Syllabus_v3.0_zKjKsaN.pdf",
+      "referenceTitle": "Apply a cost-benefit calculation to estimate the added value of testing for stakeholders",
+      "reviewNote": "Cost-benefit application directly matches LO."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "exam": "ctfl",
   "lang": "pt-BR",
-  "lastIssued": 50,
+  "lastIssued": 220,
   "mappings": [
     {
       "internalId": "ch1-01",
@@ -202,6 +202,686 @@
     {
       "internalId": "ch3-01",
       "publicId": "SYN-CTFL-00050"
+    },
+    {
+      "internalId": "ch3-02",
+      "publicId": "SYN-CTFL-00051"
+    },
+    {
+      "internalId": "ch3-03",
+      "publicId": "SYN-CTFL-00052"
+    },
+    {
+      "internalId": "ch3-04",
+      "publicId": "SYN-CTFL-00053"
+    },
+    {
+      "internalId": "ch3-05",
+      "publicId": "SYN-CTFL-00054"
+    },
+    {
+      "internalId": "ch3-06",
+      "publicId": "SYN-CTFL-00055"
+    },
+    {
+      "internalId": "ch3-08",
+      "publicId": "SYN-CTFL-00056"
+    },
+    {
+      "internalId": "ch3-09",
+      "publicId": "SYN-CTFL-00057"
+    },
+    {
+      "internalId": "ch3-10",
+      "publicId": "SYN-CTFL-00058"
+    },
+    {
+      "internalId": "ch3-11",
+      "publicId": "SYN-CTFL-00059"
+    },
+    {
+      "internalId": "ch3-12",
+      "publicId": "SYN-CTFL-00060"
+    },
+    {
+      "internalId": "ch3-13",
+      "publicId": "SYN-CTFL-00061"
+    },
+    {
+      "internalId": "ch3-14",
+      "publicId": "SYN-CTFL-00062"
+    },
+    {
+      "internalId": "ch3-15",
+      "publicId": "SYN-CTFL-00063"
+    },
+    {
+      "internalId": "ch3-16",
+      "publicId": "SYN-CTFL-00064"
+    },
+    {
+      "internalId": "ch3-18",
+      "publicId": "SYN-CTFL-00065"
+    },
+    {
+      "internalId": "ch3-19",
+      "publicId": "SYN-CTFL-00066"
+    },
+    {
+      "internalId": "ch3-20",
+      "publicId": "SYN-CTFL-00067"
+    },
+    {
+      "internalId": "ch3-21",
+      "publicId": "SYN-CTFL-00068"
+    },
+    {
+      "internalId": "ch3-22",
+      "publicId": "SYN-CTFL-00069"
+    },
+    {
+      "internalId": "ch3-23",
+      "publicId": "SYN-CTFL-00070"
+    },
+    {
+      "internalId": "ch3-24",
+      "publicId": "SYN-CTFL-00071"
+    },
+    {
+      "internalId": "ch3-25",
+      "publicId": "SYN-CTFL-00072"
+    },
+    {
+      "internalId": "ch4-01",
+      "publicId": "SYN-CTFL-00073"
+    },
+    {
+      "internalId": "ch4-02",
+      "publicId": "SYN-CTFL-00074"
+    },
+    {
+      "internalId": "ch4-05",
+      "publicId": "SYN-CTFL-00075"
+    },
+    {
+      "internalId": "ch4-06",
+      "publicId": "SYN-CTFL-00076"
+    },
+    {
+      "internalId": "ch4-07",
+      "publicId": "SYN-CTFL-00077"
+    },
+    {
+      "internalId": "ch4-09",
+      "publicId": "SYN-CTFL-00078"
+    },
+    {
+      "internalId": "ch4-11",
+      "publicId": "SYN-CTFL-00079"
+    },
+    {
+      "internalId": "ch4-12",
+      "publicId": "SYN-CTFL-00080"
+    },
+    {
+      "internalId": "ch4-13",
+      "publicId": "SYN-CTFL-00081"
+    },
+    {
+      "internalId": "ch4-14",
+      "publicId": "SYN-CTFL-00082"
+    },
+    {
+      "internalId": "ch4-15",
+      "publicId": "SYN-CTFL-00083"
+    },
+    {
+      "internalId": "ch4-17",
+      "publicId": "SYN-CTFL-00084"
+    },
+    {
+      "internalId": "ch4-18",
+      "publicId": "SYN-CTFL-00085"
+    },
+    {
+      "internalId": "ch4-19",
+      "publicId": "SYN-CTFL-00086"
+    },
+    {
+      "internalId": "ch4-20",
+      "publicId": "SYN-CTFL-00087"
+    },
+    {
+      "internalId": "ch4-21",
+      "publicId": "SYN-CTFL-00088"
+    },
+    {
+      "internalId": "ch4-22",
+      "publicId": "SYN-CTFL-00089"
+    },
+    {
+      "internalId": "ch4-24",
+      "publicId": "SYN-CTFL-00090"
+    },
+    {
+      "internalId": "ch4-25",
+      "publicId": "SYN-CTFL-00091"
+    },
+    {
+      "internalId": "ch4-27",
+      "publicId": "SYN-CTFL-00092"
+    },
+    {
+      "internalId": "ch4-29",
+      "publicId": "SYN-CTFL-00093"
+    },
+    {
+      "internalId": "ch4-30",
+      "publicId": "SYN-CTFL-00094"
+    },
+    {
+      "internalId": "ch4-31",
+      "publicId": "SYN-CTFL-00095"
+    },
+    {
+      "internalId": "ch4-32",
+      "publicId": "SYN-CTFL-00096"
+    },
+    {
+      "internalId": "ch4-33",
+      "publicId": "SYN-CTFL-00097"
+    },
+    {
+      "internalId": "ch4-34",
+      "publicId": "SYN-CTFL-00098"
+    },
+    {
+      "internalId": "ch4-35",
+      "publicId": "SYN-CTFL-00099"
+    },
+    {
+      "internalId": "ch4-36",
+      "publicId": "SYN-CTFL-00100"
+    },
+    {
+      "internalId": "ch4-37",
+      "publicId": "SYN-CTFL-00101"
+    },
+    {
+      "internalId": "ch4-38",
+      "publicId": "SYN-CTFL-00102"
+    },
+    {
+      "internalId": "ch4-39",
+      "publicId": "SYN-CTFL-00103"
+    },
+    {
+      "internalId": "ch4-40",
+      "publicId": "SYN-CTFL-00104"
+    },
+    {
+      "internalId": "ch4-42",
+      "publicId": "SYN-CTFL-00105"
+    },
+    {
+      "internalId": "ch4-43",
+      "publicId": "SYN-CTFL-00106"
+    },
+    {
+      "internalId": "ch4-44",
+      "publicId": "SYN-CTFL-00107"
+    },
+    {
+      "internalId": "ch4-47",
+      "publicId": "SYN-CTFL-00108"
+    },
+    {
+      "internalId": "ch4-48",
+      "publicId": "SYN-CTFL-00109"
+    },
+    {
+      "internalId": "ch4-50",
+      "publicId": "SYN-CTFL-00110"
+    },
+    {
+      "internalId": "ch4-52",
+      "publicId": "SYN-CTFL-00111"
+    },
+    {
+      "internalId": "ch4-53",
+      "publicId": "SYN-CTFL-00112"
+    },
+    {
+      "internalId": "ch4-54",
+      "publicId": "SYN-CTFL-00113"
+    },
+    {
+      "internalId": "ch5-01",
+      "publicId": "SYN-CTFL-00114"
+    },
+    {
+      "internalId": "ch5-02",
+      "publicId": "SYN-CTFL-00115"
+    },
+    {
+      "internalId": "ch5-03",
+      "publicId": "SYN-CTFL-00116"
+    },
+    {
+      "internalId": "ch5-04",
+      "publicId": "SYN-CTFL-00117"
+    },
+    {
+      "internalId": "ch5-06",
+      "publicId": "SYN-CTFL-00118"
+    },
+    {
+      "internalId": "ch5-07",
+      "publicId": "SYN-CTFL-00119"
+    },
+    {
+      "internalId": "ch5-08",
+      "publicId": "SYN-CTFL-00120"
+    },
+    {
+      "internalId": "ch5-09",
+      "publicId": "SYN-CTFL-00121"
+    },
+    {
+      "internalId": "ch5-10",
+      "publicId": "SYN-CTFL-00122"
+    },
+    {
+      "internalId": "ch5-11",
+      "publicId": "SYN-CTFL-00123"
+    },
+    {
+      "internalId": "ch5-12",
+      "publicId": "SYN-CTFL-00124"
+    },
+    {
+      "internalId": "ch5-13",
+      "publicId": "SYN-CTFL-00125"
+    },
+    {
+      "internalId": "ch5-16",
+      "publicId": "SYN-CTFL-00126"
+    },
+    {
+      "internalId": "ch5-19",
+      "publicId": "SYN-CTFL-00127"
+    },
+    {
+      "internalId": "ch5-20",
+      "publicId": "SYN-CTFL-00128"
+    },
+    {
+      "internalId": "ch5-21",
+      "publicId": "SYN-CTFL-00129"
+    },
+    {
+      "internalId": "ch5-22",
+      "publicId": "SYN-CTFL-00130"
+    },
+    {
+      "internalId": "ch5-23",
+      "publicId": "SYN-CTFL-00131"
+    },
+    {
+      "internalId": "ch5-24",
+      "publicId": "SYN-CTFL-00132"
+    },
+    {
+      "internalId": "ch5-26",
+      "publicId": "SYN-CTFL-00133"
+    },
+    {
+      "internalId": "ch5-27",
+      "publicId": "SYN-CTFL-00134"
+    },
+    {
+      "internalId": "ch5-28",
+      "publicId": "SYN-CTFL-00135"
+    },
+    {
+      "internalId": "ch5-30",
+      "publicId": "SYN-CTFL-00136"
+    },
+    {
+      "internalId": "ch5-32",
+      "publicId": "SYN-CTFL-00137"
+    },
+    {
+      "internalId": "ch5-33",
+      "publicId": "SYN-CTFL-00138"
+    },
+    {
+      "internalId": "ch5-34",
+      "publicId": "SYN-CTFL-00139"
+    },
+    {
+      "internalId": "ch5-36",
+      "publicId": "SYN-CTFL-00140"
+    },
+    {
+      "internalId": "ch5-37",
+      "publicId": "SYN-CTFL-00141"
+    },
+    {
+      "internalId": "ch5-38",
+      "publicId": "SYN-CTFL-00142"
+    },
+    {
+      "internalId": "ch5-41",
+      "publicId": "SYN-CTFL-00143"
+    },
+    {
+      "internalId": "ch5-42",
+      "publicId": "SYN-CTFL-00144"
+    },
+    {
+      "internalId": "ch5-43",
+      "publicId": "SYN-CTFL-00145"
+    },
+    {
+      "internalId": "ch5-44",
+      "publicId": "SYN-CTFL-00146"
+    },
+    {
+      "internalId": "ch6-02",
+      "publicId": "SYN-CTFL-00147"
+    },
+    {
+      "internalId": "ch6-03",
+      "publicId": "SYN-CTFL-00148"
+    },
+    {
+      "internalId": "ch6-05",
+      "publicId": "SYN-CTFL-00149"
+    },
+    {
+      "internalId": "ch6-07",
+      "publicId": "SYN-CTFL-00150"
+    },
+    {
+      "internalId": "ch6-08",
+      "publicId": "SYN-CTFL-00151"
+    },
+    {
+      "internalId": "ch6-09",
+      "publicId": "SYN-CTFL-00152"
+    },
+    {
+      "internalId": "ch6-10",
+      "publicId": "SYN-CTFL-00153"
+    },
+    {
+      "internalId": "ch1-41",
+      "publicId": "SYN-CTFL-00154"
+    },
+    {
+      "internalId": "ch1-42",
+      "publicId": "SYN-CTFL-00155"
+    },
+    {
+      "internalId": "ch1-45",
+      "publicId": "SYN-CTFL-00156"
+    },
+    {
+      "internalId": "ch1-46",
+      "publicId": "SYN-CTFL-00157"
+    },
+    {
+      "internalId": "ch1-47",
+      "publicId": "SYN-CTFL-00158"
+    },
+    {
+      "internalId": "ch1-48",
+      "publicId": "SYN-CTFL-00159"
+    },
+    {
+      "internalId": "ch1-49",
+      "publicId": "SYN-CTFL-00160"
+    },
+    {
+      "internalId": "ch1-50",
+      "publicId": "SYN-CTFL-00161"
+    },
+    {
+      "internalId": "ch1-53",
+      "publicId": "SYN-CTFL-00162"
+    },
+    {
+      "internalId": "ch1-54",
+      "publicId": "SYN-CTFL-00163"
+    },
+    {
+      "internalId": "ch1-58",
+      "publicId": "SYN-CTFL-00164"
+    },
+    {
+      "internalId": "ch1-59",
+      "publicId": "SYN-CTFL-00165"
+    },
+    {
+      "internalId": "ch2-26",
+      "publicId": "SYN-CTFL-00166"
+    },
+    {
+      "internalId": "ch2-27",
+      "publicId": "SYN-CTFL-00167"
+    },
+    {
+      "internalId": "ch2-28",
+      "publicId": "SYN-CTFL-00168"
+    },
+    {
+      "internalId": "ch2-29",
+      "publicId": "SYN-CTFL-00169"
+    },
+    {
+      "internalId": "ch2-31",
+      "publicId": "SYN-CTFL-00170"
+    },
+    {
+      "internalId": "ch2-33",
+      "publicId": "SYN-CTFL-00171"
+    },
+    {
+      "internalId": "ch2-35",
+      "publicId": "SYN-CTFL-00172"
+    },
+    {
+      "internalId": "ch2-36",
+      "publicId": "SYN-CTFL-00173"
+    },
+    {
+      "internalId": "ch2-37",
+      "publicId": "SYN-CTFL-00174"
+    },
+    {
+      "internalId": "ch3-26",
+      "publicId": "SYN-CTFL-00175"
+    },
+    {
+      "internalId": "ch3-28",
+      "publicId": "SYN-CTFL-00176"
+    },
+    {
+      "internalId": "ch3-29",
+      "publicId": "SYN-CTFL-00177"
+    },
+    {
+      "internalId": "ch3-30",
+      "publicId": "SYN-CTFL-00178"
+    },
+    {
+      "internalId": "ch3-33",
+      "publicId": "SYN-CTFL-00179"
+    },
+    {
+      "internalId": "ch3-35",
+      "publicId": "SYN-CTFL-00180"
+    },
+    {
+      "internalId": "ch3-38",
+      "publicId": "SYN-CTFL-00181"
+    },
+    {
+      "internalId": "ch4-57",
+      "publicId": "SYN-CTFL-00182"
+    },
+    {
+      "internalId": "ch4-58",
+      "publicId": "SYN-CTFL-00183"
+    },
+    {
+      "internalId": "ch4-60",
+      "publicId": "SYN-CTFL-00184"
+    },
+    {
+      "internalId": "ch4-61",
+      "publicId": "SYN-CTFL-00185"
+    },
+    {
+      "internalId": "ch4-62",
+      "publicId": "SYN-CTFL-00186"
+    },
+    {
+      "internalId": "ch4-63",
+      "publicId": "SYN-CTFL-00187"
+    },
+    {
+      "internalId": "ch4-64",
+      "publicId": "SYN-CTFL-00188"
+    },
+    {
+      "internalId": "ch4-65",
+      "publicId": "SYN-CTFL-00189"
+    },
+    {
+      "internalId": "ch4-66",
+      "publicId": "SYN-CTFL-00190"
+    },
+    {
+      "internalId": "ch4-68",
+      "publicId": "SYN-CTFL-00191"
+    },
+    {
+      "internalId": "ch4-70",
+      "publicId": "SYN-CTFL-00192"
+    },
+    {
+      "internalId": "ch4-72",
+      "publicId": "SYN-CTFL-00193"
+    },
+    {
+      "internalId": "ch4-74",
+      "publicId": "SYN-CTFL-00194"
+    },
+    {
+      "internalId": "ch4-75",
+      "publicId": "SYN-CTFL-00195"
+    },
+    {
+      "internalId": "ch4-76",
+      "publicId": "SYN-CTFL-00196"
+    },
+    {
+      "internalId": "ch4-77",
+      "publicId": "SYN-CTFL-00197"
+    },
+    {
+      "internalId": "ch4-78",
+      "publicId": "SYN-CTFL-00198"
+    },
+    {
+      "internalId": "ch4-81",
+      "publicId": "SYN-CTFL-00199"
+    },
+    {
+      "internalId": "ch4-82",
+      "publicId": "SYN-CTFL-00200"
+    },
+    {
+      "internalId": "ch5-48",
+      "publicId": "SYN-CTFL-00201"
+    },
+    {
+      "internalId": "ch5-49",
+      "publicId": "SYN-CTFL-00202"
+    },
+    {
+      "internalId": "ch5-50",
+      "publicId": "SYN-CTFL-00203"
+    },
+    {
+      "internalId": "ch5-51",
+      "publicId": "SYN-CTFL-00204"
+    },
+    {
+      "internalId": "ch5-52",
+      "publicId": "SYN-CTFL-00205"
+    },
+    {
+      "internalId": "ch5-54",
+      "publicId": "SYN-CTFL-00206"
+    },
+    {
+      "internalId": "ch5-55",
+      "publicId": "SYN-CTFL-00207"
+    },
+    {
+      "internalId": "ch5-56",
+      "publicId": "SYN-CTFL-00208"
+    },
+    {
+      "internalId": "ch5-57",
+      "publicId": "SYN-CTFL-00209"
+    },
+    {
+      "internalId": "ch5-58",
+      "publicId": "SYN-CTFL-00210"
+    },
+    {
+      "internalId": "ch5-59",
+      "publicId": "SYN-CTFL-00211"
+    },
+    {
+      "internalId": "ch5-60",
+      "publicId": "SYN-CTFL-00212"
+    },
+    {
+      "internalId": "ch5-61",
+      "publicId": "SYN-CTFL-00213"
+    },
+    {
+      "internalId": "ch5-62",
+      "publicId": "SYN-CTFL-00214"
+    },
+    {
+      "internalId": "ch5-66",
+      "publicId": "SYN-CTFL-00215"
+    },
+    {
+      "internalId": "ch5-67",
+      "publicId": "SYN-CTFL-00216"
+    },
+    {
+      "internalId": "ch6-11",
+      "publicId": "SYN-CTFL-00217"
+    },
+    {
+      "internalId": "ch6-13",
+      "publicId": "SYN-CTFL-00218"
+    },
+    {
+      "internalId": "ch6-14",
+      "publicId": "SYN-CTFL-00219"
+    },
+    {
+      "internalId": "ch6-15",
+      "publicId": "SYN-CTFL-00220"
     }
   ]
 }

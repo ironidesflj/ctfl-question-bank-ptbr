@@ -451,6 +451,1536 @@
       "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
       "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
       "reviewNote": "Questão define estático por ausência de execução; mais diretamente FL-3.1.3."
+    },
+    {
+      "publicId": "SYN-CTFL-00051",
+      "internalId": "ch3-02",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00052",
+      "internalId": "ch3-03",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00053",
+      "internalId": "ch3-04",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00054",
+      "internalId": "ch3-05",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00055",
+      "internalId": "ch3-06",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00056",
+      "internalId": "ch3-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00057",
+      "internalId": "ch3-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00058",
+      "internalId": "ch3-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00059",
+      "internalId": "ch3-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00060",
+      "internalId": "ch3-12",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00061",
+      "internalId": "ch3-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00062",
+      "internalId": "ch3-14",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00063",
+      "internalId": "ch3-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00064",
+      "internalId": "ch3-16",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00065",
+      "internalId": "ch3-18",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00066",
+      "internalId": "ch3-19",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00067",
+      "internalId": "ch3-20",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00068",
+      "internalId": "ch3-21",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00069",
+      "internalId": "ch3-22",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Checklist aplicada durante revisão; confirmar se a seção de tipos de revisão é a melhor âncora."
+    },
+    {
+      "publicId": "SYN-CTFL-00070",
+      "internalId": "ch3-23",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00071",
+      "internalId": "ch3-24",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00072",
+      "internalId": "ch3-25",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00073",
+      "internalId": "ch4-01",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00074",
+      "internalId": "ch4-02",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00075",
+      "internalId": "ch4-05",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00076",
+      "internalId": "ch4-06",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00077",
+      "internalId": "ch4-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00078",
+      "internalId": "ch4-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00079",
+      "internalId": "ch4-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00080",
+      "internalId": "ch4-12",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00081",
+      "internalId": "ch4-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00082",
+      "internalId": "ch4-14",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00083",
+      "internalId": "ch4-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00084",
+      "internalId": "ch4-17",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00085",
+      "internalId": "ch4-18",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00086",
+      "internalId": "ch4-19",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00087",
+      "internalId": "ch4-20",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00088",
+      "internalId": "ch4-21",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00089",
+      "internalId": "ch4-22",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00090",
+      "internalId": "ch4-24",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00091",
+      "internalId": "ch4-25",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00092",
+      "internalId": "ch4-27",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00093",
+      "internalId": "ch4-29",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.5.1",
+      "reviewNote": "Os 3 Cs são compatíveis com escrita colaborativa de histórias."
+    },
+    {
+      "publicId": "SYN-CTFL-00094",
+      "internalId": "ch4-30",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.5.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00095",
+      "internalId": "ch4-31",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.5.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00096",
+      "internalId": "ch4-32",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00097",
+      "internalId": "ch4-33",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00098",
+      "internalId": "ch4-34",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00099",
+      "internalId": "ch4-35",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00100",
+      "internalId": "ch4-36",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00101",
+      "internalId": "ch4-37",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00102",
+      "internalId": "ch4-38",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00103",
+      "internalId": "ch4-39",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00104",
+      "internalId": "ch4-40",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00105",
+      "internalId": "ch4-42",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00106",
+      "internalId": "ch4-43",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00107",
+      "internalId": "ch4-44",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00108",
+      "internalId": "ch4-47",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00109",
+      "internalId": "ch4-48",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00110",
+      "internalId": "ch4-50",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00111",
+      "internalId": "ch4-52",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00112",
+      "internalId": "ch4-53",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00113",
+      "internalId": "ch4-54",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00114",
+      "internalId": "ch5-01",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00115",
+      "internalId": "ch5-02",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.1",
+      "reviewNote": "Estratégia/abordagem de teste no planejamento; conferir seção aplicável."
+    },
+    {
+      "publicId": "SYN-CTFL-00116",
+      "internalId": "ch5-03",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00117",
+      "internalId": "ch5-04",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00118",
+      "internalId": "ch5-06",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00119",
+      "internalId": "ch5-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00120",
+      "internalId": "ch5-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00121",
+      "internalId": "ch5-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.5",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00122",
+      "internalId": "ch5-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.5",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00123",
+      "internalId": "ch5-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.6",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00124",
+      "internalId": "ch5-12",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.7",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00125",
+      "internalId": "ch5-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00126",
+      "internalId": "ch5-16",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00127",
+      "internalId": "ch5-19",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00128",
+      "internalId": "ch5-20",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00129",
+      "internalId": "ch5-21",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00130",
+      "internalId": "ch5-22",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00131",
+      "internalId": "ch5-23",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00132",
+      "internalId": "ch5-24",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00133",
+      "internalId": "ch5-26",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00134",
+      "internalId": "ch5-27",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00135",
+      "internalId": "ch5-28",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00136",
+      "internalId": "ch5-30",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00137",
+      "internalId": "ch5-32",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.6",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00138",
+      "internalId": "ch5-33",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.7",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00139",
+      "internalId": "ch5-34",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.7",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00140",
+      "internalId": "ch5-36",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.5.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00141",
+      "internalId": "ch5-37",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00142",
+      "internalId": "ch5-38",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00143",
+      "internalId": "ch5-41",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00144",
+      "internalId": "ch5-42",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.5",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00145",
+      "internalId": "ch5-43",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Análise de impacto no contexto de teste de manutenção; revisar a seção mais específica."
+    },
+    {
+      "publicId": "SYN-CTFL-00146",
+      "internalId": "ch5-44",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.5.1",
+      "reviewNote": "DoR se relaciona a critérios e histórias ágeis; revisar se CTFL v4 cobre o termo explicitamente."
+    },
+    {
+      "publicId": "SYN-CTFL-00147",
+      "internalId": "ch6-02",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00148",
+      "internalId": "ch6-03",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00149",
+      "internalId": "ch6-05",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00150",
+      "internalId": "ch6-07",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00151",
+      "internalId": "ch6-08",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00152",
+      "internalId": "ch6-09",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00153",
+      "internalId": "ch6-10",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00154",
+      "internalId": "ch1-41",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Conclusão conflita com princípio 1: teste demonstra presença, não ausência de defeitos."
+    },
+    {
+      "publicId": "SYN-CTFL-00155",
+      "internalId": "ch1-42",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00156",
+      "internalId": "ch1-45",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00157",
+      "internalId": "ch1-46",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00158",
+      "internalId": "ch1-47",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00159",
+      "internalId": "ch1-48",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00160",
+      "internalId": "ch1-49",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00161",
+      "internalId": "ch1-50",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00162",
+      "internalId": "ch1-53",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00163",
+      "internalId": "ch1-54",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00164",
+      "internalId": "ch1-58",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00165",
+      "internalId": "ch1-59",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00166",
+      "internalId": "ch2-26",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00167",
+      "internalId": "ch2-27",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00168",
+      "internalId": "ch2-28",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00169",
+      "internalId": "ch2-29",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00170",
+      "internalId": "ch2-31",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00171",
+      "internalId": "ch2-33",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00172",
+      "internalId": "ch2-35",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "O cenário descreve técnica caixa-branca; a questão está agrupada sob níveis/tipos de teste, conferir classificação editorial."
+    },
+    {
+      "publicId": "SYN-CTFL-00173",
+      "internalId": "ch2-36",
+      "state": "held",
+      "confidence": "alta",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00174",
+      "internalId": "ch2-37",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Migração de dados ocorre em contexto de substituição/manutenção; revisar a seção mais específica."
+    },
+    {
+      "publicId": "SYN-CTFL-00175",
+      "internalId": "ch3-26",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00176",
+      "internalId": "ch3-28",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00177",
+      "internalId": "ch3-29",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00178",
+      "internalId": "ch3-30",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00179",
+      "internalId": "ch3-33",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00180",
+      "internalId": "ch3-35",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00181",
+      "internalId": "ch3-38",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-3.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00182",
+      "internalId": "ch4-57",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00183",
+      "internalId": "ch4-58",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00184",
+      "internalId": "ch4-60",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00185",
+      "internalId": "ch4-61",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.1.1",
+      "reviewNote": "Conceito geral de seleção/cobertura de técnicas; revisar o LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00186",
+      "internalId": "ch4-62",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00187",
+      "internalId": "ch4-63",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00188",
+      "internalId": "ch4-64",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00189",
+      "internalId": "ch4-65",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00190",
+      "internalId": "ch4-66",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00191",
+      "internalId": "ch4-68",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.4",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00192",
+      "internalId": "ch4-70",
+      "state": "held",
+      "confidence": "baixa",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Use case testing não se vincula claramente a LO específico CTFL v4; revisar escopo da referência."
+    },
+    {
+      "publicId": "SYN-CTFL-00193",
+      "internalId": "ch4-72",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00194",
+      "internalId": "ch4-74",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00195",
+      "internalId": "ch4-75",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00196",
+      "internalId": "ch4-76",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.1",
+      "reviewNote": "Conceito geral de técnicas baseadas em experiência; verificar LO específico."
+    },
+    {
+      "publicId": "SYN-CTFL-00197",
+      "internalId": "ch4-77",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.2.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00198",
+      "internalId": "ch4-78",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00199",
+      "internalId": "ch4-81",
+      "state": "held",
+      "confidence": "baixa",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Teste baseado em casos de uso não se vincula claramente a LO específico CTFL v4; revisar escopo da referência."
+    },
+    {
+      "publicId": "SYN-CTFL-00200",
+      "internalId": "ch4-82",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00201",
+      "internalId": "ch5-48",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00202",
+      "internalId": "ch5-49",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00203",
+      "internalId": "ch5-50",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00204",
+      "internalId": "ch5-51",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.2",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00205",
+      "internalId": "ch5-52",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00206",
+      "internalId": "ch5-54",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.5.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00207",
+      "internalId": "ch5-55",
+      "state": "held",
+      "confidence": "média",
+      "reference": null,
+      "referenceTitle": null,
+      "reviewNote": "Responsabilidades do gerente de teste; conferir referência cruzada com planejamento."
+    },
+    {
+      "publicId": "SYN-CTFL-00208",
+      "internalId": "ch5-56",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.3",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00209",
+      "internalId": "ch5-57",
+      "state": "candidate",
+      "confidence": "média",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-4.4.3",
+      "reviewNote": "Descrição de abordagem baseada em checklist; conferir aderência do termo ao LO."
+    },
+    {
+      "publicId": "SYN-CTFL-00210",
+      "internalId": "ch5-58",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.2.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00211",
+      "internalId": "ch5-59",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00212",
+      "internalId": "ch5-60",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00213",
+      "internalId": "ch5-61",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.3.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00214",
+      "internalId": "ch5-62",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00215",
+      "internalId": "ch5-66",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00216",
+      "internalId": "ch5-67",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-5.4.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00217",
+      "internalId": "ch6-11",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00218",
+      "internalId": "ch6-13",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00219",
+      "internalId": "ch6-14",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.1.1",
+      "reviewNote": "Correspondência temática direta."
+    },
+    {
+      "publicId": "SYN-CTFL-00220",
+      "internalId": "ch6-15",
+      "state": "candidate",
+      "confidence": "alta",
+      "reference": "https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+      "referenceTitle": "ISTQB CTFL v4.0.1 — LO FL-6.2.1",
+      "reviewNote": "Correspondência temática direta."
     }
   ]
 }

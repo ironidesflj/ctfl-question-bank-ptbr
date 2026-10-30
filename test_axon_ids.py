@@ -10,7 +10,15 @@ import verify_axon_ids
 class AxonIdGuardTests(unittest.TestCase):
     def copy_inputs(self, root):
         (root / "axon").mkdir()
-        for path in ("axon/ctfl-public-ids.json", "axon/ctfl-reference-candidates.json", "synapse-question-bank.json"):
+        paths = ["synapse-question-bank.json"]
+        for exam in ("ctfl", "ctal-ta", "ctal-tm"):
+            paths.extend(
+                [
+                    f"axon/{exam}-public-ids.json",
+                    f"axon/{exam}-reference-candidates.json",
+                ]
+            )
+        for path in paths:
             (root / path).write_bytes((verify_axon_ids.ROOT / path).read_bytes())
 
     def test_published_id_cannot_be_remapped(self):
