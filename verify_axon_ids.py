@@ -1,0 +1,52 @@
+"""Validate the reserved Synapse public IDs against the canonical bank.
+
+This does not publish a manifest or alter the question IDs used for progress.
+"""
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+def verify() -> None:
+    ledger = json.loads((ROOT / "axon/ctfl-public-ids.json").read_text())
+    bank = json.loads((ROOT / "synapse-question-bank.json").read_text())
+    questions = {q["id"]: q for q in bank["questions"]}
+
+    if ledger["exam"] != "ctfl" or ledger["lang"] != "pt-BR":
+        raise ValueError("Unexpected exam or canonical language")
+
+    mappings = ledger["mappings"]
+    if not mappings or ledger["lastIssued"] != len(mappings):
+        raise ValueError("lastIssued must equal the number of reserved IDs")
+
+    seen_internal = set()
+    seen_public = set()
+    for sequence, mapping in enumerate(mappings, start=1):
+        internal_id = mapping["internalId"]
+        public_id = mapping["publicId"]
+        expected = f"SYN-CTFL-{sequence:05d}"
+        if public_id != expected:
+            raise ValueError(f"Unexpected public ID {public_id}; expected {expected}")
+        if internal_id in seen_internal or public_id in seen_public:
+            raise ValueError(f"Duplicate mapping: {mapping}")
+        seen_internal.add(internal_id)
+        seen_public.add(public_id)
+
+        question = questions.get(internal_id)
+        if not question or question.get("cert") != "CTFL" or question.get("pool") != "study":
+            raise ValueError(f"{internal_id} is missing or outside the CTFL study pool")
+        if not question.get("locales", {}).get("pt", {}).get("q"):
+            raise ValueError(f"{internal_id} has no Portuguese statement")
+
+    print(f"Validated {len(mappings)} CTFL study IDs; no exam question included")
+
+
+if __name__ == "__main__":
+    try:
+        verify()
+    except (KeyError, TypeError, ValueError) as exc:
+        print(f"Axon ID validation failed: {exc}", file=sys.stderr)
+        raise SystemExit(1) from exc
