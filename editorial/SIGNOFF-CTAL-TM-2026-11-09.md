@@ -17,3 +17,10 @@
 - **Efeito no contrato:** conteúdo do manifesto muda (checksums) → exige reingestão no hub e nova publicação do app; nada de gabarito/ID mudou.
 - **Pendência:** novo pacote de questões para ampliar K4 além da única amostra (aguardando o mantenedor).
 - **Baselines de heurística atualizadas:** as correções mudaram textos de opções/explicações e geraram 13 suspeitas novas nas guardas heurísticas (opção/exp e tema). Foram revisadas no parecer semântico e aceitas como falsos positivos; as baselines `check_alignment_baseline` e `check_alignment_topic_baseline` foram atualizadas (`--update-baseline` / `--update-topic-baseline`). Heurística é alerta, não prova de bug — CI segue bloqueando apenas certs live e guardas psicométricas.
+
+## Adendo — 1.7.4 (CTAL-TA: 2 questões inconclusivas reescritas)
+
+- `ctalta-106` (TA-1.2.2, K2, estudo): enunciado pedia "dois artefatos" enquanto a correta listava três itens e o passo já continha o dado 1500. Reescrito para "elementos de baixo nível (concreto)" com opção B e `exp` alinhadas; gabarito mantido (answer=1).
+- `ctalta-120` (TA-2.1.1, K2, simulado): exigia classificação "por matriz padrão" sem dar a regra, gerando ambiguidade PT/EN. Enunciado agora explicita a regra da matriz (probabilidade baixa × impacto muito alto = risco "alto"); `answer=3` mantido e removida a exceção na baseline de tema (passa nativamente).
+- Guardas: 0 suspeitas novas (opção/exp e tema) e 7/7 psicométricas PASS nos certs live; unittest 16/16; 431 IDs de estudo validados, 0 de simulado.
+- Efeito: conteúdo de manifesto muda para 2 registros (1 de estudo) → exige reingestão no hub e publicação do app.
