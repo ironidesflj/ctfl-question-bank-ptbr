@@ -55,6 +55,7 @@ jobs:
           cp bank/synapse-question-bank.json app/src/data/synapse-question-bank.json
           cd app
           node scripts/split-bank.mjs
+          node scripts/generate-study-slices.mjs
       - name: Enforce checksums and full slice equality
         run: python3 bank/verify_sync.py bank app
       - name: Verify app regression
