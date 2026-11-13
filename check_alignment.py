@@ -60,12 +60,10 @@ from pathlib import Path
 CERTS_CANONICAL = ["CTFL", "CTFL-AT", "CTAL-TA", "CTAL-TM", "CT-AI"]
 
 # Certs reachable in the app today (VALID_CERTS in ctfl-app/src/certs.js).
-# CTFL-AT/CTAL-TM/CT-AI are LATENT: real data-quality debt, but not user-facing
-# until promoted to live, so their guard failures are reported (visibility)
-# but must NOT block CI for the two certs Fase 1 actually fixed. Without this
-# scoping, the 6 new guards below would exit non-zero forever, since the 3
-# untouched certs will always fail length_bias/effect_size/chi2/runs_test.
-LIVE_CERTS = {"CTFL", "CTAL-TA", "CTAL-TM"}  # r19: CTAL-TM promovido
+# CTFL-AT remains LATENT: real data-quality debt, but not user-facing
+# until promoted to live, so its guard failures are reported (visibility)
+# but must NOT block CI for the live certs.
+LIVE_CERTS = {"CTFL", "CTAL-TA", "CTAL-TM", "CT-AI"}  # CT-AI v2.0 promovido (v1.9.0)
 
 # Guard 12 — hedge/absolute lexicon (as specified in F1.3 task).
 # These are "absolutist" qualifiers; the guard name says "hedge" but the word

@@ -43,13 +43,13 @@ na fonte. Verificações novas não estão ativas no GitHub até o envio autoriz
 O projeto evoluiu para o **Synapse**, englobando múltiplas certificações (total de 1.100 questões).
 
 **Conteúdo no Ar (Lançado):**
-- **CTFL v4.0:** 300 questões
-- **CTAL-TA v4.0:** 200 itens
-- **CTAL-TM v3.0:** 200 itens (release candidata 1.7.0-rc1; guardas live verdes)
+- **CTFL v4.0:** 500 questões
+- **CTAL-TA v4.0:** 450 questões
+- **CTAL-TM v3.0:** 500 questões (guardas live verdes)
+- **CT-AI v2.0:** 360 questões (v1.9.0; 243 estudo / 117 simulado; guardas live verdes)
 
 **Roadmap de Lançamentos Futuros (Em Breve):**
-- **CT-AI v2.0:** 200 itens (em breve)
-- **CTAL-AT v2.0:** 200 itens (em breve - syllabus totalmente novo, a ser gerado)
+- **CTAL-AT v2.0:** (em breve — syllabus v2.0, sem questões publicadas ainda)
 
 **Conteúdo Legado:**
 - **CTFL-AT (Agile Tester v2014):** 200 itens (adormecido/sunset pela ISTQB, substituído pelo CTAL-AT v2.0. O conteúdo é mantido por razões de arquivo e não está listado nos próximos lançamentos da UI).
@@ -99,9 +99,10 @@ prontos pro app, chaveados por `cert.id` (`ctfl`, `ctal-ta`).
 ## Distribuição — outras certificações (`synapse-question-bank.json`)
 | Cert | Questões | Syllabus | Status |
 |------|----------|----------|--------|
-| CTAL-TA | 200 | Advanced Level Test Analyst v4.0 | **No ar** |
-| CTAL-TM | 200 | Advanced Level Test Manager v3.0 | Release candidata; guardas live verdes |
-| CT-AI | 200 | Certified Tester AI Testing v2.0 | Em breve |
+| CTFL | 500 | Foundation Level v4.0.1 | **No ar** |
+| CTAL-TA | 450 | Advanced Level Test Analyst v4.0 | **No ar** |
+| CTAL-TM | 500 | Advanced Level Test Manager v3.0 | **No ar** |
+| CT-AI | 360 | Certified Tester AI Testing v2.0 | **No ar** (v1.9.0; 40Q · 44 pts · corte 29) |
 | CTFL-AT | 200 | Agile Tester Extension v2014 | Legado / Adormecido |
 
 ## Scripts
